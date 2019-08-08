@@ -21,4 +21,25 @@
       <class name="com.arcapi.Buildingtestcases.LoginAPITest"/>
     </classes>
   </test> <!-- CompleteFlowTest-Portfolios -->
+  <test name="CompleteFlowTest-Portfolios(failed)">
+    <parameter name="environment" value="stg"/>
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="LoginAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.LoginAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Portfolios(failed) -->
 </suite> <!-- Failed suite [PortfoliosComplete] -->
