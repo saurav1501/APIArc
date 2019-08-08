@@ -1,0 +1,137 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="DataValidationComplete">
+
+<!-- <listeners>
+        <listener class-name="com.arc.Listeners.RetryListener" />
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners> -->
+
+ 
+  
+<test name="DataValidationTest-Building">
+
+
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetOwnerOrgPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.CreateAssetPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.CreditFormUploadPOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.MeterBulkConsumptionPOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.WasteGeneratedBulkDataPostTest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.WasteDivertedBulkDataPostTest"></class>
+<class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetTeamMemberUpdateAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetTeamMemberRemoveAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetAppaddPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.S3DocumentRemoveAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetTeamPermissionPostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetTeamPermissionPutAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetNotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.NotificationSubscriptionDetailDeleteTest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetPerformanceScorePostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.AssetCertificationPOSTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.TemperatureDataPostTest"></class>
+
+</classes>
+</test>
+
+
+<test name="DataValidationTest-City">
+
+
+<parameter name="ProjectType" value="city" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityLeed" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.Citytestcases.CreateAssetCityLeedAPITest"></class>
+<class name="com.arcapi.Citytestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.CreditAddTeamPOSTAPITest"></class> 
+<class name="com.arcapi.CompleteDataValidationTestcases.MeasuresPostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.MeasuresUpdateAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.MeasuresVersionPostAPITest"></class>
+
+</classes>
+</test>
+
+
+
+<test name="DataValidationTest-Portfolios">
+
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+
+<class name="com.arcapi.Portfoliostestcases.LoginAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.PortfoliosPostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.PortfoliosDetailPUTAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.PortfoliosAssetPostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.PortfoliosAssetDetailPUTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.PortfoliosGoalsUpdateAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.PortfoliosTeamsPostAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.PortfoliosTeamsPUTAPITest"></class>
+<class name="com.arcapi.CompleteDataValidationTestcases.PortfoliosTeamsDELETEAPITest"></class>
+
+
+
+</classes>
+</test>
+
+</suite> 
+  
+
+  
+
+    
+  

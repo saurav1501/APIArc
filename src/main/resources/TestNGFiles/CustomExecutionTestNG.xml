@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CustomExecution">
+
+ 
+<test name="CompleteFlowTest-Building-None">
+
+<parameter name="CustomSheetName" value="Emission"/>
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectID" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+<!-- <class name="com.arcapi.Buildingtestcases.LoginAPITest"></class> -->
+
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneEmissionFactorTest"></class>
+<class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest"></class>
+<class name="com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.MetersListEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest"></class>
+
+
+
+
+
+
+</classes>
+</test>
+
+
+</suite>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CustomExecution]">
+  <parameter name="environment" value="staging"/>
+  <parameter name="SoReference" value="performance score"/>
+  <parameter name="ProjectType" value="building"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="STG"/>
+  <parameter name="SoReferenceSR" value="performance score"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+  <test name="CompleteFlowTest-Building-None">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest"/>
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-None -->
+  <test name="CompleteFlowTest-Building-None(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetDetailQueryParamCategoryAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-None(failed) -->
+</suite> <!-- Failed suite [CustomExecution] -->

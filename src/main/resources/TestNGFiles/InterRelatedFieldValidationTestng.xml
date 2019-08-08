@@ -1,0 +1,102 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="InterRelatedFieldValidation">
+
+<!-- <listeners>
+        <listener class-name="com.arc.Listeners.RetryListener" />
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners> -->
+
+<test name="FuelUnitInterrelatedTest-Building">
+
+
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.ElectricityMeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.Co2CreatePOSTAPITest"></class>
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.FuelCreatePOSTAPITest"></class>
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.HumanCreatePOSTAPITest"></class>
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.PF906CreatePOSTAPITest"></class>
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.TransportCreatePOSTAPITest"></class>
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.VocCreatePOSTAPITest"></class>
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.WaterCreatePOSTAPITest"></class>
+
+
+</classes>
+</test>
+
+<test name="RatingSystemInterRelated-Building">
+
+
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.CreateAssetBuildingPOSTAPITest"></class>
+
+
+
+</classes>
+</test>
+
+<test name="RatingSystemInterRelated-City">
+
+
+<parameter name="ProjectType" value="city" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCity" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.CreateAssetCityPOSTAPITest"></class>
+
+
+
+</classes>
+</test>
+<test name="RatingSystemInterRelated-Parksmart">
+
+
+<parameter name="ProjectType" value="parksmart" />
+<parameter name="ProjectTypeColumn" value="ProjectIDParksmart" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.CreateAssetParksmartPOSTAPITest"></class>
+
+
+
+</classes>
+</test>
+<test name="RatingSystemInterRelated-Transit">
+
+
+<parameter name="ProjectType" value="transit" />
+<parameter name="ProjectTypeColumn" value="ProjectIDTransit" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+
+<class name="com.arcapi.InterRelatedFieldValidationTestcases.CreateAssetTransitPOSTAPITest"></class>
+
+
+</classes>
+</test>
+</suite> 
+  
+
+  
+
+    
+  

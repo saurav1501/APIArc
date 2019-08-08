@@ -1,0 +1,77 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TrailFlow-Complete">
+
+<!-- <listeners>
+        <listener class-name="com.arc.Listeners.RetryListener" />
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners> -->
+ 
+
+
+<test name="CompleteFlowTest-Building-Other-TrailFlow">
+
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="Term" value="2" />
+
+<classes>
+
+<class name="com.arcapi.TrailFlowtestcasesComplete.CreateAssetBuildingOtherAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.AssetUpdateBuildingTrailActAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.VerifyAssetDetailAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.AssetUpdateBuildingAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Building.InstallAllAppsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Building.WasteGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Building.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.ExcelTemplateMetersAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.VerifyExcelTemplateConsumptionAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.SyncSAPTrailProjectAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.AddAssestTimelinePOSTAPITest"></class>
+
+
+</classes>
+</test>  
+
+<test name="CompleteFlowTest-Building-None-TrailFlow">
+
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="Term" value="3" />
+
+<classes>
+
+<class name="com.arcapi.TrailFlowtestcasesComplete.CreateAssetBuildingNoneAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.AssetUpdateBuildingTrailActAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.VerifyAssetDetailAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.AssetUpdateBuildingAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Building.InstallAllAppsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Building.WasteGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Building.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.ExcelTemplateMetersAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.VerifyExcelTemplateConsumptionAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.SyncSAPTrailProjectAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcasesComplete.AddAssestTimelinePOSTAPITest"></class>
+
+
+</classes>
+</test>
+
+</suite> 
+  
+
+  
+
+    
+  

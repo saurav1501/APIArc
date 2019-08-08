@@ -1,0 +1,95 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="APITestCasesSuite">
+
+<!-- <listeners>
+        <listener class-name="com.arc.Listeners.RetryListener" />
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners> -->
+<!-- 
+<test name="HoneyWellAPIDataValidationTest">
+
+<parameter name="SheetName" value="STG" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+
+<class name="com.arcapi.testcases.CreateAssetPOSTNormalUserTest"></class>
+<class name="com.arcapi.testcases.SignAgreementRegistrationAPITest"></class> 
+<class name="com.arcapi.testcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.testcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.testcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.DataValidationTestcases.AssetUpdateforNewAssetPUTValidationAPITest"></class>
+<class name="com.arcapi.testcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationTestcases.EnvironmentSurveyCreatePOSTValidatioAPITest"></class>
+<class name="com.arcapi.testcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationTestcases.MeterCreatePOSTValidationAPITest"></class>
+<class name="com.arcapi.testcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationTestcases.ConsumptionCreatePOSTValidationAPITest"></class>
+<class name="com.arcapi.testcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationTestcases.TransitSurveyCreatePOSTValidationAPITest"></class>
+<class name="com.arcapi.testcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationTestcases.WasteCreatePOSTVaildationAPITest"></class>
+<class name="com.arcapi.DataValidationTestcases.WasteDetailDeleteValidationAPITest"></class>
+<class name="com.arcapi.DataValidationTestcases.WasteDivertedDataPostValidationTest"></class>
+<class name="com.arcapi.DataValidationTestcases.WasteGeneratedDataPostValidationTest"></class>
+<class name="com.arcapi.DataValidationTestcases.WasteUpdatePUTValidationAPITest"></class>
+
+
+
+</classes>
+</test>
+-->
+
+<test name="HoneyWellAPINoPayloadTest">
+
+<parameter name="SheetName" value="STG" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+
+<class name="com.arcapi.testcases.CreateAssetPOSTNormalUserTest"></class>
+<class name="com.arcapi.testcases.SignAgreementRegistrationAPITest"></class> 
+<class name="com.arcapi.testcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.testcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.testcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.AssetUpdateforNewAssetPUTValidationAPITest"></class>
+<class name="com.arcapi.testcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.EnvironmentSurveyCreatePOSTValidatioAPITest"></class>
+<class name="com.arcapi.testcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.MeterCreatePOSTValidationAPITest"></class>
+<class name="com.arcapi.testcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.ConsumptionCreatePOSTValidationAPITest"></class>
+<class name="com.arcapi.testcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.TransitSurveyCreatePOSTValidationAPITest"></class>
+<class name="com.arcapi.testcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.WasteCreatePOSTVaildationAPITest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.WasteDetailDeleteValidationAPITest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.WasteDivertedDataPostValidationTest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.WasteGeneratedDataPostValidationTest"></class>
+<class name="com.arcapi.DataValidationNoPayloadTestcases.WasteUpdatePUTValidationAPITest"></class>
+
+
+
+</classes>
+</test>
+
+
+</suite> 
+  
+
+  
+
+    
+  

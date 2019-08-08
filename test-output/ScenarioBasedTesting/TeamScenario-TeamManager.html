@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  TeamScenario-TeamManager</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TeamScenario-TeamManager</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 21 10:26:11 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>65 seconds (65300 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest.AddAssestTimeline()'><b>AddAssestTimeline</b><br>Test class: com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest<br>Parameters: QAS, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>6</td>
+<td>com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest@27c6e487</td></tr>
+<tr>
+<td title='com.arcapi.ScenarioBasedTestcases.AssetTeamMemberAddPOSTAPITest.AssetTeamMemberAddPOSTAPI()'><b>AssetTeamMemberAddPOSTAPI</b><br>Test class: com.arcapi.ScenarioBasedTestcases.AssetTeamMemberAddPOSTAPITest<br>Parameters: QAS, ProjectIDBuildingOther, 2, ZRPO82, STG03</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.ScenarioBasedTestcases.AssetTeamMemberAddPOSTAPITest@49070868</td></tr>
+<tr>
+<td title='com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAPITest.AssetTeamMemberRemoveAPI()'><b>AssetTeamMemberRemoveAPI</b><br>Test class: com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAPITest<br>Parameters: QAS, ProjectIDBuildingOther, 2, STG03</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAPITest@28c4711c</td></tr>
+<tr>
+<td title='com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAdminAPITest.AssetTeamMemberRemoveAdminAPI()'><b>AssetTeamMemberRemoveAdminAPI</b><br>Test class: com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAdminAPITest<br>Parameters: QAS, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>2</td>
+<td>com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAdminAPITest@146044d7</td></tr>
+<tr>
+<td title='com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAPITest.AssetTeamMemberUpdateAPI()'><b>AssetTeamMemberUpdateAPI</b><br>Test class: com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAPITest<br>Parameters: QAS, ProjectIDBuildingOther, 2, STG03</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAPITest@38364841</td></tr>
+<tr>
+<td title='com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAdminAPITest.AssetTeamMemberUpdateAdminAPI()'><b>AssetTeamMemberUpdateAdminAPI</b><br>Test class: com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAdminAPITest<br>Parameters: QAS, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>6</td>
+<td>com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAdminAPITest@59717824</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest.CreateAssetPOSTAPI()'><b>CreateAssetPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest<br>Parameters: QAS, building, ProjectIDBuildingOther, 2, US</td>
+<td></td>
+<td>9</td>
+<td>com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest@3d3fcdb0</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.LoginAPITest.LoginAPI()'><b>LoginAPI</b><br>Test class: com.arcapi.Buildingtestcases.LoginAPITest<br>Parameters: QAS, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.LoginAPITest@6b0c2d26</td></tr>
+<tr>
+<td title='com.arcapi.ScenarioBasedTestcases.LoginAPITest.LoginAPI()'><b>LoginAPI</b><br>Test class: com.arcapi.ScenarioBasedTestcases.LoginAPITest<br>Parameters: QAS, 2, STG03, STG03Password</td>
+<td></td>
+<td>7</td>
+<td>com.arcapi.ScenarioBasedTestcases.LoginAPITest@6385cb26</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest.PaymentOrderSubmitPOSTAPI()'><b>PaymentOrderSubmitPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest<br>Parameters: QAS, ProjectIDBuildingOther, 2, CheckPayment</td>
+<td></td>
+<td>6</td>
+<td>com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest@64d7f7e0</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest.RegistrationPaymentPricingGetAPI()'><b>RegistrationPaymentPricingGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest<br>Parameters: QAS, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest@6e38921c</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest.SignAgreementRegistrationAPI()'><b>SignAgreementRegistrationAPI</b><br>Test class: com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest<br>Parameters: QAS, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest@641147d0</td></tr>
+</table><p>
+</body>
+</html>

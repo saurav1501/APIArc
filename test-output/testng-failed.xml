@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PortfoliosComplete]">
+  <parameter name="environment" value="stg"/>
+  <parameter name="SoReference" value="performance score"/>
+  <parameter name="ProjectType" value="building"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="STG"/>
+  <parameter name="SoReferenceSR" value="performance score"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+  <test name="CompleteFlowTest-Portfolios">
+    <parameter name="environment" value="stg"/>
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.LoginAPITest"/>
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest"/>
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest"/>
+    </classes>
+  </test> <!-- CompleteFlowTest-Portfolios -->
+</suite> <!-- Failed suite [PortfoliosComplete] -->

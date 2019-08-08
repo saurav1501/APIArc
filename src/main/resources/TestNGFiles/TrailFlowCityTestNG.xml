@@ -1,0 +1,91 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TrailFlow-City">
+
+<!-- <listeners>
+        <listener class-name="com.arc.Listeners.RetryListener" />
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners> -->
+ 
+
+
+<test name="CompleteFlowTest-City-Other">
+
+<parameter name="ProjectType" value="city" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="CreditColumn" value="CityOtherNoneCredit" />
+<parameter name="CreditColumnNum" value="1" />
+
+
+<classes>
+
+<class name="com.arcapi.TrailFlowtestcases.City.LoginAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.CreateAssetCityOtherAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetUpdateCityOtherAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.PaymentReceiptAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.PaymentHistoryAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetDetailAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.VerifyProjectRegisteredAssetListTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetDocumentAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.VerifyAgreementPresentAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.CreditGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.CreditAddTeamPOSTAPITest"></class> 
+<class name="com.arcapi.TrailFlowtestcases.City.MeasuresListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.MeasuresDetailAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.MeasuresPostAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.MeasuresUpdateAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.MeasuresVersionListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.MeasuresVersionDetailAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.MeasuresVersionPostAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.MeterCreateAPICityCommTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.CityCommConsumptionCreateAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetTeamMemberRoleAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetTeamMemberListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetTeamMemberUpdateAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetTeamMemberRemoveAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.InstallAllAppsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.DeleteAllAppsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.S3DocumentListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.S3DocumentRemoveAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetTeamPermissionListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetTeamPermissionPostAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetTeamPermissionPutAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetNotificationSubscriptionListTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetNotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetDataSnapshotAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.RecomputePerformanceScoreGetTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetDataExportAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.TrailFlowtestcases.City.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.UserDetailAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AvgPerformaceListGetTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetSnapshotKeysAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.City.AssetSnapshotDownloadAPITest"></class>
+
+</classes>
+</test>
+
+
+</suite> 
+  
+
+  
+
+    
+  

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DataValidationComplete]">
+  <parameter name="environment" value="qas"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CheckPayment"/>
+  <parameter name="SheetName" value="QAS"/>
+  <test thread-count="5" name="DataValidationTest-Building(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+    <classes>
+      <class name="com.arcapi.CompleteDataValidationTestcases.AssetCertificationPOSTAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="AssetCertificationPOSTAPI" invocation-numbers="0"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.CompleteDataValidationTestcases.AssetCertificationPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.EnvironmentSurveyCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="EnvironmentSurveyCreatePOSTAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.EnvironmentSurveyCreatePOSTAPITest -->
+      <class name="com.arcapi.CompleteDataValidationTestcases.CreditFormUploadPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="CreditFormUploadPOSTAPI" invocation-numbers="0"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.CompleteDataValidationTestcases.CreditFormUploadPOSTAPITest -->
+      <class name="com.arcapi.CompleteDataValidationTestcases.TemperatureDataPostTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="TemperatureDataPost" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.CompleteDataValidationTestcases.TemperatureDataPostTest -->
+    </classes>
+  </test> <!-- DataValidationTest-Building(failed) -->
+  <test thread-count="5" name="DataValidationTest-City(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="city"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDCityLeed"/>
+    <classes>
+      <class name="com.arcapi.CompleteDataValidationTestcases.CreditAddTeamPOSTAPITest">
+        <methods>
+          <include name="CreditAddTeamPOSTAPI" invocation-numbers="0"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.CompleteDataValidationTestcases.CreditAddTeamPOSTAPITest -->
+      <class name="com.arcapi.CompleteDataValidationTestcases.MeasuresVersionPostAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="getSuiteName"/>
+          <include name="MeasuresVersionPostAPI" invocation-numbers="0"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.CompleteDataValidationTestcases.MeasuresVersionPostAPITest -->
+    </classes>
+  </test> <!-- DataValidationTest-City(failed) -->
+  <test thread-count="5" name="DataValidationTest-Portfolios(failed)">
+    <parameter name="rownumber" value="2"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+    <classes>
+      <class name="com.arcapi.CompleteDataValidationTestcases.PortfoliosAssetPostAPITest">
+        <methods>
+          <include name="PortfoliosAssetPostAPI" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.CompleteDataValidationTestcases.PortfoliosAssetPostAPITest -->
+    </classes>
+  </test> <!-- DataValidationTest-Portfolios(failed) -->
+</suite> <!-- Failed suite [DataValidationComplete] -->

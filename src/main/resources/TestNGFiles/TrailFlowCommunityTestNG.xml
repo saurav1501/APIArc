@@ -1,0 +1,90 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TrailFlow-Community">
+
+<!-- <listeners>
+        <listener class-name="com.arc.Listeners.RetryListener" />
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners> -->
+ 
+
+
+<test name="CompleteFlowTest-Community-Other">
+
+
+<parameter name="ProjectType" value="community" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCommunityOther" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="CreditColumn" value="CommunityOtherNoneCredit" />
+<parameter name="CreditColumnNum" value="6" />
+
+
+<classes>
+
+
+
+<class name="com.arcapi.TrailFlowtestcases.Community.LoginAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.CreateAssetCommunityOtherAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetUpdateCommunityOtherAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.PaymentReceiptAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.PaymentHistoryAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetDetailAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetDocumentAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.VerifyAgreementPresentAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.CreditGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.MeasuresListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.MeasuresDetailAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.MeasuresPostAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.MeasuresUpdateAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.MeasuresVersionListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.MeasuresVersionDetailAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.MeasuresVersionPostAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.MeterCreateAPICityCommTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.CityCommConsumptionCreateAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetTeamMemberRoleAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetTeamMemberListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetTeamMemberUpdateAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetTeamMemberRemoveAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.InstallAllAppsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.DeleteAllAppsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.S3DocumentListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.S3DocumentRemoveAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetTeamPermissionListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetTeamPermissionPostAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetTeamPermissionPutAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetNotificationSubscriptionListTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetNotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetDataSnapshotAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.RecomputePerformanceScoreGetTest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetDataExportAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.TrailFlowtestcases.Community.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetRequiredFieldsAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.UserActivityListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetSnapshotKeysAPITest"></class>
+<class name="com.arcapi.TrailFlowtestcases.Community.AssetSnapshotDownloadAPITest"></class>
+
+</classes>
+</test>
+
+
+</suite> 
+  
+
+  
+
+    
+  

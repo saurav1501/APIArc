@@ -1,0 +1,107 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ParksmartCompletePositive">
+
+<!-- <listeners>
+        <listener class-name="com.arc.Listeners.RetryListener" />
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners> -->
+
+<test name="CompleteFlowTest-Parksmart">
+
+<parameter name="ProjectType" value="parksmart" />
+<parameter name="ProjectTypeColumn" value="ProjectIDParksmart" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.Parksmarttestcases.LoginAPITest"></class>
+<!-- <class name="com.arcapi.Parksmarttestcases.CheckOAuthTokenStatusAPITest"></class> -->
+<class name="com.arcapi.Parksmarttestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.Parksmarttestcases.LOTokenAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AssetSearchAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AssetSearchOwnerAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AssetOwnerOrgPOSTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AssetListAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartPOSTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentReceiptAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentHistoryAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.S3DocumentListAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.S3DocumentRemoveAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AssetRequiredFieldsAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.MeasuresListAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.MeasuresDetailAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.MeasuresPostAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.MeasuresUpdateAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.MeasuresVersionListAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.MeasuresVersionDetailAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.MeasuresVersionPostAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.UserActivityListAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.CountryStatesJSONAPITest"></class> 
+<class name="com.arcapi.Parksmarttestcases.AssociatedCategoriesAPITest"></class> 
+<class name="com.arcapi.Parksmarttestcases.RatingSystemListAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AppVersionDetailAPITest"></class> 
+<class name="com.arcapi.Parksmarttestcases.FuelCategoryAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AvgPerformaceListGetTest"></class>
+
+<!--
+
+<class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentReviewAutoPaytokenPOSTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentReviewAutoPaymentTokenGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.ProjectTeamInfoAPITest"></class>
+
+<class name="com.arcapi.Parksmarttestcases.ReviewCertificationPricingAPITest"></class>
+
+<class name="com.arcapi.Parksmarttestcases.TemperatureDataDeleteTest"></class>
+<class name="com.arcapi.Parksmarttestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.Parksmarttestcases.UserDetailsSAPGetTest"></class>
+<class name="com.arcapi.Parksmarttestcases.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.Parksmarttestcases.WasteGeneratedDataGetTest"></class>
+
+<class name="com.arcapi.Parksmarttestcases.PortfoliosPostAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosDetailsGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosDetailPUTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosAssetPostAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosAssetGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosAssetDetailPUTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosAssetDetailGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosTeamsPostAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosTeamsGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosTeamsPUTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosTeamsDELETEAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosAssetDetailDELETEAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PortfoliosDetailDELETEAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.UserLogoutAPITest"></class>
+
+-->
+
+
+</classes>
+</test>
+</suite> 
+  
+
+  
+
+    
+  

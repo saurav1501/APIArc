@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [InterRelatedFieldValidation]">
+  <parameter name="environment" value="qas"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CheckPayment"/>
+  <parameter name="SheetName" value="QAS"/>
+  <test thread-count="5" name="FuelUnitInterrelatedTest-Building(failed)">
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+    <classes>
+      <class name="com.arcapi.InterRelatedFieldValidationTestcases.VocCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VocCreatePOSTAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.InterRelatedFieldValidationTestcases.VocCreatePOSTAPITest -->
+    </classes>
+  </test> <!-- FuelUnitInterrelatedTest-Building(failed) -->
+  <test thread-count="5" name="RatingSystemInterRelated-Building(failed)">
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuilding"/>
+    <classes>
+      <class name="com.arcapi.InterRelatedFieldValidationTestcases.CreateAssetBuildingPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="CreateAssetBuildingPOSTAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.InterRelatedFieldValidationTestcases.CreateAssetBuildingPOSTAPITest -->
+    </classes>
+  </test> <!-- RatingSystemInterRelated-Building(failed) -->
+</suite> <!-- Failed suite [InterRelatedFieldValidation] -->

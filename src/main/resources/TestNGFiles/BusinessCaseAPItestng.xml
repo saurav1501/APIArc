@@ -1,0 +1,967 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="APITestCasesSuite">
+
+<listeners>
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners>
+
+<!-- 
+<test name="AccessToOutsideProject">
+
+<parameter name="SheetName" value="QAS" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+
+ 
+<class name="com.arcapi.testcases.CreateAssetPOSTNormalUserTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppaddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDocumentAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScorePostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetSearchAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssociatedCategoriesAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CountryStatesJSONAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormDownloadAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormUploadPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdateTeamPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveySummarizeAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FuelCategoryAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MetersAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetMeterDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaytokenPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaymentTokenGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ProjectTeamInfoAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamMemberUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamRoleListOptionAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveySummarizeSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserActivityListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AvgPerformaceListGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CO2GetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RecomputePerformanceScoreGetTest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataDeleteTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataZipCodeGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailsSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.VOCGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WaterGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailDELETEAPITest"></class>
+
+</classes> 
+</test>
+-->
+
+<!--
+<test name="SignAgreementBusinessAPITest">
+
+<parameter name="SheetName" value="QAS" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+<class name="com.arcapi.testcases.CreateAssetPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppaddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDocumentAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScorePostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetSearchAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssociatedCategoriesAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CountryStatesJSONAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormDownloadAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormUploadPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdateTeamPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveySummarizeAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FuelCategoryAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MetersAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetMeterDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaytokenPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaymentTokenGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ProjectTeamInfoAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamMemberUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamRoleListOptionAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveySummarizeSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserActivityListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AvgPerformaceListGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CO2GetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RecomputePerformanceScoreGetTest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataDeleteTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataZipCodeGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailsSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.VOCGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WaterGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserLogoutAPITest"></class>
+</classes>
+</test>
+-->
+
+<!-- 
+<test name="PaymentPendingBusinessAPITest">
+
+<parameter name="SheetName" value="QAS" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+<class name="com.arcapi.testcases.CreateAssetPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppaddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDocumentAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScorePostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetSearchAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssociatedCategoriesAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CountryStatesJSONAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormDownloadAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormUploadPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdateTeamPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveySummarizeAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FuelCategoryAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MetersAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetMeterDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaytokenPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaymentTokenGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ProjectTeamInfoAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamMemberUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamRoleListOptionAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveySummarizeSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserActivityListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AvgPerformaceListGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CO2GetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RecomputePerformanceScoreGetTest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataDeleteTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataZipCodeGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailsSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.VOCGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WaterGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserLogoutAPITest"></class>
+</classes>
+</test>
+-->
+
+<!-- 
+<test name="TimelinePendingBusinessAPITest">
+
+<parameter name="SheetName" value="QAS" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+<class name="com.arcapi.testcases.CreateAssetPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppaddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDocumentAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScorePostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetSearchAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssociatedCategoriesAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CountryStatesJSONAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormDownloadAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormUploadPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdateTeamPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveySummarizeAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FuelCategoryAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MetersAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetMeterDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaytokenPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaymentTokenGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ProjectTeamInfoAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamMemberUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamRoleListOptionAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveySummarizeSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserActivityListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AvgPerformaceListGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CO2GetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RecomputePerformanceScoreGetTest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataDeleteTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataZipCodeGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailsSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.VOCGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WaterGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserLogoutAPITest"></class>
+</classes>
+</test>
+-->
+
+  
+<test name="RegisteredBusinessAPITest">
+
+<parameter name="SheetName" value="QAS" />
+<parameter name="ProjectType" value="transit" />
+<parameter name="ProjectTypeColumn" value="ProjectIDTransit" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+
+  
+<class name="com.arcapi.FieldValidationsTestcases.CreateAssetTransitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppaddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDocumentAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScorePostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetSearchAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssociatedCategoriesAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CountryStatesJSONAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormDownloadAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormUploadPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdateTeamPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveySummarizeAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FuelCategoryAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MetersAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetMeterDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CO2GetTest"></class>
+<!--  
+
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaytokenPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaymentTokenGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ProjectTeamInfoAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamMemberUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamRoleListOptionAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveySummarizeSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserActivityListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AvgPerformaceListGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CO2GetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RecomputePerformanceScoreGetTest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataDeleteTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataZipCodeGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailsSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.VOCGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WaterGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosTeamsDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosAssetDetailDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PortfoliosDetailDELETEAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserLogoutAPITest"></class>
+-->
+</classes>
+</test>
+
+<!--
+<test name="UnderReviewBusinessAPITest">
+
+<parameter name="SheetName" value="QAS" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+<class name="com.arcapi.testcases.CreateAssetPOSTNormalUserTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppaddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDocumentAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScorePostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetSearchAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssociatedCategoriesAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CountryStatesJSONAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.S3DocumentUploadPOSTAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormDownloadAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdateTeamPOSTAPITest"></class>  
+<class name="com.arcapi.UserAccessibilityTestcases.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveySummarizeAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FuelCategoryAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MetersAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetMeterDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaytokenPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaymentTokenGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ProjectTeamInfoAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamMemberUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamRoleListOptionAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveySummarizeSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserActivityListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AvgPerformaceListGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CO2GetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RecomputePerformanceScoreGetTest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataDeleteTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataZipCodeGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailsSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.VOCGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WaterGetTest"></class>
+
+</classes>
+</test>
+
+
+<test name="UnderReviewValidateBusinessAPITest">
+
+<parameter name="SheetName" value="QAS" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+<class name="com.arcapi.UserAccessibilityTestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppaddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDocumentAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScorePostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetSearchAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssociatedCategoriesAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CountryStatesJSONAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditGetAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormDownloadAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdateTeamPOSTAPITest"></class>  
+<class name="com.arcapi.UserAccessibilityTestcases.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveySummarizeAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FuelCategoryAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MetersAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetMeterDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaytokenPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaymentTokenGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ProjectTeamInfoAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamMemberUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamRoleListOptionAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveySummarizeSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserActivityListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AvgPerformaceListGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CO2GetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RecomputePerformanceScoreGetTest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataDeleteTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataZipCodeGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailsSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.VOCGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WaterGetTest"></class>
+
+</classes>
+</test>
+-->
+
+<!--
+<test name="MakeProjectDeactivatedBusinessAPITest">
+
+<parameter name="SheetName" value="QAS" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+<class name="com.arcapi.testcases.CreateAssetPOSTNormalUserTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetUpdateDeactivatedPUTAPITest"></class>
+
+</classes>
+</test>
+
+<test name="DeactivatedFlowBusinessAPITest">
+
+<parameter name="SheetName" value="QAS" />
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuilding" />
+<parameter name="SoReference" value="precertification review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+
+
+<classes>
+<class name="com.arcapi.UserAccessibilityTestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppaddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetAppDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetDocumentAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScorePostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetSearchAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetValidationInfoPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssociatedCategoriesAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CountryStatesJSONAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.CreditGetAPITest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormDownloadAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditFormUploadPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdateTeamPOSTAPITest"></class>  
+<class name="com.arcapi.UserAccessibilityTestcases.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.EnvironmentSurveySummarizeAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.FuelCategoryAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GetAllDocumentListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MetersAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AssetMeterDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.MeterDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CreditUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentOrderGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaytokenPOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PaymentReviewAutoPaymentTokenGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ProjectTeamInfoAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.PerformanceComparablesGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ScoreWeightsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamMemberUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TeamRoleListOptionAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.ThirdPartyListAppsAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveySummarizeSurveyAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TransitSurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserActivityListAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGetAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDetailDeleteAPITest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.AvgPerformaceListGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.CO2GetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.GhgGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.RecomputePerformanceScoreGetTest"></class> 
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataDeleteTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.TemperatureDataZipCodeGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.UserDetailsSAPGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.VOCGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteDivertedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataGetTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WasteGeneratedDataPostTest"></class>
+<class name="com.arcapi.UserAccessibilityTestcases.WaterGetTest"></class>
+</classes>
+</test>
+-->
+ 
+</suite> 
+  
+
+    
+  

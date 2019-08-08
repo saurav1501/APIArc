@@ -1,0 +1,2242 @@
+[
+    {
+        "name": "City wide energy consumption",
+        "field": "city_wide_energy_cons_num",
+        "unit_key": "city_wide_energy_cons_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 279
+    },
+    {
+        "name": "Total electricity use",
+        "field": "tot_elect_use_num",
+        "unit_key": "tot_elect_use_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 280
+    },
+    {
+        "name": "Total Electricity Generated",
+        "field": "tot_elect_gen_num",
+        "unit_key": "tot_elect_gen_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 281
+    },
+    {
+        "name": "Total Natural Gas use",
+        "field": "tot_nat_gas_use_num",
+        "unit_key": "tot_nat_gas_use_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 282
+    },
+    {
+        "name": "Residential sector energy consumption",
+        "field": "res_sec_energy_cons_num",
+        "unit_key": "res_sec_energy_cons_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 283
+    },
+    {
+        "name": "Commercial sector energy consumption",
+        "field": "comm_sec_energy_cons_num",
+        "unit_key": "comm_sec_energy_cons_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 284
+    },
+    {
+        "name": "Municipal energy consumption",
+        "field": "munic_energy_cons_num",
+        "unit_key": "munic_energy_cons_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 285
+    },
+    {
+        "name": "Transportation energy consumption",
+        "field": "trans_energy_cons_num",
+        "unit_key": "trans_energy_cons_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 286
+    },
+    {
+        "name": "Industrial energy consumption",
+        "field": "ind_energy_cons_num",
+        "unit_key": "ind_energy_cons_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 287
+    },
+    {
+        "name": "Water distribution and waste water  treatment  energy consumption",
+        "field": "wat_waste_treatment_energy_cons_num",
+        "unit_key": "wat_waste_treatment_energy_cons_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 288
+    },
+    {
+        "name": "Solid waste management energy consumption",
+        "field": "solid_waste_mgmt_energy_cons_num",
+        "unit_key": "solid_waste_mgmt_energy_cons_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 289
+    },
+    {
+        "name": "Cooling degree days (CDD)",
+        "field": "cool_degree_days_num",
+        "unit_key": "cool_degree_days_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 290
+    },
+    {
+        "name": "Heating degree days",
+        "field": "heat_degree_days_num",
+        "unit_key": "heat_degree_days_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 291
+    },
+    {
+        "name": "Emission Intensity",
+        "field": "emission_intensity_num",
+        "unit_key": "emission_intensity_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 292
+    },
+    {
+        "name": "Total CO2 emissions",
+        "field": "total_co2_emissions_num",
+        "unit_key": "total_co2_emissions_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 293
+    },
+    {
+        "name": "CO2 emissions from energy industry",
+        "field": "co2_emissions_energy_ind_num",
+        "unit_key": "co2_emissions_energy_ind_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 294
+    },
+    {
+        "name": "CO2 emissions from transport sector",
+        "field": "co2_emissions_trans_sec_num",
+        "unit_key": "co2_emissions_trans_sec_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 295
+    },
+    {
+        "name": "CO2 reduction target",
+        "field": "co2_red_target_num",
+        "unit_key": "co2_red_target_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 296
+    },
+    {
+        "name": "Total GHG emissions",
+        "field": "total_ghg_emissions_num",
+        "unit_key": "total_ghg_emissions_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 297
+    },
+    {
+        "name": "Residential GHG emissions",
+        "field": "res_ghg_emissions_num",
+        "unit_key": "res_ghg_emissions_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 298
+    },
+    {
+        "name": "Commercial GHG emissions",
+        "field": "comm_ghg_emissions_num",
+        "unit_key": "comm_ghg_emissions_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 299
+    },
+    {
+        "name": "Municipal operation GHG emissions",
+        "field": "mun_oper_ghg_emissions_num",
+        "unit_key": "mun_oper_ghg_emissions_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 300
+    },
+    {
+        "name": "Transportation GHG emissions",
+        "field": "trans_ghg_emissions_num",
+        "unit_key": "trans_ghg_emissions_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 301
+    },
+    {
+        "name": "Annual excess fuel consumed per peak auto commuter",
+        "field": "annual_excess_fuel_commuter_num",
+        "unit_key": "annual_excess_fuel_commuter_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 302
+    },
+    {
+        "name": "Industrial process GHG emissions",
+        "field": "ind_process_ghg_emissions_num",
+        "unit_key": "ind_process_ghg_emissions_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 303
+    },
+    {
+        "name": "Drinking Water treatment/water delivery emission",
+        "field": "drink_water_delivery_emission_num",
+        "unit_key": "drink_water_delivery_emission_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 304
+    },
+    {
+        "name": "Wastewater management Greenhouse gas emissions",
+        "field": "wastewater_mgmt_gas_emissions_num",
+        "unit_key": "wastewater_mgmt_gas_emissions_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 305
+    },
+    {
+        "name": "Solid waste facilities /management/treatment GHG emissions",
+        "field": "waste_facilities_ghg_emissions_num",
+        "unit_key": "waste_facilities_ghg_emissions_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 306
+    },
+    {
+        "name": "Number of ENERGY STAR® certified Buildings",
+        "field": "num_energy_star_cert_buildings_num",
+        "unit_key": "num_energy_star_cert_buildings_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 307
+    },
+    {
+        "name": "Total Floor Area of ENERGY STAR® Certified Buildings",
+        "field": "total_floorarea_cert_buildings_num",
+        "unit_key": "total_floorarea_cert_buildings_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 308
+    },
+    {
+        "name": "% of ENERGY STAR Certified Buildings",
+        "field": "per_energy_star_cert_buildings_num",
+        "unit_key": "per_energy_star_cert_buildings_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 309
+    },
+    {
+        "name": "%  sq.ft. of ENERGY STAR® Certified Buildings",
+        "field": "per_sqft_cert_buildings_num",
+        "unit_key": "per_sqft_cert_buildings_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 310
+    },
+    {
+        "name": "% of LEED certified Buildings (silver, gold or platinum)",
+        "field": "per_leed_cert_buildings_num",
+        "unit_key": "per_leed_cert_buildings_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 311
+    },
+    {
+        "name": "%  sq.ft of LEED certified Buildings(silver, gold or platinum)",
+        "field": "per_sqft_leed_cert_buildings_num",
+        "unit_key": "per_sqft_leed_cert_buildings_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 312
+    },
+    {
+        "name": "Total number of Residential buildings in the city",
+        "field": "total_number_res_buildings_city_num",
+        "unit_key": "total_number_res_buildings_city_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 313
+    },
+    {
+        "name": "Total Floor area of Residential buildings in the city",
+        "field": "total_floorarea_res_buildings_city_num",
+        "unit_key": "total_floorarea_res_buildings_city_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 314
+    },
+    {
+        "name": "Total number of buildings other than residentail in the city",
+        "field": "total_num_buildings_city_num",
+        "unit_key": "total_num_buildings_city_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 315
+    },
+    {
+        "name": "Total Floor area of buildings other than residential in the city",
+        "field": "total_floorarea_buildings_city_num",
+        "unit_key": "total_floorarea_buildings_city_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 316
+    },
+    {
+        "name": "Number of LEED certified buildings",
+        "field": "number_leed_certified_buildings_num",
+        "unit_key": "number_leed_certified_buildings_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 317
+    },
+    {
+        "name": "LEED certified sq ft",
+        "field": "leed_cert_sq_ft_num",
+        "unit_key": "leed_cert_sq_ft_num",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 318
+    },
+    {
+        "name": "ACEEE Index",
+        "field": "aceee_index_num",
+        "unit_key": "aceee_index_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 319
+    },
+    {
+        "name": "Total Renewable energy produced",
+        "field": "total_renewable_energy_produced_num",
+        "unit_key": "total_renewable_energy_produced_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 320
+    },
+    {
+        "name": "Total Renewable energy utilized",
+        "field": "total_renewable_energy_utilized_num",
+        "unit_key": "total_renewable_energy_utilized_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 321
+    },
+    {
+        "name": "Percentage of electrical generated from renewable sources",
+        "field": "perc_elect_rene_sources_num",
+        "unit_key": "perc_elect_rene_sources_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 322
+    },
+    {
+        "name": "Percentage of total energy consumed in city comes from renewable sources",
+        "field": "perc_energy_rene_sources_city_num",
+        "unit_key": "perc_energy_rene_sources_city_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 323
+    },
+    {
+        "name": "The amount of thermoelectric, power generated",
+        "field": "thermoelectric_power_generated_num",
+        "unit_key": "thermoelectric_power_generated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 324
+    },
+    {
+        "name": "Renewable energy targets?",
+        "field": "renewable_energy_targets_num",
+        "unit_key": "renewable_energy_targets_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 325
+    },
+    {
+        "name": "Solar (photovoltaics) - cumulative solar PV capacity",
+        "field": "solar_pv_capacity_num",
+        "unit_key": "solar_pv_capacity_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 326
+    },
+    {
+        "name": "Number of homes using solar water heaters",
+        "field": "homes_using_solar_water_heaters_num",
+        "unit_key": "homes_using_solar_water_heaters_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 327
+    },
+    {
+        "name": "Solar (thermal or photovoltaic) electricity generated",
+        "field": "solar_electricity_generated_num",
+        "unit_key": "solar_electricity_generated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 328
+    },
+    {
+        "name": "Geothermal Energy - electricity generated",
+        "field": "geothermal_electricity_generated_num",
+        "unit_key": "geothermal_electricity_generated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 329
+    },
+    {
+        "name": "Wind Power energy - electricity generated",
+        "field": "wind_electricity_generated_num",
+        "unit_key": "wind_electricity_generated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 330
+    },
+    {
+        "name": "Hydropowerr - electricity generated",
+        "field": "hydropower_electricity_generated_num",
+        "unit_key": "hydropower_electricity_generated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 331
+    },
+    {
+        "name": "Biomass energy- electricity generated",
+        "field": "biomass_energy_electricity_generated_num",
+        "unit_key": "biomass_energy_electricity_generated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 332
+    },
+    {
+        "name": "Nuclear - electricity generated",
+        "field": "nuclear_electricity_generated_num",
+        "unit_key": "nuclear_electricity_generated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 333
+    },
+    {
+        "name": "Hydro - electricity generated",
+        "field": "hydro_electricity_generated_num",
+        "unit_key": "hydro_electricity_generated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 334
+    },
+    {
+        "name": "Cool/white roof for heat island mitigation strategies",
+        "field": "heat_island_mitigation_strategies_txt",
+        "unit_key": "heat_island_mitigation_strategies_txt_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 335
+    },
+    {
+        "name": "Proportion of green roofs/green garden facilities for stormwater management in the city area- sq meter per sq mile",
+        "field": "stormwater_city_area_num",
+        "unit_key": "stormwater_city_area_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 336
+    },
+    {
+        "name": "Total Water used in the city",
+        "field": "total_water_used_in_city_num",
+        "unit_key": "total_water_used_in_city_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 337
+    },
+    {
+        "name": "Residential Water Consumption",
+        "field": "res_water_consumption_num",
+        "unit_key": "res_water_consumption_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 338
+    },
+    {
+        "name": "Domestic, total self-supplied withdrawals",
+        "field": "domestic_supplied_withdrawals_num",
+        "unit_key": "domestic_supplied_withdrawals_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 339
+    },
+    {
+        "name": "Domestic, self-supplied population, in thousands",
+        "field": "domestic_supplied_pop_num",
+        "unit_key": "domestic_supplied_pop_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 340
+    },
+    {
+        "name": "Domestic water, deliveries from public supply",
+        "field": "domestic_water_public_supply_num",
+        "unit_key": "domestic_water_public_supply_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 341
+    },
+    {
+        "name": "Public Supply, total population served, in thousands",
+        "field": "public_supply_population_served_num",
+        "unit_key": "public_supply_population_served_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 342
+    },
+    {
+        "name": "Proportion of population served with public water supply",
+        "field": "per_population_served_water_supply_num",
+        "unit_key": "per_population_served_water_supply_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 343
+    },
+    {
+        "name": "Public supply, total withdrawals",
+        "field": "public_supply_total_withdrawals_num",
+        "unit_key": "public_supply_total_withdrawals_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 344
+    },
+    {
+        "name": "Total water withdrawals for Irrigation ",
+        "field": "total_water_withdrawals_irrigation_num",
+        "unit_key": "total_water_withdrawals_irrigation_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 345
+    },
+    {
+        "name": "Total water withdrawals for thermoelectric use",
+        "field": "total_water_withdrawals_thermoelectric_num",
+        "unit_key": "total_water_withdrawals_thermoelectric_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 346
+    },
+    {
+        "name": "Total water withdrawals for all use",
+        "field": "total_water_withdrawals_alluse_num",
+        "unit_key": "total_water_withdrawals_alluse_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 347
+    },
+    {
+        "name": "Percentage of population with potable water supply service or with access to adequate and safe drinking water",
+        "field": "per_adequate_safe_drinking_water_num",
+        "unit_key": "per_adequate_safe_drinking_water_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 348
+    },
+    {
+        "name": "Percentage of city population served by wastewater collection system",
+        "field": "per_population_wastewater_collection_num",
+        "unit_key": "per_population_wastewater_collection_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 349
+    },
+    {
+        "name": "Waste Water Treated",
+        "field": "waste_water_treated_num",
+        "unit_key": "waste_water_treated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 350
+    },
+    {
+        "name": "Untreated Waste Water",
+        "field": "untreated_waste_water_num",
+        "unit_key": "untreated_waste_water_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 351
+    },
+    {
+        "name": "Total Waste Water based Methane Gas Generated",
+        "field": "total_methane_gas_generated_num",
+        "unit_key": "total_methane_gas_generated_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 352
+    },
+    {
+        "name": "Waste Water based Methane Gas Released in Atmosphere",
+        "field": "wwbmgra_num",
+        "unit_key": "wwbmgra_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 353
+    },
+    {
+        "name": "Waste Water based Methane Gas Flared",
+        "field": "add_field_1_num",
+        "unit_key": "add_field_1_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 354
+    },
+    {
+        "name": "Waste Water based Methane Gas converted to Natural Gas",
+        "field": "add_field_2_num",
+        "unit_key": "add_field_2_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 355
+    },
+    {
+        "name": "Waste Water based Methane Gas converted to Electricity",
+        "field": "add_field_3_num",
+        "unit_key": "add_field_3_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 356
+    },
+    {
+        "name": "Total Municipal Solid Waste generation (MSW)",
+        "field": "add_field_4_num",
+        "unit_key": "add_field_4_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 357
+    },
+    {
+        "name": "Municipal Solid Waste Collection coverage",
+        "field": "add_field_5_num",
+        "unit_key": "add_field_5_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 358
+    },
+    {
+        "name": "Separate collection of Landfilled and Recycling Waste",
+        "field": "add_field_6_num",
+        "unit_key": "add_field_6_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 359
+    },
+    {
+        "name": "Waste Landfilled",
+        "field": "add_field_7_num",
+        "unit_key": "add_field_7_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 360
+    },
+    {
+        "name": "Total Recyclable Waste Collected by the City",
+        "field": "add_field_8_num",
+        "unit_key": "add_field_8_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 361
+    },
+    {
+        "name": "Landfill diversion rate - the percentage of municipal solid waste diverted from the waste stream to be recycled (%)",
+        "field": "add_field_9_num",
+        "unit_key": "add_field_9_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 362
+    },
+    {
+        "name": "Recycling rate",
+        "field": "add_field_10_num",
+        "unit_key": "add_field_10_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 363
+    },
+    {
+        "name": "Annual waste recycled- Total amount of waste recycled",
+        "field": "add_field_11_num",
+        "unit_key": "add_field_11_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 364
+    },
+    {
+        "name": "Annual Curbsides collected",
+        "field": "add_field_12_num",
+        "unit_key": "add_field_12_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 365
+    },
+    {
+        "name": "Annual containerized collected",
+        "field": "add_field_13_num",
+        "unit_key": "add_field_13_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 366
+    },
+    {
+        "name": "Total MSW Serviced customers",
+        "field": "add_field_14_num",
+        "unit_key": "add_field_14_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 367
+    },
+    {
+        "name": "Consumers Participating in recylcing",
+        "field": "add_field_15_num",
+        "unit_key": "add_field_15_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 368
+    },
+    {
+        "name": "Total Construction Waste Generated",
+        "field": "add_field_16_num",
+        "unit_key": "add_field_16_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 369
+    },
+    {
+        "name": "Total Hospital/Biological Waste Generated",
+        "field": "add_field_17_num",
+        "unit_key": "add_field_17_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 370
+    },
+    {
+        "name": "Total Construction Waste Recycled",
+        "field": "add_field_18_num",
+        "unit_key": "add_field_18_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 371
+    },
+    {
+        "name": "Total Methane Gas Generated from Landfills",
+        "field": "add_field_19_num",
+        "unit_key": "add_field_19_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 372
+    },
+    {
+        "name": "Total Methane Gas Flared from Landfills",
+        "field": "add_field_20_num",
+        "unit_key": "add_field_20_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 373
+    },
+    {
+        "name": "MSW based Methane Gas converted to Natural Gas",
+        "field": "add_field_21_num",
+        "unit_key": "add_field_21_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 374
+    },
+    {
+        "name": "MSW based Methane Gas converted to Electricity",
+        "field": "add_field_22_num",
+        "unit_key": "add_field_22_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 375
+    },
+    {
+        "name": "MSW based Methane Gas converted to Biofuels",
+        "field": "add_field_23_num",
+        "unit_key": "add_field_23_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 376
+    },
+    {
+        "name": "Annual vehicle Miles Travelled",
+        "field": "add_field_24_num",
+        "unit_key": "add_field_6_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 377
+    },
+    {
+        "name": "Annual Trips made on Public Transit",
+        "field": "add_field_24_num",
+        "unit_key": "add_field_24_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 378
+    },
+    {
+        "name": "Maximum public transport vehicles available per square mile",
+        "field": "add_field_25_num",
+        "unit_key": "add_field_25_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 379
+    },
+    {
+        "name": "Length of public transport",
+        "field": "add_field_26_num",
+        "unit_key": "add_field_26_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 380
+    },
+    {
+        "name": "Number of people commute to work by public transportation",
+        "field": "add_field_27_num",
+        "unit_key": "add_field_27_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 381
+    },
+    {
+        "name": "Share of drove alone to work",
+        "field": "add_field_28_num",
+        "unit_key": "add_field_28_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 382
+    },
+    {
+        "name": "Share of carpooled to work",
+        "field": "add_field_29_num",
+        "unit_key": "add_field_29_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 383
+    },
+    {
+        "name": "Share of using public transportation to work (excluding taxicab)",
+        "field": "add_field_30_num",
+        "unit_key": "add_field_30_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 384
+    },
+    {
+        "name": "Share of walking to work",
+        "field": "add_field_31_num",
+        "unit_key": "add_field_31_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 385
+    },
+    {
+        "name": "Share of bike commuters",
+        "field": "add_field_32_num",
+        "unit_key": "add_field_32_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 386
+    },
+    {
+        "name": "Share of work at home",
+        "field": "add_field_33_num",
+        "unit_key": "add_field_33_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 387
+    },
+    {
+        "name": "Average commute time from residence to work, worker age 16+",
+        "field": "add_field_34_num",
+        "unit_key": "add_field_34_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 388
+    },
+    {
+        "name": "Percentage of  people work outside place of residence",
+        "field": "add_field_35_num",
+        "unit_key": "add_field_35_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 389
+    },
+    {
+        "name": "Total miles/km of bicycle infrastructure per sq mile/km",
+        "field": "add_field_36_num",
+        "unit_key": "add_field_36_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 390
+    },
+    {
+        "name": "Total miles/km of sidewalks per sq mile/km",
+        "field": "add_field_37_num",
+        "unit_key": "add_field_37_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 391
+    },
+    {
+        "name": "Percentage of worker 16 years and over don't possess  a vehicle",
+        "field": "add_field_38_num",
+        "unit_key": "add_field_38_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 392
+    },
+    {
+        "name": "percentage of housing unit don't possess a vehicle",
+        "field": "add_field_39_num",
+        "unit_key": "add_field_39_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 393
+    },
+    {
+        "name": "Total Number of Registered vehicles",
+        "field": "add_field_40_num",
+        "unit_key": "add_field_40_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 394
+    },
+    {
+        "name": "Total roadway miles",
+        "field": "add_field_41_num",
+        "unit_key": "add_field_41_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 395
+    },
+    {
+        "name": "Total miles of Freeway",
+        "field": "add_field_42_num",
+        "unit_key": "add_field_42_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 396
+    },
+    {
+        "name": "Total Freeways miles travelled daily",
+        "field": "add_field_43_num",
+        "unit_key": "add_field_43_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 397
+    },
+    {
+        "name": "% of total Miles serving as freeways",
+        "field": "add_field_44_num",
+        "unit_key": "add_field_44_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 398
+    },
+    {
+        "name": "% of total DVMT served by freeways",
+        "field": "add_field_45_num",
+        "unit_key": "add_field_45_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 399
+    },
+    {
+        "name": "Total freeway lane miles",
+        "field": "add_field_46_num",
+        "unit_key": "add_field_46_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 400
+    },
+    {
+        "name": "Average daily number of cars per freeway lane mile",
+        "field": "add_field_47_num",
+        "unit_key": "add_field_47_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 401
+    },
+    {
+        "name": "Daily vehicle-miles of travel on Arterial streets",
+        "field": "add_field_48_num",
+        "unit_key": "add_field_48_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 402
+    },
+    {
+        "name": "Lane-miles of Arterial streets",
+        "field": "add_field_49_num",
+        "unit_key": "add_field_49_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 403
+    },
+    {
+        "name": "Annual passenger-miles of travel of public transportation",
+        "field": "add_field_50_num",
+        "unit_key": "add_field_50_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 404
+    },
+    {
+        "name": "Annual unlinked passenger trips of public transportation",
+        "field": "add_field_51_num",
+        "unit_key": "add_field_51_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 405
+    },
+    {
+        "name": "Congested travel",
+        "field": "add_field_52_num",
+        "unit_key": "add_field_52_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 406
+    },
+    {
+        "name": "Congested system",
+        "field": "add_field_53_num",
+        "unit_key": "add_field_53_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 407
+    },
+    {
+        "name": "Congested time (rush hours)",
+        "field": "add_field_54_num",
+        "unit_key": "add_field_54_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 408
+    },
+    {
+        "name": "Annual delay per peak auto commuter",
+        "field": "add_field_55_num",
+        "unit_key": "add_field_55_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 409
+    },
+    {
+        "name": "Travel Time Index",
+        "field": "add_field_56_num",
+        "unit_key": "add_field_56_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 410
+    },
+    {
+        "name": "Congestion cost per peak auto commuter",
+        "field": "add_field_57_num",
+        "unit_key": "add_field_57_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 411
+    },
+    {
+        "name": "Additional CO2 production on Freeways and Arterial Street due to roadway congestion",
+        "field": "add_field_58_num",
+        "unit_key": "add_field_58_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 412
+    },
+    {
+        "name": "Roadway congestion index",
+        "field": "add_field_59_num",
+        "unit_key": "add_field_59_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 413
+    },
+    {
+        "name": "Citywide total  traffic fatality rate per 100000 population",
+        "field": "add_field_60_num",
+        "unit_key": "add_field_60_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 414
+    },
+    {
+        "name": "Pedestrian fatality rate per 100,000 population",
+        "field": "add_field_61_num",
+        "unit_key": "add_field_61_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 415
+    },
+    {
+        "name": "Percentage of the passenger vehicle/individual/ public transport fleet using alternative fuels",
+        "field": "add_field_62_num",
+        "unit_key": "add_field_62_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 416
+    },
+    {
+        "name": "Percentage of Private vehicles running on natural gas",
+        "field": "add_field_63_num",
+        "unit_key": "add_field_63_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 417
+    },
+    {
+        "name": "Percentage of Private vehicles running on Bio fuels",
+        "field": "add_field_64_num",
+        "unit_key": "add_field_64_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 418
+    },
+    {
+        "name": "Percentage of Private vehicles running on electricity",
+        "field": "add_field_65_num",
+        "unit_key": "add_field_65_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 419
+    },
+    {
+        "name": "Percentage of Private vehicles that are hybrids or plug-in hybrids",
+        "field": "add_field_66_num",
+        "unit_key": "add_field_66_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 420
+    },
+    {
+        "name": "Percentage of Government fleet running on natural gas",
+        "field": "add_field_67_num",
+        "unit_key": "add_field_67_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 421
+    },
+    {
+        "name": "Percentage of Government fleet running on Bio fuels",
+        "field": "add_field_68_num",
+        "unit_key": "add_field_68_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 422
+    },
+    {
+        "name": "Percentage of Government fleet running on electricity",
+        "field": "add_field_69_num",
+        "unit_key": "add_field_69_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 423
+    },
+    {
+        "name": "Percentage of Government fleet that are hybrids or plug-in hybrids",
+        "field": "add_field_70_num",
+        "unit_key": "add_field_70_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 424
+    },
+    {
+        "name": "Percentage of Public buses running on natural gas",
+        "field": "add_field_71_num",
+        "unit_key": "add_field_71_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 425
+    },
+    {
+        "name": "Percentage of  Public buses running on Bio fuels",
+        "field": "add_field_72_num",
+        "unit_key": "add_field_72_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 426
+    },
+    {
+        "name": "Percentage of  Public buses running on electricity",
+        "field": "add_field_73_num",
+        "unit_key": "add_field_73_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 427
+    },
+    {
+        "name": "Percentage of  Public buses that are hybrids or plug-in hybrids",
+        "field": "add_field_74_num",
+        "unit_key": "add_field_74_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 428
+    },
+    {
+        "name": "Life expectancy  at birth",
+        "field": "add_field_75_num",
+        "unit_key": "add_field_75_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 429
+    },
+    {
+        "name": "Infant mortality under 1 year of age per 1000 per live births",
+        "field": "add_field_76_num",
+        "unit_key": "add_field_76_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 430
+    },
+    {
+        "name": "Mortality rate: all causes",
+        "field": "add_field_77_num",
+        "unit_key": "add_field_77_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 431
+    },
+    {
+        "name": "Percentage of people with health insurance coverage",
+        "field": "add_field_78_num",
+        "unit_key": "add_field_78_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 432
+    },
+    {
+        "name": "People with Disability status ",
+        "field": "add_field_79_num",
+        "unit_key": "add_field_79_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 433
+    },
+    {
+        "name": "Percentage of population are obese or overweight",
+        "field": "add_field_80_num",
+        "unit_key": "add_field_80_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 434
+    },
+    {
+        "name": "Percentage of population have diabetes",
+        "field": "add_field_81_num",
+        "unit_key": "add_field_81_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 435
+    },
+    {
+        "name": "PM10 - Annual mean PM10 concentrations in ug/m3",
+        "field": "add_field_82_num",
+        "unit_key": "add_field_82_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 436
+    },
+    {
+        "name": "PM2.5 - Annual mean PM2.5 concentrations in ug/m3",
+        "field": "add_field_83_num",
+        "unit_key": "add_field_83_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 437
+    },
+    {
+        "name": "NOx - Annual mean NOx concentrations in ppb",
+        "field": "add_field_84_num",
+        "unit_key": "add_field_84_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 438
+    },
+    {
+        "name": "SO2 - Annual mean SO2 concentrations in ppb",
+        "field": "add_field_85_num",
+        "unit_key": "add_field_85_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 439
+    },
+    {
+        "name": "Ground level Ozone - annual fourth-higheset daily maximum 8-hour average concentration, in ppm",
+        "field": "add_field_86_num",
+        "unit_key": "add_field_86_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 440
+    },
+    {
+        "name": "Groud level Ozone - annual mean concentration",
+        "field": "add_field_87_num",
+        "unit_key": "add_field_87_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 441
+    },
+    {
+        "name": "CO - Annual mean CO concentrations in ppm",
+        "field": "add_field_88_num",
+        "unit_key": "add_field_88_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 442
+    },
+    {
+        "name": "Lead (Pb) level  - annual mean pb concentration in ug/m3",
+        "field": "add_field_89_num",
+        "unit_key": "add_field_89_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 443
+    },
+    {
+        "name": "Median Air Quality Index(AQI) by CBSA",
+        "field": "add_field_90_num",
+        "unit_key": "add_field_90_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 444
+    },
+    {
+        "name": "Max Air Quality Index (AQI) by CBSA",
+        "field": "add_field_91_num",
+        "unit_key": "add_field_91_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 445
+    },
+    {
+        "name": "Number of days Unhealthy for Sensitive Groups by CBSA",
+        "field": "add_field_92_num",
+        "unit_key": "add_field_92_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 446
+    },
+    {
+        "name": "Number of days unhealthy by CBSA",
+        "field": "add_field_93_num",
+        "unit_key": "add_field_93_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 447
+    },
+    {
+        "name": "Median Air Quality Index(AQI) by county",
+        "field": "add_field_94_num",
+        "unit_key": "add_field_94_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 448
+    },
+    {
+        "name": "Max Air Quality Index (AQI) by county",
+        "field": "add_field_95_num",
+        "unit_key": "add_field_95_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 449
+    },
+    {
+        "name": "Number of days Unhealthy for Sensitive Groups by county",
+        "field": "add_field_96_num",
+        "unit_key": "add_field_96_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 450
+    },
+    {
+        "name": "Number of days unhealthy by county",
+        "field": "add_field_97_num",
+        "unit_key": "add_field_97_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 451
+    },
+    {
+        "name": "Number of smog days",
+        "field": "add_field_98_num",
+        "unit_key": "add_field_98_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 452
+    },
+    {
+        "name": "Additional days the air was unhealthy to breathe",
+        "field": "add_field_99_num",
+        "unit_key": "add_field_99_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 453
+    },
+    {
+        "name": "Highest Concentration",
+        "field": "add_field_100_num",
+        "unit_key": "add_field_100_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 454
+    },
+    {
+        "name": "Air pollution days (in a year)",
+        "field": "add_field_101_num",
+        "unit_key": "add_field_101_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 455
+    },
+    {
+        "name": "Total Green area coverage in the city",
+        "field": "add_field_102_num",
+        "unit_key": "add_field_102_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 456
+    },
+    {
+        "name": "Total area covered by Parkland",
+        "field": "add_field_103_num",
+        "unit_key": "add_field_103_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 457
+    },
+    {
+        "name": "Number of Parks/playground",
+        "field": "add_field_104_num",
+        "unit_key": "add_field_104_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 458
+    },
+    {
+        "name": "Percent of city population with walkable park access (within 1/2 miles of a park) - Public access to green space",
+        "field": "add_field_105_num",
+        "unit_key": "add_field_105_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 459
+    },
+    {
+        "name": "Number of farms",
+        "field": "add_field_106_num",
+        "unit_key": "add_field_106_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 460
+    },
+    {
+        "name": "Total land in farms",
+        "field": "add_field_107_num",
+        "unit_key": "add_field_107_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 461
+    },
+    {
+        "name": "Green sectors - farmer markets ratio",
+        "field": "add_field_108_num",
+        "unit_key": "add_field_108_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 462
+    },
+    {
+        "name": "Farm land ratio",
+        "field": "add_field_109_num",
+        "unit_key": "add_field_109_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 463
+    },
+    {
+        "name": "Number of law enforcement officers",
+        "field": "add_field_110_num",
+        "unit_key": "add_field_110_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 464
+    },
+    {
+        "name": "Number of law enforcement civilian employees",
+        "field": "add_field_111_num",
+        "unit_key": "add_field_111_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 465
+    },
+    {
+        "name": "Percentage of government workers of the civilian employed population over 16 years",
+        "field": "add_field_112_num",
+        "unit_key": "add_field_112_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 466
+    },
+    {
+        "name": "Crime rate index",
+        "field": "add_field_113_num",
+        "unit_key": "add_field_113_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 467
+    },
+    {
+        "name": "Number of violent crimes",
+        "field": "add_field_114_num",
+        "unit_key": "add_field_114_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 468
+    },
+    {
+        "name": "Number of property crimes",
+        "field": "add_field_115_num",
+        "unit_key": "add_field_115_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 469
+    },
+    {
+        "name": "Total number of crimes",
+        "field": "add_field_116_num",
+        "unit_key": "add_field_116_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 470
+    },
+    {
+        "name": "City Gross Domestic Poduct (GDP)",
+        "field": "add_field_117_num",
+        "unit_key": "add_field_117_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 471
+    },
+    {
+        "name": "Real GDP by metropolitan area",
+        "field": "add_field_118_num",
+        "unit_key": "add_field_118_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 472
+    },
+    {
+        "name": "GDP annual average growth rate",
+        "field": "add_field_119_num",
+        "unit_key": "add_field_119_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 473
+    },
+    {
+        "name": "Median Household Income",
+        "field": "add_field_120_num",
+        "unit_key": "add_field_120_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 474
+    },
+    {
+        "name": "Mean household income",
+        "field": "add_field_121_num",
+        "unit_key": "add_field_121_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 475
+    },
+    {
+        "name": "Average income per capita",
+        "field": "add_field_122_num",
+        "unit_key": "add_field_122_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 476
+    },
+    {
+        "name": "Cost of living",
+        "field": "add_field_123_num",
+        "unit_key": "add_field_123_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 477
+    },
+    {
+        "name": "Minimum Hourly wages",
+        "field": "add_field_124_num",
+        "unit_key": "add_field_124_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 478
+    },
+    {
+        "name": "Percentage of people earning less than the mean per capita income",
+        "field": "add_field_125_num",
+        "unit_key": "add_field_125_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 479
+    },
+    {
+        "name": "Unemployment rate",
+        "field": "add_field_126_num",
+        "unit_key": "add_field_126_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 480
+    },
+    {
+        "name": "House price to rent ratio",
+        "field": "add_field_127_num",
+        "unit_key": "add_field_127_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 481
+    },
+    {
+        "name": "Zillow Rent Index",
+        "field": "add_field_128_num",
+        "unit_key": "add_field_128_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 482
+    },
+    {
+        "name": "Income concentration index (GINI coefficient)",
+        "field": "add_field_129_num",
+        "unit_key": "add_field_129_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 483
+    },
+    {
+        "name": "Housing affordability -Housing price to income ratio - Cost of Living Proportion of income spent on housing (%) ",
+        "field": "add_field_130_num",
+        "unit_key": "add_field_130_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 484
+    },
+    {
+        "name": "Housing affordability - median gross rent as percentage of household income",
+        "field": "add_field_131_num",
+        "unit_key": "add_field_131_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 485
+    },
+    {
+        "name": "Rent to own ratio/homeownership rate",
+        "field": "add_field_132_num",
+        "unit_key": "add_field_132_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 486
+    },
+    {
+        "name": "Percentage of occupied housing units",
+        "field": "add_field_133_num",
+        "unit_key": "add_field_133_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 487
+    },
+    {
+        "name": "Percentage of civilian over 16 years and over  employed in agriculture, forestry, fishing and hunting, and mining ",
+        "field": "add_field_134_num",
+        "unit_key": "add_field_134_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 488
+    },
+    {
+        "name": "Percentage of foreign born population",
+        "field": "add_field_135_num",
+        "unit_key": "add_field_135_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 489
+    },
+    {
+        "name": "Percentage of  civilian employed population 16 years and over that is female",
+        "field": "add_field_136_num",
+        "unit_key": "add_field_136_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 490
+    },
+    {
+        "name": "Women civilian labor force participation rate",
+        "field": "add_field_137_num",
+        "unit_key": "add_field_137_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 491
+    },
+    {
+        "name": "Homeless population",
+        "field": "add_field_138_num",
+        "unit_key": "add_field_138_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 492
+    },
+    {
+        "name": "Percentage of population living below poverty line",
+        "field": "add_field_139_num",
+        "unit_key": "add_field_139_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 493
+    },
+    {
+        "name": "Educational Attainment -  % of population with a high school degree or higher",
+        "field": "add_field_140_num",
+        "unit_key": "add_field_140_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 494
+    },
+    {
+        "name": "Higher educational Attainment - % of population with bachelor degree or higher",
+        "field": "add_field_141_num",
+        "unit_key": "add_field_141_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 495
+    },
+    {
+        "name": "Annual Number of Public Transport Trips per Capita",
+        "field": "add_field_142_num",
+        "unit_key": "add_field_142_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 496
+    },
+    {
+        "name": "Average Life Expectancy ",
+        "field": "add_field_143_num",
+        "unit_key": "add_field_143_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 497
+    },
+    {
+        "name": "Number of In-Patient Hospital Beds",
+        "field": "add_field_144_num",
+        "unit_key": "add_field_144_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 498
+    },
+    {
+        "name": "Country GDP per Capita",
+        "field": "add_field_145_num",
+        "unit_key": "add_field_145_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 499
+    },
+    {
+        "name": "Persons in Fulltime Employment",
+        "field": "add_field_146_num",
+        "unit_key": "add_field_146_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 500
+    },
+    {
+        "name": "Drinking water",
+        "field": "add_field_147_num",
+        "unit_key": "add_field_147_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 501
+    },
+    {
+        "name": "Waste Generated",
+        "field": "add_field_148_num",
+        "unit_key": "add_field_148_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 502
+    },
+    {
+        "name": "Hazardous waste",
+        "field": "add_field_149_num",
+        "unit_key": "add_field_149_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 503
+    },
+    {
+        "name": "% age of population commuting to work by public transportation (tempo/auto rickshaw/taxi, bus, train and water transport)",
+        "field": "add_field_150_num",
+        "unit_key": "add_field_150_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 504
+    },
+    {
+        "name": "City Gross/Net District Domestic Product GDDP ",
+        "field": "add_field_151_num",
+        "unit_key": "add_field_151_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 505
+    },
+    {
+        "name": "Per Capita Net District Domestic Product ",
+        "field": "add_field_152_num",
+        "unit_key": "add_field_152_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 506
+    },
+    {
+        "name": "Total Literacy rate (7yrs+ read and write)",
+        "field": "add_field_153_num",
+        "unit_key": "add_field_153_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 507
+    },
+    {
+        "name": "Urban Poor",
+        "field": "add_field_154_num",
+        "unit_key": "add_field_154_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 508
+    },
+    {
+        "name": "Air Quality Index (AQI) SO2",
+        "field": "add_field_155_num",
+        "unit_key": "add_field_155_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 509
+    },
+    {
+        "name": "Air Quality Index (AQI) NO2",
+        "field": "add_field_156_num",
+        "unit_key": "add_field_156_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 510
+    },
+    {
+        "name": "Air Quality Index (AQI) PM10",
+        "field": "add_field_157_num",
+        "unit_key": "add_field_157_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 511
+    },
+    {
+        "name": "Annual total citywide electricity consumption",
+        "field": "add_field_158_num",
+        "unit_key": "add_field_158_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 512
+    },
+    {
+        "name": "Total Gas Supply (Coal Gas, Natural Gas)",
+        "field": "add_field_159_num",
+        "unit_key": "add_field_159_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 513
+    },
+    {
+        "name": "Total citywide water supply amount",
+        "field": "add_field_160_num",
+        "unit_key": "add_field_160_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 514
+    },
+    {
+        "name": "Total Annual Volume of Passengers Transported by Buses and Trolley Buses",
+        "field": "add_field_161_num",
+        "unit_key": "add_field_161_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 515
+    },
+    {
+        "name": "Industrial solid waste generation",
+        "field": "add_field_162_num",
+        "unit_key": "add_field_162_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 516
+    },
+    {
+        "name": "Amount of industrial solid waste treated",
+        "field": "add_field_163_num",
+        "unit_key": "add_field_163_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 517
+    },
+    {
+        "name": "Number of Beds of Hospitals and Health Centers",
+        "field": "add_field_164_num",
+        "unit_key": "add_field_164_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 518
+    },
+    {
+        "name": "Number of days that air quality reached the national Grade II standards",
+        "field": "add_field_165_num",
+        "unit_key": "add_field_165_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 519
+    },
+    {
+        "name": "Students Enrollment of regular Institutions of higher Education per 10 000 population",
+        "field": "add_field_166_num",
+        "unit_key": "add_field_166_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 520
+    },
+    {
+        "name": "Average wages of employed staff and workers",
+        "field": "add_field_167_num",
+        "unit_key": "add_field_167_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 521
+    },
+    {
+        "name": "Total passenger traffic",
+        "field": "add_field_168_num",
+        "unit_key": "add_field_168_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 522
+    },
+    {
+        "name": "Total freight traffic",
+        "field": "add_field_169_num",
+        "unit_key": "add_field_169_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 523
+    },
+    {
+        "name": "Consumption of Gas for Residential Use",
+        "field": "add_field_170_num",
+        "unit_key": "add_field_170_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 524
+    },
+    {
+        "name": "Population with Access To Gas",
+        "field": "add_field_171_num",
+        "unit_key": "add_field_171_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 525
+    },
+    {
+        "name": "Liquefied Petroleum Gas Supply",
+        "field": "add_field_172_num",
+        "unit_key": "add_field_172_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 526
+    },
+    {
+        "name": "Consumption of Liquefied Petroleum Gas for residential use",
+        "field": "add_field_173_num",
+        "unit_key": "add_field_173_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 527
+    },
+    {
+        "name": "Population with Access To  Liquefied Petroleum Gas ",
+        "field": "add_field_174_num",
+        "unit_key": "add_field_174_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 528
+    },
+    {
+        "name": "Area of City Paved Roads at year-end",
+        "field": "add_field_175_num",
+        "unit_key": "add_field_175_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 529
+    },
+    {
+        "name": "Number of Buses and Trolley Buses under Operation at year-end",
+        "field": "add_field_176_num",
+        "unit_key": "add_field_176_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 530
+    },
+    {
+        "name": "Number of Taxis at year-end",
+        "field": "add_field_177_num",
+        "unit_key": "add_field_177_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 531
+    },
+    {
+        "name": "Number of Public Transportation Vehicles per 10 000 Population",
+        "field": "add_field_178_num",
+        "unit_key": "add_field_178_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 532
+    },
+    {
+        "name": "Per Capita  Area of Paved Roads in City ",
+        "field": "add_field_179_num",
+        "unit_key": "add_field_179_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 533
+    },
+    {
+        "name": "Green Covered Area of city's built-up Area ",
+        "field": "add_field_180_num",
+        "unit_key": "add_field_180_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 534
+    },
+    {
+        "name": "Green Covered Area as % of city's built-up Area ",
+        "field": "add_field_181_num",
+        "unit_key": "add_field_181_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 535
+    },
+    {
+        "name": "Volume of Industrial waste water discharged",
+        "field": "add_field_182_num",
+        "unit_key": "add_field_182_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 536
+    },
+    {
+        "name": "Volume of Industry Sulphur Dioxide Produced",
+        "field": "add_field_183_num",
+        "unit_key": "add_field_183_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 537
+    },
+    {
+        "name": "The amonut of industrial SOx emissions",
+        "field": "add_field_184_num",
+        "unit_key": "add_field_184_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 538
+    },
+    {
+        "name": "Volume of Industrial Soot (dust) Removed",
+        "field": "add_field_185_num",
+        "unit_key": "add_field_185_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 539
+    },
+    {
+        "name": "The amonut of industrial soot (dust) emissions",
+        "field": "add_field_186_num",
+        "unit_key": "add_field_186_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 540
+    },
+    {
+        "name": "Ratio of Industrial Solid Wastes Comprehensively Utilized",
+        "field": "add_field_187_num",
+        "unit_key": "add_field_187_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 541
+    },
+    {
+        "name": "Ratio of waste water centralized treated of sewage work",
+        "field": "add_field_188_num",
+        "unit_key": "add_field_188_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 542
+    },
+    {
+        "name": "Ratio of household wastes treated without causing pollution",
+        "field": "add_field_189_num",
+        "unit_key": "add_field_189_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 543
+    },
+    {
+        "name": "Expenditure for Maintaining and Building Cities",
+        "field": "add_field_190_num",
+        "unit_key": "add_field_190_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 544
+    },
+    {
+        "name": "Length of City Sewage Pipes",
+        "field": "add_field_191_num",
+        "unit_key": "add_field_191_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 545
+    },
+    {
+        "name": "Number of Employees Joining  Basic Pension Insurance",
+        "field": "add_field_192_num",
+        "unit_key": "add_field_192_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 546
+    },
+    {
+        "name": "Number of Persons Joining Urban Basic Medical Care System",
+        "field": "add_field_193_num",
+        "unit_key": "add_field_193_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 547
+    },
+    {
+        "name": "Persons Covered of Unemployment Insurance",
+        "field": "add_field_194_num",
+        "unit_key": "add_field_194_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 548
+    },
+    {
+        "name": "Number of Hospitals and Health centers",
+        "field": "add_field_195_num",
+        "unit_key": "add_field_195_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 549
+    },
+    {
+        "name": "Number of Doctors (Licensed Doctors+ Assistant Doctors)",
+        "field": "add_field_196_num",
+        "unit_key": "add_field_196_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 550
+    },
+    {
+        "name": "Students Enrollment of Vocational Secondary Schools Per 10 000 population",
+        "field": "add_field_197_num",
+        "unit_key": "add_field_197_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 551
+    },
+    {
+        "name": "Number of Projects for Contracted Foreign Direct Investment",
+        "field": "add_field_198_num",
+        "unit_key": "add_field_198_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 552
+    },
+    {
+        "name": "Amount of Foreign Capital actually used",
+        "field": "add_field_199_num",
+        "unit_key": "add_field_199_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 553
+    },
+    {
+        "name": "Volume of Domestic waste water discharged",
+        "field": "add_field_200_num",
+        "unit_key": "add_field_200_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 554
+    },
+    {
+        "name": "The amount of industrial NOx emissions",
+        "field": "add_field_201_num",
+        "unit_key": "add_field_201_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 555
+    },
+    {
+        "name": "The amount of domestic SOx emissions",
+        "field": "add_field_202_num",
+        "unit_key": "add_field_202_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 556
+    },
+    {
+        "name": "The amount of domestic NOx emissions",
+        "field": "add_field_203_num",
+        "unit_key": "add_field_203_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 557
+    },
+    {
+        "name": "The amount of domestic soot (dust) emissions",
+        "field": "add_field_204_num",
+        "unit_key": "add_field_204_num_unit",
+        "unit": "",
+        "value": "",
+        "fuel_type_id": 558
+    }
+]

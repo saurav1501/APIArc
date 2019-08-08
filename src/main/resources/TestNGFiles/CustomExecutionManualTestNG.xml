@@ -1,0 +1,76 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CustomExecution">
+
+<!-- <listeners>
+        <listener class-name="com.arc.Listeners.RetryListener" />
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners> -->
+
+
+<test name="CompleteFlowTest-Parksmart">
+
+
+<parameter name="ProjectType" value="parksmart" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuild1" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.Parksmarttestcases.LoginAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartManualReqTest"></class>
+<class name="com.arcapi.Parksmarttestcases.SignAgreementRegistrationManualTest"></class>
+<class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitManualTest"></class>
+<class name="com.arcapi.Parksmarttestcases.AddAssestTimelineManualTest"></class>
+
+
+</classes>
+</test> 
+
+<test name="CompleteFlowTest-Parksmart1">
+
+
+<parameter name="ProjectType" value="parksmart" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuild2" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.Parksmarttestcases.LoginAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartManualReqTest"></class>
+<class name="com.arcapi.Parksmarttestcases.SignAgreementRegistrationManualTest"></class>
+<class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitManualTest"></class>
+<class name="com.arcapi.Parksmarttestcases.AddAssestTimelineManualTest"></class>
+
+
+</classes>
+</test> 
+
+<test name="CompleteFlowTest-Parksmart2">
+
+
+<parameter name="ProjectType" value="parksmart" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuild3" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.Parksmarttestcases.LoginAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartManualReqTest"></class>
+<class name="com.arcapi.Parksmarttestcases.SignAgreementRegistrationManualTest"></class>
+<class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitManualTest"></class>
+<class name="com.arcapi.Parksmarttestcases.AddAssestTimelineManualTest"></class>
+
+
+</classes>
+</test> 
+
+</suite> 

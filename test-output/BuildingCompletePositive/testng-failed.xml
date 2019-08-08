@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BuildingCompletePositive]">
+  <parameter name="environment" value="staging"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CheckPayment"/>
+  <parameter name="SheetName" value="STG"/>
+  <test thread-count="5" name="CompleteFlowTest-Building-None(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="RecomputePerformanceScoreGet" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-None(failed) -->
+  <test thread-count="5" name="CompleteFlowTest-Building-Other(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="RecomputePerformanceScoreGet" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest -->
+      <class name="com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyAdminRemoveAPI" invocation-numbers="0"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-Other(failed) -->
+</suite> <!-- Failed suite [BuildingCompletePositive] -->

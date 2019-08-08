@@ -1,0 +1,144 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CustomExecution">
+
+ 
+<!-- <test name="CityReferenceSet-Energy">
+
+
+<parameter name="ProjectType" value="city" />
+<parameter name="CustomSheetName" value="Energy" />
+<parameter name="Type" value="265" />
+<parameter name="Unit" value="tons" />
+<parameter name="paramvalue" value="energy" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
+<parameter name="rownumber" value="2" />
+<parameter name="Reading" value="Carbonfootprint" />
+
+
+
+
+<classes>
+
+<class name="com.arcapi.Citytestcases.CreateAssetCityCustomAPITest"></class>
+<class name="com.arcapi.Citytestcases.PaymentOrderSubmitCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.AddAssestTimelineCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.MeterCreateAPICustomCityCommTest"></class>
+<class name="com.arcapi.Citytestcases.CityCommConsumptionCustomCreateAPITest"></class>
+<class name="com.arcapi.Citytestcases.RecomputePerformanceCustomScoreGetTest"></class>
+
+
+</classes>
+</test>
+-->
+
+<!-- <test name="CityReferenceSet-Water">
+
+
+<parameter name="ProjectType" value="city" />
+<parameter name="CustomSheetName" value="Water" />
+<parameter name="Type" value="266" />
+<parameter name="Unit" value="gal" />
+<parameter name="paramvalue" value="water" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
+<parameter name="rownumber" value="2" />
+<parameter name="Reading" value="WaterUse" />
+
+
+
+
+<classes>
+
+<class name="com.arcapi.Citytestcases.CreateAssetCityCustomAPITest"></class>
+<class name="com.arcapi.Citytestcases.PaymentOrderSubmitCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.AddAssestTimelineCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.MeterCreateAPICustomCityCommTest"></class>
+<class name="com.arcapi.Citytestcases.CityCommConsumptionCustomWaterCreateAPITest"></class>
+<class name="com.arcapi.Citytestcases.RecomputePerformanceCustomScoreGetTest"></class>
+
+
+</classes>
+</test> -->
+
+<!-- <test name="CityReferenceSet-Waste">
+
+
+<parameter name="ProjectType" value="city" />
+<parameter name="CustomSheetName" value="Waste" />
+<parameter name="Type" value="267" />
+<parameter name="Unit" value="tons" />
+<parameter name="paramvalue" value="waste" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
+<parameter name="rownumber" value="2" />
+<parameter name="Reading" value="WasteGeneration" />
+
+<classes>
+
+<class name="com.arcapi.Citytestcases.CreateAssetCityCustomAPITest"></class>
+<class name="com.arcapi.Citytestcases.PaymentOrderSubmitCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.AddAssestTimelineCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.MeterCreateAPICustomCityCommTest"></class>
+<class name="com.arcapi.Citytestcases.MeterCreateAPICustom2CityCommTest"></class>
+<class name="com.arcapi.Citytestcases.CityCommConsumptionCustomCreateAPITest"></class>
+<class name="com.arcapi.Citytestcases.CityCommConsumptionCustom2CreateAPITest"></class>
+<class name="com.arcapi.Citytestcases.RecomputePerformanceCustomScoreGetTest"></class>
+
+
+</classes>
+</test>
+ -->
+ 
+ <test name="CityReferenceSet-Transportation">
+
+
+<parameter name="ProjectType" value="city" />
+<parameter name="CustomSheetName" value="Transportation" />
+<parameter name="Type" value="269" />
+<parameter name="Unit" value="miles" />
+<parameter name="paramvalue" value="transport" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
+<parameter name="rownumber" value="2" />
+<parameter name="Reading" value="VMTpercapita" />
+
+
+
+
+<classes>
+
+<class name="com.arcapi.Citytestcases.CreateAssetCityCustomAPITest"></class>
+<class name="com.arcapi.Citytestcases.PaymentOrderSubmitCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.AddAssestTimelineCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.MeterCreateAPICustomCityCommTest"></class>
+<class name="com.arcapi.Citytestcases.CityCommConsumptionCustomCreateAPITest"></class>
+<class name="com.arcapi.Citytestcases.RecomputePerformanceCustomScoreGetTest"></class>
+
+
+</classes>
+</test>
+ 
+ <!-- <test name="CityReferenceSet-Crime">
+
+
+<parameter name="ProjectType" value="city" />
+<parameter name="CustomSheetName" value="Crime" />
+<parameter name="Type" value="278" />
+<parameter name="Unit" value="person" />
+<parameter name="paramvalue" value="human_experience" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
+<parameter name="rownumber" value="2" />
+<parameter name="Reading" value="ViolentCrime" />
+
+<classes>
+
+<class name="com.arcapi.Citytestcases.CreateAssetCityCustomAPITest"></class>
+<class name="com.arcapi.Citytestcases.PaymentOrderSubmitCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.AddAssestTimelineCustomPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.MeterCreateAPICustomCityCommTest"></class>
+<class name="com.arcapi.Citytestcases.CityCommConsumptionCustomCreateAPITest"></class>
+<class name="com.arcapi.Citytestcases.RecomputePerformanceCustomCrimeScoreGetTest"></class>
+
+
+</classes>
+</test> -->
+
+
+</suite>

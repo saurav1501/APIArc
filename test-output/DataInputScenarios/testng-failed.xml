@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DataInputScenarios]">
+  <parameter name="environment" value="staging"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="SheetName" value="STG"/>
+  <test thread-count="5" name="DataInput-Building-Other(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest">
+        <methods>
+          <include name="OtherFuelConsumptionDeleteAPI" invocation-numbers="0"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="teardown"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VOCMeterDeleteAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest -->
+      <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest">
+        <methods>
+          <include name="OtherFuelConsumptionCreateAPI" invocation-numbers="0"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest -->
+      <class name="com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest">
+        <methods>
+          <include name="OtherFuelMeterCreateAPI" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="CO2MeterDeleteAPI" invocation-numbers="0"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest -->
+    </classes>
+  </test> <!-- DataInput-Building-Other(failed) -->
+</suite> <!-- Failed suite [DataInputScenarios] -->

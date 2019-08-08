@@ -1,0 +1,2700 @@
+<html>
+<head>
+<title>TestNG:  V4.1-6</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>V4.1-6</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/43</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 27 11:55:51 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (234 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOAuthenticateAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.LOAuthenticateAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace477376212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace477376212'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOAuthenticateAPITest@145eaa29</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectRegistrationINT.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectRegistrationINT</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectRegistrationINT@15bb6bea</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectRegistrationINT.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectRegistrationINT</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectRegistrationINT@15bb6bea</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectSyncAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectSyncAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectSyncAPITest@8b96fde</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectSyncAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectSyncAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectSyncAPITest@8b96fde</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest@2d2e5f00</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest@2d2e5f00</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest@4c40b76e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest@4c40b76e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest@2ea6137</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest@2ea6137</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest@41ee392b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest@41ee392b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest@1e67a849</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest@1e67a849</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest@57d5872c</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest@57d5872c</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest@667a738</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest@667a738</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MetersAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.MetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MetersAPITest@36f0f1be</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MetersAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.MetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MetersAPITest@36f0f1be</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest@157632c9</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest@157632c9</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest@6ee12bac</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest@6ee12bac</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest@55040f2f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest@55040f2f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest@64c87930</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest@64c87930</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest@400cff1a</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest@400cff1a</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest@275710fc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest@275710fc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest@525f1e4e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest@525f1e4e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest@75f9eccc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest@75f9eccc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest@52aa2946</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest@52aa2946</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest@4de5031f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest@4de5031f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest@67e2d983</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest@67e2d983</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest@5d47c63f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest@5d47c63f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest@5ea434c8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest@5ea434c8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest@3bbc39f8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest@3bbc39f8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetDetailAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.AssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetDetailAPITest@4ae3c1cd</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetDetailAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.AssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetDetailAPITest@4ae3c1cd</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest@29f69090</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest@29f69090</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest@568bf312</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest@568bf312</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest@ca263c2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest@ca263c2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest@589b3632</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest@589b3632</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentListAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentListAPITest@45f45fa1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentListAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentListAPITest@45f45fa1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest@4c6e276e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest@4c6e276e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest@534df152</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest@534df152</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest@52e677af</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest@52e677af</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest@35083305</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest@35083305</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest@8e0379d</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest@8e0379d</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest@341b80b2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest@341b80b2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAppsListAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAppsListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAppsListAPITest@55a1c291</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAppsListAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAppsListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAppsListAPITest@55a1c291</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest@2145433b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest@2145433b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest@2890c451</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest@2890c451</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest@40e6dfe1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest@40e6dfe1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest@1b083826</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest@1b083826</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest@105fece7</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest@105fece7</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOAuthenticateAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.LOAuthenticateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOAuthenticateAPITest@145eaa29</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectRegistrationINT.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectRegistrationINT</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectRegistrationINT@15bb6bea</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectSyncAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectSyncAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectSyncAPITest@8b96fde</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest@2d2e5f00</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest@4c40b76e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest@2ea6137</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest@41ee392b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest@1e67a849</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest@57d5872c</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest@667a738</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MetersAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.MetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MetersAPITest@36f0f1be</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest@157632c9</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest@6ee12bac</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest@55040f2f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest@64c87930</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest@400cff1a</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest@275710fc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest@525f1e4e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest@75f9eccc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest@52aa2946</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest@4de5031f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest@67e2d983</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest@5d47c63f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest@5ea434c8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest@3bbc39f8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetDetailAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.AssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetDetailAPITest@4ae3c1cd</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest@29f69090</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest@568bf312</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest@ca263c2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest@589b3632</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentListAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentListAPITest@45f45fa1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest@4c6e276e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest@534df152</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest@52e677af</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest@35083305</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest@8e0379d</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest@341b80b2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAppsListAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAppsListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAppsListAPITest@55a1c291</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest@2145433b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest@2890c451</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest@40e6dfe1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest@1b083826</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest@105fece7</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOAuthenticateAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.LOAuthenticateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOAuthenticateAPITest@145eaa29</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectRegistrationINT.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectRegistrationINT</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectRegistrationINT@15bb6bea</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectSyncAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectSyncAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectSyncAPITest@8b96fde</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest@2d2e5f00</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest@4c40b76e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest@2ea6137</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest@41ee392b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest@1e67a849</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest@57d5872c</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest@667a738</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MetersAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.MetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MetersAPITest@36f0f1be</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest@157632c9</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest@6ee12bac</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest@55040f2f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest@64c87930</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest@400cff1a</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest@275710fc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest@525f1e4e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest@75f9eccc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest@52aa2946</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest@4de5031f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest@67e2d983</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest@5d47c63f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest@5ea434c8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest@3bbc39f8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetDetailAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.AssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetDetailAPITest@4ae3c1cd</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest@29f69090</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest@568bf312</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest@ca263c2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest@589b3632</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentListAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentListAPITest@45f45fa1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest@4c6e276e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest@534df152</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest@52e677af</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest@35083305</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest@8e0379d</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest@341b80b2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAppsListAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAppsListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAppsListAPITest@55a1c291</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest@2145433b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest@2890c451</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest@40e6dfe1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest@1b083826</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest@105fece7</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOAuthenticateAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.LOAuthenticateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOAuthenticateAPITest@145eaa29</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectRegistrationINT.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectRegistrationINT</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectRegistrationINT@15bb6bea</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectSyncAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectSyncAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectSyncAPITest@8b96fde</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest@2d2e5f00</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest@4c40b76e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest@2ea6137</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest@41ee392b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest@1e67a849</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest@57d5872c</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest@667a738</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MetersAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.MetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MetersAPITest@36f0f1be</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest@157632c9</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest@6ee12bac</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest@55040f2f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest@64c87930</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest@400cff1a</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest@275710fc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest@525f1e4e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest@75f9eccc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest@52aa2946</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest@4de5031f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest@67e2d983</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest@5d47c63f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest@5ea434c8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest@3bbc39f8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetDetailAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.AssetDetailAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetDetailAPITest@4ae3c1cd</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest@29f69090</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest@568bf312</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest@ca263c2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest@589b3632</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentListAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentListAPITest@45f45fa1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest@4c6e276e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest@534df152</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest@52e677af</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest@35083305</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest@8e0379d</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest@341b80b2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAppsListAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAppsListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAppsListAPITest@55a1c291</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest@2145433b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest@2890c451</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest@40e6dfe1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest@1b083826</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest.end()'><b>end</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest@105fece7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetDetailAPITest.AssetDetailAPI()'><b>AssetDetailAPI</b><br>Test class: com.arcapi.Leedv4Testcases.AssetDetailAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace839998248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace839998248'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetDetailAPITest@4ae3c1cd</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest.AssetUpdateforNewAssetPUTAPI()'><b>AssetUpdateforNewAssetPUTAPI</b><br>Test class: com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace454884231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace454884231'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest@4c40b76e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectRegistrationINT.CreateAssetPOSTAPI()'><b>CreateAssetPOSTAPI</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectRegistrationINT</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace635371680", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace635371680'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectRegistrationINT@15bb6bea</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest.DeleteAllAppsAPI()'><b>DeleteAllAppsAPI</b><br>Test class: com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace748842359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace748842359'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest@8e0379d</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest.ExcelUploadTemplatePOSTAPI()'><b>ExcelUploadTemplatePOSTAPI</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2144838275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2144838275'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest@ca263c2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest.FetchingAgreementDetailsAPI()'><b>FetchingAgreementDetailsAPI</b><br>Test class: com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1902671237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1902671237'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest@57d5872c</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest.HumanExperienceConsumptionCreateAPI()'><b>HumanExperienceConsumptionCreateAPI</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1825719826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1825719826'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest@157632c9</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest.HumanExperienceConsumptionCreateAPI()'><b>HumanExperienceConsumptionCreateAPI</b><br>Test class: com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace479920916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace479920916'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest@400cff1a</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest.HumanExperienceConsumptionDeleteAPI()'><b>HumanExperienceConsumptionDeleteAPI</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace502848122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace502848122'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest@64c87930</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest.HumanExperienceConsumptionUpdateAPI()'><b>HumanExperienceConsumptionUpdateAPI</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace347978868", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace347978868'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest@6ee12bac</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest.HumanExperienceMeterDeleteAPI()'><b>HumanExperienceMeterDeleteAPI</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1752461090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1752461090'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest@568bf312</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest.HumanExperienceMeterUpdateAPI()'><b>HumanExperienceMeterUpdateAPI</b><br>Test class: com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace332873513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace332873513'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest@525f1e4e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest.InstallAllAppsAfterDeleteAPI()'><b>InstallAllAppsAfterDeleteAPI</b><br>Test class: com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace394785440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace394785440'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest@341b80b2</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOAuthenticateAPITest.LOAuthenticateAPI()'><b>LOAuthenticateAPI</b><br>Test class: com.arcapi.Leedv4Testcases.LOAuthenticateAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1440621772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1440621772'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOAuthenticateAPITest@145eaa29</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.LOProjectSyncAPITest.LOProjectSyncAPI()'><b>LOProjectSyncAPI</b><br>Test class: com.arcapi.Leedv4Testcases.LOProjectSyncAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace76659128", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace76659128'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.LOProjectSyncAPITest@8b96fde</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest.MeterCommentDeleteGroup2API()'><b>MeterCommentDeleteGroup2API</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace238762799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace238762799'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest@3bbc39f8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest.MeterCommentPostGroup1API()'><b>MeterCommentPostGroup1API</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1541525668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1541525668'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest@75f9eccc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest.MeterCommentPostGroup2API()'><b>MeterCommentPostGroup2API</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1330247343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1330247343'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest@52aa2946</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest.MeterCommentPostGroup3API()'><b>MeterCommentPostGroup3API</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1346343363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1346343363'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest@4de5031f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest.MeterCommentReplyGroup1API()'><b>MeterCommentReplyGroup1API</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace549293029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace549293029'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest@67e2d983</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest.MeterCommentReplyGroup2API()'><b>MeterCommentReplyGroup2API</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace442125849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace442125849'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest@5d47c63f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest.MeterCommentReplyGroup3API()'><b>MeterCommentReplyGroup3API</b><br>Test class: com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace37981645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace37981645'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest@5ea434c8</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.MetersAPITest.MetersAPI()'><b>MetersAPI</b><br>Test class: com.arcapi.Leedv4Testcases.MetersAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace530486389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace530486389'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.MetersAPITest@36f0f1be</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest.MetersAPI()'><b>MetersAPI</b><br>Test class: com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1670313965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1670313965'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest@534df152</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentListAPITest.S3DocumentListAPI()'><b>S3DocumentListAPI</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentListAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1991278377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1991278377'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentListAPITest@45f45fa1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest.S3DocumentRemoveAPI()'><b>S3DocumentRemoveAPI</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2103569237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2103569237'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest@4c6e276e</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest.S3DocumentUploadPOSTAPI()'><b>S3DocumentUploadPOSTAPI</b><br>Test class: com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace405896924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace405896924'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest@589b3632</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest.SignAgreementRegistrationAPI()'><b>SignAgreementRegistrationAPI</b><br>Test class: com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace370475881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace370475881'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest@2d2e5f00</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest.SurveyCreatePOSTAPI()'><b>SurveyCreatePOSTAPI</b><br>Test class: com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace52514534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace52514534'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest@29f69090</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest.VerifyActivityEnergyDataInputAPI()'><b>VerifyActivityEnergyDataInputAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1160649162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1160649162'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest@2890c451</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest.VerifyActivityHEMeterDataInputAPI()'><b>VerifyActivityHEMeterDataInputAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1457263953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1457263953'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest@105fece7</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest.VerifyActivityWasteDataInputAPI()'><b>VerifyActivityWasteDataInputAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1975873209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1975873209'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest@1b083826</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest.VerifyActivityWaterDataInputAPI()'><b>VerifyActivityWaterDataInputAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1192923170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1192923170'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest@40e6dfe1</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest.VerifyAdminRemoveAPI()'><b>VerifyAdminRemoveAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace610454273", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace610454273'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest@2145433b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest.VerifyAgreementDeleteAPI()'><b>VerifyAgreementDeleteAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace629454893", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace629454893'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest@667a738</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest.VerifyAgreementPresentAPI()'><b>VerifyAgreementPresentAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2129442232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2129442232'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest@1e67a849</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAppsListAPITest.VerifyAppsListAPI()'><b>VerifyAppsListAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAppsListAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace333040629", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace333040629'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAppsListAPITest@55a1c291</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest.VerifyAssetDetailAPI()'><b>VerifyAssetDetailAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1863702030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1863702030'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest@2ea6137</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest.VerifyExcelTemplateConsumptionAPI()'><b>VerifyExcelTemplateConsumptionAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace527829831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace527829831'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest@52e677af</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest.VerifyManualConsumptionAPI()'><b>VerifyManualConsumptionAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace257459516", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace257459516'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest@275710fc</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest.VerifyManualConsumptionAfterUpdateAPI()'><b>VerifyManualConsumptionAfterUpdateAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace616674002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace616674002'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest@55040f2f</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest.VerifyProjectRegisteredAssetList()'><b>VerifyProjectRegisteredAssetList</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1396721535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1396721535'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest@41ee392b</td></tr>
+<tr>
+<td title='com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest.VerifyWasteDataExcelAPI()'><b>VerifyWasteDataExcelAPI</b><br>Test class: com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace896982466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace896982466'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeClass on method setBaseUri but has not been marked @Optional or defined
+in D:\leed\leedperformance\AutomationTesting\TestArcAPI\src\main\resources\TestNGFiles\LeedV4TestNG.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:163)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest@35083305</td></tr>
+</table><p>
+</body>
+</html>

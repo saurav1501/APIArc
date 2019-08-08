@@ -1,0 +1,725 @@
+<html>
+<head>
+<title>TestNG:  CompleteFlowTest-Building-Other</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CompleteFlowTest-Building-Other</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>101/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 17 12:31:22 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>1576 seconds (1576667 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest.RecomputePerformanceScoreGet()'><b>RecomputePerformanceScoreGet</b><br>Test class: com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:86)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:307)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest.RecomputePerformanceScoreGet(RecomputePerformanceScoreGetTest.java:51)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1141720665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1141720665'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;500&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:86)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:307)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest.RecomputePerformanceScoreGet(RecomputePerformanceScoreGetTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>304</td>
+<td>com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest@7f77e91b</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest.VerifyAdminRemoveAPI()'><b>VerifyAdminRemoveAPI</b><br>Test class: com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;403&gt; doesn&apos;t match actual status code &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
+	at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest.VerifyAdminRemoveAPI(VerifyAdminRemoveAPITest.java:65)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace450633080", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace450633080'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;403&gt; doesn&apos;t match actual status code &lt;200&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at sun.reflect.GeneratedMethodAccessor108.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
+	at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest.VerifyAdminRemoveAPI(VerifyAdminRemoveAPITest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest@770c2e6b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest.AddAssestTimeline()'><b>AddAssestTimeline</b><br>Test class: com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>8</td>
+<td>com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest@6a472554</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AnalysisDataGetAPITest.AnalysisDataGetAPI()'><b>AnalysisDataGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.AnalysisDataGetAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AnalysisDataGetAPITest@57d5872c</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AnalysisDataSubmitPOSTAPITest.AnalysisDataSubmitPOSTAPI()'><b>AnalysisDataSubmitPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.AnalysisDataSubmitPOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>18</td>
+<td>com.arcapi.Buildingtestcases.AnalysisDataSubmitPOSTAPITest@1e67a849</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AppVersionDetailAPITest.AppVersionDetailAPI()'><b>AppVersionDetailAPI</b><br>Test class: com.arcapi.Buildingtestcases.AppVersionDetailAPITest</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AppVersionDetailAPITest@67e2d983</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetAppDeleteAPITest.AssetAppDeleteAPI()'><b>AssetAppDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetAppDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetAppDeleteAPITest@62e136d3</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetAppListAPITest.AssetAppListAPI()'><b>AssetAppListAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetAppListAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetAppListAPITest@18a70f16</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetCertificationListAPITest.AssetCertificationListAPI()'><b>AssetCertificationListAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetCertificationListAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetCertificationListAPITest@64c87930</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetCertificationPOSTAPITest.AssetCertificationPOSTAPI()'><b>AssetCertificationPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetCertificationPOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>7</td>
+<td>com.arcapi.Buildingtestcases.AssetCertificationPOSTAPITest@400cff1a</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetDataExportAPITest.AssetDataExportAPI()'><b>AssetDataExportAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetDataExportAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>7</td>
+<td>com.arcapi.Buildingtestcases.AssetDataExportAPITest@2ea6137</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetDataSnapshotAPITest.AssetDataSnapshotAPI()'><b>AssetDataSnapshotAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetDataSnapshotAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>19</td>
+<td>com.arcapi.Buildingtestcases.AssetDataSnapshotAPITest@1a38c59b</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetDetailAPITest.AssetDetailAPI()'><b>AssetDetailAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetDetailAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>19</td>
+<td>com.arcapi.Buildingtestcases.AssetDetailAPITest@b7f23d9</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetDocumentAPITest.AssetDocumentAPI()'><b>AssetDocumentAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetDocumentAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.AssetDocumentAPITest@4d339552</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetListAPITest.AssetListAPI()'><b>AssetListAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetListAPITest</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetListAPITest@ba8d91c</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetMeterDetailAPITest.AssetMeterDetailAPI()'><b>AssetMeterDetailAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetMeterDetailAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.AssetMeterDetailAPITest@279ad2e3</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetNotificationSubscriptionListTest.AssetNotificationSubscriptionList()'><b>AssetNotificationSubscriptionList</b><br>Test class: com.arcapi.Buildingtestcases.AssetNotificationSubscriptionListTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.AssetNotificationSubscriptionListTest@1a052a00</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest.AssetNotificationSubscriptionPost()'><b>AssetNotificationSubscriptionPost</b><br>Test class: com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest@4d826d77</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetOwnerOrgPOSTAPITest.AssetOwnerOrgPOSTAPI()'><b>AssetOwnerOrgPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetOwnerOrgPOSTAPITest</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.AssetOwnerOrgPOSTAPITest@70b0b186</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetPerformanceScoreListAPITest.AssetPerformanceScoreListAPI()'><b>AssetPerformanceScoreListAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetPerformanceScoreListAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetPerformanceScoreListAPITest@41ee392b</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetRequiredFieldsAPITest.AssetRequiredFieldsAPI()'><b>AssetRequiredFieldsAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetRequiredFieldsAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetRequiredFieldsAPITest@525f1e4e</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetSearchAPITest.AssetSearchAPI()'><b>AssetSearchAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetSearchAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>13</td>
+<td>com.arcapi.Buildingtestcases.AssetSearchAPITest@58fdd99</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetSearchOwnerAPITest.AssetSearchOwnerAPI()'><b>AssetSearchOwnerAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetSearchOwnerAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetSearchOwnerAPITest@7bc1a03d</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetSnapshotDownloadAPITest.AssetSnapshotDownloadAPI()'><b>AssetSnapshotDownloadAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetSnapshotDownloadAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>16</td>
+<td>com.arcapi.Buildingtestcases.AssetSnapshotDownloadAPITest@589b3632</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetSnapshotKeysAPITest.AssetSnapshotKeysAPI()'><b>AssetSnapshotKeysAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetSnapshotKeysAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetSnapshotKeysAPITest@ca263c2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetTeamMemberAddPOSTAPITest.AssetTeamMemberAddPOSTAPI()'><b>AssetTeamMemberAddPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetTeamMemberAddPOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.AssetTeamMemberAddPOSTAPITest@971d0d8</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetTeamMemberListAPITest.AssetTeamMemberListAPI()'><b>AssetTeamMemberListAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetTeamMemberListAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.AssetTeamMemberListAPITest@176d53b2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetTeamMemberRemoveAPITest.AssetTeamMemberRemoveAPI()'><b>AssetTeamMemberRemoveAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetTeamMemberRemoveAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>6</td>
+<td>com.arcapi.Buildingtestcases.AssetTeamMemberRemoveAPITest@2b4a2ec7</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetTeamMemberRoleAPITest.AssetTeamMemberRoleAPI()'><b>AssetTeamMemberRoleAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetTeamMemberRoleAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.AssetTeamMemberRoleAPITest@491666ad</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetTeamMemberUpdateAPITest.AssetTeamMemberUpdateAPI()'><b>AssetTeamMemberUpdateAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetTeamMemberUpdateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.AssetTeamMemberUpdateAPITest@51931956</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetTeamPermissionListAPITest.AssetTeamPermissionListAPI()'><b>AssetTeamPermissionListAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetTeamPermissionListAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetTeamPermissionListAPITest@57175e74</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetTeamPermissionPostAPITest.AssetTeamPermissionPostAPI()'><b>AssetTeamPermissionPostAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetTeamPermissionPostAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetTeamPermissionPostAPITest@7bb58ca3</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetTeamPermissionPutAPITest.AssetTeamPermissionPutAPI()'><b>AssetTeamPermissionPutAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetTeamPermissionPutAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.AssetTeamPermissionPutAPITest@c540f5a</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetUpdateBuildingOtherAPITest.AssetUpdateforNewAssetPUTAPI()'><b>AssetUpdateforNewAssetPUTAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetUpdateBuildingOtherAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>7</td>
+<td>com.arcapi.Buildingtestcases.AssetUpdateBuildingOtherAPITest@61d47554</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssetValidationInfoPOSTAPITest.AssetValidationInfoPOSTAPI()'><b>AssetValidationInfoPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetValidationInfoPOSTAPITest</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssetValidationInfoPOSTAPITest@6b1274d2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AssociatedCategoriesAPITest.AssociatedCategoriesAPI()'><b>AssociatedCategoriesAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssociatedCategoriesAPITest</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AssociatedCategoriesAPITest@52aa2946</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AvgPerformaceListGetTest.AvgPerformaceList()'><b>AvgPerformaceList</b><br>Test class: com.arcapi.Buildingtestcases.AvgPerformaceListGetTest</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.AvgPerformaceListGetTest@568bf312</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CO2GetTest.CO2GetTestAPI()'><b>CO2GetTestAPI</b><br>Test class: com.arcapi.Buildingtestcases.CO2GetTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.CO2GetTest@667a738</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest.ConsumptionCreatePOSTAPI()'><b>ConsumptionCreatePOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest@351d0846</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest.ConsumptionDeleteAPI()'><b>ConsumptionDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest@7fe8ea47</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ConsumptionDetailAPITest.ConsumptionDetailAPI()'><b>ConsumptionDetailAPI</b><br>Test class: com.arcapi.Buildingtestcases.ConsumptionDetailAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.ConsumptionDetailAPITest@77e4c80f</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ConsumptionListAPITest.ConsumptionListAPI()'><b>ConsumptionListAPI</b><br>Test class: com.arcapi.Buildingtestcases.ConsumptionListAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.ConsumptionListAPITest@4461c7e3</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest.ConsumptionUpdatePUTAPI()'><b>ConsumptionUpdatePUTAPI</b><br>Test class: com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest@35fc6dc4</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CountryStatesJSONAPITest.CountryStatesJSONAPI()'><b>CountryStatesJSONAPI</b><br>Test class: com.arcapi.Buildingtestcases.CountryStatesJSONAPITest</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.CountryStatesJSONAPITest@75f9eccc</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest.CreateAssetPOSTAPI()'><b>CreateAssetPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest<br>Parameters: STG, building, ProjectIDBuildingOther, 2, US</td>
+<td></td>
+<td>24</td>
+<td>com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest@7364985f</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.DeleteAllAppsAPITest.DeleteAllAppsAPI()'><b>DeleteAllAppsAPI</b><br>Test class: com.arcapi.Buildingtestcases.DeleteAllAppsAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>9</td>
+<td>com.arcapi.Buildingtestcases.DeleteAllAppsAPITest@564718df</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.DownloadDocumentsAPITest.DownloadDocumentsAPI()'><b>DownloadDocumentsAPI</b><br>Test class: com.arcapi.Buildingtestcases.DownloadDocumentsAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.DownloadDocumentsAPITest@f0f2775</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.EnvironmentSurveyExportAPITest.EnvironmentSurveyExportAPI()'><b>EnvironmentSurveyExportAPI</b><br>Test class: com.arcapi.Buildingtestcases.EnvironmentSurveyExportAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.EnvironmentSurveyExportAPITest@4c40b76e</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest.ExcelUploadTemplatePOSTAPI()'><b>ExcelUploadTemplatePOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>7</td>
+<td>com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest@29ba4338</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.FeedbackSubmitPostAPITest.FeedbackSubmitPostAPI()'><b>FeedbackSubmitPostAPI</b><br>Test class: com.arcapi.Buildingtestcases.FeedbackSubmitPostAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.FeedbackSubmitPostAPITest@8b96fde</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.FetchingAgreementDetailsAPITest.FetchingAgreementDetailsAPI()'><b>FetchingAgreementDetailsAPI</b><br>Test class: com.arcapi.Buildingtestcases.FetchingAgreementDetailsAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.FetchingAgreementDetailsAPITest@6591f517</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.FuelCategoryAPITest.FuelCategoryAPI()'><b>FuelCategoryAPI</b><br>Test class: com.arcapi.Buildingtestcases.FuelCategoryAPITest</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.FuelCategoryAPITest@5d47c63f</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.GetAllDocumentListAPITest.GetAllDocumentListAPI()'><b>GetAllDocumentListAPI</b><br>Test class: com.arcapi.Buildingtestcases.GetAllDocumentListAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.GetAllDocumentListAPITest@5ea434c8</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.GhgCalcGetTest.GhgCalcGet()'><b>GhgCalcGet</b><br>Test class: com.arcapi.Buildingtestcases.GhgCalcGetTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.GhgCalcGetTest@157632c9</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.GhgGetTest.GhgGetTestAPI()'><b>GhgGetTestAPI</b><br>Test class: com.arcapi.Buildingtestcases.GhgGetTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.GhgGetTest@36f0f1be</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.InstallAllAppsAfterDeleteAPITest.InstallAllAppsAfterDeleteAPI()'><b>InstallAllAppsAfterDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.InstallAllAppsAfterDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>8</td>
+<td>com.arcapi.Buildingtestcases.InstallAllAppsAfterDeleteAPITest@51b7e5df</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.LOTokenAPITest.LOTokenAPI()'><b>LOTokenAPI</b><br>Test class: com.arcapi.Buildingtestcases.LOTokenAPITest<br>Parameters: STG, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.LOTokenAPITest@551bdc27</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.LoginAPITest.LoginAPI()'><b>LoginAPI</b><br>Test class: com.arcapi.Buildingtestcases.LoginAPITest<br>Parameters: STG, 2</td>
+<td></td>
+<td>18</td>
+<td>com.arcapi.Buildingtestcases.LoginAPITest@23a5fd2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest.MeterBulkConsumptionPOSTAPI()'><b>MeterBulkConsumptionPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest@4450d156</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest.MeterCreatePOSTAPI()'><b>MeterCreatePOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest@4d49af10</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.MeterDeleteAPITest.MeterDeleteAPI()'><b>MeterDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.MeterDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.MeterDeleteAPITest@226a82c4</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest.MeterUpdatePUTAPI()'><b>MeterUpdatePUTAPI</b><br>Test class: com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest@58134517</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.MetersAPITest.MetersAPI()'><b>MetersAPI</b><br>Test class: com.arcapi.Buildingtestcases.MetersAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.MetersAPITest@429bd883</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.NotificationCreatePOSTAPITest.NotificationCreatePOSTAPI()'><b>NotificationCreatePOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.NotificationCreatePOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.NotificationCreatePOSTAPITest@6328d34a</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.NotificationDeleteAPITest.NotificationDeleteAPI()'><b>NotificationDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.NotificationDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.NotificationDeleteAPITest@15bb6bea</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.NotificationGetAPITest.NotificationGetAPI()'><b>NotificationGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.NotificationGetAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.NotificationGetAPITest@145eaa29</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.NotificationSubscriptionDetailGetTest.NotificationSubscriptionDetail()'><b>NotificationSubscriptionDetail</b><br>Test class: com.arcapi.Buildingtestcases.NotificationSubscriptionDetailGetTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.NotificationSubscriptionDetailGetTest@61009542</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.NotificationSubscriptionDetailPutTest.NotificationSubscriptionDetail()'><b>NotificationSubscriptionDetail</b><br>Test class: com.arcapi.Buildingtestcases.NotificationSubscriptionDetailPutTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.NotificationSubscriptionDetailPutTest@77e9807f</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest.NotificationSubscriptionDetailDelete()'><b>NotificationSubscriptionDetailDelete</b><br>Test class: com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest@448ff1a8</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.PaymentHistoryAPITest.PaymentHistoryAPI()'><b>PaymentHistoryAPI</b><br>Test class: com.arcapi.Buildingtestcases.PaymentHistoryAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.PaymentHistoryAPITest@58c1c010</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.PaymentOrderGetAPITest.PaymentOrderGetAPI()'><b>PaymentOrderGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.PaymentOrderGetAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.PaymentOrderGetAPITest@7ff2a664</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest.PaymentOrderSubmitPOSTAPI()'><b>PaymentOrderSubmitPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2, CheckPayment</td>
+<td></td>
+<td>11</td>
+<td>com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest@3d36e4cd</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.PaymentReceiptAPITest.PaymentReceiptAPI()'><b>PaymentReceiptAPI</b><br>Test class: com.arcapi.Buildingtestcases.PaymentReceiptAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>13</td>
+<td>com.arcapi.Buildingtestcases.PaymentReceiptAPITest@525b461a</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.PerformanceComparablesGetAPITest.PerformanceComparablesGetAPI()'><b>PerformanceComparablesGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.PerformanceComparablesGetAPITest</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.PerformanceComparablesGetAPITest@3bbc39f8</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.RatingSystemListAPITest.RatingSystemListAPI()'><b>RatingSystemListAPI</b><br>Test class: com.arcapi.Buildingtestcases.RatingSystemListAPITest</td>
+<td></td>
+<td>6</td>
+<td>com.arcapi.Buildingtestcases.RatingSystemListAPITest@4de5031f</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest.RegistrationPaymentPricingGetAPI()'><b>RegistrationPaymentPricingGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest@709ba3fb</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ReviewCertificationPricingAPITest.ReviewCertificationPricingAPI()'><b>ReviewCertificationPricingAPI</b><br>Test class: com.arcapi.Buildingtestcases.ReviewCertificationPricingAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2, performance score</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.ReviewCertificationPricingAPITest@44a664f2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.S3DocumentListAPITest.S3DocumentListAPI()'><b>S3DocumentListAPI</b><br>Test class: com.arcapi.Buildingtestcases.S3DocumentListAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.S3DocumentListAPITest@6279cee3</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.S3DocumentRemoveAPITest.S3DocumentRemoveAPI()'><b>S3DocumentRemoveAPI</b><br>Test class: com.arcapi.Buildingtestcases.S3DocumentRemoveAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.S3DocumentRemoveAPITest@4206a205</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.S3DocumentUploadPOSTAPITest.S3DocumentUploadPOSTAPI()'><b>S3DocumentUploadPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.S3DocumentUploadPOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>24</td>
+<td>com.arcapi.Buildingtestcases.S3DocumentUploadPOSTAPITest@c8e4bb0</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ScoreWeightsAPITest.ScoreWeightsAPI()'><b>ScoreWeightsAPI</b><br>Test class: com.arcapi.Buildingtestcases.ScoreWeightsAPITest</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.ScoreWeightsAPITest@4ae3c1cd</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest.SignAgreementRegistrationAPI()'><b>SignAgreementRegistrationAPI</b><br>Test class: com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>7</td>
+<td>com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest@5d20e46</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.SubmitReviewGetAPITest.SubmitReviewGetAPI()'><b>SubmitReviewGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.SubmitReviewGetAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.SubmitReviewGetAPITest@2357d90a</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.SubmitReviewPOSTAPITest.SubmitReviewPOSTAPI()'><b>SubmitReviewPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.SubmitReviewPOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2, building, performance score</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.SubmitReviewPOSTAPITest@7f9fcf7f</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest.SurveyCreatePOSTAPI()'><b>SurveyCreatePOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>380</td>
+<td>com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest@3b2c72c2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.TemperatureDataGetTest.TemperatureDataGet()'><b>TemperatureDataGet</b><br>Test class: com.arcapi.Buildingtestcases.TemperatureDataGetTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.TemperatureDataGetTest@275710fc</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ThirdPartyListAppsAPITest.ThirdPartyListAppsAPI()'><b>ThirdPartyListAppsAPI</b><br>Test class: com.arcapi.Buildingtestcases.ThirdPartyListAppsAPITest</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.ThirdPartyListAppsAPITest@29f69090</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.TransitSurveyExportAPITest.TransitSurveyExportAPI()'><b>TransitSurveyExportAPI</b><br>Test class: com.arcapi.Buildingtestcases.TransitSurveyExportAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>7</td>
+<td>com.arcapi.Buildingtestcases.TransitSurveyExportAPITest@2d2e5f00</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.UserAccessLevelSAPGetTest.UserAccessLevelSAPGet()'><b>UserAccessLevelSAPGet</b><br>Test class: com.arcapi.Buildingtestcases.UserAccessLevelSAPGetTest</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.UserAccessLevelSAPGetTest@dd3b207</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.UserDetailAPITest.UserDetailAPI()'><b>UserDetailAPI</b><br>Test class: com.arcapi.Buildingtestcases.UserDetailAPITest<br>Parameters: STG, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.UserDetailAPITest@78a2da20</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VOCGetTest.VOCGet()'><b>VOCGet</b><br>Test class: com.arcapi.Buildingtestcases.VOCGetTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.VOCGetTest@6ee12bac</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest.VerifyAgreementDeleteAPI()'><b>VerifyAgreementDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest@345965f2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VerifyAgreementPresentAPITest.VerifyAgreementPresentAPI()'><b>VerifyAgreementPresentAPI</b><br>Test class: com.arcapi.Buildingtestcases.VerifyAgreementPresentAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.VerifyAgreementPresentAPITest@5a4aa2f2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest.VerifyAssetDetailAPI()'><b>VerifyAssetDetailAPI</b><br>Test class: com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest@69b794e2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VerifyProjectRegisteredAssetListTest.VerifyProjectRegisteredAssetList()'><b>VerifyProjectRegisteredAssetList</b><br>Test class: com.arcapi.Buildingtestcases.VerifyProjectRegisteredAssetListTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.VerifyProjectRegisteredAssetListTest@3f200884</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest.WasteCreatePOSTAPI()'><b>WasteCreatePOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@1dd92fe2</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WasteDetailAPITest.WasteDetailAPI()'><b>WasteDetailAPI</b><br>Test class: com.arcapi.Buildingtestcases.WasteDetailAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.WasteDetailAPITest@64d2d351</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest.WasteDetailDeleteAPI()'><b>WasteDetailDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>6</td>
+<td>com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest@4f9a3314</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest.WasteDivertedBulkDataPost()'><b>WasteDivertedBulkDataPost</b><br>Test class: com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest@255b53dc</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest.WasteGeneratedBulkDataPost()'><b>WasteGeneratedBulkDataPost</b><br>Test class: com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest@731f8236</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WasteGetAPITest.WasteGetAPI()'><b>WasteGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.WasteGetAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>6</td>
+<td>com.arcapi.Buildingtestcases.WasteGetAPITest@6b53e23f</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest.WasteUpdatePUTAPI()'><b>WasteUpdatePUTAPI</b><br>Test class: com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest@1b68b9a4</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WaterGetTest.WaterGet()'><b>WaterGet</b><br>Test class: com.arcapi.Buildingtestcases.WaterGetTest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.WaterGetTest@55040f2f</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [APITestCasesSuite]">
+  <parameter name="SoReference" value="precertification review"/>
+  <parameter name="ProjectType" value="building"/>
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="QAS"/>
+  <parameter name="SoReferenceSR" value="Performance Score Verification"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuilding"/>
+  <test name="CompleteFlowTest-Building">
+    <parameter name="SoReference" value="precertification review"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SheetName" value="QAS"/>
+    <parameter name="SoReferenceSR" value="Performance Score Verification"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuilding"/>
+  </test> <!-- CompleteFlowTest-Building -->
+</suite> <!-- Failed suite [APITestCasesSuite] -->

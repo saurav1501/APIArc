@@ -1,0 +1,2632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [LeedV4Testcases]">
+  <test name="V4.1-1(failed)">
+    <parameter name="LOProjectTypeColumn" value="LeedIDEB"/>
+    <parameter name="LOSheetName" value="LEEDONLINE"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="Country" value="IN"/>
+    <classes>
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentRemoveAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyActivityWaterDataInputAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="AssetDetailAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceMeterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SignAgreementRegistrationAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementPresentAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityEnergyDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MetersAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest">
+        <methods>
+          <include name="VerifyManualConsumptionAfterUpdateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="DeleteAllAppsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest">
+        <methods>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentUploadPOSTAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup3API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="MeterCommentReplyGroup3API"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyActivityHEMeterDataInputAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="MetersAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="S3DocumentListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="LOProjectRegistration"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyExcelTemplateConsumptionAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="VerifyAdminRemoveAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SurveyCreatePOSTAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOProjectSyncAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectSyncAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExcelUploadTemplatePOSTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="HumanExperienceMeterUpdateAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionDeleteAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="InstallAllAppsAfterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityWasteDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyManualConsumptionAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceConsumptionUpdateAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAppsListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAppsListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAppsListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="FetchingAgreementDetailsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOAuthenticateAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOAuthenticateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAssetDetailAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyProjectRegisteredAssetList"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementDeleteAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyWasteDataExcelAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest">
+        <methods>
+          <include name="MeterCommentDeleteGroup2API"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest -->
+    </classes>
+  </test> <!-- V4.1-1(failed) -->
+  <test name="V4.1-2(failed)">
+    <parameter name="LOProjectTypeColumn" value="LeedIDEB"/>
+    <parameter name="LOSheetName" value="LEEDONLINE"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="Country" value="CN"/>
+    <classes>
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentRemoveAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyActivityWaterDataInputAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="AssetDetailAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceMeterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SignAgreementRegistrationAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementPresentAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityEnergyDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MetersAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest">
+        <methods>
+          <include name="VerifyManualConsumptionAfterUpdateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="DeleteAllAppsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest">
+        <methods>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentUploadPOSTAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup3API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="MeterCommentReplyGroup3API"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyActivityHEMeterDataInputAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="MetersAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="S3DocumentListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="LOProjectRegistration"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyExcelTemplateConsumptionAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="VerifyAdminRemoveAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SurveyCreatePOSTAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOProjectSyncAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectSyncAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExcelUploadTemplatePOSTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="HumanExperienceMeterUpdateAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionDeleteAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="InstallAllAppsAfterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityWasteDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyManualConsumptionAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceConsumptionUpdateAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAppsListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAppsListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAppsListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="FetchingAgreementDetailsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOAuthenticateAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOAuthenticateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAssetDetailAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyProjectRegisteredAssetList"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementDeleteAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyWasteDataExcelAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest">
+        <methods>
+          <include name="MeterCommentDeleteGroup2API"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest -->
+    </classes>
+  </test> <!-- V4.1-2(failed) -->
+  <test name="V4.1-3(failed)">
+    <parameter name="LOProjectTypeColumn" value="LeedIDEB"/>
+    <parameter name="LOSheetName" value="LEEDONLINE"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="Country" value="US"/>
+    <classes>
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentRemoveAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyActivityWaterDataInputAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="AssetDetailAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceMeterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SignAgreementRegistrationAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementPresentAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityEnergyDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MetersAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest">
+        <methods>
+          <include name="VerifyManualConsumptionAfterUpdateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="DeleteAllAppsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest">
+        <methods>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentUploadPOSTAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup3API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="MeterCommentReplyGroup3API"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyActivityHEMeterDataInputAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="MetersAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="S3DocumentListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="LOProjectRegistration"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyExcelTemplateConsumptionAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="VerifyAdminRemoveAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SurveyCreatePOSTAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOProjectSyncAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectSyncAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExcelUploadTemplatePOSTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="HumanExperienceMeterUpdateAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionDeleteAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="InstallAllAppsAfterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityWasteDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyManualConsumptionAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceConsumptionUpdateAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAppsListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAppsListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAppsListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="FetchingAgreementDetailsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOAuthenticateAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOAuthenticateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAssetDetailAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyProjectRegisteredAssetList"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementDeleteAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyWasteDataExcelAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest">
+        <methods>
+          <include name="MeterCommentDeleteGroup2API"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest -->
+    </classes>
+  </test> <!-- V4.1-3(failed) -->
+  <test name="V4.1-4(failed)">
+    <parameter name="LOProjectTypeColumn" value="LeedIDINT"/>
+    <parameter name="LOSheetName" value="LEEDONLINE"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="Country" value="IN"/>
+    <classes>
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentRemoveAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyActivityWaterDataInputAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="AssetDetailAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceMeterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationINT">
+        <methods>
+          <include name="teardown"/>
+          <include name="CreateAssetPOSTAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectRegistrationINT -->
+      <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SignAgreementRegistrationAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementPresentAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityEnergyDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MetersAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest">
+        <methods>
+          <include name="VerifyManualConsumptionAfterUpdateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="DeleteAllAppsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest">
+        <methods>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentUploadPOSTAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup3API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="MeterCommentReplyGroup3API"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyActivityHEMeterDataInputAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="MetersAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="S3DocumentListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyExcelTemplateConsumptionAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="VerifyAdminRemoveAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SurveyCreatePOSTAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOProjectSyncAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectSyncAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExcelUploadTemplatePOSTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="HumanExperienceMeterUpdateAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionDeleteAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="InstallAllAppsAfterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityWasteDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyManualConsumptionAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceConsumptionUpdateAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAppsListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAppsListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAppsListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="FetchingAgreementDetailsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOAuthenticateAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOAuthenticateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAssetDetailAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyProjectRegisteredAssetList"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementDeleteAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyWasteDataExcelAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest">
+        <methods>
+          <include name="MeterCommentDeleteGroup2API"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest -->
+    </classes>
+  </test> <!-- V4.1-4(failed) -->
+  <test name="V4.1-5(failed)">
+    <parameter name="LOProjectTypeColumn" value="LeedIDINT"/>
+    <parameter name="LOSheetName" value="LEEDONLINE"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="Country" value="CN"/>
+    <classes>
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentRemoveAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyActivityWaterDataInputAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="AssetDetailAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceMeterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationINT">
+        <methods>
+          <include name="teardown"/>
+          <include name="CreateAssetPOSTAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectRegistrationINT -->
+      <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SignAgreementRegistrationAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementPresentAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityEnergyDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MetersAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest">
+        <methods>
+          <include name="VerifyManualConsumptionAfterUpdateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="DeleteAllAppsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest">
+        <methods>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentUploadPOSTAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup3API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="MeterCommentReplyGroup3API"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyActivityHEMeterDataInputAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="MetersAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="S3DocumentListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyExcelTemplateConsumptionAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="VerifyAdminRemoveAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SurveyCreatePOSTAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOProjectSyncAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectSyncAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExcelUploadTemplatePOSTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="HumanExperienceMeterUpdateAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionDeleteAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="InstallAllAppsAfterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityWasteDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyManualConsumptionAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceConsumptionUpdateAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAppsListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAppsListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAppsListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="FetchingAgreementDetailsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOAuthenticateAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOAuthenticateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAssetDetailAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyProjectRegisteredAssetList"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementDeleteAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyWasteDataExcelAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest">
+        <methods>
+          <include name="MeterCommentDeleteGroup2API"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest -->
+    </classes>
+  </test> <!-- V4.1-5(failed) -->
+  <test name="V4.1-6(failed)">
+    <parameter name="LOProjectTypeColumn" value="LeedIDINT"/>
+    <parameter name="LOSheetName" value="LEEDONLINE"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="Country" value="US"/>
+    <classes>
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentRemoveAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyActivityWaterDataInputAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="AssetDetailAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceMeterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationINT">
+        <methods>
+          <include name="teardown"/>
+          <include name="CreateAssetPOSTAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectRegistrationINT -->
+      <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SignAgreementRegistrationAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementPresentAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementPresentAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityEnergyDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MetersAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelTemplateMetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest">
+        <methods>
+          <include name="VerifyManualConsumptionAfterUpdateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="DeleteAllAppsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.DeleteAllAppsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest">
+        <methods>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HEConsumptionCreateAfterDeleteTest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentUploadPOSTAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentUploadPOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup3API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="MeterCommentReplyGroup3API"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyActivityHEMeterDataInputAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup2API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentReplyGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="MetersAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MetersAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.S3DocumentListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="S3DocumentListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.S3DocumentListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyExcelTemplateConsumptionAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyExcelTemplateConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="VerifyAdminRemoveAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAdminRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeterCommentPostGroup1API"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest -->
+      <class name="com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SurveyCreatePOSTAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SurveyCreatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOProjectSyncAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectSyncAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExcelUploadTemplatePOSTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.ExcelUploadTemplatePOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="HumanExperienceMeterUpdateAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.AssetUpdateforNewAssetPUTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="HumanExperienceConsumptionDeleteAPI"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="InstallAllAppsAfterDeleteAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.InstallAllAppsAfterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyActivityWasteDataInputAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyManualConsumptionAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="HumanExperienceConsumptionUpdateAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAppsListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAppsListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAppsListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="FetchingAgreementDetailsAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="LOAuthenticateAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOAuthenticateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAssetDetailAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAssetDetailAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyProjectRegisteredAssetList"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyProjectRegisteredAssetListTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementDeleteAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyAgreementDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyWasteDataExcelAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyWasteDataExcelAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest">
+        <methods>
+          <include name="MeterCommentDeleteGroup2API"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest -->
+    </classes>
+  </test> <!-- V4.1-6(failed) -->
+</suite> <!-- Failed suite [LeedV4Testcases] -->

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TransitCompletePositive]">
+  <parameter name="environment" value="staging"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CheckPayment"/>
+  <parameter name="SheetName" value="STG"/>
+  <test thread-count="5" name="CompleteFlowTest-Transit-Below(failed)">
+    <parameter name="CreditColumn" value="TransitBelowCredit"/>
+    <parameter name="SoReference" value="precertification review"/>
+    <parameter name="CreditColumnNum" value="3"/>
+    <parameter name="ProjectType" value="transit"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="review"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDTransitBelow"/>
+    <classes>
+      <class name="com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetSnapshotDownloadAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest -->
+      <class name="com.arcapi.Transittestcases.AssociatedCategoriesAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssociatedCategoriesAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.AssociatedCategoriesAPITest -->
+      <class name="com.arcapi.Transittestcases.CountryStatesJSONAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="CountryStatesJSONAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.CountryStatesJSONAPITest -->
+      <class name="com.arcapi.Transittestcases.SubmitReviewPOSTAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="teardown"/>
+          <include name="setBaseUri"/>
+          <include name="SubmitReviewPOSTAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.SubmitReviewPOSTAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyAdminRemoveAPI" invocation-numbers="0"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyAdminRemoveAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Transit-Below(failed) -->
+  <test thread-count="5" name="CompleteFlowTest-Transit-Above(failed)">
+    <parameter name="CreditColumn" value="TransitAboveCredit"/>
+    <parameter name="SoReference" value="review"/>
+    <parameter name="CreditColumnNum" value="4"/>
+    <parameter name="ProjectType" value="transit"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="review"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
+    <classes>
+      <class name="com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetSnapshotDownloadAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest -->
+      <class name="com.arcapi.Transittestcases.SubmitReviewPOSTAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="teardown"/>
+          <include name="setBaseUri"/>
+          <include name="SubmitReviewPOSTAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.SubmitReviewPOSTAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyAdminRemoveAPI" invocation-numbers="0"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyAdminRemoveAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Transit-Above(failed) -->
+</suite> <!-- Failed suite [TransitCompletePositive] -->

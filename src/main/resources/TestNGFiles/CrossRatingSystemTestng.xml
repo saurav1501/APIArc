@@ -1,0 +1,141 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CrossRatingSystem">
+
+<!-- <listeners>
+        <listener class-name="com.arc.Listeners.RetryListener" />
+        <listener class-name="com.arc.Listeners.TestListener" />
+</listeners> -->
+
+
+<test name="CrossRatingSystem-Building">
+
+
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.AQIDataGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest"></class>
+
+</classes>
+</test>
+
+
+<test name="CrossRatingSystem-City">
+
+
+<parameter name="ProjectType" value="city" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityLeed" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.Citytestcases.CreateAssetCityLeedAPITest"></class>
+<class name="com.arcapi.Citytestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.AQIDataGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.CO2GetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.VOCGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.GhgGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.WaterGetTest"></class>
+
+</classes>
+</test>
+
+
+<test name="CrossRatingSystem-Transit">
+
+
+<parameter name="ProjectType" value="transit" />
+<parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest"></class>
+<class name="com.arcapi.Transittestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest"></class>
+<!-- <class name="com.arcapi.CrossRatingSystemtestcases.CO2GetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.VOCGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.GhgGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.WaterGetTest"></class> -->
+
+</classes>
+</test>
+
+
+<test name="CrossRatingSystem-Parksmart">
+
+
+<parameter name="ProjectType" value="parksmart" />
+<parameter name="ProjectTypeColumn" value="ProjectIDParksmart" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+
+<class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartPOSTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Parksmarttestcases.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.AQIDataGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.EnvironmentSurveyGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.CO2GetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.VOCGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.GhgGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.TemperatureDataGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.WaterGetTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.AssetAppListAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.AssetDataExportAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.AssetDataSnapshotAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.AssetNotificationSubscriptionListTest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.AssetPerformanceScoreListAPITest"></class>
+<!-- <class name="com.arcapi.CrossRatingSystemtestcases.AssetTeamPermissionListAPITest"></class> -->
+<class name="com.arcapi.CrossRatingSystemtestcases.CertificationGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.CreditGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.MetersAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.NotificationGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.CrossRatingSystemtestcases.WasteGetAPITest"></class>
+
+</classes>
+</test>
+
+
+</suite> 
+  
+
+  
+
+    
+  

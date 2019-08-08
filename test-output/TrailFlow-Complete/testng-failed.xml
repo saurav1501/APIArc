@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [TrailFlow-Complete]">
+  <test name="CompleteFlowTest-Building-None-TrailFlow(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="Term" value="3"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+    <classes>
+      <class name="com.arcapi.TrailFlowtestcasesComplete.CreateAssetBuildingNoneAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="CreateAssetPOSTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.CreateAssetBuildingNoneAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.AssetUpdateBuildingAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.AssetUpdateBuildingAPITest -->
+      <class name="com.arcapi.TrailFlowtestcases.Building.InstallAllAppsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="InstallAllAppsAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcases.Building.InstallAllAppsAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.AssetUpdateBuildingTrailActAPITest">
+        <methods>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.AssetUpdateBuildingTrailActAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.VerifyExcelTemplateConsumptionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="VerifyExcelTemplateConsumptionAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.VerifyExcelTemplateConsumptionAPITest -->
+      <class name="com.arcapi.TrailFlowtestcases.Building.WasteGetAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="WasteGetAPI"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcases.Building.WasteGetAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="AddAssestTimeline"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.SyncSAPTrailProjectAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="getSuiteName"/>
+          <include name="teardown"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.SyncSAPTrailProjectAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.VerifyAssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyAssetDetailAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.VerifyAssetDetailAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="ExcelTemplateMetersAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.ExcelTemplateMetersAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="PaymentOrderSubmitPOSTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.TrailFlowtestcases.Building.SubmitReviewGetAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="SubmitReviewGetAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcases.Building.SubmitReviewGetAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.ExcelUploadTemplatePOSTAPITest">
+        <methods>
+          <include name="ExcelUploadTemplatePOSTAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.ExcelUploadTemplatePOSTAPITest -->
+      <class name="com.arcapi.TrailFlowtestcasesComplete.RegistrationPaymentPricingGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="RegistrationPaymentPricingGetAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.TrailFlowtestcasesComplete.RegistrationPaymentPricingGetAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-None-TrailFlow(failed) -->
+</suite> <!-- Failed suite [TrailFlow-Complete] -->

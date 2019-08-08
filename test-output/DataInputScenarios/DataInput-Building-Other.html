@@ -1,0 +1,523 @@
+<html>
+<head>
+<title>TestNG:  DataInput-Building-Other</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DataInput-Building-Other</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 20 15:09:46 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>913 seconds (913191 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest.CO2MeterDeleteAPI()'><b>CO2MeterDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;403&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:86)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:307)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest.CO2MeterDeleteAPI(CO2MeterDeleteAPITest.java:54)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace133573866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace133573866'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;403&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:86)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:307)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest.CO2MeterDeleteAPI(CO2MeterDeleteAPITest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest@32a068d1</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest.OtherFuelConsumptionCreateAPI()'><b>OtherFuelConsumptionCreateAPI</b><br>Test class: com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;201&gt; doesn&apos;t match actual status code &lt;502&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
+	at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest.OtherFuelConsumptionCreateAPI(OtherFuelConsumptionCreateAPITest.java:61)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1814525610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1814525610'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;201&gt; doesn&apos;t match actual status code &lt;502&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at sun.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
+	at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest.OtherFuelConsumptionCreateAPI(OtherFuelConsumptionCreateAPITest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest@17776a8</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest.OtherFuelConsumptionDeleteAPI()'><b>OtherFuelConsumptionDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:86)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:307)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest.OtherFuelConsumptionDeleteAPI(OtherFuelConsumptionDeleteAPITest.java:61)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1831639090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1831639090'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:86)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:307)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest.OtherFuelConsumptionDeleteAPI(OtherFuelConsumptionDeleteAPITest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest@69a10787</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest.OtherFuelMeterCreateAPI()'><b>OtherFuelMeterCreateAPI</b><br>Test class: com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td><div><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:893)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:972)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.jayway.restassured.path.json.JsonPath$get$0.call(Unknown Source)
+	at com.jayway.restassured.internal.RestAssuredResponseOptionsGroovyImpl.path(RestAssuredResponseOptionsGroovyImpl.groovy:392)
+	at com.jayway.restassured.internal.RestAssuredResponseOptionsImpl.path(RestAssuredResponseOptionsImpl.java:195)
+	at com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest.OtherFuelMeterCreateAPI(OtherFuelMeterCreateAPITest.java:80)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:85)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:96)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:82)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:891)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:926)
+	... 33 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1693991756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1693991756'><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:893)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:972)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.jayway.restassured.path.json.JsonPath$get$0.call(Unknown Source)
+	at com.jayway.restassured.internal.RestAssuredResponseOptionsGroovyImpl.path(RestAssuredResponseOptionsGroovyImpl.groovy:392)
+	at com.jayway.restassured.internal.RestAssuredResponseOptionsImpl.path(RestAssuredResponseOptionsImpl.java:195)
+	at com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest.OtherFuelMeterCreateAPI(OtherFuelMeterCreateAPITest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:85)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:96)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:82)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:891)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:926)
+	... 33 more
+</pre></div></td>
+<td>452</td>
+<td>com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest@12028586</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest.VOCMeterDeleteAPI()'><b>VOCMeterDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;403&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:86)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:307)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest.VOCMeterDeleteAPI(VOCMeterDeleteAPITest.java:54)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1212632500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1212632500'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;403&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:86)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:307)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest.VOCMeterDeleteAPI(VOCMeterDeleteAPITest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest@282003e1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest.AddAssestTimeline()'><b>AddAssestTimeline</b><br>Test class: com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>6</td>
+<td>com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest@6cc7b4de</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest.CO2ConsumptionCreateAPI()'><b>CO2ConsumptionCreateAPI</b><br>Test class: com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest@11c20519</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest.CO2ConsumptionDeleteAPI()'><b>CO2ConsumptionDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest@4e41089d</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest.CO2ConsumptionUpdateAPI()'><b>CO2ConsumptionUpdateAPI</b><br>Test class: com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest@70beb599</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CO2MeterCreateAPITest.CO2MeterCreateAPI()'><b>CO2MeterCreateAPI</b><br>Test class: com.arcapi.Buildingtestcases.CO2MeterCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@2bbaf4f0</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ElectricityConsumptionCreateAPITest.ConsumptionCreatePOSTAPI()'><b>ConsumptionCreatePOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.ElectricityConsumptionCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>23</td>
+<td>com.arcapi.Buildingtestcases.ElectricityConsumptionCreateAPITest@679b62af</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ElectricityConsumptionDeleteAPITest.ConsumptionDeleteAPI()'><b>ConsumptionDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.ElectricityConsumptionDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>17</td>
+<td>com.arcapi.Buildingtestcases.ElectricityConsumptionDeleteAPITest@d6da883</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ElectricityConsumptionUpdateAPITest.ConsumptionUpdatePUTAPI()'><b>ConsumptionUpdatePUTAPI</b><br>Test class: com.arcapi.Buildingtestcases.ElectricityConsumptionUpdateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>17</td>
+<td>com.arcapi.Buildingtestcases.ElectricityConsumptionUpdateAPITest@5cdd8682</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest.CreateAssetPOSTAPI()'><b>CreateAssetPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest<br>Parameters: STG, building, ProjectIDBuildingOther, 2, US</td>
+<td></td>
+<td>20</td>
+<td>com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest@1efee8e7</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ElectricityMeterCreateAPITest.ElectricityMeterCreateAPI()'><b>ElectricityMeterCreateAPI</b><br>Test class: com.arcapi.Buildingtestcases.ElectricityMeterCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>30</td>
+<td>com.arcapi.Buildingtestcases.ElectricityMeterCreateAPITest@32cf48b7</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.LoginAPITest.LoginAPI()'><b>LoginAPI</b><br>Test class: com.arcapi.Buildingtestcases.LoginAPITest<br>Parameters: STG, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.LoginAPITest@1442d7b5</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.ElectricityMeterDeleteAPITest.MeterDeleteAPI()'><b>MeterDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.ElectricityMeterDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>18</td>
+<td>com.arcapi.Buildingtestcases.ElectricityMeterDeleteAPITest@45afc369</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.OtherFuelMeterDeleteAPITest.OtherFuelMeterDeleteAPI()'><b>OtherFuelMeterDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.OtherFuelMeterDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>22</td>
+<td>com.arcapi.Buildingtestcases.OtherFuelMeterDeleteAPITest@2d127a61</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest.PaymentOrderSubmitPOSTAPI()'><b>PaymentOrderSubmitPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2, CreditCardPayment</td>
+<td></td>
+<td>10</td>
+<td>com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest@517cd4b</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest.RegistrationPaymentPricingGetAPI()'><b>RegistrationPaymentPricingGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest@76a4d6c</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest.SignAgreementRegistrationAPI()'><b>SignAgreementRegistrationAPI</b><br>Test class: com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>5</td>
+<td>com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest@1ee807c6</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest.VOCConsumptionCreateAPI()'><b>VOCConsumptionCreateAPI</b><br>Test class: com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest@365c30cc</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest.VOCConsumptionDeleteAPI()'><b>VOCConsumptionDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest@4148db48</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest.VOCConsumptionUpdateAPI()'><b>VOCConsumptionUpdateAPI</b><br>Test class: com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest@701fc37a</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.VOCMeterCreateAPITest.VOCMeterCreateAPI()'><b>VOCMeterCreateAPI</b><br>Test class: com.arcapi.Buildingtestcases.VOCMeterCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.VOCMeterCreateAPITest@33cb5951</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WaterConsumptionCreateAPITest.WaterConsumptionCreateAPI()'><b>WaterConsumptionCreateAPI</b><br>Test class: com.arcapi.Buildingtestcases.WaterConsumptionCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>27</td>
+<td>com.arcapi.Buildingtestcases.WaterConsumptionCreateAPITest@49c43f4e</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WaterMeterCreateAPITest.WaterMeterCreateAPI()'><b>WaterMeterCreateAPI</b><br>Test class: com.arcapi.Buildingtestcases.WaterMeterCreateAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>136</td>
+<td>com.arcapi.Buildingtestcases.WaterMeterCreateAPITest@799d4f69</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.WaterMeterDeleteAPITest.WaterMeterDeleteAPI()'><b>WaterMeterDeleteAPI</b><br>Test class: com.arcapi.Buildingtestcases.WaterMeterDeleteAPITest<br>Parameters: STG, ProjectIDBuildingOther, 2</td>
+<td></td>
+<td>20</td>
+<td>com.arcapi.Buildingtestcases.WaterMeterDeleteAPITest@290dbf45</td></tr>
+</table><p>
+</body>
+</html>
