@@ -1,5 +1,4 @@
 package com.arc.driver;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,7 +6,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.lang.reflect.Method;
-
 import org.json.simple.JSONObject;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
@@ -16,7 +14,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
 import com.Utill.LoginArc;
 import com.Utill.RandomData;
 import com.jayway.restassured.RestAssured;
@@ -29,7 +26,6 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseClass {
-
 	public static XlsReader data;
 	public static XlsReader Customdata;
 	public static RequestSpecification reqSpec;
