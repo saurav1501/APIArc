@@ -4,9 +4,13 @@
 	<groupId>com.arc.api</groupId>
 	<artifactId>TestARCAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	
 	<properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <poi.version>3.17</poi.version>
   </properties>
+	
 	<build>
 
 
@@ -91,9 +95,6 @@
 			
 		</plugins>
 	</build>
-	<properties>
-		<poi.version>3.17</poi.version>
-	</properties>
 	<dependencies>
 	
 		<dependency>
