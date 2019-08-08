@@ -45,7 +45,7 @@
             <configuration>
                  <filesets>
                     <fileset>
-                        <directory>/var/lib/jenkins/workspace/ARC-API/AutomationTesting/TestArcAPI/Advance</directory>
+                        <directory>/var/lib/jenkins/workspace/ARC-API-AUTOMATION/Advance</directory>
                         <includes>
                             <include>**/*</include>
                         </includes>
