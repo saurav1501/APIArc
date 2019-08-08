@@ -1,140 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="PortfoliosComplete" duration-ms="14741" started-at="2019-08-07T11:40:28Z" finished-at="2019-08-07T11:40:42Z">
+  <suite name="PortfoliosComplete" duration-ms="8623" started-at="2019-08-08T05:27:45Z" finished-at="2019-08-08T05:27:54Z">
     <groups>
     </groups>
-    <test name="CompleteFlowTest-Portfolios" duration-ms="14741" started-at="2019-08-07T11:40:28Z" finished-at="2019-08-07T11:40:42Z">
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest">
-        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest@3567135c]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-08-07T17:10:40Z" finished-at="2019-08-07T17:10:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6c6017b9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSuiteName -->
-        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest@3567135c]" name="setBaseUri" is-config="true" duration-ms="179" started-at="2019-08-07T17:10:40Z" finished-at="2019-08-07T17:10:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[stg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseUri -->
-        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest@3567135c]" name="ExtentReportConfig" is-config="true" duration-ms="133" started-at="2019-08-07T17:10:40Z" finished-at="2019-08-07T17:10:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="PortfoliosTransportModes5YearDataVerifyGetAPI()[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest@3567135c]" name="PortfoliosTransportModes5YearDataVerifyGetAPI" duration-ms="2029" started-at="2019-08-07T17:10:40Z" finished-at="2019-08-07T17:10:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PortfoliosTransportModes5YearDataVerifyGetAPI -->
-        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest@3567135c]" name="startTest" is-config="true" duration-ms="0" started-at="2019-08-07T17:10:40Z" finished-at="2019-08-07T17:10:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest.PortfoliosTransportModes5YearDataVerifyGetAPI() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest@3567135c]" name="teardown" is-config="true" duration-ms="0" started-at="2019-08-07T17:10:42Z" finished-at="2019-08-07T17:10:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=PortfoliosTransportModes5YearDataVerifyGetAPI status=SUCCESS method=PortfoliosTransportModes5YearDataVerifyGetAPITest.PortfoliosTransportModes5YearDataVerifyGetAPI()[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest@3567135c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest@3567135c]" name="end" is-config="true" duration-ms="194" started-at="2019-08-07T17:10:42Z" finished-at="2019-08-07T17:10:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest">
-        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest@6be46e8f]" name="setBaseUri" is-config="true" duration-ms="225" started-at="2019-08-07T17:10:37Z" finished-at="2019-08-07T17:10:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[stg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseUri -->
-        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest@6be46e8f]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-08-07T17:10:37Z" finished-at="2019-08-07T17:10:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6c6017b9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSuiteName -->
-        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest@6be46e8f]" name="ExtentReportConfig" is-config="true" duration-ms="298" started-at="2019-08-07T17:10:38Z" finished-at="2019-08-07T17:10:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest@6be46e8f]" name="startTest" is-config="true" duration-ms="0" started-at="2019-08-07T17:10:38Z" finished-at="2019-08-07T17:10:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest.PortfoliosTransportModes3YearDataVerifyGetAPI() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="PortfoliosTransportModes3YearDataVerifyGetAPI()[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest@6be46e8f]" name="PortfoliosTransportModes3YearDataVerifyGetAPI" duration-ms="1999" started-at="2019-08-07T17:10:38Z" finished-at="2019-08-07T17:10:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PortfoliosTransportModes3YearDataVerifyGetAPI -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest@6be46e8f]" name="end" is-config="true" duration-ms="121" started-at="2019-08-07T17:10:40Z" finished-at="2019-08-07T17:10:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest@6be46e8f]" name="teardown" is-config="true" duration-ms="0" started-at="2019-08-07T17:10:40Z" finished-at="2019-08-07T17:10:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=PortfoliosTransportModes3YearDataVerifyGetAPI status=SUCCESS method=PortfoliosTransportModes3YearDataVerifyGetAPITest.PortfoliosTransportModes3YearDataVerifyGetAPI()[pri:0, instance:com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest@6be46e8f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest -->
+    <test name="CompleteFlowTest-Portfolios" duration-ms="8623" started-at="2019-08-08T05:27:45Z" finished-at="2019-08-08T05:27:54Z">
       <class name="com.arcapi.Buildingtestcases.LoginAPITest">
-        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@68837a77]" name="getSuiteName" is-config="true" duration-ms="15" started-at="2019-08-07T17:10:28Z" finished-at="2019-08-07T17:10:28Z">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@77b52d12]" name="getSuiteName" is-config="true" duration-ms="18" started-at="2019-08-08T10:57:45Z" finished-at="2019-08-08T10:57:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6c6017b9]]>
+                <![CDATA[org.testng.TestRunner@372ca2d6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSuiteName -->
-        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@68837a77]" name="setBaseUri" is-config="true" duration-ms="1869" started-at="2019-08-07T17:10:28Z" finished-at="2019-08-07T17:10:30Z">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@77b52d12]" name="setBaseUri" is-config="true" duration-ms="1681" started-at="2019-08-08T10:57:45Z" finished-at="2019-08-08T10:57:47Z">
           <params>
             <param index="0">
               <value>
@@ -145,11 +29,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseUri -->
-        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@68837a77]" name="ExtentReportConfig" is-config="true" duration-ms="715" started-at="2019-08-07T17:10:30Z" finished-at="2019-08-07T17:10:30Z">
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@77b52d12]" name="ExtentReportConfig" is-config="true" duration-ms="419" started-at="2019-08-08T10:57:47Z" finished-at="2019-08-08T10:57:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@68837a77]" name="startTest" is-config="true" duration-ms="2" started-at="2019-08-07T17:10:30Z" finished-at="2019-08-07T17:10:30Z">
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@77b52d12]" name="startTest" is-config="true" duration-ms="6" started-at="2019-08-08T10:57:47Z" finished-at="2019-08-08T10:57:47Z">
           <params>
             <param index="0">
               <value>
@@ -160,29 +44,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="LoginAPI()[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@68837a77]" name="LoginAPI" duration-ms="6455" started-at="2019-08-07T17:10:30Z" finished-at="2019-08-07T17:10:37Z">
+        <test-method status="PASS" signature="LoginAPI()[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@77b52d12]" name="LoginAPI" duration-ms="6155" started-at="2019-08-08T10:57:47Z" finished-at="2019-08-08T10:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAPI -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@68837a77]" name="teardown" is-config="true" duration-ms="0" started-at="2019-08-07T17:10:37Z" finished-at="2019-08-07T17:10:37Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@77b52d12]" name="teardown" is-config="true" duration-ms="1" started-at="2019-08-08T10:57:53Z" finished-at="2019-08-08T10:57:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginAPI status=SUCCESS method=LoginAPITest.LoginAPI()[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@68837a77] output={null}]]]>
+                <![CDATA[[TestResult name=LoginAPI status=SUCCESS method=LoginAPITest.LoginAPI()[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@77b52d12] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@68837a77]" name="end" is-config="true" duration-ms="478" started-at="2019-08-07T17:10:37Z" finished-at="2019-08-07T17:10:37Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.LoginAPITest@77b52d12]" name="end" is-config="true" duration-ms="334" started-at="2019-08-08T10:57:53Z" finished-at="2019-08-08T10:57:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
       </class> <!-- com.arcapi.Buildingtestcases.LoginAPITest -->
     </test> <!-- CompleteFlowTest-Portfolios -->
   </suite> <!-- PortfoliosComplete -->
-  <suite name="MasterAPITestCasesSuite" duration-ms="0" started-at="2019-08-07T11:40:43Z" finished-at="2019-08-07T11:40:43Z">
+  <suite name="MasterAPITestCasesSuite" duration-ms="0" started-at="2019-08-08T05:27:54Z" finished-at="2019-08-08T05:27:54Z">
     <groups>
     </groups>
   </suite> <!-- MasterAPITestCasesSuite -->

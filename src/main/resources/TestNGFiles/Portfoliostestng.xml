@@ -17,7 +17,7 @@
 <classes>
 
 <class name="com.arcapi.Buildingtestcases.LoginAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneAPITest"></class>
+<!-- <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest"></class>
@@ -41,7 +41,7 @@
 <class name="com.arcapi.Portfoliostestcases.PortfoliosDetailPUTAPITest"></class> 
 <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest"></class> 
 <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetGetAPITest"></class>
-<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailGetAPITest"></class> 
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailGetAPITest"></class>  -->
 <!-- <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest"></class> 
 <class name="com.arcapi.Portfoliostestcases.PortfoliosEnergy3YearMTCO2DataVerifyGetAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosEnergy5YearMTCO2DataVerifyGetAPITest"></class> 

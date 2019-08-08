@@ -19,8 +19,6 @@
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
       <class name="com.arcapi.Buildingtestcases.LoginAPITest"/>
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest"/>
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest"/>
     </classes>
   </test> <!-- CompleteFlowTest-Portfolios -->
 </suite> <!-- Failed suite [PortfoliosComplete] -->
