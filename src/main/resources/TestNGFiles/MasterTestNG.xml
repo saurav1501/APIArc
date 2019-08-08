@@ -7,19 +7,19 @@
 
 	<suite-files>
 	  
-	 
+	 <suite-file path="Portfoliostestng.xml"></suite-file>
   <!-- <suite-file path="CustomExecutionTestNG.xml"></suite-file> -->
 	<!-- <suite-file path="CustomExecutionManualTestNG.xml"></suite-file> -->
 	 
-	   <suite-file path="Buildingtestng.xml"></suite-file>  
+<!-- 	   <suite-file path="Buildingtestng.xml"></suite-file>   -->
 	   <!--  <suite-file path="CityTestNG.xml"></suite-file> 
 		<suite-file path="CommunityTestNG.xml"></suite-file> 
 		<suite-file path="TransitTestNG.xml"></suite-file>
 	    <suite-file path="Parksmarttestng.xml"></suite-file> -->
 		<!-- <suite-file path="Portfoliostestng.xml"></suite-file> -->
-	  <suite-file path="CrossRatingSystemTestng.xml"></suite-file>
+	  <!--  <suite-file path="CrossRatingSystemTestng.xml"></suite-file>
 		<suite-file path="InterRelatedFieldValidationTestng.xml"></suite-file>
-		<suite-file path="ScenarioBasedTestingTestng.xml"></suite-file>
+		<suite-file path="ScenarioBasedTestingTestng.xml"></suite-file> -->
 		<!-- <suite-file path="CompleteDataValidationTestng.xml"></suite-file>
 		<suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> -->
 		<!-- <suite-file path="DataInputScenariosTestNG.xml"></suite-file> -->
