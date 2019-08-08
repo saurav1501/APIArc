@@ -189,7 +189,7 @@ public class BaseClass {
 			 */
 			RestAssured.defaultParser = Parser.JSON;
 			extent = new ExtentReports(
-					System.getProperty("user.dir") + "/Advance/index.html", false);
+					System.getProperty("user.dir") + "/Advance/ARC_API-AutomationReport_" + SuiteName + ".html", false);
 			// Locale.setDefault(Locale.ENGLISH);
 			extent.loadConfig(new File(System.getProperty("user.dir") + "/src/main/resources/extent-config.xml"));
 			Map<String, String> sysInfo = new HashMap<String, String>();
