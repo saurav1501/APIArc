@@ -20,11 +20,7 @@ public class WaterCreate60MonthMeterDataPostTest extends BaseClass {
 				
 		String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone", rowNumTwo);
 		String meterID =  data.getCellData(sheetName, "WaterMeterID", rowNumTwo);
-	
-		CommonMethod.ExtentReportConfig();
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
+				
 		MeterData meterData= new MeterData();
 		
 		meterData.setEnd_date(end_date);

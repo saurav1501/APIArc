@@ -41,7 +41,7 @@
 					<suiteXmlFiles>
 
 						<suiteXmlFile>src/main/resources/TestNGFiles/MasterTestNG.xml</suiteXmlFile>
-</suiteXmlFiles>
+   </suiteXmlFiles>
 				</configuration>
 			</plugin>
  <plugin>

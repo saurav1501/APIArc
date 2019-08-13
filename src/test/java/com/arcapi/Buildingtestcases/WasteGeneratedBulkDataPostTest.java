@@ -23,23 +23,18 @@ public class WasteGeneratedBulkDataPostTest extends BaseClass {
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void WasteGeneratedBulkDataPost(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCode();
 		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
 		JSONObject jsonAsMap = new JSONObject();
 		jsonAsMap.put("start_date", "2017-01-06");
 		jsonAsMap.put("end_date", "2017-01-07");
 		jsonAsMap.put("reading", "100");
-		jsonAsMap.put("unit", "tons");
+		jsonAsMap.put("unit", "US tons");
 		
 		JSONObject jsonAsMap1 = new JSONObject();
 		jsonAsMap1.put("start_date", "2017-01-07");
 		jsonAsMap1.put("end_date", "2017-01-08");
 		jsonAsMap1.put("reading", "200");
-		jsonAsMap1.put("unit", "tons");
+		jsonAsMap1.put("unit", "US tons");
 		
 		ArrayList<JSONObject> list = new ArrayList<JSONObject>();
         list.add(jsonAsMap);
