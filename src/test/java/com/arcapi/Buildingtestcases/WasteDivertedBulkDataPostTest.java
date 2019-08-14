@@ -6,41 +6,31 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 import net.minidev.json.JSONObject;
 
 public class WasteDivertedBulkDataPostTest extends BaseClass {
 
-	@Test//(dependsOnMethods = { "com.arcapi.testcases.CreateAssetPOSTAPITest.CreateAssetPOSTAPI" })
+	@Test
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void WasteDivertedBulkDataPost(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
-
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCode();
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
 
 		JSONObject jsonAsMap = new JSONObject();
 		jsonAsMap.put("start_date", "2017-01-06");
 		jsonAsMap.put("end_date", "2017-01-07");
 		jsonAsMap.put("reading", "80");
-		jsonAsMap.put("unit", "tons");
+		jsonAsMap.put("unit", "US tons");
 		
 		JSONObject jsonAsMap1 = new JSONObject();
 		jsonAsMap1.put("start_date", "2017-01-07");
 		jsonAsMap1.put("end_date", "2017-01-08");
 		jsonAsMap1.put("reading", "150");
-		jsonAsMap1.put("unit", "tons");
+		jsonAsMap1.put("unit", "US tons");
 		
 		ArrayList<JSONObject> list = new ArrayList<JSONObject>();
         list.add(jsonAsMap);
@@ -73,19 +63,5 @@ public class WasteDivertedBulkDataPostTest extends BaseClass {
 
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
+	
 }

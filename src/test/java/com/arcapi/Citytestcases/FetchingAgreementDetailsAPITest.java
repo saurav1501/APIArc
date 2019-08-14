@@ -22,11 +22,6 @@ public class FetchingAgreementDetailsAPITest extends BaseClass {
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void FetchingAgreementDetailsAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCodeForLOUser(SheetName, rownumber);
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		
 	    TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
 		
@@ -48,8 +43,6 @@ public class FetchingAgreementDetailsAPITest extends BaseClass {
 				.assignCategory("CheckAsset");
 
 		System.out.println(CommonMethod.res.asString());
-		
-
 		
 		CommonMethod.testlog("Pass", "Response received from API" + "<br>" + CommonMethod.res.asString());
 

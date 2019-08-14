@@ -26,12 +26,7 @@ public class SubmitReviewPOSTAPITest extends BaseClass {
 
 		String s;
 		System.out.println(ProjectType);
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCode();
-
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
+		
 		Gson gson = new Gson();
 
 		String LeedID = data.getCellData(SheetName, ProjectTypeColumn, rownumber);
@@ -141,19 +136,5 @@ public class SubmitReviewPOSTAPITest extends BaseClass {
 
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
+	
 }

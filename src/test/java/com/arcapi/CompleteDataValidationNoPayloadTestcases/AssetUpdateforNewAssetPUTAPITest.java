@@ -25,10 +25,6 @@ public class AssetUpdateforNewAssetPUTAPITest extends BaseClass {
 	public void AssetUpdateforNewAssetPUTAPI(String SheetName, String ProjectTypeColumn, int rownumber)
 			throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		// CommonMethod.GeneratingAuthCode();
-
 		CommonMethod.test = CommonMethod.extent
 				.startTest("Asset Update for new Asset API Test  ", "Verifies Update asset")
 				.assignCategory("CheckAsset");
@@ -58,19 +54,5 @@ public class AssetUpdateforNewAssetPUTAPITest extends BaseClass {
 		CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
+	
 }

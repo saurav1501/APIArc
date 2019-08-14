@@ -12,7 +12,7 @@
 <parameter name="rownumber" value="2" />
 
 <classes>
-<!-- <class name="com.arcapi.Buildingtestcases.LoginAPITest"></class> -->
+<class name="com.arcapi.Buildingtestcases.LoginAPITest"></class>
 
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneEmissionFactorTest"></class>
 <class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetEmissionTest"></class>

@@ -5,14 +5,11 @@ import static com.jayway.restassured.RestAssured.given;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class LOProjectSyncAPITest extends BaseClass {
 
@@ -20,15 +17,11 @@ public class LOProjectSyncAPITest extends BaseClass {
 	@Parameters({ "LOSheetName","LOProjectTypeColumn","rownumber" })
 	public void LOProjectSyncAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
 		CommonMethod.GeneratingAuthCodeForLOUser(SheetName,rownumber);
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		
 	    TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
 		
-			data.setCellData("Report", "TestCaseName", reportrownum, TestName);
+		data.setCellData("Report", "TestCaseName", reportrownum, TestName);
 
 		
         TestName = Thread.currentThread().getStackTrace()[1].getMethodName();

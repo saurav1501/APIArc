@@ -130,7 +130,7 @@ public class CreateAssetCityLeedAPITest extends BaseClass {
 		
 		data.setCellData(SheetName, "OwnerType", rownumber, OwnerType);
 		
-		String ProjectName = "MachineTestProject-City-Leed-" + Country;
+		String ProjectName = "ARC-API-City-Leed" + Country;
 		
 		data.setCellData(SheetName, "ProjectName", rownumber, ProjectName);
 		
@@ -195,20 +195,6 @@ public class CreateAssetCityLeedAPITest extends BaseClass {
 
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
+	
 
 }

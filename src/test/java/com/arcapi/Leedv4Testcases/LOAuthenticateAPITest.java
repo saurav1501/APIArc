@@ -3,35 +3,23 @@ package com.arcapi.Leedv4Testcases;
 import static com.jayway.restassured.RestAssured.given;
 
 import java.io.IOException;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.json.JSONObject;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class LOAuthenticateAPITest extends BaseClass {
 
-	@Test//(groups = { "Certification", "Precertification","PerformanceScore","Recertification" })
-	@Parameters({ "LOSheetName","rownumber" })
+	@Test
+	@Parameters({ "LOSheetName","rownumber"})
 	public void LOAuthenticateAPI(String SheetName,int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
+		data.setCellData("Report", "TestCaseName", reportrownum, TestName);
 
-		//CommonMethod.GeneratingAuthCode(SheetName,rownumber);
-		
-	    TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
-		
-			data.setCellData("Report", "TestCaseName", reportrownum, TestName);
-
-		
 		String UserName = data.getCellData(SheetName, "LODEVUSER", rownumber);
 		String Password = data.getCellData(SheetName, "LODEVPASS", rownumber);
 		
@@ -40,9 +28,9 @@ public class LOAuthenticateAPITest extends BaseClass {
 				.params(
 						"username", UserName,
 						"password", Password,
-						"guid", "")
+						"guid", "").spec(reqSpecLEED)
 				.when()
-				.post("https://leedonline-api-qas.usgbc.org/v1/json/authenticate")
+				.post("authenticate")
 				.then()
 				.extract()
 				.response();

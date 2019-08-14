@@ -5,14 +5,11 @@ import static com.jayway.restassured.RestAssured.given;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 import net.minidev.json.JSONObject;
 
@@ -21,22 +18,13 @@ public class VerifyAdminRemoveAPITest extends BaseClass {
 	@Test//(dependsOnMethods = { "com.arcapi.testcases.CreateAssetPOSTAPITest.CreateAssetPOSTAPI" })
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void VerifyAdminRemoveAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
-
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCodeForLOUser(SheetName, rownumber);
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
-	    TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
-		
-			data.setCellData("Report", "TestCaseName", reportrownum, TestName);
-
+	
+		data.setCellData("Report", "TestCaseName", reportrownum, TestName);
 
 		JSONObject jsonAsMap = new JSONObject();
 		jsonAsMap.put("user_email", data.getCellData(SheetName, "NormalUserName", rownumber));
 		jsonAsMap.put("Reltyp", "ZRPO80");
-		jsonAsMap.put("Responsibility", data.getCellData(SheetName, "NormalUserName", rownumber));
+		jsonAsMap.put("Responsibility", data.getCellData(SheetName, "NormalUserName",rownumber));
 
 		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
 				.header("Content-type", "application/json").header("Authorization", header).spec(reqSpec)

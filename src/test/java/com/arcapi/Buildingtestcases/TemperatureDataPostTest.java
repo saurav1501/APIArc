@@ -22,12 +22,6 @@ public class TemperatureDataPostTest extends BaseClass {
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void TemperatureDataPost(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		CommonMethod.GeneratingAuthCode(SheetName,rownumber);
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
 		JSONObject jsonAsMap = new JSONObject();
 		jsonAsMap.put("reading", "200");
 		jsonAsMap.put("start_date", "2017-02-01");

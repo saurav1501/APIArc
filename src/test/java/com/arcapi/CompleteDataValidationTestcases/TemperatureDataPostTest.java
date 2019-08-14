@@ -24,10 +24,7 @@ public class TemperatureDataPostTest extends BaseClass {
 	@Parameters({ "SheetName", "ProjectTypeColumn", "rownumber" })
 	public void TemperatureDataPost(String SheetName, String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		// CommonMethod.GeneratingAuthCode();
-
+	
 		CommonMethod.test = CommonMethod.extent
 				.startTest("TemperatureData Post API Test  ",
 						"Post Temperature Data")

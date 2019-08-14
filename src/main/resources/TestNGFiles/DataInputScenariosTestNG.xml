@@ -21,10 +21,6 @@
 
 
 <class name="com.arcapi.Buildingtestcases.LoginAPITest"></class>
-
-
-
-
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest"></class>
@@ -37,21 +33,19 @@
 <class name="com.arcapi.Buildingtestcases.ElectricityMeterDeleteAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.WaterMeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.WaterConsumptionCreateAPITest"></class>
-<!-- <class name="com.arcapi.Buildingtestcases.WaterConsumptionUpdateAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.WaterConsumptionDeleteAPITest"></class> -->
+<class name="com.arcapi.Buildingtestcases.WaterConsumptionUpdateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.WaterConsumptionDeleteAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.WaterMeterDeleteAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest"></class>
-<!-- <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionUpdateAPITest"></class> -->
+<class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionUpdateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.OtherFuelMeterDeleteAPITest"></class>
-
 <class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest"></class>
-
 <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest"></class>

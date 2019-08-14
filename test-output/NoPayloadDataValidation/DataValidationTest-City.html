@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>DataValidationTest-City</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 21 11:33:58 IST 2019</td>
+<td>Started on:</td><td>Tue Aug 13 16:06:21 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>339 seconds (339078 ms)</td>
+<tr><td>Total time:</td><td>59 seconds (59551 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,160 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditAddTeamPOSTAPITest.CreditAddTeamPOSTAPI()'><b>CreditAddTeamPOSTAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditAddTeamPOSTAPITest<br>Parameters: QAS, ProjectIDCityLeed, 2</td>
-<td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;400&gt; doesn&apos;t match actual status code &lt;404&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
-	at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
-	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
-	at com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditAddTeamPOSTAPITest.CreditAddTeamPOSTAPI(CreditAddTeamPOSTAPITest.java:53)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2056082761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2056082761'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;400&gt; doesn&apos;t match actual status code &lt;404&gt;.
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
-	at sun.reflect.GeneratedMethodAccessor114.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
-	at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
-	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
-	at com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditAddTeamPOSTAPITest.CreditAddTeamPOSTAPI(CreditAddTeamPOSTAPITest.java:53)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditAddTeamPOSTAPITest@29ba4338</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionPostAPITest.MeasuresVersionPostAPI()'><b>MeasuresVersionPostAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionPostAPITest<br>Parameters: QAS, ProjectIDCityLeed, 2</td>
-<td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;500&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
-	at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
-	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
-	at com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionPostAPITest.MeasuresVersionPostAPI(MeasuresVersionPostAPITest.java:55)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace296391385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace296391385'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;500&gt;.
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
-	at sun.reflect.GeneratedMethodAccessor114.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
-	at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
-	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
-	at com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionPostAPITest.MeasuresVersionPostAPI(MeasuresVersionPostAPITest.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>301</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionPostAPITest@c540f5a</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -229,45 +75,55 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;500&g
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest.AddAssestTimeline()'><b>AddAssestTimeline</b><br>Test class: com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest<br>Parameters: QAS, ProjectIDCityLeed, 2</td>
+<td title='com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest.AddAssestTimeline()'><b>AddAssestTimeline</b><br>Test class: com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest<br>Parameters: STG, ProjectIDCityLeed, 2</td>
 <td></td>
-<td>3</td>
-<td>com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest@6279cee3</td></tr>
+<td>5</td>
+<td>com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest@6537cf78</td></tr>
 <tr>
-<td title='com.arcapi.Citytestcases.AssetDetailAPITest.AssetDetailAPI()'><b>AssetDetailAPI</b><br>Test class: com.arcapi.Citytestcases.AssetDetailAPITest<br>Parameters: QAS, ProjectIDCityLeed, 2</td>
-<td></td>
-<td>2</td>
-<td>com.arcapi.Citytestcases.AssetDetailAPITest@4206a205</td></tr>
-<tr>
-<td title='com.arcapi.Citytestcases.CreateAssetCityLeedAPITest.CreateAssetPOSTAPI()'><b>CreateAssetPOSTAPI</b><br>Test class: com.arcapi.Citytestcases.CreateAssetCityLeedAPITest<br>Parameters: QAS, city, ProjectIDCityLeed, 2, US</td>
-<td></td>
-<td>9</td>
-<td>com.arcapi.Citytestcases.CreateAssetCityLeedAPITest@51b7e5df</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresPostAPITest.MeasuresPostAPI()'><b>MeasuresPostAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresPostAPITest<br>Parameters: QAS, ProjectIDCityLeed, 2</td>
-<td></td>
-<td>1</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresPostAPITest@57175e74</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresUpdateAPITest.MeasuresUpdateAPI()'><b>MeasuresUpdateAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresUpdateAPITest<br>Parameters: QAS, ProjectIDCityLeed, 2</td>
-<td></td>
-<td>2</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresUpdateAPITest@7bb58ca3</td></tr>
-<tr>
-<td title='com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest.PaymentOrderSubmitPOSTAPI()'><b>PaymentOrderSubmitPOSTAPI</b><br>Test class: com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest<br>Parameters: QAS, ProjectIDCityLeed, 2, CheckPayment</td>
-<td></td>
-<td>6</td>
-<td>com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest@c8e4bb0</td></tr>
-<tr>
-<td title='com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest.RegistrationPaymentPricingGetAPI()'><b>RegistrationPaymentPricingGetAPI</b><br>Test class: com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest<br>Parameters: QAS, ProjectIDCityLeed, 2</td>
-<td></td>
-<td>3</td>
-<td>com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest@62e136d3</td></tr>
-<tr>
-<td title='com.arcapi.Citytestcases.SignAgreementRegistrationAPITest.SignAgreementRegistrationAPI()'><b>SignAgreementRegistrationAPI</b><br>Test class: com.arcapi.Citytestcases.SignAgreementRegistrationAPITest<br>Parameters: QAS, ProjectIDCityLeed, 2</td>
+<td title='com.arcapi.Citytestcases.AssetDetailAPITest.AssetDetailAPI()'><b>AssetDetailAPI</b><br>Test class: com.arcapi.Citytestcases.AssetDetailAPITest<br>Parameters: STG, ProjectIDCityLeed, 2</td>
 <td></td>
 <td>4</td>
-<td>com.arcapi.Citytestcases.SignAgreementRegistrationAPITest@18a70f16</td></tr>
+<td>com.arcapi.Citytestcases.AssetDetailAPITest@67b6d4ae</td></tr>
+<tr>
+<td title='com.arcapi.Citytestcases.CreateAssetCityLeedAPITest.CreateAssetPOSTAPI()'><b>CreateAssetPOSTAPI</b><br>Test class: com.arcapi.Citytestcases.CreateAssetCityLeedAPITest<br>Parameters: STG, city, ProjectIDCityLeed, 2, US</td>
+<td></td>
+<td>14</td>
+<td>com.arcapi.Citytestcases.CreateAssetCityLeedAPITest@4909b8da</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditAddTeamPOSTAPITest.CreditAddTeamPOSTAPI()'><b>CreditAddTeamPOSTAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditAddTeamPOSTAPITest<br>Parameters: STG, ProjectIDCityLeed, 2</td>
+<td></td>
+<td>2</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditAddTeamPOSTAPITest@34b7bfc0</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresPostAPITest.MeasuresPostAPI()'><b>MeasuresPostAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresPostAPITest<br>Parameters: STG, ProjectIDCityLeed, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresPostAPITest@366e2eef</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresUpdateAPITest.MeasuresUpdateAPI()'><b>MeasuresUpdateAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresUpdateAPITest<br>Parameters: STG, ProjectIDCityLeed, 2</td>
+<td></td>
+<td>1</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresUpdateAPITest@6df97b55</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionGetAPITest.MeasuresVersionGetAPI()'><b>MeasuresVersionGetAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionGetAPITest<br>Parameters: STG, ProjectIDCityLeed, 2</td>
+<td></td>
+<td>1</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionGetAPITest@3cbbc1e0</td></tr>
+<tr>
+<td title='com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest.PaymentOrderSubmitPOSTAPI()'><b>PaymentOrderSubmitPOSTAPI</b><br>Test class: com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest<br>Parameters: STG, ProjectIDCityLeed, 2, CreditCardPayment</td>
+<td></td>
+<td>10</td>
+<td>com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest@617c74e5</td></tr>
+<tr>
+<td title='com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest.RegistrationPaymentPricingGetAPI()'><b>RegistrationPaymentPricingGetAPI</b><br>Test class: com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest<br>Parameters: STG, ProjectIDCityLeed, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest@2d3fcdbd</td></tr>
+<tr>
+<td title='com.arcapi.Citytestcases.SignAgreementRegistrationAPITest.SignAgreementRegistrationAPI()'><b>SignAgreementRegistrationAPI</b><br>Test class: com.arcapi.Citytestcases.SignAgreementRegistrationAPITest<br>Parameters: STG, ProjectIDCityLeed, 2</td>
+<td></td>
+<td>3</td>
+<td>com.arcapi.Citytestcases.SignAgreementRegistrationAPITest@3a03464</td></tr>
 </table><p>
 </body>
 </html>

@@ -29,6 +29,7 @@ public class BaseClass {
 	public static XlsReader data;
 	public static XlsReader Customdata;
 	public static RequestSpecification reqSpec;
+	public static RequestSpecification reqSpecLEED;
 	public static RequestSpecification reqSpecjson;
 	public static ResponseSpecification respSpec;
 	public static String Token;
@@ -40,7 +41,7 @@ public class BaseClass {
 	public static JSONObject jsonObject;
 	public static int reportrownum = 2;
 	public static String TestName = null;
-	public static String GrossArea = "100000";
+	public static String GrossArea = "1000";
 	public static String occupant = "3";
 	public static String sheetName=null;
 	public static int rowNumOne=1;
@@ -106,6 +107,11 @@ public class BaseClass {
 			rowNumThree= Integer.parseInt(prop.getProperty("rowNumThree"));
 			rowNumFour= Integer.parseInt(prop.getProperty("rowNumFour"));
 			rowNumFive= Integer.parseInt( prop.getProperty("rowNumFive"));
+			
+			String STGLEED = prop.getProperty("envleed");
+			reqSpecLEED = new RequestSpecBuilder().setBaseUri(STGLEED).build();
+			
+			
 			reqSpec = new RequestSpecBuilder().setBaseUri(STG).build();
 			SubscriptionKey = "06c50a1570bd4d40a7859ec28514b185";
 			
@@ -122,6 +128,12 @@ public class BaseClass {
 			rowNumThree= Integer.parseInt(prop.getProperty("rowNumThree"));
 			rowNumFour= Integer.parseInt(prop.getProperty("rowNumFour"));
 			rowNumFive= Integer.parseInt( prop.getProperty("rowNumFive"));
+			
+			String DEVLEED = prop.getProperty("envleed");
+			reqSpecLEED = new RequestSpecBuilder().setBaseUri(DEVLEED).build();
+		
+			
+			
 			reqSpec = new RequestSpecBuilder().setBaseUri(DEV).build();
 			SubscriptionKey = "450fc0393ae747638659258f5ed26485";
 			
@@ -137,6 +149,10 @@ public class BaseClass {
 			rowNumThree= Integer.parseInt(prop.getProperty("rowNumThree"));
 			rowNumFour= Integer.parseInt(prop.getProperty("rowNumFour"));
 			rowNumFive= Integer.parseInt( prop.getProperty("rowNumFive"));
+			
+			String QASLEED = prop.getProperty("envleed");
+			reqSpecLEED = new RequestSpecBuilder().setBaseUri(QASLEED).build();
+			
 			reqSpec = new RequestSpecBuilder().setBaseUri(QAS).build();
 			SubscriptionKey = "37fee8fbf7c84994a40df7346bf2f684";	
 		}

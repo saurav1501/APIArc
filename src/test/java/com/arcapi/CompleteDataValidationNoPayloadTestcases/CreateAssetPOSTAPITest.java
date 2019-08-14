@@ -3,18 +3,14 @@ package com.arcapi.CompleteDataValidationNoPayloadTestcases;
 import static com.jayway.restassured.RestAssured.given;
 
 import java.io.IOException;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class CreateAssetPOSTAPITest extends BaseClass {
 
@@ -23,22 +19,13 @@ public class CreateAssetPOSTAPITest extends BaseClass {
 	public void CreateAssetPOSTAPI(String SheetName, String ProjectType, String ProjectTypeColumn, int rownumber)
 			throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		CommonMethod.GeneratingAuthCode(SheetName, rownumber);
-
-		CommonMethod.test = CommonMethod.extent.startTest("Create New Building Test  ", "Verifies Add asset")
-				.assignCategory("CheckAsset");
-
-
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
 		
+		   CommonMethod.test = CommonMethod.extent.startTest("Create New Building Test  ", "Verifies Add asset")
+				.assignCategory("CheckAsset");
+	
 			CommonMethod.res = given().log().all()
 					.header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey).header("Authorization", header)
 					.spec(reqSpec).when().post("/assets/").then().extract().response();
-
-			
 
 			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
@@ -63,20 +50,6 @@ public class CreateAssetPOSTAPITest extends BaseClass {
 		CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
+	
 
 }

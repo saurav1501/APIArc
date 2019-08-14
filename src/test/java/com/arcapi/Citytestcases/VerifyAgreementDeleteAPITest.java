@@ -5,14 +5,11 @@ import static com.jayway.restassured.RestAssured.given;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class VerifyAgreementDeleteAPITest extends BaseClass {
 
@@ -20,11 +17,7 @@ public class VerifyAgreementDeleteAPITest extends BaseClass {
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void VerifyAgreementDeleteAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCodeForLOUser(SheetName, rownumber);
-
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+		
 		
 	    TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
 		
@@ -53,7 +46,6 @@ public class VerifyAgreementDeleteAPITest extends BaseClass {
 						+ arr1[2])
 				.then().extract().response();
 		
-
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 		
 		System.out.println(CommonMethod.responsetime);

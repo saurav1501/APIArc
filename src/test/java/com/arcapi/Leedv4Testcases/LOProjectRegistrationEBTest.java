@@ -6,16 +6,12 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 import net.minidev.json.JSONObject;
 
@@ -25,20 +21,12 @@ public class LOProjectRegistrationEBTest extends BaseClass {
     @Parameters({ "LOSheetName","rownumber","Country" })
 	public void LOProjectRegistration(String SheetName,int rownumber, String Country) throws IOException {
 		
-
-		CommonMethod.ExtentReportConfig();
-		
-		
 		String State = null;
 		String Unit = null;
 		String AnticipitatedType = null;
 		String OwnerType  = null;
 		String ZipCode = null;
-
-		//CommonMethod.GeneratingAuthCodeForLOUser(SheetName, rownumber);
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
+	
 		TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
 		
 		data.setCellData("Report", "TestCaseName", reportrownum, TestName);
@@ -143,7 +131,7 @@ public class LOProjectRegistrationEBTest extends BaseClass {
 		jsonAsMap.put("address.geoPoints.longitude", "10.46467895");
 		jsonAsMap.put("owner.name", "Test Owner");
 		jsonAsMap.put("owner.email", "newserver2@gmail.com");
-		jsonAsMap.put("owner.organization", "N1K4QrwEeVVW");
+		jsonAsMap.put("owner.organization", "S & L Zeppetelli");
 		jsonAsMap.put("owner.country", "IN");
 		jsonAsMap.put("owner.type", OwnerType);
 	
@@ -152,9 +140,9 @@ public class LOProjectRegistrationEBTest extends BaseClass {
 				.header("Content-type", "application/json")
 				.header("Authorization", header)
 				.header("X-Caller-Id", "20297672fa1247ccf00ce8e0a14013ac")
-				.body(jsonAsMap)
-				.when()
-				.post("https://leedonline-api-qas.usgbc.org/v1/json/Project/register/INP")
+				.spec(reqSpecLEED)
+			    .when().body(jsonAsMap)
+				.post("Project/register/INP")
 				.then()
 				.extract()
 				.response();	

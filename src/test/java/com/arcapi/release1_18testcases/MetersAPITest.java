@@ -20,12 +20,6 @@ public class MetersAPITest extends BaseClass {
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void MetersAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCode();
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
 		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
 				.header("Authorization", header).spec(reqSpec).when()
 				.get("/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/?kind=energy_gross_area").then()

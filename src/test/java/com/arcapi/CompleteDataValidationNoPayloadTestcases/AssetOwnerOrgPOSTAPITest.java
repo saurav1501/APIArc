@@ -22,16 +22,12 @@ public class AssetOwnerOrgPOSTAPITest extends BaseClass {
 	// @Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void AssetOwnerOrgPOSTAPI() throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		// CommonMethod.GeneratingAuthCode();
+	
 
 		CommonMethod.test = CommonMethod.extent.startTest("AssetOwnerOrgPOST API Test", "AssetOwnerOrgPOSTAPITest")
 				.assignCategory("AssetOwnerOrgPOSTAPITest");
-
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
-			CommonMethod.res = given().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
+		
+		CommonMethod.res = given().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
 					.header("content-type", "application/json").header("Authorization", header).spec(reqSpec)
 					.when().post("/assets/searchowner/").then().contentType(ContentType.JSON).extract()
 					.response();
@@ -57,20 +53,5 @@ public class AssetOwnerOrgPOSTAPITest extends BaseClass {
 		CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
 
 }

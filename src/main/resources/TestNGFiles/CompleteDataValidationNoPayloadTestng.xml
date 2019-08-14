@@ -7,7 +7,7 @@
 </listeners> -->
 
  
-  
+<!--   
 <test name="NoPayload-DataValidation">
 
 
@@ -17,10 +17,7 @@
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 
-
 <classes>
-
-
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest"></class>
@@ -32,6 +29,7 @@
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.CreateAssetPOSTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.AssetUpdateforNewAssetPUTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CreditGetAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditFormUploadPOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.MeterCreatePOSTAPITest"></class>
@@ -70,12 +68,12 @@
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.AssetPerformanceScorePostAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.AnalysisDataSubmitPOSTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.AssetCertificationPOSTAPITest"></class>
-<class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.TemperatureDataPostTest"></class>
+<class name="com.arcapi.Buildingtestcases.TemperatureDataGetTest"></class>
 
 </classes>
 </test>
 
-
+ -->
 <test name="DataValidationTest-City">
 
 
@@ -97,8 +95,7 @@
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.CreditAddTeamPOSTAPITest"></class> 
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresPostAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresUpdateAPITest"></class>
-<class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionPostAPITest"></class>
-
+<class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.MeasuresVersionGetAPITest"></class>
 </classes>
 </test>
 
@@ -109,10 +106,7 @@
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
 <parameter name="rownumber" value="2" />
 
-
 <classes>
-
-
 <class name="com.arcapi.Portfoliostestcases.LoginAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest"></class>
@@ -125,10 +119,8 @@
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest"></class>
+</classes> 
 
-
-
-</classes>
 </test>
 
 </suite> 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [PortfoliosComplete]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CustomExecution]">
   <parameter name="environment" value="stg"/>
   <parameter name="SoReference" value="performance score"/>
   <parameter name="ProjectType" value="building"/>
@@ -10,8 +10,7 @@
   <parameter name="SheetName" value="STG"/>
   <parameter name="SoReferenceSR" value="performance score"/>
   <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
-  <test name="CompleteFlowTest-Portfolios">
-    <parameter name="environment" value="stg"/>
+  <test name="CompleteFlowTest-Building-None">
     <parameter name="SoReference" value="performance score"/>
     <parameter name="ProjectType" value="building"/>
     <parameter name="rownumber" value="2"/>
@@ -19,20 +18,141 @@
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
       <class name="com.arcapi.Buildingtestcases.LoginAPITest"/>
+      <class name="com.arcapi.release1_18testcases.CreateAssetBuildingNoneAPITest"/>
+      <class name="com.arcapi.release1_18testcases.RegistrationPaymentPricingGetAPITest"/>
+      <class name="com.arcapi.release1_18testcases.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.release1_18testcases.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.release1_18testcases.AssetUpdateBuildingNoneAPITest"/>
+      <class name="com.arcapi.release1_18testcases.MetersAPITest"/>
+      <class name="com.arcapi.release1_18testcases.SurveyCreatePOSTAPITest"/>
+      <class name="com.arcapi.release1_18testcases.OccupantPostAPITest"/>
+      <class name="com.arcapi.release1_18testcases.OccupantGetAPITest"/>
+      <class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest"/>
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest"/>
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest"/>
     </classes>
-  </test> <!-- CompleteFlowTest-Portfolios -->
-  <test name="CompleteFlowTest-Portfolios(failed)">
-    <parameter name="environment" value="stg"/>
+  </test> <!-- CompleteFlowTest-Building-None -->
+  <test name="CompleteFlowTest-Building-None(failed)">
     <parameter name="SoReference" value="performance score"/>
     <parameter name="ProjectType" value="building"/>
     <parameter name="rownumber" value="2"/>
     <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
+      <class name="com.arcapi.release1_18testcases.RegistrationPaymentPricingGetAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.RegistrationPaymentPricingGetAPITest -->
+      <class name="com.arcapi.release1_18testcases.MetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.MetersAPITest -->
+      <class name="com.arcapi.release1_18testcases.OccupantPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.OccupantPostAPITest -->
+      <class name="com.arcapi.release1_18testcases.SurveyCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="SurveyCreatePOSTAPI" invocation-numbers="0"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.SurveyCreatePOSTAPITest -->
+      <class name="com.arcapi.release1_18testcases.AssetUpdateBuildingNoneAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetUpdateBuildingNoneAPITest -->
+      <class name="com.arcapi.release1_18testcases.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.release1_18testcases.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="teardown"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.release1_18testcases.OccupantGetAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.OccupantGetAPITest -->
+      <class name="com.arcapi.release1_18testcases.CreateAssetBuildingNoneAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.CreateAssetBuildingNoneAPITest -->
+      <class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.OccupantDeleteAPITest -->
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest -->
       <class name="com.arcapi.Buildingtestcases.LoginAPITest">
         <methods>
           <include name="teardown"/>
-          <include name="LoginAPI"/>
           <include name="end"/>
           <include name="getSuiteName"/>
           <include name="setBaseUri"/>
@@ -40,6 +160,16 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Buildingtestcases.LoginAPITest -->
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest -->
     </classes>
-  </test> <!-- CompleteFlowTest-Portfolios(failed) -->
-</suite> <!-- Failed suite [PortfoliosComplete] -->
+  </test> <!-- CompleteFlowTest-Building-None(failed) -->
+</suite> <!-- Failed suite [CustomExecution] -->

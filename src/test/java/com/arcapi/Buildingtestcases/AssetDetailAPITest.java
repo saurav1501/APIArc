@@ -40,8 +40,6 @@ public class AssetDetailAPITest extends BaseClass {
 
 		System.out.println(CommonMethod.res.asString());
 		
-
-		
 		CommonMethod.testlog("Pass", "Response received from API" + "<br>" + CommonMethod.res.asString());
 
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");

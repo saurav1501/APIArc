@@ -8,7 +8,6 @@
 
 <!-- <test name="CompleteFlowTest-City-Leed">
 
-
 <parameter name="ProjectType" value="city" />
 <parameter name="ProjectTypeColumn" value="ProjectIDCityLeed" />
 <parameter name="SoReference" value="precertification review" />
@@ -17,11 +16,7 @@
 <parameter name="CreditColumn" value="CityLeedCredit" />
 <parameter name="CreditColumnNum" value="0" />
 
-
 <classes>
-
-
-
 <class name="com.arcapi.Citytestcases.LoginAPITest"></class>
 <class name="com.arcapi.Citytestcases.UserDetailAPITest"></class>
 <class name="com.arcapi.Citytestcases.UserAccessLevelSAPGetTest"></class>
@@ -110,11 +105,12 @@
 <class name="com.arcapi.Citytestcases.AssetSnapshotKeysAPITest"></class>
 <class name="com.arcapi.Citytestcases.AssetSnapshotDownloadAPITest"></class>
 
+
 </classes>
 </test>
+ -->
 
--->
-<test name="CompleteFlowTest-City-Other">
+ <test name="CompleteFlowTest-City-Other">
 
 
 <parameter name="ProjectType" value="city" />
@@ -125,11 +121,7 @@
 <parameter name="CreditColumn" value="CityOtherNoneCredit" />
 <parameter name="CreditColumnNum" value="1" />
 
-
 <classes>
-
-
-
 <class name="com.arcapi.Citytestcases.LoginAPITest"></class>
 <class name="com.arcapi.Citytestcases.UserDetailAPITest"></class>
 <class name="com.arcapi.Citytestcases.UserAccessLevelSAPGetTest"></class>

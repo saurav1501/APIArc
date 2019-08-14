@@ -45,9 +45,6 @@
 <class name="com.arcapi.Buildingtestcases.VOCGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.WaterGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.TemperatureDataGetTest"></class>
-<!-- <class name="com.arcapi.Buildingtestcases.TemperatureDataPostTest"></class> -->
-<class name="com.arcapi.Buildingtestcases.TemperatureDataZipCodeGetTest"></class>
-
 
 
 <class name="com.arcapi.Buildingtestcases.LoginAPITest"></class>
@@ -56,15 +53,15 @@
 <class name="com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest"></class>
-<!-- <class name="com.arcapi.Scoretestcases.version2.TemperatureDataPostTest"></class> -->
+<class name="com.arcapi.Scoretestcases.version2.TemperatureDataPostTest"></class> 
 <class name="com.arcapi.Scoretestcases.version3.SatisfactionGetTest"></class>
 <class name="com.arcapi.Scoretestcases.version3.SourceEnergyGetTest"></class>
 <class name="com.arcapi.Scoretestcases.version3.TransitGetTest"></class>
-<!-- <class name="com.arcapi.Scoretestcases.version2.PerformanceScoreGetAPITest"></class>
+<class name="com.arcapi.Scoretestcases.version2.PerformanceScoreGetAPITest"></class>
 <class name="com.arcapi.Scoretestcases.version2.RecomputePerformanceScoreGetTest"></class>
-<class name="com.arcapi.Scoretestcases.version2.PerformanceScoreGetAfterRecomputeTest"></class> -->
+<class name="com.arcapi.Scoretestcases.version2.PerformanceScoreGetAfterRecomputeTest"></class> 
 
-<!-- <class name="com.arcapi.Scoretestcases.version2.VOCGetTest"></class> 
+<class name="com.arcapi.Scoretestcases.version2.VOCGetTest"></class> 
 <class name="com.arcapi.Scoretestcases.version2.CO2GetTest"></class>
  <class name="com.arcapi.Scoretestcases.version2.AQIDataGetAPITest"></class>
  <class name="com.arcapi.Scoretestcases.version2.RidershipDataGetAPITest"></class>
@@ -74,27 +71,27 @@
  <class name="com.arcapi.Scoretestcases.version2.WaterGetTest"></class>
  <class name="com.arcapi.Scoretestcases.version2.GhgGetTest"></class>
  <class name="com.arcapi.Scoretestcases.version2.TemperatureDataGetTest"></class>
- -->
-<!-- 
+
+
 <class name="com.arcapi.Scoretestcases.version3.CO2GetTest"></class> 
-<class name="com.arcapi.Scoretestcases.version3.VOCGetTest"></class> -->
-<!--<class name="com.arcapi.Scoretestcases.version3.AQIDataGetAPITest"></class>
-<class name="com.arcapi.Scoretestcases.version3.RidershipDataGetAPITest"></class> -->
-<!-- <class name="com.arcapi.Scoretestcases.version3.WasteDivertedDataGetTest"></class> -->
-<!-- <class name="com.arcapi.Scoretestcases.version3.WasteGeneratedDataGetTest"></class> -->
-<!-- <class name="com.arcapi.Scoretestcases.version3.GhgGetTest"></class> -->
-<!-- <class name="com.arcapi.Scoretestcases.version3.GhgCalcGetTest"></class> -->
-<!-- <class name="com.arcapi.Scoretestcases.version3.WaterGetTest"></class> -->
-<!-- <class name="com.arcapi.Scoretestcases.version3.TemperatureDataGetTest"></class> -->
-<!-- <class name="com.arcapi.Scoretestcases.version2.TemperatureDataZipCodeGetTest"></class>
-<class name="com.arcapi.Scoretestcases.version3.TemperatureDataZipCodeGetTest"></class> -->
+<class name="com.arcapi.Scoretestcases.version3.VOCGetTest"></class> 
+<class name="com.arcapi.Scoretestcases.version3.AQIDataGetAPITest"></class>
+<class name="com.arcapi.Scoretestcases.version3.RidershipDataGetAPITest"></class> 
+<class name="com.arcapi.Scoretestcases.version3.WasteDivertedDataGetTest"></class>
+<class name="com.arcapi.Scoretestcases.version3.WasteGeneratedDataGetTest"></class>
+<class name="com.arcapi.Scoretestcases.version3.GhgGetTest"></class>
+<class name="com.arcapi.Scoretestcases.version3.GhgCalcGetTest"></class>
+<class name="com.arcapi.Scoretestcases.version3.WaterGetTest"></class> 
+<class name="com.arcapi.Scoretestcases.version3.TemperatureDataGetTest"></class> 
+<class name="com.arcapi.Scoretestcases.version2.TemperatureDataZipCodeGetTest"></class>
+<class name="com.arcapi.Scoretestcases.version3.TemperatureDataZipCodeGetTest"></class> 
 
 
-<!-- <class name="com.arcapi.Scoretestcases.version2.TemperatureDataPostTest"></class> 
-<class name="com.arcapi.Scoretestcases.version2.TemperatureDataGetTest"></class> -->
-<!-- <class name="com.arcapi.Scoretestcases.version2.PerformanceScoreGetAPITest"></class>
+<class name="com.arcapi.Scoretestcases.version2.TemperatureDataPostTest"></class> 
+<class name="com.arcapi.Scoretestcases.version2.TemperatureDataGetTest"></class> 
+<class name="com.arcapi.Scoretestcases.version2.PerformanceScoreGetAPITest"></class>
 <class name="com.arcapi.Scoretestcases.version2.RecomputePerformanceScoreGetTest"></class>
-<class name="com.arcapi.Scoretestcases.version2.PerformanceScoreGetAfterRecomputeTest"></class> -->
+<class name="com.arcapi.Scoretestcases.version2.PerformanceScoreGetAfterRecomputeTest"></class>
 
 
 </classes>

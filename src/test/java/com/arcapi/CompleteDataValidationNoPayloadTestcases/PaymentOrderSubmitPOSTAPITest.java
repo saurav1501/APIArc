@@ -22,10 +22,7 @@ public class PaymentOrderSubmitPOSTAPITest extends BaseClass {
 	public void PaymentOrderSubmitPOSTAPI(String SheetName, String ProjectTypeColumn, int rownumber)
 			throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCode();
-		
+	
 		CommonMethod.test = CommonMethod.extent
 				.startTest("Payment Order Submit API Test  ",
 						"Verifies Payment done for registration")

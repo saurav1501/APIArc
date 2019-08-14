@@ -1,9 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="CustomExecution">
 
- <test name="CompleteFlowTest-Building-None">
-
-
+<test name="CompleteFlowTest-Building-None">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
 <parameter name="SoReference" value="performance score" />
@@ -11,30 +9,20 @@
 <parameter name="rownumber" value="2" />
 
 <classes>
-
-<!-- <class name="com.arcapi.Buildingtestcases.LoginAPITest"></class> -->
-<!-- <class name="com.arcapi.release1_18testcases.CreateAssetBuildingNoneAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.LoginAPITest"></class> 
+<class name="com.arcapi.release1_18testcases.CreateAssetBuildingNoneAPITest"></class>
 <class name="com.arcapi.release1_18testcases.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.release1_18testcases.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.release1_18testcases.AddAssestTimelinePOSTAPITest"></class> 
-<class name="com.arcapi.release1_18testcases.AssetUpdateBuildingNoneAPITest"></class> -->
-<!-- <class name="com.arcapi.release1_18testcases.AssetDetailAPITest"></class> -->
-<!-- <class name="com.arcapi.release1_18testcases.MetersAPITest"></class> -->
-<!-- <class name="com.arcapi.release1_18testcases.SurveyCreatePOSTAPITest"></class> -->
-<!-- <class name="com.arcapi.release1_18testcases.OccupantPostAPITest"></class> -->
-<!--  <class name="com.arcapi.release1_18testcases.OccupantGetAPITest"></class> -->
-<!-- <class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest"></class> -->
-<!-- <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamAPITest"></class> -->
-<!-- <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest"></class> -->
+<class name="com.arcapi.release1_18testcases.AssetUpdateBuildingNoneAPITest"></class> 
+<class name="com.arcapi.release1_18testcases.MetersAPITest"></class> 
+<class name="com.arcapi.release1_18testcases.SurveyCreatePOSTAPITest"></class>
+<class name="com.arcapi.release1_18testcases.OccupantPostAPITest"></class> 
+<class name="com.arcapi.release1_18testcases.OccupantGetAPITest"></class> 
+<class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest"></class>  
+<class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest"></class>
 <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest"></class>
-
-
-
-
-
 
 </classes>
 </test> 
-
-
 </suite>
