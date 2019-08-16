@@ -6,10 +6,8 @@
 <parameter name="PaymentType" value="CreditCardPayment" />
 
 	<suite-files>  
-	 <suite-file path="Release1_18.xml"></suite-file> 		
-	
-	
-<!--  <suite-file path="Release1_18.xml"></suite-file> 
+	 
+	<suite-file path="Release1_18.xml"></suite-file> 
 	 <suite-file path="EmissionFactorRelease1_17.xml"></suite-file>
     <suite-file path="CustomExecutionTestNG.xml"></suite-file> 
 	<suite-file path="CustomExecutionManualTestNG.xml"></suite-file>
@@ -27,8 +25,8 @@
 		<suite-file path="DataInputScenariosTestNG.xml"></suite-file> 
 	    <suite-file path="TrailFlowCompleteTestNG.xml"></suite-file>  
 		<suite-file path="ScoreScenariosTestNG.xml"></suite-file>  
-		<suite-file path="LeedV4TestNG.xml"></suite-file> 
-		<suite-file path="Portfoliostestng.xml"></suite-file>   -->
+		<!-- <suite-file path="LeedV4TestNG.xml"></suite-file>  -->
+		<suite-file path="Portfoliostestng.xml"></suite-file>  
 	
 	</suite-files>
 </suite> 
