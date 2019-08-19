@@ -8,14 +8,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 import net.minidev.json.JSONObject;
 
@@ -25,9 +22,6 @@ public class SurveyCreatePOSTAPITest extends BaseClass {
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void SurveyCreatePOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException, InterruptedException {
 
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCode(SheetName,rownumber);
 		
 		CommonMethod.test = CommonMethod.extent
 				.startTest("Survey Create POST API" + CommonMethod.getLabel(CommonMethod.responsetime),
@@ -38,7 +32,7 @@ public class SurveyCreatePOSTAPITest extends BaseClass {
 		
 	    TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
 		
-			data.setCellData("Report", "TestCaseName", reportrownum, TestName);
+		data.setCellData("Report", "TestCaseName", reportrownum, TestName);
 
 		
 		List<String> str = Arrays.asList("dirty","views to outdoors","sound","privacy", "smelly", "air quality","cleanliness","stuffy","loud","hot","cold","dark","glare","drafty","bright","humid","thermal comfort","light","daylight",""); //{"dirty","smelly","air quality","cleanliness"},{""};
@@ -114,8 +108,6 @@ public class SurveyCreatePOSTAPITest extends BaseClass {
 
 		System.out.println(CommonMethod.responsetime);
 
-
-	
 
 		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 

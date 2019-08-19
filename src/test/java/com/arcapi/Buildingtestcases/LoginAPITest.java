@@ -16,8 +16,8 @@ public class LoginAPITest extends BaseClass {
 	@Test
 	public void LoginAPI() {
 
-		CommonMethod.res = given().log().all().spec(reqSpec).headers(headerMap)
-				.body(loginArc).when().post("/auth/login/").then().extract().response();
+		CommonMethod.res = given().log().all().spec(reqSpec).headers(headerMap).body(loginArc)
+				.when().post("/auth/login/").then().extract().response();
 		
 		Headers ResponseHeader = CommonMethod.res.getHeaders();
 		System.out.println(ResponseHeader.getValue("X-Frame-Options"));

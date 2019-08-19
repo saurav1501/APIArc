@@ -6,19 +6,19 @@
 </listeners> -->
 
 <test name="CompleteFlowTest-Portfolios">
-
 <parameter name="environment" value="stg" />
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
 <parameter name="SoReference" value="performance score" />
 <parameter name="SoReferenceSR" value="performance score" />
+<parameter name="ratings" value="none"/>
 <parameter name="rownumber" value="2" />
 
 <classes>
 
 <class name="com.arcapi.Buildingtestcases.LoginAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneAPITest"></class> 
+<!-- <class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.AssetDetailAPITest"></class>
@@ -32,9 +32,7 @@
 <class name="com.arcapi.Buildingtestcase.CarbonDioxideCreateMeterConsumptionTest"></class> 
 <class name="com.arcapi.Buildingtestcase.CarbonDioxideCreate5YearDataPostTest"></class> 
 <class name="com.arcapi.Buildingtestcase.TVOCCreateMeterConsumptionTest"></class> 
-<class name="com.arcapi.Buildingtestcase.TVOCCreate5YearDataPostTest"></class>   
-
-
+<class name="com.arcapi.Buildingtestcase.TVOCCreate5YearDataPostTest"></class>  
 <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosGetAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosDetailsGetAPITest"></class>
@@ -64,7 +62,7 @@
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsGetAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPUTAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest"></class>
-<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest"></class> -->
 
 </classes>
 </test>

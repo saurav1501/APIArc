@@ -1,4 +1,5 @@
 package com.arc.driver;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,6 +7,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.lang.reflect.Method;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
@@ -56,6 +60,8 @@ public class BaseClass {
     public static Map<String,String> headerMap = new HashMap<String,String>();
     public static String modeValue1="1";
     public static String modeValue2="2";
+    public static Logger log; 	
+    public static String url;
 	
 	public static String[] value = { "-200", "ABC123", "200-094", "~!@#$%^&*()-_=+[];:\\\"<,>.?/", "200902", " ",
 			"900-",
@@ -72,15 +78,14 @@ public class BaseClass {
 			"LEED V4 O+M: TR" };
 
 	@BeforeClass 
-	@Parameters({ "environment" })
+	@Parameters({"environment"})
 	public void setBaseUri(String environment) throws IOException {
 
 		data = new XlsReader(System.getProperty("user.dir") + "/src/main/resources/ARC-API-STG.xlsx");
 		Customdata = new XlsReader(System.getProperty("user.dir") + "/src/main/resources/CityScore-reference-set.xlsx");
 
-		reqSpecjson = new RequestSpecBuilder().setBaseUri("https://5b927ev4hj.execute-api.us-west-1.amazonaws.com")
-				.build();
-		respSpec = new ResponseSpecBuilder().expectStatusCode(200).build();
+	 /*   reqSpecjson = new RequestSpecBuilder().setBaseUri("https://5b927ev4hj.execute-api.us-west-1.amazonaws.com").build();
+		respSpec = new ResponseSpecBuilder().expectStatusCode(200).build();*/
 
 		prop = new Properties();
 		/*FileInputStream file = new FileInputStream(
@@ -94,7 +99,6 @@ public class BaseClass {
 				System.getProperty("user.dir") + "/src/main/resources/qas.properties");
 		FileInputStream file3 = new FileInputStream(
 				System.getProperty("user.dir") + "/src/main/resources/dev.properties");
-
 		
 		if(environment.equalsIgnoreCase("stg")) {
 			prop.load(file1);
@@ -108,14 +112,12 @@ public class BaseClass {
 			rowNumFour= Integer.parseInt(prop.getProperty("rowNumFour"));
 			rowNumFive= Integer.parseInt( prop.getProperty("rowNumFive"));
 			
-			String STGLEED = prop.getProperty("envleed");
-			reqSpecLEED = new RequestSpecBuilder().setBaseUri(STGLEED).build();
-			
-			
 			reqSpec = new RequestSpecBuilder().setBaseUri(STG).build();
 			SubscriptionKey = "06c50a1570bd4d40a7859ec28514b185";
 			
-			
+			String STGLEED = prop.getProperty("envleed");
+			reqSpecLEED = new RequestSpecBuilder().setBaseUri(STGLEED).build();
+				
 		}
 		else if(environment.equalsIgnoreCase("dev")) {
 			prop.load(file3);
@@ -161,6 +163,10 @@ public class BaseClass {
 		loginArc.setPassword(password);
 		headerMap.put("Ocp-Apim-Subscription-Key",SubscriptionKey);
 		headerMap.put("content-type", "application/json");
+		
+		 Object className = this.getClass().getName();
+		 log = LogManager.getLogger((String) className);
+		
 		/*String SBX03 = prop.getProperty("ENV_SBX03");
 		String DEV = prop.getProperty("ENV_DEV");
 		String STG = prop.getProperty("ENV_STG");
@@ -222,8 +228,18 @@ public class BaseClass {
 	protected void startTest(Method method) throws Exception {
 	    String testName = method.getName(); 
 	    System.out.println("Executing test: " + testName);
+	    
+	    //private static Logger log = LogManager.getLogger(testName.class.getName());
+
 	}
-	
+	/*
+	@BeforeClass
+	public void beforeClass() {
+	    Object className = this.getClass().getName();
+	    log = LogManager.getLogger((String) className);
+	   
+
+	}*/
 	@AfterMethod
 	public void teardown(ITestResult result) {
 
@@ -245,7 +261,7 @@ public class BaseClass {
 	@AfterClass
 	public void end() {
 		extent.flush();
-		//reportrownum++;
+
 
 	}
 

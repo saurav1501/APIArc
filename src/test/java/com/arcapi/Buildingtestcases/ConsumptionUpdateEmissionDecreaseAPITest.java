@@ -22,16 +22,11 @@ public class ConsumptionUpdateEmissionDecreaseAPITest extends BaseClass {
 	@Parameters({ "SheetName","CustomSheetName","ProjectTypeColumn","rownumber" })
 	public void ConsumptionUpdatePUTAPI(String SheetName,String CustomSheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
 
-		CommonMethod.GeneratingAuthCode(SheetName,rownumber);
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
 		String reading = data.getCellData(CustomSheetName, "DecreasedEmissionFactor", rownumber);
 
 		JSONObject jsonAsMap = new JSONObject();
-		jsonAsMap.put("start_date", "2019-03-01");
+		jsonAsMap.put("start_date", "2019-01-01");
 		jsonAsMap.put("reading", reading);
 
 		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
@@ -42,7 +37,7 @@ public class ConsumptionUpdateEmissionDecreaseAPITest extends BaseClass {
 						+ data.getCellData(CustomSheetName, "EmissionMeterID", rownumber) + "/consumption/ID:"
 						+ data.getCellData(CustomSheetName, "EmissionMeterPK", rownumber) + "/")
 				.then().extract().response();
-		
+	
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
 		System.out.println(CommonMethod.responsetime);
@@ -65,20 +60,6 @@ public class ConsumptionUpdateEmissionDecreaseAPITest extends BaseClass {
 
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
 
 }

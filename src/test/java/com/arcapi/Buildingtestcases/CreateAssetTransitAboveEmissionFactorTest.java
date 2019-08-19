@@ -6,28 +6,18 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class CreateAssetTransitAboveEmissionFactorTest extends BaseClass {
 
 	@Test
 	@Parameters({ "SheetName","CustomSheetName","ProjectType","ProjectTypeColumn","rownumber"})
 	public void CreateAssetPOSTAPI(String SheetName,String CustomSheetName, String ProjectType, String ProjectTypeColumn, int rownumber) throws IOException {
-
-		//CommonMethod.ExtentReportConfig();
-
-		CommonMethod.GeneratingAuthCode(SheetName,rownumber);
-
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
 		
 		String Unit = null;
 		String SpaceType = null;
@@ -120,8 +110,6 @@ public class CreateAssetTransitAboveEmissionFactorTest extends BaseClass {
 		
         SpaceType = (SpaceTypeOptions[new Random().nextInt(SpaceTypeOptions.length)]);
 	
-		
-		
 		String[] OwnerTypeOptions  = {"Business Improvement District",
 			    "Community Development Corporation or Non-profit Developer",
 			    "Corporate: Privately Held",
@@ -215,22 +203,6 @@ public class CreateAssetTransitAboveEmissionFactorTest extends BaseClass {
 		data.setCellData(CustomSheetName, ProjectTypeColumn, rownumber, CommonMethod.fetchedID);
 
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-
-	}
-
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		extent.endTest(CommonMethod.test);
-		extent.flush();
 
 	}
 

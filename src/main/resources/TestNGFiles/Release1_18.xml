@@ -14,6 +14,7 @@
 <class name="com.arcapi.release1_18testcases.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.release1_18testcases.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.release1_18testcases.AddAssestTimelinePOSTAPITest"></class> 
+<class name="com.arcapi.release1_18testcases.AssetDetailAPITest"></class>
 <class name="com.arcapi.release1_18testcases.AssetUpdateBuildingNoneAPITest"></class> 
 <class name="com.arcapi.release1_18testcases.MetersAPITest"></class> 
 <class name="com.arcapi.release1_18testcases.SurveyCreatePOSTAPITest"></class>
@@ -22,7 +23,6 @@
 <class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest"></class>  
 <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest"></class>
 <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest"></class>
-
 </classes>
 </test> 
 </suite>

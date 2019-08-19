@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ParksmartCompletePositive]">
+  <test name="CompleteFlowTest-Parksmart(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="parksmart"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDParksmart"/>
+    <classes>
+      <class name="com.arcapi.Parksmarttestcases.S3DocumentListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="S3DocumentListAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.S3DocumentListAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AssociatedCategoriesAPITest">
+        <methods>
+          <include name="AssociatedCategoriesAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AssociatedCategoriesAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.MeasuresVersionPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MeasuresVersionPostAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.MeasuresVersionPostAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.CountryStatesJSONAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="CountryStatesJSONAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.CountryStatesJSONAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.UserDetailAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="UserDetailAPI"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.UserDetailAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.LOTokenAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="LOTokenAPI"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.LOTokenAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AssetSearchOwnerAPITest">
+        <methods>
+          <include name="AssetSearchOwnerAPI"/>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AssetSearchOwnerAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="RegistrationPaymentPricingGetAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="AddAssestTimeline"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.LoginAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="LoginAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.LoginAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartPOSTAPITest">
+        <methods>
+          <include name="CreateAssetPOSTAPI"/>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.CreateAssetParksmartPOSTAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.MeasuresListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="MeasuresListAPI"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.MeasuresListAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.RatingSystemListAPITest">
+        <methods>
+          <include name="RatingSystemListAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.RatingSystemListAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AssetUpdateforNewAssetPUTAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AssetUpdateforNewAssetPUTAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.FuelCategoryAPITest">
+        <methods>
+          <include name="FuelCategoryAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.FuelCategoryAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.PaymentHistoryAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="PaymentHistoryAPI"/>
+          <include name="teardown"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.PaymentHistoryAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.ScoreWeightsAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="getSuiteName"/>
+          <include name="ScoreWeightsAPI"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.ScoreWeightsAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.MeasuresVersionListAPITest">
+        <methods>
+          <include name="MeasuresVersionListAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.MeasuresVersionListAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AssetValidationInfoPOSTAPITest">
+        <methods>
+          <include name="AssetValidationInfoPOSTAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AssetValidationInfoPOSTAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.FeedbackSubmitPostAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="FeedbackSubmitPostAPI"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.FeedbackSubmitPostAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AssetRequiredFieldsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="AssetRequiredFieldsAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AssetRequiredFieldsAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.MeasuresVersionDetailAPITest">
+        <methods>
+          <include name="MeasuresVersionDetailAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.MeasuresVersionDetailAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.ThirdPartyListAppsAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="teardown"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ThirdPartyListAppsAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.ThirdPartyListAppsAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.PaymentOrderGetAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="PaymentOrderGetAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.PaymentOrderGetAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.PaymentReceiptAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="PaymentReceiptAPI"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.PaymentReceiptAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.MeasuresPostAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="MeasuresPostAPI"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.MeasuresPostAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AvgPerformaceListGetTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AvgPerformaceList"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AvgPerformaceListGetTest -->
+      <class name="com.arcapi.Parksmarttestcases.AssetListAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="AssetListAPI"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AssetListAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AssetOwnerOrgPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetOwnerOrgPOSTAPI"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AssetOwnerOrgPOSTAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AssetDetailAPITest">
+        <methods>
+          <include name="AssetDetailAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AssetDetailAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.GetAllDocumentListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="GetAllDocumentListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.GetAllDocumentListAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.S3DocumentRemoveAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="S3DocumentRemoveAPI"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.S3DocumentRemoveAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="PaymentOrderSubmitPOSTAPI"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AppVersionDetailAPITest">
+        <methods>
+          <include name="AppVersionDetailAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AppVersionDetailAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.PerformanceComparablesGetAPITest">
+        <methods>
+          <include name="PerformanceComparablesGetAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="teardown"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.PerformanceComparablesGetAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.MeasuresDetailAPITest">
+        <methods>
+          <include name="MeasuresDetailAPI"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.MeasuresDetailAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.MeasuresUpdateAPITest">
+        <methods>
+          <include name="MeasuresUpdateAPI"/>
+          <include name="end"/>
+          <include name="teardown"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.MeasuresUpdateAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.AssetSearchAPITest">
+        <methods>
+          <include name="AssetSearchAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AssetSearchAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.UserActivityListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="UserActivityListAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.UserActivityListAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.S3DocumentUploadPOSTAPITest">
+        <methods>
+          <include name="S3DocumentUploadPOSTAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.S3DocumentUploadPOSTAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="SignAgreementRegistrationAPI"/>
+          <include name="startTest"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.UserAccessLevelSAPGetTest">
+        <methods>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="startTest"/>
+          <include name="UserAccessLevelSAPGet"/>
+          <include name="ExtentReportConfig"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.UserAccessLevelSAPGetTest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Parksmart(failed) -->
+</suite> <!-- Failed suite [ParksmartCompletePositive] -->

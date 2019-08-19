@@ -35,6 +35,7 @@
 <class name="com.arcapi.Buildingtestcases.PaymentOrderGetAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.PaymentReceiptAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.PaymentHistoryAPITest"></class>
+
 <class name="com.arcapi.Buildingtestcases.AssetDetailAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingNoneAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest"></class>

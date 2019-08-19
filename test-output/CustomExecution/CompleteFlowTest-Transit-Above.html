@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CompleteFlowTest-Transit-Above</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 21 10:06:39 IST 2019</td>
+<td>Started on:</td><td>Fri Aug 16 18:36:34 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>232 seconds (232494 ms)</td>
+<tr><td>Total time:</td><td>156 seconds (156046 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,47 +75,87 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest.AssetDetailAPI()'><b>AssetDetailAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest<br>Parameters: STG, Emission, ProjectID, 3</td>
-<td><div><pre>java.lang.AssertionError: expected [0.834510484500588] but found [0.8345104845005875]
-	at com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest.AssetDetailAPI(AssetDetailEmissionFactorTest.java:64)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace47971575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace47971575'><pre>java.lang.AssertionError: expected [0.834510484500588] but found [0.8345104845005875]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest.AssetDetailAPI(AssetDetailEmissionFactorTest.java:64)
+<td title='com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest.AnalysisDataGetAPI()'><b>AnalysisDataGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest<br>Parameters: STG, Emission, ProjectID, 3</td>
+<td><div><pre>java.lang.AssertionError: 
+Expected: a value less than &lt;0.000604&gt;
+     but: &lt;0.36288&gt; was greater than &lt;0.000604&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest.AnalysisDataGetAPI(AnalysisDataEmissionAfterDecreaseTest.java:67)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1784533123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1784533123'><pre>java.lang.AssertionError: 
+Expected: a value less than &lt;0.000604&gt;
+     but: &lt;0.36288&gt; was greater than &lt;0.000604&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest.AnalysisDataGetAPI(AnalysisDataEmissionAfterDecreaseTest.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
-<td>5</td>
-<td>com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest@646007f4</td></tr>
+<td>13</td>
+<td>com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest@2cb4c3ab</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.RecomputePerformanceScoreEmissionTest.RecomputePerformanceScoreGet()'><b>RecomputePerformanceScoreGet</b><br>Test class: com.arcapi.Buildingtestcases.RecomputePerformanceScoreEmissionTest<br>Parameters: STG, Emission, ProjectID, 3</td>
+<td><div><pre>java.lang.AssertionError: expected [null] but found [32]
+	at com.arcapi.Buildingtestcases.RecomputePerformanceScoreEmissionTest.RecomputePerformanceScoreGet(RecomputePerformanceScoreEmissionTest.java:51)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace729787591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace729787591'><pre>java.lang.AssertionError: expected [null] but found [32]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotSame(Assert.java:509)
+	at org.testng.Assert.assertNull(Assert.java:445)
+	at org.testng.Assert.assertNull(Assert.java:434)
+	at com.arcapi.Buildingtestcases.RecomputePerformanceScoreEmissionTest.RecomputePerformanceScoreGet(RecomputePerformanceScoreEmissionTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>4</td>
+<td>com.arcapi.Buildingtestcases.RecomputePerformanceScoreEmissionTest@61dc03ce</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -128,92 +168,92 @@ function toggleAllBoxes() {
 <td title='com.arcapi.Buildingtestcases.AddAssestTimelinePOSTEmissionTest.AddAssestTimeline()'><b>AddAssestTimeline</b><br>Test class: com.arcapi.Buildingtestcases.AddAssestTimelinePOSTEmissionTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
 <td>7</td>
-<td>com.arcapi.Buildingtestcases.AddAssestTimelinePOSTEmissionTest@710726a3</td></tr>
+<td>com.arcapi.Buildingtestcases.AddAssestTimelinePOSTEmissionTest@7225790e</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest.AnalysisDataGetAPI()'><b>AnalysisDataGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>16</td>
-<td>com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest@4c762604</td></tr>
+<td>23</td>
+<td>com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest@735b478</td></tr>
 <tr>
-<td title='com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest.AnalysisDataGetAPI()'><b>AnalysisDataGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest<br>Parameters: STG, Emission, ProjectID, 3</td>
+<td title='com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest.AssetDetailAPI()'><b>AssetDetailAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>33</td>
-<td>com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest@704921a5</td></tr>
-<tr>
-<td title='com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest.AnalysisDataGetAPI()'><b>AnalysisDataGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest<br>Parameters: STG, Emission, ProjectID, 3</td>
-<td></td>
-<td>25</td>
-<td>com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest@16f7c8c1</td></tr>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest@54a097cc</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest.AssetUpdateforNewAssetPUTAPI()'><b>AssetUpdateforNewAssetPUTAPI</b><br>Test class: com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>4</td>
-<td>com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest@545997b1</td></tr>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest@531be3c5</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest.ConsumptionCreatePOSTAPI()'><b>ConsumptionCreatePOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>13</td>
-<td>com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest@77846d2c</td></tr>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest@2c9f9fb0</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest.ConsumptionUpdatePUTAPI()'><b>ConsumptionUpdatePUTAPI</b><br>Test class: com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>5</td>
-<td>com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest@2641e737</td></tr>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest@9f70c54</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest.ConsumptionUpdatePUTAPI()'><b>ConsumptionUpdatePUTAPI</b><br>Test class: com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>5</td>
-<td>com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest@df27fae</td></tr>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest@737996a0</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.CreateAssetTransitAboveEmissionFactorTest.CreateAssetPOSTAPI()'><b>CreateAssetPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.CreateAssetTransitAboveEmissionFactorTest<br>Parameters: STG, Emission, transit, ProjectID, 3</td>
 <td></td>
-<td>23</td>
-<td>com.arcapi.Buildingtestcases.CreateAssetTransitAboveEmissionFactorTest@4d1b0d2a</td></tr>
+<td>11</td>
+<td>com.arcapi.Buildingtestcases.CreateAssetTransitAboveEmissionFactorTest@6df97b55</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.GhgMeanEmissionTest.GhgGetTestAPI()'><b>GhgGetTestAPI</b><br>Test class: com.arcapi.Buildingtestcases.GhgMeanEmissionTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>8</td>
-<td>com.arcapi.Buildingtestcases.GhgMeanEmissionTest@306279ee</td></tr>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.GhgMeanEmissionTest@3551a94</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest.GhgGetTestAPI()'><b>GhgGetTestAPI</b><br>Test class: com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>3</td>
-<td>com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest@548ad73b</td></tr>
+<td>12</td>
+<td>com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest@2096442d</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest.GhgGetTestAPI()'><b>GhgGetTestAPI</b><br>Test class: com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>3</td>
-<td>com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest@727803de</td></tr>
+<td>13</td>
+<td>com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest@234bef66</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest.GhgGetTestAPI()'><b>GhgGetTestAPI</b><br>Test class: com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>5</td>
-<td>com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest@24a35978</td></tr>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest@50f8360d</td></tr>
+<tr>
+<td title='com.arcapi.Buildingtestcases.LoginAPITest.LoginAPI()'><b>LoginAPI</b><br>Test class: com.arcapi.Buildingtestcases.LoginAPITest</td>
+<td></td>
+<td>7</td>
+<td>com.arcapi.Buildingtestcases.LoginAPITest@366e2eef</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest.MeterBulkConsumptionPOSTAPI()'><b>MeterBulkConsumptionPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>4</td>
-<td>com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest@78186a70</td></tr>
+<td>2</td>
+<td>com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest@5a61f5df</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest.MeterCreatePOSTAPI()'><b>MeterCreatePOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>4</td>
-<td>com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest@481a15ff</td></tr>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest@36f6e879</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.MetersListEmissionTest.MetersAPI()'><b>MetersAPI</b><br>Test class: com.arcapi.Buildingtestcases.MetersListEmissionTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>16</td>
-<td>com.arcapi.Buildingtestcases.MetersListEmissionTest@4cf4d528</td></tr>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.MetersListEmissionTest@52af6cff</td></tr>
 <tr>
-<td title='com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTEmissionTest.PaymentOrderSubmitPOSTAPI()'><b>PaymentOrderSubmitPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTEmissionTest<br>Parameters: STG, Emission, ProjectID, 3, CheckPayment</td>
+<td title='com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTEmissionTest.PaymentOrderSubmitPOSTAPI()'><b>PaymentOrderSubmitPOSTAPI</b><br>Test class: com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTEmissionTest<br>Parameters: STG, Emission, ProjectID, 3, CreditCardPayment</td>
 <td></td>
-<td>9</td>
-<td>com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTEmissionTest@149494d8</td></tr>
+<td>11</td>
+<td>com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTEmissionTest@35fb3008</td></tr>
 <tr>
 <td title='com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetEmissionTest.RegistrationPaymentPricingGetAPI()'><b>RegistrationPaymentPricingGetAPI</b><br>Test class: com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetEmissionTest<br>Parameters: STG, Emission, ProjectID, 3</td>
 <td></td>
-<td>5</td>
-<td>com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetEmissionTest@954b04f</td></tr>
+<td>3</td>
+<td>com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetEmissionTest@3cbbc1e0</td></tr>
 </table><p>
 </body>
 </html>
