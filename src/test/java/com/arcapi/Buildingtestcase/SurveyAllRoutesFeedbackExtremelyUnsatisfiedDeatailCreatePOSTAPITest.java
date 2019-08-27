@@ -17,7 +17,7 @@ import com.arc.driver.CommonMethod;
 
 public class SurveyAllRoutesFeedbackExtremelyUnsatisfiedDeatailCreatePOSTAPITest extends BaseClass{
 	
-	@Test
+	@Test(groups="CheckSurvey")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void SurveyWithAllRoutesExtremelyUnsatisfiedDeatailCreatePOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException, InterruptedException {
         
@@ -55,11 +55,6 @@ public class SurveyAllRoutesFeedbackExtremelyUnsatisfiedDeatailCreatePOSTAPITest
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
 		System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Survey All Routes Extremely Unsatisfied Deatail Create POST API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies survey creation")
-				.assignCategory("CheckSurvey");
 
 		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 

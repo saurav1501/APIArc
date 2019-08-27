@@ -12,14 +12,10 @@ import com.arc.driver.CommonMethod;
 
 public class ElectricityPurchasedFromGridCreatePOSTAPITest extends BaseClass{
 	
-		@Test
+		@Test(groups="CheckMeter")
 		@Parameters({"SheetName","ProjectTypeColumn","rownumber"})
 		public void energyMeterCreatePOSTAPITest(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
-
-			CommonMethod.ExtentReportConfig();
-			
-			System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-           
+ 
 			CreateMeter meterData = new CreateMeter();
 			meterData.setName("ElectricityPurchasedFromGridMeter");
 			meterData.setNative_unit("kBtu");
@@ -32,11 +28,7 @@ public class ElectricityPurchasedFromGridCreatePOSTAPITest extends BaseClass{
 			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
 			System.out.println(CommonMethod.responsetime);
-
-			CommonMethod.test = CommonMethod.extent
-					.startTest("Meter Create ElectricityPurchasedFromGridMeter Post API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-							"Verifies Meter Creation")
-					.assignCategory("CheckMeter");			
+		
 			CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 
 			System.out.println(CommonMethod.res.asString());

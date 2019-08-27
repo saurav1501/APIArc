@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
 
 public class MunicipalitySuppliedPortableWaterCreatePOSTAPITest extends BaseClass{
 	
-		@Test
+		@Test(groups="CheckMeter")
 		@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 		public void municipalitySuppliedPortableWaterCreatePOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
@@ -35,11 +35,6 @@ public class MunicipalitySuppliedPortableWaterCreatePOSTAPITest extends BaseClas
 			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
 			System.out.println(CommonMethod.responsetime);
-
-			CommonMethod.test = CommonMethod.extent
-					.startTest("Municipality Supplied PortableWater Meter Create Post API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-							"Verifies Meter Creation")
-					.assignCategory("CheckMeter");
 
 			CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 		

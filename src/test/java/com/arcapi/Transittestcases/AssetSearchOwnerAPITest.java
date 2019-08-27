@@ -14,7 +14,7 @@ import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class AssetSearchOwnerAPITest extends BaseClass {
+public class   extends BaseClass {
 
 	@Test
 	@Parameters({ "SheetName", "ProjectTypeColumn", "rownumber" })

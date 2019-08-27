@@ -35,12 +35,7 @@ public class TVOCCreate5YearDataPostTest extends BaseClass {
 			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
 			System.out.println(CommonMethod.responsetime);
-
-			CommonMethod.test = CommonMethod.extent
-					.startTest("TVOC 5Year Data Post Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-							"Verifies List of Assets")
-					.assignCategory("CheckAsset");
-
+			
 			System.out.println(CommonMethod.res.asString());
 			
 			CommonMethod.res.then().assertThat().statusCode(201);

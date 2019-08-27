@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [BuildingCompletePositive]">
+  <parameter name="environment" value="stg"/>
   <parameter name="SoReference" value="performance score"/>
+  <parameter name="ratings" value="none"/>
   <parameter name="ProjectType" value="building"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="STG"/>
   <parameter name="SoReferenceSR" value="performance score"/>
-  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
   <test name="CompleteFlowTest-Building-None">
     <parameter name="SoReference" value="performance score"/>
     <parameter name="ProjectType" value="building"/>
@@ -13,222 +18,36 @@
     <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
-      <class name="com.arcapi.Buildingtestcases.LoginAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.UserDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.UserAccessLevelSAPGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.LOTokenAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetSearchAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetValidationInfoPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetSearchOwnerAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetOwnerOrgPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PaymentOrderGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PaymentReceiptAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PaymentHistoryAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetDetailAPITest"/>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Common.UserDetailAPITest"/>
+      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"/>
+      <class name="com.arcapi.Common.LOTokenAPITest"/>
+      <class name="com.arcapi.Common.UserDetailAPITest"/>
+      <class name="com.arcapi.Common.AssetSearchAPITest"/>
+      <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetSearchOwnerAPITest"/>
+      <class name="com.arcapi.Common.AssetOwnerOrgPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetListAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
+      <class name="com.arcapi.Common.AssetSearchAPITest"/>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentReceiptAPITest"/>
+      <class name="com.arcapi.Common.PaymentHistoryAPITest"/>
+      <class name="com.arcapi.Common.AssetDetailAPITest"/>
       <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingNoneAPITest"/>
       <class name="com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.VerifyProjectRegisteredAssetListTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetDocumentAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.DownloadDocumentsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.VerifyAgreementPresentAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.FetchingAgreementDetailsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MetersAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MeterDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberRoleAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberAddPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberUpdateAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberRemoveAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.DeleteAllAppsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.InstallAllAppsAfterDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.S3DocumentUploadPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.S3DocumentListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.S3DocumentRemoveAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionPostAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionPutAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetNotificationSubscriptionListTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailPutTest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetDataSnapshotAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.ReviewCertificationPricingAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.SubmitReviewPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.SubmitReviewGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.FeedbackSubmitPostAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.TransitSurveyExportAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.EnvironmentSurveyExportAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetDataExportAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetPerformanceScoreListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CO2GetTest"/>
-      <class name="com.arcapi.Buildingtestcases.GhgGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.VOCGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.WaterGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetCertificationListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetCertificationPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.TemperatureDataGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetRequiredFieldsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CountryStatesJSONAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssociatedCategoriesAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.RatingSystemListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AppVersionDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.FuelCategoryAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.GetAllDocumentListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PerformanceComparablesGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ScoreWeightsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ThirdPartyListAppsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.UserDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AvgPerformaceListGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetSnapshotKeysAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetSnapshotDownloadAPITest"/>
+      <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"/>
+      <class name="com.arcapi.Common.AssetDocumentAPITest"/>
+      <class name="com.arcapi.Common.DownloadDocumentsAPITest"/>
+      <class name="com.arcapi.Common.VerifyAgreementPresentAPITest"/>
+      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"/>
+      <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"/>
     </classes>
   </test> <!-- CompleteFlowTest-Building-None -->
-  <test name="CompleteFlowTest-Building-Other">
-    <parameter name="SoReference" value="performance score"/>
-    <parameter name="ProjectType" value="building"/>
-    <parameter name="rownumber" value="2"/>
-    <parameter name="SoReferenceSR" value="performance score"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
-    <classes>
-      <class name="com.arcapi.Buildingtestcases.LoginAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.UserDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.UserAccessLevelSAPGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.LOTokenAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetSearchAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetValidationInfoPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetSearchOwnerAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetOwnerOrgPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PaymentOrderGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PaymentReceiptAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PaymentHistoryAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingOtherAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.VerifyProjectRegisteredAssetListTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetDocumentAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.DownloadDocumentsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.VerifyAgreementPresentAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.FetchingAgreementDetailsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MetersAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.MeterDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberRoleAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberAddPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberUpdateAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberRemoveAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.DeleteAllAppsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.InstallAllAppsAfterDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetAppListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetAppDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.S3DocumentUploadPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.S3DocumentListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.S3DocumentRemoveAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionPostAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionPutAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetNotificationSubscriptionListTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailPutTest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetDataSnapshotAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.ReviewCertificationPricingAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.SubmitReviewPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.SubmitReviewGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.NotificationDeleteAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.FeedbackSubmitPostAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.TransitSurveyExportAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.EnvironmentSurveyExportAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetDataExportAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetPerformanceScoreListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CO2GetTest"/>
-      <class name="com.arcapi.Buildingtestcases.GhgGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.VOCGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.WaterGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetCertificationListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetCertificationPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.TemperatureDataGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetRequiredFieldsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CountryStatesJSONAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssociatedCategoriesAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.RatingSystemListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AppVersionDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.FuelCategoryAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.GetAllDocumentListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.PerformanceComparablesGetAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ScoreWeightsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ThirdPartyListAppsAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.UserDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AvgPerformaceListGetTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetSnapshotKeysAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetSnapshotDownloadAPITest"/>
-    </classes>
-  </test> <!-- CompleteFlowTest-Building-Other -->
   <test name="CompleteFlowTest-Building-None(failed)">
     <parameter name="SoReference" value="performance score"/>
     <parameter name="ProjectType" value="building"/>
@@ -236,1034 +55,268 @@
     <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
-      <class name="com.arcapi.Buildingtestcases.S3DocumentListAPITest">
+      <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest">
         <methods>
-          <include name="S3DocumentListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.S3DocumentListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailPutTest">
-        <methods>
-          <include name="NotificationSubscriptionDetail"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationSubscriptionDetailPutTest -->
-      <class name="com.arcapi.Buildingtestcases.AssetNotificationSubscriptionListTest">
-        <methods>
-          <include name="AssetNotificationSubscriptionList"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetNotificationSubscriptionListTest -->
-      <class name="com.arcapi.Buildingtestcases.GetAllDocumentListAPITest">
-        <methods>
-          <include name="GetAllDocumentListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.GetAllDocumentListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionPostAPITest">
-        <methods>
-          <include name="AssetTeamPermissionPostAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamPermissionPostAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetRequiredFieldsAPITest">
-        <methods>
-          <include name="AssetRequiredFieldsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetRequiredFieldsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest">
-        <methods>
-          <include name="MeterBulkConsumptionPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneAPITest">
-        <methods>
-          <include name="CreateAssetPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingNoneAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberUpdateAPITest">
-        <methods>
-          <include name="AssetTeamMemberUpdateAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberUpdateAPITest -->
-      <class name="com.arcapi.Buildingtestcases.CountryStatesJSONAPITest">
-        <methods>
-          <include name="CountryStatesJSONAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.CountryStatesJSONAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionListAPITest">
-        <methods>
-          <include name="AssetTeamPermissionListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamPermissionListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest">
-        <methods>
-          <include name="WasteDivertedBulkDataPost"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberRemoveAPITest">
-        <methods>
-          <include name="AssetTeamMemberRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberRemoveAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest">
-        <methods>
-          <include name="WasteCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetSearchAPITest">
-        <methods>
-          <include name="AssetSearchAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetSearchAPITest -->
-      <class name="com.arcapi.Buildingtestcases.LoginAPITest">
-        <methods>
-          <include name="LoginAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
           <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.VerifyProjectRegisteredAssetListTest -->
+      <class name="com.arcapi.Common.PaymentReceiptAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
           <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.LoginAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest">
+      </class> <!-- com.arcapi.Common.PaymentReceiptAPITest -->
+      <class name="com.arcapi.Common.AssetListAPITest">
         <methods>
-          <include name="MeterUpdatePUTAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationDeleteAPITest">
+      </class> <!-- com.arcapi.Common.AssetListAPITest -->
+      <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest">
         <methods>
-          <include name="NotificationDeleteAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PaymentReceiptAPITest">
+      </class> <!-- com.arcapi.Common.AssetValidationInfoPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
         <methods>
-          <include name="PaymentReceiptAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PaymentReceiptAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest">
+      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
+      <class name="com.arcapi.Common.LOTokenAPITest">
         <methods>
-          <include name="VerifyAssetDetailAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest">
+      </class> <!-- com.arcapi.Common.LOTokenAPITest -->
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
         <methods>
-          <include name="NotificationSubscriptionDetailDelete"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest -->
-      <class name="com.arcapi.Buildingtestcases.RatingSystemListAPITest">
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Common.AssetDetailAPITest">
         <methods>
-          <include name="RatingSystemListAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.RatingSystemListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataGetAPITest">
+      </class> <!-- com.arcapi.Common.AssetDetailAPITest -->
+      <class name="com.arcapi.Common.AssetDocumentAPITest">
         <methods>
-          <include name="AnalysisDataGetAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationCreatePOSTAPITest">
+      </class> <!-- com.arcapi.Common.AssetDocumentAPITest -->
+      <class name="com.arcapi.Common.PaymentOrderGetAPITest">
         <methods>
-          <include name="NotificationCreatePOSTAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationCreatePOSTAPITest -->
+      </class> <!-- com.arcapi.Common.PaymentOrderGetAPITest -->
+      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.UserAccessLevelSAPGetTest -->
+      <class name="com.arcapi.Common.AssetSearchOwnerAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetSearchOwnerAPITest -->
+      <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.VerifyAgreementDeleteAPITest -->
+      <class name="com.arcapi.Common.VerifyAgreementPresentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.VerifyAgreementPresentAPITest -->
+      <class name="com.arcapi.Common.AssetOwnerOrgPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="AssetOwnerOrgPOSTAPI"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetOwnerOrgPOSTAPITest -->
+      <class name="com.arcapi.Common.AssetSearchAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetSearchAPITest -->
       <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingNoneAPITest">
         <methods>
-          <include name="AssetUpdateforNewAssetPUTAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Buildingtestcases.AssetUpdateBuildingNoneAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssociatedCategoriesAPITest">
-        <methods>
-          <include name="AssociatedCategoriesAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssociatedCategoriesAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AppVersionDetailAPITest">
-        <methods>
-          <include name="AppVersionDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AppVersionDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest">
-        <methods>
-          <include name="AssetNotificationSubscriptionPost"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest -->
-      <class name="com.arcapi.Buildingtestcases.AssetListAPITest">
-        <methods>
-          <include name="AssetListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionDetailAPITest">
-        <methods>
-          <include name="ConsumptionDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationGetAPITest">
-        <methods>
-          <include name="NotificationGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest">
-        <methods>
-          <include name="AddAssestTimeline"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.FeedbackSubmitPostAPITest">
-        <methods>
-          <include name="FeedbackSubmitPostAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.FeedbackSubmitPostAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ScoreWeightsAPITest">
-        <methods>
-          <include name="ScoreWeightsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ScoreWeightsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetDataExportAPITest">
-        <methods>
-          <include name="AssetDataExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetDataExportAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetSnapshotKeysAPITest">
-        <methods>
-          <include name="AssetSnapshotKeysAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetSnapshotKeysAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberAddPOSTAPITest">
-        <methods>
-          <include name="AssetTeamMemberAddPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberAddPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetDataSnapshotAPITest">
-        <methods>
-          <include name="AssetDataSnapshotAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetDataSnapshotAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberListAPITest">
-        <methods>
-          <include name="AssetTeamMemberListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberRoleAPITest">
-        <methods>
-          <include name="AssetTeamMemberRoleAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberRoleAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetValidationInfoPOSTAPITest">
-        <methods>
-          <include name="AssetValidationInfoPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetValidationInfoPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest">
-        <methods>
-          <include name="GhgCalcGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.GhgCalcGetTest -->
-      <class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest">
-        <methods>
-          <include name="WasteDetailDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VOCGetTest">
-        <methods>
-          <include name="VOCGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VOCGetTest -->
-      <class name="com.arcapi.Buildingtestcases.TransitSurveyExportAPITest">
-        <methods>
-          <include name="TransitSurveyExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.TransitSurveyExportAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetCertificationPOSTAPITest">
-        <methods>
-          <include name="AssetCertificationPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetCertificationPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.UserAccessLevelSAPGetTest">
-        <methods>
-          <include name="UserAccessLevelSAPGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.UserAccessLevelSAPGetTest -->
-      <class name="com.arcapi.Buildingtestcases.ReviewCertificationPricingAPITest">
-        <methods>
-          <include name="ReviewCertificationPricingAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ReviewCertificationPricingAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AvgPerformaceListGetTest">
-        <methods>
-          <include name="AvgPerformaceList"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AvgPerformaceListGetTest -->
-      <class name="com.arcapi.Buildingtestcases.LOTokenAPITest">
-        <methods>
-          <include name="LOTokenAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.LOTokenAPITest -->
-      <class name="com.arcapi.Buildingtestcases.DownloadDocumentsAPITest">
-        <methods>
-          <include name="DownloadDocumentsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.DownloadDocumentsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VerifyAgreementPresentAPITest">
-        <methods>
-          <include name="VerifyAgreementPresentAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VerifyAgreementPresentAPITest -->
-      <class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest">
-        <methods>
-          <include name="RegistrationPaymentPricingGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteDetailAPITest">
-        <methods>
-          <include name="WasteDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest">
-        <methods>
-          <include name="RecomputePerformanceScoreGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest -->
-      <class name="com.arcapi.Buildingtestcases.SubmitReviewGetAPITest">
-        <methods>
-          <include name="SubmitReviewGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.SubmitReviewGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VerifyProjectRegisteredAssetListTest">
-        <methods>
-          <include name="VerifyProjectRegisteredAssetList"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VerifyProjectRegisteredAssetListTest -->
-      <class name="com.arcapi.Buildingtestcases.AssetSnapshotDownloadAPITest">
-        <methods>
-          <include name="AssetSnapshotDownloadAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetSnapshotDownloadAPITest -->
-      <class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest">
-        <methods>
-          <include name="SignAgreementRegistrationAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetDocumentAPITest">
-        <methods>
-          <include name="AssetDocumentAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetDocumentAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest">
-        <methods>
-          <include name="VerifyAgreementDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ThirdPartyListAppsAPITest">
-        <methods>
-          <include name="ThirdPartyListAppsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ThirdPartyListAppsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteGetAPITest">
-        <methods>
-          <include name="WasteGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.UserDetailAPITest">
-        <methods>
-          <include name="UserDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.UserDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetCertificationListAPITest">
-        <methods>
-          <include name="AssetCertificationListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetCertificationListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.TemperatureDataGetTest">
-        <methods>
-          <include name="TemperatureDataGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.TemperatureDataGetTest -->
-      <class name="com.arcapi.Buildingtestcases.CO2GetTest">
-        <methods>
-          <include name="CO2GetTestAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.CO2GetTest -->
-      <class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest">
-        <methods>
-          <include name="ExcelUploadTemplatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.FuelCategoryAPITest">
-        <methods>
-          <include name="FuelCategoryAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.FuelCategoryAPITest -->
-      <class name="com.arcapi.Buildingtestcases.DeleteAllAppsAPITest">
-        <methods>
-          <include name="DeleteAllAppsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.DeleteAllAppsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetSearchOwnerAPITest">
-        <methods>
-          <include name="AssetSearchOwnerAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetSearchOwnerAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest">
-        <methods>
-          <include name="PaymentOrderSubmitPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.S3DocumentUploadPOSTAPITest">
-        <methods>
-          <include name="S3DocumentUploadPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.S3DocumentUploadPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WaterGetTest">
-        <methods>
-          <include name="WaterGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WaterGetTest -->
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataSubmitPOSTAPITest">
-        <methods>
-          <include name="AnalysisDataSubmitPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataSubmitPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionPutAPITest">
-        <methods>
-          <include name="AssetTeamPermissionPutAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamPermissionPutAPITest -->
-      <class name="com.arcapi.Buildingtestcases.FetchingAgreementDetailsAPITest">
-        <methods>
-          <include name="FetchingAgreementDetailsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.FetchingAgreementDetailsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.InstallAllAppsAfterDeleteAPITest">
-        <methods>
-          <include name="InstallAllAppsAfterDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.InstallAllAppsAfterDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetDetailAPITest">
-        <methods>
-          <include name="AssetDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest">
-        <methods>
-          <include name="AssetMeterDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetMeterDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest">
-        <methods>
-          <include name="SurveyCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MetersAPITest">
-        <methods>
-          <include name="MetersAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MetersAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest">
-        <methods>
-          <include name="WasteGeneratedBulkDataPost"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest">
-        <methods>
-          <include name="ConsumptionCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetOwnerOrgPOSTAPITest">
-        <methods>
-          <include name="AssetOwnerOrgPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetOwnerOrgPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.EnvironmentSurveyExportAPITest">
-        <methods>
-          <include name="EnvironmentSurveyExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.EnvironmentSurveyExportAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PaymentHistoryAPITest">
-        <methods>
-          <include name="PaymentHistoryAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PaymentHistoryAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest">
-        <methods>
-          <include name="ConsumptionUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.SubmitReviewPOSTAPITest">
-        <methods>
-          <include name="SubmitReviewPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.SubmitReviewPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetPerformanceScoreListAPITest">
-        <methods>
-          <include name="AssetPerformanceScoreListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetPerformanceScoreListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.GhgGetTest">
-        <methods>
-          <include name="GhgGetTestAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.GhgGetTest -->
-      <class name="com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest">
-        <methods>
-          <include name="WasteUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionListAPITest">
-        <methods>
-          <include name="ConsumptionListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest">
-        <methods>
-          <include name="MeterCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PerformanceComparablesGetAPITest">
-        <methods>
-          <include name="PerformanceComparablesGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PerformanceComparablesGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.S3DocumentRemoveAPITest">
-        <methods>
-          <include name="S3DocumentRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.S3DocumentRemoveAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MeterDeleteAPITest">
-        <methods>
-          <include name="MeterDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MeterDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailGetTest">
-        <methods>
-          <include name="NotificationSubscriptionDetail"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationSubscriptionDetailGetTest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest">
-        <methods>
-          <include name="ConsumptionDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PaymentOrderGetAPITest">
-        <methods>
-          <include name="PaymentOrderGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PaymentOrderGetAPITest -->
-    </classes>
-  </test> <!-- CompleteFlowTest-Building-None(failed) -->
-  <test name="CompleteFlowTest-Building-Other(failed)">
-    <parameter name="SoReference" value="performance score"/>
-    <parameter name="ProjectType" value="building"/>
-    <parameter name="rownumber" value="2"/>
-    <parameter name="SoReferenceSR" value="performance score"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
-    <classes>
-      <class name="com.arcapi.Buildingtestcases.S3DocumentListAPITest">
-        <methods>
-          <include name="S3DocumentListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.S3DocumentListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailPutTest">
-        <methods>
-          <include name="NotificationSubscriptionDetail"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationSubscriptionDetailPutTest -->
-      <class name="com.arcapi.Buildingtestcases.AssetNotificationSubscriptionListTest">
-        <methods>
-          <include name="AssetNotificationSubscriptionList"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetNotificationSubscriptionListTest -->
-      <class name="com.arcapi.Buildingtestcases.GetAllDocumentListAPITest">
-        <methods>
-          <include name="GetAllDocumentListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.GetAllDocumentListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionPostAPITest">
-        <methods>
-          <include name="AssetTeamPermissionPostAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamPermissionPostAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetRequiredFieldsAPITest">
-        <methods>
-          <include name="AssetRequiredFieldsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetRequiredFieldsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest">
-        <methods>
-          <include name="MeterBulkConsumptionPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingOtherAPITest">
-        <methods>
-          <include name="AssetUpdateforNewAssetPUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetUpdateBuildingOtherAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberUpdateAPITest">
-        <methods>
-          <include name="AssetTeamMemberUpdateAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberUpdateAPITest -->
-      <class name="com.arcapi.Buildingtestcases.CountryStatesJSONAPITest">
-        <methods>
-          <include name="CountryStatesJSONAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.CountryStatesJSONAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionListAPITest">
-        <methods>
-          <include name="AssetTeamPermissionListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamPermissionListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest">
-        <methods>
-          <include name="WasteDivertedBulkDataPost"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberRemoveAPITest">
-        <methods>
-          <include name="AssetTeamMemberRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberRemoveAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest">
-        <methods>
-          <include name="WasteCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetSearchAPITest">
-        <methods>
-          <include name="AssetSearchAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetSearchAPITest -->
-      <class name="com.arcapi.Buildingtestcases.LoginAPITest">
-        <methods>
-          <include name="LoginAPI"/>
+      <class name="com.arcapi.Common.DownloadDocumentsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
           <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.DownloadDocumentsAPITest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
           <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.LoginAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest">
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.Common.UserDetailAPITest">
         <methods>
-          <include name="MeterUpdatePUTAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationDeleteAPITest">
+      </class> <!-- com.arcapi.Common.UserDetailAPITest -->
+      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest">
         <methods>
-          <include name="NotificationDeleteAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PaymentReceiptAPITest">
+      </class> <!-- com.arcapi.Common.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
         <methods>
-          <include name="PaymentReceiptAPI"/>
+          <include name="teardown"/>
+          <include name="PaymentOrderSubmitPOSTAPI" invocation-numbers="0"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PaymentReceiptAPITest -->
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Common.PaymentHistoryAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentHistoryAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
       <class name="com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest">
         <methods>
-          <include name="VerifyAssetDetailAPI"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest">
-        <methods>
-          <include name="NotificationSubscriptionDetailDelete"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationSubscriptionDetailDeleteTest -->
-      <class name="com.arcapi.Buildingtestcases.RatingSystemListAPITest">
-        <methods>
-          <include name="RatingSystemListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.RatingSystemListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataGetAPITest">
-        <methods>
-          <include name="AnalysisDataGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationCreatePOSTAPITest">
-        <methods>
-          <include name="NotificationCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationCreatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssociatedCategoriesAPITest">
-        <methods>
-          <include name="AssociatedCategoriesAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssociatedCategoriesAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AppVersionDetailAPITest">
-        <methods>
-          <include name="AppVersionDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AppVersionDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest">
-        <methods>
-          <include name="AssetNotificationSubscriptionPost"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetNotificationSubscriptionPostTest -->
-      <class name="com.arcapi.Buildingtestcases.AssetListAPITest">
-        <methods>
-          <include name="AssetListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionDetailAPITest">
-        <methods>
-          <include name="ConsumptionDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationGetAPITest">
-        <methods>
-          <include name="NotificationGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest">
-        <methods>
-          <include name="AddAssestTimeline"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.FeedbackSubmitPostAPITest">
-        <methods>
-          <include name="FeedbackSubmitPostAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.FeedbackSubmitPostAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ScoreWeightsAPITest">
-        <methods>
-          <include name="ScoreWeightsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ScoreWeightsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetDataExportAPITest">
-        <methods>
-          <include name="AssetDataExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetDataExportAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetSnapshotKeysAPITest">
-        <methods>
-          <include name="AssetSnapshotKeysAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetSnapshotKeysAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberAddPOSTAPITest">
-        <methods>
-          <include name="AssetTeamMemberAddPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberAddPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetDataSnapshotAPITest">
-        <methods>
-          <include name="AssetDataSnapshotAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetDataSnapshotAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberListAPITest">
-        <methods>
-          <include name="AssetTeamMemberListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamMemberRoleAPITest">
-        <methods>
-          <include name="AssetTeamMemberRoleAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamMemberRoleAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetValidationInfoPOSTAPITest">
-        <methods>
-          <include name="AssetValidationInfoPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetValidationInfoPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest">
-        <methods>
-          <include name="GhgCalcGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.GhgCalcGetTest -->
-      <class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest">
-        <methods>
-          <include name="WasteDetailDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VOCGetTest">
-        <methods>
-          <include name="VOCGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VOCGetTest -->
-      <class name="com.arcapi.Buildingtestcases.AssetAppDeleteAPITest">
-        <methods>
-          <include name="AssetAppDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetAppDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.TransitSurveyExportAPITest">
-        <methods>
-          <include name="TransitSurveyExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.TransitSurveyExportAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetCertificationPOSTAPITest">
-        <methods>
-          <include name="AssetCertificationPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetCertificationPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.UserAccessLevelSAPGetTest">
-        <methods>
-          <include name="UserAccessLevelSAPGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.UserAccessLevelSAPGetTest -->
-      <class name="com.arcapi.Buildingtestcases.ReviewCertificationPricingAPITest">
-        <methods>
-          <include name="ReviewCertificationPricingAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ReviewCertificationPricingAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetAppListAPITest">
-        <methods>
-          <include name="AssetAppListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetAppListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AvgPerformaceListGetTest">
-        <methods>
-          <include name="AvgPerformaceList"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AvgPerformaceListGetTest -->
-      <class name="com.arcapi.Buildingtestcases.LOTokenAPITest">
-        <methods>
-          <include name="LOTokenAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.LOTokenAPITest -->
-      <class name="com.arcapi.Buildingtestcases.DownloadDocumentsAPITest">
-        <methods>
-          <include name="DownloadDocumentsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.DownloadDocumentsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VerifyAgreementPresentAPITest">
-        <methods>
-          <include name="VerifyAgreementPresentAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VerifyAgreementPresentAPITest -->
-      <class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest">
-        <methods>
-          <include name="RegistrationPaymentPricingGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteDetailAPITest">
-        <methods>
-          <include name="WasteDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest">
-        <methods>
-          <include name="RecomputePerformanceScoreGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.RecomputePerformanceScoreGetTest -->
-      <class name="com.arcapi.Buildingtestcases.SubmitReviewGetAPITest">
-        <methods>
-          <include name="SubmitReviewGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.SubmitReviewGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VerifyProjectRegisteredAssetListTest">
-        <methods>
-          <include name="VerifyProjectRegisteredAssetList"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VerifyProjectRegisteredAssetListTest -->
-      <class name="com.arcapi.Buildingtestcases.AssetSnapshotDownloadAPITest">
-        <methods>
-          <include name="AssetSnapshotDownloadAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetSnapshotDownloadAPITest -->
-      <class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest">
-        <methods>
-          <include name="SignAgreementRegistrationAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetDocumentAPITest">
-        <methods>
-          <include name="AssetDocumentAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetDocumentAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest">
-        <methods>
-          <include name="VerifyAgreementDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ThirdPartyListAppsAPITest">
-        <methods>
-          <include name="ThirdPartyListAppsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ThirdPartyListAppsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteGetAPITest">
-        <methods>
-          <include name="WasteGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.UserDetailAPITest">
-        <methods>
-          <include name="UserDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.UserDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetCertificationListAPITest">
-        <methods>
-          <include name="AssetCertificationListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetCertificationListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.TemperatureDataGetTest">
-        <methods>
-          <include name="TemperatureDataGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.TemperatureDataGetTest -->
-      <class name="com.arcapi.Buildingtestcases.CO2GetTest">
-        <methods>
-          <include name="CO2GetTestAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.CO2GetTest -->
-      <class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest">
-        <methods>
-          <include name="ExcelUploadTemplatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.FuelCategoryAPITest">
-        <methods>
-          <include name="FuelCategoryAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.FuelCategoryAPITest -->
-      <class name="com.arcapi.Buildingtestcases.DeleteAllAppsAPITest">
-        <methods>
-          <include name="DeleteAllAppsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.DeleteAllAppsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetSearchOwnerAPITest">
-        <methods>
-          <include name="AssetSearchOwnerAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetSearchOwnerAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest">
-        <methods>
-          <include name="PaymentOrderSubmitPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.S3DocumentUploadPOSTAPITest">
-        <methods>
-          <include name="S3DocumentUploadPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.S3DocumentUploadPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WaterGetTest">
-        <methods>
-          <include name="WaterGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WaterGetTest -->
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataSubmitPOSTAPITest">
-        <methods>
-          <include name="AnalysisDataSubmitPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataSubmitPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetTeamPermissionPutAPITest">
-        <methods>
-          <include name="AssetTeamPermissionPutAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetTeamPermissionPutAPITest -->
-      <class name="com.arcapi.Buildingtestcases.FetchingAgreementDetailsAPITest">
-        <methods>
-          <include name="FetchingAgreementDetailsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.FetchingAgreementDetailsAPITest -->
-      <class name="com.arcapi.Buildingtestcases.InstallAllAppsAfterDeleteAPITest">
-        <methods>
-          <include name="InstallAllAppsAfterDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.InstallAllAppsAfterDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetDetailAPITest">
-        <methods>
-          <include name="AssetDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest">
-        <methods>
-          <include name="AssetMeterDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetMeterDetailAPITest -->
-      <class name="com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest">
-        <methods>
-          <include name="SurveyCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MetersAPITest">
-        <methods>
-          <include name="MetersAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MetersAPITest -->
-      <class name="com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest">
-        <methods>
-          <include name="WasteGeneratedBulkDataPost"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest">
-        <methods>
-          <include name="ConsumptionCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetOwnerOrgPOSTAPITest">
-        <methods>
-          <include name="AssetOwnerOrgPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetOwnerOrgPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.EnvironmentSurveyExportAPITest">
-        <methods>
-          <include name="EnvironmentSurveyExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.EnvironmentSurveyExportAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest">
-        <methods>
-          <include name="VerifyAdminRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VerifyAdminRemoveAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PaymentHistoryAPITest">
-        <methods>
-          <include name="PaymentHistoryAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PaymentHistoryAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest">
-        <methods>
-          <include name="ConsumptionUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.SubmitReviewPOSTAPITest">
-        <methods>
-          <include name="SubmitReviewPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.SubmitReviewPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetPerformanceScoreListAPITest">
-        <methods>
-          <include name="AssetPerformanceScoreListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetPerformanceScoreListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.GhgGetTest">
-        <methods>
-          <include name="GhgGetTestAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.GhgGetTest -->
-      <class name="com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest">
-        <methods>
-          <include name="WasteUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionListAPITest">
-        <methods>
-          <include name="ConsumptionListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionListAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest">
-        <methods>
-          <include name="MeterCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PerformanceComparablesGetAPITest">
-        <methods>
-          <include name="PerformanceComparablesGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PerformanceComparablesGetAPITest -->
-      <class name="com.arcapi.Buildingtestcases.S3DocumentRemoveAPITest">
-        <methods>
-          <include name="S3DocumentRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.S3DocumentRemoveAPITest -->
-      <class name="com.arcapi.Buildingtestcases.MeterDeleteAPITest">
-        <methods>
-          <include name="MeterDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.MeterDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest">
-        <methods>
-          <include name="CreateAssetPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest -->
-      <class name="com.arcapi.Buildingtestcases.NotificationSubscriptionDetailGetTest">
-        <methods>
-          <include name="NotificationSubscriptionDetail"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.NotificationSubscriptionDetailGetTest -->
-      <class name="com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest">
-        <methods>
-          <include name="ConsumptionDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.PaymentOrderGetAPITest">
-        <methods>
-          <include name="PaymentOrderGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.PaymentOrderGetAPITest -->
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.RegistrationPaymentPricingGetAPITest -->
     </classes>
-  </test> <!-- CompleteFlowTest-Building-Other(failed) -->
+  </test> <!-- CompleteFlowTest-Building-None(failed) -->
 </suite> <!-- Failed suite [BuildingCompletePositive] -->

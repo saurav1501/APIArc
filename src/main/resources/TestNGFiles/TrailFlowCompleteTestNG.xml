@@ -1,13 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="TrailFlow-Complete">
 
-<!-- <listeners>
-        <listener class-name="com.arc.Listeners.RetryListener" />
-        <listener class-name="com.arc.Listeners.TestListener" />
-</listeners> -->
- 
-
-
 <test name="CompleteFlowTest-Building-Other-TrailFlow">
 
 <parameter name="ProjectType" value="building" />

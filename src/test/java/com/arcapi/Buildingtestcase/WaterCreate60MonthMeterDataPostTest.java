@@ -17,7 +17,9 @@ public class WaterCreate60MonthMeterDataPostTest extends BaseClass {
 	@Test(dataProvider="MeterTestData")
 	
 	public void WaterCreate60MonthMeterDataPost(String end_date,String reading,String start_date) throws IOException {
-				
+		
+		test.assignCategory("CheckConsumption");
+		
 		String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone", rowNumTwo);
 		String meterID =  data.getCellData(sheetName, "WaterMeterID", rowNumTwo);
 				
@@ -27,24 +29,17 @@ public class WaterCreate60MonthMeterDataPostTest extends BaseClass {
 		meterData.setStart_date(start_date);
 		meterData.setReading(reading);
 
-	
 		CommonMethod.res = given().log().all().headers(headerMap).header("Authorization", header).spec(reqSpec)
 				.body(meterData).when().post("/assets/LEED:" +projectType+ "/meters/ID:"
 						+meterID+"/consumption/")
 				.then().extract().response();
 
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-		
-		System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Create 60Months Meter Data Post API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies consumption creation")
-				.assignCategory("CheckConsumption");
+		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);			
 
 		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 
-		System.out.println(CommonMethod.res.asString());
+		log.info(CommonMethod.res.asString());
+		
 		CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
 		data.setCellData(sheetName, "PK", rowNumTwo, CommonMethod.fetchedID);
 		

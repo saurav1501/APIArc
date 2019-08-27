@@ -208,9 +208,6 @@ public class XlsReader
 
 		sheet.autoSizeColumn(colNum); 
 		
-		
-		
-		
 		row = sheet.getRow(rowNum-1);
 		if (row == null)
 			row = sheet.createRow(rowNum-1);

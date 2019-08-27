@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
  public class TVOCCreateMeterConsumptionTest extends BaseClass {
 	      
 	 
-	      @Test
+	      @Test(groups="CheckMeter")
 		  public void TVOCCreateMeterConsumption() throws IOException {
 
 			String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);  
@@ -28,12 +28,7 @@ import com.arc.driver.CommonMethod;
 					.body(meterData).when().post("/assets/LEED:"+projectType+"/meters/").then()
 					.extract().response();
 			
-			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-			CommonMethod.test = CommonMethod.extent
-					.startTest("TVOC Create Meter Consumption Post API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-							"Verifies Meter Creation")
-					.assignCategory("CheckMeter");			
+			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);			
 		
 			System.out.println(CommonMethod.res.asString());
 		
@@ -47,8 +42,7 @@ import com.arc.driver.CommonMethod;
 			
 			CommonMethod.res.then().assertThat().statusCode(201);
 
-			
-			
+				
 		}		
 			
 }

@@ -12,7 +12,7 @@ import com.arc.driver.CommonMethod;
  public class CarbonDioxideCreateMeterConsumptionTest extends BaseClass {
 	      
 	 
-	      @Test
+	      @Test(groups="CheckMeter")
 		  public void CarbonDioxideCreateMeterConsumption() throws IOException {
 
 			String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);
@@ -32,11 +32,6 @@ import com.arc.driver.CommonMethod;
 
 			System.out.println(CommonMethod.responsetime);
 
-			CommonMethod.test = CommonMethod.extent
-					.startTest("Meter Create CO2 Post API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-							"Verifies Meter Creation")
-					.assignCategory("CheckMeter");			
-		
 			System.out.println(CommonMethod.res.asString());
 		
 			CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());

@@ -19,7 +19,7 @@ import com.jayway.restassured.path.json.config.JsonPathConfig;
 
 public class AnalysisDataEmissionAfterIncreaseTest extends BaseClass {
 
-	@Test
+	@Test(groups="CheckAnalysis")
 	@Parameters({ "SheetName","CustomSheetName","ProjectTypeColumn","rownumber" })
 	public void AnalysisDataGetAPI(String SheetName,String CustomSheetName,String ProjectTypeColumn, int rownumber) throws IOException, InterruptedException {
 
@@ -30,16 +30,8 @@ public class AnalysisDataEmissionAfterIncreaseTest extends BaseClass {
 				.extract().response();
 		
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-		System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Analysis data Get API Test  " + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Analysis data generated")
-				.assignCategory("CheckAnalysis");
-
-		System.out.println(CommonMethod.res.asString());
 		
-		CommonMethod.testlog("Pass", "Response received from API" + "<br>" + CommonMethod.res.asString());
+    	CommonMethod.testlog("Pass", "Response received from API" + "<br>" + CommonMethod.res.asString());
 
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
 		

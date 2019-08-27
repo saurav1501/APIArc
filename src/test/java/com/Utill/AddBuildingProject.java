@@ -2,37 +2,36 @@ package com.Utill;
 
 import java.io.Serializable;
 
-public class AddBuildingProject implements Serializable{
+public class  AddBuildingProject implements Serializable{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	public String name;
-	public String rating_system; 
-	public String gross_area;
-	public String occupancy;
-	public String street;
-	public String city;
-	public String country;
-	public String state;
-	public String project_type;
-	public String unitType;
-	public String spaceType;
-	public String owner_email;
-	public String ownerType;
-	public boolean confidential;
-	public boolean sign_agreement;
-	public String organization;
-	public String manageEntityCountry;
-	public String zip_code;
-	public String operating_hours;
+	private String name;
+	private String rating_system; 
+	private String gross_area;
+	private String occupancy;
+	private String street;
+	private String city;
+	private String country;
+	private String state;
+	private String project_type;
+	private String unitType;
+	private String spaceType;
+	private String owner_email;
+	private String ownerType;
+	private boolean confidential;
+	private boolean sign_agreement;
+	private String organization;
+	private String manageEntityCountry;
+	private String zip_code;
+	private String orgName;
+	private String year_constructed;
+
 	
-	public String getOperating_hours() {
-		return operating_hours;
+	public String getYear_constructed() {
+		return year_constructed;
 	}
-	public void setOperating_hours(String operating_hours) {
-		this.operating_hours = operating_hours;
+	public void setYear_constructed(String year_constructed) {
+		this.year_constructed = year_constructed;
 	}
 	public String getName() {
 		return name;
@@ -103,6 +102,13 @@ public class AddBuildingProject implements Serializable{
 	public String getOwner_email() {
 		return owner_email;
 	}
+	public String getOrgName() {
+		return orgName;
+	}
+	public void setOrgName(String orgName) {
+		this.orgName = orgName;
+	}
+
 	public void setOwner_email(String owner_email) {
 		this.owner_email = owner_email;
 	}
@@ -142,5 +148,13 @@ public class AddBuildingProject implements Serializable{
 	public void setZip_code(String zip_code) {
 		this.zip_code = zip_code;
 	}
+	public String getOperating_hours() {
+		return operating_hours;
+	}
+	public void setOperating_hours(String operating_hours) {
+		this.operating_hours = operating_hours;
+	}
+	private String operating_hours;
 	
+		
 }

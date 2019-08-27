@@ -1,49 +1,47 @@
 package com.arcapi.Buildingtestcases;
 
-import static com.jayway.restassured.RestAssured.given;
-
+import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
+import com.Utill.Controller.TestUtils;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 
 public class SignAgreementRegistrationAPITest extends BaseClass {
 
-	@Test//(dependsOnMethods = { "com.arcapi.testcases.CreateAssetPOSTAPITest.CreateAssetPOSTAPI" })
+	@Test(groups="SignAgreement")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void SignAgreementRegistrationAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
-
-		CommonMethod.ExtentReportConfig();
 		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+			try {
+				
+				projectID= data.getCellData(SheetName, ProjectTypeColumn, rownumber);
+				url= "/assets/LEED:"+projectID+"/agreements/";
+				String Key = "agreement";
+				File Value = CommonMethod.file;
+				map.put("SoReference","REGISTRATION");
+				CommonMethod.res = MethodCall.POSTRequest(url, map,Key,Value);					
+				Assertion.verifyStatusCode(CommonMethod.res, 200);
+				Assertion.verifyStatusMessage(CommonMethod.res, "HTTP/1.1 200 OK");
+				response= TestUtils.getResposeString(CommonMethod.res);
+				Assert.assertTrue(response.contains("result"));
+				Assert.assertTrue(response.contains("Agreement Signed Successfully"));
+			
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			
+		}
 
-		CommonMethod.res = given().log().all().multiPart("agreement", CommonMethod.file).parameters("SoReference", "REGISTRATION")
-				.header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
-				.header("Authorization", header).spec(reqSpec).when()
-				.post("/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/agreements/").then()
-				.extract().response();
+	
 
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
-		System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Sign Agreement Registration API Test  " + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies sign Agreement")
-				.assignCategory("CheckSignAgreement");
-
-		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
-
-		System.out.println(CommonMethod.res.asString());
-		
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-
-		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		
-		CommonMethod.res.then().spec(respSpec);
-
-	}
 
 }

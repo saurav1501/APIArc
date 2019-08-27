@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CrossRatingSystem-Transit</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/5</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 19 13:09:15 IST 2019</td>
+<td>Started on:</td><td>Wed Aug 21 10:12:37 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (116 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (109 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,42 +75,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest<br>Parameters: ${env}</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1099906270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1099906270'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+<td title='com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest<br>Parameters: [TestResult name=CreateAssetPOSTAPI status=FAILURE method=CreateAssetTransitAboveAPITest.CreateAssetPOSTAPI(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest@4466af20] output={null}]</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	LogStatus cannot be resolved to a variable
+	LogStatus cannot be resolved to a variable
+	LogStatus cannot be resolved to a variable
+	The method endTest(Test) in the type Report is not applicable for the arguments (ExtentTest)
+
+	at com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.teardown(CreateAssetTransitAboveAPITest.java:291)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace197003237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace197003237'><pre>java.lang.Error: Unresolved compilation problems: 
+	LogStatus cannot be resolved to a variable
+	LogStatus cannot be resolved to a variable
+	LogStatus cannot be resolved to a variable
+	The method endTest(Test) in the type Report is not applicable for the arguments (ExtentTest)
+
+	at com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.teardown(CreateAssetTransitAboveAPITest.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest@10e31a9a</td></tr>
+<td>com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest@4466af20</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -123,142 +133,204 @@ function toggleAllBoxes() {
 <td title='com.arcapi.Transittestcases.SignAgreementRegistrationAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Transittestcases.SignAgreementRegistrationAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@131774fe</td></tr>
+<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@a514af7</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.SignAgreementRegistrationAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Transittestcases.SignAgreementRegistrationAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@131774fe</td></tr>
+<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@a514af7</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@158d2680</td></tr>
+<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@6b927fb</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@158d2680</td></tr>
+<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@6b927fb</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@77847718</td></tr>
+<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@3e58a80e</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@77847718</td></tr>
+<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@3e58a80e</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@7f3b84b8</td></tr>
+<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@4fb61f4a</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@7f3b84b8</td></tr>
+<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@4fb61f4a</td></tr>
 <tr>
 <td title='com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest.getSuiteName()'><b>getSuiteName</b><br>Test class: com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@57a3af25</td></tr>
+<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@4fb0f2b9</td></tr>
 <tr>
 <td title='com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest.setBaseUri()'><b>setBaseUri</b><br>Test class: com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@57a3af25</td></tr>
-<tr>
-<td title='com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest</td>
-<td></td>
-<td>0</td>
-<td>com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest@10e31a9a</td></tr>
-<tr>
-<td title='com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.startTest()'><b>startTest</b><br>Test class: com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest</td>
-<td></td>
-<td>0</td>
-<td>com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest@10e31a9a</td></tr>
+<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@4fb0f2b9</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.SignAgreementRegistrationAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Transittestcases.SignAgreementRegistrationAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@131774fe</td></tr>
+<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@a514af7</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.SignAgreementRegistrationAPITest.startTest()'><b>startTest</b><br>Test class: com.arcapi.Transittestcases.SignAgreementRegistrationAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@131774fe</td></tr>
+<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@a514af7</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@158d2680</td></tr>
+<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@6b927fb</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest.startTest()'><b>startTest</b><br>Test class: com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@158d2680</td></tr>
+<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@6b927fb</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@77847718</td></tr>
+<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@3e58a80e</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest.startTest()'><b>startTest</b><br>Test class: com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@77847718</td></tr>
+<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@3e58a80e</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@7f3b84b8</td></tr>
+<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@4fb61f4a</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest.startTest()'><b>startTest</b><br>Test class: com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@7f3b84b8</td></tr>
+<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@4fb61f4a</td></tr>
 <tr>
 <td title='com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest.ExtentReportConfig()'><b>ExtentReportConfig</b><br>Test class: com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@57a3af25</td></tr>
+<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@4fb0f2b9</td></tr>
 <tr>
 <td title='com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest.startTest()'><b>startTest</b><br>Test class: com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@57a3af25</td></tr>
+<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@4fb0f2b9</td></tr>
+<tr>
+<td title='com.arcapi.Transittestcases.SignAgreementRegistrationAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Transittestcases.SignAgreementRegistrationAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@a514af7</td></tr>
+<tr>
+<td title='com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@6b927fb</td></tr>
+<tr>
+<td title='com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@3e58a80e</td></tr>
+<tr>
+<td title='com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@4fb61f4a</td></tr>
+<tr>
+<td title='com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest.teardown()'><b>teardown</b><br>Test class: com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@4fb0f2b9</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.end()'><b>end</b><br>Test class: com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest@10e31a9a</td></tr>
+<td>com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest@4466af20</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.SignAgreementRegistrationAPITest.end()'><b>end</b><br>Test class: com.arcapi.Transittestcases.SignAgreementRegistrationAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@131774fe</td></tr>
+<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@a514af7</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest.end()'><b>end</b><br>Test class: com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@158d2680</td></tr>
+<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@6b927fb</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest.end()'><b>end</b><br>Test class: com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@77847718</td></tr>
+<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@3e58a80e</td></tr>
 <tr>
 <td title='com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest.end()'><b>end</b><br>Test class: com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@7f3b84b8</td></tr>
+<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@4fb61f4a</td></tr>
 <tr>
 <td title='com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest.end()'><b>end</b><br>Test class: com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@57a3af25</td></tr>
+<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@4fb0f2b9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.CreateAssetPOSTAPI()'><b>CreateAssetPOSTAPI</b><br>Test class: com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest<br>Parameters: STG, transit, ProjectIDTransitAbove, 2, US</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method startTest(String, String) is undefined for the type ExtentReports
+
+	at com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.CreateAssetPOSTAPI(CreateAssetTransitAboveAPITest.java:265)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2048606324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2048606324'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method startTest(String, String) is undefined for the type ExtentReports
+
+	at com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.CreateAssetPOSTAPI(CreateAssetTransitAboveAPITest.java:265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest@4466af20</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -268,227 +340,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest.AddAssestTimeline()'><b>AddAssestTimeline</b><br>Test class: com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1025429307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1025429307'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
+<td title='com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest.AddAssestTimeline()'><b>AddAssestTimeline</b><br>Test class: com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest<br>Parameters: STG, ProjectIDTransitAbove, 2</td>
+<td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@7f3b84b8</td></tr>
+<td>com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest@4fb61f4a</td></tr>
 <tr>
-<td title='com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest.CreateAssetPOSTAPI()'><b>CreateAssetPOSTAPI</b><br>Test class: com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace697223828", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace697223828'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
+<td title='com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest.MeasuresListAPI()'><b>MeasuresListAPI</b><br>Test class: com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest<br>Parameters: STG, ProjectIDTransitAbove, 2</td>
+<td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest@10e31a9a</td></tr>
+<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@4fb0f2b9</td></tr>
 <tr>
-<td title='com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest.MeasuresListAPI()'><b>MeasuresListAPI</b><br>Test class: com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace798653807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace798653807'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
+<td title='com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest.PaymentOrderSubmitPOSTAPI()'><b>PaymentOrderSubmitPOSTAPI</b><br>Test class: com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest<br>Parameters: STG, ProjectIDTransitAbove, 2, CreditCardPayment</td>
+<td></td>
 <td>0</td>
-<td>com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest@57a3af25</td></tr>
+<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@3e58a80e</td></tr>
 <tr>
-<td title='com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest.PaymentOrderSubmitPOSTAPI()'><b>PaymentOrderSubmitPOSTAPI</b><br>Test class: com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1953746707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1953746707'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
+<td title='com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest.RegistrationPaymentPricingGetAPI()'><b>RegistrationPaymentPricingGetAPI</b><br>Test class: com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest<br>Parameters: STG, ProjectIDTransitAbove, 2</td>
+<td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest@77847718</td></tr>
+<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@6b927fb</td></tr>
 <tr>
-<td title='com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest.RegistrationPaymentPricingGetAPI()'><b>RegistrationPaymentPricingGetAPI</b><br>Test class: com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173363205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace173363205'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
+<td title='com.arcapi.Transittestcases.SignAgreementRegistrationAPITest.SignAgreementRegistrationAPI()'><b>SignAgreementRegistrationAPI</b><br>Test class: com.arcapi.Transittestcases.SignAgreementRegistrationAPITest<br>Parameters: STG, ProjectIDTransitAbove, 2</td>
+<td></td>
 <td>0</td>
-<td>com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest@158d2680</td></tr>
-<tr>
-<td title='com.arcapi.Transittestcases.SignAgreementRegistrationAPITest.SignAgreementRegistrationAPI()'><b>SignAgreementRegistrationAPI</b><br>Test class: com.arcapi.Transittestcases.SignAgreementRegistrationAPITest</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace674377683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace674377683'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.jayway.restassured.RestAssured
-	at com.jayway.restassured.builder.RequestSpecBuilder.&lt;init&gt;(RequestSpecBuilder.java:78)
-	at com.arc.driver.BaseClass.setBaseUri(BaseClass.java:87)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
-<td>0</td>
-<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@131774fe</td></tr>
+<td>com.arcapi.Transittestcases.SignAgreementRegistrationAPITest@a514af7</td></tr>
 </table><p>
 </body>
 </html>

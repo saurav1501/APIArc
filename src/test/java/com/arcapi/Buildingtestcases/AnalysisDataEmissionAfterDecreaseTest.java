@@ -18,7 +18,7 @@ import com.jayway.restassured.path.json.config.JsonPathConfig;
 
 public class AnalysisDataEmissionAfterDecreaseTest extends BaseClass {
 
-	@Test
+	@Test(groups="CheckAnalysis")
 	@Parameters({ "SheetName","CustomSheetName","ProjectTypeColumn","rownumber" })
 	public void AnalysisDataGetAPI(String SheetName,String CustomSheetName,String ProjectTypeColumn,int rownumber) throws IOException, InterruptedException {
 
@@ -29,12 +29,8 @@ public class AnalysisDataEmissionAfterDecreaseTest extends BaseClass {
 				.extract().response();
 		
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-		System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Analysis data Get API Test  " + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Analysis data generated")
-				.assignCategory("CheckAnalysis");
+		
+		log.info(CommonMethod.responsetime);
 
 		System.out.println(CommonMethod.res.asString());
 		
@@ -45,8 +41,6 @@ public class AnalysisDataEmissionAfterDecreaseTest extends BaseClass {
 		CommonMethod.res.then().spec(respSpec);
 		
 		BigDecimal ResponseScore=JsonPath.with(CommonMethod.res.asString()).using(new JsonPathConfig().numberReturnType(JsonPathConfig.NumberReturnType.BIG_DECIMAL)).get("energy.info_json.'Attributes for this project'.'Score (out of 100)'");
-			
-		System.out.println(ResponseScore);
 			
 		CommonMethod.fetchedID = ResponseScore.toString();
 		

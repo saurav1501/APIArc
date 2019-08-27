@@ -1,15 +1,14 @@
 package com.Utill;
 
-import java.io.Serializable;
-
-public class LoginArc implements Serializable{
+public class LoginArc {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public String username;
-	public String password;
+	private String username;
+	private String password;
+	
 	public String getUsername() {
 		return username;
 	}

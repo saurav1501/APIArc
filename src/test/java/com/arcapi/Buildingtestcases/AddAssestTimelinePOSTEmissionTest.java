@@ -5,28 +5,19 @@ import static com.jayway.restassured.RestAssured.given;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class AddAssestTimelinePOSTEmissionTest extends BaseClass {
 
-	@Test//(dependsOnMethods = { "com.arcapi.testcases.PaymentOrderSubmitPOSTAPITest.PaymentOrderSubmitPOSTAPI" })
+	@Test(groups="CheckAsset")
 	@Parameters({ "SheetName","CustomSheetName","ProjectTypeColumn","rownumber" })
 	public void AddAssestTimeline(String SheetName,String CustomSheetName,String ProjectTypeColumn, int rownumber) throws IOException {
-
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCode();
 		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
 		CommonMethod.res = given().log().all()
 				.header("Ocp-Apim-Subscription-Key",
 						CommonMethod.SubscriptionKey)
@@ -37,15 +28,11 @@ public class AddAssestTimelinePOSTEmissionTest extends BaseClass {
 						+ data.getCellData(CustomSheetName, ProjectTypeColumn, rownumber)
 						+ "/timeline/").then().contentType(ContentType.JSON)
 				.extract().response();
-		System.out.println(CommonMethod.responsetime);
+		
+	    log.info(CommonMethod.responsetime);
 		
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Add Asset Timeline APITest  "+ CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Timeline is added after project registration payment")
-				.assignCategory("CheckAsset");
-		
+	
 		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 		
 		System.out.println(CommonMethod.res.asString());
@@ -53,10 +40,6 @@ public class AddAssestTimelinePOSTEmissionTest extends BaseClass {
 		CommonMethod.testlog("Pass", "verifies response from API" + "<br>"
 				+ CommonMethod.res.asString());
 		
-		
-
-		
-
 		CommonMethod.testlog("Info", "API responded in "
 				+ CommonMethod.responsetime + " Milliseconds");
 		
@@ -64,22 +47,5 @@ public class AddAssestTimelinePOSTEmissionTest extends BaseClass {
 	}
 
 	
-
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP,
-					"Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
 
 }

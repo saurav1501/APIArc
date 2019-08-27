@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 public class MetersAPITest extends BaseClass {
 

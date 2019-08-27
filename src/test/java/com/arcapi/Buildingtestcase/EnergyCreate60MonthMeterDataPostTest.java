@@ -17,7 +17,8 @@ public class EnergyCreate60MonthMeterDataPostTest extends BaseClass {
 	@Test(dataProvider="MeterTestData")
 	
 	public void electricityPurchasedFromGridBulkDataPost(String end_date,String reading,String start_date) throws IOException {
-				
+		test.assignCategory("CheckConsumption");
+		
 		String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone", rowNumTwo);
 		String meterID =  data.getCellData(sheetName, "MeterID", rowNumTwo);
 	
@@ -40,10 +41,8 @@ public class EnergyCreate60MonthMeterDataPostTest extends BaseClass {
 		
 		System.out.println(CommonMethod.responsetime);
 
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Create 60Months Meter Data Post API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies consumption creation")
-				.assignCategory("CheckConsumption");
+	
+			
 
 		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 
@@ -54,8 +53,7 @@ public class EnergyCreate60MonthMeterDataPostTest extends BaseClass {
 		CommonMethod.res.then().assertThat().statusCode(201);
 		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		
-
+	
 		
 	}
 	   

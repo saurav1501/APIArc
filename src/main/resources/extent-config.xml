@@ -14,13 +14,13 @@
     <protocol>https</protocol>
     
     <!-- title of the document -->
-    <documentTitle>ARC-API</documentTitle>
+    <documentTitle>ExtentReports 2.0</documentTitle>
     
     <!-- report name - displayed at top-nav -->
-    <reportName>Automation Report</reportName>
+    <reportName></reportName>
     
     <!-- report headline - displayed at top-nav, after reportHeadline -->
-    <reportHeadline>ARC API</reportHeadline>
+    <reportHeadline>Automation Report</reportHeadline>
     
     <!-- global date format override -->
     <!-- defaults to yyyy-MM-dd -->

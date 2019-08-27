@@ -1,58 +1,62 @@
 package com.arc.Listeners;
-
-
-import java.util.Set;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
-import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
-public class TestListener implements ITestListener {
-	  @Override
-	  public void onFinish(ITestContext context) {
-		    // TODO Auto-generated method stub
-		    Set<ITestResult> failedTests = context.getSkippedTests().getAllResults();
-		    for (ITestResult temp : failedTests) {
-		        ITestNGMethod method = temp.getMethod();
-		        if (context.getFailedTests().getResults(method).size() > 1) {
-		        	
-		            failedTests.remove(temp);
-		           
-		        } else  {
-		        	
-		            if (context.getSkippedTests().getResults(method).size() > 0) {
-		            	
-		                failedTests.remove(temp);
-		               
-		            }
-	            }
-	        }
-	    }
+import com.arc.driver.BaseClass;
+import com.aventstack.extentreports.ExtentReports;
 
-	    // Following are all the method stubs that you do not have to implement
-	 
-	    public void onTestStart(ITestResult result) {
-	        // TODO Auto-generated method stub
-	    }
-	 
-	    public void onTestSuccess(ITestResult result) {
-	        // TODO Auto-generated method stub
-	    }
-	 
-	    public void onTestFailure(ITestResult result) {
-	        // TODO  Auto-generated method stub
-	    }
 
-	    public void onTestSkipped(ITestResult result) {
-	        // TODO Auto-generated method stub
-	    }
+public class TestListener extends BaseClass  implements ITestListener {
 
-	    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-	        // TODO Auto-generated method stub
-	    }
-
-	    public void onStart(ITestContext context) {
-	        // TODO Auto-generated method stub
-	    }
+    
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		// TODO Auto-generated method stub
+		
 	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+/*	@Override
+    public synchronized void onTestStart(ITestResult result) {
+        System.out.println((result.getMethod().getMethodName() + " started!"));
+        test = extent.createTest(result.getMethod().getMethodName(),result.getMethod().getDescription());
+       
+    }*/
+	
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

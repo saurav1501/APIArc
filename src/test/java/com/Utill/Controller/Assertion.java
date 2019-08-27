@@ -6,8 +6,6 @@ import com.jayway.restassured.response.Response;
 
 public class Assertion {
 	
-	//private static Logger log = LogManager.getLogger(TestUtils.class.getName());
-	
 	public static void verifyTrue(boolean flag){
 		Assert.assertTrue(flag);
 	}
@@ -21,6 +19,6 @@ public class Assertion {
 	}
 	
 	public static void verifyStatusMessage(Response response, String status){
-		Assert.assertEquals(TestUtils.getStatusCode(response), status);
+		Assert.assertEquals(TestUtils.getStatusMessage(response), status);
 	}
 }

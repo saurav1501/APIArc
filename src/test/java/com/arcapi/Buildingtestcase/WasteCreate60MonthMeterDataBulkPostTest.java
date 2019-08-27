@@ -16,8 +16,9 @@ public class WasteCreate60MonthMeterDataBulkPostTest extends BaseClass {
 	@Test(dataProvider="MeterTestData")
 	
 	public void CreateWasteMeterDataPost(String unit,String start_date,String end_date,String waste_generated,String waste_diverted) throws IOException {
-				
-		String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);
+	    test.assignCategory("CheckConsumption");
+		
+	    String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);
 			
 		WasteMeterData meterData= new WasteMeterData();
 		meterData.setUnit(unit);
@@ -35,16 +36,12 @@ public class WasteCreate60MonthMeterDataBulkPostTest extends BaseClass {
 				
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
-		System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Create 60 Months Waste Meter Data Post API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies consumption creation")
-				.assignCategory("CheckConsumption");
-
+		log.info(CommonMethod.responsetime);
+		
 		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 
-		System.out.println(CommonMethod.res.asString());
+		log.info(CommonMethod.res.asString());
+		
 		CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
 		data.setCellData(sheetName, "WasteID",2, CommonMethod.fetchedID);
 

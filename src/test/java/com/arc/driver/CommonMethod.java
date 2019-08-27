@@ -13,10 +13,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 
+import com.aventstack.extentreports.Status;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 // QAS Sub -  37fee8fbf7c84994a40df7346bf2f684
 // STG Sub -  06c50a1570bd4d40a7859ec28514b185
@@ -27,7 +27,6 @@ import com.relevantcodes.extentreports.LogStatus;
 public class CommonMethod extends BaseClass {
 	
 	public static long responsetime;
-	public static ExtentTest test;
 	public static String ZipCode = "20037";
 	public static Response res;
 	public static String fetchedID;
@@ -227,27 +226,37 @@ public static String randomNumberMeterReading() throws IOException, InterruptedE
 		return ProgramID;
 		
 }
-
-
-
-
 	public static void testlog(String log, String message){
-		
+		System.out.println(test);
 		switch(log){
 		
 		case "Pass":
-			test.log(LogStatus.PASS, message);
+			test.log(Status.PASS, message);
 			break;
 			
 		case "Info":
-			test.log(LogStatus.INFO, message);
+			test.log(Status.INFO, message);
 			break;
 			
 		 default:
 	     	
 	     	System.out.println("Not Valid Input");
 		}
+		
+		
+		/*case "Pass":
+			test.log(Status.PASS, message);
+			break;
+			
+		case "Info":
+			test.log(Status.INFO, message);
+			break;
+			
+		 default:
+	     	System.out.println("Not Valid Input");
+		}*/
 	}
+		
 	
 		
 	public static String filereadID(String url) throws IOException{

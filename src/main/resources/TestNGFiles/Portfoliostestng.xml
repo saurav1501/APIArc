@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="PortfoliosComplete">
-<!-- <listeners>
-        <listener class-name="com.arc.Listeners.RetryListener" />
-        <listener class-name="com.arc.Listeners.TestListener" />
-</listeners> -->
+
+<listeners>
+        <listener class-name="com.arc.Listeners.TestListener"/>
+</listeners> 
 
 <test name="CompleteFlowTest-Portfolios">
 <parameter name="environment" value="stg" />
@@ -15,7 +15,6 @@
 <parameter name="rownumber" value="2" />
 
 <classes>
-
 <class name="com.arcapi.Buildingtestcases.LoginAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneAPITest"></class> 
 <!-- <class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>

@@ -21,9 +21,6 @@ public class AssetSnapshotDownloadAPITest extends BaseClass {
 	@Parameters({ "SheetName", "ProjectTypeColumn", "rownumber" })
 	public void AssetSnapshotDownloadAPI(String SheetName, String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		// CommonMethod.GeneratingAuthCode();
 
 		CommonMethod.test = CommonMethod.extent
 				.startTest("AssetSnapshotDownload API Test ", "AssetSnapshotDownloadAPITest")

@@ -23,10 +23,7 @@ public class AssetTeamMemberAddPOSTAPITest extends BaseClass {
 	public void AssetTeamMemberAddPOSTAPI(String SheetName, String ProjectTypeColumn, int rownumber)
 			throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		// CommonMethod.GeneratingAuthCode();
-
+		
 		CommonMethod.test = CommonMethod.extent
 				.startTest("Asset Team Member Add POST API Test  ", "Verifies Team member add to asset")
 				.assignCategory("CheckAsset");

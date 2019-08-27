@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.Utill.MeterData;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
@@ -37,12 +38,6 @@ public class CarbonDioxideCreate5YearDataPostTest extends BaseClass {
 			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
 			System.out.println(CommonMethod.responsetime);
-
-			CommonMethod.test = CommonMethod.extent
-					.startTest("Carbon Dioxide Create 5Year Data Post Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-							"Verifies List of Assets")
-					.assignCategory("CheckAsset");
-
 			System.out.println(CommonMethod.res.asString());
 			
 			CommonMethod.res.then().assertThat().statusCode(201);
