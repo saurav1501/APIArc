@@ -1,53 +1,26 @@
 package com.arcapi.Buildingtestcases;
 
-import static com.jayway.restassured.RestAssured.given;
-
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class CreditGetAPITest extends BaseClass {
 
-	@Test
+	@Test(groups="CheckCredit")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void CreditGetAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
+		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/actions/?document=true";
 
-		//CommonMethod.GeneratingAuthCode(SheetName,rownumber);
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
-		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
-				.header("Authorization", header).spec(reqSpec).when()
-				.get("/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/actions/?document=true").then().extract()
-				.response();
-
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Credit Get API Test  " + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies credit associated with asset")
-				.assignCategory("CheckCredit");
-
-		System.out.println(CommonMethod.res.asString());
-		
-		CommonMethod.testlog("Pass", "Response received from API" + "<br>" + CommonMethod.res.asString());
-
-		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		
-		CommonMethod.res.then().spec(respSpec);
-		
+		CommonMethod.res = MethodCall.GETRequest(url);
+			
 		JSONObject jsonObject = new JSONObject(CommonMethod.res.asString());
 		JSONArray CreditID = jsonObject.getJSONArray("EtScorecardList");
 		for (int index=0; index<CreditID.length(); ++index){
@@ -60,19 +33,5 @@ public class CreditGetAPITest extends BaseClass {
 		
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
 }

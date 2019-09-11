@@ -1,14 +1,11 @@
 package com.arcapi.Portfoliostestcases;
 
-import static com.jayway.restassured.RestAssured.given;
-
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.Utill.RandomData;
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 
@@ -16,49 +13,32 @@ import net.minidev.json.JSONObject;
 
 public class PortfoliosPostAPITest extends BaseClass {
 
-	@Test
+	@Test(groups="Portfolio")
 	@Parameters({ "SheetName","rownumber" })
-	public void PortfoliosPostAPI(String SheetName, int rownumber) throws IOException {
-			
-		JSONObject jsonAsMap = new JSONObject();
-		
-		
-		jsonAsMap.put("name", RandomData.protfolioName());
-		jsonAsMap.put("source", "Arc");
-		jsonAsMap.put("description", "Test portfolio");
-		jsonAsMap.put("address", "123-A/5, Washington, DC, US");
-		jsonAsMap.put("organization", "Group10");
-		jsonAsMap.put("organization_contact", "1234567890");
-		jsonAsMap.put("organization_country", "US");
-		jsonAsMap.put("organization_email", "usgbcarcapi1@gmail.com");
-		
-
-		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
-				.header("content-type", "application/json").header("Authorization", header).spec(reqSpec)
-				.body(jsonAsMap).when().post("/portfolios/").then().extract().response();
-		
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-		System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Portfolios Post API Test  " + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Portflios")
-				.assignCategory("Portfolios");
-
-		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
-
-		System.out.println(CommonMethod.res.asString());
+	public void PortfoliosPostAPI(String SheetName, int rownumber) {
 	
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
 		
-		CommonMethod.res.then().assertThat().statusCode(200);
-
-		CommonMethod.fetchedID = CommonMethod.res.path("pf_id").toString();
-		CommonMethod.fetchedID = CommonMethod.fetchedID.replaceAll("\\[", "").replaceAll("\\]", "");
-		data.setCellData(SheetName, "PortfolioID", rownumber, CommonMethod.fetchedID);
-
-		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+		try {
+			
+			JSONObject jsonAsMap = new JSONObject();
+			jsonAsMap.put("name", RandomData.protfolioName());
+			jsonAsMap.put("source", "Arc");
+			jsonAsMap.put("description", "Test portfolio");
+			jsonAsMap.put("address", "123-A/5, Washington, DC, US");
+			jsonAsMap.put("organization", "Group10");
+			jsonAsMap.put("organization_contact", "1234567890");
+			jsonAsMap.put("organization_country", "US");
+			jsonAsMap.put("organization_email", "usgbcarcapi1@gmail.com");
+			url = "/portfolios/";
+			CommonMethod.res = MethodCall.POSTRequest(url, jsonAsMap);
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			CommonMethod.fetchedID = CommonMethod.res.path("pf_id").toString();
+			CommonMethod.fetchedID = CommonMethod.fetchedID.replaceAll("\\[", "").replaceAll("\\]", "");
+			data.setCellData(SheetName, "PortfolioID", rownumber, CommonMethod.fetchedID);
+			CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 	}
 

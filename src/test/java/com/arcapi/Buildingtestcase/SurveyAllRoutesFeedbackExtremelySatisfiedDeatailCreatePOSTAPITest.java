@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.UserDetail;
 import com.Utill.SurveyModes;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
@@ -33,7 +34,8 @@ public class SurveyAllRoutesFeedbackExtremelySatisfiedDeatailCreatePOSTAPITest e
 		survey.setWalk(modeValue1);
 		survey.setTelecommute(modeValue1);
 			
-		Map<Object,Object> surveyDetails = new HashMap<Object, Object>();	
+		Map<Object,Object> surveyDetails = new HashMap<Object, Object>();
+		
 		surveyDetails.put("tenant_name", "Saurav Sinha");
 		surveyDetails.put("response_method", "web");
 		surveyDetails.put("satisfaction",3);

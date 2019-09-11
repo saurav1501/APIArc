@@ -1,119 +1,54 @@
-2019-08-27 09:22:52 INFO  LoginAPITest:216 - Executing test: LoginAPI
-2019-08-27 09:22:52 INFO  LoginAPITest:48 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
-2019-08-27 09:22:57 INFO  LoginAPITest:54 - SAMEORIGIN
-2019-08-27 09:22:58 INFO  LoginAPITest:57 - csrftoken=b7fCD8wRSjclP4Mb6qYPFXavgNXzmu04jdmsYEuVNlCkJXIy8njiG501rcA9TcJm;Path=/;Max-Age=31449600;Expires=8/25/20 3:52 AM
-sessionid=jz01glu1lpwtk95ga16ezyvx1rku6q5f;Path=/;HttpOnly
-2019-08-27 09:22:58 INFO  LoginAPITest:58 - uEQy6ZSOZxJmVZCh09qsLOZ8qDcI8F
-2019-08-27 09:22:58 INFO  LoginAPITest:63 - Bearer
-2019-08-27 09:22:58 INFO  LoginAPITest:64 - Post Response Time In milliseconds0
-2019-08-27 09:22:58 INFO  LoginAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:22:58 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
-2019-08-27 09:22:59 INFO  UserDetailAPITest:216 - Executing test: UserDetailAPI
-2019-08-27 09:22:59 INFO  UserDetailAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/auth/detail/
-2019-08-27 09:23:01 INFO  UserDetailAPITest:24 - Get Response Time In milliseconds1785
-2019-08-27 09:23:01 INFO  UserDetailAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:01 INFO  UserAccessLevelSAPGetTest:216 - Executing test: UserAccessLevelSAPGet
-2019-08-27 09:23:01 INFO  UserAccessLevelSAPGetTest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/auth/access/
-2019-08-27 09:23:03 INFO  UserAccessLevelSAPGetTest:24 - Get Response Time In milliseconds1540
-2019-08-27 09:23:03 INFO  UserAccessLevelSAPGetTest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:03 INFO  LOTokenAPITest:216 - Executing test: LOTokenAPI
-2019-08-27 09:23:03 INFO  LOTokenAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/auth/leed-online/token/
-2019-08-27 09:23:04 INFO  LOTokenAPITest:24 - Get Response Time In milliseconds1522
-2019-08-27 09:23:04 INFO  LOTokenAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:05 INFO  AssetSearchAPITest:216 - Executing test: AssetSearchAPI
-2019-08-27 09:23:05 INFO  AssetSearchAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/search/?q=1000171153
-2019-08-27 09:23:06 INFO  AssetSearchAPITest:24 - Get Response Time In milliseconds1415
-2019-08-27 09:23:06 INFO  AssetSearchAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:06 INFO  AssetValidationInfoPOSTAPITest:216 - Executing test: AssetValidationInfoPOSTAPI
-2019-08-27 09:23:06 INFO  AssetValidationInfoPOSTAPITest:33 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/validation/
-2019-08-27 09:23:08 INFO  AssetValidationInfoPOSTAPITest:38 - Post Response Time In milliseconds1415
-2019-08-27 09:23:08 INFO  AssetValidationInfoPOSTAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:08 INFO  AssetSearchOwnerAPITest:216 - Executing test: AssetSearchOwnerAPI
-2019-08-27 09:23:08 INFO  AssetSearchOwnerAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/search/?q=1000171153
-2019-08-27 09:23:10 INFO  AssetSearchOwnerAPITest:24 - Get Response Time In milliseconds1402
-2019-08-27 09:23:10 INFO  AssetSearchOwnerAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:10 INFO  AssetOwnerOrgPOSTAPITest:216 - Executing test: AssetOwnerOrgPOSTAPI
-2019-08-27 09:23:11 INFO  AssetOwnerOrgPOSTAPITest:33 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/searchowner/
-2019-08-27 09:23:13 INFO  AssetOwnerOrgPOSTAPITest:38 - Post Response Time In milliseconds1402
-2019-08-27 09:23:13 INFO  AssetOwnerOrgPOSTAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:13 INFO  AssetListAPITest:216 - Executing test: AssetListAPI
-2019-08-27 09:23:13 INFO  AssetListAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/
-2019-08-27 09:23:14 INFO  AssetListAPITest:24 - Get Response Time In milliseconds1479
-2019-08-27 09:23:15 INFO  AssetListAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:15 INFO  CreateAssetBuildingV3APITest:216 - Executing test: CreateAssetPOSTAPI
-2019-08-27 09:23:16 INFO  CreateAssetBuildingV3APITest:33 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
-2019-08-27 09:23:19 INFO  CreateAssetBuildingV3APITest:38 - Post Response Time In milliseconds1479
-2019-08-27 09:23:19 INFO  CreateAssetBuildingV3APITest:43 - API Responded With Status Code : 201
-2019-08-27 09:23:20 INFO  CreateAssetBuildingV3APITest:25 - 1000171154
-2019-08-27 09:23:20 INFO  SignAgreementRegistrationAPITest:216 - Executing test: SignAgreementRegistrationAPI
-2019-08-27 09:23:20 INFO  SignAgreementRegistrationAPITest:74 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/agreements/
-2019-08-27 09:23:23 INFO  SignAgreementRegistrationAPITest:80 - Post Response Time In milliseconds3313
-2019-08-27 09:23:23 INFO  SignAgreementRegistrationAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:23 INFO  SignAgreementRegistrationAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
-2019-08-27 09:23:23 INFO  SignAgreementRegistrationAPITest:14 - Complete Response
-2019-08-27 09:23:23 INFO  SignAgreementRegistrationAPITest:18 - {"result":"Agreement Signed Successfully"}
-2019-08-27 09:23:23 INFO  RegistrationPaymentPricingGetAPITest:216 - Executing test: RegistrationPaymentPricingGetAPI
-2019-08-27 09:23:23 INFO  RegistrationPaymentPricingGetAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/payments/price/?soreference=registration
-2019-08-27 09:23:25 INFO  RegistrationPaymentPricingGetAPITest:24 - Get Response Time In milliseconds1671
-2019-08-27 09:23:25 INFO  RegistrationPaymentPricingGetAPITest:28 - BP02
-2019-08-27 09:23:25 INFO  RegistrationPaymentPricingGetAPITest:32 - LEED O+M : EB Performance Registration
-2019-08-27 09:23:25 INFO  RegistrationPaymentPricingGetAPITest:36 - 000000000000004619
-2019-08-27 09:23:25 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:25 INFO  RegistrationPaymentPricingGetAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
-2019-08-27 09:23:26 INFO  PaymentOrderSubmitPOSTAPITest:216 - Executing test: PaymentOrderSubmitPOSTAPI
-2019-08-27 09:23:26 INFO  PaymentOrderSubmitPOSTAPITest:33 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/payments/order/
-2019-08-27 09:23:35 INFO  PaymentOrderSubmitPOSTAPITest:38 - Post Response Time In milliseconds1671
-2019-08-27 09:23:35 INFO  PaymentOrderSubmitPOSTAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:36 INFO  AddAssestTimelinePOSTAPITest:216 - Executing test: AddAssestTimeline
-2019-08-27 09:23:36 INFO  AddAssestTimelinePOSTAPITest:33 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/timeline/
-2019-08-27 09:23:42 INFO  AddAssestTimelinePOSTAPITest:38 - Post Response Time In milliseconds1671
-2019-08-27 09:23:42 INFO  AddAssestTimelinePOSTAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:42 INFO  AddAssestTimelinePOSTAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
-2019-08-27 09:23:42 INFO  PaymentOrderGetAPITest:216 - Executing test: PaymentOrderGetAPI
-2019-08-27 09:23:42 INFO  PaymentOrderGetAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/payments/order/
-2019-08-27 09:23:44 INFO  PaymentOrderGetAPITest:24 - Get Response Time In milliseconds1847
-2019-08-27 09:23:44 INFO  PaymentOrderGetAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:44 INFO  PaymentReceiptAPITest:216 - Executing test: PaymentReceiptAPI
-2019-08-27 09:23:44 INFO  PaymentReceiptAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/payments/receipt/0011046407/?access-token=uEQy6ZSOZxJmVZCh09qsLOZ8qDcI8F&subscription-key=06c50a1570bd4d40a7859ec28514b185
-2019-08-27 09:23:46 INFO  PaymentReceiptAPITest:24 - Get Response Time In milliseconds2410
-2019-08-27 09:23:48 INFO  PaymentReceiptAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:48 INFO  PaymentHistoryAPITest:216 - Executing test: PaymentHistoryAPI
-2019-08-27 09:23:48 INFO  PaymentHistoryAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/payments/history/
-2019-08-27 09:23:49 INFO  PaymentHistoryAPITest:24 - Get Response Time In milliseconds1386
-2019-08-27 09:23:50 INFO  PaymentHistoryAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:50 INFO  AssetDetailAPITest:216 - Executing test: AssetDetailAPI
-2019-08-27 09:23:50 INFO  AssetDetailAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:/1000171154/
-2019-08-27 09:23:51 INFO  AssetDetailAPITest:24 - Get Response Time In milliseconds1356
-2019-08-27 09:23:51 INFO  AssetUpdateBuildingNoneAPITest:216 - Executing test: AssetUpdateforNewAssetPUTAPI
-2019-08-27 09:23:51 INFO  AssetUpdateBuildingNoneAPITest:90 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/
-2019-08-27 09:23:54 INFO  AssetUpdateBuildingNoneAPITest:97 - Put Response Time In milliseconds2250
-2019-08-27 09:23:54 INFO  AssetUpdateBuildingNoneAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:54 INFO  VerifyAssetDetailAPITest:216 - Executing test: VerifyAssetDetailAPI
-2019-08-27 09:23:54 INFO  VerifyAssetDetailAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/
-2019-08-27 09:23:56 INFO  VerifyAssetDetailAPITest:24 - Get Response Time In milliseconds2261
-2019-08-27 09:23:56 INFO  VerifyAssetDetailAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:23:56 INFO  VerifyProjectRegisteredAssetListTest:216 - Executing test: VerifyProjectRegisteredAssetList
-2019-08-27 09:23:56 INFO  VerifyProjectRegisteredAssetListTest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/
-2019-08-27 09:23:58 INFO  VerifyProjectRegisteredAssetListTest:24 - Get Response Time In milliseconds1686
-2019-08-27 09:23:59 INFO  AssetDocumentAPITest:216 - Executing test: AssetDocumentAPI
-2019-08-27 09:23:59 INFO  AssetDocumentAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/documents/
-2019-08-27 09:24:01 INFO  AssetDocumentAPITest:24 - Get Response Time In milliseconds2440
-2019-08-27 09:24:01 INFO  AssetDocumentAPITest:23 - 0000000010000000000845773
-2019-08-27 09:24:01 INFO  AssetDocumentAPITest:26 - E9C87E32E73219F1BA9A0AFDDE1F6773
-2019-08-27 09:24:01 INFO  AssetDocumentAPITest:29 - E9C87E32E7321BF1BA9A0AFDDE1F6773
-2019-08-27 09:24:01 INFO  AssetDocumentAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:24:02 INFO  DownloadDocumentsAPITest:216 - Executing test: DownloadDocumentsAPI
-2019-08-27 09:24:02 INFO  DownloadDocumentsAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/documents/download/?Docfile=Agreement.pdf&IDocNumber=0000000010000000000845773&IDocPart=000&IDocType=Z02&IDocVersion=00&IFileApplicationId=E9C87E32E73219F1BA9A0AFDDE1F6773&IFileId=E9C87E32E7321BF1BA9A0AFDDE1F6773&subscription-key=06c50a1570bd4d40a7859ec28514b185&access-token=uEQy6ZSOZxJmVZCh09qsLOZ8qDcI8F
-2019-08-27 09:24:03 INFO  DownloadDocumentsAPITest:24 - Get Response Time In milliseconds1915
-2019-08-27 09:24:04 INFO  DownloadDocumentsAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:24:04 INFO  VerifyAgreementPresentAPITest:216 - Executing test: VerifyAgreementPresentAPI
-2019-08-27 09:24:04 INFO  VerifyAgreementPresentAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/documents/
-2019-08-27 09:24:06 INFO  VerifyAgreementPresentAPITest:24 - Get Response Time In milliseconds1870
-2019-08-27 09:24:06 INFO  VerifyAgreementPresentAPITest:43 - API Responded With Status Code : 200
-2019-08-27 09:24:06 INFO  FetchingAgreementDetailsAPITest:216 - Executing test: FetchingAgreementDetailsAPI
-2019-08-27 09:24:06 INFO  FetchingAgreementDetailsAPITest:17 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154
-2019-08-27 09:24:08 INFO  FetchingAgreementDetailsAPITest:24 - Get Response Time In milliseconds1624
-2019-08-27 09:24:08 INFO  VerifyAgreementDeleteAPITest:216 - Executing test: VerifyAgreementDeleteAPI
-2019-08-27 09:24:08 INFO  VerifyAgreementDeleteAPITest:125 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000171154/actions/ID:DOCHOLDERL-1000091232/uploads/?Description=-200&Documenttype=Z02&Documentnumber=0000000010000000000433742&Documentpart=000&Documentversion=00&ApplicationId=E9C255EB0D9D4FF1823A0AF82116B5DF&FileId=E9C255EB0D9D51F1823A0AF82116B5DF
-2019-08-27 09:24:09 INFO  VerifyAgreementDeleteAPITest:132 - Delete Response Time In milliseconds1408
-2019-08-27 09:24:09 INFO  VerifyAgreementDeleteAPITest:43 - API Responded With Status Code : 404
+2019-09-10 20:02:50 INFO  LoginAPITest:218 - Executing test: LoginAPI
+2019-09-10 20:02:50 INFO  LoginAPITest:113 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
+2019-09-10 20:02:57 INFO  LoginAPITest:119 - SAMEORIGIN
+2019-09-10 20:02:58 INFO  LoginAPITest:122 - csrftoken=BFte6Wq0lREAtkxqNH93CUeVJfKnwSGomcLL61928Fql48mGCYq6fspghL7Zky2i;Path=/;Max-Age=31449600;Expires=9/8/20 2:32 PM
+sessionid=wvdjry4d2bqelf4til6x93467bx8z9ja;Path=/;HttpOnly
+2019-09-10 20:02:58 INFO  LoginAPITest:123 - 7G8vHZo9Pdf8viESFf9jaq3eUZGVpV
+2019-09-10 20:02:59 INFO  LoginAPITest:129 - Bearer
+2019-09-10 20:02:59 INFO  LoginAPITest:130 - Post Response Time In milliseconds0
+2019-09-10 20:02:59 INFO  LoginAPITest:132 - Payload is  usgbcarcapi@gmail.cominitpass
+2019-09-10 20:02:59 INFO  LoginAPITest:135 - Header is Bearer 7G8vHZo9Pdf8viESFf9jaq3eUZGVpV
+2019-09-10 20:02:59 INFO  LoginAPITest:138 - Ocp-Apim-Subscription-Key06c50a1570bd4d40a7859ec28514b185
+2019-09-10 20:02:59 INFO  LoginAPITest:43 - API Responded With Status Code : 200
+2019-09-10 20:02:59 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-09-10 20:03:00 INFO  PortfoliosPostAPITest:218 - Executing test: PortfoliosPostAPI
+2019-09-10 20:03:00 INFO  PortfoliosPostAPITest:75 - POST Request Call URL https://api.usgbc.org/stg/leed/portfolios/
+2019-09-10 20:03:03 INFO  PortfoliosPostAPITest:80 - Post Response Time In milliseconds0
+2019-09-10 20:03:03 INFO  PortfoliosPostAPITest:86 - Payload is  {"address":"123-A/5, Washington, DC, US","organization_contact":"1234567890","organization":"Group10","name":"Test Portfolio-81276","description":"Test portfolio","source":"Arc","organization_country":"US","organization_email":"usgbcarcapi1@gmail.com"}
+2019-09-10 20:03:03 INFO  PortfoliosPostAPITest:43 - API Responded With Status Code : 200
+2019-09-10 20:03:04 INFO  PortfoliosPostAPITest:218 - Executing test: PortfoliosPostAPI
+2019-09-10 20:03:04 INFO  PortfoliosDetailPUTAPITest:218 - Executing test: PortfoliosDetailPUTAPI
+2019-09-10 20:03:04 INFO  PortfoliosAssetPostAPITest:218 - Executing test: PortfoliosAssetPostAPI
+2019-09-10 20:03:04 INFO  PortfoliosAssetPostAPITest:75 - POST Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001850/assets/
+2019-09-10 20:03:07 INFO  PortfoliosAssetPostAPITest:80 - Post Response Time In milliseconds0
+2019-09-10 20:03:07 INFO  PortfoliosAssetPostAPITest:86 - Payload is  {"asset_partner_id":"1000171520"}
+2019-09-10 20:03:07 INFO  PortfoliosAssetPostAPITest:43 - API Responded With Status Code : 200
+2019-09-10 20:03:07 INFO  PortfoliosAssetPostAPITest:218 - Executing test: CreatePortfoliosAsset2PostAPI
+2019-09-10 20:03:07 INFO  PortfoliosAssetPostAPITest:75 - POST Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001850/assets/
+2019-09-10 20:03:09 INFO  PortfoliosAssetPostAPITest:80 - Post Response Time In milliseconds0
+2019-09-10 20:03:09 INFO  PortfoliosAssetPostAPITest:86 - Payload is  {"asset_partner_id":"1000169544"}
+2019-09-10 20:03:09 INFO  PortfoliosAssetPostAPITest:43 - API Responded With Status Code : 200
+2019-09-10 20:03:10 INFO  PortfoliosAssetPostAPITest:218 - Executing test: PortfoliosAssetPostAPI
+2019-09-10 20:03:10 INFO  PortfoliosAssetPostAPITest:96 - POST Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001850/assets/
+2019-09-10 20:03:12 INFO  PortfoliosAssetPostAPITest:101 - Post Response Time In milliseconds0
+2019-09-10 20:03:12 INFO  PortfoliosAssetPostAPITest:43 - API Responded With Status Code : 400
+2019-09-10 20:03:12 INFO  PortfoliosAssetDetailPUTAPITest:218 - Executing test: PortfoliosAssetDetailPUTAPI
+2019-09-10 20:03:12 INFO  PortfoliosAssetDetailPUTAPITest:96 - POST Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001850/assets/
+2019-09-10 20:03:15 INFO  PortfoliosAssetDetailPUTAPITest:101 - Post Response Time In milliseconds0
+2019-09-10 20:03:15 INFO  PortfoliosAssetDetailPUTAPITest:43 - API Responded With Status Code : 400
+2019-09-10 20:03:15 INFO  PortfoliosGoalsUpdateAPITest:218 - Executing test: PortfoliosGoalsUpdateAPI
+2019-09-10 20:03:15 INFO  PortfoliosGoalsUpdateAPITest:204 - PUT Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001850/goals/
+2019-09-10 20:03:17 INFO  PortfoliosGoalsUpdateAPITest:211 - Put Response Time In milliseconds2366
+2019-09-10 20:03:17 INFO  PortfoliosGoalsUpdateAPITest:43 - API Responded With Status Code : 400
+2019-09-10 20:03:17 INFO  PortfoliosTeamsPostAPITest:218 - Executing test: PortfoliosTeamsPostAPI
+2019-09-10 20:03:17 INFO  PortfoliosTeamsPostAPITest:96 - POST Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001850/teams/
+2019-09-10 20:03:20 INFO  PortfoliosTeamsPostAPITest:101 - Post Response Time In milliseconds2366
+2019-09-10 20:03:20 INFO  PortfoliosTeamsPostAPITest:43 - API Responded With Status Code : 400
+2019-09-10 20:03:20 INFO  PortfoliosTeamsPUTAPITest:218 - Executing test: PortfoliosTeamsPUTAPI
+2019-09-10 20:03:20 INFO  PortfoliosTeamsPUTAPITest:96 - POST Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001850/teams/
+2019-09-10 20:03:22 INFO  PortfoliosTeamsPUTAPITest:101 - Post Response Time In milliseconds2366
+2019-09-10 20:03:22 INFO  PortfoliosTeamsPUTAPITest:43 - API Responded With Status Code : 400
+2019-09-10 20:03:23 INFO  PortfoliosTeamsDELETEAPITest:218 - Executing test: PortfoliosTeamsDELETEAPI
+2019-09-10 20:03:23 INFO  PortfoliosTeamsDELETEAPITest:246 - DELETE Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001850/teams/
+2019-09-10 20:03:25 INFO  PortfoliosTeamsDELETEAPITest:253 - Delete Response Time In milliseconds2237
+2019-09-10 20:03:25 INFO  PortfoliosTeamsDELETEAPITest:43 - API Responded With Status Code : 400

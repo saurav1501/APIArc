@@ -21,21 +21,13 @@ public class AddAssestTimelinePOSTAPITest extends BaseClass {
 		try {
 			projectID= data.getCellData(SheetName, ProjectTypeColumn, rownumber);
 			url="/assets/LEED:"+projectID+"/timeline/";
-			payload="";
-			CommonMethod.res = MethodCall.POSTRequest(url, payload);
+			CommonMethod.res = MethodCall.POSTRequest(url);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
 			Assertion.verifyStatusMessage(CommonMethod.res, statusMessage);
 			CommonMethod.res.then().assertThat().body("success", equalTo("Timeline added successfully"));
 		
-		
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		
-		
+		}		
 }
-
-	
-
-
 }

@@ -17,7 +17,7 @@ public class FetchingAgreementDetailsAPITest extends BaseClass {
 	public void FetchingAgreementDetailsAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
 		try {
-			url = "/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber);		
+			url = "/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber)+"/documents/";		
 			CommonMethod.res = MethodCall.GETRequest(url);
 			String Creditagreement1 = CommonMethod.res.path("EtFile.ObjectId[0]").toString();
 			data.setCellData(SheetName, "CreditAgreementDocID1", rownumber, Creditagreement1);

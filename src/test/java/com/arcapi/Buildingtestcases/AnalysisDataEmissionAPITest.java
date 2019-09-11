@@ -1,14 +1,12 @@
 package com.arcapi.Buildingtestcases;
 
-import static com.jayway.restassured.RestAssured.given;
-
-import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.path.json.JsonPath;
@@ -16,44 +14,35 @@ import com.jayway.restassured.path.json.config.JsonPathConfig;
 
 public class AnalysisDataEmissionAPITest extends BaseClass {
 
-	@Test(groups="CheckAnalysis")
+	@Test(groups="CheckEmession")
 	@Parameters({ "SheetName","CustomSheetName","ProjectTypeColumn","rownumber" })
-	public void AnalysisDataGetAPI(String SheetName,String CustomSheetName,String ProjectTypeColumn, int rownumber) throws IOException, InterruptedException {
+	public void AnalysisDataEmissionAPI(String SheetName,String CustomSheetName,String ProjectTypeColumn, int rownumber) {
 
-		Thread.sleep(20000);
-		
-		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
-				.header("Authorization", header).spec(reqSpec).when()
-				.get("/assets/LEED:" +  data.getCellData(CustomSheetName, ProjectTypeColumn, rownumber) + "/analysis/").then()
-				.extract().response();
-		
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-		log.info(CommonMethod.res.asString());
-		
-		CommonMethod.testlog("Pass", "Response received from API" + "<br>" + CommonMethod.res.asString());
-
-		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		
-		CommonMethod.res.then().spec(respSpec);
-		
-		BigDecimal score=JsonPath.with(CommonMethod.res.asString()).using(new JsonPathConfig().numberReturnType(JsonPathConfig.NumberReturnType.BIG_DECIMAL)).get("energy.info_json.'Attributes for this project'.'Score (out of 100)'");
+		try {
+			Thread.sleep(20000);
+			url = "/assets/LEED:" +  data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/analysis/";
 			
-		log.info(score);
+			CommonMethod.res = MethodCall.GETRequest(url);
 			
-		CommonMethod.fetchedID = score.toString();
-		
-		data.setCellData(CustomSheetName, "Score", rownumber, CommonMethod.fetchedID);
-		
-		BigDecimal analysis=JsonPath.with(CommonMethod.res.asString()).using(new JsonPathConfig().numberReturnType(JsonPathConfig.NumberReturnType.BIG_DECIMAL)).get("energy.info_json.'Attributes for this project'.'Raw GHG (mtco2e/day)'");
-		
-		System.out.println(analysis);
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+				
+			BigDecimal score=JsonPath.with(CommonMethod.res.asString()).using(new JsonPathConfig().numberReturnType(JsonPathConfig.NumberReturnType.BIG_DECIMAL)).get("energy.info_json.'Attributes for this project'.'Score (out of 100)'");
+					
+			CommonMethod.fetchedID = score.toString();
 			
-		CommonMethod.fetchedID = analysis.toString();
+			data.setCellData(CustomSheetName, "Score", rownumber, CommonMethod.fetchedID);
+			
+			BigDecimal analysis=JsonPath.with(CommonMethod.res.asString()).using(new JsonPathConfig().numberReturnType(JsonPathConfig.NumberReturnType.BIG_DECIMAL)).get("energy.info_json.'Attributes for this project'.'Raw GHG (mtco2e/day)'");
+				
+			CommonMethod.fetchedID = analysis.toString();
 
-		System.out.println(CommonMethod.fetchedID);
-		
-		data.setCellData(CustomSheetName, "Analysis", rownumber, CommonMethod.fetchedID);
+			System.out.println(CommonMethod.fetchedID);
+			
+			data.setCellData(CustomSheetName, "Analysis", rownumber, CommonMethod.fetchedID);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
 		
 		
 		

@@ -10,10 +10,10 @@ import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 
 public class AddProjectPayload extends BaseClass {
-    static AddBuildingProject addProject = new AddBuildingProject();
+    static AddBuildingProject addProject ;
 	
 	public static AddBuildingProject addProjectPayload(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
-			
+		addProject = new AddBuildingProject();
 		String ProjectName=null;
 
         if(Country.equals("IN"))
@@ -40,7 +40,7 @@ public class AddProjectPayload extends BaseClass {
         RandomData.spaceType();
         RandomData.ownerType();
         RandomData.setOwnerCountryAddressOwnerOrg(Country);
-        ProjectName= RandomData.projectName(Country);
+        ProjectName= RandomData.projectName(Country,Rating,ProjectType);
         
         String owner_email =data.getCellData(sheetName, "OwnerEmail", rowNumTwo);
 	
@@ -65,7 +65,123 @@ public class AddProjectPayload extends BaseClass {
         addProject.setOperating_hours("100");
 		return addProject;  
 	}
+	
+	public static AddBuildingProject addProjectPayloadCityCom(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
+		addProject = new AddBuildingProject();
+		String ProjectName=null;
+
+        if(Country.equals("IN"))
+		
+		{
+        	RandomData.selectIndState(Country);
+		
+		}
+		
+        else if(Country.equals("US"))
+			
+		{
+        	RandomData.selectUSState(Country);
+			
+		}
+		
+        else if(Country.equals("CN"))
+			
+		{
+        	RandomData.selectCNState(Country);
+		}
+	
+        RandomData.unitType();
+        RandomData.spaceType();
+        RandomData.ownerType();
+        RandomData.setOwnerCountryAddressOwnerOrg(Country);
+        ProjectName= RandomData.projectName(Country,Rating,ProjectType);
+        
+        String owner_email =data.getCellData(sheetName, "OwnerEmail", rowNumTwo);
+	
+        addProject.setName(ProjectName);
+        addProject.setUnitType(RandomData.Unit);
+        addProject.setProject_type(ProjectType);
+        addProject.setRating_system(Rating);
+        addProject.setOwnerType(RandomData.OwnerType);
+        addProject.setOrganization(data.getCellData(sheetName, "OwnerOrg", rowNumTwo));
+        addProject.setManageEntityCountry(Country); 
+        addProject.setGross_area(GrossArea);
+        addProject.setConfidential(false);
+        
+        addProject.setOccupancy("50");
+        addProject.setOperating_hours("30");
+        
+        addProject.setStreet(data.getCellData(sheetName, "Address",rowNumTwo));
+        addProject.setCity(data.getCellData(sheetName, "City", rowNumTwo));
+        addProject.setCountry(Country);
+        addProject.setState(RandomData.State);
+        addProject.setSpaceType(RandomData.SpaceType);
+        addProject.setOwner_email(owner_email);
+        addProject.setSign_agreement(false);
+        addProject.setZip_code(RandomData.ZipCode); 
+		return addProject;  	
+	}
+
+	public static AddBuildingProject addProjectPayloadTransit(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
+		addProject = new AddBuildingProject();
+		String ProjectName=null;
+
+        if(Country.equals("IN"))
+		
+		{
+        	RandomData.selectIndState(Country);
+		
+		}
+		
+        else if(Country.equals("US"))
+			
+		{
+        	RandomData.selectUSState(Country);
+			
+		}
+		
+        else if(Country.equals("CN"))
+			
+		{
+        	RandomData.selectCNState(Country);
+		}
+	
+        RandomData.unitType();
+        RandomData.spaceType();
+        RandomData.ownerType();
+        RandomData.setOwnerCountryAddressOwnerOrg(Country);
+        ProjectName= RandomData.projectName(Country,Rating,ProjectType);
+        
+        String owner_email =data.getCellData(sheetName, "OwnerEmail", rowNumTwo);
+        addProject.setName(ProjectName);
+        addProject.setRating_system("LEED V4 O+M: TR");
+        addProject.setGross_area(GrossArea);
+        addProject.setOccupancy(occupant);
+        addProject.setStreet(data.getCellData(sheetName, "Address",rowNumTwo));
+        addProject.setCity(data.getCellData(sheetName, "City", rowNumTwo));
+        addProject.setCountry(Country);
+        addProject.setState(RandomData.State);
+        addProject.setProject_type(ProjectType);
+        addProject.setUnitType(RandomData.Unit);
+        addProject.setSpaceType(RandomData.SpaceType);
+        addProject.setOwner_email(owner_email);
+        addProject.setOwnerType(RandomData.OwnerType);
+        addProject.setConfidential(false);
+        addProject.setSign_agreement(false);
+        addProject.setZip_code(RandomData.ZipCode); 
+        addProject.setOrganization(data.getCellData(sheetName, "OwnerOrg", rowNumTwo));
+        addProject.setManageEntityCountry(Country);
+        addProject.setOperating_hours("100");
+        addProject.setStation_type(Rating);
+        addProject.setAnnual_ridership("365");
+        addProject.setFull_time_staff("7");
+        addProject.setTime_spent_by_riders("120");
+		return addProject;  
+	}
+
+	
     public static AddBuildingProject validationPayload() {
+    	addProject = new AddBuildingProject();
     	addProject.setState("05");
     	addProject.setCountry("TH");
     	addProject.setZip_code("28293");
@@ -125,12 +241,25 @@ public class AddProjectPayload extends BaseClass {
 	   return map;
 	  }
    
-    public static HashMap<Object,Object> yearconstructed() {
+   public static HashMap<Object,Object> yearconstructed() {
     	map = new HashMap<Object,Object>();
     	map.put("year_constructed",data.getCellData(sheetName, "Year", rowNumTwo));
     	map.put("operating_hours",data.getCellData(sheetName, "OpHours", rowNumTwo));
-    	map.put("occupancy", data.getCellData(sheetName, "Occupancy", rowNumTwo));
+    	map.put("occupancy", data.getCellData(sheetName,"Occupancy", rowNumTwo));
      	return map;
     }
-   
+   public static HashMap<Object,Object> yearconstructedCityCom() {
+   	map = new HashMap<Object,Object>();
+   	map.put("year_constructed",data.getCellData(sheetName, "Year", rowNumTwo));
+    return map;
+   }
+    
+    public static AddBuildingProject analyisData() {
+    	addProject = new AddBuildingProject();
+    	addProject.setEffective_at("2018-01-22T00:00:00");
+    	addProject.setOperating_hours("62");
+    	addProject.setCategory("Basic");
+		return addProject;
+    	
+    }
  }

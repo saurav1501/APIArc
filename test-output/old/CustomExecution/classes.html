@@ -12,7 +12,8 @@
 <tr>
 <td>&nbsp;</td>
 <td>MeterBulkConsumptionPOSTAPI</td>
-<td>&nbsp;</td></tr>
+<td>CheckMeter </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -33,7 +34,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -58,7 +59,8 @@
 <tr>
 <td>&nbsp;</td>
 <td>ConsumptionCreatePOSTAPI</td>
-<td>&nbsp;</td></tr>
+<td>CheckEmission </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -79,7 +81,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -104,7 +106,8 @@
 <tr>
 <td>&nbsp;</td>
 <td>MeterCreatePOSTAPI</td>
-<td>&nbsp;</td></tr>
+<td>CheckMeter </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -125,7 +128,54 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>teardown</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>end</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>CreateAssetPOSTAPI</td>
+<td>Add Project </td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>getSuiteName</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>setBaseUri</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>ExtentReportConfig</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -149,8 +199,9 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>AnalysisDataGetAPI</td>
-<td>&nbsp;</td></tr>
+<td>AnalysisDataEmissionAfterDecrease</td>
+<td>CheckEmession </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -171,145 +222,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>teardown</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>end</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>com.arcapi.Buildingtestcases.AddAssestTimelinePOSTEmissionTest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>AddAssestTimeline</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>getSuiteName</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>setBaseUri</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>ExtentReportConfig</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>startTest</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>teardown</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>end</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTEmissionTest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>PaymentOrderSubmitPOSTAPI</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>getSuiteName</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>setBaseUri</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>ExtentReportConfig</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>startTest</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>teardown</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>end</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetEmissionTest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>RegistrationPaymentPricingGetAPI</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>getSuiteName</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>setBaseUri</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>ExtentReportConfig</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -334,7 +247,8 @@
 <tr>
 <td>&nbsp;</td>
 <td>AssetDetailAPI</td>
-<td>&nbsp;</td></tr>
+<td>EmissionFactor </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -355,7 +269,101 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>teardown</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>end</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>com.arcapi.Common.AddAssestTimelinePOSTAPITest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>AddAssestTimeline</td>
+<td>CheckAsset </td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>getSuiteName</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>setBaseUri</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>ExtentReportConfig</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>start</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>teardown</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>end</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>AnalysisDataEmissionAfterIncrease</td>
+<td>CheckAnalysis </td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>getSuiteName</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>setBaseUri</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>ExtentReportConfig</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -380,7 +388,8 @@
 <tr>
 <td>&nbsp;</td>
 <td>MetersAPI</td>
-<td>&nbsp;</td></tr>
+<td>CheckEmission </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -401,53 +410,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>teardown</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>end</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>com.arcapi.Buildingtestcases.LoginAPITest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>LoginAPI</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>getSuiteName</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>setBaseUri</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>ExtentReportConfig</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -471,8 +434,9 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>ConsumptionUpdatePUTAPI</td>
-<td>&nbsp;</td></tr>
+<td>ConsumptionUpdateEmissionDecreaseAPI</td>
+<td>CheckEmession </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -493,7 +457,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -510,15 +474,16 @@
 <td>end</td>
 <td>&nbsp;</td></tr>
 <tr>
-<td>com.arcapi.Buildingtestcases.RecomputePerformanceScoreEmissionTest</td>
+<td>com.arcapi.Common.LoginAPITest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>RecomputePerformanceScoreGet</td>
-<td>&nbsp;</td></tr>
+<td>LoginAPI</td>
+<td>Login </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -539,7 +504,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -564,7 +529,8 @@
 <tr>
 <td>&nbsp;</td>
 <td>AssetUpdateforNewAssetPUTAPI</td>
-<td>&nbsp;</td></tr>
+<td>CheckMeter </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -585,7 +551,54 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>teardown</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>end</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>com.arcapi.Common.SignAgreementRegistrationAPITest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>SignAgreementRegistrationAPI</td>
+<td>SignAgreement </td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>getSuiteName</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>setBaseUri</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>ExtentReportConfig</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -609,8 +622,9 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>GhgGetTestAPI</td>
-<td>&nbsp;</td></tr>
+<td>GhgMeanEmissionAfterDecrease</td>
+<td>CheckEmession </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -631,7 +645,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -655,8 +669,9 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>ConsumptionUpdatePUTAPI</td>
-<td>&nbsp;</td></tr>
+<td>ConsumptionUpdateEmissionAPI</td>
+<td>CheckEmession </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -677,7 +692,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -702,7 +717,8 @@
 <tr>
 <td>&nbsp;</td>
 <td>GhgGetTestAPI</td>
-<td>&nbsp;</td></tr>
+<td>CheckData </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -723,7 +739,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -747,8 +763,9 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>AnalysisDataGetAPI</td>
-<td>&nbsp;</td></tr>
+<td>AnalysisDataEmissionAPI</td>
+<td>CheckEmession </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -769,7 +786,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -793,8 +810,9 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>GhgGetTestAPI</td>
-<td>&nbsp;</td></tr>
+<td>GhgMeanEmissionAfterIncrease</td>
+<td>CheckEmession </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -815,7 +833,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -840,7 +858,8 @@
 <tr>
 <td>&nbsp;</td>
 <td>GhgGetTestAPI</td>
-<td>&nbsp;</td></tr>
+<td>CheckEmission </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -861,7 +880,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -878,15 +897,16 @@
 <td>end</td>
 <td>&nbsp;</td></tr>
 <tr>
-<td>com.arcapi.Buildingtestcases.CreateAssetTransitAboveEmissionFactorTest</td>
+<td>com.arcapi.Common.PaymentOrderSubmitPOSTAPITest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>CreateAssetPOSTAPI</td>
-<td>&nbsp;</td></tr>
+<td>PaymentOrderSubmitPOSTAPI</td>
+<td>CheckPayment </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -907,7 +927,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>startTest</td>
+<td>start</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>

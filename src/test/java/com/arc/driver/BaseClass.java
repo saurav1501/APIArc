@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -72,11 +73,12 @@ public class BaseClass {
 	public static String modeValue2="2";
 	public static Logger log; 	
 	public static String url;
+    public static ArrayList<net.minidev.json.JSONObject> listpayload;
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentTest testlog;
 	public static List<ISuite> SuiteName1;
 	public static String projectID;
-	public static Object payload;
+	public static Object payload=null;
 	public static HashMap<Object, Object> map;
 	public static String statusMessage="HTTP/1.1 200 OK";
 	public static String baseURL;
@@ -221,7 +223,6 @@ public class BaseClass {
 		test.getModel().setEndTime(getTime(result.getEndMillis())); 
 		String[] group = result.getMethod().getGroups();
 		test.assignCategory(group);
-		
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable().toString().toLowerCase()+"Test"+ " : FAILED", ExtentColor.RED));
 

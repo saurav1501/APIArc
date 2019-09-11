@@ -201,9 +201,9 @@ public class RandomData extends BaseClass{
 	}
 	
 	
-	public static String projectName(String country) {
+	public static String projectName(String country,String Ratings,String ProjectType) {
     String generatedString = RandomStringUtils.randomNumeric(5);
-    String ProjectName = "API Project-" + country +generatedString;	
+    String ProjectName = country+"-API-"+ProjectType.substring(0,1).toUpperCase()+ProjectType.substring(1).toLowerCase()+"-"+Ratings.substring(0,1).toUpperCase()+Ratings.substring(1).toLowerCase()+"-"+generatedString;	
 	data.setCellData(sheetName, "ProjectName", rowNumTwo, ProjectName);
 	System.out.println(ProjectName);
 	return ProjectName;

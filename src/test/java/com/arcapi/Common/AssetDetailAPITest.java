@@ -17,11 +17,10 @@ public class AssetDetailAPITest extends BaseClass {
 	public void AssetDetailAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
 		try {
-			url="/assets/LEED:/" + data.getCellData(SheetName, ProjectTypeColumn, rownumber)+ "/";
+			url="/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber)+ "/";
 			CommonMethod.res = MethodCall.GETRequest(url);
 			CommonMethod.fetchedID = CommonMethod.res.path("key");
 			data.setCellData(SheetName, "BuildingKeyID", rownumber, CommonMethod.fetchedID);	
-			CommonMethod.res.then().spec(respSpec);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		} catch (Exception e) {
 			e.printStackTrace();

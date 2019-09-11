@@ -7,22 +7,26 @@
 <parameter name="SoReference" value="performance score" />
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
+<parameter name="ratings" value="none"></parameter>
+<parameter name="CustomSheetName" value="Emission"/>
 
 <classes>
-<class name="com.arcapi.Buildingtestcases.LoginAPITest"></class> 
-<class name="com.arcapi.release1_18testcases.CreateAssetBuildingNoneAPITest"></class>
-<class name="com.arcapi.release1_18testcases.RegistrationPaymentPricingGetAPITest"></class>
-<class name="com.arcapi.release1_18testcases.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.release1_18testcases.AddAssestTimelinePOSTAPITest"></class> 
-<class name="com.arcapi.release1_18testcases.AssetDetailAPITest"></class>
-<class name="com.arcapi.release1_18testcases.AssetUpdateBuildingNoneAPITest"></class> 
-<class name="com.arcapi.release1_18testcases.MetersAPITest"></class> 
-<class name="com.arcapi.release1_18testcases.SurveyCreatePOSTAPITest"></class>
+
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
+<class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
+<class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
+ 
+<class name="com.arcapi.release1_18testcases.AssetUpdateExcludeSpacesTest"></class> 
+<class name="com.arcapi.release1_18testcases.MetersAPIAreaTest"></class> 
 <class name="com.arcapi.release1_18testcases.OccupantPostAPITest"></class> 
 <class name="com.arcapi.release1_18testcases.OccupantGetAPITest"></class> 
-<class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest"></class>  
+<!-- <class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest"></class>   -->
 <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest"></class>
 <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest"></class>
+
+
 </classes>
 </test> 
 </suite>

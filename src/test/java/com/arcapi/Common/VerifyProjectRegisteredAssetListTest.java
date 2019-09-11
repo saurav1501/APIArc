@@ -24,7 +24,6 @@ public class VerifyProjectRegisteredAssetListTest extends BaseClass {
 			ArrayList<String> Leed_ID_List = CommonMethod.res.path("results.leed_id");
 			Set<String> set = new HashSet<String>(Leed_ID_List); 
 			Assert.assertTrue((set.toString().contains(LeedID)),"List does not have LEED ID");		
-			CommonMethod.res.then().spec(respSpec);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		} catch (Exception e) {
 			e.printStackTrace();

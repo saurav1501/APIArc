@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [LeedV4Testcases]">
   <parameter name="environment" value="stg"/>
+  <parameter name="ratings" value="none"/>
   <parameter name="LOProjectTypeColumn" value="LeedIDEB"/>
   <parameter name="LOSheetName" value="LEEDONLINE"/>
   <parameter name="Country" value="IN"/>
@@ -18,33 +19,4 @@
       <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest"/>
     </classes>
   </test> <!-- V4.1-1 -->
-  <test name="V4.1-1(failed)">
-    <parameter name="LOProjectTypeColumn" value="LeedIDEB"/>
-    <parameter name="LOSheetName" value="LEEDONLINE"/>
-    <parameter name="rownumber" value="2"/>
-    <parameter name="Country" value="IN"/>
-    <classes>
-      <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="startTest"/>
-          <include name="LOProjectRegistration" invocation-numbers="0"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest -->
-      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="startTest"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Leedv4Testcases.LOAuthenticateAPITest -->
-    </classes>
-  </test> <!-- V4.1-1(failed) -->
 </suite> <!-- Failed suite [LeedV4Testcases] -->

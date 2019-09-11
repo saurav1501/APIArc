@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.google.gson.Gson;
 import com.jayway.restassured.response.Headers;
 import com.jayway.restassured.response.Response;
 public class MethodCall extends BaseClass{
@@ -22,27 +24,91 @@ public class MethodCall extends BaseClass{
 		
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 		log.info("Get Response Time In milliseconds" +CommonMethod.responsetime);
+		
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
+		CommonMethod.testlog("Pass", "Response from API" + "<br>" + CommonMethod.res.asString());
+
+		return CommonMethod.res;
+	}
+	
+	public static Response GETRequestWithoutHeader(String uRI) {
+		CommonMethod.testlog("Info", "GET Request Call URL "+baseURL+uRI);
+		log.info("GET Request Call URL "+baseURL+uRI);
+		
+		CommonMethod.res= given().log().all().spec(reqSpec).when().get(uRI).then().extract().response();
+		
+		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
+		log.info("Get Response Time In milliseconds" +CommonMethod.responsetime);
+		
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+		CommonMethod.testlog("Pass", "Response from API" + "<br>" + CommonMethod.res.asString());
+
+		return CommonMethod.res;
+	}
+	
+	public static Response GETRequest(String uRI,Object strJSON ) {
+		CommonMethod.testlog("Info", "GET Request Call URL "+baseURL+uRI);
+		log.info("GET Request Call URL "+baseURL+uRI);
+		
+		CommonMethod.res= given().log().all()
+				.headers(headerMap)
+				.header("Authorization",header).spec(reqSpec).when().body(strJSON).get(uRI).then().extract().response();
+		
+		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
+		log.info("Get Response Time In milliseconds" +CommonMethod.responsetime);
+		
+		Gson gson = new Gson();
+		String jsonString = gson.toJson(strJSON);
+		log.info("Payload is  "+jsonString.toString());
+		CommonMethod.testlog("Pass", "Payload is : "+"<br>"+jsonString.toString());
+	
+		
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+		CommonMethod.testlog("Pass", "Response from API" + "<br>" + CommonMethod.res.asString());
 
 		return CommonMethod.res;
 	}
 
-	public static Response POSTRequest(String uRI, Object strJSON) {
+	public static Response POSTRequest(String uRI, Object strJSON) throws JsonProcessingException {
 		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
+		
 		log.info("POST Request Call URL "+baseURL+uRI);
-
+		
 		CommonMethod.res= given().log().all().headers(headerMap).header("content-type", "application/json")
 				.header("Authorization",header).spec(reqSpec).when().body(strJSON).post(uRI).then().extract().response();
 
 		log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
+		
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-
+		
+		Gson gson = new Gson();
+		String jsonString = gson.toJson(strJSON);
+		log.info("Payload is  "+jsonString.toString());
+		CommonMethod.testlog("Pass", "Payload is : "+"<br>"+jsonString.toString());
+		
+		CommonMethod.testlog("Pass","Response from API" + "<br>" + CommonMethod.res.asString());
+		
 		return CommonMethod.res;
 	}
 
 	public static Response POSTRequest(String uRI) {
+		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
+		log.info("POST Request Call URL "+baseURL+uRI);
+		
+		CommonMethod.res= given().log().all().headers(headerMap).header("content-type", "application/json")
+				.header("Authorization",header).spec(reqSpec).when().post(uRI).then().extract().response();
+
+		log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
+		
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+		
+		CommonMethod.testlog("Info", "Content Type is : " + CommonMethod.res.getContentType());
+		
+		CommonMethod.testlog("Pass","Response from API" + "<br>" + CommonMethod.res.asString());
+		
+		return CommonMethod.res;
+	}
+	public static Response POSTRequestLogin(String uRI) {
 		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
 		log.info("POST Request Call URL "+baseURL+uRI);
 		
@@ -59,10 +125,21 @@ public class MethodCall extends BaseClass{
 		
 		header = "Bearer " + CommonMethod.fetchedID;
 		data.setCellData(sheetName, "BearerToken", rowNumTwo, header);
+		
 		log.info(CommonMethod.res.path("token_type"));	
 		log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
+		
+		log.info("Payload is  "+loginArc.getUsername().toString()+loginArc.getPassword().toString());
+		CommonMethod.testlog("Pass", "Payload is : "+"username "+loginArc.getUsername().toString()+" password "+loginArc.getPassword().toString());
+		
+		log.info("Header is "+header.toString());
+		CommonMethod.testlog("Pass", "Header is : "+header.toString());
+		
+		log.info("Ocp-Apim-Subscription-Key"+SubscriptionKey);
+		CommonMethod.testlog("Pass", "Ocp-Apim-Subscription-Key"+SubscriptionKey.toString());
+		
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
+		CommonMethod.testlog("Pass", "Response from API" + "<br>" + CommonMethod.res.asString());
 
 		return CommonMethod.res;
 	}
@@ -76,9 +153,24 @@ public class MethodCall extends BaseClass{
 		map= (HashMap<String, String>) strJSON;
 		CommonMethod.res=  given().log().all().headers(headerMap).header("Authorization",header).multiPart(key,file).parameters(map).spec(reqSpec).when().post(uRI).then().extract().response();
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
+		
 		log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
+		CommonMethod.testlog("Pass", "Response from API" + "<br>" + CommonMethod.res.asString());
+
+		return CommonMethod.res;
+	}
+	
+	public static Response POSTRequestExcelUpload(String uRI,String key, Object file) {
+		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
+		log.info("POST Request Call URL "+baseURL+uRI);
+		
+		CommonMethod.res=  given().log().all().headers(headerMap).header("Authorization",header).parameter("upload_category", "excel").multiPart(key,file).spec(reqSpec).when().post(uRI).then().extract().response();
+		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
+		
+		log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+		CommonMethod.testlog("Pass", "Response from API" + "<br>" + CommonMethod.res.asString());
 
 		return CommonMethod.res;
 	}
@@ -95,27 +187,57 @@ public class MethodCall extends BaseClass{
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 		log.info("Put Response Time In milliseconds" +CommonMethod.responsetime);
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-
+		Gson gson = new Gson();
+		String jsonString = gson.toJson(strJSON);
+		log.info("Payload is  "+jsonString.toString());
+		CommonMethod.testlog("Pass", "Payload is : "+"<br>"+jsonString.toString());
+	
 		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
 
 		return   CommonMethod.res;
 
 	}
 
-	public static Response DELETERequest(String uRI, String strJSON) {
+	public static Response PUTRequest(String uRI) {
+		
+		CommonMethod.testlog("Info", "PUT Request Call URL "+baseURL+uRI);
+		log.info("PUT Request Call URL "+baseURL+uRI);
+		
+		CommonMethod.res= given().log().all()
+				.headers(headerMap)
+				.header("Authorization",header).header("content-type", "application/json").spec(reqSpec).when().put(uRI).then().extract().response();
+
+		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
+		log.info("Put Response Time In milliseconds" +CommonMethod.responsetime);
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+
+		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
+
+		return   CommonMethod.res;
+
+	}
+	public static Response DELETERequest(String uRI, Object strJSON) {
 		
 		CommonMethod.testlog("Info", "DELETE Request Call URL "+baseURL+uRI);
 		log.info("DELETE Request Call URL "+baseURL+uRI);
 		
+		log.info("Passed Payload is -> "+strJSON.toString());
+		CommonMethod.testlog("Pass", "Passed Payload is ->" + "<br>" +strJSON.toString());
+
 		CommonMethod.res= given().log().all()
 				.headers(headerMap)
 				.header("Authorization",header).header("content-type", "application/json").spec(reqSpec).when().body(strJSON).delete(uRI).then().extract().response();
 
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 		log.info("Delete Response Time In milliseconds" +CommonMethod.responsetime);
+		
+		Gson gson = new Gson();
+		String jsonString = gson.toJson(strJSON);
+		log.info("Payload is  "+jsonString.toString());
+		CommonMethod.testlog("Pass", "Payload is : "+"<br>"+jsonString.toString());
+	
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");	
 		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-
 		return   CommonMethod.res;
 	}
 	public static Response DELETERequest(String uRI) {
@@ -131,7 +253,8 @@ public class MethodCall extends BaseClass{
 		log.info("Delete Response Time In milliseconds" +CommonMethod.responsetime);
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");	
 		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-
+		CommonMethod.testlog("Info", "Content Type is : " + CommonMethod.res.getContentType());
+		
 		return   CommonMethod.res;
 	}
 

@@ -1,65 +1,41 @@
 package com.arcapi.Buildingtestcases;
 
-import static com.jayway.restassured.RestAssured.given;
-
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
+import com.Utill.Model.OtherDetails;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class InstallAllAppsAfterDeleteAPITest extends BaseClass {
 
-	@Test
+	@Test(groups="CheckApp")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
-	public void InstallAllAppsAfterDeleteAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
+	public void InstallAllAppsAfterDeleteAPI(String SheetName,String ProjectTypeColumn, int rownumber){
 
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCodeForLOUser(SheetName, rownumber);
-		
-		CommonMethod.test = CommonMethod.extent
-				.startTest("InstallAllAppsAfterDelete Test",
-						"Verifies App can be added to asset")
-				.assignCategory("CheckAsset");
-
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
-	    TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
-		
-			data.setCellData("Report", "TestCaseName", reportrownum, TestName);
-
-		
-		for(int i=2;i<5;i++) {
-
-		CommonMethod.res = given().log().all().parameters("app", i)
-				.header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
-				.header("Authorization", header).spec(reqSpec).when()
-				.post("/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/apps/").then()
-				.extract().response();
-		
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-	    System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
-
-		System.out.println(CommonMethod.res.asString());
-		
-		CommonMethod.testlog("Pass", "App code "+ i +" is added to Asset" + "<br>" + CommonMethod.res.asString());
-
-		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		
-		CommonMethod.res.then().spec(respSpec);
+        try {
+			url= "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/apps/";		
+			CommonMethod.testlog("Info", "Verifying Installing Dropbox");
+			payload=OtherDetails.Dropbox();
+			CommonMethod.res = MethodCall.POSTRequest(url, payload);
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			
+			CommonMethod.testlog("Info", "Verifying Installing OneDrive");
+			payload=OtherDetails.OneDrive();
+			CommonMethod.res = MethodCall.POSTRequest(url, payload);
+			Assertion.verifyStatusCode(	CommonMethod.res, 200);
+			
+			CommonMethod.testlog("Info", "Verifying Installing GoogleDrive");
+			payload=OtherDetails.GoogleDrive();
+			CommonMethod.res = MethodCall.POSTRequest(url, payload);
+			Assertion.verifyStatusCode(	CommonMethod.res, 200);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
 	}
 	}
 	
 
-}

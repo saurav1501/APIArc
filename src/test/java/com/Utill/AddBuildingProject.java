@@ -25,6 +25,13 @@ public class  AddBuildingProject implements Serializable{
 	private String zip_code;
 	private String orgName;
 	private String year_constructed;
+	private String category;
+	private String effective_at;
+	
+	private String station_type;
+	private String annual_ridership;
+	private String full_time_staff;
+	private String time_spent_by_riders;
 
 	
 	public String getYear_constructed() {
@@ -155,6 +162,44 @@ public class  AddBuildingProject implements Serializable{
 		this.operating_hours = operating_hours;
 	}
 	private String operating_hours;
+
+
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public String getEffective_at() {
+		return effective_at;
+	}
+	public void setEffective_at(String effective_at) {
+		this.effective_at = effective_at;
+	}
+	public String getStation_type() {
+		return station_type;
+	}
+	public void setStation_type(String station_type) {
+		this.station_type = station_type;
+	}
+	public String getAnnual_ridership() {
+		return annual_ridership;
+	}
+	public void setAnnual_ridership(String annual_ridership) {
+		this.annual_ridership = annual_ridership;
+	}
+	public String getFull_time_staff() {
+		return full_time_staff;
+	}
+	public void setFull_time_staff(String full_time_staff) {
+		this.full_time_staff = full_time_staff;
+	}
+	public String getTime_spent_by_riders() {
+		return time_spent_by_riders;
+	}
+	public void setTime_spent_by_riders(String time_spent_by_riders) {
+		this.time_spent_by_riders = time_spent_by_riders;
+	}
 	
 		
 }

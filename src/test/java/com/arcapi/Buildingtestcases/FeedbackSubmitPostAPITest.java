@@ -7,28 +7,20 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class FeedbackSubmitPostAPITest extends BaseClass {
 
-	@Test
+	@Test(groups="CheckFeedback")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void FeedbackSubmitPostAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		//CommonMethod.GeneratingAuthCode();
 		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-
 		Map<String, Object> jsonAsMap = new HashMap<>();
 		jsonAsMap.put("OSName", "Linux");
 		jsonAsMap.put("browser_name", "Chrome");
@@ -65,19 +57,5 @@ public class FeedbackSubmitPostAPITest extends BaseClass {
 
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
 }

@@ -5,7 +5,7 @@
   <parameter name="CreditColumn" value="TransitAboveCredit"/>
   <parameter name="SoReference" value="review"/>
   <parameter name="CreditColumnNum" value="4"/>
-  <parameter name="ratings" value="none"/>
+  <parameter name="ratings" value="aboveground"/>
   <parameter name="ProjectType" value="transit"/>
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
@@ -13,1468 +13,933 @@
   <parameter name="SheetName" value="STG"/>
   <parameter name="SoReferenceSR" value="review"/>
   <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
-  <test name="CompleteFlowTest-Transit-Below">
-    <parameter name="CreditColumn" value="TransitBelowCredit"/>
-    <parameter name="SoReference" value="precertification review"/>
-    <parameter name="CreditColumnNum" value="3"/>
-    <parameter name="ProjectType" value="transit"/>
-    <parameter name="rownumber" value="2"/>
-    <parameter name="SoReferenceSR" value="review"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDTransitBelow"/>
-    <classes>
-      <class name="com.arcapi.Transittestcases.LoginAPITest"/>
-      <class name="com.arcapi.Transittestcases.UserDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.UserAccessLevelSAPGetTest"/>
-      <class name="com.arcapi.Transittestcases.LOTokenAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetSearchAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetValidationInfoPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetSearchOwnerAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetOwnerOrgPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetListAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreateAssetTransitBelowAPITest"/>
-      <class name="com.arcapi.Transittestcases.SignAgreementRegistrationAPITest"/>
-      <class name="com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.PaymentOrderGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.PaymentReceiptAPITest"/>
-      <class name="com.arcapi.Transittestcases.PaymentHistoryAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetUpdateTransitBelowAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyAssetDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyProjectRegisteredAssetListTest"/>
-      <class name="com.arcapi.Transittestcases.AssetDocumentAPITest"/>
-      <class name="com.arcapi.Transittestcases.DownloadDocumentsAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyAgreementPresentAPITest"/>
-      <class name="com.arcapi.Transittestcases.FetchingAgreementDetailsAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyAgreementDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreditGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreditUpdatePUTAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreditFormDownloadAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreditAddTeamPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.MetersAPITest"/>
-      <class name="com.arcapi.Transittestcases.MeterCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetMeterDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.MeterUpdatePUTAPITest"/>
-      <class name="com.arcapi.Transittestcases.MeterBulkConsumptionPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionListAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionUpdatePUTAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.MeterDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteUpdatePUTAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteDetailDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.TransitSurveyCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.TransitSurveyAPITest"/>
-      <class name="com.arcapi.Transittestcases.TransitSurveySummarizeSurveyAPITest"/>
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveySummarizeAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberRoleAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberAddPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberUpdateAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberRemoveAPITest"/>
-      <class name="com.arcapi.Transittestcases.DeleteAllAppsAPITest"/>
-      <class name="com.arcapi.Transittestcases.InstallAllAppsAfterDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetAppListAPITest"/>
-      <class name="com.arcapi.Transittestcases.S3DocumentUploadPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.S3DocumentListAPITest"/>
-      <class name="com.arcapi.Transittestcases.S3DocumentRemoveAPITest"/>
-      <class name="com.arcapi.Transittestcases.ExcelUploadTemplatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionPostAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionPutAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyAdminRemoveAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetNotificationSubscriptionListTest"/>
-      <class name="com.arcapi.Transittestcases.AssetNotificationSubscriptionPostTest"/>
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailGetTest"/>
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailPutTest"/>
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailDeleteTest"/>
-      <class name="com.arcapi.Transittestcases.AssetDataSnapshotAPITest"/>
-      <class name="com.arcapi.Transittestcases.RecomputePerformanceScoreGetTest"/>
-      <class name="com.arcapi.Transittestcases.ReviewCertificationPricingAPITest"/>
-      <class name="com.arcapi.Transittestcases.SubmitReviewPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.SubmitReviewGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.NotificationCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.NotificationGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.NotificationDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.FeedbackSubmitPostAPITest"/>
-      <class name="com.arcapi.Transittestcases.TransitSurveyExportAPITest"/>
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyExportAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetDataExportAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetPerformanceScoreListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AnalysisDataSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AnalysisDataGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.CO2GetTest"/>
-      <class name="com.arcapi.Transittestcases.GhgGetTest"/>
-      <class name="com.arcapi.Transittestcases.GhgCalcGetTest"/>
-      <class name="com.arcapi.Transittestcases.VOCGetTest"/>
-      <class name="com.arcapi.Transittestcases.AQIDataGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.RidershipDataGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.WaterGetTest"/>
-      <class name="com.arcapi.Transittestcases.AssetCertificationListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetCertificationPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.TemperatureDataGetTest"/>
-      <class name="com.arcapi.Transittestcases.AssetRequiredFieldsAPITest"/>
-      <class name="com.arcapi.Transittestcases.CountryStatesJSONAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssociatedCategoriesAPITest"/>
-      <class name="com.arcapi.Transittestcases.RatingSystemListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AppVersionDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.FuelCategoryAPITest"/>
-      <class name="com.arcapi.Transittestcases.GetAllDocumentListAPITest"/>
-      <class name="com.arcapi.Transittestcases.PerformanceComparablesGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.ScoreWeightsAPITest"/>
-      <class name="com.arcapi.Transittestcases.ThirdPartyListAppsAPITest"/>
-      <class name="com.arcapi.Transittestcases.UserDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.AvgPerformaceListGetTest"/>
-      <class name="com.arcapi.Transittestcases.AssetSnapshotKeysAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest"/>
-      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyWasteDataExcelAPITest"/>
-    </classes>
-  </test> <!-- CompleteFlowTest-Transit-Below -->
   <test name="CompleteFlowTest-Transit-Above">
     <parameter name="CreditColumn" value="TransitAboveCredit"/>
     <parameter name="SoReference" value="review"/>
     <parameter name="CreditColumnNum" value="4"/>
+    <parameter name="ratings" value="aboveground"/>
     <parameter name="ProjectType" value="transit"/>
     <parameter name="rownumber" value="2"/>
     <parameter name="SoReferenceSR" value="review"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
     <classes>
-      <class name="com.arcapi.Transittestcases.LoginAPITest"/>
-      <class name="com.arcapi.Transittestcases.UserDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.UserAccessLevelSAPGetTest"/>
-      <class name="com.arcapi.Transittestcases.LOTokenAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetSearchAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetValidationInfoPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetSearchOwnerAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetOwnerOrgPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetListAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest"/>
-      <class name="com.arcapi.Transittestcases.SignAgreementRegistrationAPITest"/>
-      <class name="com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.PaymentOrderGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.PaymentReceiptAPITest"/>
-      <class name="com.arcapi.Transittestcases.PaymentHistoryAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetUpdateTransitAboveAPITest"/>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Common.UserDetailAPITest"/>
+      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"/>
+      <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest"/>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentReceiptAPITest"/>
+      <class name="com.arcapi.Common.PaymentHistoryAPITest"/>
+      <class name="com.arcapi.Common.AssetSearchAPITest"/>
+      <class name="com.arcapi.Common.AssetDetailAPITest"/>
+      <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetSearchOwnerAPITest"/>
+      <class name="com.arcapi.Common.AssetOwnerOrgPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetListAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest"/>
       <class name="com.arcapi.Transittestcases.VerifyAssetDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyProjectRegisteredAssetListTest"/>
-      <class name="com.arcapi.Transittestcases.AssetDocumentAPITest"/>
-      <class name="com.arcapi.Transittestcases.DownloadDocumentsAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyAgreementPresentAPITest"/>
-      <class name="com.arcapi.Transittestcases.FetchingAgreementDetailsAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyAgreementDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreditGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreditUpdatePUTAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreditFormDownloadAPITest"/>
-      <class name="com.arcapi.Transittestcases.CreditAddTeamPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.MetersAPITest"/>
-      <class name="com.arcapi.Transittestcases.MeterCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetMeterDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.MeterUpdatePUTAPITest"/>
-      <class name="com.arcapi.Transittestcases.MeterBulkConsumptionPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionListAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionUpdatePUTAPITest"/>
-      <class name="com.arcapi.Transittestcases.ConsumptionDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.MeterDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteUpdatePUTAPITest"/>
-      <class name="com.arcapi.Transittestcases.WasteDetailDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.TransitSurveyCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.TransitSurveyAPITest"/>
-      <class name="com.arcapi.Transittestcases.TransitSurveySummarizeSurveyAPITest"/>
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveySummarizeAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberRoleAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberAddPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberUpdateAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberRemoveAPITest"/>
-      <class name="com.arcapi.Transittestcases.DeleteAllAppsAPITest"/>
-      <class name="com.arcapi.Transittestcases.InstallAllAppsAfterDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetAppListAPITest"/>
-      <class name="com.arcapi.Transittestcases.S3DocumentUploadPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.S3DocumentListAPITest"/>
-      <class name="com.arcapi.Transittestcases.S3DocumentRemoveAPITest"/>
+      <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"/>
+      <class name="com.arcapi.Buildingtestcases.MetersAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberRoleAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberListAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberAddPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberRemoveAPITest"/>
+      <class name="com.arcapi.Common.S3DocumentUploadPOSTAPITest"/>
+      <class name="com.arcapi.Common.S3DocumentListAPITest"/>
+      <class name="com.arcapi.Common.S3DocumentRemoveAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamPermissionListAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamPermissionPostAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamPermissionPutAPITest"/>
+      <class name="com.arcapi.Common.VerifyAdminRemoveAPITest"/>
+      <class name="com.arcapi.Common.AssetArcProjectAdminAddPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionListTest"/>
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionPostTest"/>
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailGetTest"/>
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailPutTest"/>
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailDeleteTest"/>
+      <class name="com.arcapi.Common.NotificationCreatePOSTAPITest"/>
+      <class name="com.arcapi.Common.NotificationGetAPITest"/>
+      <class name="com.arcapi.Common.NotificationDeleteAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.WasteGetAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.WasteDetailAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest"/>
       <class name="com.arcapi.Transittestcases.ExcelUploadTemplateTransitAboveAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionPostAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionPutAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyAdminRemoveAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetNotificationSubscriptionListTest"/>
-      <class name="com.arcapi.Transittestcases.AssetNotificationSubscriptionPostTest"/>
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailGetTest"/>
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailPutTest"/>
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailDeleteTest"/>
-      <class name="com.arcapi.Transittestcases.AssetDataSnapshotAPITest"/>
-      <class name="com.arcapi.Transittestcases.RecomputePerformanceScoreGetTest"/>
-      <class name="com.arcapi.Transittestcases.ReviewCertificationPricingAPITest"/>
-      <class name="com.arcapi.Transittestcases.SubmitReviewPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.SubmitReviewGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.NotificationCreatePOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.NotificationGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.NotificationDeleteAPITest"/>
-      <class name="com.arcapi.Transittestcases.FeedbackSubmitPostAPITest"/>
-      <class name="com.arcapi.Transittestcases.TransitSurveyExportAPITest"/>
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyExportAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetDataExportAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetPerformanceScoreListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AnalysisDataSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.AnalysisDataGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.CO2GetTest"/>
-      <class name="com.arcapi.Transittestcases.GhgGetTest"/>
-      <class name="com.arcapi.Transittestcases.GhgCalcGetTest"/>
-      <class name="com.arcapi.Transittestcases.VOCGetTest"/>
+      <class name="com.arcapi.Common.AssetDocumentAPITest"/>
+      <class name="com.arcapi.Common.DownloadDocumentsAPITest"/>
+      <class name="com.arcapi.Common.VerifyAgreementPresentAPITest"/>
+      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"/>
+      <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"/>
+      <class name="com.arcapi.Common.FeedbackSubmitPostAPITest"/>
+      <class name="com.arcapi.Common.DeleteAllAppsAPITest"/>
+      <class name="com.arcapi.Common.InstallAllAppsAfterDeleteAPITest"/>
       <class name="com.arcapi.Transittestcases.AQIDataGetAPITest"/>
       <class name="com.arcapi.Transittestcases.RidershipDataGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.WaterGetTest"/>
-      <class name="com.arcapi.Transittestcases.AssetCertificationListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetCertificationPOSTAPITest"/>
-      <class name="com.arcapi.Transittestcases.TemperatureDataGetTest"/>
-      <class name="com.arcapi.Transittestcases.AssetRequiredFieldsAPITest"/>
-      <class name="com.arcapi.Transittestcases.CountryStatesJSONAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssociatedCategoriesAPITest"/>
-      <class name="com.arcapi.Transittestcases.RatingSystemListAPITest"/>
-      <class name="com.arcapi.Transittestcases.AppVersionDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.FuelCategoryAPITest"/>
-      <class name="com.arcapi.Transittestcases.GetAllDocumentListAPITest"/>
-      <class name="com.arcapi.Transittestcases.PerformanceComparablesGetAPITest"/>
-      <class name="com.arcapi.Transittestcases.ScoreWeightsAPITest"/>
-      <class name="com.arcapi.Transittestcases.ThirdPartyListAppsAPITest"/>
-      <class name="com.arcapi.Transittestcases.UserDetailAPITest"/>
-      <class name="com.arcapi.Transittestcases.AvgPerformaceListGetTest"/>
-      <class name="com.arcapi.Transittestcases.AssetSnapshotKeysAPITest"/>
-      <class name="com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest"/>
-      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersTransitAboveAPITest"/>
-      <class name="com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionTransitAboveTest"/>
       <class name="com.arcapi.Transittestcases.VerifyWasteDataExcelAPITest"/>
       <class name="com.arcapi.Transittestcases.ExcelTemplateMetersHEAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyAQIGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyPM25GraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyPM10GraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyOzoneGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyNitrogenDioxideGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifySulphurDioxideGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyCarbonMonoxideGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyRidershipGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersTransitAboveAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionEnergyWaterAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionListAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionDetailAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.MeterDeleteAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest"/>
+      <class name="com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest"/>
     </classes>
   </test> <!-- CompleteFlowTest-Transit-Above -->
-  <test name="CompleteFlowTest-Transit-Below(failed)">
-    <parameter name="CreditColumn" value="TransitBelowCredit"/>
-    <parameter name="SoReference" value="precertification review"/>
-    <parameter name="CreditColumnNum" value="3"/>
-    <parameter name="ProjectType" value="transit"/>
-    <parameter name="rownumber" value="2"/>
-    <parameter name="SoReferenceSR" value="review"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDTransitBelow"/>
-    <classes>
-      <class name="com.arcapi.Transittestcases.NotificationCreatePOSTAPITest">
-        <methods>
-          <include name="NotificationCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.S3DocumentListAPITest">
-        <methods>
-          <include name="S3DocumentListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.S3DocumentListAPITest -->
-      <class name="com.arcapi.Transittestcases.ExcelUploadTemplatePOSTAPITest">
-        <methods>
-          <include name="ExcelUploadTemplatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ExcelUploadTemplatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.VOCGetTest">
-        <methods>
-          <include name="VOCGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VOCGetTest -->
-      <class name="com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest">
-        <methods>
-          <include name="RegistrationPaymentPricingGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest -->
-      <class name="com.arcapi.Transittestcases.FetchingAgreementDetailsAPITest">
-        <methods>
-          <include name="FetchingAgreementDetailsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.FetchingAgreementDetailsAPITest -->
-      <class name="com.arcapi.Transittestcases.RatingSystemListAPITest">
-        <methods>
-          <include name="RatingSystemListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.RatingSystemListAPITest -->
-      <class name="com.arcapi.Transittestcases.AssociatedCategoriesAPITest">
-        <methods>
-          <include name="AssociatedCategoriesAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssociatedCategoriesAPITest -->
-      <class name="com.arcapi.Transittestcases.RecomputePerformanceScoreGetTest">
-        <methods>
-          <include name="RecomputePerformanceScoreGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.RecomputePerformanceScoreGetTest -->
-      <class name="com.arcapi.Transittestcases.AssetMeterDetailAPITest">
-        <methods>
-          <include name="AssetMeterDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetMeterDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.CO2GetTest">
-        <methods>
-          <include name="CO2GetTestAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CO2GetTest -->
-      <class name="com.arcapi.Transittestcases.AssetPerformanceScoreListAPITest">
-        <methods>
-          <include name="AssetPerformanceScoreListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetPerformanceScoreListAPITest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionDeleteAPITest">
-        <methods>
-          <include name="ConsumptionDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyAdminRemoveAPITest">
-        <methods>
-          <include name="VerifyAdminRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyAdminRemoveAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetSearchAPITest">
-        <methods>
-          <include name="AssetSearchAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetSearchAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyAgreementPresentAPITest">
-        <methods>
-          <include name="VerifyAgreementPresentAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyAgreementPresentAPITest -->
-      <class name="com.arcapi.Transittestcases.LoginAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="end"/>
-          <include name="setBaseUri"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-          <include name="ExtentReportConfig"/>
-          <include name="LoginAPI" invocation-numbers="0"/>
-          <include name="getSuiteName"/>
-          <include name="getSuiteName"/>
-          <include name="startTest"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.LoginAPITest -->
-      <class name="com.arcapi.Transittestcases.MetersAPITest">
-        <methods>
-          <include name="MetersAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MetersAPITest -->
-      <class name="com.arcapi.Transittestcases.GhgCalcGetTest">
-        <methods>
-          <include name="GhgCalcGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.GhgCalcGetTest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionUpdatePUTAPITest">
-        <methods>
-          <include name="ConsumptionUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionUpdatePUTAPITest -->
-      <class name="com.arcapi.Transittestcases.GetAllDocumentListAPITest">
-        <methods>
-          <include name="GetAllDocumentListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.GetAllDocumentListAPITest -->
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailGetTest">
-        <methods>
-          <include name="NotificationSubscriptionDetail"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationSubscriptionDetailGetTest -->
-      <class name="com.arcapi.Transittestcases.RidershipDataGetAPITest">
-        <methods>
-          <include name="RidershipDataGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.RidershipDataGetAPITest -->
-      <class name="com.arcapi.Transittestcases.CreditGetAPITest">
-        <methods>
-          <include name="CreditGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreditGetAPITest -->
-      <class name="com.arcapi.Transittestcases.MeterDeleteAPITest">
-        <methods>
-          <include name="MeterDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MeterDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.MeterCreatePOSTAPITest">
-        <methods>
-          <include name="MeterCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MeterCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.TransitSurveyAPITest">
-        <methods>
-          <include name="TransitSurveyAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TransitSurveyAPITest -->
-      <class name="com.arcapi.Transittestcases.NotificationGetAPITest">
-        <methods>
-          <include name="NotificationGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationGetAPITest -->
-      <class name="com.arcapi.Transittestcases.TransitSurveySummarizeSurveyAPITest">
-        <methods>
-          <include name="TransitSurveySummarizeSurveyAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TransitSurveySummarizeSurveyAPITest -->
-      <class name="com.arcapi.Transittestcases.PaymentReceiptAPITest">
-        <methods>
-          <include name="PaymentReceiptAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.PaymentReceiptAPITest -->
-      <class name="com.arcapi.Transittestcases.AnalysisDataGetAPITest">
-        <methods>
-          <include name="AnalysisDataGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AnalysisDataGetAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionPutAPITest">
-        <methods>
-          <include name="AssetTeamPermissionPutAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamPermissionPutAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetDataExportAPITest">
-        <methods>
-          <include name="AssetDataExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetDataExportAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberUpdateAPITest">
-        <methods>
-          <include name="AssetTeamMemberUpdateAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberUpdateAPITest -->
-      <class name="com.arcapi.Transittestcases.NotificationDeleteAPITest">
-        <methods>
-          <include name="NotificationDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.SubmitReviewGetAPITest">
-        <methods>
-          <include name="SubmitReviewGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.SubmitReviewGetAPITest -->
-      <class name="com.arcapi.Transittestcases.FuelCategoryAPITest">
-        <methods>
-          <include name="FuelCategoryAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.FuelCategoryAPITest -->
-      <class name="com.arcapi.Transittestcases.InstallAllAppsAfterDeleteAPITest">
-        <methods>
-          <include name="InstallAllAppsAfterDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.InstallAllAppsAfterDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.ReviewCertificationPricingAPITest">
-        <methods>
-          <include name="ReviewCertificationPricingAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ReviewCertificationPricingAPITest -->
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailDeleteTest">
-        <methods>
-          <include name="NotificationSubscriptionDetailDelete"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationSubscriptionDetailDeleteTest -->
-      <class name="com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionAPITest">
-        <methods>
-          <include name="VerifyExcelTemplateConsumptionAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionAPITest -->
-      <class name="com.arcapi.Transittestcases.UserAccessLevelSAPGetTest">
-        <methods>
-          <include name="UserAccessLevelSAPGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.UserAccessLevelSAPGetTest -->
-      <class name="com.arcapi.Transittestcases.ScoreWeightsAPITest">
-        <methods>
-          <include name="ScoreWeightsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ScoreWeightsAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetCertificationListAPITest">
-        <methods>
-          <include name="AssetCertificationListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetCertificationListAPITest -->
-      <class name="com.arcapi.Transittestcases.S3DocumentUploadPOSTAPITest">
-        <methods>
-          <include name="S3DocumentUploadPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.S3DocumentUploadPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.PerformanceComparablesGetAPITest">
-        <methods>
-          <include name="PerformanceComparablesGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.PerformanceComparablesGetAPITest -->
-      <class name="com.arcapi.Transittestcases.TransitSurveyExportAPITest">
-        <methods>
-          <include name="TransitSurveyExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TransitSurveyExportAPITest -->
-      <class name="com.arcapi.Transittestcases.WasteCreatePOSTAPITest">
-        <methods>
-          <include name="WasteCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionListAPITest">
-        <methods>
-          <include name="AssetTeamPermissionListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamPermissionListAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberRoleAPITest">
-        <methods>
-          <include name="AssetTeamMemberRoleAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberRoleAPITest -->
-      <class name="com.arcapi.Transittestcases.WaterGetTest">
-        <methods>
-          <include name="WaterGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WaterGetTest -->
-      <class name="com.arcapi.Transittestcases.MeterUpdatePUTAPITest">
-        <methods>
-          <include name="MeterUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MeterUpdatePUTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetListAPITest">
-        <methods>
-          <include name="AssetListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetListAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetDocumentAPITest">
-        <methods>
-          <include name="AssetDocumentAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetDocumentAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberListAPITest">
-        <methods>
-          <include name="AssetTeamMemberListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberListAPITest -->
-      <class name="com.arcapi.Transittestcases.CreditFormDownloadAPITest">
-        <methods>
-          <include name="CreditFormDownloadAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreditFormDownloadAPITest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionCreatePOSTAPITest">
-        <methods>
-          <include name="ConsumptionCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.WasteDetailAPITest">
-        <methods>
-          <include name="WasteDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.TransitSurveyCreatePOSTAPITest">
-        <methods>
-          <include name="TransitSurveyCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TransitSurveyCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.ThirdPartyListAppsAPITest">
-        <methods>
-          <include name="ThirdPartyListAppsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ThirdPartyListAppsAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberAddPOSTAPITest">
-        <methods>
-          <include name="AssetTeamMemberAddPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberAddPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetNotificationSubscriptionListTest">
-        <methods>
-          <include name="AssetNotificationSubscriptionList"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetNotificationSubscriptionListTest -->
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailPutTest">
-        <methods>
-          <include name="NotificationSubscriptionDetail"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationSubscriptionDetailPutTest -->
-      <class name="com.arcapi.Transittestcases.S3DocumentRemoveAPITest">
-        <methods>
-          <include name="S3DocumentRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.S3DocumentRemoveAPITest -->
-      <class name="com.arcapi.Transittestcases.SignAgreementRegistrationAPITest">
-        <methods>
-          <include name="SignAgreementRegistrationAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.SignAgreementRegistrationAPITest -->
-      <class name="com.arcapi.Transittestcases.MeterBulkConsumptionPOSTAPITest">
-        <methods>
-          <include name="MeterBulkConsumptionPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MeterBulkConsumptionPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetDataSnapshotAPITest">
-        <methods>
-          <include name="AssetDataSnapshotAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetDataSnapshotAPITest -->
-      <class name="com.arcapi.Transittestcases.CreateAssetTransitBelowAPITest">
-        <methods>
-          <include name="CreateAssetPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreateAssetTransitBelowAPITest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionDetailAPITest">
-        <methods>
-          <include name="ConsumptionDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.TemperatureDataGetTest">
-        <methods>
-          <include name="TemperatureDataGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TemperatureDataGetTest -->
-      <class name="com.arcapi.Transittestcases.AvgPerformaceListGetTest">
-        <methods>
-          <include name="AvgPerformaceList"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AvgPerformaceListGetTest -->
-      <class name="com.arcapi.Transittestcases.AssetRequiredFieldsAPITest">
-        <methods>
-          <include name="AssetRequiredFieldsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetRequiredFieldsAPITest -->
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveySummarizeAPITest">
-        <methods>
-          <include name="EnvironmentSurveySummarizeAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.EnvironmentSurveySummarizeAPITest -->
-      <class name="com.arcapi.Transittestcases.CreditUpdatePUTAPITest">
-        <methods>
-          <include name="CreditUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreditUpdatePUTAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyAssetDetailAPITest">
-        <methods>
-          <include name="VerifyAssetDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyAssetDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetDetailAPITest">
-        <methods>
-          <include name="AssetDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionPostAPITest">
-        <methods>
-          <include name="AssetTeamPermissionPostAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamPermissionPostAPITest -->
-      <class name="com.arcapi.Transittestcases.WasteGetAPITest">
-        <methods>
-          <include name="WasteGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteGetAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetAppListAPITest">
-        <methods>
-          <include name="AssetAppListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetAppListAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest">
-        <methods>
-          <include name="AssetSnapshotDownloadAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetSnapshotKeysAPITest">
-        <methods>
-          <include name="AssetSnapshotKeysAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetSnapshotKeysAPITest -->
-      <class name="com.arcapi.Transittestcases.WasteDetailDeleteAPITest">
-        <methods>
-          <include name="WasteDetailDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteDetailDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.SubmitReviewPOSTAPITest">
-        <methods>
-          <include name="SubmitReviewPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.SubmitReviewPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.UserDetailAPITest">
-        <methods>
-          <include name="UserDetailAPI" invocation-numbers="0"/>
-          <include name="getSuiteName"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="setBaseUri"/>
-          <include name="teardown"/>
-          <include name="teardown"/>
-          <include name="startTest"/>
-          <include name="startTest"/>
-          <include name="ExtentReportConfig"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.UserDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.CountryStatesJSONAPITest">
-        <methods>
-          <include name="CountryStatesJSONAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CountryStatesJSONAPITest -->
-      <class name="com.arcapi.Transittestcases.DeleteAllAppsAPITest">
-        <methods>
-          <include name="DeleteAllAppsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.DeleteAllAppsAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetCertificationPOSTAPITest">
-        <methods>
-          <include name="AssetCertificationPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetCertificationPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AQIDataGetAPITest">
-        <methods>
-          <include name="AQIDataGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AQIDataGetAPITest -->
-      <class name="com.arcapi.Transittestcases.PaymentHistoryAPITest">
-        <methods>
-          <include name="PaymentHistoryAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.PaymentHistoryAPITest -->
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyGetAPITest">
-        <methods>
-          <include name="EnvironmentSurveyGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.EnvironmentSurveyGetAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetOwnerOrgPOSTAPITest">
-        <methods>
-          <include name="AssetOwnerOrgPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetOwnerOrgPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyProjectRegisteredAssetListTest">
-        <methods>
-          <include name="VerifyProjectRegisteredAssetList"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyProjectRegisteredAssetListTest -->
-      <class name="com.arcapi.Transittestcases.WasteUpdatePUTAPITest">
-        <methods>
-          <include name="WasteUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteUpdatePUTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetValidationInfoPOSTAPITest">
-        <methods>
-          <include name="AssetValidationInfoPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetValidationInfoPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyCreatePOSTAPITest">
-        <methods>
-          <include name="EnvironmentSurveyCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.EnvironmentSurveyCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetUpdateTransitBelowAPITest">
-        <methods>
-          <include name="AssetUpdateforNewAssetPUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetUpdateTransitBelowAPITest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionListAPITest">
-        <methods>
-          <include name="ConsumptionListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionListAPITest -->
-      <class name="com.arcapi.Transittestcases.FeedbackSubmitPostAPITest">
-        <methods>
-          <include name="FeedbackSubmitPostAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.FeedbackSubmitPostAPITest -->
-      <class name="com.arcapi.Transittestcases.GhgGetTest">
-        <methods>
-          <include name="GhgGetTestAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.GhgGetTest -->
-      <class name="com.arcapi.Transittestcases.AssetNotificationSubscriptionPostTest">
-        <methods>
-          <include name="AssetNotificationSubscriptionPost"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetNotificationSubscriptionPostTest -->
-      <class name="com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest">
-        <methods>
-          <include name="AddAssestTimeline"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.CreditAddTeamPOSTAPITest">
-        <methods>
-          <include name="CreditAddTeamPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreditAddTeamPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetSearchOwnerAPITest">
-        <methods>
-          <include name="AssetSearchOwnerAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetSearchOwnerAPITest -->
-      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersAPITest">
-        <methods>
-          <include name="MetersAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ExcelTemplateMetersAPITest -->
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyExportAPITest">
-        <methods>
-          <include name="EnvironmentSurveyExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.EnvironmentSurveyExportAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyAgreementDeleteAPITest">
-        <methods>
-          <include name="VerifyAgreementDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyAgreementDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberRemoveAPITest">
-        <methods>
-          <include name="AssetTeamMemberRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberRemoveAPITest -->
-      <class name="com.arcapi.Transittestcases.AnalysisDataSubmitPOSTAPITest">
-        <methods>
-          <include name="AnalysisDataSubmitPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AnalysisDataSubmitPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.DownloadDocumentsAPITest">
-        <methods>
-          <include name="DownloadDocumentsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.DownloadDocumentsAPITest -->
-      <class name="com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest">
-        <methods>
-          <include name="PaymentOrderSubmitPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.PaymentOrderGetAPITest">
-        <methods>
-          <include name="PaymentOrderGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.PaymentOrderGetAPITest -->
-      <class name="com.arcapi.Transittestcases.LOTokenAPITest">
-        <methods>
-          <include name="LOTokenAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.LOTokenAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyWasteDataExcelAPITest">
-        <methods>
-          <include name="VerifyWasteDataExcelAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyWasteDataExcelAPITest -->
-      <class name="com.arcapi.Transittestcases.AppVersionDetailAPITest">
-        <methods>
-          <include name="AppVersionDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AppVersionDetailAPITest -->
-    </classes>
-  </test> <!-- CompleteFlowTest-Transit-Below(failed) -->
   <test name="CompleteFlowTest-Transit-Above(failed)">
     <parameter name="CreditColumn" value="TransitAboveCredit"/>
     <parameter name="SoReference" value="review"/>
     <parameter name="CreditColumnNum" value="4"/>
+    <parameter name="ratings" value="aboveground"/>
     <parameter name="ProjectType" value="transit"/>
     <parameter name="rownumber" value="2"/>
     <parameter name="SoReferenceSR" value="review"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
     <classes>
-      <class name="com.arcapi.Transittestcases.NotificationCreatePOSTAPITest">
-        <methods>
-          <include name="NotificationCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.S3DocumentListAPITest">
-        <methods>
-          <include name="S3DocumentListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.S3DocumentListAPITest -->
-      <class name="com.arcapi.Transittestcases.VOCGetTest">
-        <methods>
-          <include name="VOCGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VOCGetTest -->
-      <class name="com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest">
-        <methods>
-          <include name="RegistrationPaymentPricingGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.RegistrationPaymentPricingGetAPITest -->
-      <class name="com.arcapi.Transittestcases.FetchingAgreementDetailsAPITest">
-        <methods>
-          <include name="FetchingAgreementDetailsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.FetchingAgreementDetailsAPITest -->
-      <class name="com.arcapi.Transittestcases.RatingSystemListAPITest">
-        <methods>
-          <include name="RatingSystemListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.RatingSystemListAPITest -->
-      <class name="com.arcapi.Transittestcases.AssociatedCategoriesAPITest">
-        <methods>
-          <include name="AssociatedCategoriesAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssociatedCategoriesAPITest -->
-      <class name="com.arcapi.Transittestcases.RecomputePerformanceScoreGetTest">
-        <methods>
-          <include name="RecomputePerformanceScoreGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.RecomputePerformanceScoreGetTest -->
-      <class name="com.arcapi.Transittestcases.AssetMeterDetailAPITest">
-        <methods>
-          <include name="AssetMeterDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetMeterDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetUpdateTransitAboveAPITest">
-        <methods>
-          <include name="AssetUpdateforNewAssetPUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetUpdateTransitAboveAPITest -->
-      <class name="com.arcapi.Transittestcases.CO2GetTest">
-        <methods>
-          <include name="CO2GetTestAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CO2GetTest -->
-      <class name="com.arcapi.Transittestcases.AssetPerformanceScoreListAPITest">
-        <methods>
-          <include name="AssetPerformanceScoreListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetPerformanceScoreListAPITest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionDeleteAPITest">
-        <methods>
-          <include name="ConsumptionDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyAdminRemoveAPITest">
-        <methods>
-          <include name="VerifyAdminRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyAdminRemoveAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetSearchAPITest">
-        <methods>
-          <include name="AssetSearchAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetSearchAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyAgreementPresentAPITest">
-        <methods>
-          <include name="VerifyAgreementPresentAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyAgreementPresentAPITest -->
-      <class name="com.arcapi.Transittestcases.LoginAPITest">
+      <class name="com.arcapi.Buildingtestcases.MetersAPITest">
         <methods>
           <include name="teardown"/>
-          <include name="teardown"/>
+          <include name="start"/>
           <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MetersAPITest -->
+      <class name="com.arcapi.Common.PaymentOrderGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
           <include name="end"/>
-          <include name="setBaseUri"/>
+          <include name="getSuiteName"/>
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
-          <include name="ExtentReportConfig"/>
-          <include name="LoginAPI" invocation-numbers="0"/>
-          <include name="getSuiteName"/>
-          <include name="getSuiteName"/>
-          <include name="startTest"/>
-          <include name="startTest"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.LoginAPITest -->
-      <class name="com.arcapi.Transittestcases.ExcelUploadTemplateTransitAboveAPITest">
+      </class> <!-- com.arcapi.Common.PaymentOrderGetAPITest -->
+      <class name="com.arcapi.Common.VerifyAgreementPresentAPITest">
         <methods>
-          <include name="ExcelUploadTemplatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ExcelUploadTemplateTransitAboveAPITest -->
-      <class name="com.arcapi.Transittestcases.MetersAPITest">
-        <methods>
-          <include name="MetersAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MetersAPITest -->
-      <class name="com.arcapi.Transittestcases.GhgCalcGetTest">
-        <methods>
-          <include name="GhgCalcGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.GhgCalcGetTest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionUpdatePUTAPITest">
-        <methods>
-          <include name="ConsumptionUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionUpdatePUTAPITest -->
-      <class name="com.arcapi.Transittestcases.GetAllDocumentListAPITest">
-        <methods>
-          <include name="GetAllDocumentListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.GetAllDocumentListAPITest -->
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailGetTest">
-        <methods>
-          <include name="NotificationSubscriptionDetail"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationSubscriptionDetailGetTest -->
-      <class name="com.arcapi.Transittestcases.RidershipDataGetAPITest">
-        <methods>
-          <include name="RidershipDataGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.RidershipDataGetAPITest -->
-      <class name="com.arcapi.Transittestcases.CreditGetAPITest">
-        <methods>
-          <include name="CreditGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreditGetAPITest -->
-      <class name="com.arcapi.Transittestcases.MeterDeleteAPITest">
-        <methods>
-          <include name="MeterDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MeterDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.MeterCreatePOSTAPITest">
-        <methods>
-          <include name="MeterCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MeterCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.TransitSurveyAPITest">
-        <methods>
-          <include name="TransitSurveyAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TransitSurveyAPITest -->
-      <class name="com.arcapi.Transittestcases.NotificationGetAPITest">
-        <methods>
-          <include name="NotificationGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationGetAPITest -->
-      <class name="com.arcapi.Transittestcases.TransitSurveySummarizeSurveyAPITest">
-        <methods>
-          <include name="TransitSurveySummarizeSurveyAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TransitSurveySummarizeSurveyAPITest -->
-      <class name="com.arcapi.Transittestcases.PaymentReceiptAPITest">
-        <methods>
-          <include name="PaymentReceiptAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.PaymentReceiptAPITest -->
-      <class name="com.arcapi.Transittestcases.AnalysisDataGetAPITest">
-        <methods>
-          <include name="AnalysisDataGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AnalysisDataGetAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionPutAPITest">
-        <methods>
-          <include name="AssetTeamPermissionPutAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamPermissionPutAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetDataExportAPITest">
-        <methods>
-          <include name="AssetDataExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetDataExportAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberUpdateAPITest">
-        <methods>
-          <include name="AssetTeamMemberUpdateAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberUpdateAPITest -->
-      <class name="com.arcapi.Transittestcases.NotificationDeleteAPITest">
-        <methods>
-          <include name="NotificationDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.SubmitReviewGetAPITest">
-        <methods>
-          <include name="SubmitReviewGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.SubmitReviewGetAPITest -->
-      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersTransitAboveAPITest">
-        <methods>
-          <include name="MetersAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ExcelTemplateMetersTransitAboveAPITest -->
-      <class name="com.arcapi.Transittestcases.FuelCategoryAPITest">
-        <methods>
-          <include name="FuelCategoryAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.FuelCategoryAPITest -->
-      <class name="com.arcapi.Transittestcases.InstallAllAppsAfterDeleteAPITest">
-        <methods>
-          <include name="InstallAllAppsAfterDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.InstallAllAppsAfterDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.ReviewCertificationPricingAPITest">
-        <methods>
-          <include name="ReviewCertificationPricingAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ReviewCertificationPricingAPITest -->
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailDeleteTest">
-        <methods>
-          <include name="NotificationSubscriptionDetailDelete"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationSubscriptionDetailDeleteTest -->
-      <class name="com.arcapi.Transittestcases.UserAccessLevelSAPGetTest">
-        <methods>
-          <include name="UserAccessLevelSAPGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.UserAccessLevelSAPGetTest -->
-      <class name="com.arcapi.Transittestcases.ScoreWeightsAPITest">
-        <methods>
-          <include name="ScoreWeightsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ScoreWeightsAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetCertificationListAPITest">
-        <methods>
-          <include name="AssetCertificationListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetCertificationListAPITest -->
-      <class name="com.arcapi.Transittestcases.S3DocumentUploadPOSTAPITest">
-        <methods>
-          <include name="S3DocumentUploadPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.S3DocumentUploadPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.PerformanceComparablesGetAPITest">
-        <methods>
-          <include name="PerformanceComparablesGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.PerformanceComparablesGetAPITest -->
-      <class name="com.arcapi.Transittestcases.TransitSurveyExportAPITest">
-        <methods>
-          <include name="TransitSurveyExportAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TransitSurveyExportAPITest -->
-      <class name="com.arcapi.Transittestcases.WasteCreatePOSTAPITest">
-        <methods>
-          <include name="WasteCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionListAPITest">
-        <methods>
-          <include name="AssetTeamPermissionListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamPermissionListAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberRoleAPITest">
-        <methods>
-          <include name="AssetTeamMemberRoleAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberRoleAPITest -->
-      <class name="com.arcapi.Transittestcases.WaterGetTest">
-        <methods>
-          <include name="WaterGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WaterGetTest -->
-      <class name="com.arcapi.Transittestcases.MeterUpdatePUTAPITest">
-        <methods>
-          <include name="MeterUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MeterUpdatePUTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetListAPITest">
-        <methods>
-          <include name="AssetListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetListAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetDocumentAPITest">
-        <methods>
-          <include name="AssetDocumentAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetDocumentAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberListAPITest">
-        <methods>
-          <include name="AssetTeamMemberListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberListAPITest -->
-      <class name="com.arcapi.Transittestcases.CreditFormDownloadAPITest">
-        <methods>
-          <include name="CreditFormDownloadAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreditFormDownloadAPITest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionCreatePOSTAPITest">
-        <methods>
-          <include name="ConsumptionCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.WasteDetailAPITest">
-        <methods>
-          <include name="WasteDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.TransitSurveyCreatePOSTAPITest">
-        <methods>
-          <include name="TransitSurveyCreatePOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TransitSurveyCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.ThirdPartyListAppsAPITest">
-        <methods>
-          <include name="ThirdPartyListAppsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ThirdPartyListAppsAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberAddPOSTAPITest">
-        <methods>
-          <include name="AssetTeamMemberAddPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberAddPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetNotificationSubscriptionListTest">
-        <methods>
-          <include name="AssetNotificationSubscriptionList"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetNotificationSubscriptionListTest -->
-      <class name="com.arcapi.Transittestcases.NotificationSubscriptionDetailPutTest">
-        <methods>
-          <include name="NotificationSubscriptionDetail"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.NotificationSubscriptionDetailPutTest -->
-      <class name="com.arcapi.Transittestcases.S3DocumentRemoveAPITest">
-        <methods>
-          <include name="S3DocumentRemoveAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.S3DocumentRemoveAPITest -->
-      <class name="com.arcapi.Transittestcases.SignAgreementRegistrationAPITest">
-        <methods>
-          <include name="SignAgreementRegistrationAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.SignAgreementRegistrationAPITest -->
-      <class name="com.arcapi.Transittestcases.MeterBulkConsumptionPOSTAPITest">
-        <methods>
-          <include name="MeterBulkConsumptionPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.MeterBulkConsumptionPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetDataSnapshotAPITest">
-        <methods>
-          <include name="AssetDataSnapshotAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetDataSnapshotAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionTransitAboveTest">
-        <methods>
-          <include name="VerifyExcelTemplateConsumptionAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionTransitAboveTest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionDetailAPITest">
-        <methods>
-          <include name="ConsumptionDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.TemperatureDataGetTest">
-        <methods>
-          <include name="TemperatureDataGet"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.TemperatureDataGetTest -->
-      <class name="com.arcapi.Transittestcases.AvgPerformaceListGetTest">
-        <methods>
-          <include name="AvgPerformaceList"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AvgPerformaceListGetTest -->
-      <class name="com.arcapi.Transittestcases.AssetRequiredFieldsAPITest">
-        <methods>
-          <include name="AssetRequiredFieldsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetRequiredFieldsAPITest -->
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveySummarizeAPITest">
-        <methods>
-          <include name="EnvironmentSurveySummarizeAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.EnvironmentSurveySummarizeAPITest -->
-      <class name="com.arcapi.Transittestcases.CreditUpdatePUTAPITest">
-        <methods>
-          <include name="CreditUpdatePUTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreditUpdatePUTAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyAssetDetailAPITest">
-        <methods>
-          <include name="VerifyAssetDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyAssetDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetDetailAPITest">
-        <methods>
-          <include name="AssetDetailAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamPermissionPostAPITest">
-        <methods>
-          <include name="AssetTeamPermissionPostAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamPermissionPostAPITest -->
-      <class name="com.arcapi.Transittestcases.WasteGetAPITest">
-        <methods>
-          <include name="WasteGetAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteGetAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetAppListAPITest">
-        <methods>
-          <include name="AssetAppListAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetAppListAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest">
-        <methods>
-          <include name="AssetSnapshotDownloadAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetSnapshotDownloadAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetSnapshotKeysAPITest">
-        <methods>
-          <include name="AssetSnapshotKeysAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetSnapshotKeysAPITest -->
-      <class name="com.arcapi.Transittestcases.WasteDetailDeleteAPITest">
-        <methods>
-          <include name="WasteDetailDeleteAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteDetailDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.SubmitReviewPOSTAPITest">
-        <methods>
-          <include name="SubmitReviewPOSTAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.SubmitReviewPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.UserDetailAPITest">
-        <methods>
-          <include name="UserDetailAPI" invocation-numbers="0"/>
-          <include name="getSuiteName"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="setBaseUri"/>
           <include name="teardown"/>
-          <include name="teardown"/>
-          <include name="startTest"/>
-          <include name="startTest"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
-          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.UserDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.CountryStatesJSONAPITest">
-        <methods>
-          <include name="CountryStatesJSONAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.CountryStatesJSONAPITest -->
-      <class name="com.arcapi.Transittestcases.DeleteAllAppsAPITest">
-        <methods>
-          <include name="DeleteAllAppsAPI"/>
-        </methods>
-      </class> <!-- com.arcapi.Transittestcases.DeleteAllAppsAPITest -->
+      </class> <!-- com.arcapi.Common.VerifyAgreementPresentAPITest -->
       <class name="com.arcapi.Transittestcases.ExcelTemplateMetersHEAPITest">
         <methods>
-          <include name="ExcelTemplateMetersHEAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Transittestcases.ExcelTemplateMetersHEAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetCertificationPOSTAPITest">
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailDeleteTest">
         <methods>
-          <include name="AssetCertificationPOSTAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetCertificationPOSTAPITest -->
+      </class> <!-- com.arcapi.Common.NotificationSubscriptionDetailDeleteTest -->
+      <class name="com.arcapi.Transittestcases.VerifyPM10GraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyPM10GraphValuesAPITest -->
       <class name="com.arcapi.Transittestcases.AQIDataGetAPITest">
         <methods>
-          <include name="AQIDataGetAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Transittestcases.AQIDataGetAPITest -->
-      <class name="com.arcapi.Transittestcases.PaymentHistoryAPITest">
+      <class name="com.arcapi.Transittestcases.VerifySulphurDioxideGraphValuesAPITest">
         <methods>
-          <include name="PaymentHistoryAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.PaymentHistoryAPITest -->
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyGetAPITest">
+      </class> <!-- com.arcapi.Transittestcases.VerifySulphurDioxideGraphValuesAPITest -->
+      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest">
         <methods>
-          <include name="EnvironmentSurveyGetAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.EnvironmentSurveyGetAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetOwnerOrgPOSTAPITest">
+      </class> <!-- com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest -->
+      <class name="com.arcapi.Common.DeleteAllAppsAPITest">
         <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.DeleteAllAppsAPITest -->
+      <class name="com.arcapi.Common.S3DocumentListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.S3DocumentListAPITest -->
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest -->
+      <class name="com.arcapi.Common.FeedbackSubmitPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.FeedbackSubmitPostAPITest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionPostTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetNotificationSubscriptionPostTest -->
+      <class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyAssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyAssetDetailAPITest -->
+      <class name="com.arcapi.Common.AssetTeamMemberListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamMemberListAPITest -->
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailGetTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationSubscriptionDetailGetTest -->
+      <class name="com.arcapi.Common.UserDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.UserDetailAPITest -->
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailPutTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationSubscriptionDetailPutTest -->
+      <class name="com.arcapi.Common.S3DocumentUploadPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.S3DocumentUploadPOSTAPITest -->
+      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersTransitAboveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.ExcelTemplateMetersTransitAboveAPITest -->
+      <class name="com.arcapi.Common.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetDetailAPITest -->
+      <class name="com.arcapi.Common.AssetListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetListAPITest -->
+      <class name="com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest -->
+      <class name="com.arcapi.Transittestcases.VerifyAQIGraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyAQIGraphValuesAPITest -->
+      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyCarbonMonoxideGraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyCarbonMonoxideGraphValuesAPITest -->
+      <class name="com.arcapi.Common.AssetOwnerOrgPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
           <include name="AssetOwnerOrgPOSTAPI"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetOwnerOrgPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyProjectRegisteredAssetListTest">
+      </class> <!-- com.arcapi.Common.AssetOwnerOrgPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.ConsumptionDetailAPITest">
         <methods>
-          <include name="VerifyProjectRegisteredAssetList"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyProjectRegisteredAssetListTest -->
-      <class name="com.arcapi.Transittestcases.WasteUpdatePUTAPITest">
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionDetailAPITest -->
+      <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest">
         <methods>
-          <include name="WasteUpdatePUTAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAgreementDeleteAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.WasteUpdatePUTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetValidationInfoPOSTAPITest">
+      </class> <!-- com.arcapi.Common.VerifyAgreementDeleteAPITest -->
+      <class name="com.arcapi.Transittestcases.RidershipDataGetAPITest">
         <methods>
-          <include name="AssetValidationInfoPOSTAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetValidationInfoPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyCreatePOSTAPITest">
+      </class> <!-- com.arcapi.Transittestcases.RidershipDataGetAPITest -->
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest">
         <methods>
-          <include name="EnvironmentSurveyCreatePOSTAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.EnvironmentSurveyCreatePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.ConsumptionListAPITest">
+      </class> <!-- com.arcapi.Common.RegistrationPaymentPricingGetAPITest -->
+      <class name="com.arcapi.Transittestcases.ExcelUploadTemplateTransitAboveAPITest">
         <methods>
-          <include name="ConsumptionListAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.ConsumptionListAPITest -->
-      <class name="com.arcapi.Transittestcases.FeedbackSubmitPostAPITest">
+      </class> <!-- com.arcapi.Transittestcases.ExcelUploadTemplateTransitAboveAPITest -->
+      <class name="com.arcapi.Common.AssetTeamPermissionPostAPITest">
         <methods>
-          <include name="FeedbackSubmitPostAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.FeedbackSubmitPostAPITest -->
-      <class name="com.arcapi.Transittestcases.GhgGetTest">
+      </class> <!-- com.arcapi.Common.AssetTeamPermissionPostAPITest -->
+      <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest">
         <methods>
-          <include name="GhgGetTestAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.GhgGetTest -->
-      <class name="com.arcapi.Transittestcases.AssetNotificationSubscriptionPostTest">
+      </class> <!-- com.arcapi.Transittestcases.CreateAssetTransitAPITest -->
+      <class name="com.arcapi.Common.PaymentReceiptAPITest">
         <methods>
-          <include name="AssetNotificationSubscriptionPost"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetNotificationSubscriptionPostTest -->
-      <class name="com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest">
+      </class> <!-- com.arcapi.Common.PaymentReceiptAPITest -->
+      <class name="com.arcapi.Common.DownloadDocumentsAPITest">
         <methods>
-          <include name="AddAssestTimeline"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.AddAssestTimelinePOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.CreditAddTeamPOSTAPITest">
+      </class> <!-- com.arcapi.Common.DownloadDocumentsAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyRidershipGraphValuesAPITest">
         <methods>
-          <include name="CreditAddTeamPOSTAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreditAddTeamPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetSearchOwnerAPITest">
+      </class> <!-- com.arcapi.Transittestcases.VerifyRidershipGraphValuesAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionEnergyWaterAPITest">
         <methods>
-          <include name="AssetSearchOwnerAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetSearchOwnerAPITest -->
-      <class name="com.arcapi.Transittestcases.EnvironmentSurveyExportAPITest">
+      </class> <!-- com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionEnergyWaterAPITest -->
+      <class name="com.arcapi.Common.PaymentHistoryAPITest">
         <methods>
-          <include name="EnvironmentSurveyExportAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.EnvironmentSurveyExportAPITest -->
-      <class name="com.arcapi.Transittestcases.VerifyAgreementDeleteAPITest">
+      </class> <!-- com.arcapi.Common.PaymentHistoryAPITest -->
+      <class name="com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest">
         <methods>
-          <include name="VerifyAgreementDeleteAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.VerifyAgreementDeleteAPITest -->
-      <class name="com.arcapi.Transittestcases.AssetTeamMemberRemoveAPITest">
+      </class> <!-- com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest -->
+      <class name="com.arcapi.Buildingtestcases.ConsumptionListAPITest">
         <methods>
-          <include name="AssetTeamMemberRemoveAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.AssetTeamMemberRemoveAPITest -->
-      <class name="com.arcapi.Transittestcases.AnalysisDataSubmitPOSTAPITest">
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionListAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest">
         <methods>
-          <include name="AnalysisDataSubmitPOSTAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.AnalysisDataSubmitPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.DownloadDocumentsAPITest">
+      </class> <!-- com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest -->
+      <class name="com.arcapi.Common.AssetTeamMemberRoleAPITest">
         <methods>
-          <include name="DownloadDocumentsAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.DownloadDocumentsAPITest -->
-      <class name="com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest">
+      </class> <!-- com.arcapi.Common.AssetTeamMemberRoleAPITest -->
+      <class name="com.arcapi.Buildingtestcases.WasteDetailAPITest">
         <methods>
-          <include name="PaymentOrderSubmitPOSTAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.PaymentOrderSubmitPOSTAPITest -->
-      <class name="com.arcapi.Transittestcases.PaymentOrderGetAPITest">
+      </class> <!-- com.arcapi.Buildingtestcases.WasteDetailAPITest -->
+      <class name="com.arcapi.Common.InstallAllAppsAfterDeleteAPITest">
         <methods>
-          <include name="PaymentOrderGetAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.PaymentOrderGetAPITest -->
-      <class name="com.arcapi.Transittestcases.LOTokenAPITest">
+      </class> <!-- com.arcapi.Common.InstallAllAppsAfterDeleteAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyPM25GraphValuesAPITest">
         <methods>
-          <include name="LOTokenAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.LOTokenAPITest -->
+      </class> <!-- com.arcapi.Transittestcases.VerifyPM25GraphValuesAPITest -->
+      <class name="com.arcapi.Buildingtestcases.WasteGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.WasteGetAPITest -->
+      <class name="com.arcapi.Common.AssetDocumentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetDocumentAPITest -->
+      <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest -->
+      <class name="com.arcapi.Common.AssetSearchOwnerAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetSearchOwnerAPITest -->
+      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.UserAccessLevelSAPGetTest -->
+      <class name="com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Common.NotificationGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationGetAPITest -->
+      <class name="com.arcapi.Common.AssetTeamMemberRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamMemberRemoveAPITest -->
+      <class name="com.arcapi.Common.NotificationDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationDeleteAPITest -->
+      <class name="com.arcapi.Common.AssetTeamMemberAddPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamMemberAddPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MeterDeleteAPITest -->
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionListTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetNotificationSubscriptionListTest -->
+      <class name="com.arcapi.Common.AssetTeamPermissionListAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamPermissionListAPITest -->
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AssetMeterDetailAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest -->
+      <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetValidationInfoPOSTAPITest -->
+      <class name="com.arcapi.Common.AssetTeamPermissionPutAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamPermissionPutAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyOzoneGraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyOzoneGraphValuesAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyNitrogenDioxideGraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyNitrogenDioxideGraphValuesAPITest -->
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest -->
+      <class name="com.arcapi.Common.NotificationCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationCreatePOSTAPITest -->
+      <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamMemberUpdateAPITest -->
+      <class name="com.arcapi.Common.S3DocumentRemoveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.S3DocumentRemoveAPITest -->
+      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Common.AssetArcProjectAdminAddPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetArcProjectAdminAddPOSTAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
       <class name="com.arcapi.Transittestcases.VerifyWasteDataExcelAPITest">
         <methods>
-          <include name="VerifyWasteDataExcelAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Transittestcases.VerifyWasteDataExcelAPITest -->
-      <class name="com.arcapi.Transittestcases.AppVersionDetailAPITest">
+      <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest">
         <methods>
-          <include name="AppVersionDetailAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.AppVersionDetailAPITest -->
-      <class name="com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest">
+      </class> <!-- com.arcapi.Common.VerifyProjectRegisteredAssetListTest -->
+      <class name="com.arcapi.Common.VerifyAdminRemoveAPITest">
         <methods>
-          <include name="CreateAssetPOSTAPI"/>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyAdminRemoveAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Transittestcases.CreateAssetTransitAboveAPITest -->
+      </class> <!-- com.arcapi.Common.VerifyAdminRemoveAPITest -->
+      <class name="com.arcapi.Common.AssetSearchAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetSearchAPITest -->
     </classes>
   </test> <!-- CompleteFlowTest-Transit-Above(failed) -->
 </suite> <!-- Failed suite [TransitCompletePositive] -->

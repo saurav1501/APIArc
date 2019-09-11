@@ -18,22 +18,12 @@ import net.minidev.json.JSONObject;
 
 public class SurveyCreatePOSTAPITest extends BaseClass {
 
-	@Test
+	@Test(groups="CheckSurvey")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void SurveyCreatePOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException, InterruptedException {
 
 		
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Survey Create POST API" + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Transit survey creation")
-				.assignCategory("CheckSurvey");
 		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
-	    TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
-		
-		data.setCellData("Report", "TestCaseName", reportrownum, TestName);
-
 		
 		List<String> str = Arrays.asList("dirty","views to outdoors","sound","privacy", "smelly", "air quality","cleanliness","stuffy","loud","hot","cold","dark","glare","drafty","bright","humid","thermal comfort","light","daylight",""); //{"dirty","smelly","air quality","cleanliness"},{""};
 		

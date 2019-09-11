@@ -42,10 +42,7 @@ public class LOAuthenticateAPITest extends BaseClass {
 
 		System.out.println(CommonMethod.responsetime);
 
-		CommonMethod.test = CommonMethod.extent
-				.startTest("LOAuthenticateAPI Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Add asset")
-				.assignCategory("CheckAsset");
+	
 		
 		CommonMethod.fetchedID = CommonMethod.res.path("token").toString();
 

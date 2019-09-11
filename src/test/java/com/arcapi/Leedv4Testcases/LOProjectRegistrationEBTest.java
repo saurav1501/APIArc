@@ -131,7 +131,7 @@ public class LOProjectRegistrationEBTest extends BaseClass {
 		jsonAsMap.put("address.geoPoints.longitude", "10.46467895");
 		jsonAsMap.put("owner.name", "Test Owner");
 		jsonAsMap.put("owner.email", "newserver2@gmail.com");
-		jsonAsMap.put("owner.organization", "S & L Zeppetelli");
+		jsonAsMap.put("owner.organization", "EymX5ZKWALZae");
 		jsonAsMap.put("owner.country", "IN");
 		jsonAsMap.put("owner.type", OwnerType);
 	
@@ -154,10 +154,7 @@ public class LOProjectRegistrationEBTest extends BaseClass {
 
 		System.out.println(CommonMethod.responsetime);
 
-		CommonMethod.test = CommonMethod.extent
-				.startTest("LOProjectRegistration Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Add asset")
-				.assignCategory("CheckAsset");
+	
 
 		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 

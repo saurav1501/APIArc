@@ -1,61 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [BuildingCompletePositive]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NoPayloadDataValidation]">
   <parameter name="environment" value="stg"/>
-  <parameter name="SoReference" value="performance score"/>
   <parameter name="ratings" value="none"/>
-  <parameter name="ProjectType" value="building"/>
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
   <parameter name="SheetName" value="STG"/>
-  <parameter name="SoReferenceSR" value="performance score"/>
   <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
-  <test name="CompleteFlowTest-Building-None">
-    <parameter name="SoReference" value="performance score"/>
-    <parameter name="ProjectType" value="building"/>
+  <test name="DataValidationTest-Portfolios">
     <parameter name="rownumber" value="2"/>
-    <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
       <class name="com.arcapi.Common.LoginAPITest"/>
-      <class name="com.arcapi.Common.UserDetailAPITest"/>
-      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"/>
-      <class name="com.arcapi.Common.LOTokenAPITest"/>
-      <class name="com.arcapi.Common.UserDetailAPITest"/>
-      <class name="com.arcapi.Common.AssetSearchAPITest"/>
-      <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest"/>
-      <class name="com.arcapi.Common.AssetSearchOwnerAPITest"/>
-      <class name="com.arcapi.Common.AssetOwnerOrgPOSTAPITest"/>
-      <class name="com.arcapi.Common.AssetListAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
-      <class name="com.arcapi.Common.AssetSearchAPITest"/>
-      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
-      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"/>
-      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
-      <class name="com.arcapi.Common.PaymentOrderGetAPITest"/>
-      <class name="com.arcapi.Common.PaymentReceiptAPITest"/>
-      <class name="com.arcapi.Common.PaymentHistoryAPITest"/>
-      <class name="com.arcapi.Common.AssetDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingNoneAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest"/>
-      <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"/>
-      <class name="com.arcapi.Common.AssetDocumentAPITest"/>
-      <class name="com.arcapi.Common.DownloadDocumentsAPITest"/>
-      <class name="com.arcapi.Common.VerifyAgreementPresentAPITest"/>
-      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"/>
-      <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"/>
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest"/>
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest"/>
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest"/>
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest"/>
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest"/>
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest"/>
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest"/>
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest"/>
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest"/>
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest"/>
     </classes>
-  </test> <!-- CompleteFlowTest-Building-None -->
-  <test name="CompleteFlowTest-Building-None(failed)">
-    <parameter name="SoReference" value="performance score"/>
-    <parameter name="ProjectType" value="building"/>
+  </test> <!-- DataValidationTest-Portfolios -->
+  <test name="DataValidationTest-Portfolios(failed)">
     <parameter name="rownumber" value="2"/>
-    <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
-      <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest">
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="PortfoliosPostAPI" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest -->
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -64,8 +49,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Common.VerifyProjectRegisteredAssetListTest -->
-      <class name="com.arcapi.Common.PaymentReceiptAPITest">
+      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -74,8 +59,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Common.PaymentReceiptAPITest -->
-      <class name="com.arcapi.Common.AssetListAPITest">
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosPostAPITest -->
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -84,8 +69,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Common.AssetListAPITest -->
-      <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest">
+      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest -->
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -94,8 +79,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Common.AssetValidationInfoPOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest -->
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -104,8 +89,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
-      <class name="com.arcapi.Common.LOTokenAPITest">
+      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest -->
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -114,8 +99,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Common.LOTokenAPITest -->
-      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
+      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -124,8 +109,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
-      <class name="com.arcapi.Common.AssetDetailAPITest">
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest -->
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -134,8 +119,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Common.AssetDetailAPITest -->
-      <class name="com.arcapi.Common.AssetDocumentAPITest">
+      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest -->
+      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -144,149 +129,7 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Common.AssetDocumentAPITest -->
-      <class name="com.arcapi.Common.PaymentOrderGetAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.PaymentOrderGetAPITest -->
-      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.UserAccessLevelSAPGetTest -->
-      <class name="com.arcapi.Common.AssetSearchOwnerAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.AssetSearchOwnerAPITest -->
-      <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.VerifyAgreementDeleteAPITest -->
-      <class name="com.arcapi.Common.VerifyAgreementPresentAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.VerifyAgreementPresentAPITest -->
-      <class name="com.arcapi.Common.AssetOwnerOrgPOSTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="AssetOwnerOrgPOSTAPI"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.AssetOwnerOrgPOSTAPITest -->
-      <class name="com.arcapi.Common.AssetSearchAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.AssetSearchAPITest -->
-      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingNoneAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.AssetUpdateBuildingNoneAPITest -->
-      <class name="com.arcapi.Common.DownloadDocumentsAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.DownloadDocumentsAPITest -->
-      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
-      <class name="com.arcapi.Common.UserDetailAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.UserDetailAPITest -->
-      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.FetchingAgreementDetailsAPITest -->
-      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="PaymentOrderSubmitPOSTAPI" invocation-numbers="0"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
-      <class name="com.arcapi.Common.PaymentHistoryAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.PaymentHistoryAPITest -->
+      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest -->
       <class name="com.arcapi.Common.LoginAPITest">
         <methods>
           <include name="teardown"/>
@@ -297,26 +140,6 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Common.LoginAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VerifyAssetDetailAPITest -->
-      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.RegistrationPaymentPricingGetAPITest -->
     </classes>
-  </test> <!-- CompleteFlowTest-Building-None(failed) -->
-</suite> <!-- Failed suite [BuildingCompletePositive] -->
+  </test> <!-- DataValidationTest-Portfolios(failed) -->
+</suite> <!-- Failed suite [NoPayloadDataValidation] -->

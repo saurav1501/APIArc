@@ -26,11 +26,11 @@ public class PaymentOrderSubmitPOSTAPITest extends BaseClass {
 				payload=AddProjectPayload.paymentCheck();
 				CommonMethod.res= MethodCall.POSTRequest(url, payload);
 			}
+			
 			CommonMethod.fetchedID = CommonMethod.res.path("ESalesdocument").toString();
-			System.out.println(CommonMethod.fetchedID);
 			data.setCellData("DataInput","ESalesdocument",2,CommonMethod.fetchedID);
 			
-			Assertion.verifyStatusCode(CommonMethod.res, 201);
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
 			Assertion.verifyStatusMessage(CommonMethod.res,statusMessage);
 			
 			

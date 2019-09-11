@@ -6,15 +6,12 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class CreateAssetCityLeedAPITest extends BaseClass {
 
@@ -171,11 +168,6 @@ public class CreateAssetCityLeedAPITest extends BaseClass {
 		System.out.println(CommonMethod.res.asString());
 
 		System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Create New Asset City Test  " + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Add asset")
-				.assignCategory("CheckAsset");
 
 		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 
