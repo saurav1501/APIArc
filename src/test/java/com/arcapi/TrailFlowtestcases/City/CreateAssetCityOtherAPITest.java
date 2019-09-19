@@ -6,29 +6,20 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class CreateAssetCityOtherAPITest extends BaseClass {
 
-	@Test(groups = { "Certification", "Precertification","PerformanceScore","Recertification" })
+	@Test
 	@Parameters({ "SheetName", "ProjectType","ProjectTypeColumn","rownumber","Country" })
 	public void CreateAssetPOSTAPI(String SheetName, String ProjectType,String ProjectTypeColumn, int rownumber, String Country) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		CommonMethod.GeneratingAuthCode(SheetName,rownumber);
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
-		
+	
 		String State = null;
 		String Unit = null;
 		String OwnerType  = null;
@@ -138,11 +129,7 @@ public class CreateAssetCityOtherAPITest extends BaseClass {
 
 		System.out.println(CommonMethod.responsetime);
 
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Create New Asset City Test  " + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Add asset")
-				.assignCategory("CheckAsset");
-
+	
 		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
 
 		CommonMethod.res.then().assertThat().statusCode(201);
@@ -161,20 +148,6 @@ public class CreateAssetCityOtherAPITest extends BaseClass {
 
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
+	
 
 }

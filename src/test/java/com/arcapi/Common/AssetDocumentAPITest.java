@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
 public class AssetDocumentAPITest extends BaseClass {
 
 	@Test(groups="CheckAsset")
-	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
+	@Parameters({"SheetName","ProjectTypeColumn","rownumber" })
 	public void AssetDocumentAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
 		try {

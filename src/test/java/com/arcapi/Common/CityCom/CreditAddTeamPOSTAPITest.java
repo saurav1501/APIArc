@@ -8,6 +8,7 @@ import com.Utill.Controller.MethodCall;
 import com.Utill.Model.CityComPayload;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 public class CreditAddTeamPOSTAPITest extends BaseClass {
 
@@ -16,14 +17,18 @@ public class CreditAddTeamPOSTAPITest extends BaseClass {
 	public void CreditAddTeamPOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber, String CreditColumn, int CreditColumnNum){
         
 		
-		int RowNum = 13;
-		payload = CityComPayload.emailPayload();
-		for (int i=2; i<=RowNum;i++) {
-	    String CreditID = data.getCellData("Credit", CreditColumn , i);	
-	    url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/actions/ID:" + CreditID +"-"+ data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/teams/";
-		CommonMethod.res = MethodCall.POSTRequest(url,payload);
-		Assertion.verifyStatusCode(CommonMethod.res, 200);
-		
+		try {
+			int RowNum = 13;
+			payload = CityComPayload.emailPayload();
+			for (int i=2; i<=RowNum;i++) {
+			String CreditID = data.getCellData("Credit", CreditColumn , i);	
+			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/actions/ID:" + CreditID +"-"+ data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/teams/";
+			CommonMethod.res = MethodCall.POSTRequest(url,payload);
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			
+			}
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
 		}
 	}
 }

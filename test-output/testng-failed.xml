@@ -1,145 +1,456 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [NoPayloadDataValidation]">
-  <parameter name="environment" value="stg"/>
-  <parameter name="ratings" value="none"/>
-  <parameter name="Country" value="US"/>
-  <parameter name="PaymentType" value="CreditCardPayment"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CrossRatingSystem]">
+  <parameter name="CreditColumn" value="TransitAboveCredit"/>
+  <parameter name="SoReference" value="performance score"/>
+  <parameter name="CreditColumnNum" value="4"/>
+  <parameter name="ratings" value="PARKSMART"/>
+  <parameter name="ProjectType" value="parksmart"/>
   <parameter name="rownumber" value="2"/>
-  <parameter name="SheetName" value="STG"/>
-  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
-  <test name="DataValidationTest-Portfolios">
+  <parameter name="SoReferenceSR" value="performance score"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDParksmart"/>
+  <test name="CrossRatingSystem-Building">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="none"/>
+    <parameter name="ProjectType" value="building"/>
     <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
       <class name="com.arcapi.Common.LoginAPITest"/>
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest"/>
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest"/>
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest"/>
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest"/>
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest"/>
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest"/>
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest"/>
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest"/>
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest"/>
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.AQIDataGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest"/>
     </classes>
-  </test> <!-- DataValidationTest-Portfolios -->
-  <test name="DataValidationTest-Portfolios(failed)">
+  </test> <!-- CrossRatingSystem-Building -->
+  <test name="CrossRatingSystem-City">
+    <parameter name="CreditColumn" value="CityOtherNoneCredit"/>
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="CreditColumnNum" value="1"/>
+    <parameter name="ProjectType" value="city"/>
     <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDCityNone"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Common.CityCom.CreateNewProjectAPITest"/>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.EnvironmentSurveyGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.CO2GetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.VOCGetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.GhgGetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.GhgCalcGetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.TemperatureDataGetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.WaterGetTest"/>
+    </classes>
+  </test> <!-- CrossRatingSystem-City -->
+  <test name="CrossRatingSystem-Transit">
+    <parameter name="CreditColumn" value="TransitAboveCredit"/>
+    <parameter name="SoReference" value="review"/>
+    <parameter name="CreditColumnNum" value="4"/>
+    <parameter name="ratings" value="aboveground"/>
+    <parameter name="ProjectType" value="transit"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="review"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Common.UserDetailAPITest"/>
+      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"/>
+      <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest"/>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest"/>
+    </classes>
+  </test> <!-- CrossRatingSystem-Transit -->
+  <test name="CrossRatingSystem-Parksmart">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="PARKSMART"/>
+    <parameter name="ProjectType" value="parksmart"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDParksmart"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetSearchAPITest"/>
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.EnvironmentSurveyGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.CO2GetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.VOCGetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.GhgGetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.GhgCalcGetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.TemperatureDataGetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.WaterGetTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.AnalysisDataGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetAppListAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetDataExportAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetDataSnapshotAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetNotificationSubscriptionListTest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetPerformanceScoreListAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.CertificationGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.CreditGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.MetersAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.NotificationGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.SubmitReviewGetAPITest"/>
+      <class name="com.arcapi.CrossRatingSystemtestcases.WasteGetAPITest"/>
+    </classes>
+  </test> <!-- CrossRatingSystem-Parksmart -->
+  <test name="CrossRatingSystem-Building(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="none"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest">
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
         <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-          <include name="PortfoliosPostAPI" invocation-numbers="0"/>
+          <include name="SignAgreementRegistrationAPI"/>
         </methods>
-      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest -->
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest">
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.AQIDataGetAPITest">
         <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
+          <include name="AQIDataGetAPI"/>
         </methods>
-      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest">
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.AQIDataGetAPITest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
         <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
+          <include name="AddAssestTimeline"/>
         </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosPostAPITest -->
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest -->
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest -->
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest -->
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest -->
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest -->
-      <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest -->
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
       <class name="com.arcapi.Common.LoginAPITest">
         <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
           <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="LoginAPI"/>
         </methods>
       </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+        <methods>
+          <include name="CreateAssetPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest">
+        <methods>
+          <include name="MeasuresListAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest">
+        <methods>
+          <include name="RidershipDataGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest -->
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="PaymentOrderSubmitPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
     </classes>
-  </test> <!-- DataValidationTest-Portfolios(failed) -->
-</suite> <!-- Failed suite [NoPayloadDataValidation] -->
+  </test> <!-- CrossRatingSystem-Building(failed) -->
+  <test name="CrossRatingSystem-City(failed)">
+    <parameter name="CreditColumn" value="CityOtherNoneCredit"/>
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="CreditColumnNum" value="1"/>
+    <parameter name="ProjectType" value="city"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDCityNone"/>
+    <classes>
+      <class name="com.arcapi.CrossRatingSystemtestcases.TemperatureDataGetTest">
+        <methods>
+          <include name="TemperatureDataGet"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.TemperatureDataGetTest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.VOCGetTest">
+        <methods>
+          <include name="VOCGet"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.VOCGetTest -->
+      <class name="com.arcapi.Common.CityCom.CreateNewProjectAPITest">
+        <methods>
+          <include name="CreateAssetPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.CityCom.CreateNewProjectAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest">
+        <methods>
+          <include name="RidershipDataGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.CO2GetTest">
+        <methods>
+          <include name="CO2GetTestAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.CO2GetTest -->
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="SignAgreementRegistrationAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="AddAssestTimeline"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.GhgCalcGetTest">
+        <methods>
+          <include name="GhgCalcGet"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.GhgCalcGetTest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.GhgGetTest">
+        <methods>
+          <include name="GhgGetTestAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.GhgGetTest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="LoginAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.WaterGetTest">
+        <methods>
+          <include name="WaterGet"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.WaterGetTest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.EnvironmentSurveyGetAPITest">
+        <methods>
+          <include name="EnvironmentSurveyGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.EnvironmentSurveyGetAPITest -->
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="PaymentOrderSubmitPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest">
+        <methods>
+          <include name="RegistrationPaymentPricingGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.RegistrationPaymentPricingGetAPITest -->
+    </classes>
+  </test> <!-- CrossRatingSystem-City(failed) -->
+  <test name="CrossRatingSystem-Transit(failed)">
+    <parameter name="CreditColumn" value="TransitAboveCredit"/>
+    <parameter name="SoReference" value="review"/>
+    <parameter name="CreditColumnNum" value="4"/>
+    <parameter name="ratings" value="aboveground"/>
+    <parameter name="ProjectType" value="transit"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="review"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
+    <classes>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="SignAgreementRegistrationAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest">
+        <methods>
+          <include name="UserAccessLevelSAPGet"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.UserAccessLevelSAPGetTest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="AddAssestTimeline"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="LoginAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest">
+        <methods>
+          <include name="CreateAssetTransitAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.CreateAssetTransitAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest">
+        <methods>
+          <include name="MeasuresListAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest -->
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="PaymentOrderSubmitPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest">
+        <methods>
+          <include name="RegistrationPaymentPricingGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.RegistrationPaymentPricingGetAPITest -->
+      <class name="com.arcapi.Common.UserDetailAPITest">
+        <methods>
+          <include name="UserDetailAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.UserDetailAPITest -->
+    </classes>
+  </test> <!-- CrossRatingSystem-Transit(failed) -->
+  <test name="CrossRatingSystem-Parksmart(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="PARKSMART"/>
+    <parameter name="ProjectType" value="parksmart"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDParksmart"/>
+    <classes>
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetPerformanceScoreListAPITest">
+        <methods>
+          <include name="AssetPerformanceScoreListAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.AssetPerformanceScoreListAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.VOCGetTest">
+        <methods>
+          <include name="VOCGet"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.VOCGetTest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.SubmitReviewGetAPITest">
+        <methods>
+          <include name="SubmitReviewGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.SubmitReviewGetAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartPOSTAPITest">
+        <methods>
+          <include name="CreateAssetParksmartPOST"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.CreateAssetParksmartPOSTAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest">
+        <methods>
+          <include name="RidershipDataGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.CO2GetTest">
+        <methods>
+          <include name="CO2GetTestAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.CO2GetTest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.GhgCalcGetTest">
+        <methods>
+          <include name="GhgCalcGet"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.GhgCalcGetTest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.WaterGetTest">
+        <methods>
+          <include name="WaterGet"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.WaterGetTest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.AnalysisDataGetAPITest">
+        <methods>
+          <include name="AnalysisDataGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.AnalysisDataGetAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetDataSnapshotAPITest">
+        <methods>
+          <include name="AssetDataSnapshotAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.AssetDataSnapshotAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.CertificationGetAPITest">
+        <methods>
+          <include name="CertificationGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.CertificationGetAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetDataExportAPITest">
+        <methods>
+          <include name="AssetDataExportAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.AssetDataExportAPITest -->
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest">
+        <methods>
+          <include name="RegistrationPaymentPricingGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.RegistrationPaymentPricingGetAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.TemperatureDataGetTest">
+        <methods>
+          <include name="TemperatureDataGet"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.TemperatureDataGetTest -->
+      <class name="com.arcapi.Common.AssetSearchAPITest">
+        <methods>
+          <include name="AssetSearchAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetSearchAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetNotificationSubscriptionListTest">
+        <methods>
+          <include name="AssetNotificationSubscriptionList"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.AssetNotificationSubscriptionListTest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.AssetAppListAPITest">
+        <methods>
+          <include name="AssetAppListAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.AssetAppListAPITest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="AddAssestTimeline"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.CreditGetAPITest">
+        <methods>
+          <include name="CreditGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.CreditGetAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.GhgGetTest">
+        <methods>
+          <include name="GhgGetTestAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.GhgGetTest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="LoginAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.MetersAPITest">
+        <methods>
+          <include name="MetersAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.MetersAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.WasteGetAPITest">
+        <methods>
+          <include name="WasteGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.WasteGetAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.EnvironmentSurveyGetAPITest">
+        <methods>
+          <include name="EnvironmentSurveyGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.EnvironmentSurveyGetAPITest -->
+      <class name="com.arcapi.CrossRatingSystemtestcases.NotificationGetAPITest">
+        <methods>
+          <include name="NotificationGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.CrossRatingSystemtestcases.NotificationGetAPITest -->
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="PaymentOrderSubmitPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+    </classes>
+  </test> <!-- CrossRatingSystem-Parksmart(failed) -->
+</suite> <!-- Failed suite [CrossRatingSystem] -->

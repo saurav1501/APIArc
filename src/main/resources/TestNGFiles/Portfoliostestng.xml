@@ -1,10 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="PortfoliosComplete">
 
-<listeners>
-        <listener class-name="com.arc.Listeners.TestListener"/>
-</listeners> 
-
 <test name="CompleteFlowTest-Portfolios">
 <parameter name="environment" value="stg" />
 <parameter name="ProjectType" value="building" />
@@ -15,23 +11,7 @@
 <parameter name="rownumber" value="2" />
 
 <classes>
-<class name="com.arcapi.Buildingtestcases.LoginAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingNoneAPITest"></class> 
-<class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest"></class>
-<class name="com.arcapi.Common.AssetDetailAPITest"></class>
-<class name="com.arcapi.Buildingtestcase.ElectricityPurchasedFromGridCreatePOSTAPITest"></class>
-<class name="com.arcapi.Buildingtestcase.EnergyCreate60MonthMeterDataPostTest"></class>   
-<class name="com.arcapi.Buildingtestcase.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"></class>
-<class name="com.arcapi.Buildingtestcase.WaterCreate60MonthMeterDataPostTest"></class> 
-<class name="com.arcapi.Buildingtestcase.WasteCreate60MonthMeterDataBulkPostTest"></class>
-<class name="com.arcapi.Buildingtestcase.SurveyAllRoutesFeedbackExtremelySatisfiedDeatailCreatePOSTAPITest"></class>   
-<class name="com.arcapi.Buildingtestcase.SurveyAllRoutesFeedbackExtremelyUnsatisfiedDeatailCreatePOSTAPITest"></class>   
-<class name="com.arcapi.Buildingtestcase.CarbonDioxideCreateMeterConsumptionTest"></class> 
-<class name="com.arcapi.Buildingtestcase.CarbonDioxideCreate5YearDataPostTest"></class> 
-<class name="com.arcapi.Buildingtestcase.TVOCCreateMeterConsumptionTest"></class> 
-<class name="com.arcapi.Buildingtestcase.TVOCCreate5YearDataPostTest"></class>  
+<class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosGetAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosDetailsGetAPITest"></class>
@@ -50,8 +30,6 @@
 <class name="com.arcapi.Portfoliostestcases.PortfoliosWasteDiversion5YearLBSDataVerifyGetAPITest"></class>   
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTransportModes3YearDataVerifyGetAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTransportModes5YearDataVerifyGetAPITest"></class>
-
-
 <class name="com.arcapi.Portfoliostestcases.PortfoliosGoalsDetailAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosGoalsUpdateAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosAnalyticsDetailAPITest"></class>
@@ -61,8 +39,7 @@
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsGetAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPUTAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest"></class>
-<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest"></class> -->
-
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest"></class> 
 </classes>
 </test>
 </suite> 

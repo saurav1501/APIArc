@@ -8,34 +8,21 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class CreateAssetBuildingPOSTAPITest extends BaseClass {
 
-	@Test(groups = { "Certification", "Precertification","PerformanceScore","Recertification" })
+	@Test(groups ="CheckRatings")
 	@Parameters({ "SheetName", "ProjectType","ProjectTypeColumn","rownumber" })
 	public void CreateAssetBuildingPOSTAPI(String SheetName, String ProjectType,String ProjectTypeColumn, int rownumber) throws IOException {
 
-		CommonMethod.ExtentReportConfig();
-
-		CommonMethod.GeneratingAuthCode(SheetName,rownumber);
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Create New Asset Building Test  ",
-						"Verifies Add asset")
-				.assignCategory("CheckAsset");
-		
-String[] CountryOptions  = {"US"};
+			
+         String[] CountryOptions  = {"US"};
 		
 		String StateCode = null;
 		
@@ -77,8 +64,6 @@ String[] CountryOptions  = {"US"};
 				.header("Authorization", header).spec(reqSpec).when().post("/assets/").then()
 				.extract().response();
 		
-		System.out.println("This is " + Country + " " + "Project");
-
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
 		CommonMethod.testlog("Info", "Starting Test for Test Data " + str);
@@ -91,36 +76,22 @@ String[] CountryOptions  = {"US"};
 
 	
 		
-      List<String> Actvalue = Arrays.asList("other","none");
+        List<String> Actvalue = Arrays.asList("other","none");
 		
 		if(Actvalue.contains(str)) {
 		
-		CommonMethod.res.then().assertThat().statusCode(201);
+		Assertion.verifyStatusCode(CommonMethod.res, 201);
 		
 		}
 		
 		else {
 			
-	    CommonMethod.res.then().assertThat().statusCode(400);
-			
+			Assertion.verifyStatusCode(CommonMethod.res, 400);
+				
 		}
 		}
 
 	}
-	@AfterMethod
-	public void teardown(ITestResult result) {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
 
 }

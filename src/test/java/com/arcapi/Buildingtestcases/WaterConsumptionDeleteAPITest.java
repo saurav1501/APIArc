@@ -1,81 +1,35 @@
 package com.arcapi.Buildingtestcases;
 
-import static com.jayway.restassured.RestAssured.given;
-
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
-
-import net.minidev.json.JSONObject;
 
 public class WaterConsumptionDeleteAPITest extends BaseClass {
 
-	@Test//(dependsOnMethods = { "com.arcapi.testcases.CreateAssetPOSTAPITest.CreateAssetPOSTAPI" })
+	@Test(groups="CheckMeter")
 	@Parameters({ "SheetName", "ProjectTypeColumn", "rownumber" })
-	public void WaterConsumptionDeleteAPI(String SheetName, String ProjectTypeColumn, int rownumber) throws IOException {
+	public void WaterConsumptionDeleteAPI(String SheetName, String ProjectTypeColumn, int rownumber) {
 
-		CommonMethod.ExtentReportConfig();
+				
+		 try {
+			int RowNum = data.getRowCountbyColNum("DataInput", 2);	
+				for (int i =2; i<= RowNum;i++) {
 
-		// CommonMethod.GeneratingAuthCode();
+			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
+					+ data.getCellData("DataInput", "WaterMeterID", i) + "/consumption/ID:"
+					+ data.getCellData("DataInput", "WaterPK", i) + "/";
 
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
-		 int RowNum = data.getRowCountbyColNum("DataInput", 2);
-	        //int PKRowNum = data.getRowCountbyColNum("DataInput", 1);
-			
-			for (int i =2; i<= RowNum;i++) {
-
-		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
-				.header("Content-type", "application/json").header("Authorization", header).spec(reqSpec).when()
-				.delete("/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-						+ data.getCellData("DataInput", "WaterMeterID", i) + "/consumption/ID:"
-						+ data.getCellData("DataInput", "WaterPK", i) + "/")
-				.then().extract().response();
-
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-		System.out.println(CommonMethod.responsetime);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("WaterConsumptionDelete API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-						"ConsumptionDeleteAPITest")
-				.assignCategory("CheckConsumption");
-
-		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
-
-		System.out.println(CommonMethod.res.asString());
-		
-
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-
-		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		
-		CommonMethod.res.then().spec(respSpec);
-			}
-	}
-
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
+			CommonMethod.res = MethodCall.DELETERequest(url);
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+				}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
 	}
+
 
 }

@@ -1,14 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="BuildingV3CompletePositiveSuite">
 
-<test name="CompleteFlowTest-Building-None">
+
+<test name="CompleteFlowTest-Building-Other">
 <parameter name="ProjectType" value="building" />
-<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
 <parameter name="SoReference" value="performance score" />
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
-<parameter name="ratings" value="none"></parameter>
-
+<parameter name="ratings" value="other"></parameter>
 <classes>
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Common.UserDetailAPITest"></class>
@@ -36,7 +36,6 @@
 <class name="com.arcapi.Common.VerifyAgreementPresentAPITest"></class>
 <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
 <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"></class> 
-
 <class name="com.arcapi.Buildingtestcases.MetersAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest"></class>
@@ -57,10 +56,10 @@
 <class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest"></class> 
-
 <class name="com.arcapi.Common.AssetTeamMemberRoleAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberListAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberAddPOSTAPITest"></class>
+
 <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberRemoveAPITest"></class>
 <class name="com.arcapi.Common.DeleteAllAppsAPITest"></class>
@@ -95,17 +94,14 @@
 <class name="com.arcapi.Common.AssetPerformanceScoreListAPITest"></class> 
 <class name="com.arcapi.Common.AnalysisDataSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.AnalysisDataGetAPITest"></class>
-
 <class name="com.arcapi.Buildingtestcases.CO2GetTest"></class>
 <class name="com.arcapi.Buildingtestcases.GhgGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.VOCGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.WaterGetTest"></class>
-
 <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"></class>
-
 <class name="com.arcapi.Common.AssetCertificationListAPITest"></class>
 <class name="com.arcapi.Common.AssetCertificationPOSTAPITest"></class>
 <class name="com.arcapi.Common.TemperatureDataGetTest"></class>
@@ -121,22 +117,42 @@
 <class name="com.arcapi.Common.ThirdPartyListAppsAPITest"></class>
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class>
+ </classes>
  
-
-</classes>
 </test>
-
-<!-- <test name="CompleteFlowTest-Building-Other">
+<test name="CompleteFlowTest-Building-None">
 <parameter name="ProjectType" value="building" />
-<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
 <parameter name="SoReference" value="performance score" />
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
-<parameter name="ratings" value="other"></parameter>
+<parameter name="ratings" value="none"></parameter>
 <classes>
-<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class> 
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
+<class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
+<class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest"></class> 
+<class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.EnergyCreate60MonthMeterDataPostTest"></class>   
+<class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.WaterCreate60MonthMeterDataPostTest"></class> 
+<class name="com.arcapi.Buildingtestcases.WasteCreate60MonthMeterDataBulkPostTest"></class>
+<class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
+<class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"></class>   
+<class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CarbonDioxideCreate5YearDataPostTest"></class> 
+<class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest"></class> 
 </classes>
-</test> -->
+</test> 
 </suite>  
   
 

@@ -1,31 +1,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="DataInputScenarios">
 
-<!-- <listeners>
-        <listener class-name="com.arc.Listeners.RetryListener" />
-        <listener class-name="com.arc.Listeners.TestListener" />
-</listeners> -->
-
-
-
-
-<test name="DataInput-Building-Other">
-
+<test name="CompleteFlowTest-Building-Other">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
 <parameter name="SoReference" value="performance score" />
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
+<parameter name="ratings" value="other"></parameter>
 
 <classes>
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
+<class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
+<class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
 
 
-<class name="com.arcapi.Buildingtestcases.LoginAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingOtherAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.SignAgreementRegistrationAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.RegistrationPaymentPricingGetAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.AddAssestTimelinePOSTAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.ElectricityMeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ElectricityConsumptionCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ElectricityConsumptionUpdateAPITest"></class>
@@ -41,17 +32,18 @@
 <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionUpdateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.OtherFuelMeterDeleteAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
+<class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"></class>   
 <class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest"></class>
-
 
 </classes>
 </test> 

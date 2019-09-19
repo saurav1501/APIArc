@@ -152,7 +152,6 @@ public class AddProjectPayload extends BaseClass {
         RandomData.setOwnerCountryAddressOwnerOrg(Country);
         ProjectName= RandomData.projectName(Country,Rating,ProjectType);
         
-        String owner_email =data.getCellData(sheetName, "OwnerEmail", rowNumTwo);
         addProject.setName(ProjectName);
         addProject.setRating_system("LEED V4 O+M: TR");
         addProject.setGross_area(GrossArea);
@@ -164,7 +163,7 @@ public class AddProjectPayload extends BaseClass {
         addProject.setProject_type(ProjectType);
         addProject.setUnitType(RandomData.Unit);
         addProject.setSpaceType(RandomData.SpaceType);
-        addProject.setOwner_email(owner_email);
+        addProject.setOwner_email(data.getCellData(sheetName, "OwnerEmail", rowNumTwo));
         addProject.setOwnerType(RandomData.OwnerType);
         addProject.setConfidential(false);
         addProject.setSign_agreement(false);
@@ -262,4 +261,128 @@ public class AddProjectPayload extends BaseClass {
 		return addProject;
     	
     }
+    
+    public static AddBuildingProject addProjectPayloadTrial(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
+		addProject = new AddBuildingProject();
+		String ProjectName=null;
+
+        if(Country.equals("IN"))
+		
+		{
+        	RandomData.selectIndState(Country);
+		
+		}
+		
+        else if(Country.equals("US"))
+			
+		{
+        	RandomData.selectUSState(Country);
+			
+		}
+		
+        else if(Country.equals("CN"))
+			
+		{
+        	RandomData.selectCNState(Country);
+		}
+	
+        RandomData.unitType();
+        RandomData.spaceType();
+        RandomData.ownerType();
+        RandomData.setOwnerCountryAddressOwnerOrg(Country);
+        ProjectName= RandomData.projectName(Country,Rating,ProjectType);
+        addProject.setName(ProjectName);
+        addProject.setRating_system(Rating);
+        addProject.setGross_area(GrossArea);
+        addProject.setOccupancy(occupant);
+        addProject.setStreet(data.getCellData(sheetName, "Address",rowNumTwo));
+        addProject.setCity(data.getCellData(sheetName, "City", rowNumTwo));
+        addProject.setCountry(Country);
+        addProject.setState(RandomData.State);
+        addProject.setProject_type(ProjectType);
+        addProject.setUnitType(RandomData.Unit);
+        addProject.setConfidential(true);
+        addProject.setSign_agreement(true);
+        addProject.setZip_code(RandomData.ZipCode); 
+            
+		return addProject;  
+	}
+
+    
+    public static AddBuildingProject addProjectPayloadTrialSync(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
+    	addProject = new AddBuildingProject();
+    	
+    	RandomData.spaceType();
+        RandomData.ownerType();
+        addProject.setOwner_email(data.getCellData(sheetName, "OwnerEmail", rowNumTwo));
+        RandomData.setOwnerCountryAddressOwnerOrg(Country); 
+        addProject.setSign_agreement(true);
+        addProject.setRating_system(Rating);
+        addProject.setManageEntityCountry(Country);   
+        addProject.setSpaceType(RandomData.SpaceType);
+        addProject.setOwner_email(data.getCellData(sheetName, "OwnerEmail", rowNumTwo));
+        addProject.setOwnerType(RandomData.OwnerType);
+        addProject.setOrganization(data.getCellData(sheetName, "OwnerOrg", rowNumTwo));
+
+		return addProject;  
+	}
+    public static AddBuildingProject addProjectParksmartPayload(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
+    {
+    	addProject = new AddBuildingProject();
+    	
+    	String ProjectName=null;
+
+        if(Country.equals("IN"))
+		
+		{
+        	RandomData.selectIndState(Country);
+		
+		}
+		
+        else if(Country.equals("US"))
+			
+		{
+        	RandomData.selectUSState(Country);
+			
+		}
+		
+        else if(Country.equals("CN"))
+			
+		{
+        	RandomData.selectCNState(Country);
+		}
+	
+        RandomData.unitType();
+        RandomData.spaceType();
+        RandomData.ownerType();
+        RandomData.setOwnerCountryAddressOwnerOrg(Country);
+        ProjectName= RandomData.projectName(Country,Rating,ProjectType);
+        
+        addProject.setName(ProjectName);
+        addProject.setRating_system(Rating);
+        addProject.setGross_area(GrossArea);
+        addProject.setOccupancy(occupant);
+        addProject.setStreet(data.getCellData(sheetName, "Address",rowNumTwo));
+        addProject.setCity(data.getCellData(sheetName, "City", rowNumTwo));
+        addProject.setCountry(Country);
+        addProject.setState(RandomData.State);
+        addProject.setProject_type(ProjectType);
+        addProject.setUnitType(RandomData.Unit);
+        addProject.setConfidential(true);
+        addProject.setSign_agreement(true);
+        addProject.setZip_code(RandomData.ZipCode); 
+        addProject.setNoOfParkingSpace("15");
+        addProject.setNoOfParkingLevels("2");
+        addProject.setOrganization(data.getCellData(sheetName, "OwnerOrg", rowNumTwo));
+        addProject.setManageEntityCountry(Country);
+        addProject.setOwner_email(data.getCellData(sheetName, "OwnerEmail", rowNumTwo));
+        addProject.setOwnerType(RandomData.OwnerType);
+  
+    	
+        return addProject;
+  
+   
+     }
+    }
+    	
  }

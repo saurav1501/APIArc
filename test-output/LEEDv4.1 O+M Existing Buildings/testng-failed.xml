@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LEEDv4.1 O+M Existing Buildings]">
+  <parameter name="environment" value="stg"/>
+  <parameter name="ratings" value="none"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="STG"/>
+  <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
+  <test name="LEED v4.1 O+M: Existing Buildings">
+    <parameter name="rownumber" value="2"/>
+    <parameter name="Country" value="US"/>
+    <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
+    <classes>
+      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.LEEDv4OMExistingBuildings"/>
+    </classes>
+  </test> <!-- LEED v4.1 O+M: Existing Buildings -->
+</suite> <!-- Failed suite [LEEDv4.1 O+M Existing Buildings] -->

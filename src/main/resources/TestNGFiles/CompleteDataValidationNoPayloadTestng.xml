@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="NoPayloadDataValidation">
 
- <!--
+
 <test name="CompleteFlowTest-Building-None">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
@@ -87,11 +87,10 @@
 
 </classes>
 </test>
- -->
+ 
 
 
 <test name="DataValidationTest-Portfolios">
-
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
 <parameter name="rownumber" value="2" />
 

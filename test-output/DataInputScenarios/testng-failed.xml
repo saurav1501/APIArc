@@ -1,67 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [DataInputScenarios]">
-  <parameter name="environment" value="staging"/>
+  <parameter name="environment" value="stg"/>
+  <parameter name="SoReference" value="performance score"/>
+  <parameter name="ratings" value="other"/>
+  <parameter name="ProjectType" value="building"/>
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="rownumber" value="2"/>
   <parameter name="SheetName" value="STG"/>
-  <test thread-count="5" name="DataInput-Building-Other(failed)">
+  <parameter name="SoReferenceSR" value="performance score"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+  <test name="CompleteFlowTest-Building-Other">
     <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="other"/>
     <parameter name="ProjectType" value="building"/>
     <parameter name="rownumber" value="2"/>
     <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
     <classes>
-      <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest">
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest"/>
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-Other -->
+  <test name="CompleteFlowTest-Building-Other(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="other"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+    <classes>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
         <methods>
-          <include name="OtherFuelConsumptionDeleteAPI" invocation-numbers="0"/>
-          <include name="end"/>
-          <include name="getSuiteName"/>
           <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest -->
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCMeterCreateAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
       <class name="com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
+          <include name="start"/>
           <include name="getSuiteName"/>
           <include name="setBaseUri"/>
           <include name="VOCMeterDeleteAPI" invocation-numbers="0"/>
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest">
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
         <methods>
-          <include name="OtherFuelConsumptionCreateAPI" invocation-numbers="0"/>
-          <include name="end"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="teardown"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.OtherFuelConsumptionCreateAPITest -->
-      <class name="com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest">
-        <methods>
-          <include name="OtherFuelMeterCreateAPI" invocation-numbers="0"/>
           <include name="teardown"/>
           <include name="end"/>
+          <include name="start"/>
           <include name="getSuiteName"/>
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.OtherFuelMeterCreateAPITest -->
-      <class name="com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest">
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
         <methods>
+          <include name="teardown"/>
           <include name="end"/>
-          <include name="CO2MeterDeleteAPI" invocation-numbers="0"/>
+          <include name="start"/>
           <include name="getSuiteName"/>
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest -->
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
     </classes>
-  </test> <!-- DataInput-Building-Other(failed) -->
+  </test> <!-- CompleteFlowTest-Building-Other(failed) -->
 </suite> <!-- Failed suite [DataInputScenarios] -->

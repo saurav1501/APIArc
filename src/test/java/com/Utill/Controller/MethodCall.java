@@ -9,10 +9,12 @@ import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.google.gson.Gson;
+import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Headers;
 import com.jayway.restassured.response.Response;
 public class MethodCall extends BaseClass{
     static String baseURL = prop.getProperty("env");
+    static String baseURLLEED = prop.getProperty("envleed");
 
 	public static Response GETRequest(String uRI) {
 		CommonMethod.testlog("Info", "GET Request Call URL "+baseURL+uRI);
@@ -115,6 +117,7 @@ public class MethodCall extends BaseClass{
 		CommonMethod.res= given().log().all().headers(headerMap).header("content-type", "application/json")
 				.spec(reqSpec).when().body(loginArc).post(uRI).then().extract().response();
 		
+	
 		Headers ResponseHeader = CommonMethod.res.getHeaders();
 		log.info(ResponseHeader.getValue("X-Frame-Options"));
 		
@@ -136,7 +139,7 @@ public class MethodCall extends BaseClass{
 		CommonMethod.testlog("Pass", "Header is : "+header.toString());
 		
 		log.info("Ocp-Apim-Subscription-Key"+SubscriptionKey);
-		CommonMethod.testlog("Pass", "Ocp-Apim-Subscription-Key"+SubscriptionKey.toString());
+		CommonMethod.testlog("Pass", "Ocp-Apim-Subscription-Key :"+SubscriptionKey.toString());
 		
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
 		CommonMethod.testlog("Pass", "Response from API" + "<br>" + CommonMethod.res.asString());
@@ -144,6 +147,44 @@ public class MethodCall extends BaseClass{
 		return CommonMethod.res;
 	}
 
+	public static Response POSTRequestLogin2(String uRI,String SheetName,String UserName,String Password) {
+		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
+		log.info("POST Request Call URL "+baseURL+uRI);
+		
+	
+		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey).spec(reqSpec)
+				.parameters("username", data.getCellData(SheetName, UserName, 2), "password",
+						data.getCellData(SheetName, Password, 2))
+				.when().post(url).then().extract().response();
+		
+		Headers ResponseHeader = CommonMethod.res.getHeaders();
+		log.info(ResponseHeader.getValue("X-Frame-Options"));
+		
+		CommonMethod.fetchedID = CommonMethod.res.path("authorization_token").toString();
+		log.info(CommonMethod.res.getDetailedCookies());
+		log.info(CommonMethod.fetchedID);
+		Token = CommonMethod.fetchedID;
+		
+		header = "Bearer " + CommonMethod.fetchedID;
+		data.setCellData(SheetName, "BearerToken", rowNumTwo, header);
+		
+		log.info(CommonMethod.res.path("token_type"));	
+		log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
+		
+		log.info("Payload is  "+loginArc.getUsername().toString()+loginArc.getPassword().toString());
+		CommonMethod.testlog("Pass", "Payload is : "+"username "+data.getCellData(SheetName, UserName, 2)+" password "+data.getCellData(SheetName, Password, 2));
+		
+		log.info("Header is "+header.toString());
+		CommonMethod.testlog("Pass", "Header is : "+header.toString());
+		
+		log.info("Ocp-Apim-Subscription-Key"+SubscriptionKey);
+		CommonMethod.testlog("Pass", "Ocp-Apim-Subscription-Key :"+SubscriptionKey.toString());
+		
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+		CommonMethod.testlog("Pass", "Response from API" + "<br>" + CommonMethod.res.asString());
+
+		return CommonMethod.res;
+	}
 	@SuppressWarnings("unchecked")
 	public static Response POSTRequest(String uRI, Object strJSON ,String key, Object file) {
 		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
@@ -257,5 +298,36 @@ public class MethodCall extends BaseClass{
 		
 		return   CommonMethod.res;
 	}
+	
+	public static Response POSTRequestLEED(String uRI, Object strJSON) throws JsonProcessingException {
+		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
+		
+		log.info("POST Request Call URL "+baseURLLEED+uRI);
+		
+		CommonMethod.res=  given().log().all()
+				.header("Content-type", "application/json")
+				.header("Authorization", header)
+				.header("X-Caller-Id", "20297672fa1247ccf00ce8e0a14013ac")
+				.spec(reqSpecLEED)
+			    .when().body(strJSON)
+				.post(uRI)
+				.then()
+				.extract()
+				.response();
+      
+		log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
+		
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+		
+		Gson gson = new Gson();
+		String jsonString = gson.toJson(strJSON);
+		log.info("Payload is  "+jsonString.toString());
+		CommonMethod.testlog("Pass", "Payload is : "+"<br>"+jsonString.toString());
+		
+		CommonMethod.testlog("Pass","Response from API" + "<br>" + CommonMethod.res.asString());
+		CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
+		return CommonMethod.res;
+	}
+
 
 }

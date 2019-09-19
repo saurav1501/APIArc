@@ -20,6 +20,16 @@ public class OtherDetails extends BaseClass{
 	map.put("Responsibility", data.getCellData(sheetName, "NormalUserName", rowNumTwo));
 	return map;
 	}
+	public static HashMap<Object,Object> detalisManager() {
+	map = new HashMap<Object,Object>();
+	map.put("user_email",data.getCellData(sheetName, "STG03", rowNumTwo));
+	map.put("Reltyp", "ZRPO82");
+	map.put("Responsibility", projectID);
+	return map;
+	}
+	
+	
+
 	public static HashMap<Object,Object> arcAdmindetalis() {
 	map = new HashMap<Object,Object>();
 	map.put("user_email",data.getCellData(sheetName, "AssetTeamMember", rowNumTwo));

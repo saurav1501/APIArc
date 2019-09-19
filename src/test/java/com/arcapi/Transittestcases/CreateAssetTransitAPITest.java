@@ -1,7 +1,5 @@
 package com.arcapi.Transittestcases;
 
-import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -15,7 +13,7 @@ public class CreateAssetTransitAPITest extends BaseClass {
 
 	@Test(groups="Add Project")
 	@Parameters({"ProjectType","ProjectTypeColumn","Country" ,"ratings"})
-	public void CreateAssetPOSTAPI(String ProjectType,String ProjectTypeColumn,String Country,String ratings) throws IOException {	
+	public void CreateAssetTransitAPI(String ProjectType,String ProjectTypeColumn,String Country,String ratings){	
 		
 		try {
 			payload = AddProjectPayload.addProjectPayloadTransit(ProjectType,ProjectTypeColumn,Country,ratings);
@@ -23,7 +21,6 @@ public class CreateAssetTransitAPITest extends BaseClass {
 			CommonMethod.res = MethodCall.POSTRequest(url,payload);
 			Assertion.verifyStatusCode(CommonMethod.res, 201);
 			CommonMethod.fetchedID = CommonMethod.res.path("leed_id").toString();
-			log.info(CommonMethod.fetchedID);
 			data.setCellData(sheetName, ProjectTypeColumn, rowNumTwo, CommonMethod.fetchedID);
 		} catch (Exception e) {
 			e.printStackTrace();

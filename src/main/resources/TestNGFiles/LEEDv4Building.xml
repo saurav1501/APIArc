@@ -1,0 +1,105 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LEEDv4.1 O+M Buildings">
+
+<test name="LEED v4.1 O+M: Existing Buildings">
+<parameter name="ProjectTypeColumn" value="LeedIDEB" />
+<parameter name="rownumber" value="2" />
+<parameter name="Country" value="US" />
+
+<classes>
+<class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.LEEDv4OMExistingBuildingsAPITest"></class> 
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest"></class> 
+<class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest"></class>
+<class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"></class>
+<class name="com.arcapi.Common.AssetDocumentAPITest"></class>
+<class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
+<class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"></class> 
+<class name="com.arcapi.Leedv4Testcases.MetersAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest"></class>  
+<class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.Common.S3DocumentUploadPOSTAPITest"></class>
+<class name="com.arcapi.Common.S3DocumentListAPITest"></class>
+<class name="com.arcapi.Common.S3DocumentRemoveAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest"></class>
+<class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest"></class>
+<class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest"></class>
+<class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest"></class>
+<class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest"></class>
+<class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest"></class>
+<class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest"></class> 
+<class name="com.arcapi.Common.AssetTeamMemberRoleAPITest"></class>
+<class name="com.arcapi.Common.AssetTeamMemberListAPITest"></class>
+<class name="com.arcapi.Common.AssetTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"></class>
+<class name="com.arcapi.Common.AssetTeamMemberRemoveAPITest"></class>
+<class name="com.arcapi.Common.DeleteAllAppsAPITest"></class>
+<class name="com.arcapi.Common.InstallAllAppsAfterDeleteAPITest"></class>
+<class name="com.arcapi.Common.AssetTeamPermissionListAPITest"></class>
+<class name="com.arcapi.Common.AssetTeamPermissionPostAPITest"></class>
+<class name="com.arcapi.Common.AssetTeamPermissionPutAPITest"></class>
+<class name="com.arcapi.Common.VerifyAdminRemoveAPITest"></class>
+<class name="com.arcapi.Common.AssetArcProjectAdminAddPOSTAPITest"></class>
+<class name="com.arcapi.Common.AssetNotificationSubscriptionListTest"></class>
+<class name="com.arcapi.Common.AssetNotificationSubscriptionPostTest"></class>
+<class name="com.arcapi.Common.NotificationSubscriptionDetailGetTest"></class>
+<class name="com.arcapi.Common.NotificationSubscriptionDetailPutTest"></class>
+<class name="com.arcapi.Common.NotificationSubscriptionDetailDeleteTest"></class>
+<class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class> 
+<class name="com.arcapi.Common.NotificationCreatePOSTAPITest"></class>
+<class name="com.arcapi.Common.NotificationGetAPITest"></class>
+<class name="com.arcapi.Common.NotificationDeleteAPITest"></class>
+<class name="com.arcapi.Common.FeedbackSubmitPostAPITest"></class>
+<class name="com.arcapi.Common.TransitSurveyExportAPITest"></class>
+<class name="com.arcapi.Common.EnvironmentSurveyExportAPITest"></class>
+<class name="com.arcapi.Common.AssetDataExportAPITest"></class>
+<class name="com.arcapi.Common.AssetPerformanceScoreListAPITest"></class> 
+<class name="com.arcapi.Common.AnalysisDataSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Common.AnalysisDataGetAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CO2GetTest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgGetTest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgCalcGetTest"></class>
+<class name="com.arcapi.Buildingtestcases.VOCGetTest"></class>
+<class name="com.arcapi.Buildingtestcases.WaterGetTest"></class>
+<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest"></class>
+ 
+</classes>
+</test> 
+
+<test name="LEED v4.1 O+M: Interiors">
+<parameter name="ProjectTypeColumn" value="LeedIDEB" />
+<parameter name="rownumber" value="2" />
+<parameter name="Country" value="US" />
+
+<classes>
+<class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.LEEDv4OMInteriorsBuildingsAPITest"></class> 
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest"></class> 
+<class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest"></class>
+<class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"></class>
+<class name="com.arcapi.Common.AssetDocumentAPITest"></class>
+<class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
+<class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
+</classes>
+</test> 
+</suite>
+  
+
+    
+  

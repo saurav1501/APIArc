@@ -27,13 +27,26 @@ public class  AddBuildingProject implements Serializable{
 	private String year_constructed;
 	private String category;
 	private String effective_at;
-	
 	private String station_type;
 	private String annual_ridership;
 	private String full_time_staff;
 	private String time_spent_by_riders;
+	private String noOfParkingSpace;
+	private String noOfParkingLevels;
 
 	
+	public String getNoOfParkingSpace() {
+		return noOfParkingSpace;
+	}
+	public void setNoOfParkingSpace(String noOfParkingSpace) {
+		this.noOfParkingSpace = noOfParkingSpace;
+	}
+	public String getNoOfParkingLevels() {
+		return noOfParkingLevels;
+	}
+	public void setNoOfParkingLevels(String noOfParkingLevels) {
+		this.noOfParkingLevels = noOfParkingLevels;
+	}
 	public String getYear_constructed() {
 		return year_constructed;
 	}

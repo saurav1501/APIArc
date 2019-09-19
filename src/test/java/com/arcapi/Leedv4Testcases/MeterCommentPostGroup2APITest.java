@@ -1,77 +1,41 @@
 package com.arcapi.Leedv4Testcases;
 
-import static com.jayway.restassured.RestAssured.given;
-
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 import net.minidev.json.JSONObject;
 
 public class MeterCommentPostGroup2APITest extends BaseClass {
 
-	@Test//(dependsOnMethods = { "com.arcapi.testcases.CreateAssetPOSTAPITest.CreateAssetPOSTAPI" })
-    @Parameters({ "LOSheetName","LOProjectTypeColumn","rownumber" })
+	@Test(groups="CheckComment")
+	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void MeterCommentPostGroup2API(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
 		int row = 2;
-		CommonMethod.ExtentReportConfig();
-
-		CommonMethod.GeneratingAuthCodeForLOUser(SheetName, rownumber);
 		
-		CommonMethod.test = CommonMethod.extent
-				.startTest("MeterCommentPostGroup2API",
-						"Verifies Update asset")
-				.assignCategory("CheckAsset");
-		
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
-	    TestName = Thread.currentThread().getStackTrace()[1].getMethodName();
-		
-			data.setCellData("Report", "TestCaseName", reportrownum, TestName);
-
-		
-		 String[] type = {"waste","transport","human"};
+		String[] type = {"waste","transport","human"};
 		 
-		 for(String Type : type) {
+		for(String Type : type) {
 	     
 		JSONObject jsonAsMap = new JSONObject();
 		jsonAsMap.put("confidential", "false");
-		jsonAsMap.put("data", "This is Machine Test Comment");
+		jsonAsMap.put("data", "This is Test Comment");
 		
-		System.out.println(data.getCellData(SheetName, ProjectTypeColumn, rownumber));
+		url = "/assets/LEED:" + data.getCellData(sheetName, ProjectTypeColumn, rownumber) + "/"+Type+"/comment/";
 
-		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
-				.header("content-type", "application/json").header("Authorization", header).spec(reqSpec)
-				.body(jsonAsMap).when().post("/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/"+Type+"/comment/")
-				.then().extract().response();
-		
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-		System.out.println(CommonMethod.responsetime);
-		
-		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
-
-		System.out.println(CommonMethod.res.asString());
+		CommonMethod.res = MethodCall.POSTRequest(url, jsonAsMap);
 		
 		 CommonMethod.fetchedID = CommonMethod.res.path("id[0]").toString();
 
-	     data.setCellData(SheetName, "CommentIDGroup2", row, CommonMethod.fetchedID);
-	     
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-
-		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		
-		CommonMethod.res.then().spec(respSpec);
-
+	     data.setCellData("LEEDONLINE", "CommentIDGroup2", row, CommonMethod.fetchedID);
+	     Assertion.verifyStatusCode(CommonMethod.res, 200);
 		row++;
 	}
 		 

@@ -6,18 +6,15 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class ReviewCertificationPricing50PromocodeTest extends BaseClass {
 
-	@Test//(dependsOnMethods = { "com.arcapi.testcases.CreditUpdatePUTAPITest.CreditUpdatePUTAPI" },groups = { "Certification", "Precertification","PerformanceScore","Recertification" })
+	@Test
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber","SoReference","ProjectTypePromocodeColumn" })
 	public void ReviewCertificationPricingAPI(String SheetName,String ProjectTypeColumn, int rownumber, String SoReference,String ProjectTypePromocodeColumn) throws IOException {
 
@@ -35,14 +32,7 @@ public class ReviewCertificationPricing50PromocodeTest extends BaseClass {
 
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 
-		System.out.println(CommonMethod.responsetime);
-
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Review Certification Pricing API Test  " + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies review certification pricing")
-				.assignCategory("CheckPayment");
-
+		
 		System.out.println(CommonMethod.res.asString());
 		CommonMethod.fetchingJSONResponse("/assets/LEED:"
 				+ data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/payments/price/?soreference="+SoReference+"&promocode="+data.getCellData("50PercentPromocode", ProjectTypePromocodeColumn, 2));
@@ -80,19 +70,5 @@ public class ReviewCertificationPricing50PromocodeTest extends BaseClass {
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
 	}
 
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-
-	}
+	
 }

@@ -33,11 +33,7 @@ public class MeterPayload extends BaseClass{
 	}
 	
 	public static ArrayList<JSONObject> meterData1() {
-		/*MeterData meterData = new MeterData();
-		meterData.setStart_date("2018-11-02");
-		meterData.setEnd_date("2018-12-04");
-		meterData.setReading("120");*/
-		
+
 		JSONObject jsonAsMap1 = new JSONObject();
 		jsonAsMap1.put("start_date", "2017-11-02");
 		jsonAsMap1.put("end_date", "2017-11-04");
@@ -132,6 +128,43 @@ public class MeterPayload extends BaseClass{
 		
 		return map;
 	}
+	
+	public static  HashMap<Object,Object> submitSurveyRegular(){
+		map =new HashMap<>();
+		payload = MeterPayload.surveyMode();
+		map.put("tenant_name", "Saurav Sinha");
+		map.put("response_method", "web");
+		map.put("satisfaction",3);
+		map.put("location","Delhi");
+		map.put("occupant_category", "regular_occupant");
+		map.put("other_complaint", "Test Completent");
+		map.put("language","English");
+		map.put("routes",Arrays.asList(payload));
+		map.put("feedbacks","['views to outdoors','sound','privacy','air quality','cleanliness','light','privacy','daylight']");
+		return map;
+		
+		
+	}
+	
+	public static  HashMap<Object,Object> submitSurveyExtremelyUnsatisfied(){
+		map =new HashMap<>();
+		payload = MeterPayload.surveyMode();
+		map.put("tenant_name", "Saurav Sinha");
+		map.put("response_method", "web");
+		map.put("satisfaction",-1);
+		map.put("location","Delhi");
+		map.put("occupant_category", "visitor_occupant");
+		map.put("other_complaint", "Test Completent");
+		map.put("language","English");
+		map.put("routes",Arrays.asList(payload));
+		map.put("feedbacks","['dirty','cold','drafty','smelly','dark','bright','stuffy','glare','views to outdoors','loud','privacy','sound','hot','humid']");	
+		return map;
+		
+		
+	}
+	
+
+	
 	public static  HashMap<Object,Object> submitSurveyV2Old(){
 		map =new HashMap<>();
 		payload = MeterPayload.surveyMode();
@@ -139,5 +172,21 @@ public class MeterPayload extends BaseClass{
 		map.put("response_method","web");
 		map.put("routes", Arrays.asList(payload));	
 		return map;
+	}
+	public static CreateMeter CreateCo2Meter() {
+	CreateMeter meterData = new CreateMeter();
+	meterData.setName("Default CO2 Meter");
+	meterData.setNative_unit("ppm");
+	meterData.setType("206");
+	meterData.setIncluded(true);
+	return meterData;
+}
+	public static CreateMeter CreateTVOCMeter() {
+	CreateMeter meterData = new CreateMeter();
+	meterData.setName("Total Volatile Organic Compounds");
+	meterData.setType("205");
+	meterData.setNative_unit("ug/m3");
+	meterData.setIncluded(true);
+    return meterData;
 	}
 }

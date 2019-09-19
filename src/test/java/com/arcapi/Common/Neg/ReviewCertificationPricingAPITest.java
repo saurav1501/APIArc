@@ -18,23 +18,7 @@ public class ReviewCertificationPricingAPITest extends BaseClass {
 
 		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/payments/price/?soreference="+SoReference;
 	
-		CommonMethod.res = MethodCall.GETRequest(url);
-		
-		CommonMethod.fetchedID = CommonMethod.res.path("price.company_code[0]").toString();
-		CommonMethod.fetchedID = CommonMethod.fetchedID.replaceAll("\\[", "").replaceAll("\\]", "");
-		System.out.println(CommonMethod.fetchedID);
-		data.setCellData(SheetName, "CompanyCode", rownumber, CommonMethod.fetchedID);
-		
-		CommonMethod.fetchedID = CommonMethod.res.path("price.description[0]").toString();
-		CommonMethod.fetchedID = CommonMethod.fetchedID.replaceAll("\\[", "").replaceAll("\\]", "");
-		System.out.println(CommonMethod.fetchedID);
-		data.setCellData(SheetName, "MaterialDescription", rownumber, CommonMethod.fetchedID);
-		
-		CommonMethod.fetchedID = CommonMethod.res.path("price.material[0]").toString();
-		CommonMethod.fetchedID = CommonMethod.fetchedID.replaceAll("\\[", "").replaceAll("\\]", "");
-		System.out.println(CommonMethod.fetchedID);
-		data.setCellData(SheetName, "MaterialCode", rownumber, CommonMethod.fetchedID);
-		
+		CommonMethod.res = MethodCall.GETRequest(url);		
 		Assertion.verifyStatusCode(CommonMethod.res, 403);
 		
 	}

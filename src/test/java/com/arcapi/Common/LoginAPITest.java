@@ -18,7 +18,6 @@ public class LoginAPITest extends BaseClass {
 			url= "/auth/login/";
 			CommonMethod.res = MethodCall.POSTRequestLogin(url);
 			CommonMethod.res.then().assertThat().body("token_type", equalTo("Bearer"));
-			Assertion.verifyStatusCode(CommonMethod.res, 200);
 			Assertion.verifyStatusMessage(CommonMethod.res, "HTTP/1.1 200 OK");
 			
 		} catch (Exception e) {

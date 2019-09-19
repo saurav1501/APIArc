@@ -12,7 +12,7 @@ import com.arc.driver.CommonMethod;
 public class AssetUpdateBuildingAPITest extends BaseClass {
 
 	@Test(groups="CheckUpdate")
-    @Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
+    @Parameters({"SheetName","ProjectTypeColumn","rownumber" })
 	public void AssetUpdateforNewAssetPUTAPI(String SheetName,String ProjectTypeColumn, int rownumber){
         
 		try {

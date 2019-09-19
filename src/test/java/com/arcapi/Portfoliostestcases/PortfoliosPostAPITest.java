@@ -13,11 +13,9 @@ import net.minidev.json.JSONObject;
 
 public class PortfoliosPostAPITest extends BaseClass {
 
-	@Test(groups="Portfolio")
-	@Parameters({ "SheetName","rownumber" })
+	@Test(groups="CheckPortfolio")
+	@Parameters({"SheetName","rownumber" })
 	public void PortfoliosPostAPI(String SheetName, int rownumber) {
-	
-		
 		try {
 			
 			JSONObject jsonAsMap = new JSONObject();
@@ -29,6 +27,7 @@ public class PortfoliosPostAPITest extends BaseClass {
 			jsonAsMap.put("organization_contact", "1234567890");
 			jsonAsMap.put("organization_country", "US");
 			jsonAsMap.put("organization_email", "usgbcarcapi1@gmail.com");
+			
 			url = "/portfolios/";
 			CommonMethod.res = MethodCall.POSTRequest(url, jsonAsMap);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);

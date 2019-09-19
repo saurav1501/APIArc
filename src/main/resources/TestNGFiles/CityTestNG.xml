@@ -2,111 +2,7 @@
 <suite name="CityCompletePositive">
 
 
- <test name="CompleteFlowTest-City-Leed">
-
-<parameter name="ProjectType" value="city" />
-<parameter name="ProjectTypeColumn" value="ProjectIDCityLeed" />
-<parameter name="SoReference" value="precertification review" />
-<parameter name="SoReferenceSR" value="review" />
-<parameter name="rownumber" value="2" />
-<parameter name="CreditColumn" value="CityLeedCredit" />
-<parameter name="CreditColumnNum" value="0" />
-
-<classes>
-<class name="com.arcapi.Citytestcases.LoginAPITest"></class>
-<class name="com.arcapi.Citytestcases.UserDetailAPITest"></class>
-<class name="com.arcapi.Citytestcases.UserAccessLevelSAPGetTest"></class>
-<class name="com.arcapi.Citytestcases.LOTokenAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetSearchAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetValidationInfoPOSTAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetSearchOwnerAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetOwnerOrgPOSTAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetListAPITest"></class>
-<class name="com.arcapi.Citytestcases.CreateAssetCityLeedAPITest"></class>
-<class name="com.arcapi.Citytestcases.SignAgreementRegistrationAPITest"></class>
-<class name="com.arcapi.Citytestcases.RegistrationPaymentPricingGetAPITest"></class>
-<class name="com.arcapi.Citytestcases.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Citytestcases.AddAssestTimelinePOSTAPITest"></class>
-<class name="com.arcapi.Citytestcases.PaymentOrderGetAPITest"></class>
-<class name="com.arcapi.Citytestcases.PaymentReceiptAPITest"></class>
-<class name="com.arcapi.Citytestcases.PaymentHistoryAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetDetailAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetUpdateCityLeedAPITest"></class>
-<class name="com.arcapi.Citytestcases.VerifyAssetDetailCityAPITest"></class>
-<class name="com.arcapi.Citytestcases.VerifyProjectRegisteredAssetListTest"></class>
-<class name="com.arcapi.Citytestcases.AssetDocumentAPITest"></class>
-<class name="com.arcapi.Citytestcases.DownloadDocumentsAPITest"></class>
-<class name="com.arcapi.Citytestcases.VerifyAgreementPresentAPITest"></class>
-<class name="com.arcapi.Citytestcases.FetchingAgreementDetailsAPITest"></class>
-<class name="com.arcapi.Citytestcases.VerifyAgreementDeleteAPITest"></class>
-<class name="com.arcapi.Citytestcases.CreditGetAPITest"></class>
-<class name="com.arcapi.Citytestcases.CreditUpdatePUTAPITest"></class>
-<class name="com.arcapi.Citytestcases.CreditAddTeamPOSTAPITest"></class> 
-<class name="com.arcapi.Citytestcases.MeasuresListAPITest"></class>
-<class name="com.arcapi.Citytestcases.MeasuresDetailAPITest"></class>
-<class name="com.arcapi.Citytestcases.MeasuresPostAPITest"></class>
-<class name="com.arcapi.Citytestcases.MeasuresUpdateAPITest"></class>
-<class name="com.arcapi.Citytestcases.MeasuresVersionListAPITest"></class>
-<class name="com.arcapi.Citytestcases.MeasuresVersionDetailAPITest"></class>
-<class name="com.arcapi.Citytestcases.MeasuresVersionPostAPITest"></class>
-<class name="com.arcapi.Citytestcases.MeterCreateAPICityCommTest"></class>
-<class name="com.arcapi.Citytestcases.CityCommConsumptionCreateAPITest"></class>
-<class name="com.arcapi.Citytestcases.AdditionalDataCreateAPICityCommTest"></class>
-<class name="com.arcapi.Citytestcases.AdditionalDataConsumptionCreateAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetTeamMemberRoleAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetTeamMemberListAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetTeamMemberAddPOSTAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetTeamMemberUpdateAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetTeamMemberRemoveAPITest"></class>
-<class name="com.arcapi.Citytestcases.DeleteAllAppsAPITest"></class>
-<class name="com.arcapi.Citytestcases.InstallAllAppsAfterDeleteAPITest"></class>
-<class name="com.arcapi.Citytestcases.VerifyAdminRemoveAPITest"></class>
-<class name="com.arcapi.Citytestcases.S3DocumentUploadPOSTAPITest"></class>
-<class name="com.arcapi.Citytestcases.S3DocumentListAPITest"></class>
-<class name="com.arcapi.Citytestcases.S3DocumentRemoveAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetTeamPermissionListAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetTeamPermissionPostAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetTeamPermissionPutAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetNotificationSubscriptionListTest"></class>
-<class name="com.arcapi.Citytestcases.AssetNotificationSubscriptionPostTest"></class>
-<class name="com.arcapi.Citytestcases.NotificationSubscriptionDetailGetTest"></class>
-<class name="com.arcapi.Citytestcases.NotificationSubscriptionDetailPutTest"></class>
-<class name="com.arcapi.Citytestcases.NotificationSubscriptionDetailDeleteTest"></class>
-<class name="com.arcapi.Citytestcases.AssetDataSnapshotAPITest"></class>
-<class name="com.arcapi.Citytestcases.RecomputePerformanceScoreGetTest"></class>
-<class name="com.arcapi.Citytestcases.ReviewCertificationPricingAPITest"></class>
-<class name="com.arcapi.Citytestcases.SubmitReviewPOSTAPITest"></class>
-<class name="com.arcapi.Citytestcases.SubmitReviewGetAPITest"></class>
-<class name="com.arcapi.Citytestcases.NotificationCreatePOSTAPITest"></class>
-<class name="com.arcapi.Citytestcases.NotificationGetAPITest"></class>
-<class name="com.arcapi.Citytestcases.NotificationDeleteAPITest"></class>
-<class name="com.arcapi.Citytestcases.FeedbackSubmitPostAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetDataExportAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetPerformanceScorePostAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetPerformanceScoreListAPITest"></class> 
-<class name="com.arcapi.Citytestcases.AnalysisDataSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Citytestcases.AnalysisDataGetAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetRequiredFieldsAPITest"></class>
-<class name="com.arcapi.Citytestcases.CountryStatesJSONAPITest"></class> 
-<class name="com.arcapi.Citytestcases.AssociatedCategoriesAPITest"></class> 
-<class name="com.arcapi.Citytestcases.RatingSystemListAPITest"></class>
-<class name="com.arcapi.Citytestcases.AppVersionDetailAPITest"></class> 
-<class name="com.arcapi.Citytestcases.FuelCategoryAPITest"></class>
-<class name="com.arcapi.Citytestcases.GetAllDocumentListAPITest"></class>
-<class name="com.arcapi.Citytestcases.PerformanceComparablesGetAPITest"></class>
-<class name="com.arcapi.Citytestcases.ScoreWeightsAPITest"></class>
-<class name="com.arcapi.Citytestcases.ThirdPartyListAppsAPITest"></class>
-<class name="com.arcapi.Citytestcases.UserDetailAPITest"></class>
-<class name="com.arcapi.Citytestcases.AvgPerformaceListGetTest"></class>
-<class name="com.arcapi.Citytestcases.AssetSnapshotKeysAPITest"></class>
-<class name="com.arcapi.Citytestcases.AssetSnapshotDownloadAPITest"></class>
-
-
-</classes>
-</test>
- -->
-
- <test name="CompleteFlowTest-City-Other">
+<test name="CompleteFlowTest-City-Other">
 
 <parameter name="ProjectType" value="city" />
 <parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
@@ -219,7 +115,12 @@
 <parameter name="CreditColumnNum" value="1" />
 
 <classes>
-
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Common.CityCom.CreateNewProjectAPITest"></class>
+<class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
+<class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>
+<class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
 </classes>
 </test>
 
@@ -228,6 +129,7 @@
 </suite> 
   
 
+  
   
 
     

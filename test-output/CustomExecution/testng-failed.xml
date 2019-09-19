@@ -4,43 +4,85 @@
   <parameter name="environment" value="stg"/>
   <parameter name="SoReference" value="performance score"/>
   <parameter name="ratings" value="none"/>
-  <parameter name="ProjectType" value="building"/>
+  <parameter name="ProjectType" value="parksmart"/>
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
   <parameter name="SheetName" value="STG"/>
   <parameter name="SoReferenceSR" value="performance score"/>
-  <parameter name="CustomSheetName" value="Emission"/>
-  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
-  <test name="CompleteFlowTest-Building-None">
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuild1"/>
+  <test name="CompleteFlowTest-Parksmart">
     <parameter name="SoReference" value="performance score"/>
-    <parameter name="ratings" value="none"/>
-    <parameter name="ProjectType" value="building"/>
+    <parameter name="ProjectType" value="parksmart"/>
     <parameter name="rownumber" value="2"/>
     <parameter name="SoReferenceSR" value="performance score"/>
-    <parameter name="CustomSheetName" value="Emission"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuild1"/>
     <classes>
       <class name="com.arcapi.Common.LoginAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
-      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
-      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest"/>
-      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest"/>
-      <class name="com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest"/>
-      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionTest"/>
-      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest"/>
-      <class name="com.arcapi.Buildingtestcases.MetersListEmissionTest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest"/>
-      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest"/>
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest"/>
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest"/>
-      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest"/>
-      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest"/>
+      <class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartManualReqTest"/>
+      <class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest"/>
+      <class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitManualTest"/>
+      <class name="com.arcapi.Parksmarttestcases.AddAssestTimelineManualTest"/>
     </classes>
-  </test> <!-- CompleteFlowTest-Building-None -->
+  </test> <!-- CompleteFlowTest-Parksmart -->
+  <test name="CompleteFlowTest-Parksmart(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="parksmart"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuild1"/>
+    <classes>
+      <class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest -->
+      <class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartManualReqTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.CreateAssetParksmartManualReqTest -->
+      <class name="com.arcapi.Parksmarttestcases.AddAssestTimelineManualTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="AddAssestTimeline" invocation-numbers="0"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.AddAssestTimelineManualTest -->
+      <class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitManualTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Parksmarttestcases.PaymentOrderSubmitManualTest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Parksmart(failed) -->
 </suite> <!-- Failed suite [CustomExecution] -->

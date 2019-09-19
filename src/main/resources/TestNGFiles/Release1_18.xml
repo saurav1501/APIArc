@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="CustomExecution">
+<suite name="CustomExecutionArcRelease1_18">
 
 <test name="CompleteFlowTest-Building-None">
 <parameter name="ProjectType" value="building" />

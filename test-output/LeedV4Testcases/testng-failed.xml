@@ -1,22 +1,436 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [LeedV4Testcases]">
-  <parameter name="environment" value="stg"/>
-  <parameter name="ratings" value="none"/>
-  <parameter name="LOProjectTypeColumn" value="LeedIDEB"/>
-  <parameter name="LOSheetName" value="LEEDONLINE"/>
-  <parameter name="Country" value="IN"/>
-  <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
-  <parameter name="SheetName" value="STG"/>
+  <parameter name="Country" value="IN"/>
+  <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
   <test name="V4.1-1">
-    <parameter name="LOProjectTypeColumn" value="LeedIDEB"/>
-    <parameter name="LOSheetName" value="LEEDONLINE"/>
     <parameter name="rownumber" value="2"/>
     <parameter name="Country" value="IN"/>
+    <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
     <classes>
       <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"/>
       <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest"/>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest"/>
+      <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"/>
+      <class name="com.arcapi.Common.AssetDocumentAPITest"/>
+      <class name="com.arcapi.Common.DownloadDocumentsAPITest"/>
+      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"/>
+      <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.MetersAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest"/>
+      <class name="com.arcapi.Common.S3DocumentUploadPOSTAPITest"/>
+      <class name="com.arcapi.Common.S3DocumentListAPITest"/>
+      <class name="com.arcapi.Common.S3DocumentRemoveAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest"/>
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest"/>
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest"/>
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest"/>
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest"/>
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest"/>
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberRoleAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberListAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberAddPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberRemoveAPITest"/>
+      <class name="com.arcapi.Common.DeleteAllAppsAPITest"/>
+      <class name="com.arcapi.Common.InstallAllAppsAfterDeleteAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamPermissionListAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamPermissionPostAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamPermissionPutAPITest"/>
+      <class name="com.arcapi.Common.VerifyAdminRemoveAPITest"/>
+      <class name="com.arcapi.Common.AssetArcProjectAdminAddPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionListTest"/>
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionPostTest"/>
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailGetTest"/>
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailPutTest"/>
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailDeleteTest"/>
+      <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"/>
+      <class name="com.arcapi.Common.NotificationCreatePOSTAPITest"/>
+      <class name="com.arcapi.Common.NotificationGetAPITest"/>
+      <class name="com.arcapi.Common.NotificationDeleteAPITest"/>
+      <class name="com.arcapi.Common.FeedbackSubmitPostAPITest"/>
+      <class name="com.arcapi.Common.TransitSurveyExportAPITest"/>
+      <class name="com.arcapi.Common.EnvironmentSurveyExportAPITest"/>
+      <class name="com.arcapi.Common.AssetDataExportAPITest"/>
+      <class name="com.arcapi.Common.AssetPerformanceScoreListAPITest"/>
+      <class name="com.arcapi.Common.AnalysisDataSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AnalysisDataGetAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CO2GetTest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgGetTest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest"/>
+      <class name="com.arcapi.Buildingtestcases.VOCGetTest"/>
+      <class name="com.arcapi.Buildingtestcases.WaterGetTest"/>
+      <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest"/>
     </classes>
   </test> <!-- V4.1-1 -->
+  <test name="V4.1-1(failed)">
+    <parameter name="rownumber" value="2"/>
+    <parameter name="Country" value="IN"/>
+    <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
+    <classes>
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest">
+        <methods>
+          <include name="MeterCommentPostGroup2API"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest -->
+      <class name="com.arcapi.Leedv4Testcases.MetersAPITest">
+        <methods>
+          <include name="MetersAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MetersAPITest -->
+      <class name="com.arcapi.Common.AssetDataExportAPITest">
+        <methods>
+          <include name="AssetDataExportAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetDataExportAPITest -->
+      <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="ExcelTemplateMetersAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest -->
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionListTest">
+        <methods>
+          <include name="AssetNotificationSubscriptionList"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetNotificationSubscriptionListTest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest">
+        <methods>
+          <include name="VerifyActivityEnergyDataInputAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest -->
+      <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest">
+        <methods>
+          <include name="GhgCalcGet"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgCalcGetTest -->
+      <class name="com.arcapi.Common.S3DocumentListAPITest">
+        <methods>
+          <include name="S3DocumentListAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.S3DocumentListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest">
+        <methods>
+          <include name="VerifyActivityHEMeterDataInputAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CO2GetTest">
+        <methods>
+          <include name="CO2GetTestAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CO2GetTest -->
+      <class name="com.arcapi.Common.AssetTeamMemberListAPITest">
+        <methods>
+          <include name="AssetTeamMemberListAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamMemberListAPITest -->
+      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest">
+        <methods>
+          <include name="FetchingAgreementDetailsAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Common.NotificationGetAPITest">
+        <methods>
+          <include name="NotificationGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationGetAPITest -->
+      <class name="com.arcapi.Common.AnalysisDataGetAPITest">
+        <methods>
+          <include name="AnalysisDataGetAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AnalysisDataGetAPITest -->
+      <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest">
+        <methods>
+          <include name="VerifyAgreementDeleteAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.VerifyAgreementDeleteAPITest -->
+      <class name="com.arcapi.Common.AssetTeamPermissionPutAPITest">
+        <methods>
+          <include name="AssetTeamPermissionPutAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamPermissionPutAPITest -->
+      <class name="com.arcapi.Common.NotificationDeleteAPITest">
+        <methods>
+          <include name="NotificationDeleteAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest">
+        <methods>
+          <include name="MeterCommentReplyGroup1API"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest -->
+      <class name="com.arcapi.Common.S3DocumentRemoveAPITest">
+        <methods>
+          <include name="S3DocumentRemoveAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.S3DocumentRemoveAPITest -->
+      <class name="com.arcapi.Common.VerifyAdminRemoveAPITest">
+        <methods>
+          <include name="VerifyAdminRemoveAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.VerifyAdminRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest">
+        <methods>
+          <include name="LOAuthenticateAPI"/>
+          <include name="getSuiteName"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOAuthenticateAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="SignAgreementRegistrationAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Common.AssetArcProjectAdminAddPOSTAPITest">
+        <methods>
+          <include name="AssetTeamMemberAddPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetArcProjectAdminAddPOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest">
+        <methods>
+          <include name="LOProjectRegistration"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectRegistrationEBTest -->
+      <class name="com.arcapi.Common.AssetTeamMemberRoleAPITest">
+        <methods>
+          <include name="AssetTeamMemberRoleAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamMemberRoleAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest">
+        <methods>
+          <include name="HumanExperienceConsumptionDeleteAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest -->
+      <class name="com.arcapi.Common.S3DocumentUploadPOSTAPITest">
+        <methods>
+          <include name="S3DocumentUploadPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.S3DocumentUploadPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest">
+        <methods>
+          <include name="VerifyExcelTemplateConsumptionAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest -->
+      <class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest">
+        <methods>
+          <include name="ExcelUploadTemplatePOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest -->
+      <class name="com.arcapi.Common.AnalysisDataSubmitPOSTAPITest">
+        <methods>
+          <include name="AnalysisDataSubmitPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AnalysisDataSubmitPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCGetTest">
+        <methods>
+          <include name="VOCGet"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCGetTest -->
+      <class name="com.arcapi.Common.DownloadDocumentsAPITest">
+        <methods>
+          <include name="DownloadDocumentsAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.DownloadDocumentsAPITest -->
+      <class name="com.arcapi.Common.FeedbackSubmitPostAPITest">
+        <methods>
+          <include name="FeedbackSubmitPostAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.FeedbackSubmitPostAPITest -->
+      <class name="com.arcapi.Common.AssetTeamMemberRemoveAPITest">
+        <methods>
+          <include name="AssetTeamMemberRemoveAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamMemberRemoveAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest">
+        <methods>
+          <include name="HumanExperienceConsumptionCreateAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest -->
+      <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest">
+        <methods>
+          <include name="VerifyProjectRegisteredAssetList"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.VerifyProjectRegisteredAssetListTest -->
+      <class name="com.arcapi.Common.EnvironmentSurveyExportAPITest">
+        <methods>
+          <include name="EnvironmentSurveyExportAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.EnvironmentSurveyExportAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest">
+        <methods>
+          <include name="HumanExperienceConsumptionUpdateAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Buildingtestcases.GhgGetTest">
+        <methods>
+          <include name="GhgGetTestAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgGetTest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest">
+        <methods>
+          <include name="MeterCommentPostGroup3API"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest -->
+      <class name="com.arcapi.Common.NotificationCreatePOSTAPITest">
+        <methods>
+          <include name="NotificationCreatePOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationCreatePOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest">
+        <methods>
+          <include name="VerifyWasteDataExcelAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest -->
+      <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest">
+        <methods>
+          <include name="RecomputePerformanceScoreGet"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.RecomputePerformanceScoreGetTest -->
+      <class name="com.arcapi.Common.TransitSurveyExportAPITest">
+        <methods>
+          <include name="TransitSurveyExportAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.TransitSurveyExportAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest">
+        <methods>
+          <include name="HumanExperienceMeterUpdateAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest -->
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailDeleteTest">
+        <methods>
+          <include name="NotificationSubscriptionDetailDelete"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationSubscriptionDetailDeleteTest -->
+      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest">
+        <methods>
+          <include name="AssetUpdateforNewAssetPUTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest -->
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailGetTest">
+        <methods>
+          <include name="NotificationSubscriptionDetail"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationSubscriptionDetailGetTest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest">
+        <methods>
+          <include name="MeterCommentDeleteGroup2API"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest -->
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailPutTest">
+        <methods>
+          <include name="NotificationSubscriptionDetail"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.NotificationSubscriptionDetailPutTest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest">
+        <methods>
+          <include name="MeterCommentReplyGroup2API"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest -->
+      <class name="com.arcapi.Common.AssetTeamPermissionPostAPITest">
+        <methods>
+          <include name="AssetTeamPermissionPostAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamPermissionPostAPITest -->
+      <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest">
+        <methods>
+          <include name="AssetTeamMemberUpdateAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamMemberUpdateAPITest -->
+      <class name="com.arcapi.Common.AssetDocumentAPITest">
+        <methods>
+          <include name="AssetDocumentAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetDocumentAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest">
+        <methods>
+          <include name="VerifyManualConsumptionAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest -->
+      <class name="com.arcapi.Common.DeleteAllAppsAPITest">
+        <methods>
+          <include name="DeleteAllAppsAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.DeleteAllAppsAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="LoginAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest">
+        <methods>
+          <include name="VerifyActivityWasteDataInputAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest">
+        <methods>
+          <include name="VerifyActivityWaterDataInputAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest -->
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionPostTest">
+        <methods>
+          <include name="AssetNotificationSubscriptionPost"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetNotificationSubscriptionPostTest -->
+      <class name="com.arcapi.Common.AssetTeamMemberAddPOSTAPITest">
+        <methods>
+          <include name="AssetTeamMemberAddPOSTAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamMemberAddPOSTAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest">
+        <methods>
+          <include name="MeterCommentReplyGroup3API"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest -->
+      <class name="com.arcapi.Common.AssetPerformanceScoreListAPITest">
+        <methods>
+          <include name="AssetPerformanceScoreListAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetPerformanceScoreListAPITest -->
+      <class name="com.arcapi.Common.AssetTeamPermissionListAPITest">
+        <methods>
+          <include name="AssetTeamPermissionListAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetTeamPermissionListAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest">
+        <methods>
+          <include name="LOProjectSyncAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.LOProjectSyncAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest">
+        <methods>
+          <include name="MeterCommentPostGroup1API"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest -->
+      <class name="com.arcapi.Buildingtestcases.WaterGetTest">
+        <methods>
+          <include name="WaterGet"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.WaterGetTest -->
+      <class name="com.arcapi.Common.InstallAllAppsAfterDeleteAPITest">
+        <methods>
+          <include name="InstallAllAppsAfterDeleteAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.InstallAllAppsAfterDeleteAPITest -->
+      <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest">
+        <methods>
+          <include name="VerifyManualConsumptionAfterUpdateAPI"/>
+        </methods>
+      </class> <!-- com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest -->
+    </classes>
+  </test> <!-- V4.1-1(failed) -->
 </suite> <!-- Failed suite [LeedV4Testcases] -->

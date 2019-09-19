@@ -4,17 +4,14 @@ import static com.jayway.restassured.RestAssured.given;
 
 import java.io.IOException;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 
@@ -23,21 +20,9 @@ public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 	public void CreateAssetPOSTAPI(String SheetName, String ProjectType, String ProjectTypeColumn, int rownumber,
 			String Country) throws IOException {
 
-		// CommonMethod.ExtentReportConfig();
-
-		CommonMethod.GeneratingAuthCode(SheetName, rownumber);
-
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Create New Building Test  " + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Add asset")
-				.assignCategory("CheckAsset");
-
 		String State = null;
 		String Unit = null;
-		//String SpaceType = null;
-		//String OwnerType = null;
 		String ZipCode = null;
 
 		if (Country.equals("IN"))
@@ -49,13 +34,8 @@ public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 
 			State = (StateOptions[new Random().nextInt(StateOptions.length)]);
 
-			//data.setCellData(SheetName, "Country", rownumber, Country);
-
-			//data.setCellData(SheetName, "State", rownumber, State);
-
+		
 			ZipCode = "122018";
-
-			//data.setCellData(SheetName, "ZipCode", rownumber, ZipCode);
 		}
 
 		else if (Country.equals("US"))
@@ -68,13 +48,8 @@ public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 
 			State = (StateOptions[new Random().nextInt(StateOptions.length)]);
 
-			//data.setCellData(SheetName, "Country", rownumber, Country);
-
-			//data.setCellData(SheetName, "State", rownumber, State);
-
 			ZipCode = "20037";
 
-			//data.setCellData(SheetName, "ZipCode", rownumber, ZipCode);
 		}
 
 		else if (Country.equals("CN"))
@@ -86,20 +61,13 @@ public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 
 			State = (StateOptions[new Random().nextInt(StateOptions.length)]);
 
-			//data.setCellData(SheetName, "Country", rownumber, Country);
-
-			//data.setCellData(SheetName, "State", rownumber, State);
 
 			ZipCode = "518000";
-
-			//data.setCellData(SheetName, "ZipCode", rownumber, ZipCode);
 		}
 
 		String[] UnitOptions = { "SI", "IP" };
 
 		Unit = (UnitOptions[new Random().nextInt(UnitOptions.length)]);
-
-		//data.setCellData(SheetName, "Unit", rownumber, Unit);
 
 		String[] SpaceTypeOptions = { "Airport: Control Tower",
 			    "Airport: Distribution Center",
@@ -180,10 +148,6 @@ public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 			    "Warehouse: General",
 			    "Other" };
 
-		//SpaceType = (SpaceTypeOptions[new Random().nextInt(SpaceTypeOptions.length)]);
-
-		//data.setCellData(SheetName, "SpaceType", rownumber, SpaceType);
-
 		String[] OwnerTypeOptions = { "Business Improvement District",
 			    "Community Development Corporation or Non-profit Developer",
 			    "Corporate: Privately Held",
@@ -217,9 +181,6 @@ public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 			    "Non-Profit (that do not fit into other categories)",
 			    "Religious" };
 
-		//OwnerType = (OwnerTypeOptions[new Random().nextInt(OwnerTypeOptions.length)]);
-
-		//data.setCellData(SheetName, "OwnerType", rownumber, OwnerType);
 
 		String ProjectName = "MachineTestProject-Building-Other-" + Country;
 
@@ -241,25 +202,8 @@ public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
 
 		CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
-		CommonMethod.res.then().assertThat().statusCode(201);
+		Assertion.verifyStatusCode(CommonMethod.res , 201);
 	
 	}
 		
-	}
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		extent.endTest(CommonMethod.test);
-		extent.flush();
-
-	}
-
-}
+}}

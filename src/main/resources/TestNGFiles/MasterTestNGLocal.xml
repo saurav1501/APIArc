@@ -6,38 +6,28 @@
 <parameter name="PaymentType" value="CreditCardPayment" />
 <parameter name="ratings" value="none"></parameter>
 
-
-	<suite-files>  
+	<suite-files>
 	
-	<suite-file path="CrossRatingSystemTestng.xml"></suite-file>
-		<!-- <suite-file path="Buildingtestng.xml"></suite-file> -->
-<!-- 		<suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> -->
+   <suite-file path="CustomExecutionManualTestNG.xml"></suite-file> 
+ 	<suite-file path="Buildingtestng.xml"></suite-file>  
+  <suite-file path="Portfoliostestng.xml"></suite-file>  
+		 <suite-file path="InterRelatedFieldValidationTestng.xml"></suite-file> 
+		   <suite-file path="LEEDv4Building.xml"></suite-file> 
+	 <suite-file path="LEEDv4Communities.xml"></suite-file>
+  	<suite-file path="LEEDv4Cities.xml"></suite-file>
+		   <suite-file path="Parksmarttestng.xml"></suite-file> 
+		  <suite-file path="CrossRatingSystemTestng.xml"></suite-file>
+ 	 <suite-file path="AboveGroundTest.xml"></suite-file> 
+ 		<suite-file path="TransitBelow.xml"></suite-file> 
+		<suite-file path="CityTestNG.xml"></suite-file> 
+		 <suite-file path="CommunityTestNG.xml"></suite-file>   
+   		 <suite-file path="Release1_18.xml"></suite-file>   
+  		<suite-file path="EmissionFactorRelease1_17.xml"></suite-file>  
+  		<suite-file path="ScenarioBasedTestingTestng.xml"></suite-file>	
+  		<suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
+		<suite-file path="TrailFlowCompleteTestNG.xml"></suite-file>  
+		<suite-file path="CustomExecutionManualTestNG.xml"></suite-file> 
+	 <suite-file path="ScoreScenariosTestNG.xml"></suite-file>  
 		
-	<!-- <suite-file path="TransitTestNG.xml"></suite-file> 
-		<suite-file path="Buildingtestng.xml"></suite-file> 
-			<suite-file path="CityTestNG.xml"></suite-file> 
-			 <suite-file path="CommunityTestNG.xml"></suite-file>   
- 
-		 
-
-    <suite-file path="Release1_18.xml"></suite-file>   
-     
-  <suite-file path="EmissionFactorRelease1_17.xml"></suite-file>  
- 
- 	
-
-	 <suite-file path="Parksmarttestng.xml"></suite-file>
-		<suite-file path="CrossRatingSystemTestng.xml"></suite-file>
-		<suite-file path="InterRelatedFieldValidationTestng.xml"></suite-file>
-		<suite-file path="ScenarioBasedTestingTestng.xml"></suite-file> 
-	    <suite-file path="CompleteDataValidationTestng.xml"></suite-file>
-		<suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
-		<suite-file path="DataInputScenariosTestNG.xml"></suite-file> 
-	    <suite-file path="TrailFlowCompleteTestNG.xml"></suite-file>  
-		<suite-file path="ScoreScenariosTestNG.xml"></suite-file>  
-		<suite-file path="LeedV4TestNG.xml"></suite-file> 
-		<suite-file path="Portfoliostestng.xml"></suite-file>  
-		
-		<suite-file path="CustomExecutionManualTestNG.xml"></suite-file> -->
-	</suite-files>
+	 </suite-files>
 </suite> 

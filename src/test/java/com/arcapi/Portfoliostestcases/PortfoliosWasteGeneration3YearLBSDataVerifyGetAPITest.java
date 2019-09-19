@@ -1,36 +1,26 @@
 package com.arcapi.Portfoliostestcases;
-import static com.jayway.restassured.RestAssured.given;
-
 import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 
 
 public class PortfoliosWasteGeneration3YearLBSDataVerifyGetAPITest extends BaseClass {
 	
-	@Test
+	@Test(groups="CheckPortfolio")
 	public void PortfoliosWasteGeneration3YearLBSDataVerifyGetAP()throws IOException {
 	
-		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey)
-				.header("Authorization", header).spec(reqSpec).when()
-				.get("/portfolios/ID:" + data.getCellData(sheetName, "PortfolioID", rowNumTwo) + "/analytics/waste/?period=3").then()
-				.extract().response();
+		  url = "/portfolios/ID:" + data.getCellData(sheetName, "PortfolioID", rowNumTwo) + "/analytics/waste/?period=3";
 		
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Portfolios Waste Generation 36 Months Gal Data GetAPITest API Test" + CommonMethod.getLabel(CommonMethod.responsetime),
-						"Verifies Portfolios")
-				.assignCategory("Portfolios");
+		  CommonMethod.res = MethodCall.GETRequest(url);
 		
-		  System.out.println(CommonMethod.res.asString());
-	  
+		  Assertion.verifyStatusCode(CommonMethod.res, 200);
 		  List<Object> responseBody = CommonMethod.res.path("generated");
 		  List<Object> responseBodystart_date = CommonMethod.res.path("start_date");
 		  List<Object> responseBodyend_date = CommonMethod.res.path("end_date");
@@ -71,9 +61,6 @@ public class PortfoliosWasteGeneration3YearLBSDataVerifyGetAPITest extends BaseC
 		    }
 		 CommonMethod.testlog("Pass", "Verified successfully" + "<br>" +responseBody.toString());
 			 
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		CommonMethod.res.then().assertThat().statusCode(200);
-
+		
 }
 }

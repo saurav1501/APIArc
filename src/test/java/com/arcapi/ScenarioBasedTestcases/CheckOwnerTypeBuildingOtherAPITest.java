@@ -4,40 +4,24 @@ import static com.jayway.restassured.RestAssured.given;
 
 import java.io.IOException;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class CheckOwnerTypeBuildingOtherAPITest extends BaseClass {
 
-	@Test
+	@Test(groups="CheckOwnerType")
 	@Parameters({ "SheetName", "ProjectType", "ProjectTypeColumn", "rownumber", "Country" })
 	public void CreateAssetPOSTAPI(String SheetName, String ProjectType, String ProjectTypeColumn, int rownumber,
 			String Country) throws IOException {
 
-		// CommonMethod.ExtentReportConfig();
-
-		CommonMethod.GeneratingAuthCode(SheetName, rownumber);
-
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		
-		CommonMethod.test = CommonMethod.extent
-				.startTest("Create New Building Test  ",
-						"Verifies Add asset")
-				.assignCategory("CheckAsset");
-
 		String State = null;
 		String Unit = null;
 		String SpaceType = null;
-		//String OwnerType = null;
 		String ZipCode = null;
 
 		if (Country.equals("IN"))
@@ -217,13 +201,7 @@ public class CheckOwnerTypeBuildingOtherAPITest extends BaseClass {
 			    "Non-Profit (that do not fit into other categories)",
 			    "Religious" };
 
-		//OwnerType = (OwnerTypeOptions[new Random().nextInt(OwnerTypeOptions.length)]);
-
-		
-
 		String ProjectName = "MachineTestProject-Building-Other-" + Country;
-
-		
 		
 		for (String owner  : OwnerTypeOptions) {
 
@@ -250,21 +228,6 @@ public class CheckOwnerTypeBuildingOtherAPITest extends BaseClass {
 	}
 		
 		
-	}
-	@AfterMethod
-	public void teardown(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-		} else {
-			CommonMethod.test.log(LogStatus.PASS, "Test passed");
-		}
-
-		extent.endTest(CommonMethod.test);
-		extent.flush();
-
 	}
 
 }
