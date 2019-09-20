@@ -27,7 +27,9 @@
 <class name="com.arcapi.Common.AssetSearchAPITest"></class>  
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
 <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest"></class>
-<class name="com.arcapi.Common.AssetSearchOwnerAPITest"></class>
+<class name="com.arcapi.Common.VerifyAgreementPresentAPITest"></class>
+<class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
+<class name="com.arcapi.Transittestcases.VerifyAgreementDeleteAPITest"></class> 
 <class name="com.arcapi.Common.AssetOwnerOrgPOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetListAPITest"></class>  
 <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest"></class>

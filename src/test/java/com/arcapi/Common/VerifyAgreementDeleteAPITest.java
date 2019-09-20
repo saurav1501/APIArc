@@ -26,7 +26,7 @@ public class VerifyAgreementDeleteAPITest extends BaseClass {
 					+ arr1[3] + "&FileId="
 					+ arr1[2];
 			CommonMethod.res= MethodCall.DELETERequest(url);
-			Assertion.verifyStatusCode(CommonMethod.res, 403);
+			Assertion.verifyStatusCode(CommonMethod.res, 404);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

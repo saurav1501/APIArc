@@ -119,7 +119,6 @@ public class BaseClass {
 
 			prop.load(file1);
 			baseURL = prop.getProperty("env");
-
 			sheetName= prop.getProperty("sheetName");
 			username=data.getCellData(sheetName, "NormalUserName", rowNumTwo);
 			password=data.getCellData(sheetName, "NormalPassword", rowNumTwo);
