@@ -24,6 +24,14 @@
       <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
       <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
       <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetDetailAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest"/>
       <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"/>
       <class name="com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest"/>
       <class name="com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest"/>
@@ -39,16 +47,6 @@
     <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
     <classes>
-      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
       <class name="com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest">
         <methods>
           <include name="teardown"/>
@@ -59,7 +57,7 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest -->
-      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -68,8 +66,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
-      <class name="com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest">
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -78,8 +76,8 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest">
+      </class> <!-- com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -88,7 +86,7 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VOCMeterCreateAPITest -->
+      </class> <!-- com.arcapi.Buildingtestcases.CO2MeterCreateAPITest -->
       <class name="com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest">
         <methods>
           <include name="teardown"/>
@@ -99,6 +97,26 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Buildingtestcases.VOCConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Common.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetDetailAPITest -->
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest -->
       <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
         <methods>
           <include name="teardown"/>
@@ -109,17 +127,17 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
-      <class name="com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest">
+      <class name="com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
           <include name="start"/>
           <include name="getSuiteName"/>
+          <include name="CO2ConsumptionCreateAPI" invocation-numbers="0"/>
           <include name="setBaseUri"/>
-          <include name="VOCMeterDeleteAPI" invocation-numbers="0"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest -->
+      </class> <!-- com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest -->
       <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
         <methods>
           <include name="teardown"/>
@@ -130,6 +148,68 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCMeterCreateAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest">
+        <methods>
+          <include name="CO2ConsumptionUpdateAPI" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCMeterDeleteAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="CO2MeterDeleteAPI" invocation-numbers="0"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCConsumptionDeleteAPITest -->
       <class name="com.arcapi.Common.LoginAPITest">
         <methods>
           <include name="teardown"/>
@@ -140,6 +220,17 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="CO2ConsumptionDeleteAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest -->
     </classes>
   </test> <!-- CompleteFlowTest-Building-Other(failed) -->
 </suite> <!-- Failed suite [DataInputScenarios] -->

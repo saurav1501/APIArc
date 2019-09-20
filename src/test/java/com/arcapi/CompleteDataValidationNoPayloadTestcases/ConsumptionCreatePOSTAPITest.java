@@ -17,7 +17,7 @@ public class ConsumptionCreatePOSTAPITest extends BaseClass {
 
 		try {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-					+ data.getCellData(SheetName, "MeterID", rownumber) + "/consumption/";
+					+ data.getCellData(SheetName,"PK", rownumber) + "/consumption/";
 			
 			CommonMethod.res = MethodCall.PUTRequest(url);
 			Assertion.verifyStatusCode(CommonMethod.res, 400);

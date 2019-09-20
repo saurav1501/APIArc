@@ -19,8 +19,8 @@ public class PortfoliosAssetDetailGetAPITest extends BaseClass {
 					+ "/assets/" + data.getCellData(SheetName, "PortfolioPK", rownumber) + "/";
 
 			CommonMethod.res = MethodCall.GETRequest(url);
-			
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

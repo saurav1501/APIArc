@@ -1,12 +1,13 @@
 package com.arcapi.Buildingtestcases;
 
-import static com.jayway.restassured.RestAssured.given;
-
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.Utill.MeterData;
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 
@@ -15,38 +16,23 @@ import com.arc.driver.CommonMethod;
 public class WaterCreate60MonthMeterDataPostTest extends BaseClass {
 
 	@Test(dataProvider="MeterTestData")
-	
 	public void WaterCreate60MonthMeterDataPost(String end_date,String reading,String start_date) throws IOException {
-		
-		test.assignCategory("CheckConsumption");
-		
+			
 		String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone", rowNumTwo);
 		String meterID =  data.getCellData(sheetName, "WaterMeterID", rowNumTwo);
 				
 		MeterData meterData= new MeterData();
-		
 		meterData.setEnd_date(end_date);
 		meterData.setStart_date(start_date);
 		meterData.setReading(reading);
 
-		CommonMethod.res = given().log().all().headers(headerMap).header("Authorization", header).spec(reqSpec)
-				.body(meterData).when().post("/assets/LEED:" +projectType+ "/meters/ID:"
-						+meterID+"/consumption/")
-				.then().extract().response();
-
-		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);			
-
-		CommonMethod.testlog("Pass", "Authorization Token generated" + "<br>" + header);
-
-		log.info(CommonMethod.res.asString());
-		
+		url = "/assets/LEED:" +projectType+ "/meters/ID:"
+				+meterID+"/consumption/";
+		CommonMethod.res = MethodCall.POSTRequest(url, meterData);
+	
 		CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
 		data.setCellData(sheetName, "PK", rowNumTwo, CommonMethod.fetchedID);
-		
-		CommonMethod.res.then().assertThat().statusCode(201);
-		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		
+		Assertion.verifyStatusCode(CommonMethod.res, 201);	
 
 		
 	}

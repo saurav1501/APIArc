@@ -8,11 +8,13 @@
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="none"></parameter>
+
 <classes>
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.TrailFlowtestcasesComplete.TrialCreateAssetPOSTAPIV3APITest"></class>
 <class name="com.arcapi.TrailFlowtestcasesComplete.AssetUpdateBuildingTrailActAPITest"></class>
 <class name="com.arcapi.TrailFlowtestcasesComplete.VerifyAssetDetailAPITest"></class>
+<class name="com.arcapi.Common.AssetDetailAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CO2GetTest"></class>
 <class name="com.arcapi.Buildingtestcases.GhgGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest"></class>
@@ -47,7 +49,6 @@
 <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest"></class>
 <class name="com.arcapi.Common.Neg.ReviewCertificationPricingAPITest"></class>
 <class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class>
-<class name="com.arcapi.Common.Neg.SubmitReviewGetAPITest"></class> 
 <class name="com.arcapi.TrailFlowtestcasesComplete.SyncSAPTrailProjectAPITest"></class>
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>

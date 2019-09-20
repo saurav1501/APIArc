@@ -16,11 +16,15 @@ public class PortfoliosAssetDetailDELETEAPITest extends BaseClass {
 	@Parameters({ "SheetName","rownumber" })
 	public void PortfoliosAssetDetailDELETEAPI(String SheetName, int rownumber) throws IOException {
 
-		url = "/portfolios/ID:" + data.getCellData(SheetName, "PortfolioID", rownumber)
-		+ "/assets/" + data.getCellData(SheetName, "PortfolioPK", rownumber) + "/";
-		
-		CommonMethod.res = MethodCall.DELETERequest(url);
-		Assertion.verifyStatusCode(	CommonMethod.res, 200);
+		try {
+			url = "/portfolios/ID:" + data.getCellData(SheetName, "PortfolioID", rownumber)
+			+ "/assets/" + data.getCellData(SheetName, "PortfolioPK", rownumber) + "/";
+			
+			CommonMethod.res = MethodCall.DELETERequest(url);
+			Assertion.verifyStatusCode(	CommonMethod.res, 200);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		
 	}

@@ -20,10 +20,11 @@ public class PortfoliosTeamsPostAPITest extends BaseClass {
 		
 		try {
 			JSONObject jsonAsMap = new JSONObject();
-			jsonAsMap.put("username", "test-02@gmail.com");
+			jsonAsMap.put("username", "usgbcarcapi2@gmail.com");
 			jsonAsMap.put("permission", "can_edit");
 
 			url = "/portfolios/ID:" + data.getCellData(SheetName, "PortfolioID", rownumber) + "/teams/";
+			
 			CommonMethod.res = MethodCall.POSTRequest(url, jsonAsMap);
 
 			Assertion.verifyStatusCode(CommonMethod.res, 201);

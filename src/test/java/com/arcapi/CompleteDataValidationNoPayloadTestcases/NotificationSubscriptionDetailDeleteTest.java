@@ -20,7 +20,7 @@ public class NotificationSubscriptionDetailDeleteTest extends BaseClass {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/subscriptions/";
 
 			CommonMethod.res = MethodCall.DELETERequest(url);
-			Assertion.verifyStatusCode(CommonMethod.res, 400);
+			Assertion.verifyStatusCode(CommonMethod.res, 404);
 			CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
 		} catch (Exception e) {
 			e.printStackTrace();

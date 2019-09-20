@@ -1,14 +1,14 @@
 package com.arcapi.Buildingtestcases;
 
 
-import static com.jayway.restassured.RestAssured.given;
-
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.Utill.MeterData;
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 
@@ -18,30 +18,17 @@ public class TVOCCreate5YearDataPostTest extends BaseClass {
 		public void TVOCCreate5YearDataPost(String start_date,String end_date, String reading) throws IOException {
 
 			String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);
-			String meterID =  data.getCellData(sheetName, "MeterID", rowNumTwo);
+			String meterID =  data.getCellData("DataInput", "VOCMeterID", rowNumTwo);
 			  	
 			MeterData meterData = new MeterData();
 			meterData.setStart_date(start_date);
 			meterData.setEnd_date(end_date);
 			meterData.setReading(reading);
 			
-			CommonMethod.res = given().log().all()
-					.headers(headerMap)
-					.header("Authorization", header).spec(reqSpec)
-					.body(meterData).when()
-				    .post("/assets/LEED:"+projectType +"/meters/ID:"+meterID+"/consumption/").then()
-					.extract().response();
-					
-			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
-
-			System.out.println(CommonMethod.responsetime);
+			url = "/assets/LEED:"+projectType +"/meters/ID:"+meterID+"/consumption/";
 			
-			System.out.println(CommonMethod.res.asString());
-			
-			CommonMethod.res.then().assertThat().statusCode(201);
-			CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-			CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-
+			CommonMethod.res = MethodCall.POSTRequest(url,meterData);
+			Assertion.verifyStatusCode(CommonMethod.res, 201);
 		}
 
 

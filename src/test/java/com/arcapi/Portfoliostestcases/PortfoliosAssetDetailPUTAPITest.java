@@ -24,7 +24,7 @@ public class PortfoliosAssetDetailPUTAPITest extends BaseClass {
 		url = "/portfolios/ID:" + data.getCellData(SheetName, "PortfolioID", rownumber)
 		+ "/assets/" + data.getCellData(SheetName, "PortfolioPK", rownumber) + "/";
 
-		CommonMethod.res = MethodCall.POSTRequest(url,jsonAsMap);
+		CommonMethod.res = MethodCall.PUTRequest(url,jsonAsMap);
 		Assertion.verifyStatusCode(CommonMethod.res, 200);
 
 	

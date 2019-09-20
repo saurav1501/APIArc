@@ -17,7 +17,7 @@ public class AssetTeamMemberUpdateAPITest extends BaseClass {
         try {
 			projectID=data.getCellData(SheetName, ProjectTypeColumn, rownumber);
 			url= "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/teams/update/";
-			payload = OtherDetails.detalis();
+			payload = OtherDetails.detalisUpdate();
 			CommonMethod.res = MethodCall.PUTRequest(url, payload);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		} catch (Exception e) {

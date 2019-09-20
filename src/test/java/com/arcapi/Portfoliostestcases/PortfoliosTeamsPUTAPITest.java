@@ -1,7 +1,5 @@
 package com.arcapi.Portfoliostestcases;
 
-import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -16,18 +14,22 @@ public class PortfoliosTeamsPUTAPITest extends BaseClass {
 
 	@Test(groups="CheckPortfolio")
 	@Parameters({ "SheetName","rownumber" })
-	public void PortfoliosTeamsPUTAPI(String SheetName, int rownumber) throws IOException {
+	public void PortfoliosTeamsPUTAPI(String SheetName, int rownumber){
 
 			
-		JSONObject jsonAsMap = new JSONObject();
-		jsonAsMap.put("username", "test-02@gmail.com");
-		jsonAsMap.put("permission", "can_read");
-		
-		url = "/portfolios/ID:"+data.getCellData(SheetName, "PortfolioID", rownumber)+"/teams/";
+		try {
+			JSONObject jsonAsMap = new JSONObject();
+			jsonAsMap.put("username", "usgbcarcapi2@gmail.com");
+			jsonAsMap.put("permission", "can_read");
+			
+			url = "/portfolios/ID:"+data.getCellData(SheetName, "PortfolioID", rownumber)+"/teams/";
 
-		CommonMethod.res = MethodCall.PUTRequest(url);
-		
-		Assertion.verifyStatusCode(CommonMethod.res, 200);
+			CommonMethod.res = MethodCall.PUTRequest(url,jsonAsMap);
+			
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 

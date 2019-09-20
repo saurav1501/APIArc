@@ -13,11 +13,12 @@ import com.arc.driver.CommonMethod;
 public class RegistrationPaymentPricingGetAPITest extends BaseClass {
 
 	@Test(groups="CheckPayment")
-	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
+	@Parameters({"SheetName","ProjectTypeColumn","rownumber" })
 	public void RegistrationPaymentPricingGetAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 	
 		try {
 			projectID=data.getCellData(SheetName, ProjectTypeColumn, rownumber);
+			
 			url="/assets/LEED:"+projectID+"/payments/price/?soreference=registration";
 			
 			CommonMethod.res = MethodCall.GETRequest(url);

@@ -1,6 +1,5 @@
 package com.arcapi.TrailFlowtestcasesComplete;
 
-import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 import java.io.IOException;

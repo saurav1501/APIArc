@@ -20,7 +20,6 @@ public class AssetAppaddPOSTAPITest extends BaseClass {
 		try {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/apps/";
 			CommonMethod.res = MethodCall.POSTRequest(url);
-			CommonMethod.res = MethodCall.PUTRequest(url);
 			Assertion.verifyStatusCode(CommonMethod.res, 400);
 			CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
 		} catch (Exception e) {

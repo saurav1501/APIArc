@@ -16,7 +16,7 @@ public class SyncSAPTrailProjectAPITest extends BaseClass {
 
 	@Test(groups="TrialSync")
 	@Parameters({"ProjectType","ProjectTypeColumn","Country" ,"ratings"})
-	public void CreateAssetPOSTAPI(String ProjectType,String ProjectTypeColumn,String Country,String ratings)  {	
+	public void SyncSAPTrailProjectAPI(String ProjectType,String ProjectTypeColumn,String Country,String ratings)  {	
 	
 		try {
 			payload = AddProjectPayload.addProjectPayloadTrialSync(ProjectType, ProjectTypeColumn, Country, ratings);

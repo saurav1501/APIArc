@@ -21,6 +21,7 @@ public class VOCMeterCreateAPITest extends BaseClass {
 			payload = MeterPayload.CreateTVOCMeter();
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/";
 			CommonMethod.res =MethodCall.POSTRequest(url, payload);
+			
 			Assertion.verifyStatusCode(CommonMethod.res, 201);
 			CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
 			data.setCellData("DataInput", "VOCMeterID", rownumber, CommonMethod.fetchedID);

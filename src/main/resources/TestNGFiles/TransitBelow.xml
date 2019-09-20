@@ -11,8 +11,8 @@
 <parameter name="CreditColumn" value="TransitBelowCredit" />
 <parameter name="CreditColumnNum" value="3" />
 <parameter name="ratings" value="underground"></parameter>
-
 <classes>
+
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Common.UserDetailAPITest"></class>
 <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"></class>
@@ -20,11 +20,11 @@
 <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>   
 <class name="com.arcapi.Common.PaymentOrderGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentReceiptAPITest"></class>
 <class name="com.arcapi.Common.PaymentHistoryAPITest"></class> 
- <class name="com.arcapi.Common.AssetSearchAPITest"></class>  
+<class name="com.arcapi.Common.AssetSearchAPITest"></class>  
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
 <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetSearchOwnerAPITest"></class>

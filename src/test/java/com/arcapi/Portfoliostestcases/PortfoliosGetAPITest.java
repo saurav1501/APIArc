@@ -14,7 +14,7 @@ public class PortfoliosGetAPITest extends BaseClass {
 
 		try {
 			url = "/portfolios/";
-			CommonMethod.res = MethodCall.POSTRequest(url);
+			CommonMethod.res = MethodCall.GETRequest(url);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		} catch (Exception e) {
 			e.printStackTrace();

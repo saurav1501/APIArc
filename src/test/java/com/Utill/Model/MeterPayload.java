@@ -3,7 +3,6 @@ package com.Utill.Model;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 
 import com.Utill.CreateMeter;
 import com.Utill.MeterData;
@@ -15,7 +14,7 @@ import net.minidev.json.JSONObject;
 
 public class MeterPayload extends BaseClass{
 	
-	private static final String jsonAsMap1 = null;
+	
 	public static CreateMeter meterData() {
 	CreateMeter meterData = new CreateMeter();
 	meterData.setName("ElectricityPurchasedFromGridMeter");
@@ -189,4 +188,11 @@ public class MeterPayload extends BaseClass{
 	meterData.setIncluded(true);
     return meterData;
 	}
+	public static CreateMeter MunicipalitySuppliedPortableWater() {
+		CreateMeter meterData = new CreateMeter();
+		meterData.setName("MunicipalitySuppliedPortableWater");
+		meterData.setNative_unit("gal");
+		meterData.setType("47");
+		return meterData;
+}
 }

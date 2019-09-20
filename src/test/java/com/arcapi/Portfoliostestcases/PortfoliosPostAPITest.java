@@ -34,8 +34,7 @@ public class PortfoliosPostAPITest extends BaseClass {
 			CommonMethod.fetchedID = CommonMethod.res.path("pf_id").toString();
 			CommonMethod.fetchedID = CommonMethod.fetchedID.replaceAll("\\[", "").replaceAll("\\]", "");
 			data.setCellData(SheetName, "PortfolioID", rownumber, CommonMethod.fetchedID);
-			CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		} catch (Exception e) {
+			} catch (Exception e) {
 			e.printStackTrace();
 		}
 

@@ -77,12 +77,17 @@
 <class name="com.arcapi.Common.NotificationSubscriptionDetailGetTest"></class>
 <class name="com.arcapi.Common.NotificationSubscriptionDetailPutTest"></class>
 <class name="com.arcapi.Common.NotificationSubscriptionDetailDeleteTest"></class>
+
+<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"></class>
+
 <class name="com.arcapi.Common.AssetDataSnapshotAPITest"></class>
 <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
 
-<!-- <class name="com.arcapi.Common.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.Common.ReviewCertificationPricingAPITest"></class>
 <class name="com.arcapi.Common.SubmitReviewPOSTAPITest"></class>
-<class name="com.arcapi.Common.SubmitReviewGetAPITest"></class> -->
+<class name="com.arcapi.Common.SubmitReviewGetAPITest"></class>
 
 <class name="com.arcapi.Common.NotificationCreatePOSTAPITest"></class>
 <class name="com.arcapi.Common.NotificationGetAPITest"></class>
@@ -99,9 +104,6 @@
 <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.VOCGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.WaterGetTest"></class>
-<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"></class>
 <class name="com.arcapi.Common.AssetCertificationListAPITest"></class>
 <class name="com.arcapi.Common.AssetCertificationPOSTAPITest"></class>
 <class name="com.arcapi.Common.TemperatureDataGetTest"></class>
@@ -133,16 +135,10 @@
 <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CO2ConsumptionUpdateAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CO2ConsumptionDeleteAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.CO2MeterDeleteAPITest"></class> 
-<class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.VOCConsumptionCreateAPITest"></class>
+<class name="com.arcapi.Common.AssetDetailAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.EnergyCreate60MonthMeterDataPostTest"></class>   
-<class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"></class>
+ <class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.WaterCreate60MonthMeterDataPostTest"></class> 
 <class name="com.arcapi.Buildingtestcases.WasteCreate60MonthMeterDataBulkPostTest"></class>
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   

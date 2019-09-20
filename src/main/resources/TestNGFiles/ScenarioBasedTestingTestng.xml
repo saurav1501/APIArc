@@ -2,13 +2,14 @@
 
 <suite name="ScenarioBasedTesting">
 
-<test name="TeamScenario-TeamManager-TeamMember">
+<test name="TeamScenario-TeamManager-TeamMemberPayment">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
 <parameter name="SoReference" value="performance score" />
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="none"></parameter>
+
 <classes>
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
@@ -16,10 +17,14 @@
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
+<class name="com.arcapi.Common.Neg.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class>
+ <class name="com.arcapi.Common.Neg.SubmitReviewGetAPITest"></class> 
 <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.TeamManagerAddPOSTAPITest"></class>
 </classes>
 </test>
+
 <test name="TeamScenario-TeamMember">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>

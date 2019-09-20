@@ -1,52 +1,37 @@
 package com.arcapi.Buildingtestcases;
 
 
-import static com.jayway.restassured.RestAssured.given;
-
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.Utill.MeterData;
+import com.Utill.Controller.Assertion;
+import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 
 public class CarbonDioxideCreate5YearDataPostTest extends BaseClass {
 
 		@Test(dataProvider="MeterTestDataFiveYear")
-		public void CO2GetTestAPI(String start_date,String end_date, String reading) throws IOException {
+		public void CarbonDioxideCreate5YearDataPost(String start_date,String end_date, String reading) throws IOException {
 			
 			String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);
-			String meterID =  data.getCellData(sheetName, "MeterID", rowNumTwo);
-			System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-           
-				
+			String meterID =  data.getCellData("DataInput", "CO2PK", rowNumTwo);
+		  	
 			MeterData meterData = new MeterData();
 			meterData.setStart_date(start_date);
 			meterData.setEnd_date(end_date);
 			meterData.setReading(reading);
 			
-			CommonMethod.res = given().log().all()
-					.headers(headerMap)
-					.header("Authorization", header).spec(reqSpec)
-					.body(meterData).when()
-				    .post("/assets/LEED:"+projectType +"/meters/ID:"+meterID+"/consumption/").then()
-					.extract().response();
-					
-			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
+			url = "/assets/LEED:"+projectType +"/meters/ID:"+meterID+"/consumption/";
 
-			System.out.println(CommonMethod.responsetime);
-			System.out.println(CommonMethod.res.asString());
+			CommonMethod.res = MethodCall.POSTRequest(url,meterData);
 			
-			CommonMethod.res.then().assertThat().statusCode(201);
-			CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
-			CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-
+			Assertion.verifyStatusCode(	CommonMethod.res, 201);
 		}
-
-
+		
 		@DataProvider(name="MeterTestDataFiveYear")
 		String [][] getMeterData()
 		{

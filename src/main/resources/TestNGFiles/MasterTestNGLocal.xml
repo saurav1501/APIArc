@@ -8,10 +8,14 @@
 
 	<suite-files>
 	
-   <suite-file path="CustomExecutionManualTestNG.xml"></suite-file> 
- 	<suite-file path="Buildingtestng.xml"></suite-file>  
-  <suite-file path="Portfoliostestng.xml"></suite-file>  
-		 <suite-file path="InterRelatedFieldValidationTestng.xml"></suite-file> 
+		<suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
+				
+		<!-- 			
+<suite-file path="DataInputScenariosTestNG.xml"></suite-file> 
+    <suite-file path="CustomExecutionManualTestNG.xml"></suite-file> 
+ 	 <suite-file path="Buildingtestng.xml"></suite-file>   
+       <suite-file path="Portfoliostestng.xml"></suite-file>    
+	 	 <suite-file path="InterRelatedFieldValidationTestng.xml"></suite-file> 
 		   <suite-file path="LEEDv4Building.xml"></suite-file> 
 	 <suite-file path="LEEDv4Communities.xml"></suite-file>
   	<suite-file path="LEEDv4Cities.xml"></suite-file>
@@ -27,7 +31,7 @@
   		<suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
 		<suite-file path="TrailFlowCompleteTestNG.xml"></suite-file>  
 		<suite-file path="CustomExecutionManualTestNG.xml"></suite-file> 
-	 <suite-file path="ScoreScenariosTestNG.xml"></suite-file>  
-		
+	 <suite-file path="ScoreScenariosTestNG.xml"></suite-file>    
+		 -->
 	 </suite-files>
 </suite> 

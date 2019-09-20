@@ -15,9 +15,9 @@
 <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.Common.AssetDetailAPITest"></class>
 
-
-<class name="com.arcapi.Buildingtestcases.ElectricityMeterCreateAPITest"></class>
+ <class name="com.arcapi.Buildingtestcases.ElectricityMeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ElectricityConsumptionCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ElectricityConsumptionUpdateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ElectricityConsumptionDeleteAPITest"></class>
@@ -32,7 +32,8 @@
 <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionUpdateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.OtherFuelConsumptionDeleteAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.OtherFuelMeterDeleteAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
+ 
+ <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"></class>   
 <class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CO2ConsumptionCreateAPITest"></class>
