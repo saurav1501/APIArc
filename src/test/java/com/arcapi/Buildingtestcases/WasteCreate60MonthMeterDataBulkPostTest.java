@@ -2,7 +2,6 @@ package com.arcapi.Buildingtestcases;
 
 import java.io.IOException;
 
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.Utill.WasteMeterData;
@@ -10,61 +9,43 @@ import com.Utill.Controller.Assertion;
 import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 
 
 public class WasteCreate60MonthMeterDataBulkPostTest extends BaseClass {
 
-	@Test(dataProvider="MeterTestData")
-	public void CreateWasteMeterDataPost(String unit,String start_date,String end_date,String waste_generated,String waste_diverted) throws IOException {
-	    test.assignCategory("CheckConsumption");
-		
-	    String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);
-			
-		WasteMeterData meterData= new WasteMeterData();
-		meterData.setUnit(unit);
-		meterData.setStart_date(start_date);
-		meterData.setEnd_date(end_date);
-		meterData.setWaste_generated(waste_generated);
-		meterData.setWaste_diverted(waste_diverted);
-		
-		url = "/assets/LEED:" + projectType + "/waste/";
-		CommonMethod.res = MethodCall.POSTRequest(url, meterData);
+	@Test(groups="CreateMeter")
+	public void CreateWasteMeterDataPost(){
+	  	
+	    try {
+			String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);		
+			for(int i=2;i<=63;i++) {
 				
+				String start_date =  data.getCellData("MeterData", "startDate", i);
+				String end_date =  data.getCellData("MeterData", "endDate", i);
+				String waste_generated =  data.getCellData("MeterData", "reading1", i);
+				String waste_diverted =  data.getCellData("MeterData", "reading2", i);
+				String unit =  data.getCellData("MeterData", "unit", i);
+				
+				WasteMeterData meterData= new WasteMeterData();
+				meterData.setUnit(unit);
+				meterData.setStart_date(start_date);
+				meterData.setEnd_date(end_date);
+				meterData.setWaste_generated(waste_generated);
+				meterData.setWaste_diverted(waste_diverted);
 			
-		CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
-		data.setCellData(sheetName, "WasteID",2, CommonMethod.fetchedID);
-		Assertion.verifyStatusCode(CommonMethod.res , 201);
-		
-	}
-	   
-	@DataProvider(name="MeterTestData")
-	String [][] getMeterData()
-	{
-		int getRowCount = data.getRowCount("WasteData");
+			url = "/assets/LEED:" + projectType + "/waste/";
+			CommonMethod.res = MethodCall.POSTRequest(url, meterData);
+			Assertion.verifyStatusCode(CommonMethod.res , 201);
 			
-		int getColumnCount = data.getColumnCount("WasteData");
-		
-		System.out.println(getRowCount);
-		System.out.println(getColumnCount);
-		
-		String meterData[][]= new String[getRowCount][getColumnCount];
-		
-		for(int i=1;i<=getRowCount;i++)
-		{
-			for(int j=0;j<getColumnCount;j++)
-			{
-				meterData[i-1][j]= data.getCellData("WasteData",j,i);
+}
+		} catch (JsonProcessingException e) {
 			
-			}
-			
+			e.printStackTrace();
 		}
-		
-		return(meterData);
-	
-		
+	   
 	}
-	
 	
 
 }

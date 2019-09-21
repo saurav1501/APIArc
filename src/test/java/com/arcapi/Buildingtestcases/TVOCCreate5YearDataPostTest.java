@@ -14,7 +14,7 @@ import com.arc.driver.CommonMethod;
 
 public class TVOCCreate5YearDataPostTest extends BaseClass {
 
-		@Test(dataProvider="MeterTestDataFiveYear")
+		@Test(dataProvider="TVOC5YearMeter")
 		public void TVOCCreate5YearDataPost(String start_date,String end_date, String reading) throws IOException {
 
 			String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);
@@ -32,13 +32,11 @@ public class TVOCCreate5YearDataPostTest extends BaseClass {
 		}
 
 
-		@DataProvider(name="MeterTestDataFiveYear")
+		@DataProvider(name="TVOC5YearMeter")
 		String [][] getMeterData()
 		{
 			
 			String meterData[][] = {{"2015-01-01","2016-01-01","150"},{"2016-01-01","2017-01-01","150"},{"2017-01-01","2018-01-01","150"},{"2018-01-01","2019-01-01","150"},{"2019-01-01","2020-01-01","150"}};
-				
-		
 			return(meterData);
 		
 

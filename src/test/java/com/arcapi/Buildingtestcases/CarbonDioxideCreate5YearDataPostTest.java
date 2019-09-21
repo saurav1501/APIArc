@@ -14,7 +14,7 @@ import com.arc.driver.CommonMethod;
 
 public class CarbonDioxideCreate5YearDataPostTest extends BaseClass {
 
-		@Test(dataProvider="MeterTestDataFiveYear")
+		@Test(dataProvider="CarbonDioxide5YearMeter")
 		public void CarbonDioxideCreate5YearDataPost(String start_date,String end_date, String reading) throws IOException {
 			
 			String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);
@@ -27,12 +27,11 @@ public class CarbonDioxideCreate5YearDataPostTest extends BaseClass {
 			
 			url = "/assets/LEED:"+projectType +"/meters/ID:"+meterID+"/consumption/";
 
-			CommonMethod.res = MethodCall.POSTRequest(url,meterData);
-			
+			CommonMethod.res = MethodCall.POSTRequest(url,meterData);	
 			Assertion.verifyStatusCode(	CommonMethod.res, 201);
 		}
 		
-		@DataProvider(name="MeterTestDataFiveYear")
+		@DataProvider(name="CarbonDioxide5YearMeter")
 		String [][] getMeterData()
 		{
 			String meterData[][] = {{"2015-01-01","2016-01-01","200"},{"2016-01-01","2017-01-01","200"},{"2017-01-01","2018-01-01","200"},{"2018-01-01","2019-01-01","200"},{"2019-01-01","2020-01-01","200"}};

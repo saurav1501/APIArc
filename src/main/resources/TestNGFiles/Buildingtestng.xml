@@ -77,17 +77,15 @@
 <class name="com.arcapi.Common.NotificationSubscriptionDetailGetTest"></class>
 <class name="com.arcapi.Common.NotificationSubscriptionDetailPutTest"></class>
 <class name="com.arcapi.Common.NotificationSubscriptionDetailDeleteTest"></class>
-
 <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"></class>
-
 <class name="com.arcapi.Common.AssetDataSnapshotAPITest"></class>
-<class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
 
-<class name="com.arcapi.Common.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
+<!-- <class name="com.arcapi.Common.ReviewCertificationPricingAPITest"></class>
 <class name="com.arcapi.Common.SubmitReviewPOSTAPITest"></class>
-<class name="com.arcapi.Common.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.Common.SubmitReviewGetAPITest"></class> -->
 
 <class name="com.arcapi.Common.NotificationCreatePOSTAPITest"></class>
 <class name="com.arcapi.Common.NotificationGetAPITest"></class>
@@ -119,9 +117,9 @@
 <class name="com.arcapi.Common.ThirdPartyListAppsAPITest"></class>
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class>
- </classes>
+ </classes> 
  
-</test>
+</test> 
 <test name="CompleteFlowTest-Building-None">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
@@ -138,7 +136,7 @@
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.EnergyCreate60MonthMeterDataPostTest"></class>   
- <class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.WaterCreate60MonthMeterDataPostTest"></class> 
 <class name="com.arcapi.Buildingtestcases.WasteCreate60MonthMeterDataBulkPostTest"></class>
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
