@@ -27,7 +27,7 @@
 		<suite-file path="CustomExecutionManualTestNG.xml"></suite-file> 
 	 <suite-file path="ScoreScenariosTestNG.xml"></suite-file>    
 	  <suite-file path="DataInputScenariosTestNG.xml"></suite-file> 
-     <suite-file path="CustomExecutionManualTestNG.xml"></suite-file>  -->
+     <suite-file path="CustomExecutionManualTestNG.xml"></suite-file>  
 		
 	 </suite-files>
 </suite> 
