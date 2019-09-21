@@ -91,6 +91,8 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>Login</a></li>
+					<li><a href='#'>AddProjectParksmart</a></li>
+					<li><a href='#'>CheckPayment</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -138,7 +140,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -153,10 +155,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='62.5%'><span class='strong'>5</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='36.697%'><span class='strong'>40</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='37.5%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='63.303%'>69</span> others
 				</div>
 			</div>
 		</div>
@@ -238,6 +240,581 @@
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
 					<td class='timestamp'>3:28:43 PM</td>
 					<td class='step-details'><span class='label white-text green'>LoginAPITest : PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateAssetPOSTAPITest</span>
+						<span class='test-time'>Sep 21, 2019 03:28:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 21, 2019 03:28:44 PM</span>
+	<span class='label end-time'>Sep 21, 2019 03:29:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 8s+32ms</span>
+</div>
+	<div class='test-desc'>Parksmart15CountryValidation </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>AddProjectParksmart</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:28:44 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:28:50 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:28:50 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-CA","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"CA","state":"ON","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"CA","zip_code":"M4C 1B5","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:28:50 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-CA","street":"Sapphire club","city":"Washington","country":"CA","state":"ON","publish":true,"project_type":"parksmart","zip_code":"M4C 1B5","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172352,"county":null,"transit":null,"key":"Kcljq4hcbrhgU89tJxloiY47","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:58:48.557232Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:58:48.556811Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"CA","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:28:50 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:28:51 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:28:56 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:28:56 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-MX","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"MX","state":"CHI","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"MX","zip_code":"00810","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:28:56 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-MX","street":"Sapphire club","city":"Washington","country":"MX","state":"CHI","publish":true,"project_type":"parksmart","zip_code":"00810","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172353,"county":null,"transit":null,"key":"nosuKmSTeeIhfNcTO5pAFvZX","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:58:55.191214Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:58:55.190802Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"MX","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:28:56 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:28:57 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:02 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:02 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-AU","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"AU","state":"VIC","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"AU","zip_code":"4000","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:02 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-AU","street":"Sapphire club","city":"Washington","country":"AU","state":"VIC","publish":true,"project_type":"parksmart","zip_code":"4000","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172354,"county":null,"transit":null,"key":"bfnxOsJj9GExt8ESRQqb1wek","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:59:01.382983Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:59:01.382567Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"AU","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:02 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:03 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:08 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:08 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-SG","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"SG","state":"SG","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"SG","zip_code":"546080","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:08 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-SG","street":"Sapphire club","city":"Washington","country":"SG","state":"SG","publish":true,"project_type":"parksmart","zip_code":"546080","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172355,"county":null,"transit":null,"key":"9ikJ6nQmuxZRUC4NaesBZofA","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:59:07.316364Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:59:07.315948Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"SG","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:08 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:09 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:15 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:15 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-AE","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"AE","state":"AE","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"AE","zip_code":"00000","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:15 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-AE","street":"Sapphire club","city":"Washington","country":"AE","state":"AE","publish":true,"project_type":"parksmart","zip_code":"00000","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172356,"county":null,"transit":null,"key":"JFuyZMQvvjYhj2oHqhZkYlcT","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:59:14.037583Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:59:14.037139Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"AE","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:15 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:15 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:21 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:21 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-QA","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"QA","state":"","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"QA","zip_code":"00000","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:21 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-QA","street":"Sapphire club","city":"Washington","country":"QA","state":"","publish":true,"project_type":"parksmart","zip_code":"00000","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172357,"county":null,"transit":null,"key":"kUF4tPr3ANAdosEk9dHRh7gP","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:59:19.490755Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:59:19.490333Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"QA","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:21 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:21 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:27 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:27 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-MO","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"MO","state":"","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"MO","zip_code":"519020","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:27 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-MO","street":"Sapphire club","city":"Washington","country":"MO","state":"","publish":true,"project_type":"parksmart","zip_code":"519020","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172358,"county":null,"transit":null,"key":"22rzdw7eVij8yrgDhinBrf6X","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:59:25.418592Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:59:25.418175Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"MO","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:27 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:27 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:33 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:33 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-DE","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"DE","state":"11","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"DE","zip_code":"13187","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:33 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-DE","street":"Sapphire club","city":"Washington","country":"DE","state":"11","publish":true,"project_type":"parksmart","zip_code":"13187","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172359,"county":null,"transit":null,"key":"D4fyKPLNxCjMnCAW6Nbbhhf3","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:59:31.697023Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:59:31.696593Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"DE","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:33 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:33 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:39 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:39 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-TR","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"TR","state":"10","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"TR","zip_code":"28393","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:39 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-TR","street":"Sapphire club","city":"Washington","country":"TR","state":"10","publish":true,"project_type":"parksmart","zip_code":"28393","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172360,"county":null,"transit":null,"key":"fT9cVrp46lCJunNv3VxK1Me0","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:59:37.465695Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:59:37.465281Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"TR","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:39 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:39 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:44 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:44 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-TH","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"TH","state":"16","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"TH","zip_code":"10170","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:44 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-TH","street":"Sapphire club","city":"Washington","country":"TH","state":"16","publish":true,"project_type":"parksmart","zip_code":"10170","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172361,"county":null,"transit":null,"key":"bLDJn661F6mX53HWgMgd8n8y","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:59:43.353389Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:59:43.352973Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"TH","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:44 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:45 PM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:51 PM</td>
+					<td class='step-details'>API responded in 0 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:51 PM</td>
+					<td class='step-details'>Payload is : <br>{"name":"API-Parksmart-GB","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"GB","state":"BK","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"GB","zip_code":"BF1 2AT","noOfParkingSpace":"15","noOfParkingLevels":"2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:51 PM</td>
+					<td class='step-details'>Response from API<br>{"name":"API-Parksmart-GB","street":"Sapphire club","city":"Washington","country":"GB","state":"BK","publish":true,"project_type":"parksmart","zip_code":"BF1 2AT","gross_area":1000.0,"occupancy":3,"operating_hours":null,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000172362,"county":null,"transit":null,"key":"xGWByMAndFqYHQcYy3vCYXwV","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-09-21T09:59:50.235658Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-09-21T09:59:50.235246Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_pending","survey_with_dashboard":false,"leed_score_public":true,"is_trial_selected":false,"override_valid":true,"rating_system":"PARKSMART","unitType":null,"spaceType":null,"geoLat":null,"geoLang":null,"organization":"T","ownerType":null,"IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"GB","building_type":null,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":15,"noOfParkingLevels":2,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":null,"sign_agreement":null,"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:51 PM</td>
+					<td class='step-details'>API Responded With Status Code : 201</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:52 PM</td>
+					<td class='step-details'><span class='label white-text green'>CreateAssetPOSTAPITest : PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>RegistrationPaymentPricingGetAPITest</span>
+						<span class='test-time'>Sep 21, 2019 03:29:52 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 21, 2019 03:29:52 PM</span>
+	<span class='label end-time'>Sep 21, 2019 03:30:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+272ms</span>
+</div>
+	<div class='test-desc'>Parksmart15CountryValidation </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckPayment</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:52 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:55 PM</td>
+					<td class='step-details'>API responded in 2578 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:55 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:55 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:55 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:57 PM</td>
+					<td class='step-details'>API responded in 2843 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:29:57 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:57 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:29:57 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:00 PM</td>
+					<td class='step-details'>API responded in 2844 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:00 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:00 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:00 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:03 PM</td>
+					<td class='step-details'>API responded in 2379 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:03 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:03 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:03 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:05 PM</td>
+					<td class='step-details'>API responded in 2638 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:05 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:05 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:05 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:08 PM</td>
+					<td class='step-details'>API responded in 2848 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:08 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:08 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:08 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:11 PM</td>
+					<td class='step-details'>API responded in 2834 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:11 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:11 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:11 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:14 PM</td>
+					<td class='step-details'>API responded in 2439 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:14 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:14 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:14 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:16 PM</td>
+					<td class='step-details'>API responded in 2852 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:16 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:16 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:16 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:20 PM</td>
+					<td class='step-details'>API responded in 3675 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:20 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:20 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:20 PM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:23 PM</td>
+					<td class='step-details'>API responded in 3053 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:23 PM</td>
+					<td class='step-details'>Response from API<br>{"leed_id":"1000172352","soreference":"REGISTRATION","price":[{"leed_id":"1000172352","material":"000000000000004282","description":"Parksmart: Registration","company_code":"BP02","price":"1500.0","quantity":"1.0","price_per_unit":"1500.0","annual_price":"0.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"0.0","discount_perc":"0.0","term":0}],"name":"API-Parksmart-CA","currency":"USD","usgbc_member":"N"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:30:23 PM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:30:23 PM</td>
+					<td class='step-details'><span class='label white-text green'>RegistrationPaymentPricingGetAPITest : PASSED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -328,6 +905,74 @@
 						</div>
 					</div>
 				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>AddProjectParksmart</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 21, 2019 03:28:44 PM</td>
+										<td class='linked' test-id='2'>CreateAssetPOSTAPITest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckPayment</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 21, 2019 03:29:52 PM</td>
+										<td class='linked' test-id='3'>RegistrationPaymentPricingGetAPITest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
 
 			</ul>
 		</div>
@@ -349,13 +994,13 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>109</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -367,13 +1012,13 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 21, 2019 03:28:43 PM</div>
+			 		<div class='panel-lead'>Sep 21, 2019 03:30:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 10s+182ms</div>
+					<div class='panel-lead'>0h 1m 50s+383ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -425,6 +1070,24 @@
 									100%
 							</td>
 						</tr>
+						<tr>
+							<td>AddProjectParksmart</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckPayment</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
 					</table>
 				</div>
 			</div>
@@ -438,7 +1101,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 3,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -446,13 +1109,13 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 5,
+				passChild: 40,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 3,
+				infoChild: 69,
 				exceptionsChild: 0,
 				
 				passGrandChild: 0,

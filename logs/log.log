@@ -1,0 +1,123 @@
+2019-09-21 15:28:33 INFO  LoginAPITest:217 - Executing test: LoginAPI
+2019-09-21 15:28:33 INFO  LoginAPITest:115 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
+2019-09-21 15:28:41 INFO  LoginAPITest:122 - SAMEORIGIN
+2019-09-21 15:28:42 INFO  LoginAPITest:125 - csrftoken=JK0pSMsBAAjWxxPklVZbv2udJaQSiImv7Tttqq0DTlubExoIx9f4wH2fC8LW9BiM;Path=/;Max-Age=31449600;Expires=9/19/20 9:58 AM
+sessionid=ix6a2rqfkmpvtejp3gl70x8n2z9i72ss;Path=/;HttpOnly
+2019-09-21 15:28:42 INFO  LoginAPITest:126 - EOKrq8PecVR4WiuaFBoIXEiMDlMqrD
+2019-09-21 15:28:43 INFO  LoginAPITest:132 - Bearer
+2019-09-21 15:28:43 INFO  LoginAPITest:133 - Post Response Time In milliseconds0
+2019-09-21 15:28:43 INFO  LoginAPITest:135 - Payload is  usgbcarcapi@gmail.cominitpass
+2019-09-21 15:28:43 INFO  LoginAPITest:138 - Header is Bearer EOKrq8PecVR4WiuaFBoIXEiMDlMqrD
+2019-09-21 15:28:43 INFO  LoginAPITest:141 - Ocp-Apim-Subscription-Key06c50a1570bd4d40a7859ec28514b185
+2019-09-21 15:28:43 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-09-21 15:28:44 INFO  CreateAssetParksmartManualReqTest:217 - Executing test: CreateAssetPOSTAPI
+2019-09-21 15:28:44 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:28:50 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:28:50 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-CA","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"CA","state":"ON","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"CA","zip_code":"M4C 1B5","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:28:50 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:28:51 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:28:56 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:28:56 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-MX","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"MX","state":"CHI","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"MX","zip_code":"00810","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:28:56 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:28:57 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:29:02 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:29:02 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-AU","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"AU","state":"VIC","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"AU","zip_code":"4000","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:29:02 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:29:03 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:29:08 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:29:08 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-SG","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"SG","state":"SG","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"SG","zip_code":"546080","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:29:08 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:29:09 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:29:15 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:29:15 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-AE","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"AE","state":"AE","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"AE","zip_code":"00000","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:29:15 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:29:15 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:29:21 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:29:21 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-QA","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"QA","state":"","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"QA","zip_code":"00000","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:29:21 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:29:21 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:29:27 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:29:27 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-MO","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"MO","state":"","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"MO","zip_code":"519020","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:29:27 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:29:27 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:29:33 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:29:33 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-DE","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"DE","state":"11","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"DE","zip_code":"13187","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:29:33 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:29:33 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:29:39 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:29:39 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-TR","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"TR","state":"10","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"TR","zip_code":"28393","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:29:39 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:29:39 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:29:44 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:29:44 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-TH","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"TH","state":"16","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"TH","zip_code":"10170","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:29:44 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:29:45 INFO  CreateAssetParksmartManualReqTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-09-21 15:29:51 INFO  CreateAssetParksmartManualReqTest:82 - Post Response Time In milliseconds0
+2019-09-21 15:29:51 INFO  CreateAssetParksmartManualReqTest:88 - Payload is  {"name":"API-Parksmart-GB","rating_system":"PARKSMART","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"GB","state":"BK","project_type":"parksmart","owner_email":"usgbcarcapi1@gmail.com","confidential":true,"sign_agreement":true,"organization":"T","manageEntityCountry":"GB","zip_code":"BF1 2AT","noOfParkingSpace":"15","noOfParkingLevels":"2"}
+2019-09-21 15:29:51 INFO  CreateAssetParksmartManualReqTest:43 - API Responded With Status Code : 201
+2019-09-21 15:29:52 INFO  RegistrationPaymentPricingGetAPITest:217 - Executing test: RegistrationPaymentPricingGetAPI
+2019-09-21 15:29:52 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:29:55 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2578
+2019-09-21 15:29:55 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:29:55 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:29:57 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2843
+2019-09-21 15:29:57 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:29:57 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:30:00 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2844
+2019-09-21 15:30:00 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:00 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:30:03 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2379
+2019-09-21 15:30:03 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:03 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:30:05 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2638
+2019-09-21 15:30:05 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:05 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:30:08 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2848
+2019-09-21 15:30:08 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:08 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:30:11 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2834
+2019-09-21 15:30:11 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:11 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:30:14 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2439
+2019-09-21 15:30:14 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:14 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:30:16 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2852
+2019-09-21 15:30:16 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:16 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:30:20 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds3675
+2019-09-21 15:30:20 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:20 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/price/?soreference=registration
+2019-09-21 15:30:23 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds3053
+2019-09-21 15:30:23 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:24 INFO  PaymentOrderSubmitManualTest:217 - Executing test: PaymentOrderSubmitPOSTAPI
+2019-09-21 15:30:24 INFO  PaymentOrderSubmitManualTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172352/payments/order/
+2019-09-21 15:30:35 INFO  PaymentOrderSubmitManualTest:82 - Post Response Time In milliseconds3053
+2019-09-21 15:30:35 INFO  PaymentOrderSubmitManualTest:88 - Payload is  {"country":"TG","quantity":"1.0","SoReference":"REGISTRATION","city":"Test city","actual_price":"0.0","unit_price":"0.0","zip_code":"22673","annual_price":"0.0","paymetric_r":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UGF5bWV0cmljUmVzcG9uc2U-PFN0YXR1cz5Ub2tlbml6ZWQ8L1N0YXR1cz48WGlQYXlOZXRUcmFuc0lEPjA8L1hpUGF5TmV0VHJhbnNJRD48TWVyY2hhbnRSZWZlcmVuY2VDb2RlIC8-PEF1dGhDb2RlPjA8L0F1dGhDb2RlPjxDYXJkSW5mbz48Q0NUb2tlbj4tRTgwMy0wMDAwLVdZODdUR0cwQlJCQzRZPC9DQ1Rva2VuPjxDQ0V4cGlyYXRpb25EYXRlPjxNb250aD4wMTwvTW9udGg-PFllYXI-MTk8L1llYXI-PC9DQ0V4cGlyYXRpb25EYXRlPjxDVlY-OTk5PC9DVlY-PENDVHlwZT40MDAwPC9DQ1R5cGU-PEJpblJhbmdlVHlwZT40MDAwPC9CaW5SYW5nZVR5cGU-PC9DYXJkSW5mbz48QW1vdW50PjA8L0Ftb3VudD48L1BheW1ldHJpY1Jlc3BvbnNlPg\u003d\u003d","paymetric_s":"9pVBS5jQtnNbRGzfciD03OoBN7fP1aSFigXogT7LOaw\u003d","street":"Test Add","name":"Adolph Blaine Charles David","company_code":"BP02","state":"NA","email":"usgbcarcapi1@gmail.com","material_code":"000000000000003115","material_description":"LEED for Communities Registration"}
+2019-09-21 15:30:35 INFO  PaymentOrderSubmitManualTest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:35 INFO  PaymentOrderSubmitManualTest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-09-21 15:30:35 INFO  PaymentOrderSubmitManualTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172353/payments/order/
+2019-09-21 15:30:47 INFO  PaymentOrderSubmitManualTest:82 - Post Response Time In milliseconds3053
+2019-09-21 15:30:47 INFO  PaymentOrderSubmitManualTest:88 - Payload is  {"country":"TG","quantity":"1.0","SoReference":"REGISTRATION","city":"Test city","actual_price":"0.0","unit_price":"0.0","zip_code":"22673","annual_price":"0.0","paymetric_r":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UGF5bWV0cmljUmVzcG9uc2U-PFN0YXR1cz5Ub2tlbml6ZWQ8L1N0YXR1cz48WGlQYXlOZXRUcmFuc0lEPjA8L1hpUGF5TmV0VHJhbnNJRD48TWVyY2hhbnRSZWZlcmVuY2VDb2RlIC8-PEF1dGhDb2RlPjA8L0F1dGhDb2RlPjxDYXJkSW5mbz48Q0NUb2tlbj4tRTgwMy0wMDAwLVdZODdUR0cwQlJCQzRZPC9DQ1Rva2VuPjxDQ0V4cGlyYXRpb25EYXRlPjxNb250aD4wMTwvTW9udGg-PFllYXI-MTk8L1llYXI-PC9DQ0V4cGlyYXRpb25EYXRlPjxDVlY-OTk5PC9DVlY-PENDVHlwZT40MDAwPC9DQ1R5cGU-PEJpblJhbmdlVHlwZT40MDAwPC9CaW5SYW5nZVR5cGU-PC9DYXJkSW5mbz48QW1vdW50PjA8L0Ftb3VudD48L1BheW1ldHJpY1Jlc3BvbnNlPg\u003d\u003d","paymetric_s":"9pVBS5jQtnNbRGzfciD03OoBN7fP1aSFigXogT7LOaw\u003d","street":"Test Add","name":"Adolph Blaine Charles David","company_code":"BP02","state":"NA","email":"usgbcarcapi1@gmail.com","material_code":"000000000000003115","material_description":"LEED for Communities Registration"}
+2019-09-21 15:30:47 INFO  PaymentOrderSubmitManualTest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:47 INFO  PaymentOrderSubmitManualTest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-09-21 15:30:47 INFO  PaymentOrderSubmitManualTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172354/payments/order/
+2019-09-21 15:30:59 INFO  PaymentOrderSubmitManualTest:82 - Post Response Time In milliseconds3053
+2019-09-21 15:30:59 INFO  PaymentOrderSubmitManualTest:88 - Payload is  {"country":"TG","quantity":"1.0","SoReference":"REGISTRATION","city":"Test city","actual_price":"0.0","unit_price":"0.0","zip_code":"22673","annual_price":"0.0","paymetric_r":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UGF5bWV0cmljUmVzcG9uc2U-PFN0YXR1cz5Ub2tlbml6ZWQ8L1N0YXR1cz48WGlQYXlOZXRUcmFuc0lEPjA8L1hpUGF5TmV0VHJhbnNJRD48TWVyY2hhbnRSZWZlcmVuY2VDb2RlIC8-PEF1dGhDb2RlPjA8L0F1dGhDb2RlPjxDYXJkSW5mbz48Q0NUb2tlbj4tRTgwMy0wMDAwLVdZODdUR0cwQlJCQzRZPC9DQ1Rva2VuPjxDQ0V4cGlyYXRpb25EYXRlPjxNb250aD4wMTwvTW9udGg-PFllYXI-MTk8L1llYXI-PC9DQ0V4cGlyYXRpb25EYXRlPjxDVlY-OTk5PC9DVlY-PENDVHlwZT40MDAwPC9DQ1R5cGU-PEJpblJhbmdlVHlwZT40MDAwPC9CaW5SYW5nZVR5cGU-PC9DYXJkSW5mbz48QW1vdW50PjA8L0Ftb3VudD48L1BheW1ldHJpY1Jlc3BvbnNlPg\u003d\u003d","paymetric_s":"9pVBS5jQtnNbRGzfciD03OoBN7fP1aSFigXogT7LOaw\u003d","street":"Test Add","name":"Adolph Blaine Charles David","company_code":"BP02","state":"NA","email":"usgbcarcapi1@gmail.com","material_code":"000000000000003115","material_description":"LEED for Communities Registration"}
+2019-09-21 15:30:59 INFO  PaymentOrderSubmitManualTest:43 - API Responded With Status Code : 200
+2019-09-21 15:30:59 INFO  PaymentOrderSubmitManualTest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-09-21 15:30:59 INFO  PaymentOrderSubmitManualTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172355/payments/order/
+2019-09-21 15:31:11 INFO  PaymentOrderSubmitManualTest:82 - Post Response Time In milliseconds3053
+2019-09-21 15:31:11 INFO  PaymentOrderSubmitManualTest:88 - Payload is  {"country":"TG","quantity":"1.0","SoReference":"REGISTRATION","city":"Test city","actual_price":"0.0","unit_price":"0.0","zip_code":"22673","annual_price":"0.0","paymetric_r":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UGF5bWV0cmljUmVzcG9uc2U-PFN0YXR1cz5Ub2tlbml6ZWQ8L1N0YXR1cz48WGlQYXlOZXRUcmFuc0lEPjA8L1hpUGF5TmV0VHJhbnNJRD48TWVyY2hhbnRSZWZlcmVuY2VDb2RlIC8-PEF1dGhDb2RlPjA8L0F1dGhDb2RlPjxDYXJkSW5mbz48Q0NUb2tlbj4tRTgwMy0wMDAwLVdZODdUR0cwQlJCQzRZPC9DQ1Rva2VuPjxDQ0V4cGlyYXRpb25EYXRlPjxNb250aD4wMTwvTW9udGg-PFllYXI-MTk8L1llYXI-PC9DQ0V4cGlyYXRpb25EYXRlPjxDVlY-OTk5PC9DVlY-PENDVHlwZT40MDAwPC9DQ1R5cGU-PEJpblJhbmdlVHlwZT40MDAwPC9CaW5SYW5nZVR5cGU-PC9DYXJkSW5mbz48QW1vdW50PjA8L0Ftb3VudD48L1BheW1ldHJpY1Jlc3BvbnNlPg\u003d\u003d","paymetric_s":"9pVBS5jQtnNbRGzfciD03OoBN7fP1aSFigXogT7LOaw\u003d","street":"Test Add","name":"Adolph Blaine Charles David","company_code":"BP02","state":"NA","email":"usgbcarcapi1@gmail.com","material_code":"000000000000003115","material_description":"LEED for Communities Registration"}
+2019-09-21 15:31:11 INFO  PaymentOrderSubmitManualTest:43 - API Responded With Status Code : 200
+2019-09-21 15:31:11 INFO  PaymentOrderSubmitManualTest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-09-21 15:31:11 INFO  PaymentOrderSubmitManualTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172356/payments/order/
+2019-09-21 15:31:23 INFO  PaymentOrderSubmitManualTest:82 - Post Response Time In milliseconds3053
+2019-09-21 15:31:23 INFO  PaymentOrderSubmitManualTest:88 - Payload is  {"country":"TG","quantity":"1.0","SoReference":"REGISTRATION","city":"Test city","actual_price":"0.0","unit_price":"0.0","zip_code":"22673","annual_price":"0.0","paymetric_r":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UGF5bWV0cmljUmVzcG9uc2U-PFN0YXR1cz5Ub2tlbml6ZWQ8L1N0YXR1cz48WGlQYXlOZXRUcmFuc0lEPjA8L1hpUGF5TmV0VHJhbnNJRD48TWVyY2hhbnRSZWZlcmVuY2VDb2RlIC8-PEF1dGhDb2RlPjA8L0F1dGhDb2RlPjxDYXJkSW5mbz48Q0NUb2tlbj4tRTgwMy0wMDAwLVdZODdUR0cwQlJCQzRZPC9DQ1Rva2VuPjxDQ0V4cGlyYXRpb25EYXRlPjxNb250aD4wMTwvTW9udGg-PFllYXI-MTk8L1llYXI-PC9DQ0V4cGlyYXRpb25EYXRlPjxDVlY-OTk5PC9DVlY-PENDVHlwZT40MDAwPC9DQ1R5cGU-PEJpblJhbmdlVHlwZT40MDAwPC9CaW5SYW5nZVR5cGU-PC9DYXJkSW5mbz48QW1vdW50PjA8L0Ftb3VudD48L1BheW1ldHJpY1Jlc3BvbnNlPg\u003d\u003d","paymetric_s":"9pVBS5jQtnNbRGzfciD03OoBN7fP1aSFigXogT7LOaw\u003d","street":"Test Add","name":"Adolph Blaine Charles David","company_code":"BP02","state":"NA","email":"usgbcarcapi1@gmail.com","material_code":"000000000000003115","material_description":"LEED for Communities Registration"}
+2019-09-21 15:31:23 INFO  PaymentOrderSubmitManualTest:43 - API Responded With Status Code : 200
+2019-09-21 15:31:23 INFO  PaymentOrderSubmitManualTest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-09-21 15:31:23 INFO  PaymentOrderSubmitManualTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172357/payments/order/
+2019-09-21 15:31:34 INFO  PaymentOrderSubmitManualTest:82 - Post Response Time In milliseconds3053
+2019-09-21 15:31:34 INFO  PaymentOrderSubmitManualTest:88 - Payload is  {"country":"TG","quantity":"1.0","SoReference":"REGISTRATION","city":"Test city","actual_price":"0.0","unit_price":"0.0","zip_code":"22673","annual_price":"0.0","paymetric_r":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UGF5bWV0cmljUmVzcG9uc2U-PFN0YXR1cz5Ub2tlbml6ZWQ8L1N0YXR1cz48WGlQYXlOZXRUcmFuc0lEPjA8L1hpUGF5TmV0VHJhbnNJRD48TWVyY2hhbnRSZWZlcmVuY2VDb2RlIC8-PEF1dGhDb2RlPjA8L0F1dGhDb2RlPjxDYXJkSW5mbz48Q0NUb2tlbj4tRTgwMy0wMDAwLVdZODdUR0cwQlJCQzRZPC9DQ1Rva2VuPjxDQ0V4cGlyYXRpb25EYXRlPjxNb250aD4wMTwvTW9udGg-PFllYXI-MTk8L1llYXI-PC9DQ0V4cGlyYXRpb25EYXRlPjxDVlY-OTk5PC9DVlY-PENDVHlwZT40MDAwPC9DQ1R5cGU-PEJpblJhbmdlVHlwZT40MDAwPC9CaW5SYW5nZVR5cGU-PC9DYXJkSW5mbz48QW1vdW50PjA8L0Ftb3VudD48L1BheW1ldHJpY1Jlc3BvbnNlPg\u003d\u003d","paymetric_s":"9pVBS5jQtnNbRGzfciD03OoBN7fP1aSFigXogT7LOaw\u003d","street":"Test Add","name":"Adolph Blaine Charles David","company_code":"BP02","state":"NA","email":"usgbcarcapi1@gmail.com","material_code":"000000000000003115","material_description":"LEED for Communities Registration"}
+2019-09-21 15:31:34 INFO  PaymentOrderSubmitManualTest:43 - API Responded With Status Code : 200
+2019-09-21 15:31:34 INFO  PaymentOrderSubmitManualTest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-09-21 15:31:34 INFO  PaymentOrderSubmitManualTest:77 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172358/payments/order/
