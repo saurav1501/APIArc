@@ -16,7 +16,7 @@ public class WaterMeterDeleteAPITest extends BaseClass {
 
 			
 		try {
-			int RowNum = data.getRowCountbyColNum("DataInput", 0);	
+			int RowNum = 45;	
 			for (int i =2; i<= RowNum;i++) {
 
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"

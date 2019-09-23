@@ -16,7 +16,7 @@ public class OtherFuelConsumptionUpdateAPITest extends BaseClass {
 	public void OtherFuelConsumptionUpdateAPI(String SheetName,String ProjectTypeColumn, int rownumber)  {
 
 	      try {
-			int RowNum = data.getRowCountbyColNum("DataInput", 5);
+			int RowNum = data.getRowCountbyColNum("DataInput", 0);
 			
 			  	for (int i =2; i<= RowNum;i++) {
 
@@ -27,7 +27,7 @@ public class OtherFuelConsumptionUpdateAPITest extends BaseClass {
 						+ data.getCellData("DataInput", "OtherFuelPK", i) + "/";
 
 			CommonMethod.res =MethodCall.PUTRequest(url,payload);
-			Assertion.verifyStatusCode(CommonMethod.res, 201);
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
 
 }
 		} catch (Exception e) {

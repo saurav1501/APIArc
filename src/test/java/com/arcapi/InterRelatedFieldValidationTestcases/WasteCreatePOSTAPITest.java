@@ -41,7 +41,7 @@ public class WasteCreatePOSTAPITest extends BaseClass {
 		
 		else {
 			
-			Assertion.verifyStatusCode(	CommonMethod.res, 400);
+			Assertion.verifyStatusCode(CommonMethod.res, 400);
 					
 		}
 		

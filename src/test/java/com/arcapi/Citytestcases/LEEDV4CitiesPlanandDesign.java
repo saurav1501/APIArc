@@ -18,7 +18,7 @@ public class LEEDV4CitiesPlanandDesign extends BaseClass {
 
 	@Test(groups ="Add Project LEED v4.1 Cities: Plan and Design")
     @Parameters({"SheetName","rownumber","Country" })
-	public void LeedExistingCityCreateAssetAPI(String SheetName, int rownumber, String Country) {
+	public void LEEDV4CitiesPlanand(String SheetName, int rownumber, String Country) {
     
 		try {
 			String OwnerOrg  = "EymX5ZKWALZae";

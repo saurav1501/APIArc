@@ -16,7 +16,7 @@ public class LeedExistingCommunityCreateAssetAPITest extends BaseClass {
 
 	@Test(groups ="LEED v4.1 Communities: Existing")
     @Parameters({"SheetName","rownumber","Country" })
-	public void LeedExistingCityCreateAssetAPI(String SheetName, int rownumber, String Country) {
+	public void LeedExistingCommunityCreateAssetAPI(String SheetName, int rownumber, String Country) {
     
 		try {
 			String OwnerOrg  = "EymX5ZKWALZae";

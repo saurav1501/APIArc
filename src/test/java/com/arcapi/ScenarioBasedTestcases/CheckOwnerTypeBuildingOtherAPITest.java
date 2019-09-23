@@ -8,6 +8,7 @@ import java.util.Random;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.http.ContentType;
@@ -194,14 +195,14 @@ public class CheckOwnerTypeBuildingOtherAPITest extends BaseClass {
 			    "Investor: Insurance Company",
 			    "Investor: Investment Manager",
 			    "Investor: Pension Fund",
-			    "Investor: REIT,Non-traded",
+			    "Investor: REIT, Non-traded",
 			    "Investor: REIT, Publicly traded",
 			    "Investor: ROEC",
 			    "Main Street Organization",
 			    "Non-Profit (that do not fit into other categories)",
 			    "Religious" };
 
-		String ProjectName = "MachineTestProject-Building-Other-" + Country;
+		String ProjectName = "API-CheckOwnerTypeTest" + Country;
 		
 		for (String owner  : OwnerTypeOptions) {
 
@@ -214,16 +215,12 @@ public class CheckOwnerTypeBuildingOtherAPITest extends BaseClass {
 				.header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey).header("Authorization", header)
 				.spec(reqSpec).when().post("/assets/").then().extract().response();
 
-		System.out.println("This is " + Country + " " + "Project");
-
-
-		System.out.println(CommonMethod.res.asString());
-
+	
 		CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
 
 		CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
 
-		CommonMethod.res.then().assertThat().statusCode(201);
+		Assertion.verifyStatusCode(CommonMethod.res, 201);
 
 	}
 		

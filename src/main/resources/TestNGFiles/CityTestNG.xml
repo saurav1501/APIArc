@@ -2,7 +2,7 @@
 <suite name="CityCompletePositive">
 
 
-<test name="CompleteFlowTest-City-Other">
+<test name="CompleteFlowTest-City-None">
 
 <parameter name="ProjectType" value="city" />
 <parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
@@ -105,14 +105,16 @@
 </classes>
 </test>
 
-<test name="CompleteFlowTest-City-None">
+<test name="CompleteFlowTest-City-Other">
+
 <parameter name="ProjectType" value="city" />
-<parameter name="ProjectTypeColumn" value="ProjectIDCityNone" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
 <parameter name="SoReference" value="performance score" />
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="CreditColumn" value="CityOtherNoneCredit" />
 <parameter name="CreditColumnNum" value="1" />
+<parameter name="ratings" value="other"></parameter>
 
 <classes>
 <class name="com.arcapi.Common.LoginAPITest"></class>

@@ -1,7 +1,5 @@
 package com.arcapi.Common.CityCom;
 
-import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -14,8 +12,8 @@ import com.arc.driver.CommonMethod;
 public class CreateNewProjectAPITest extends BaseClass {
 
 	@Test(groups="CheckCreateProject")
-	@Parameters({ "SheetName", "ProjectType","ProjectTypeColumn","rownumber","Country" ,"ratings"})
-	public void CreateAssetPOSTAPI(String SheetName, String ProjectType,String ProjectTypeColumn, int rownumber, String Country,String ratings) throws IOException {
+	@Parameters({"SheetName", "ProjectType","ProjectTypeColumn","rownumber","Country" ,"ratings"})
+	public void CreateAssetPOSTAPI(String SheetName, String ProjectType,String ProjectTypeColumn, int rownumber, String Country,String ratings)  {
 	
 		
 		try {

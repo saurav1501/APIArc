@@ -1,7 +1,5 @@
 package com.arcapi.InterRelatedFieldValidationTestcases;
 
-import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -32,7 +30,7 @@ public class VocCreatePOSTAPITest extends BaseClass {
 
 			CommonMethod.res = MethodCall.POSTRequest(url, jsonAsMap);
 
-			if(str=="ppm"||str=="ug/m3") {
+			if(str=="ppm") {
 			
 			Assertion.verifyStatusCode(CommonMethod.res, 201);
 			

@@ -29,7 +29,6 @@
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.MeterUpdatePUTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.MeterBulkConsumptionPOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest"></class>
-<class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.ConsumptionCreatePOSTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.ConsumptionUpdatePUTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.WasteGeneratedBulkDataPostTest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.WasteDivertedBulkDataPostTest"></class>

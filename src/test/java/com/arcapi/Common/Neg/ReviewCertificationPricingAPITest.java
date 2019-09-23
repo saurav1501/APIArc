@@ -19,7 +19,7 @@ public class ReviewCertificationPricingAPITest extends BaseClass {
 		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/payments/price/?soreference="+SoReference;
 	
 		CommonMethod.res = MethodCall.GETRequest(url);		
-		Assertion.verifyStatusCode(CommonMethod.res, 403);
+		Assertion.verifyStatusCode(CommonMethod.res, 400);
 		
 	}
 

@@ -28,35 +28,6 @@
 <class name="com.arcapi.Common.CityCom.AssetUpdateAPITest"></class>
 <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"></class>
 <class name="com.arcapi.Common.AssetDocumentAPITest"></class>
-</classes>
-</test>
-
-<test name="LEED v4.1 Cities: Plan and Design">
-<parameter name="ProjectTypeColumn" value="LeedIDEB"/>
-<parameter name="rownumber" value="2" />
-<parameter name="Country" value="US" />
-<parameter name="SoReference" value="performance score" />
-<parameter name="SoReferenceSR" value="performance score" />
-<parameter name="rownumber" value="2" />
-<parameter name="CreditColumn" value="CityOtherNoneCredit" />
-<parameter name="CreditColumnNum" value="1"/>
-<classes>
-<class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"></class>
-<class name="com.arcapi.Citytestcases.LEEDV4CitiesPlanandDesign"></class>
-<class name="com.arcapi.Common.LoginAPITest"></class>
-<class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest"></class>
-<class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest"></class> 
-<class name="com.arcapi.Common.AssetDocumentAPITest"></class>
-<class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
-<class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
-<class name="com.arcapi.Common.AssetDetailAPITest"></class>
-<class name="com.arcapi.Common.AssetSearchOwnerAPITest"></class>
-<class name="com.arcapi.Common.AssetSearchAPITest"></class>
-<class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest"></class>
-<class name="com.arcapi.Common.AssetListAPITest"></class> 
-<class name="com.arcapi.Common.CityCom.AssetUpdateAPITest"></class>
-<class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"></class>
-<class name="com.arcapi.Common.AssetDocumentAPITest"></class>
 <class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
 <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
 <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"></class> 
@@ -122,6 +93,24 @@
 <class name="com.arcapi.Common.ThirdPartyListAppsAPITest"></class>
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class>
+</classes>
+</test>
+
+<test name="LEED v4.1 Cities: Plan and Design">
+<parameter name="ProjectTypeColumn" value="LeedIDEB"/>
+<parameter name="rownumber" value="2" />
+<parameter name="Country" value="US" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="CreditColumn" value="CityOtherNoneCredit" />
+<parameter name="CreditColumnNum" value="1"/>
+<classes>
+<class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"></class>
+<class name="com.arcapi.Citytestcases.LEEDV4CitiesPlanandDesign"></class>
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.NotSyncLOProjectAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.NotSignAgreementRegistrationAPITest"></class> 
 
 </classes>
 </test>

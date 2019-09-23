@@ -47,7 +47,7 @@ public class OtherFuelMeterCreateAPITest extends BaseClass {
 		jsonAsMap.put("native_unit", Unit[i]);
 		jsonAsMap.put("type", Type[j]);
 
-		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/";
+		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/?recompute_score=false";
 
 		CommonMethod.res = MethodCall.POSTRequest(url,jsonAsMap);
 

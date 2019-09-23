@@ -17,7 +17,7 @@ public class ElectricityMeterDeleteAPITest extends BaseClass {
 	public void MeterDeleteAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
 		try {
-			int RowNum = data.getRowCountbyColNum("DataInput", 0);
+			int RowNum = 11;
 			
 			for (int i =2; i<= RowNum;i++) {
 

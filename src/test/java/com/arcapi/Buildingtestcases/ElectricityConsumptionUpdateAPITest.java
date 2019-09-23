@@ -15,10 +15,10 @@ public class ElectricityConsumptionUpdateAPITest extends BaseClass {
 
 	@Test(groups="CheckMeter")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
-	public void ConsumptionUpdatePUTAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
+	public void ElectricityConsumptionUpdateAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
 			
-        int RowNum = data.getRowCountbyColNum("DataInput", 0);
+        int RowNum = 11;
     	for (int i =2; i<= RowNum;i++) {
 
     	payload = MeterPayload.meterData2();	

@@ -43,7 +43,6 @@
 <class name="com.arcapi.Common.CityCom.MeasuresVersionDetailAPITest"></class>
 <class name="com.arcapi.Common.CityCom.MeasuresVersionPostAPITest"></class>
 <class name="com.arcapi.Parksmarttestcases.UserActivityListAPITest"></class>
-<class name="com.arcapi.Common.TemperatureDataGetTest"></class>
 <class name="com.arcapi.Common.AssetRequiredFieldsAPITest"></class>
 <class name="com.arcapi.Common.CountryStatesJSONAPITest"></class> 
 <class name="com.arcapi.Common.AssociatedCategoriesAPITest"></class> 

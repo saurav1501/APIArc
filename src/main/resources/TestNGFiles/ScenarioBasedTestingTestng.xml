@@ -17,9 +17,7 @@
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
-<class name="com.arcapi.Common.Neg.ReviewCertificationPricingAPITest"></class>
-<class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class>
- <class name="com.arcapi.Common.Neg.SubmitReviewGetAPITest"></class> 
+<class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class> 
 <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.TeamManagerAddPOSTAPITest"></class>
 </classes>

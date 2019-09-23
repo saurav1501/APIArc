@@ -1,7 +1,5 @@
 package com.arcapi.Buildingtestcases;
 
-import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -33,18 +31,18 @@ public class WaterMeterCreateAPITest extends BaseClass {
 			jsonAsMap.put("native_unit", Unit[i]);
 			jsonAsMap.put("type", Type[j]);
 
-			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/";
+			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/?recompute_score=false";
 
-			CommonMethod.res = MethodCall.POSTRequest(url,payload);
+			CommonMethod.res = MethodCall.POSTRequest(url,jsonAsMap);
 
 			CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
 
 			data.setCellData("DataInput", "WaterMeterID", row, CommonMethod.fetchedID);
 
-			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			Assertion.verifyStatusCode(CommonMethod.res, 201);
 			
 			row++;
-				}
+		}
 }
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();

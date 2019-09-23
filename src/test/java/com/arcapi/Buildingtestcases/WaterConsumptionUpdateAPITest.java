@@ -17,7 +17,7 @@ public class WaterConsumptionUpdateAPITest extends BaseClass {
 
 			
         try {
-			int RowNum = data.getRowCountbyColNum("DataInput", 3);
+			int RowNum = 45;
 			for (int i =2; i<= RowNum;i++) {
 
 			payload = MeterPayload.meterData2();

@@ -25,7 +25,7 @@ public class HumanExperienceMeterUpdateAPITest extends BaseClass {
 				for (int k =0; k< Type.length;k++) {
 			
 		JSONObject jsonAsMap = new JSONObject();
-		jsonAsMap.put("name", "Formaldehyde Updated");
+		jsonAsMap.put("name", "Formaldehyde");
 		jsonAsMap.put("native_unit", Unit[j]);
 		jsonAsMap.put("type", Type[k]);
 
@@ -33,10 +33,8 @@ public class HumanExperienceMeterUpdateAPITest extends BaseClass {
 				+ data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/";
 
 		CommonMethod.res = MethodCall.PUTRequest(url, jsonAsMap);
-		Assertion.verifyStatusCode(CommonMethod.res, 200);		
-		
+			
 		if(j==0 && k==0){
-			System.out.println("Hi");
 			Assertion.verifyStatusCode(CommonMethod.res, 400);
 		}
 		

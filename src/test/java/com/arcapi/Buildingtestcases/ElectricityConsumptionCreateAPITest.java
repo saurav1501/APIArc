@@ -14,10 +14,10 @@ public class ElectricityConsumptionCreateAPITest extends BaseClass {
 
 	@Test(groups="CreateMeter")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
-	public void ConsumptionCreatePOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber) {
+	public void ElectricityConsumptionCreateAPI(String SheetName,String ProjectTypeColumn, int rownumber) {
 
 		try {
-			int RowNum = data.getRowCountbyColNum("DataInput", 0);
+			int RowNum = 11;
 			for (int i =2; i<= RowNum;i++) {
 			payload = MeterPayload.meterData3();
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
