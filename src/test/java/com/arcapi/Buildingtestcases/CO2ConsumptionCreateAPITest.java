@@ -24,6 +24,10 @@ public class CO2ConsumptionCreateAPITest extends BaseClass {
 
 			
 			CommonMethod.res = MethodCall.POSTRequest(url, payload);
+			
+			CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
+			data.setCellData("DataInput","CO2PK", rownumber, CommonMethod.fetchedID);
+			
 			Assertion.verifyStatusCode(	CommonMethod.res, 201);
 			} catch (JsonProcessingException e) {
 			e.printStackTrace();

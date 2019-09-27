@@ -384,5 +384,89 @@ public class AddProjectPayload extends BaseClass {
    
      }
     }
-    	
+    public static AddBuildingProject addProjectSingleCharProject(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
+		addProject = new AddBuildingProject();
+		String ProjectName="t";
+        RandomData.unitType();
+        RandomData.spaceType();
+        RandomData.ownerType();
+        RandomData.setOwnerCountryAddressOwnerOrg(Country);
+         
+        String owner_email =data.getCellData(sheetName, "OwnerEmail", rowNumTwo);
+	
+        addProject.setName(ProjectName);
+        addProject.setRating_system(Rating);
+        addProject.setGross_area(GrossArea);
+        addProject.setOccupancy(occupant);
+        addProject.setStreet(data.getCellData(sheetName, "Address",rowNumTwo));
+        addProject.setCity(data.getCellData(sheetName, "City", rowNumTwo));
+        addProject.setCountry(Country);
+        addProject.setState(RandomData.State);
+        addProject.setProject_type(ProjectType);
+        addProject.setUnitType(RandomData.Unit);
+        addProject.setSpaceType(RandomData.SpaceType);
+        addProject.setOwner_email(owner_email);
+        addProject.setOwnerType(RandomData.OwnerType);
+        addProject.setConfidential(false);
+        addProject.setSign_agreement(false);
+        addProject.setZip_code("20037"); 
+        addProject.setOrganization(data.getCellData(sheetName, "OwnerOrg", rowNumTwo));
+        addProject.setManageEntityCountry(Country);
+        addProject.setOperating_hours("100");
+		return addProject;  
+	}
+	
+	public static AddBuildingProject addProjectPayloadTransitNullPayload(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
+		addProject = new AddBuildingProject();
+		String ProjectName=null;
+
+        if(Country.equals("IN"))
+		
+		{
+        	RandomData.selectIndState(Country);
+		
+		}
+		
+        else if(Country.equals("US"))
+			
+		{
+        	RandomData.selectUSState(Country);
+			
+		}
+		
+        else if(Country.equals("CN"))
+			
+		{
+        	RandomData.selectCNState(Country);
+		}
+	
+        RandomData.unitType();
+        RandomData.spaceType();
+        RandomData.ownerType();
+        RandomData.setOwnerCountryAddressOwnerOrg(Country);
+        ProjectName= RandomData.projectName(Country,Rating,ProjectType);
+        
+        addProject.setName(ProjectName);
+        addProject.setRating_system(Rating);
+        addProject.setGross_area(GrossArea);
+        addProject.setOccupancy(occupant);
+        addProject.setStreet(data.getCellData(sheetName, "Address",rowNumTwo));
+        addProject.setCity(data.getCellData(sheetName, "City", rowNumTwo));
+        addProject.setCountry(Country);
+        addProject.setState(RandomData.State);
+        addProject.setProject_type(ProjectType);
+        addProject.setUnitType(RandomData.Unit);
+        addProject.setConfidential(true);
+        addProject.setSign_agreement(true);
+        addProject.setZip_code(RandomData.ZipCode); 
+        addProject.setNoOfParkingSpace("15");
+        addProject.setNoOfParkingLevels("2");
+        addProject.setOrganization(data.getCellData(sheetName, "OwnerOrg", rowNumTwo));
+        addProject.setManageEntityCountry(Country);
+        addProject.setOwner_email(null);
+        addProject.setOwnerType(null);
+
+		return addProject;  
+	}
+
  }

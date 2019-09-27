@@ -21,7 +21,7 @@ public class HumanExperienceConsumptionUpdateAPITest extends BaseClass {
       	payload = MeterPayload.meterData3();
 		url = "/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
 				+ data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/consumption/ID:"
-				+ data.getCellData("DataInput", "HumanExperiencePK", i) + "/";
+				+ data.getCellData("DataInput", "HumanExperiencePK", i) + "/?recompute_score=false";
 
       	CommonMethod.res = MethodCall.PUTRequest(url, payload);
 		Assertion.verifyStatusCode(	CommonMethod.res,200);

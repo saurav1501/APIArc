@@ -35,7 +35,7 @@ public class WasteCreate60MonthMeterDataBulkPostTest extends BaseClass {
 				meterData.setWaste_generated(waste_generated);
 				meterData.setWaste_diverted(waste_diverted);
 			
-			url = "/assets/LEED:" + projectType + "/waste/";
+			url = "/assets/LEED:" + projectType + "/waste/?recompute_score=false";
 			CommonMethod.res = MethodCall.POSTRequest(url, meterData);
 			Assertion.verifyStatusCode(CommonMethod.res , 201);
 			

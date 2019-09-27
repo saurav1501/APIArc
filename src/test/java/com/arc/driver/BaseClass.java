@@ -113,8 +113,12 @@ public class BaseClass {
 		FileInputStream file2 = new FileInputStream(
 				System.getProperty("user.dir") + "/src/main/resources/qas.properties");
 		FileInputStream file3 = new FileInputStream(
-				System.getProperty("user.dir") + "/src/main/resources/dev.properties");
+		System.getProperty("user.dir") + "/src/main/resources/dev.properties");
 
+		FileInputStream file4 = new FileInputStream(
+				System.getProperty("user.dir") + "/src/main/resources/dev2.properties");
+
+		
 		if(environment.equalsIgnoreCase("stg")) {
 
 			prop.load(file1);
@@ -122,11 +126,8 @@ public class BaseClass {
 			sheetName= prop.getProperty("sheetName");
 			username=data.getCellData(sheetName, "NormalUserName", rowNumTwo);
 			password=data.getCellData(sheetName, "NormalPassword", rowNumTwo);
-			rowNumOne= Integer.parseInt(prop.getProperty("rowNumOne"));
 			rowNumTwo= Integer.parseInt(prop.getProperty("rowNumTwo"));
 			rowNumThree= Integer.parseInt(prop.getProperty("rowNumThree"));
-			rowNumFour= Integer.parseInt(prop.getProperty("rowNumFour"));
-			rowNumFive= Integer.parseInt( prop.getProperty("rowNumFive"));
 			reqSpec = new RequestSpecBuilder().setBaseUri(baseURL).build();
 			SubscriptionKey = "06c50a1570bd4d40a7859ec28514b185";
 			baseURLLEED = prop.getProperty("envleed");
@@ -139,11 +140,22 @@ public class BaseClass {
 			sheetName= prop.getProperty("sheetName");
 			username=data.getCellData(sheetName, "NormalUserName", rowNumTwo);
 			password=data.getCellData(sheetName, "NormalPassword", rowNumTwo);
-			rowNumOne= Integer.parseInt(prop.getProperty("rowNumOne"));
 			rowNumTwo= Integer.parseInt(prop.getProperty("rowNumTwo"));
 			rowNumThree= Integer.parseInt(prop.getProperty("rowNumThree"));
-			rowNumFour= Integer.parseInt(prop.getProperty("rowNumFour"));
-			rowNumFive= Integer.parseInt( prop.getProperty("rowNumFive"));
+			reqSpec = new RequestSpecBuilder().setBaseUri(baseURL).build();
+			SubscriptionKey = "450fc0393ae747638659258f5ed26485";
+			baseURLLEED = prop.getProperty("envleed");
+			reqSpecLEED = new RequestSpecBuilder().setBaseUri(baseURLLEED).build();
+
+		}
+		else if(environment.equalsIgnoreCase("dev2")) {
+			prop.load(file4);
+			baseURL = prop.getProperty("env");
+			sheetName= prop.getProperty("sheetName");
+			username=data.getCellData(sheetName, "NormalUserName", rowNumTwo);
+			password=data.getCellData(sheetName, "NormalPassword", rowNumTwo);
+			rowNumTwo= Integer.parseInt(prop.getProperty("rowNumTwo"));
+			rowNumThree= Integer.parseInt(prop.getProperty("rowNumThree"));
 			reqSpec = new RequestSpecBuilder().setBaseUri(baseURL).build();
 			SubscriptionKey = "450fc0393ae747638659258f5ed26485";
 			baseURLLEED = prop.getProperty("envleed");
@@ -156,11 +168,8 @@ public class BaseClass {
 			sheetName= prop.getProperty("sheetName");
 			username=data.getCellData(sheetName, "NormalUserName", rowNumTwo);
 			password=data.getCellData(sheetName, "NormalPassword", rowNumTwo);
-			rowNumOne= Integer.parseInt(prop.getProperty("rowNumOne"));
 			rowNumTwo= Integer.parseInt(prop.getProperty("rowNumTwo"));
 			rowNumThree= Integer.parseInt(prop.getProperty("rowNumThree"));
-			rowNumFour= Integer.parseInt(prop.getProperty("rowNumFour"));
-			rowNumFive= Integer.parseInt( prop.getProperty("rowNumFive"));
 			reqSpec = new RequestSpecBuilder().setBaseUri(baseURL).build();
 			SubscriptionKey = "37fee8fbf7c84994a40df7346bf2f684";
 

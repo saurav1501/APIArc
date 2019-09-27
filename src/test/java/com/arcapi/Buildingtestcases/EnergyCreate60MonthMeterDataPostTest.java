@@ -31,7 +31,7 @@ public class EnergyCreate60MonthMeterDataPostTest extends BaseClass {
 		meterData.setStart_date(start_date);
 		meterData.setReading(reading);
 	
-		url = "/assets/LEED:" + projectType + "/meters/ID:" + meterID + "/consumption/";
+		url = "/assets/LEED:" + projectType + "/meters/ID:" + meterID + "/consumption/?recompute_score=false";
 		
 		CommonMethod.res = MethodCall.POSTRequest(url, meterData);
 		Assertion.verifyStatusCode(CommonMethod.res, 201);

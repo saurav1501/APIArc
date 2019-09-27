@@ -11,7 +11,7 @@ import com.arc.driver.CommonMethod;
 public class AQIDataGetAPITest extends BaseClass {
 
 	@Test(groups="CheckMeter")
-	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
+	@Parameters({"SheetName","ProjectTypeColumn","rownumber" })
 	public void AQIDataGetAPI(String SheetName,String ProjectTypeColumn, int rownumber) {
 
 		try {

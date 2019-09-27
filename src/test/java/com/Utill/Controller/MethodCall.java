@@ -35,6 +35,7 @@ public class MethodCall extends BaseClass{
 	
 	public static Response GETRequestWithoutHeader(String uRI) {
 		CommonMethod.testlog("Info", "GET Request Call URL "+baseURL+uRI);
+		
 		log.info("GET Request Call URL "+baseURL+uRI);
 		
 		CommonMethod.res= given().log().all().spec(reqSpec).when().get(uRI).then().extract().response();
@@ -86,8 +87,7 @@ public class MethodCall extends BaseClass{
 		Gson gson = new Gson();
 		String jsonString = gson.toJson(strJSON);
 		log.info("Payload is  "+jsonString.toString());
-		CommonMethod.testlog("Pass", "Payload is : "+"<br>"+jsonString.toString());
-		
+		CommonMethod.testlog("Pass", "Payload is : "+"<br>"+jsonString.toString());		
 		CommonMethod.testlog("Pass","Response from API" + "<br>" + CommonMethod.res.asString());
 		
 		return CommonMethod.res;
@@ -117,6 +117,10 @@ public class MethodCall extends BaseClass{
 		CommonMethod.res= given().log().all().headers(headerMap).header("content-type", "application/json")
 				.spec(reqSpec).when().body(loginArc).post(uRI).then().extract().response();
 		
+		Assertion.verifyStatusCode(CommonMethod.res, 200);
+		
+		log.info("Payload is  "+loginArc.getUsername().toString()+loginArc.getPassword().toString());
+		CommonMethod.testlog("Pass", "Payload is : "+"username "+loginArc.getUsername().toString()+" password "+loginArc.getPassword().toString());
 	
 		Headers ResponseHeader = CommonMethod.res.getHeaders();
 		log.info(ResponseHeader.getValue("X-Frame-Options"));
@@ -132,9 +136,7 @@ public class MethodCall extends BaseClass{
 		log.info(CommonMethod.res.path("token_type"));	
 		log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
 		
-		log.info("Payload is  "+loginArc.getUsername().toString()+loginArc.getPassword().toString());
-		CommonMethod.testlog("Pass", "Payload is : "+"username "+loginArc.getUsername().toString()+" password "+loginArc.getPassword().toString());
-		
+			
 		log.info("Header is "+header.toString());
 		CommonMethod.testlog("Pass", "Header is : "+header.toString());
 		
@@ -151,12 +153,11 @@ public class MethodCall extends BaseClass{
 		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
 		log.info("POST Request Call URL "+baseURL+uRI);
 		
-	
 		CommonMethod.res = given().log().all().header("Ocp-Apim-Subscription-Key", CommonMethod.SubscriptionKey).spec(reqSpec)
 				.parameters("username", data.getCellData(SheetName, UserName, 2), "password",
 						data.getCellData(SheetName, Password, 2))
 				.when().post(url).then().extract().response();
-		
+				
 		Headers ResponseHeader = CommonMethod.res.getHeaders();
 		log.info(ResponseHeader.getValue("X-Frame-Options"));
 		
@@ -224,7 +225,7 @@ public class MethodCall extends BaseClass{
 		CommonMethod.res= given().log().all()
 				.headers(headerMap)
 				.header("Authorization",header).header("content-type", "application/json").spec(reqSpec).when().body(strJSON).put(uRI).then().extract().response();
-
+	
 		CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);
 		log.info("Put Response Time In milliseconds" +CommonMethod.responsetime);
 		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");

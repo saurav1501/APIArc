@@ -15,7 +15,7 @@ import com.jayway.restassured.http.ContentType;
 
 public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 
-	@Test(groups = { "Certification", "Precertification", "PerformanceScore", "Recertification" })
+	@Test(groups ="Check SpaceType")
 	@Parameters({ "SheetName", "ProjectType", "ProjectTypeColumn", "rownumber", "Country" })
 	public void CreateAssetPOSTAPI(String SheetName, String ProjectType, String ProjectTypeColumn, int rownumber,
 			String Country) throws IOException {

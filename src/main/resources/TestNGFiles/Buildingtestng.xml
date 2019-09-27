@@ -9,17 +9,38 @@
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="other"></parameter>
+
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Common.LoginAPITest"></class> 
+
+<class name="com.arcapi.Common.ReviewPaymentIntimationGetAPITest"></class>
+<class name="com.arcapi.Common.WebIOSAppVersionGetAPITest"></class>
 <class name="com.arcapi.Common.UserDetailAPITest"></class>
 <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"></class>
-<class name="com.arcapi.Common.LOTokenAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.Common.AssetSearchAPITest"></class>
 <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.Common.UserPreferenceGetAPITest"></class>
+<class name="com.arcapi.Common.UserPreferenceTruePostAPITest"></class>
+<class name="com.arcapi.Common.DefaultUserPreferencePostAPITest"></class>
+<class name="com.arcapi.Common.ScoreCodeVersionQuerysetGetAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionCompareGetAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionNotificationGETAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionUserNotificationGetAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionUserNotificationDeleteAPITest"></class>
+<class name="com.arcapi.Common.SocreVersionUpdateQuerysetGetAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionLogQuerySetGetAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionExtensionRequestUpdatePostAPITest"></class>
+<class name="com.arcapi.Common.MeasureCommentAddPostAPITest"></class>
+<class name="com.arcapi.Common.MeasureCommentQuerySetGetAPITest"></class>
+<class name="com.arcapi.Common.MeasureCommentReplayPostAPITest"></class>
+<class name="com.arcapi.Common.MeasureCommentDeleteAPITest"></class>
+<class name="com.arcapi.Common.WasteGeneratedResampleGETAPITest"></class>
+<class name="com.arcapi.Common.WasteDivertedResampleGETAPITest"></class>
+<class name="com.arcapi.Common.DataSnapshotBeforeReviewGETAPITest"></class>
 <class name="com.arcapi.Common.PaymentOrderGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentReceiptAPITest"></class>
 <class name="com.arcapi.Common.PaymentHistoryAPITest"></class>   
@@ -83,9 +104,9 @@
 <class name="com.arcapi.Common.AssetDataSnapshotAPITest"></class>
 
 <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
-<!-- <class name="com.arcapi.Common.ReviewCertificationPricingAPITest"></class>
+<class name="com.arcapi.Common.ReviewCertificationPricingAPITest"></class>
 <class name="com.arcapi.Common.SubmitReviewPOSTAPITest"></class>
-<class name="com.arcapi.Common.SubmitReviewGetAPITest"></class> -->
+<class name="com.arcapi.Common.SubmitReviewGetAPITest"></class>
 
 <class name="com.arcapi.Common.NotificationCreatePOSTAPITest"></class>
 <class name="com.arcapi.Common.NotificationGetAPITest"></class>
@@ -117,9 +138,12 @@
 <class name="com.arcapi.Common.ThirdPartyListAppsAPITest"></class>
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class>
- </classes> 
- 
+<class name="com.arcapi.Common.ScoreImprovementGetAssetAPITest"></class>
+
+
+</classes> 
 </test> 
+
 <test name="CompleteFlowTest-Building-None">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
@@ -145,6 +169,7 @@
 <class name="com.arcapi.Buildingtestcases.CarbonDioxideCreate5YearDataPostTest"></class> 
 <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest"></class> 
+
 </classes>
 </test> 
 </suite>  

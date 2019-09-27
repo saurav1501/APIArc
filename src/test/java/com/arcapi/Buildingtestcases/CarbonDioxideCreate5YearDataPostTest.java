@@ -25,7 +25,7 @@ public class CarbonDioxideCreate5YearDataPostTest extends BaseClass {
 			meterData.setEnd_date(end_date);
 			meterData.setReading(reading);
 			
-			url = "/assets/LEED:"+projectType +"/meters/ID:"+meterID+"/consumption/";
+			url = "/assets/LEED:"+projectType +"/meters/ID:"+meterID+"/consumption/?recompute_score=false";
 
 			CommonMethod.res = MethodCall.POSTRequest(url,meterData);	
 			Assertion.verifyStatusCode(	CommonMethod.res, 201);

@@ -124,6 +124,7 @@
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class> 
 <class name="com.arcapi.Common.AssetSnapshotDownloadAPITest"></class>
+<class name="com.arcapi.Common.ReturnReviewGetAPITest"></class>
 </classes>
 </test>
 </suite> 

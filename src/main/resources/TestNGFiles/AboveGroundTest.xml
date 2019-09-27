@@ -67,7 +67,6 @@
 <class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
 <class name="com.arcapi.Common.VerifyAgreementPresentAPITest"></class>
 <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
-<class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"></class> 
 <class name="com.arcapi.Common.FeedbackSubmitPostAPITest"></class>
 <class name="com.arcapi.Common.DeleteAllAppsAPITest"></class>
 <class name="com.arcapi.Common.InstallAllAppsAfterDeleteAPITest"></class>
@@ -136,6 +135,7 @@
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class> 
 <class name="com.arcapi.Common.AssetSnapshotDownloadAPITest"></class> 
+<class name="com.arcapi.Common.ReturnReviewGetAPITest"></class>
 
 </classes>
 </test>

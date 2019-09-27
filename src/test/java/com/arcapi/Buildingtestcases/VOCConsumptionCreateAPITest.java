@@ -3,6 +3,7 @@ package com.arcapi.Buildingtestcases;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
 import com.Utill.Controller.MethodCall;
 import com.Utill.Model.MeterPayload;
 import com.arc.driver.BaseClass;
@@ -21,14 +22,12 @@ public class VOCConsumptionCreateAPITest extends BaseClass {
 					+ data.getCellData("DataInput", "VOCMeterID", rownumber) + "/consumption/";
 
 			CommonMethod.res = MethodCall.POSTRequest(url, payload);	
-			CommonMethod.res.then().assertThat().statusCode(201);
-
+			Assertion.verifyStatusCode(	CommonMethod.res, 201);
 			CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
 
 			data.setCellData("DataInput", "VOCPK", rownumber, CommonMethod.fetchedID);
 
-			CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
-		} catch (JsonProcessingException e) {
+			} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
 

@@ -19,6 +19,7 @@ public class MeterCreatePOSTAPITest extends BaseClass {
 			url= "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/";
 			payload = MeterPayload.meterData();
 			CommonMethod.res = MethodCall.POSTRequest(url,payload);
+			
 			CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
 			data.setCellData(SheetName, "MeterID", rownumber, CommonMethod.fetchedID);
 			Assertion.verifyStatusCode(CommonMethod.res, 201);

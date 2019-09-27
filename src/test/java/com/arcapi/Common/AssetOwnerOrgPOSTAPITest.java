@@ -1,7 +1,5 @@
 package com.arcapi.Common;
 
-import java.io.IOException;
-
 import org.testng.annotations.Test;
 
 import com.Utill.Controller.Assertion;
@@ -13,7 +11,7 @@ import com.arc.driver.CommonMethod;
 public class AssetOwnerOrgPOSTAPITest extends BaseClass {
 
 	@Test(groups="OwnerOrg")
-	public void AssetOwnerOrgPOSTAPI() throws IOException, InterruptedException {
+	public void AssetOwnerOrgPOSTAPI(){
 
 		try {
 			url ="/assets/searchowner/";

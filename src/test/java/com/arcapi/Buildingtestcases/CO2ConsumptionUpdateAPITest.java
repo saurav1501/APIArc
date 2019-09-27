@@ -24,7 +24,7 @@ public class CO2ConsumptionUpdateAPITest extends BaseClass {
 
 			CommonMethod.res = MethodCall.POSTRequest(url, payload);
 			
-			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			Assertion.verifyStatusCode(CommonMethod.res, 201);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -30,7 +30,7 @@
 <class name="com.arcapi.Common.AssetDocumentAPITest"></class>
 <class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
 <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
-<class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"></class> 
+<class name="com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest"></class> 
 <class name="com.arcapi.Common.CityCom.CreditGetAPITest"></class>
 <class name="com.arcapi.Common.CityCom.CreditAddTeamPOSTAPITest"></class> 
 <class name="com.arcapi.Common.CityCom.MeasuresListAPITest"></class>

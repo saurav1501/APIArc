@@ -51,7 +51,6 @@
 <class name="com.arcapi.Common.FuelCategoryAPITest"></class>
 <class name="com.arcapi.Common.GetAllDocumentListAPITest"></class>
 <class name="com.arcapi.Common.PerformanceComparablesGetAPITest"></class>
-<class name="com.arcapi.Common.ScoreWeightsAPITest"></class>
 <class name="com.arcapi.Common.ThirdPartyListAppsAPITest"></class>
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class> 
 

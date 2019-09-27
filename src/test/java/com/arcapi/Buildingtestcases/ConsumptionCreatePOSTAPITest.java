@@ -16,7 +16,7 @@ public class ConsumptionCreatePOSTAPITest extends BaseClass {
 	public void ConsumptionCreatePOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber) {
 
 		try {
-			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"+ data.getCellData(SheetName, "MeterID", rownumber) + "/consumption/";
+			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"+ data.getCellData(SheetName, "MeterID", rownumber) + "/consumption/?recompute_score=false";
 			payload = MeterPayload.meterData2();
 			CommonMethod.res = MethodCall.POSTRequest(url,payload);
 			CommonMethod.fetchedID = CommonMethod.res.path("id").toString();

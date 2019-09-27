@@ -33,6 +33,8 @@ public class CommonMethod extends BaseClass {
 	public static String ProgramID;
     public static File formuploadfile = new File(System.getProperty("user.dir") + "/src/main/resources/Creditfile.pdf");
 	public static File excelfile = new File(System.getProperty("user.dir") + "/src/main/resources/Arc_Data_Template_building.xlsm");
+	public static File oldexcelfile = new File(System.getProperty("user.dir") + "/src/main/resources/OLDArc_Data_Template.xlsm");
+
 	public static File excelfileTransitAbove = new File(System.getProperty("user.dir") + "/src/main/resources/Arc_Data_Template_transit_above.xlsm");
 	public static File file = new File(System.getProperty("user.dir") + "/src/main/resources/Certification_Agreement.htm");
 	public static File Jsonfile =  new File(System.getProperty("user.dir") + "/src/main/resources/AdditionalData.json");

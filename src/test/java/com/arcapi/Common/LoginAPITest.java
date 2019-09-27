@@ -12,14 +12,15 @@ import com.arc.driver.CommonMethod;
 public class LoginAPITest extends BaseClass {
 
 	@Test(groups="Login")
-	public void LoginAPI() {
+	public void LoginAPI () {
 		
 		try {
 			url= "/auth/login/";
 			CommonMethod.res = MethodCall.POSTRequestLogin(url);
-			CommonMethod.res.then().assertThat().body("token_type", equalTo("Bearer"));
 			Assertion.verifyStatusMessage(CommonMethod.res, "HTTP/1.1 200 OK");
+			CommonMethod.res.then().assertThat().body("token_type", equalTo("Bearer"));
 			
+					
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -30,7 +30,7 @@ public class HumanExperienceMeterUpdateAPITest extends BaseClass {
 		jsonAsMap.put("type", Type[k]);
 
 		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-				+ data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/";
+				+ data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/?recompute_score=false";
 
 		CommonMethod.res = MethodCall.PUTRequest(url, jsonAsMap);
 			

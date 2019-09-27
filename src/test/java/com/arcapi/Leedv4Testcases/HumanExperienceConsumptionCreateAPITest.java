@@ -22,7 +22,7 @@ public class HumanExperienceConsumptionCreateAPITest extends BaseClass {
 				for (int i = 2; i <= RowNum; i++) {
 				payload = MeterPayload.meterData2();
 				url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-						+ data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/consumption/";
+						+ data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/consumption/?recompute_score=false";
 				
 				CommonMethod.res = MethodCall.POSTRequest(url, payload);
 

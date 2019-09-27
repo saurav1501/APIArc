@@ -1,2 +1,2 @@
-2019-09-23 16:56:27 INFO  LoginAPITest:217 - Executing test: LoginAPI
-2019-09-23 16:56:27 INFO  LoginAPITest:115 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
+2019-09-27 11:50:17 INFO  LoginAPITest:226 - Executing test: LoginAPI
+2019-09-27 11:50:17 INFO  LoginAPITest:115 - POST Request Call URL https://api.usgbc.org/dev/leed/auth/login/

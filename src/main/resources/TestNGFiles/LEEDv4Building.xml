@@ -9,6 +9,7 @@
 <classes>
 <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.LEEDv4OMExistingBuildingsAPITest"></class> 
+<class name="com.arcapi.Common.LOTokenAPITest"></class>
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest"></class> 

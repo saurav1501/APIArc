@@ -1,41 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [BuildingV3CompletePositiveSuite]">
-  <parameter name="environment" value="qas"/>
+  <parameter name="environment" value="dev"/>
   <parameter name="SoReference" value="performance score"/>
-  <parameter name="ratings" value="none"/>
+  <parameter name="ratings" value="other"/>
   <parameter name="ProjectType" value="building"/>
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
-  <parameter name="SheetName" value="QAS"/>
+  <parameter name="SheetName" value="DEV"/>
   <parameter name="SoReferenceSR" value="performance score"/>
-  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
-  <test name="CompleteFlowTest-Building-None">
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+  <test name="CompleteFlowTest-Building-Other">
     <parameter name="SoReference" value="performance score"/>
-    <parameter name="ratings" value="none"/>
+    <parameter name="ratings" value="other"/>
     <parameter name="ProjectType" value="building"/>
     <parameter name="rownumber" value="2"/>
     <parameter name="SoReferenceSR" value="performance score"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
     <classes>
       <class name="com.arcapi.Common.LoginAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
-      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
-      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
-      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
-      <class name="com.arcapi.Common.AssetDetailAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.EnergyCreate60MonthMeterDataPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.WaterCreate60MonthMeterDataPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.WasteCreate60MonthMeterDataBulkPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.CarbonDioxideCreate5YearDataPostTest"/>
-      <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"/>
-      <class name="com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest"/>
+      <class name="com.arcapi.Common.DataSnapshotBeforeReviewGETAPITest"/>
     </classes>
-  </test> <!-- CompleteFlowTest-Building-None -->
+  </test> <!-- CompleteFlowTest-Building-Other -->
 </suite> <!-- Failed suite [BuildingV3CompletePositiveSuite] -->

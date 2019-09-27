@@ -22,7 +22,7 @@ public class HumanExperienceConsumptionDeleteAPITest extends BaseClass {
 		for (int i = 2; i <= RowNum; i++) {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
 					+ data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/consumption/ID:"
-					+ data.getCellData("DataInput", "HumanExperiencePK", i) + "/";
+					+ data.getCellData("DataInput", "HumanExperiencePK", i) + "/?recompute_score=false";
 	
 			CommonMethod.res = MethodCall.DELETERequest(url);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
