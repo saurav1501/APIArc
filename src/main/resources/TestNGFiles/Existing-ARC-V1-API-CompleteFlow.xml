@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Existing-V1-CompleteFlow">
+
+<test name="CompleteFlowTest-Community-Other">
+<parameter name="ProjectType" value="community" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCommunityNone" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="CreditColumn" value="CommunityOtherNoneCredit" />
+<parameter name="CreditColumnNum" value="6" />
+<parameter name="ratings" value="other"></parameter>
+
+<classes> 
+<class name="com.arcapi.Common.LoginAPITest"></class> 
+</classes>
+</test>
+</suite> 
+  
+
+  
+
+    
+  

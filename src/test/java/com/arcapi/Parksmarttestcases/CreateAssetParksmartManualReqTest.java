@@ -1,7 +1,6 @@
 package com.arcapi.Parksmarttestcases;
 
 import java.io.IOException;
-import java.util.Random;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -20,8 +19,6 @@ public class CreateAssetParksmartManualReqTest extends BaseClass {
 	public void CreateAssetPOSTAPI(String SheetName, String ProjectType,String ProjectTypeColumn, int rownumber) throws IOException {
 
 				
-
-		
 		int RowNum = 12;
 		
 		for(int i=2;i<=RowNum;i++) {
@@ -54,6 +51,7 @@ public class CreateAssetParksmartManualReqTest extends BaseClass {
         addProject.setManageEntityCountry(CountryCode);
         addProject.setOwner_email(data.getCellData(sheetName, "OwnerEmail", rowNumTwo));
         addProject.setOwnerType(RandomData.OwnerType);
+        addProject.setYear_constructed("2018-04-30");
         
         url = "/assets/";
         CommonMethod.res = MethodCall.POSTRequest(url, addProject);

@@ -20,49 +20,4 @@
 
 </classes>
 </test> 
-
-<!-- <test name="CompleteFlowTest-Parksmart1">
-
-
-<parameter name="ProjectType" value="parksmart" />
-<parameter name="ProjectTypeColumn" value="ProjectIDBuild2" />
-<parameter name="SoReference" value="performance score" />
-<parameter name="SoReferenceSR" value="performance score" />
-<parameter name="rownumber" value="2" />
-
-<classes>
-
-<class name="com.arcapi.Common.LoginAPITest"></class>
-<class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartManualReqTest"></class>
-<class name="com.arcapi.Parksmarttestcases.SignAgreementRegistrationManualTest"></class>
-<class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest"></class>
-<class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitManualTest"></class>
-<class name="com.arcapi.Parksmarttestcases.AddAssestTimelineManualTest"></class>
-
-
-</classes>
-</test> 
-
-<test name="CompleteFlowTest-Parksmart2">
-
-
-<parameter name="ProjectType" value="parksmart" />
-<parameter name="ProjectTypeColumn" value="ProjectIDBuild3" />
-<parameter name="SoReference" value="performance score" />
-<parameter name="SoReferenceSR" value="performance score" />
-<parameter name="rownumber" value="2" />
-
-<classes>
-
-<class name="com.arcapi.Common.LoginAPITest"></class>
-<class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartManualReqTest"></class>
-<class name="com.arcapi.Parksmarttestcases.SignAgreementRegistrationManualTest"></class>
-<class name="com.arcapi.Parksmarttestcases.RegistrationPaymentPricingGetAPITest"></class>
-<class name="com.arcapi.Parksmarttestcases.PaymentOrderSubmitManualTest"></class>
-<class name="com.arcapi.Parksmarttestcases.AddAssestTimelineManualTest"></class>
-
-
-</classes> 
-</test> -->
-
 </suite> 

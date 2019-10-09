@@ -9,7 +9,6 @@
 <classes>
 <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.LEEDv4OMExistingBuildingsAPITest"></class> 
-<class name="com.arcapi.Common.LOTokenAPITest"></class>
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest"></class> 
@@ -26,7 +25,7 @@
 <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest"></class>  
-<class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.V4ExcelUploadTemplatePOSTAPITest"></class>
 <class name="com.arcapi.Common.S3DocumentUploadPOSTAPITest"></class>
 <class name="com.arcapi.Common.S3DocumentListAPITest"></class>
 <class name="com.arcapi.Common.S3DocumentRemoveAPITest"></class>

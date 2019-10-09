@@ -12,7 +12,7 @@ import com.arc.driver.CommonMethod;
 public class AddProjectPayload extends BaseClass {
     static AddBuildingProject addProject ;
 	
-	public static AddBuildingProject addProjectPayload(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
+	public static AddBuildingProject addProjectPayload(String ProjectType,String ProjectTypeColumn,String Country ,String Rating,boolean SigAgg) throws IOException {
 		addProject = new AddBuildingProject();
 		String ProjectName=null;
 
@@ -58,7 +58,7 @@ public class AddProjectPayload extends BaseClass {
         addProject.setOwner_email(owner_email);
         addProject.setOwnerType(RandomData.OwnerType);
         addProject.setConfidential(false);
-        addProject.setSign_agreement(false);
+        addProject.setSign_agreement(SigAgg);
         addProject.setZip_code(RandomData.ZipCode); 
         addProject.setOrganization(data.getCellData(sheetName, "OwnerOrg", rowNumTwo));
         addProject.setManageEntityCountry(Country);
@@ -191,8 +191,8 @@ public class AddProjectPayload extends BaseClass {
     	OwnerOrg ownerDeatail = new OwnerOrg();
     	ownerDeatail.setOrgName("TestOrg "+CommonMethod.randomNumber());
     	ownerDeatail.setOrgContactName("TestUser");
-    	ownerDeatail.setOrgContactEmail("ne@test.com");
-    	ownerDeatail.setOrgWebSite("http://example.com");
+    	ownerDeatail.setOrgContactEmail(data.getCellData(sheetName, "OwnerEmail", 2));
+    	ownerDeatail.setOrgWebSite("https://dev-v2.app.arconline.io");
     	ownerDeatail.setOrgCategory("02");
     	ownerDeatail.setOrgSubCategory("27");
     	return ownerDeatail;

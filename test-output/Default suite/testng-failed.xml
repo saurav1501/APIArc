@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="not-found"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.arcapi.Common.CityCom.AllMeterConsumptionGetAPITest"/>
+    </classes>
+  </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.arcapi.Leedv4Testcases.CreateAssetBuildingNoneAPITest">
+      <class name="com.arcapi.Common.CityCom.AllMeterConsumptionGetAPITest">
         <methods>
-          <include name="end"/>
           <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="CreateAssetPOSTAPI"/>
-          <include name="teardown"/>
-          <include name="ExtentReportConfig"/>
+          <include name="AllMeterConsumptionGetAPI"/>
         </methods>
-      </class> <!-- com.arcapi.Leedv4Testcases.CreateAssetBuildingNoneAPITest -->
+      </class> <!-- com.arcapi.Common.CityCom.AllMeterConsumptionGetAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

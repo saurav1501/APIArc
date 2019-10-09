@@ -1,7 +1,5 @@
 package com.arcapi.Transittestcases;
 
-import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -14,13 +12,12 @@ public class VerifyRidershipGraphValuesAPITest extends BaseClass {
 
 	@Test(groups="CheckMeter")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
-	public void VerifyRidershipGraphValuesAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
+	public void VerifyRidershipGraphValuesAPI(String SheetName,String ProjectTypeColumn, int rownumber) {
 	
 		for(int i=2;i<15;i++) {
-		String MeterName = data.getCellData("Graphs", "TransitHEMeterName", +  i);
+		
 
-		if (MeterName.equalsIgnoreCase("Ridership")) {
-			String Ridership_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID", i);
+			String Ridership_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID", 9);
 
 		     url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/resampled/"+Ridership_Meter_ID+"/?start_date=2018-01-01&end_2020-01-01";
 			 CommonMethod.res = MethodCall.GETRequest(url);	
@@ -37,4 +34,4 @@ public class VerifyRidershipGraphValuesAPITest extends BaseClass {
 	}
 	
 			
-}}
+}

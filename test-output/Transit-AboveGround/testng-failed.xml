@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Transit-AboveGround]">
+  <parameter name="environment" value="dev2"/>
+  <parameter name="CreditColumn" value="TransitAboveCredit"/>
+  <parameter name="SoReference" value="review"/>
+  <parameter name="CreditColumnNum" value="4"/>
+  <parameter name="ratings" value="aboveground"/>
+  <parameter name="ProjectType" value="transit"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="DEV2"/>
+  <parameter name="SoReferenceSR" value="review"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
+  <test name="CompleteFlowTest-Transit-Above">
+    <parameter name="CreditColumn" value="TransitAboveCredit"/>
+    <parameter name="SoReference" value="review"/>
+    <parameter name="CreditColumnNum" value="4"/>
+    <parameter name="ratings" value="aboveground"/>
+    <parameter name="ProjectType" value="transit"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="review"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Common.UserDetailAPITest"/>
+      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"/>
+      <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest"/>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentReceiptAPITest"/>
+      <class name="com.arcapi.Common.PaymentHistoryAPITest"/>
+      <class name="com.arcapi.Transittestcases.ExcelUploadTemplateTransitAboveAPITest"/>
+      <class name="com.arcapi.Common.AssetDocumentAPITest"/>
+      <class name="com.arcapi.Common.DownloadDocumentsAPITest"/>
+      <class name="com.arcapi.Common.VerifyAgreementPresentAPITest"/>
+      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"/>
+      <class name="com.arcapi.Common.FeedbackSubmitPostAPITest"/>
+      <class name="com.arcapi.Common.DeleteAllAppsAPITest"/>
+      <class name="com.arcapi.Common.InstallAllAppsAfterDeleteAPITest"/>
+      <class name="com.arcapi.Transittestcases.AQIDataGetAPITest"/>
+      <class name="com.arcapi.Transittestcases.RidershipDataGetAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyWasteDataExcelAPITest"/>
+      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersHEAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyAQIGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyPM25GraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyPM10GraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyOzoneGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyNitrogenDioxideGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifySulphurDioxideGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyCarbonMonoxideGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyRidershipGraphValuesAPITest"/>
+      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersTransitAboveAPITest"/>
+      <class name="com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionEnergyWaterAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"/>
+    </classes>
+  </test> <!-- CompleteFlowTest-Transit-Above -->
+  <test name="CompleteFlowTest-Transit-Above(failed)">
+    <parameter name="CreditColumn" value="TransitAboveCredit"/>
+    <parameter name="SoReference" value="review"/>
+    <parameter name="CreditColumnNum" value="4"/>
+    <parameter name="ratings" value="aboveground"/>
+    <parameter name="ProjectType" value="transit"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="review"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
+    <classes>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Common.FeedbackSubmitPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.FeedbackSubmitPostAPITest -->
+      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersTransitAboveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.ExcelTemplateMetersTransitAboveAPITest -->
+      <class name="com.arcapi.Common.AssetDocumentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetDocumentAPITest -->
+      <class name="com.arcapi.Common.PaymentOrderGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentOrderGetAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyNitrogenDioxideGraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyNitrogenDioxideGraphValuesAPI" invocation-numbers="0"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyNitrogenDioxideGraphValuesAPITest -->
+      <class name="com.arcapi.Common.PaymentReceiptAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentReceiptAPITest -->
+      <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.CreateAssetTransitAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest -->
+      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.UserAccessLevelSAPGetTest -->
+      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.FetchingAgreementDetailsAPITest -->
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.Transittestcases.ExcelUploadTemplateTransitAboveAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.ExcelUploadTemplateTransitAboveAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyPM25GraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="VerifyPM25GraphValuesAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyPM25GraphValuesAPITest -->
+      <class name="com.arcapi.Common.InstallAllAppsAfterDeleteAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.InstallAllAppsAfterDeleteAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyWasteDataExcelAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyWasteDataExcelAPITest -->
+      <class name="com.arcapi.Transittestcases.RidershipDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.RidershipDataGetAPITest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyAQIGraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyAQIGraphValuesAPI" invocation-numbers="0"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyAQIGraphValuesAPITest -->
+      <class name="com.arcapi.Common.DownloadDocumentsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.DownloadDocumentsAPITest -->
+      <class name="com.arcapi.Common.PaymentHistoryAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentHistoryAPITest -->
+      <class name="com.arcapi.Common.UserDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.UserDetailAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Transittestcases.AQIDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.AQIDataGetAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyOzoneGraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyOzoneGraphValuesAPI" invocation-numbers="0"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyOzoneGraphValuesAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifySulphurDioxideGraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="VerifySulphurDioxideGraphValuesAPI" invocation-numbers="0"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifySulphurDioxideGraphValuesAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyRidershipGraphValuesAPITest">
+        <methods>
+          <include name="VerifyRidershipGraphValuesAPI" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyRidershipGraphValuesAPITest -->
+      <class name="com.arcapi.Transittestcases.ExcelTemplateMetersHEAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.ExcelTemplateMetersHEAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyPM10GraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="VerifyPM10GraphValuesAPI" invocation-numbers="0"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyPM10GraphValuesAPITest -->
+      <class name="com.arcapi.Common.DeleteAllAppsAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.DeleteAllAppsAPITest -->
+      <class name="com.arcapi.Common.VerifyAgreementPresentAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.VerifyAgreementPresentAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyCarbonMonoxideGraphValuesAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="VerifyCarbonMonoxideGraphValuesAPI" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyCarbonMonoxideGraphValuesAPITest -->
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.RegistrationPaymentPricingGetAPITest -->
+      <class name="com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionEnergyWaterAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.VerifyExcelTemplateConsumptionEnergyWaterAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Transit-Above(failed) -->
+</suite> <!-- Failed suite [Transit-AboveGround] -->

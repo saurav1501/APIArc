@@ -19,7 +19,7 @@ public class VerifyNitrogenDioxideGraphValuesAPITest extends BaseClass {
 		
 		
         try {
-			String NO_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID", rownumber+2);
+			String NO_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID", 6);
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/resampled/"+NO_Meter_ID+"/?start_date=2018-01-01&end_2020-01-01";
 			CommonMethod.res = MethodCall.GETRequest(url);
 					 

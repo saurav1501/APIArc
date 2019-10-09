@@ -16,7 +16,7 @@ public class ExcelUploadTemplatePOSTAPITest extends BaseClass {
 
 		try {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber)+"/excelupload/uploadS3/";	
-			CommonMethod.res = MethodCall.POSTRequestExcelUpload(url, "action_file", CommonMethod.excelfile);
+			CommonMethod.res = MethodCall.POSTRequestExcelUpload(url, "action_file", CommonMethod.v4excelfile);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		} catch (Exception e) {
 			e.printStackTrace();

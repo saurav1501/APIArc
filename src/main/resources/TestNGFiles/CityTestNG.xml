@@ -21,7 +21,7 @@
 <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>  
 <class name="com.arcapi.Common.PaymentOrderGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentReceiptAPITest"></class>
 <class name="com.arcapi.Common.PaymentHistoryAPITest"></class>   
@@ -46,9 +46,14 @@
 <class name="com.arcapi.Common.CityCom.MeasuresUpdateAPITest"></class>
 <class name="com.arcapi.Common.CityCom.MeasuresVersionListAPITest"></class>
 <class name="com.arcapi.Common.CityCom.MeasuresVersionDetailAPITest"></class>
-<class name="com.arcapi.Common.CityCom.MeasuresVersionPostAPITest"></class>
-<class name="com.arcapi.Common.CityCom.MeterCreateAPICityCommTest"></class>
-<class name="com.arcapi.Common.CityCom.ConsumptionCreateAPITest"></class>
+<class name="com.arcapi.Common.CityCom.MeasuresVersionPostAPITest"></class> 
+ <class name="com.arcapi.Common.CityCom.MeterCreateAPICityCommTest"></class>
+<class name="com.arcapi.Common.CityCom.ConsumptionCreateAPITest"></class>  
+<class name="com.arcapi.Common.CityCom.AllMeterConsumptionGetAPITest"></class>
+<class name="com.arcapi.Common.CityCom.AllMeterConsumptionPUTAPITest"></class>
+ <class name="com.arcapi.Common.CityCom.AllMeterConsumptionDeleteAPITest"></class>
+
+
 <class name="com.arcapi.Common.AssetTeamMemberRoleAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberListAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberAddPOSTAPITest"></class>
@@ -123,6 +128,7 @@
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
+
 </classes>
 </test>
 

@@ -16,7 +16,7 @@ public class ConsumptionCreatePOSTEmissionTest extends BaseClass {
 
 	@Test(groups="CheckEmission")
     @Parameters({ "SheetName","CustomSheetName","ProjectTypeColumn","rownumber" })
-	public void ConsumptionCreatePOSTAPI(String SheetName,String CustomSheetName,String ProjectTypeColumn, int rownumber) throws IOException {
+	public void ConsumptionCreatePOSTEmission(String SheetName,String CustomSheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 		
 		try {
 			String reading = data.getCellData(CustomSheetName, "IncreasedEmissionFactor", rownumber);

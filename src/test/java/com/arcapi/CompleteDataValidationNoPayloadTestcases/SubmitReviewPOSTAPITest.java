@@ -1,9 +1,5 @@
 package com.arcapi.CompleteDataValidationNoPayloadTestcases;
 
-import static com.jayway.restassured.RestAssured.given;
-
-import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +7,6 @@ import com.Utill.Controller.Assertion;
 import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.google.gson.Gson;
 import com.jayway.restassured.http.ContentType;
 
 public class SubmitReviewPOSTAPITest extends BaseClass {

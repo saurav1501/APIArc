@@ -1,8 +1,6 @@
 package com.arcapi.InterRelatedFieldValidationTestcases;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;

@@ -1,7 +1,5 @@
 package com.arcapi.Common;
 
-import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -14,7 +12,7 @@ public class RegistrationPaymentPricingGetAPITest extends BaseClass {
 
 	@Test(groups="CheckPayment")
 	@Parameters({"SheetName","ProjectTypeColumn","rownumber" })
-	public void RegistrationPaymentPricingGetAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
+	public void RegistrationPaymentPricingGetAPI(String SheetName,String ProjectTypeColumn, int rownumber)  {
 	
 		try {
 			projectID=data.getCellData(SheetName, ProjectTypeColumn, rownumber);
@@ -22,6 +20,10 @@ public class RegistrationPaymentPricingGetAPITest extends BaseClass {
 			url="/assets/LEED:"+projectID+"/payments/price/?soreference=registration";
 			
 			CommonMethod.res = MethodCall.GETRequest(url);
+			
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			Assertion.verifyStatusMessage(CommonMethod.res, statusMessage);
+
 			
 			/**************Storing Data In Excel Sheet************************/
 			CommonMethod.fetchedID = CommonMethod.res.path("price.company_code[0]").toString();
@@ -37,9 +39,7 @@ public class RegistrationPaymentPricingGetAPITest extends BaseClass {
 			log.info(CommonMethod.fetchedID);
 			data.setCellData(SheetName, "MaterialCode", rownumber, CommonMethod.fetchedID);
 			
-			Assertion.verifyStatusCode(CommonMethod.res, 200);
-			Assertion.verifyStatusMessage(CommonMethod.res, statusMessage);
-			
+						
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

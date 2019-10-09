@@ -1,0 +1,98 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="EmessionFactorArcRelease1_17_18">
+
+<test name="CompleteFlowTest-Building-None">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="ratings" value="none"></parameter>
+<parameter name="CustomSheetName" value="Emission"/>
+<parameter name="Aggrement" value="true"></parameter>
+
+<classes>
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class> 
+<class name="com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest"></class>
+<class name="com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.MetersListEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest"></class>
+<class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest"></class>
+<class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest"></class>
+<class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest"></class>
+
+</classes>
+</test> 
+
+
+<test name="CompleteFlowTest-Transit-AboveV2">
+<parameter name="CustomSheetName" value="Emission"/>
+<parameter name="ProjectType" value="transit" />
+<parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove" />
+<parameter name="SoReference" value="review" />
+<parameter name="SoReferenceSR" value="review" />
+<parameter name="rownumber" value="2" />
+<parameter name="CreditColumn" value="TransitAboveCredit" />
+<parameter name="CreditColumnNum" value="4" />
+<parameter name="ratings" value="aboveground"></parameter>
+
+ <classes>
+<class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest"></class>
+<class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
+<class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
+<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
+
+<class name="com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest"></class>
+<class name="com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.MetersListEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest"></class>
+<class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreBeforeTest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest"></class>
+<class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest"></class>
+<class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest"></class>
+<class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest"></class>
+
+</classes>
+</test> 
+
+<test name="CustomExecutionArcRelease1_18">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="ratings" value="none"></parameter>
+<parameter name="CustomSheetName" value="Emission"/>
+<parameter name="Aggrement" value="false"></parameter>
+
+<classes>
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class> 
+<class name="com.arcapi.release1_18testcases.AssetUpdateExcludeSpacesTest"></class> 
+<class name="com.arcapi.release1_18testcases.MetersAPIAreaTest"></class> 
+<class name="com.arcapi.release1_18testcases.OccupantPostAPITest"></class> 
+<class name="com.arcapi.release1_18testcases.OccupantGetAPITest"></class> 
+<!-- <class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest"></class>   -->
+<class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest"></class>
+<class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest"></class>
+
+
+</classes>
+</test>
+</suite>

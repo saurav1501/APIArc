@@ -13,7 +13,7 @@ import java.util.Date;
 import org.json.JSONObject;
 import org.json.XML;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
+
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 

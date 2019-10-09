@@ -86,6 +86,7 @@ public class MethodCall extends BaseClass{
 		
 		Gson gson = new Gson();
 		String jsonString = gson.toJson(strJSON);
+		
 		log.info("Payload is  "+jsonString.toString());
 		CommonMethod.testlog("Pass", "Payload is : "+"<br>"+jsonString.toString());		
 		CommonMethod.testlog("Pass","Response from API" + "<br>" + CommonMethod.res.asString());
@@ -330,5 +331,21 @@ public class MethodCall extends BaseClass{
 		return CommonMethod.res;
 	}
 
+	public static Response POSTUploadFile(String uRI) {
+		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
+		log.info("POST Request Call URL "+baseURLLEED+uRI);
+		
+		
+		CommonMethod.res= given().log().all().multiPart("file", CommonMethod.gresb)
+				.headers(headerMap)
+				.header("Authorization",header).spec(reqSpec).post(url).then().extract().response();
 
+       log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
+		
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+	
+		return CommonMethod.res;
+	}
 }
+
+

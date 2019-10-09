@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Existing-V1-CompleteFlow]">
+  <parameter name="environment" value="stg"/>
+  <parameter name="CreditColumn" value="CommunityOtherNoneCredit"/>
+  <parameter name="SoReference" value="performance score"/>
+  <parameter name="CreditColumnNum" value="6"/>
+  <parameter name="ratings" value="other"/>
+  <parameter name="ProjectType" value="community"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="STG"/>
+  <parameter name="SoReferenceSR" value="performance score"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDCommunityNone"/>
+  <test name="CompleteFlowTest-Community-Other">
+    <parameter name="CreditColumn" value="CommunityOtherNoneCredit"/>
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="CreditColumnNum" value="6"/>
+    <parameter name="ratings" value="other"/>
+    <parameter name="ProjectType" value="community"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDCommunityNone"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+    </classes>
+  </test> <!-- CompleteFlowTest-Community-Other -->
+</suite> <!-- Failed suite [Existing-V1-CompleteFlow] -->

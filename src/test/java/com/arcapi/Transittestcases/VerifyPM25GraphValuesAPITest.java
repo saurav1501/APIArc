@@ -17,7 +17,7 @@ public class VerifyPM25GraphValuesAPITest extends BaseClass {
 	public void VerifyPM25GraphValuesAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
        try {
-		String PM25_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID", rownumber+5);
+		String PM25_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID",3);
 		   url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/resampled/"+PM25_Meter_ID+"/?start_date=2018-01-01&end_2020-01-01";
 			CommonMethod.res = MethodCall.GETRequest(url);
 			 for(int j=0;j<12;j++) {

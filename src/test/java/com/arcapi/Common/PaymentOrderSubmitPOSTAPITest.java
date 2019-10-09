@@ -2,6 +2,7 @@ package com.arcapi.Common;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 import com.Utill.Controller.Assertion;
 import com.Utill.Controller.MethodCall;
 import com.Utill.Model.AddProjectPayload;
@@ -26,13 +27,13 @@ public class PaymentOrderSubmitPOSTAPITest extends BaseClass {
 				payload=AddProjectPayload.paymentCheck();
 				CommonMethod.res= MethodCall.POSTRequest(url, payload);
 			}
-			
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			Assertion.verifyStatusMessage(CommonMethod.res,statusMessage);
+	
 			CommonMethod.fetchedID = CommonMethod.res.path("ESalesdocument").toString();
 			data.setCellData("DataInput","ESalesdocument",2,CommonMethod.fetchedID);
 			
-			Assertion.verifyStatusCode(CommonMethod.res, 200);
-			Assertion.verifyStatusMessage(CommonMethod.res,statusMessage);
-			
+				
 			
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -14,11 +14,11 @@ import com.arc.driver.CommonMethod;
 public class CreateAssetBuildingV3APITest extends BaseClass {
 
 	@Test(groups="Add Project")
-	@Parameters({"ProjectType","ProjectTypeColumn","Country" ,"ratings"})
-	public void CreateAssetPOSTAPI(String ProjectType,String ProjectTypeColumn,String Country,String ratings) throws IOException {	
+	@Parameters({"ProjectType","ProjectTypeColumn","Country" ,"ratings","Aggrement"})
+	public void CreateAssetPOSTAPI(String ProjectType,String ProjectTypeColumn,String Country,String ratings, boolean Aggrement) throws IOException {	
 		
 		try {
-			payload = AddProjectPayload.addProjectPayload(ProjectType,ProjectTypeColumn,Country,ratings);
+			payload = AddProjectPayload.addProjectPayload(ProjectType,ProjectTypeColumn,Country,ratings,Aggrement);
 			url = "/assets/";
 			CommonMethod.res = MethodCall.POSTRequest(url,payload);
 			Assertion.verifyStatusCode(CommonMethod.res, 201);

@@ -18,7 +18,7 @@ public class MeterCreateAPICityCommTest extends BaseClass {
 	
         try {
 			int row = 2;
-			url= "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/";
+			url= "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/?recompute_score=false";
 			String[] Type = {"265","266","267","268","269","270","271","272","273","274","275","276","277","278"};	
 			for(String type : Type) {
 			payload = CityComPayload.createMeter(type);

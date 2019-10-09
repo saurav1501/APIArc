@@ -17,13 +17,6 @@ import com.aventstack.extentreports.Status;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
 
-
-// QAS Sub -  37fee8fbf7c84994a40df7346bf2f684
-// STG Sub -  06c50a1570bd4d40a7859ec28514b185
-// Dev Sub -  450fc0393ae747638659258f5ed26485
-// Sbx03 Sub - 3b8ad5678ac8489084b2fcd7a2422a18
-
-
 public class CommonMethod extends BaseClass {
 	
 	public static long responsetime;
@@ -32,14 +25,16 @@ public class CommonMethod extends BaseClass {
 	public static String fetchedID;
 	public static String ProgramID;
     public static File formuploadfile = new File(System.getProperty("user.dir") + "/src/main/resources/Creditfile.pdf");
-	public static File excelfile = new File(System.getProperty("user.dir") + "/src/main/resources/Arc_Data_Template_building.xlsm");
+	public static File excelfile = new File(System.getProperty("user.dir") + "/src/main/resources/Arc_Data_Template_Underground.xlsm");
 	public static File oldexcelfile = new File(System.getProperty("user.dir") + "/src/main/resources/OLDArc_Data_Template.xlsm");
+	public static File v4excelfile = new File(System.getProperty("user.dir") + "/src/main/resources/Arc_Data_Template_building_v4.1.xlsm");
 
 	public static File excelfileTransitAbove = new File(System.getProperty("user.dir") + "/src/main/resources/Arc_Data_Template_transit_above.xlsm");
 	public static File file = new File(System.getProperty("user.dir") + "/src/main/resources/Certification_Agreement.htm");
 	public static File Jsonfile =  new File(System.getProperty("user.dir") + "/src/main/resources/AdditionalData.json");
 	public static String ResponseJsonfile =  System.getProperty("user.dir") + "/src/main/resources/Response.json";
 	
+	public static File gresb = new File(System.getProperty("user.dir") + "/src/main/resources/Gresb.xlsx");
 
 	public static void GeneratingAuthCode(String SheetName, int rownumber) {
 		
@@ -56,15 +51,14 @@ public class CommonMethod extends BaseClass {
 				.extract().response().path("authorization_token").toString();
 		
 		header = "Bearer " + Token;
-		System.out.println(header);
-		
+			
 		
 	}
 	
 public static void GeneratingAuthCodeForLOUser(String SheetName, int rownumber) {
 		
-	String UserName = data.getCellData(SheetName, "LODEVUSER", rownumber);
-	String Password = data.getCellData(SheetName, "LODEVPASS", rownumber);
+	String UserName = data.getCellData(SheetName, "NormalUserName", rownumber);
+	String Password = data.getCellData(SheetName, "NormalUserName", rownumber);
 
 		Token = given().log().all()
 				.header("Ocp-Apim-Subscription-Key",
@@ -76,7 +70,6 @@ public static void GeneratingAuthCodeForLOUser(String SheetName, int rownumber) 
 				.extract().response().path("authorization_token").toString();
 		
 		header = "Bearer " + Token;
-		System.out.println(header);
 		
 		
 	}
@@ -95,7 +88,6 @@ public static void GeneratingAuthCodeForLOUser(String SheetName, int rownumber) 
 				.extract().response().path("authorization_token").toString();
 		
 		header = "Bearer " + Token;
-		System.out.println(header);
 		
 		
 	}
@@ -112,8 +104,7 @@ public static void GeneratingAuthCodeForLOUser(String SheetName, int rownumber) 
 				.extract().response().path("authorization_token").toString();
 		
 		header = "Bearer " + Token;
-		System.out.println(header);
-		
+			
 		
 	}
 	
@@ -245,18 +236,6 @@ public static String randomNumberMeterReading() throws IOException, InterruptedE
 	     	System.out.println("Not Valid Input");
 		}
 		
-		
-		/*case "Pass":
-			test.log(Status.PASS, message);
-			break;
-			
-		case "Info":
-			test.log(Status.INFO, message);
-			break;
-			
-		 default:
-	     	System.out.println("Not Valid Input");
-		}*/
 	}
 		
 	
@@ -275,27 +254,11 @@ public static String randomNumberMeterReading() throws IOException, InterruptedE
 	     while ((text = bufferReader.readLine()) != null)   {
 	        
 	          fetchedID=text;
-	         //System.out.println(CommonMethod.ProgramID);   
-	     }
+	      	}
 	        
-	      //Close the buffer reader
 	        bufferReader.close();
 	        return fetchedID;
 	}
 	
-	
-	/*public static void Jsonfileread() throws IOException, Exception{
-		
-		 JSONParser parser = new JSONParser();
-		 
-	            Object object = parser.parse(new FileReader(Jsonfile));
-	            
-	            //convert Object to JSONObject
-	    jsonObject = (JSONObject)object;
-	}*/
-	
-	
-
-
 }
 

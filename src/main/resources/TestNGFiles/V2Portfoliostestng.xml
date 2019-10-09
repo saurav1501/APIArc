@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PortfoliosComplete">
+
+<test name="CompleteFlowTest-Portfolios-Gresb">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="ratings" value="none"/>
+<parameter name="rownumber" value="2" />
+
+<classes>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosGetAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosDetailsGetAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosDetailPUTAPITest"></class> 
+<class name="com.arcapi.Portfoliostestcases.V2PortfoliosAssetPostAPITest"></class> 
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetGetAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailGetAPITest"></class>  
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest"></class> 
+<class name="com.arcapi.Portfoliostestcases.PortfoliosGoalsDetailAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosGoalsUpdateAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAnalyticsDetailAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAnalyticsSummaryDetailAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAnalyticsCategoryDetailAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsGetAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPUTAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest"></class>  
+<class name="com.arcapi.Portfoliostestcases.VerifyGresbAssetsDetailsGetAPITest"></class> 
+
+</classes>
+</test> 
+</suite>
+ 
+
+
+    
+  

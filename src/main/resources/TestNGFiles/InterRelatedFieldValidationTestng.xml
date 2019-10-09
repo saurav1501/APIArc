@@ -8,6 +8,7 @@
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="none"></parameter>
+<parameter name="Aggrement" value="false"></parameter>
 <classes>
 
 <class name="com.arcapi.Common.LoginAPITest"></class>

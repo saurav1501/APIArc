@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EmessionFactorArcRelease1_17_18]">
+  <parameter name="SoReference" value="performance score"/>
+  <parameter name="SheetName" value="DEV2"/>
+  <parameter name="CustomSheetName" value="Emission"/>
+  <parameter name="environment" value="dev2"/>
+  <parameter name="CreditColumn" value="TransitAboveCredit"/>
+  <parameter name="CreditColumnNum" value="4"/>
+  <parameter name="ratings" value="none"/>
+  <parameter name="ProjectType" value="building"/>
+  <parameter name="Aggrement" value="false"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SoReferenceSR" value="performance score"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+  <test name="CompleteFlowTest-Building-None">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="none"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="Aggrement" value="true"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="CustomSheetName" value="Emission"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest"/>
+      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.MetersListEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest"/>
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest"/>
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest"/>
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest"/>
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-None -->
+  <test name="CompleteFlowTest-Transit-AboveV2">
+    <parameter name="CreditColumn" value="TransitAboveCredit"/>
+    <parameter name="SoReference" value="review"/>
+    <parameter name="CreditColumnNum" value="4"/>
+    <parameter name="ratings" value="aboveground"/>
+    <parameter name="ProjectType" value="transit"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="review"/>
+    <parameter name="CustomSheetName" value="Emission"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest"/>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest"/>
+      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.MetersListEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest"/>
+      <class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreBeforeTest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest"/>
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest"/>
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest"/>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest"/>
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest"/>
+    </classes>
+  </test> <!-- CompleteFlowTest-Transit-AboveV2 -->
+  <test name="CustomExecutionArcRelease1_18">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="none"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="Aggrement" value="false"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="CustomSheetName" value="Emission"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.release1_18testcases.AssetUpdateExcludeSpacesTest"/>
+      <class name="com.arcapi.release1_18testcases.MetersAPIAreaTest"/>
+      <class name="com.arcapi.release1_18testcases.OccupantPostAPITest"/>
+      <class name="com.arcapi.release1_18testcases.OccupantGetAPITest"/>
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest"/>
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest"/>
+    </classes>
+  </test> <!-- CustomExecutionArcRelease1_18 -->
+  <test name="CompleteFlowTest-Building-None(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="none"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="Aggrement" value="true"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="CustomSheetName" value="Emission"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest -->
+      <class name="com.arcapi.release1_18testcases.OccupantGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.OccupantGetAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MetersListEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MetersListEmissionTest -->
+      <class name="com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest -->
+      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest -->
+      <class name="com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest -->
+      <class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreBeforeTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.RecomputePerformanceScoreBeforeTest -->
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest -->
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest -->
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest -->
+      <class name="com.arcapi.release1_18testcases.AssetUpdateExcludeSpacesTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetUpdateExcludeSpacesTest -->
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+          <include name="PaymentOrderSubmitPOSTAPI" invocation-numbers="0"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgMeanEmissionTest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest -->
+      <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.CreateAssetTransitAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest -->
+      <class name="com.arcapi.release1_18testcases.MetersAPIAreaTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.MetersAPIAreaTest -->
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest -->
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest -->
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest -->
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
+      <class name="com.arcapi.release1_18testcases.OccupantPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.OccupantPostAPITest -->
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest -->
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-None(failed) -->
+  <test name="CustomExecutionArcRelease1_18(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="none"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="Aggrement" value="false"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="CustomSheetName" value="Emission"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionDecreaseAPITest -->
+      <class name="com.arcapi.release1_18testcases.OccupantGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.OccupantGetAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MetersListEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MetersListEmissionTest -->
+      <class name="com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.EnergyMeterBulkConsumptionPOSTEmissionTest -->
+      <class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionCreatePOSTEmissionTest -->
+      <class name="com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest -->
+      <class name="com.arcapi.Buildingtestcases.RecomputePerformanceScoreBeforeTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.RecomputePerformanceScoreBeforeTest -->
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgMeanEmissionAfterUpdateTest -->
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterDecreaseTest -->
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataEmissionAfterIncreaseTest -->
+      <class name="com.arcapi.release1_18testcases.AssetUpdateExcludeSpacesTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetUpdateExcludeSpacesTest -->
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+          <include name="PaymentOrderSubmitPOSTAPI" invocation-numbers="0"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.PaymentOrderSubmitPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgMeanEmissionTest -->
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AddAssestTimelinePOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AssetUpdateBuildingEmissionTest -->
+      <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Transittestcases.CreateAssetTransitAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest -->
+      <class name="com.arcapi.release1_18testcases.MetersAPIAreaTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.MetersAPIAreaTest -->
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest -->
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.SignAgreementRegistrationAPITest -->
+      <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest -->
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgMeanEmissionAfterIncreaseTest -->
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
+      <class name="com.arcapi.release1_18testcases.OccupantPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.release1_18testcases.OccupantPostAPITest -->
+      <class name="com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.GhgMeanEmissionAfterDecreaseTest -->
+      <class name="com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ConsumptionUpdateEmissionAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.AnalysisDataEmissionAPITest -->
+    </classes>
+  </test> <!-- CustomExecutionArcRelease1_18(failed) -->
+</suite> <!-- Failed suite [EmessionFactorArcRelease1_17_18] -->

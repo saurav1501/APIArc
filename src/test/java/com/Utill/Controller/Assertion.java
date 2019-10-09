@@ -1,12 +1,14 @@
 package com.Utill.Controller;
 
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.jayway.restassured.response.Response;
 
 public class Assertion extends BaseClass {
+
 	
 	public static void verifyTrue(boolean flag){
 		Assert.assertTrue(flag);
@@ -26,8 +28,19 @@ public class Assertion extends BaseClass {
 	public static void verifyData(String actual,String expected ){
 		Assert.assertEquals(actual, expected);
 		CommonMethod.testlog("Info", "Verifies Data " + "Actual Data is : " +actual+ " Expected Data is :" +expected);
-		CommonMethod.testlog("Pass", "Verifies Data " + "Actual Data is : " +actual+ " Expected Data is :" +expected);
-
+		
 	}
 	
+	public static void verifyDataContinueOnFaliluare(String actual,String expected ){
+		softAssert.assertEquals(actual, expected);
+		CommonMethod.testlog("Info", "Verifies Data " + "Actual Data is : " +actual+ " Expected Data is :" +expected);
+		
+	}
+	
+	
+	public static void verifyStatusCodeContinueOnFaliure(Response response, int status){
+	  
+	    softAssert.assertEquals(TestUtils.getStatusCode(response), status);
+	    
+	}
 }

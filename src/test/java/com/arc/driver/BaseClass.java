@@ -23,6 +23,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import com.Utill.LoginArc;
 import com.Utill.RandomData;
@@ -83,6 +84,8 @@ public class BaseClass {
 	public static String statusMessage="HTTP/1.1 200 OK";
 	public static String baseURL;
 	public static String baseURLLEED;
+	 public static SoftAssert softAssert = new SoftAssert();
+
 	public static File extentconfigfile = new File(System.getProperty("user.dir") +"/src/main/resources/extent-config1.xml");
 	public static String[] value = { "-200", "ABC123", "200-094", "~!@#$%^&*()-_=+[];:\\\"<,>.?/", "200902", " ",
 			"900-",

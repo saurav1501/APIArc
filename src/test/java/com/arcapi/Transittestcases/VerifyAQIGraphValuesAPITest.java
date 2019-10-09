@@ -16,7 +16,7 @@ public class VerifyAQIGraphValuesAPITest extends BaseClass {
 
 	
        try {
-    	   String AQI_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID", rownumber+6);
+    	   String AQI_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID",2);
 		   url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/resampled/"+AQI_Meter_ID+"/?start_date=2018-01-01&end_2020-01-01";
 		   CommonMethod.res = MethodCall.GETRequest(url);
 					 

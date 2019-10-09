@@ -9,10 +9,9 @@
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="other"></parameter>
+<parameter name="Aggrement" value="false"></parameter>
 
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class> 
-
 <class name="com.arcapi.Common.ReviewPaymentIntimationGetAPITest"></class>
 <class name="com.arcapi.Common.WebIOSAppVersionGetAPITest"></class>
 <class name="com.arcapi.Common.UserDetailAPITest"></class>
@@ -76,7 +75,7 @@
 <class name="com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest"></class> 
-<class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest"></class> 
+<class name="com.arcapi.Buildingtestcases.V4ExcelUploadTemplatePOSTAPITest"></class> 
 <class name="com.arcapi.Common.AssetTeamMemberRoleAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberListAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberAddPOSTAPITest"></class>
@@ -151,8 +150,9 @@
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="none"></parameter>
+<parameter name="Aggrement" value="false"></parameter>
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
+
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
@@ -171,7 +171,7 @@
 <class name="com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest"></class> 
 
 </classes>
-</test> 
+</test>  
 </suite>  
   
 

@@ -1,8 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="PortfoliosComplete">
 
-<test name="CompleteFlowTest-Portfolios">
-<parameter name="environment" value="stg" />
+<test name="CompleteFlowTest-Portfolios-Gresb">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
 <parameter name="SoReference" value="performance score" />
@@ -11,7 +10,9 @@
 <parameter name="rownumber" value="2" />
 
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.GresbAssetsDetailsGetAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.GresbAssetsExsitingIDPostAPITest"></class> 
+
 <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosGetAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosDetailsGetAPITest"></class>
@@ -39,11 +40,13 @@
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsGetAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPUTAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest"></class>
-<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest"></class> 
+<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest"></class>  
+<class name="com.arcapi.Portfoliostestcases.VerifyGresbAssetsDetailsGetAPITest"></class> 
 
 </classes>
-</test>
-</suite> 
+</test> 
+</suite>
+ 
 
 
     

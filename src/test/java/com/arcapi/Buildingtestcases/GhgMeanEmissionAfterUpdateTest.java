@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Utill.Controller.Assertion;
 import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
@@ -25,7 +26,9 @@ public class GhgMeanEmissionAfterUpdateTest extends BaseClass {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber)
 			+ "/ghg/mean/";
 			CommonMethod.res = MethodCall.GETRequest(url);
-				
+			
+			
+			Assertion.verifyStatusCode(CommonMethod.res , 200);
 			BigDecimal xyz=JsonPath.with(CommonMethod.res.asString()).using(new JsonPathConfig().numberReturnType(JsonPathConfig.NumberReturnType.BIG_DECIMAL)).get("mean");
 			
 			CommonMethod.fetchedID = xyz.toString();

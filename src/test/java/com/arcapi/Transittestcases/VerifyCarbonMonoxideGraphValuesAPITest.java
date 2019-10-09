@@ -15,7 +15,7 @@ public class VerifyCarbonMonoxideGraphValuesAPITest extends BaseClass {
 	public void VerifyCarbonMonoxideGraphValuesAPI(String SheetName,String ProjectTypeColumn, int rownumber) {
         
 		try {
-			String CO_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID", rownumber);	
+			String CO_Meter_ID = data.getCellData("Graphs", "TransitHEMeterID", 8);	
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/resampled/"+CO_Meter_ID+"/?start_date=2018-01-01&end_2020-01-01"; 	
 			CommonMethod.res = MethodCall.GETRequest(url);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);

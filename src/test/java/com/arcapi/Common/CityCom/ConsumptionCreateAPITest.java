@@ -17,7 +17,7 @@ public class ConsumptionCreateAPITest extends BaseClass {
 	public void ConsumptionCreatePOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber){
 		
 		try {
-			int RowNum = 14;
+			int RowNum = 15;
 			for (int i =2; i<= RowNum;i++) {
 			String Reading = data.getCellData("DataInput", "CityMeterReading", i);
 			
@@ -25,13 +25,11 @@ public class ConsumptionCreateAPITest extends BaseClass {
 			meterData.setStart_date( "2018-01-01");
 			meterData.setEnd_date("2019-01-31");
 			meterData.setReading(Reading);
-			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:" + data.getCellData("DataInput", "CityMeterID", i) + "/consumption/";
+			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:" + data.getCellData("DataInput", "CityMeterID", i) + "/consumption/?recompute_score=false/";
 			CommonMethod.res = MethodCall.POSTRequest(url, meterData);
 			
 			Assertion.verifyStatusCode(CommonMethod.res, 201);
-			CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
-			data.setCellData("DataInput", "CityMeterPK", i, CommonMethod.fetchedID);
-
+			
 }
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
