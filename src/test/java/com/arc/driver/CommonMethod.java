@@ -199,7 +199,7 @@ public static String randomNumber() throws IOException, InterruptedException{
 	 int random_num = 1;
 	    Random t = new Random();
 	    // random integers in [1000, 800000]
-	    random_num=	(t.nextInt(800000));
+	    random_num=	(t.nextInt(80000022));
 	    ProgramID = String.valueOf(random_num);		    
 	    System.out.println(ProgramID);
 		Thread.sleep(1000);

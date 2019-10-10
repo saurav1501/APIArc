@@ -1,0 +1,114 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ScenarioBasedTesting">
+
+ <test name="TeamScenario-TeamManager-TeamMemberPayment">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="ratings" value="none"></parameter>
+<parameter name="Aggrement" value="true"></parameter>
+
+<classes>
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
+<class name="com.arcapi.Common.AssetDetailAPITest"></class>
+<class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class> 
+<class name="com.arcapi.Common.ScoreVersionNotificationPOSTAPITest"></class> 
+<class name="com.arcapi.Common.SocreVersionUpdatePostAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionExtensionUpdatePostAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionExtensionRequestQuerySetGetAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionExtensionRequestUpdatePostAPITest"></class>
+<class name="com.arcapi.Common.ScoreVersionExtensionRequestUpdateQuerysetGetAPITest"></class>
+<class name="com.arcapi.Common.Neg.ReturnReviewGetAPITest"></class>
+<class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.TeamManagerAddPOSTAPITest"></class>
+</classes>
+</test> 
+
+ <test name="TeamScenario-TeamMember">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="ratings" value="none"></parameter>
+<parameter name="Role" value="ZRPO82" />
+<parameter name="UserName" value= "STG03"/>
+<parameter name="Password" value="STG03Password"/>
+<classes>
+<class name="com.arcapi.ScenarioBasedTestcases.LoginAPITest1"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAdminAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAdminAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAPITest"></class>
+
+</classes>
+</test> 
+
+ <test name="TeamScenario">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2"/>
+<parameter name="Role" value="ZRPO81"/>
+<parameter name="UserName" value= "STG02"/>
+<parameter name="Password" value="STG02Password"/>
+
+<classes>
+<class name="com.arcapi.ScenarioBasedTestcases.LoginAPITest1"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.AssetTeamMemberUpdateAdminAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAdminAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.AssetTeamMemberRemoveAPITest"></class>
+</classes>
+</test>   
+
+<test name="SpecialScenario">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name="ratings" value="none"></parameter>
+<classes>
+<class name="com.arcapi.Common.LoginAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.OLDExcelUploadTemplatePOSTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.CreateProjectBySingleCharacterAPITest"></class>
+</classes>
+</test>  
+
+<test name="Parking-Register-Null-Value">
+<parameter name="ProjectType" value="parksmart"/>
+<parameter name="ProjectTypeColumn" value="ProjectIDParksmart" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+<parameter name ="ratings" value="PARKSMART"/> 
+<classes>
+<class name="com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest"></class>
+</classes>
+</test> 
+
+ <test name="CompleteFlowTest-Building-None">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="rownumber" value="2" />
+
+<classes>
+<class name="com.arcapi.ScenarioBasedTestcases.CheckSpaceTypeBuildingOtherAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.CheckOwnerTypeBuildingOtherAPITest"></class>
+</classes> 
+</test> 
+</suite>
+  
+
+  
+
+    
+  

@@ -1,10 +1,8 @@
 package com.arcapi.Leedv4Testcases;
 
 import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.Utill.Controller.Assertion;
 import com.Utill.Controller.MethodCall;
 import com.arc.driver.BaseClass;
@@ -25,14 +23,13 @@ public class MeterCommentPostGroup1APITest extends BaseClass {
 		jsonAsMap.put("confidential", "false");
 		jsonAsMap.put("data", "This is Test Comment");
 		
-		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-				+  data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/comment/";
+		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:" +data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/comment/";
 
 		CommonMethod.res = MethodCall.POSTRequest(url, jsonAsMap);
 		
 		CommonMethod.fetchedID = CommonMethod.res.path("id[0]").toString();
 
-	    data.setCellData("LEEDONLINE", "CommentIDGroup1", i, CommonMethod.fetchedID);
+	    data.setCellData("LEEDONLINE", "CommentIDGroup1",i, CommonMethod.fetchedID);
 			
 		Assertion.verifyStatusCode(CommonMethod.res, 200);
 		

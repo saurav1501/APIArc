@@ -170,7 +170,7 @@
 <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest"></class> 
 
-</classes>
+</classes> 
 </test>  
 </suite>  
   

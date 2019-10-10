@@ -189,7 +189,7 @@ public class AddProjectPayload extends BaseClass {
     
 	public static OwnerOrg addOwnerOrg() throws IOException, InterruptedException {
     	OwnerOrg ownerDeatail = new OwnerOrg();
-    	ownerDeatail.setOrgName("TestOrg "+CommonMethod.randomNumber());
+    	ownerDeatail.setOrgName("TestOwnerOrg "+CommonMethod.randomNumber());
     	ownerDeatail.setOrgContactName("TestUser");
     	ownerDeatail.setOrgContactEmail(data.getCellData(sheetName, "OwnerEmail", 2));
     	ownerDeatail.setOrgWebSite("https://dev-v2.app.arconline.io");

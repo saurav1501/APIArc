@@ -40,7 +40,7 @@
 <class name="com.arcapi.Common.V2.ResampledWaterAnalysisDataGetAPITest"></class>
 
 <class name="com.arcapi.Common.V2.IntensityWaterGetAPITest"></class>
-<!-- <class name="com.arcapi.Common.V2.IntensityAllOtherGetAPITest"></class>  -->
+<class name="com.arcapi.Common.V2.IntensityAllOtherGetAPITest"></class> 
 
 <class name="com.arcapi.Common.UserPreferenceTruePostAPITest"></class>
 <class name="com.arcapi.Common.DefaultUserPreferencePostAPITest"></class>
@@ -121,7 +121,7 @@
 <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
 
 <class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class>
-<class name="com.arcapi.Common.SubmitReviewGetAPITest"></class>
+<class name="com.arcapi.Common.Neg.SubmitReviewGetAPITest"></class>
 
 <class name="com.arcapi.Common.NotificationCreatePOSTAPITest"></class>
 <class name="com.arcapi.Common.NotificationGetAPITest"></class>
