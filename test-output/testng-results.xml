@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Existing-V1-CompleteFlow" duration-ms="12245" started-at="2019-10-10T06:53:38Z" finished-at="2019-10-10T06:53:51Z">
+  <suite name="Existing-V1-CompleteFlow" duration-ms="13257" started-at="2019-10-10T07:18:33Z" finished-at="2019-10-10T07:18:46Z">
     <groups>
       <group name="Login">
-        <method signature="LoginAPITest.LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@67b6d4ae]" name="LoginAPI" class="com.arcapi.Common.LoginAPITest"/>
+        <method signature="LoginAPITest.LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@617c74e5]" name="LoginAPI" class="com.arcapi.Common.LoginAPITest"/>
       </group> <!-- Login -->
     </groups>
-    <test name="CompleteFlowTest-Community-Other" duration-ms="12245" started-at="2019-10-10T06:53:38Z" finished-at="2019-10-10T06:53:51Z">
+    <test name="CompleteFlowTest-Community-Other" duration-ms="13257" started-at="2019-10-10T07:18:33Z" finished-at="2019-10-10T07:18:46Z">
       <class name="com.arcapi.Common.LoginAPITest">
-        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.LoginAPITest@67b6d4ae]" name="getSuiteName" is-config="true" duration-ms="9" started-at="2019-10-10T12:23:38Z" finished-at="2019-10-10T12:23:39Z">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.LoginAPITest@617c74e5]" name="getSuiteName" is-config="true" duration-ms="10" started-at="2019-10-10T12:48:33Z" finished-at="2019-10-10T12:48:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6d0b0da6]]>
+                <![CDATA[org.testng.TestRunner@54d8c20d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSuiteName -->
-        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.LoginAPITest@67b6d4ae]" name="setBaseUri" is-config="true" duration-ms="1910" started-at="2019-10-10T12:23:39Z" finished-at="2019-10-10T12:23:40Z">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.LoginAPITest@617c74e5]" name="setBaseUri" is-config="true" duration-ms="1860" started-at="2019-10-10T12:48:33Z" finished-at="2019-10-10T12:48:35Z">
           <params>
             <param index="0">
               <value>
@@ -32,11 +32,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseUri -->
-        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.LoginAPITest@67b6d4ae]" name="ExtentReportConfig" is-config="true" duration-ms="285" started-at="2019-10-10T12:23:40Z" finished-at="2019-10-10T12:23:41Z">
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.LoginAPITest@617c74e5]" name="ExtentReportConfig" is-config="true" duration-ms="281" started-at="2019-10-10T12:48:35Z" finished-at="2019-10-10T12:48:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.LoginAPITest@67b6d4ae]" name="start" is-config="true" duration-ms="11" started-at="2019-10-10T12:23:41Z" finished-at="2019-10-10T12:23:41Z">
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.LoginAPITest@617c74e5]" name="start" is-config="true" duration-ms="11" started-at="2019-10-10T12:48:35Z" finished-at="2019-10-10T12:48:35Z">
           <params>
             <param index="0">
               <value>
@@ -47,119 +47,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@67b6d4ae]" name="LoginAPI" duration-ms="9599" started-at="2019-10-10T12:23:41Z" finished-at="2019-10-10T12:23:50Z">
+        <test-method status="PASS" signature="LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@617c74e5]" name="LoginAPI" duration-ms="10664" started-at="2019-10-10T12:48:35Z" finished-at="2019-10-10T12:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAPI -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.LoginAPITest@67b6d4ae]" name="teardown" is-config="true" duration-ms="17" started-at="2019-10-10T12:23:50Z" finished-at="2019-10-10T12:23:50Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.LoginAPITest@617c74e5]" name="teardown" is-config="true" duration-ms="16" started-at="2019-10-10T12:48:46Z" finished-at="2019-10-10T12:48:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginAPI status=SUCCESS method=LoginAPITest.LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@67b6d4ae] output={null}]]]>
+                <![CDATA[[TestResult name=LoginAPI status=SUCCESS method=LoginAPITest.LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@617c74e5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.LoginAPITest@67b6d4ae]" name="end" is-config="true" duration-ms="389" started-at="2019-10-10T12:23:50Z" finished-at="2019-10-10T12:23:51Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.LoginAPITest@617c74e5]" name="end" is-config="true" duration-ms="384" started-at="2019-10-10T12:48:46Z" finished-at="2019-10-10T12:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
       </class> <!-- com.arcapi.Common.LoginAPITest -->
     </test> <!-- CompleteFlowTest-Community-Other -->
   </suite> <!-- Existing-V1-CompleteFlow -->
-  <suite name="MasterAPITestCasesSuite" duration-ms="0" started-at="2019-10-10T06:54:01Z" finished-at="2019-10-10T06:54:01Z">
+  <suite name="MasterAPITestCasesSuite" duration-ms="0" started-at="2019-10-10T07:18:46Z" finished-at="2019-10-10T07:18:46Z">
     <groups>
     </groups>
   </suite> <!-- MasterAPITestCasesSuite -->
-  <suite name="ScenarioBasedTesting" duration-ms="9236" started-at="2019-10-10T06:53:51Z" finished-at="2019-10-10T06:54:00Z">
-    <groups>
-      <group name="Above Ground Add Project Null Payload">
-        <method signature="AddProjectNullValueAPITest.AddProjectNullValueAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest@13a57a3b]" name="AddProjectNullValueAPI" class="com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest"/>
-      </group> <!-- Above Ground Add Project Null Payload -->
-    </groups>
-    <test name="Parking-Register-Null-Value" duration-ms="9236" started-at="2019-10-10T06:53:51Z" finished-at="2019-10-10T06:54:00Z">
-      <class name="com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest">
-        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest@13a57a3b]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-10T12:23:51Z" finished-at="2019-10-10T12:23:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@4779aae6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSuiteName -->
-        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest@13a57a3b]" name="setBaseUri" is-config="true" duration-ms="463" started-at="2019-10-10T12:23:51Z" finished-at="2019-10-10T12:23:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[stg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseUri -->
-        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest@13a57a3b]" name="start" is-config="true" duration-ms="4" started-at="2019-10-10T12:23:51Z" finished-at="2019-10-10T12:23:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest.AddProjectNullValueAPI(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest@13a57a3b]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-10T12:23:51Z" finished-at="2019-10-10T12:23:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="AddProjectNullValueAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest@13a57a3b]" name="AddProjectNullValueAPI" duration-ms="8646" started-at="2019-10-10T12:23:51Z" finished-at="2019-10-10T12:24:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[parksmart]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ProjectIDParksmart]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[US]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[PARKSMART]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddProjectNullValueAPI -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest@13a57a3b]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-10T12:24:00Z" finished-at="2019-10-10T12:24:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AddProjectNullValueAPI status=SUCCESS method=AddProjectNullValueAPITest.AddProjectNullValueAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest@13a57a3b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest@13a57a3b]" name="end" is-config="true" duration-ms="122" started-at="2019-10-10T12:24:00Z" finished-at="2019-10-10T12:24:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest -->
-    </test> <!-- Parking-Register-Null-Value -->
-  </suite> <!-- ScenarioBasedTesting -->
 </testng-results>
