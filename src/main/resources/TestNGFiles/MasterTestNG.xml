@@ -6,8 +6,10 @@
 <parameter name="PaymentType" value="CreditCardPayment"/>
 
 	<suite-files>
- <suite-file path="Existing-ARC-V1-API-CompleteFlow.xml"></suite-file>  
-   <suite-file path="Buildingtestng.xml"></suite-file>            
+ <suite-file path="Existing-ARC-V1-API-CompleteFlow.xml"></suite-file> 
+  
+ 
+  	  <suite-file path="Buildingtestng.xml"></suite-file>            
      <suite-file path="Portfoliostestng.xml"></suite-file>  
 	<suite-file path="InterRelatedFieldValidationTestng.xml"></suite-file> 
 	 <suite-file path="LEEDv4Building.xml"></suite-file> 
@@ -20,8 +22,8 @@
 		<suite-file path="CityTestNG.xml"></suite-file> 
 		 <suite-file path="CommunityTestNG.xml"></suite-file>   
    		  <suite-file path="EmissionFactor.xml"></suite-file>  
- 		 <suite-file path="ScenarioBasedTestingTestng.xml"></suite-file>	 
-        <suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
+		 <suite-file path="ScenarioBasedTestingTestng.xml"></suite-file>	 
+       <suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
 		<suite-file path="TrailFlowCompleteTestNG.xml"></suite-file>  
 		<suite-file path="CustomExecutionManualTestNG.xml"></suite-file> 
 	     <suite-file path="ScoreScenariosTestNG.xml"></suite-file>   
@@ -39,9 +41,9 @@
 	 	  <suite-file path="ScoreScenariosTestNG.xml"></suite-file>    
  <suite-file path="V2DataInputScenariosTestNG.xml"></suite-file>  
  -->	
-   <!--  <suite-file path="V2CompleteDataValidationNoPayloadTestng.xml"></suite-file>
-		<suite-file path="V2EmissionFactor.xml"></suite-file> 
- -->	 	<!-- 	<suite-file path="V2DataInputScenariosTestNG.xml"></suite-file> -->
+ <!-- <suite-file path="V2CompleteDataValidationNoPayloadTestng.xml"></suite-file> -->
+	<!-- 	<suite-file path="V2EmissionFactor.xml"></suite-file>  -->
+ 	<!-- 	<suite-file path="V2DataInputScenariosTestNG.xml"></suite-file> -->
  	 	
 	</suite-files>
 </suite> 

@@ -19,7 +19,7 @@ public class CreateAssetCityPOSTAPITest extends BaseClass {
 
 	@Test(groups="CheckRatings")
 	@Parameters({ "SheetName", "ProjectType","ProjectTypeColumn","rownumber" })
-	public void CreateAssetPOSTAPI(String SheetName, String ProjectType,String ProjectTypeColumn, int rownumber) throws IOException {
+	public void CreateAssetCityPOSTAPI(String SheetName, String ProjectType,String ProjectTypeColumn, int rownumber) throws IOException {
 
 			
         String[] CountryOptions  = {"US"};
@@ -76,7 +76,7 @@ public class CreateAssetCityPOSTAPITest extends BaseClass {
         System.out.println("Content Type is : " + CommonMethod.res.getContentType());
 		System.out.println("Status Code is : " + CommonMethod.res.getStatusCode());
 		
-        List<String> Actvalue = Arrays.asList("other","none");
+        List<String> Actvalue = Arrays.asList("other","none","LEED-CT");
 		
 		if(Actvalue.contains(str)) {
 		

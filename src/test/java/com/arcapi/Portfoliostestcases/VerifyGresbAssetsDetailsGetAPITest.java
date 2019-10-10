@@ -18,8 +18,7 @@ public class VerifyGresbAssetsDetailsGetAPITest extends BaseClass {
 			CommonMethod.res = MethodCall.GETRequest(url);	
 			
 			String TotalProject = CommonMethod.res.path("count").toString();
-			
-					
+				
 			String count = data.getCellData(SheetName, "PortfolioID", 4);
 			Integer totalProject = Integer.parseInt(count);
 			Integer expected = totalProject +2;

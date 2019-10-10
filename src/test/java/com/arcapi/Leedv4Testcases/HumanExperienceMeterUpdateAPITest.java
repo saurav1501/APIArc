@@ -15,7 +15,7 @@ public class HumanExperienceMeterUpdateAPITest extends BaseClass {
 	@Test(groups="CheckMeter")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void HumanExperienceMeterUpdateAPI(String SheetName,String ProjectTypeColumn, int rownumber) {
-  
+ 
         String[] Unit = {"ug/m3","mg/m3", "ppm","ppb"};
         
         String[] Type = {"263","260","258","565","566","567","568","569","570","571","572"};
@@ -34,37 +34,94 @@ public class HumanExperienceMeterUpdateAPITest extends BaseClass {
 
 		CommonMethod.res = MethodCall.PUTRequest(url, jsonAsMap);
 			
-		if(j==0 && k==0){
-			Assertion.verifyStatusCode(CommonMethod.res, 400);
-		}
-		
-		else if(j==1 && k>0){
+		if(j==0 && k==1){
 			
-			Assertion.verifyStatusCode(CommonMethod.res, 400);
-			}
-		
-		else if(j==2 && k>1){
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+		}
+		else if(j==0 && k==2){
 			
-			Assertion.verifyStatusCode(CommonMethod.res, 400);
-			}
-		
-		else if(j==3 && k>=0){
-			if(k==10) {
-				System.out.println("inside");
-				Assertion.verifyStatusCode(CommonMethod.res, 200);		
-				
-			}
-			else {
-				Assertion.verifyStatusCode(CommonMethod.res, 400);
-			}
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		}
-        else {
-        	Assertion.verifyStatusCode(CommonMethod.res, 200);		
-        	
-        }
-		
+		else if(j==0 && k==3){
+			
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		}
-	}
-}}
+		else if(j==0 && k==4){
+		
+		Assertion.verifyStatusCode(CommonMethod.res, 200);
+		}
+		else if(j==0 && k==5){
+		
+		Assertion.verifyStatusCode(CommonMethod.res, 200);
+		}
+		
+		else if(j==0 && k==6){
+		
+		Assertion.verifyStatusCode(CommonMethod.res, 200);
+		}
 	
+		else if(j==0 && k==7){
+		
+		Assertion.verifyStatusCode(CommonMethod.res, 200);
+		}
+	
+		else if(j==0 && k==8){
+		
+		Assertion.verifyStatusCode(CommonMethod.res, 200);
+		}
+	
+		else if(j==0 && k==9){
+		
+		Assertion.verifyStatusCode(CommonMethod.res, 200);
+		}
+	
+		else if(j==0 && k==10){
+    	
+		Assertion.verifyStatusCode(CommonMethod.res, 200);
+		}
+	
+		else if(j==1 && k==0){
+			
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+		}
+		
+	
+		
+		else if(j==2 && k==0){
+			
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			}
+		
+		else if(j==2 && k==1){
+			
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			}
+		else if(j==2 && k==2){
+			
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			}
+		
+		
+		else if(j==3 && k==10){
+				Assertion.verifyStatusCode(CommonMethod.res, 200);
+				}
+			
+		
+		 else {
+	        	
+	        	Assertion.verifyStatusCode(CommonMethod.res, 400);
+	        	  }
+		
+		
+			}		
+	
+	
+	
+			}
+		}}	
+
 }
+
+	
+		
+	

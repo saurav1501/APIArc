@@ -26,7 +26,7 @@
 <class name="com.arcapi.InterRelatedFieldValidationTestcases.WasteCreatePOSTAPITest"></class>
 <class name="com.arcapi.InterRelatedFieldValidationTestcases.WaterCreatePOSTAPITest"></class>
 </classes>
-</test>
+</test> 
 
 <test name="RatingSystemInterRelated-Building">
 <parameter name="ProjectType" value="building" />
@@ -63,7 +63,7 @@
 <classes>
 <class name="com.arcapi.InterRelatedFieldValidationTestcases.CreateAssetTransitPOSTAPITest"></class>
 </classes>
-</test>
+</test> 
 </suite> 
   
 

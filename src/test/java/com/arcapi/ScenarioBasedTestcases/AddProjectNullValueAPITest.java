@@ -18,8 +18,9 @@ public class AddProjectNullValueAPITest extends BaseClass{
 		try {
 			payload = AddProjectPayload.addProjectPayloadTransitNullPayload(ProjectType, ProjectTypeColumn, Country, ratings);
 			url = "/assets/";
+			
 			CommonMethod.res = MethodCall.POSTRequest(url,payload);
-			Assertion.verifyStatusCode(CommonMethod.res, 400);
+			Assertion.verifyStatusCode(CommonMethod.res, 201);
 		 } catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -18,12 +18,12 @@
 <class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
 <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest"></class> 
-<class name="com.arcapi.Leedv4Testcases.MetersAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.MetersAPITest"></class> 
 <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest"></class>
-<class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest"></class>
+<class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest"></class> 
 <class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest"></class>  
 <class name="com.arcapi.Buildingtestcases.V4ExcelUploadTemplatePOSTAPITest"></class>
 <class name="com.arcapi.Common.S3DocumentUploadPOSTAPITest"></class>
@@ -95,7 +95,7 @@
 <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"></class>
 <class name="com.arcapi.Common.AssetDocumentAPITest"></class>
 <class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
-<class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
+<class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class> 
 </classes>
 </test> 
 </suite>

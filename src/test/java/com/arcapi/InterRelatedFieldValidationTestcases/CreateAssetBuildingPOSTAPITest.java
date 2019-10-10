@@ -22,7 +22,7 @@ public class CreateAssetBuildingPOSTAPITest extends BaseClass {
 	public void CreateAssetBuildingPOSTAPI(String SheetName, String ProjectType,String ProjectTypeColumn, int rownumber) throws IOException {
 
 			
-         String[] CountryOptions  = {"US"};
+        String[] CountryOptions  = {"US"};
 		
 		String StateCode = null;
 		
@@ -38,7 +38,7 @@ public class CreateAssetBuildingPOSTAPITest extends BaseClass {
 			StateCode = "10";
 		}
 		
-		
+
 		for (String str : RatingSystemValue) {
 		
 		CommonMethod.res = given().log().all()
@@ -76,7 +76,7 @@ public class CreateAssetBuildingPOSTAPITest extends BaseClass {
 
 	
 		
-        List<String> Actvalue = Arrays.asList("other","none");
+        List<String> Actvalue = Arrays.asList("other","none","LEED V4 O+M: EB WP");
 		
 		if(Actvalue.contains(str)) {
 		

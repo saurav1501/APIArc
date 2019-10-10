@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [ScenarioBasedTesting]">
-  <parameter name="environment" value="qas"/>
+  <parameter name="environment" value="stg"/>
   <parameter name="SoReference" value="performance score"/>
   <parameter name="ratings" value="PARKSMART"/>
   <parameter name="ProjectType" value="parksmart"/>
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
-  <parameter name="SheetName" value="QAS"/>
+  <parameter name="SheetName" value="STG"/>
   <parameter name="SoReferenceSR" value="performance score"/>
   <parameter name="ProjectTypeColumn" value="ProjectIDParksmart"/>
-  <test name="SpecialScenario">
-    <parameter name="SoReference" value="performance score"/>
-    <parameter name="ratings" value="none"/>
-    <parameter name="ProjectType" value="building"/>
-    <parameter name="rownumber" value="2"/>
-    <parameter name="SoReferenceSR" value="performance score"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
-    <classes>
-      <class name="com.arcapi.Common.LoginAPITest"/>
-      <class name="com.arcapi.ScenarioBasedTestcases.OLDExcelUploadTemplatePOSTAPITest"/>
-      <class name="com.arcapi.ScenarioBasedTestcases.CreateProjectBySingleCharacterAPITest"/>
-    </classes>
-  </test> <!-- SpecialScenario -->
-  <test name="Transit-Above-RegisterNullValue">
+  <test name="Parking-Register-Null-Value">
     <parameter name="SoReference" value="performance score"/>
     <parameter name="ratings" value="PARKSMART"/>
     <parameter name="ProjectType" value="parksmart"/>
@@ -34,108 +21,5 @@
     <classes>
       <class name="com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest"/>
     </classes>
-  </test> <!-- Transit-Above-RegisterNullValue -->
-  <test name="SpecialScenario(failed)">
-    <parameter name="SoReference" value="performance score"/>
-    <parameter name="ratings" value="none"/>
-    <parameter name="ProjectType" value="building"/>
-    <parameter name="rownumber" value="2"/>
-    <parameter name="SoReferenceSR" value="performance score"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
-    <classes>
-      <class name="com.arcapi.ScenarioBasedTestcases.CreateProjectBySingleCharacterAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="CreateProjectBySingleCharacterAPI" invocation-numbers="0"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.ScenarioBasedTestcases.CreateProjectBySingleCharacterAPITest -->
-      <class name="com.arcapi.ScenarioBasedTestcases.OLDExcelUploadTemplatePOSTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="OLDExcelUploadTemplatePOSTAPI" invocation-numbers="0"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.ScenarioBasedTestcases.OLDExcelUploadTemplatePOSTAPITest -->
-      <class name="com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest -->
-      <class name="com.arcapi.Common.LoginAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.LoginAPITest -->
-    </classes>
-  </test> <!-- SpecialScenario(failed) -->
-  <test name="Transit-Above-RegisterNullValue(failed)">
-    <parameter name="SoReference" value="performance score"/>
-    <parameter name="ratings" value="PARKSMART"/>
-    <parameter name="ProjectType" value="parksmart"/>
-    <parameter name="rownumber" value="2"/>
-    <parameter name="SoReferenceSR" value="performance score"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDParksmart"/>
-    <classes>
-      <class name="com.arcapi.ScenarioBasedTestcases.CreateProjectBySingleCharacterAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.ScenarioBasedTestcases.CreateProjectBySingleCharacterAPITest -->
-      <class name="com.arcapi.ScenarioBasedTestcases.OLDExcelUploadTemplatePOSTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.ScenarioBasedTestcases.OLDExcelUploadTemplatePOSTAPITest -->
-      <class name="com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="AddProjectNullValueAPI" invocation-numbers="0"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest -->
-      <class name="com.arcapi.Common.LoginAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.LoginAPITest -->
-    </classes>
-  </test> <!-- Transit-Above-RegisterNullValue(failed) -->
+  </test> <!-- Parking-Register-Null-Value -->
 </suite> <!-- Failed suite [ScenarioBasedTesting] -->

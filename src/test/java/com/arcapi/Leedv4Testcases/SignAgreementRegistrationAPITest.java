@@ -27,7 +27,8 @@ public class SignAgreementRegistrationAPITest extends BaseClass {
 				url= "/assets/LEED:"+projectID+"/agreements/";
 				String Key = "agreement";
 				File Value = CommonMethod.file;
-				map.put("SoReference","REGISTRATION");
+				
+				map.put("SoReference","ADDENDUM");
 				CommonMethod.res = MethodCall.POSTRequest(url, map,Key,Value);					
 				Assertion.verifyStatusCode(CommonMethod.res, 200);
 				Assertion.verifyStatusMessage(CommonMethod.res, "HTTP/1.1 200 OK");

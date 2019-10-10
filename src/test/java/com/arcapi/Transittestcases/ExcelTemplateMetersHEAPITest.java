@@ -19,8 +19,10 @@ public class ExcelTemplateMetersHEAPITest extends BaseClass {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/?page_size=20";
 			CommonMethod.res = MethodCall.GETRequest(url);
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
-						
-			for(int i=0;i<=12;i++){
+			
+			
+			Integer meter = CommonMethod.res.path("count");
+			for(int i=0;i<=meter;i++){
 			
 	        Integer type = CommonMethod.res.path("results["+i+"].fuel_type.id");
 	        System.out.println(type);

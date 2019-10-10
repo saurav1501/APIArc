@@ -95,7 +95,7 @@ public class BaseClass {
 			"723 328238 2382", "Ajkwdjjw fwfnwf jnwffcn" };
 	public static String[] FuelTypeValue = { "kWh", "MWh", "MBtu", "kBtu", "GJ", "gal", "cf", "ccf", "kcf", "kGal",
 			"MGal", "cu m", "l", "mcf", "gal(UK)", "kGal(UK)", "MGal(UK)", "cGal (UK)", "cGal (US)", "Kcm", "therms",
-			"GJ", "US tons", "ppm", "ug/m3", "miles", "person", "days", "dollar", "" };
+			"GJ", "US tons", "ppm", "ug/m3", "miles", "person", "days", "dollar"};
 	public static String[] RatingSystemValue = { "LEED V4 O+M: EB WP", "LEED-CT", "LEED-CM", "PARKSMART",
 	"LEED V4 O+M: TR" };
 

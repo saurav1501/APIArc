@@ -42,7 +42,6 @@ public class HumanCreatePOSTAPITest extends BaseClass {
 			}
 			
 			
-
 }
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();

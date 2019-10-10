@@ -2,7 +2,7 @@
 
 <suite name="ScenarioBasedTesting">
 
-<test name="TeamScenario-TeamManager-TeamMemberPayment">
+ <test name="TeamScenario-TeamManager-TeamMemberPayment">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
 <parameter name="SoReference" value="performance score" />
@@ -82,7 +82,7 @@
 <class name="com.arcapi.ScenarioBasedTestcases.OLDExcelUploadTemplatePOSTAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.CreateProjectBySingleCharacterAPITest"></class>
 </classes>
-</test> 
+</test>  
 
 <test name="Parking-Register-Null-Value">
 <parameter name="ProjectType" value="parksmart"/>
@@ -96,7 +96,7 @@
 </classes>
 </test> 
 
-<test name="CompleteFlowTest-Building-None">
+ <test name="CompleteFlowTest-Building-None">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
 <parameter name="SoReference" value="performance score" />
@@ -106,8 +106,8 @@
 <classes>
 <class name="com.arcapi.ScenarioBasedTestcases.CheckSpaceTypeBuildingOtherAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.CheckOwnerTypeBuildingOtherAPITest"></class>
-</classes>
-</test>
+</classes> 
+</test> 
 </suite>
   
 

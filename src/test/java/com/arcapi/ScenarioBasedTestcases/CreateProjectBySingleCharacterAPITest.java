@@ -19,7 +19,7 @@ public class CreateProjectBySingleCharacterAPITest extends BaseClass {
 			payload = AddProjectPayload.addProjectSingleCharProject(ProjectType, ProjectTypeColumn, Country, ratings);
 			url = "/assets/";
 			CommonMethod.res = MethodCall.POSTRequest(url,payload);
-			Assertion.verifyStatusCode(CommonMethod.res, 201);
+			Assertion.verifyStatusCode(CommonMethod.res, 400);
 		 } catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -30,7 +30,6 @@ public class WasteCreatePOSTAPITest extends BaseClass {
 
 		CommonMethod.res = MethodCall.POSTRequest(url, jsonAsMap);
 
-	
 		String Actvalue = "US tons";
 		if(Actvalue.contains(str)) {
 		Assertion.verifyStatusCode(	CommonMethod.res, 201);

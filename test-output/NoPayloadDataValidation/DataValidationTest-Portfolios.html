@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>DataValidationTest-Portfolios</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 20 13:54:14 IST 2019</td>
+<td>Started on:</td><td>Wed Oct 09 11:02:23 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>31 seconds (31713 ms)</td>
+<tr><td>Total time:</td><td>329 seconds (329554 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,401 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest.CreatePortfoliosAsset2PostAPI()'><b>CreatePortfoliosAsset2PostAPI</b><br>Test class: com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest.CreatePortfoliosAsset2PostAPI(PortfoliosAssetPostAPITest.java:46)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace219743801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace219743801'><pre>java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest.CreatePortfoliosAsset2PostAPI(PortfoliosAssetPostAPITest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>1</td>
+<td>com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest@4501b7af</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest.PortfoliosAssetDetailPUTAPI()'><b>PortfoliosAssetDetailPUTAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest<br>Parameters: DEV2, ProjectIDBuildingNone, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [404]
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest.PortfoliosAssetDetailPUTAPI(PortfoliosAssetDetailPUTAPITest.java:22)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace287560801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace287560801'><pre>java.lang.AssertionError: expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest.PortfoliosAssetDetailPUTAPI(PortfoliosAssetDetailPUTAPITest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>2</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest@5b275dab</td></tr>
+<tr>
+<td title='com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest.PortfoliosAssetPostAPI()'><b>PortfoliosAssetPostAPI</b><br>Test class: com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest.PortfoliosAssetPostAPI(PortfoliosAssetPostAPITest.java:28)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace82565330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace82565330'><pre>java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest.PortfoliosAssetPostAPI(PortfoliosAssetPostAPITest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>1</td>
+<td>com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest@4501b7af</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest.PortfoliosAssetPostAPI()'><b>PortfoliosAssetPostAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest<br>Parameters: DEV2, ProjectIDBuildingNone, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [404]
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest.PortfoliosAssetPostAPI(PortfoliosAssetPostAPITest.java:21)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1534365740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1534365740'><pre>java.lang.AssertionError: expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest.PortfoliosAssetPostAPI(PortfoliosAssetPostAPITest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>1</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest@523884b2</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest.PortfoliosGoalsUpdateAPI()'><b>PortfoliosGoalsUpdateAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest<br>Parameters: DEV2, ProjectIDBuildingNone, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [404]
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest.PortfoliosGoalsUpdateAPI(PortfoliosGoalsUpdateAPITest.java:23)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace499831151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499831151'><pre>java.lang.AssertionError: expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest.PortfoliosGoalsUpdateAPI(PortfoliosGoalsUpdateAPITest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>2</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest@61832929</td></tr>
+<tr>
+<td title='com.arcapi.Portfoliostestcases.PortfoliosPostAPITest.PortfoliosPostAPI()'><b>PortfoliosPostAPI</b><br>Test class: com.arcapi.Portfoliostestcases.PortfoliosPostAPITest<br>Parameters: DEV2, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [500]
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.Portfoliostestcases.PortfoliosPostAPITest.PortfoliosPostAPI(PortfoliosPostAPITest.java:33)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace620301055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace620301055'><pre>java.lang.AssertionError: expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.Portfoliostestcases.PortfoliosPostAPITest.PortfoliosPostAPI(PortfoliosPostAPITest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>301</td>
+<td>com.arcapi.Portfoliostestcases.PortfoliosPostAPITest@d8355a8</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest.PortfoliosTeamsDELETEAPI()'><b>PortfoliosTeamsDELETEAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest<br>Parameters: DEV2, ProjectIDBuildingNone, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [404]
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest.PortfoliosTeamsDELETEAPI(PortfoliosTeamsDELETEAPITest.java:21)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1766444717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1766444717'><pre>java.lang.AssertionError: expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest.PortfoliosTeamsDELETEAPI(PortfoliosTeamsDELETEAPITest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>4</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest@5e5792a0</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest.PortfoliosTeamsPUTAPI()'><b>PortfoliosTeamsPUTAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest<br>Parameters: DEV2, ProjectIDBuildingNone, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [404]
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest.PortfoliosTeamsPUTAPI(PortfoliosTeamsPUTAPITest.java:24)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1162154803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1162154803'><pre>java.lang.AssertionError: expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest.PortfoliosTeamsPUTAPI(PortfoliosTeamsPUTAPITest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>1</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest@3ffc5af1</td></tr>
+<tr>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest.PortfoliosTeamsPostAPI()'><b>PortfoliosTeamsPostAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest<br>Parameters: DEV2, ProjectIDBuildingNone, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [404]
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest.PortfoliosTeamsPostAPI(PortfoliosTeamsPostAPITest.java:21)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1493625851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1493625851'><pre>java.lang.AssertionError: expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:22)
+	at com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest.PortfoliosTeamsPostAPI(PortfoliosTeamsPostAPITest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>2</td>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest@29774679</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,65 +470,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest.CreatePortfoliosAsset2PostAPI()'><b>CreatePortfoliosAsset2PostAPI</b><br>Test class: com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest</td>
-<td></td>
-<td>2</td>
-<td>com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest@61832929</td></tr>
-<tr>
-<td title='com.arcapi.Common.LoginAPITest.LoginAPI()'><b>LoginAPI</b><br>Test class: com.arcapi.Common.LoginAPITest</td>
-<td></td>
-<td>7</td>
-<td>com.arcapi.Common.LoginAPITest@28d25987</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest.PortfoliosAssetDetailPUTAPI()'><b>PortfoliosAssetDetailPUTAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest<br>Parameters: STG, ProjectIDBuildingNone, 2</td>
-<td></td>
-<td>1</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest@3ffc5af1</td></tr>
-<tr>
-<td title='com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest.PortfoliosAssetPostAPI()'><b>PortfoliosAssetPostAPI</b><br>Test class: com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest</td>
-<td></td>
-<td>2</td>
-<td>com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest@61832929</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest.PortfoliosAssetPostAPI()'><b>PortfoliosAssetPostAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest<br>Parameters: STG, ProjectIDBuildingNone, 2</td>
-<td></td>
-<td>1</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest@29774679</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest.PortfoliosDetailPUTAPI()'><b>PortfoliosDetailPUTAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest<br>Parameters: STG, 2</td>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest.PortfoliosDetailPUTAPI()'><b>PortfoliosDetailPUTAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest<br>Parameters: DEV2, 2</td>
 <td></td>
 <td>0</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest@5b275dab</td></tr>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest@28d25987</td></tr>
 <tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest.PortfoliosGoalsUpdateAPI()'><b>PortfoliosGoalsUpdateAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest<br>Parameters: STG, ProjectIDBuildingNone, 2</td>
-<td></td>
-<td>2</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest@5e5792a0</td></tr>
-<tr>
-<td title='com.arcapi.Portfoliostestcases.PortfoliosPostAPITest.PortfoliosPostAPI()'><b>PortfoliosPostAPI</b><br>Test class: com.arcapi.Portfoliostestcases.PortfoliosPostAPITest<br>Parameters: STG, 2</td>
-<td></td>
-<td>2</td>
-<td>com.arcapi.Portfoliostestcases.PortfoliosPostAPITest@4501b7af</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest.PortfoliosPostAPI()'><b>PortfoliosPostAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest<br>Parameters: STG, ProjectIDBuildingNone, 2</td>
-<td></td>
-<td>2</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest@523884b2</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest.PortfoliosTeamsDELETEAPI()'><b>PortfoliosTeamsDELETEAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest<br>Parameters: STG, ProjectIDBuildingNone, 2</td>
+<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest.PortfoliosPostAPI()'><b>PortfoliosPostAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest<br>Parameters: DEV2, ProjectIDBuildingNone, 2</td>
 <td></td>
 <td>1</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsDELETEAPITest@68c4039c</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest.PortfoliosTeamsPUTAPI()'><b>PortfoliosTeamsPUTAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest<br>Parameters: STG, ProjectIDBuildingNone, 2</td>
-<td></td>
-<td>2</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPUTAPITest@3532ec19</td></tr>
-<tr>
-<td title='com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest.PortfoliosTeamsPostAPI()'><b>PortfoliosTeamsPostAPI</b><br>Test class: com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest<br>Parameters: STG, ProjectIDBuildingNone, 2</td>
-<td></td>
-<td>2</td>
-<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosTeamsPostAPITest@26653222</td></tr>
+<td>com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest@59fa1d9b</td></tr>
 </table><p>
 </body>
 </html>

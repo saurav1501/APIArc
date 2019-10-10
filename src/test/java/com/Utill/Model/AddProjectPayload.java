@@ -436,9 +436,11 @@ public class AddProjectPayload extends BaseClass {
 		
         else if(Country.equals("CN"))
 			
+        	
 		{
         	RandomData.selectCNState(Country);
 		}
+        
 	
         RandomData.unitType();
         RandomData.spaceType();
@@ -459,13 +461,13 @@ public class AddProjectPayload extends BaseClass {
         addProject.setConfidential(true);
         addProject.setSign_agreement(true);
         addProject.setZip_code(RandomData.ZipCode); 
-        addProject.setNoOfParkingSpace("15");
+        addProject.setNoOfParkingSpace(null);
         addProject.setNoOfParkingLevels("2");
         addProject.setOrganization(data.getCellData(sheetName, "OwnerOrg", rowNumTwo));
-        addProject.setManageEntityCountry(Country);
+        addProject.setManageEntityCountry(null);
         addProject.setOwner_email(null);
         addProject.setOwnerType(null);
-
+ 
 		return addProject;  
 	}
 

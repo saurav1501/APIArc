@@ -27,6 +27,7 @@ public class CreateAssetBuildingV3APITest extends BaseClass {
 			data.setCellData(sheetName, ProjectTypeColumn, rowNumTwo, CommonMethod.fetchedID);
 		} catch (Exception e) {
 			e.printStackTrace();
+			
 		}
         	
 	}
