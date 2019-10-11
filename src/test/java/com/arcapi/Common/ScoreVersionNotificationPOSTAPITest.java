@@ -23,7 +23,7 @@ public class ScoreVersionNotificationPOSTAPITest extends BaseClass{
 			map.put("notify_on" ,"2020-05-28");
 			
 			CommonMethod.res = MethodCall.POSTRequest(url,map);
-			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			Assertion.verifyStatusCode(CommonMethod.res, 400);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -22,7 +22,7 @@ public class ExcelTemplateMetersHEAPITest extends BaseClass {
 			
 			
 			Integer meter = CommonMethod.res.path("count");
-			for(int i=0;i<=meter;i++){
+			for(int i=0;i<meter;i++){
 			
 	        Integer type = CommonMethod.res.path("results["+i+"].fuel_type.id");
 	        System.out.println(type);

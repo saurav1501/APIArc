@@ -14,7 +14,7 @@ import com.arc.driver.CommonMethod;
 public class SubmitReviewPOSTAPITest extends BaseClass {
 
 	@Test(groups="CheckSubmitReview")
-	@Parameters({ "SheetName", "ProjectTypeColumn","rownumber", "ProjectType","SoReferenceSR" })
+	@Parameters({"SheetName", "ProjectTypeColumn","rownumber", "ProjectType","SoReferenceSR" })
 	public void SubmitReviewPOSTAPI(String SheetName, String ProjectTypeColumn, int rownumber, String ProjectType,String SoReferenceSR){
 
 		try {

@@ -26,7 +26,7 @@ public class ScoreVersionExtensionUpdatePostAPITest extends BaseClass{
 			map.put("is_granted", "false");
 			
 			CommonMethod.res = MethodCall.POSTRequest(url,map);
-			Assertion.verifyStatusCode(CommonMethod.res, 404);
+			Assertion.verifyStatusCode(CommonMethod.res, 400);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

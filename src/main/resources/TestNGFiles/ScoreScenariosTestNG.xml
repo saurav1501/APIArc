@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="ScoreScenariosCity">
 
-<test name="CompleteFlowTest-City-None">
+<test name="ScoreScenariosCity-None">
 <parameter name="ProjectType" value="city" />
 <parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
 <parameter name="SoReference" value="performance score" />

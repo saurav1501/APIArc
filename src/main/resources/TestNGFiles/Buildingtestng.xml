@@ -16,6 +16,7 @@
 <class name="com.arcapi.Common.WebIOSAppVersionGetAPITest"></class>
 <class name="com.arcapi.Common.UserDetailAPITest"></class>
 <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"></class>
+<class name="com.arcapi.Common.LoginAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.Common.AssetSearchAPITest"></class>
 <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 

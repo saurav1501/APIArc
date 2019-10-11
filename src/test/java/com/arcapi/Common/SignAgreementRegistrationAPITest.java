@@ -1,7 +1,6 @@
 package com.arcapi.Common;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
 
 import org.junit.Assert;
@@ -18,7 +17,7 @@ public class SignAgreementRegistrationAPITest extends BaseClass {
 
 	@Test(groups="SignAgreement")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
-	public void SignAgreementRegistrationAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
+	public void SignAgreementRegistrationAPI(String SheetName,String ProjectTypeColumn, int rownumber)  {
 		    map = new HashMap<Object,Object>();
 		
 		    try {

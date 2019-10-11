@@ -1,2 +1,65 @@
-2019-10-10 16:17:38 INFO  LoginAPITest:248 - Executing test: LoginAPI
-2019-10-10 16:17:38 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
+2019-10-11 09:38:01 INFO  LoginAPITest:248 - Executing test: LoginAPI
+2019-10-11 09:38:01 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
+2019-10-11 09:38:10 INFO  LoginAPITest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:10 INFO  LoginAPITest:123 - Payload is  usgbcarcapi@gmail.cominitpass
+2019-10-11 09:38:10 INFO  LoginAPITest:127 - SAMEORIGIN
+2019-10-11 09:38:10 INFO  LoginAPITest:130 - csrftoken=eoPU2bRO6IjPzbjtZjj38J59HsBCiZgFPWFIOtvLeOERJIrUPLjflLf5CZ4h1qs1;Path=/;Max-Age=31449600;Expires=10/9/20 4:08 AM
+sessionid=dv4xvp87f78cuvtkdz3svbm3a09226bg;Path=/;HttpOnly
+2019-10-11 09:38:10 INFO  LoginAPITest:131 - Qs0gbdl768kSgj2DqzMavSsGeGKXui
+2019-10-11 09:38:12 INFO  LoginAPITest:137 - Bearer
+2019-10-11 09:38:12 INFO  LoginAPITest:138 - Post Response Time In milliseconds0
+2019-10-11 09:38:12 INFO  LoginAPITest:141 - Header is Bearer Qs0gbdl768kSgj2DqzMavSsGeGKXui
+2019-10-11 09:38:12 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key06c50a1570bd4d40a7859ec28514b185
+2019-10-11 09:38:12 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-10-11 09:38:13 INFO  ReviewPaymentIntimationGetAPITest:248 - Executing test: ReviewPaymentIntimationGetAPI
+2019-10-11 09:38:13 INFO  ReviewPaymentIntimationGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/intimation/
+2019-10-11 09:38:14 INFO  ReviewPaymentIntimationGetAPITest:28 - Get Response Time In milliseconds1403
+2019-10-11 09:38:14 INFO  ReviewPaymentIntimationGetAPITest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:14 INFO  WebIOSAppVersionGetAPITest:248 - Executing test: WebIOSAppVersionGetAPI
+2019-10-11 09:38:15 INFO  WebIOSAppVersionGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/version/
+2019-10-11 09:38:16 INFO  WebIOSAppVersionGetAPITest:28 - Get Response Time In milliseconds1366
+2019-10-11 09:38:16 INFO  WebIOSAppVersionGetAPITest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:16 INFO  UserDetailAPITest:248 - Executing test: UserDetailAPI
+2019-10-11 09:38:16 INFO  UserDetailAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/auth/detail/
+2019-10-11 09:38:18 INFO  UserDetailAPITest:28 - Get Response Time In milliseconds1627
+2019-10-11 09:38:18 INFO  UserDetailAPITest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:18 INFO  UserAccessLevelSAPGetTest:248 - Executing test: UserAccessLevelSAPGet
+2019-10-11 09:38:18 INFO  UserAccessLevelSAPGetTest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/auth/access/
+2019-10-11 09:38:20 INFO  UserAccessLevelSAPGetTest:28 - Get Response Time In milliseconds1499
+2019-10-11 09:38:20 INFO  UserAccessLevelSAPGetTest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:20 INFO  CreateAssetBuildingV3APITest:248 - Executing test: CreateAssetPOSTAPI
+2019-10-11 09:38:23 INFO  CreateAssetBuildingV3APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-10-11 09:38:27 INFO  CreateAssetBuildingV3APITest:83 - Post Response Time In milliseconds1499
+2019-10-11 09:38:27 INFO  CreateAssetBuildingV3APITest:90 - Payload is  {"name":"US-API-Building-Other-40062","rating_system":"other","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"US","state":"AZ","project_type":"building","unitType":"SI","spaceType":"Core Learning Space: Preschool/Daycare","owner_email":"usgbcarcapi1@gmail.com","ownerType":"Investor: ROEC","confidential":false,"sign_agreement":false,"organization":"T","manageEntityCountry":"US","zip_code":"20037","operating_hours":"100"}
+2019-10-11 09:38:27 INFO  CreateAssetBuildingV3APITest:43 - API Responded With Status Code : 201
+2019-10-11 09:38:27 INFO  CreateAssetBuildingV3APITest:26 - 1000173945
+2019-10-11 09:38:27 INFO  AssetSearchAPITest:248 - Executing test: AssetSearchAPI
+2019-10-11 09:38:27 INFO  AssetSearchAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/search/?q=1000173945
+2019-10-11 09:38:29 INFO  AssetSearchAPITest:28 - Get Response Time In milliseconds1560
+2019-10-11 09:38:29 INFO  AssetSearchAPITest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:29 INFO  SignAgreementRegistrationAPITest:248 - Executing test: SignAgreementRegistrationAPI
+2019-10-11 09:38:29 INFO  SignAgreementRegistrationAPITest:193 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000173945/agreements/
+2019-10-11 09:38:33 INFO  SignAgreementRegistrationAPITest:200 - Post Response Time In milliseconds3858
+2019-10-11 09:38:33 INFO  SignAgreementRegistrationAPITest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:33 INFO  SignAgreementRegistrationAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-10-11 09:38:33 INFO  SignAgreementRegistrationAPITest:14 - Complete Response
+2019-10-11 09:38:33 INFO  SignAgreementRegistrationAPITest:18 - {"result":"Agreement Signed Successfully"}
+2019-10-11 09:38:33 INFO  RegistrationPaymentPricingGetAPITest:248 - Executing test: RegistrationPaymentPricingGetAPI
+2019-10-11 09:38:33 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000173945/payments/price/?soreference=registration
+2019-10-11 09:38:36 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds2396
+2019-10-11 09:38:36 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:36 INFO  RegistrationPaymentPricingGetAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-10-11 09:38:36 INFO  RegistrationPaymentPricingGetAPITest:31 - BP02
+2019-10-11 09:38:36 INFO  RegistrationPaymentPricingGetAPITest:35 - LEED O+M : EB Performance Registration
+2019-10-11 09:38:36 INFO  RegistrationPaymentPricingGetAPITest:39 - 000000000000004619
+2019-10-11 09:38:37 INFO  PaymentOrderSubmitPOSTAPITest:248 - Executing test: PaymentOrderSubmitPOSTAPI
+2019-10-11 09:38:37 INFO  PaymentOrderSubmitPOSTAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000173945/payments/order/
+2019-10-11 09:38:48 INFO  PaymentOrderSubmitPOSTAPITest:83 - Post Response Time In milliseconds2396
+2019-10-11 09:38:48 INFO  PaymentOrderSubmitPOSTAPITest:90 - Payload is  {"country":"TG","quantity":"1.0","SoReference":"REGISTRATION","city":"Test city","actual_price":"0.0","unit_price":"0.0","zip_code":"22673","annual_price":"0.0","paymetric_r":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UGF5bWV0cmljUmVzcG9uc2U-PFN0YXR1cz5Ub2tlbml6ZWQ8L1N0YXR1cz48WGlQYXlOZXRUcmFuc0lEPjA8L1hpUGF5TmV0VHJhbnNJRD48TWVyY2hhbnRSZWZlcmVuY2VDb2RlIC8-PEF1dGhDb2RlPjA8L0F1dGhDb2RlPjxDYXJkSW5mbz48Q0NUb2tlbj4tRTgwMy0wMDAwLVdZODdUR0cwQlJCQzRZPC9DQ1Rva2VuPjxDQ0V4cGlyYXRpb25EYXRlPjxNb250aD4wMTwvTW9udGg-PFllYXI-MTk8L1llYXI-PC9DQ0V4cGlyYXRpb25EYXRlPjxDVlY-OTk5PC9DVlY-PENDVHlwZT40MDAwPC9DQ1R5cGU-PEJpblJhbmdlVHlwZT40MDAwPC9CaW5SYW5nZVR5cGU-PC9DYXJkSW5mbz48QW1vdW50PjA8L0Ftb3VudD48L1BheW1ldHJpY1Jlc3BvbnNlPg\u003d\u003d","paymetric_s":"9pVBS5jQtnNbRGzfciD03OoBN7fP1aSFigXogT7LOaw\u003d","street":"Test Add","name":"Adolph Blaine Charles David","company_code":"BP02","state":"NA","email":"usgbcarcapi1@gmail.com","material_code":"000000000000004619","material_description":"LEED O+M : EB Performance Registration"}
+2019-10-11 09:38:48 INFO  PaymentOrderSubmitPOSTAPITest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:48 INFO  PaymentOrderSubmitPOSTAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-10-11 09:38:52 INFO  AddAssestTimelinePOSTAPITest:248 - Executing test: AddAssestTimeline
+2019-10-11 09:38:52 INFO  AddAssestTimelinePOSTAPITest:99 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000173945/timeline/
+2019-10-11 09:38:59 INFO  AddAssestTimelinePOSTAPITest:104 - Post Response Time In milliseconds2396
+2019-10-11 09:38:59 INFO  AddAssestTimelinePOSTAPITest:43 - API Responded With Status Code : 200
+2019-10-11 09:38:59 INFO  AddAssestTimelinePOSTAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK

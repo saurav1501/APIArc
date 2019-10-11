@@ -35,10 +35,10 @@
 <class name="com.arcapi.Common.S3DocumentRemoveAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest"></class>
 <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest"></class>
-<class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup3APITest"></class>
+
 <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest"></class>
 <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup2APITest"></class>
-<class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup3APITest"></class>
+
 <class name="com.arcapi.Leedv4Testcases.MeterCommentDeleteGroup2APITest"></class> 
 <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>

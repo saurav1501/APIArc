@@ -1,7 +1,5 @@
 package com.arcapi.Common;
 
-import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -15,7 +13,7 @@ public class AssetSearchAPITest extends BaseClass {
 
 	@Test(groups="Search")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
-	public void AssetSearchAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
+	public void AssetSearchAPI(String SheetName,String ProjectTypeColumn, int rownumber)  {
         
 		try {
 			projectID= data.getCellData(SheetName, ProjectTypeColumn, rownumber);
