@@ -1,6 +1,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="BuildingV3Beta">
 
+<test name="CompleteFlowTest-Portfolios-Gresb">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
+<parameter name="SoReference" value="performance score" />
+<parameter name="SoReferenceSR" value="performance score" />
+<parameter name="ratings" value="none"/>
+<parameter name="rownumber" value="2" />
+
+<classes>
+<class name="com.arcapi.Portfoliostestcases.GresbAssetsDetailsGetAPITest"></class>
+<class name="com.arcapi.Portfoliostestcases.GresbAssetsExsitingIDPostAPITest"></class>
+</classes>
+</test>
+
+
 <test name="CompleteFlowTest-Building-Other">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
@@ -11,7 +26,7 @@
 <parameter name="Aggrement" value="true"></parameter>
 
 <classes>
- <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
+<class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.Common.AssetSearchAPITest"></class>
 <class name="com.arcapi.Common.V2.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.V2.RegistrationPaymentPricingGetAPITest"></class>
@@ -152,10 +167,11 @@
 <class name="com.arcapi.Common.ScoreWeightsAPITest"></class>
 <class name="com.arcapi.Common.ThirdPartyListAppsAPITest"></class>
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
-<class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class>
+<class name="com.arcapi.Common.V2.AssetSnapshotKeysAPITest"></class>
 <class name="com.arcapi.Common.ScoreImprovementGetAssetAPITest"></class> 
-
 <class name="com.arcapi.Common.V2.VerifyBasicAnalysisDataGetAPITest"></class> 
+<class name="com.arcapi.Common.V2.ResampledTotalScoreGetAPITest"></class>  
+<class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest"></class>  
 
 
 </classes> 

@@ -17,9 +17,19 @@ public class OtherDetails extends BaseClass{
 	map = new HashMap<Object,Object>();
 	map.put("user_email",data.getCellData(sheetName, "AssetTeamMember", rowNumTwo));
 	map.put("Reltyp", "ZRPO81");
-	map.put("Responsibility", data.getCellData(sheetName, "NormalUserName", rowNumTwo));
+	map.put("Responsibility", projectID);
 	return map;
 	}
+	
+	
+	public static HashMap<Object,Object> nonRegdetalis() {
+		map = new HashMap<Object,Object>();
+		map.put("user_email","ttttttttttttttttttttttttttt@gmail.com");
+		map.put("Reltyp", "ZRPO81");
+		map.put("Responsibility", projectID);
+		return map;
+		}
+	
 	public static HashMap<Object,Object> detalisManager() {
 	map = new HashMap<Object,Object>();
 	map.put("user_email",data.getCellData(sheetName, "STG03", rowNumTwo));
@@ -34,7 +44,7 @@ public class OtherDetails extends BaseClass{
 	map = new HashMap<Object,Object>();
 	map.put("user_email",data.getCellData(sheetName, "AssetTeamMember", rowNumTwo));
 	map.put("Reltyp", "ZRPO80");
-	map.put("Responsibility", data.getCellData(sheetName, "NormalUserName", rowNumTwo));
+	map.put("Responsibility", projectID);
 	return map;
 	}
 	
@@ -51,7 +61,7 @@ public class OtherDetails extends BaseClass{
 		map = new HashMap<Object,Object>();
 		map.put("user_email",data.getCellData(sheetName, "NormalUserName", rowNumTwo));
 		map.put("Reltyp", "ZRPO80");
-		map.put("Responsibility",data.getCellData(sheetName, "NormalUserName", rowNumTwo));
+		map.put("Responsibility", projectID);
 		return map;
 			
 	}

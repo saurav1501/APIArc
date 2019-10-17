@@ -10,7 +10,7 @@ import com.arc.driver.CommonMethod;
 
 public class GresbAssetsDetailsGetAPITest extends BaseClass {
 	@Test(groups="CheckGresb")
-	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
+	@Parameters({"SheetName","ProjectTypeColumn","rownumber" })
 	public void GresbAssetsDetailsGetAPI(String SheetName,String ProjectTypeColumn, int rownumber) {
 	
 		try {

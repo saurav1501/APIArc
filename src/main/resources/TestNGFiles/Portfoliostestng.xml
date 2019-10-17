@@ -42,6 +42,7 @@
 <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest"></class>
 <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest"></class>  
 <class name="com.arcapi.Portfoliostestcases.VerifyGresbAssetsDetailsGetAPITest"></class> 
+<class name="com.arcapi.Portfoliostestcases.GresbAssetsVerifyBuildingTrialStatusAPITest"></class> 
 
 </classes>
 </test> 

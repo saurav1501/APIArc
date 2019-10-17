@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CommunityCompletePositive]">
+  <parameter name="environment" value="stg2"/>
+  <parameter name="CreditColumn" value="CommunityOtherNoneCredit"/>
+  <parameter name="SoReference" value="performance score"/>
+  <parameter name="CreditColumnNum" value="6"/>
+  <parameter name="ratings" value="other"/>
+  <parameter name="ProjectType" value="community"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="STG2"/>
+  <parameter name="SoReferenceSR" value="performance score"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDCommunityNone"/>
+  <test name="CompleteFlowTest-Community-Other">
+    <parameter name="CreditColumn" value="CommunityOtherNoneCredit"/>
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="CreditColumnNum" value="6"/>
+    <parameter name="ratings" value="other"/>
+    <parameter name="ProjectType" value="community"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDCommunityNone"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Common.UserDetailAPITest"/>
+      <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"/>
+      <class name="com.arcapi.Common.CityCom.CreateNewProjectAPITest"/>
+      <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"/>
+      <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"/>
+      <class name="com.arcapi.Common.PaymentOrderGetAPITest"/>
+      <class name="com.arcapi.Common.PaymentReceiptAPITest"/>
+      <class name="com.arcapi.Common.PaymentHistoryAPITest"/>
+      <class name="com.arcapi.Common.AssetDetailAPITest"/>
+      <class name="com.arcapi.Common.AssetSearchOwnerAPITest"/>
+      <class name="com.arcapi.Common.AssetSearchAPITest"/>
+      <class name="com.arcapi.Common.AssetOwnerOrgPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetListAPITest"/>
+      <class name="com.arcapi.Common.CityCom.AssetUpdateAPITest"/>
+      <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"/>
+      <class name="com.arcapi.Common.AssetDocumentAPITest"/>
+      <class name="com.arcapi.Common.DownloadDocumentsAPITest"/>
+      <class name="com.arcapi.Common.VerifyAgreementPresentAPITest"/>
+      <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"/>
+      <class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"/>
+      <class name="com.arcapi.Common.CityCom.CreditGetAPITest"/>
+      <class name="com.arcapi.Common.CityCom.CreditAddTeamPOSTAPITest"/>
+      <class name="com.arcapi.Common.CityCom.MeasuresListAPITest"/>
+      <class name="com.arcapi.Common.CityCom.MeasuresDetailAPITest"/>
+      <class name="com.arcapi.Common.CityCom.MeasuresPostAPITest"/>
+      <class name="com.arcapi.Common.CityCom.MeasuresUpdateAPITest"/>
+      <class name="com.arcapi.Common.CityCom.MeasuresVersionListAPITest"/>
+      <class name="com.arcapi.Common.CityCom.MeasuresVersionDetailAPITest"/>
+      <class name="com.arcapi.Common.CityCom.MeasuresVersionPostAPITest"/>
+      <class name="com.arcapi.Common.CityCom.MeterCreateAPICityCommTest"/>
+      <class name="com.arcapi.Common.CityCom.ConsumptionCreateAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberRoleAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberListAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberAddPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamMemberRemoveAPITest"/>
+      <class name="com.arcapi.Common.DeleteAllAppsAPITest"/>
+      <class name="com.arcapi.Common.InstallAllAppsAfterDeleteAPITest"/>
+      <class name="com.arcapi.Common.S3DocumentUploadPOSTAPITest"/>
+      <class name="com.arcapi.Common.S3DocumentListAPITest"/>
+      <class name="com.arcapi.Common.S3DocumentRemoveAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamPermissionListAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamPermissionPostAPITest"/>
+      <class name="com.arcapi.Common.AssetTeamPermissionPutAPITest"/>
+      <class name="com.arcapi.Common.VerifyAdminRemoveAPITest"/>
+      <class name="com.arcapi.Common.AssetArcProjectAdminAddPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionListTest"/>
+      <class name="com.arcapi.Common.AssetNotificationSubscriptionPostTest"/>
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailGetTest"/>
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailPutTest"/>
+      <class name="com.arcapi.Common.NotificationSubscriptionDetailDeleteTest"/>
+      <class name="com.arcapi.Common.AssetDataSnapshotAPITest"/>
+      <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"/>
+      <class name="com.arcapi.Common.NotificationCreatePOSTAPITest"/>
+      <class name="com.arcapi.Common.NotificationGetAPITest"/>
+      <class name="com.arcapi.Common.NotificationDeleteAPITest"/>
+      <class name="com.arcapi.Common.FeedbackSubmitPostAPITest"/>
+      <class name="com.arcapi.Common.AssetDataExportAPITest"/>
+      <class name="com.arcapi.Common.AssetPerformanceScoreListAPITest"/>
+      <class name="com.arcapi.Common.AnalysisDataSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AnalysisDataGetAPITest"/>
+      <class name="com.arcapi.Common.NotificationCreatePOSTAPITest"/>
+      <class name="com.arcapi.Common.NotificationGetAPITest"/>
+      <class name="com.arcapi.Common.NotificationDeleteAPITest"/>
+      <class name="com.arcapi.Common.FeedbackSubmitPostAPITest"/>
+      <class name="com.arcapi.Common.AssetDataExportAPITest"/>
+      <class name="com.arcapi.Common.AssetPerformanceScoreListAPITest"/>
+      <class name="com.arcapi.Common.AnalysisDataSubmitPOSTAPITest"/>
+      <class name="com.arcapi.Common.AnalysisDataGetAPITest"/>
+      <class name="com.arcapi.Common.AssetCertificationListAPITest"/>
+      <class name="com.arcapi.Common.AssetCertificationPOSTAPITest"/>
+      <class name="com.arcapi.Common.AssetRequiredFieldsAPITest"/>
+      <class name="com.arcapi.Common.CountryStatesJSONAPITest"/>
+      <class name="com.arcapi.Common.AssociatedCategoriesAPITest"/>
+      <class name="com.arcapi.Common.RatingSystemListAPITest"/>
+      <class name="com.arcapi.Common.AppVersionDetailAPITest"/>
+      <class name="com.arcapi.Common.FuelCategoryAPITest"/>
+      <class name="com.arcapi.Common.GetAllDocumentListAPITest"/>
+      <class name="com.arcapi.Common.PerformanceComparablesGetAPITest"/>
+      <class name="com.arcapi.Common.ScoreWeightsAPITest"/>
+      <class name="com.arcapi.Common.ThirdPartyListAppsAPITest"/>
+      <class name="com.arcapi.Common.AvgPerformaceListGetTest"/>
+      <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"/>
+    </classes>
+  </test> <!-- CompleteFlowTest-Community-Other -->
+</suite> <!-- Failed suite [CommunityCompletePositive] -->

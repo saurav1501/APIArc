@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 11, 2019 09:38:01 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 14, 2019 11:29:43 AM</span>
 				</a>
 			</li>
 			<li>
@@ -78,6 +78,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -91,14 +92,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>Login</a></li>
-					<li><a href='#'>CheckPayment</a></li>
-					<li><a href='#'>WebIOSAppVersion</a></li>
-					<li><a href='#'>CheckUserDetail</a></li>
-					<li><a href='#'>UserAccess</a></li>
-					<li><a href='#'>AddProject</a></li>
-					<li><a href='#'>Search</a></li>
-					<li><a href='#'>SignAgreement</a></li>
-					<li><a href='#'>CheckAsset</a></li>
+					<li><a href='#'>CheckGresb</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -146,10 +140,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>11</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -161,10 +155,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='40.299%'><span class='strong'>27</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='23.256%'><span class='strong'>10</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='59.701%'>40</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='2.326%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='74.419%'>32</span> others
 				</div>
 			</div>
 		</div>
@@ -182,14 +176,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>LoginAPITest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:01 AM</span>
+						<span class='test-time'>Oct 14, 2019 11:29:43 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:01 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:12 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+265ms</span>
+	<span class='label start-time'>Oct 14, 2019 11:29:43 AM</span>
+	<span class='label end-time'>Oct 14, 2019 11:29:59 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+352ms</span>
 </div>
 	<div class='test-desc'>Existing-V1-CompleteFlow </div>
 	<div class='test-attributes'>
@@ -209,47 +203,47 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:01 AM</td>
+					<td class='timestamp'>11:29:43 AM</td>
 					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:10 AM</td>
+					<td class='timestamp'>11:29:58 AM</td>
 					<td class='step-details'>API Responded With Status Code : 200</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:10 AM</td>
+					<td class='timestamp'>11:29:58 AM</td>
 					<td class='step-details'>Payload is : username usgbcarcapi@gmail.com password initpass</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:12 AM</td>
-					<td class='step-details'>Header is : Bearer Qs0gbdl768kSgj2DqzMavSsGeGKXui</td>
+					<td class='timestamp'>11:29:59 AM</td>
+					<td class='step-details'>Header is : Bearer g2D6BnRGb9Z0F1TsmOKi7xMwXGKH2A</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:12 AM</td>
+					<td class='timestamp'>11:29:59 AM</td>
 					<td class='step-details'>Ocp-Apim-Subscription-Key :06c50a1570bd4d40a7859ec28514b185</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:12 AM</td>
+					<td class='timestamp'>11:29:59 AM</td>
 					<td class='step-details'>API responded in 0 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:12 AM</td>
-					<td class='step-details'>Response from API<br>{"user":{"id":709,"first_name":"API","last_name":"Test","username":"usgbcarcapi@gmail.com","email":""},"expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"hSt7yL5rfGQKO654GVjkvUQAsYxkQr","authorization_token":"Qs0gbdl768kSgj2DqzMavSsGeGKXui","redirect_url":"https://stg.app.arconline.io/login_middleware/?authorization_token=Qs0gbdl768kSgj2DqzMavSsGeGKXui","guid":"6a4DPdvrB/G6mgr93h9ncw==","ui_version":"v1"}</td>
+					<td class='timestamp'>11:29:59 AM</td>
+					<td class='step-details'>Response from API<br>{"user":{"id":709,"first_name":"API","last_name":"Test","username":"usgbcarcapi@gmail.com","email":""},"expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"ByEN0920Y2bBL0R45USRI14oWf2mkL","authorization_token":"g2D6BnRGb9Z0F1TsmOKi7xMwXGKH2A","redirect_url":"https://stg.app.arconline.io/login_middleware/?authorization_token=g2D6BnRGb9Z0F1TsmOKi7xMwXGKH2A","guid":"6a4DPdvrB/G6mgr93h9ncw==","ui_version":"v1"}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:12 AM</td>
+					<td class='timestamp'>11:29:59 AM</td>
 					<td class='step-details'>API Responded With Status Message : HTTP/1.1 200 OK</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:12 AM</td>
+					<td class='timestamp'>11:29:59 AM</td>
 					<td class='step-details'><span class='label white-text green'>LoginAPITest : PASSED</span></td>
 				</tr>
 			</tbody>
@@ -261,20 +255,20 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>ReviewPaymentIntimationGetAPITest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:13 AM</span>
+						<span class='test-name'>GresbAssetsDetailsGetAPITest</span>
+						<span class='test-time'>Oct 14, 2019 11:30:01 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:13 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+423ms</span>
+	<span class='label start-time'>Oct 14, 2019 11:30:01 AM</span>
+	<span class='label end-time'>Oct 14, 2019 11:30:04 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+489ms</span>
 </div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
+	<div class='test-desc'>PortfoliosComplete </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>CheckPayment</span>
+				<span class='category label white-text'>CheckGresb</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -289,28 +283,28 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:13 AM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/intimation/</td>
+					<td class='timestamp'>11:30:01 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001877/assets/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:14 AM</td>
-					<td class='step-details'>API responded in 1403 Milliseconds</td>
+					<td class='timestamp'>11:30:03 AM</td>
+					<td class='step-details'>API responded in 2523 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:14 AM</td>
-					<td class='step-details'>Response from API<br>{"review":[],"bussiness_valid_emails":["rmishra@usgbc.org","tbisht@usgbc.org","yogesh.asthana27@gmail.com"],"reviewer_team":["sfuser06@gmail.com","rsohal@usgbc.org","saurav@groupten.com","rmishra@usgbc.org","tbisht@usgbc.org","arcusers12@hotmail.com","arctester1@hotmail.com","arctester2@hotmail.com","goldenarctester@hotmail.com","silverarctester@hotmail.com","ashree511@gmail.com"],"next":"https://api.usgbc.org/stg/leed/assets/intimation/"}</td>
+					<td class='timestamp'>11:30:03 AM</td>
+					<td class='step-details'>Response from API<br>{"count":14,"next":"https://api.usgbc.org/stg/leed/portfolios/ID:70001877/assets/?page=2","previous":null,"results":[{"id":4223,"building":{"leed_id":1000173174,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T07:18:13.884706Z","updated_at":"2019-10-04T07:18:13.884729Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4261,"building":{"leed_id":1000173789,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T10:58:02.684724Z","updated_at":"2019-10-10T10:58:02.684740Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4253,"building":{"leed_id":1000173475,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T07:28:18.596428Z","updated_at":"2019-10-10T07:28:18.596443Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4249,"building":{"leed_id":1000173447,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T07:08:17.165145Z","updated_at":"2019-10-10T07:08:17.165166Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4233,"building":{"leed_id":1000173212,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-09T05:02:40.453194Z","updated_at":"2019-10-09T05:02:40.453213Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4227,"building":{"leed_id":1000173180,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T08:46:09.057081Z","updated_at":"2019-10-04T08:46:09.057100Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4225,"building":{"leed_id":1000173176,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T07:34:50.001878Z","updated_at":"2019-10-04T07:34:50.001898Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4262,"building":{"leed_id":1000173790,"name":"test project 1","city":"Raleigh","country":"US","state":"NC","gross_area":4000.0,"occupancy":160,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.2,"total_raw_ghg":0.2,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.2,"occupant_emissions":0.2,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":92.2,"waste":100,"transport":null,"human_experience":null,"total_score":290.9,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T10:58:56.714131Z","updated_at":"2019-10-10T10:58:56.714151Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4228,"building":{"leed_id":1000173181,"name":"test project 1","city":"Raleigh","country":"US","state":"NC","gross_area":4000.0,"occupancy":160,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.2,"total_raw_ghg":0.2,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.2,"occupant_emissions":0.2,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":92.2,"waste":100,"transport":null,"human_experience":null,"total_score":290.9,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T08:47:24.141598Z","updated_at":"2019-10-04T08:47:24.141621Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4254,"building":{"leed_id":1000173476,"name":"test project 1","city":"Raleigh","country":"US","state":"NC","gross_area":4000.0,"occupancy":160,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.2,"total_raw_ghg":0.2,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.2,"occupant_emissions":0.2,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":92.2,"waste":100,"transport":null,"human_experience":null,"total_score":290.9,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T07:29:15.600990Z","updated_at":"2019-10-10T07:29:15.601006Z","portfolio":1919,"partner_asset":null,"created_by":709}]}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:14 AM</td>
+					<td class='timestamp'>11:30:04 AM</td>
 					<td class='step-details'>API Responded With Status Code : 200</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:14 AM</td>
-					<td class='step-details'><span class='label white-text green'>ReviewPaymentIntimationGetAPITest : PASSED</span></td>
+					<td class='timestamp'>11:30:04 AM</td>
+					<td class='step-details'><span class='label white-text green'>GresbAssetsDetailsGetAPITest : PASSED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -319,22 +313,22 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>WebIOSAppVersionGetAPITest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:15 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>GresbAssetsDetailsGetAPITest</span>
+						<span class='test-time'>Oct 14, 2019 11:30:04 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:15 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:16 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+384ms</span>
+	<span class='label start-time'>Oct 14, 2019 11:30:04 AM</span>
+	<span class='label end-time'>Oct 14, 2019 11:30:06 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+30ms</span>
 </div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
+	<div class='test-desc'>PortfoliosComplete </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>WebIOSAppVersion</span>
+				<span class='category label white-text'>CheckGresb</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -349,28 +343,23 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:15 AM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/version/</td>
+					<td class='timestamp'>11:30:04 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001877/assets/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:16 AM</td>
-					<td class='step-details'>API responded in 1366 Milliseconds</td>
+					<td class='timestamp'>11:30:06 AM</td>
+					<td class='step-details'>API responded in 1955 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:16 AM</td>
-					<td class='step-details'>Response from API<br>{"web":{"version":"1.19.2","forceToUpdate":false},"iOS":{"version":"1.4.5","forceToUpdate":true}}</td>
+					<td class='timestamp'>11:30:06 AM</td>
+					<td class='step-details'>Response from API<br>{"count":14,"next":"https://api.usgbc.org/stg/leed/portfolios/ID:70001877/assets/?page=2","previous":null,"results":[{"id":4223,"building":{"leed_id":1000173174,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T07:18:13.884706Z","updated_at":"2019-10-04T07:18:13.884729Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4261,"building":{"leed_id":1000173789,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T10:58:02.684724Z","updated_at":"2019-10-10T10:58:02.684740Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4253,"building":{"leed_id":1000173475,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T07:28:18.596428Z","updated_at":"2019-10-10T07:28:18.596443Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4249,"building":{"leed_id":1000173447,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T07:08:17.165145Z","updated_at":"2019-10-10T07:08:17.165166Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4233,"building":{"leed_id":1000173212,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-09T05:02:40.453194Z","updated_at":"2019-10-09T05:02:40.453213Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4227,"building":{"leed_id":1000173180,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T08:46:09.057081Z","updated_at":"2019-10-04T08:46:09.057100Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4225,"building":{"leed_id":1000173176,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T07:34:50.001878Z","updated_at":"2019-10-04T07:34:50.001898Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4262,"building":{"leed_id":1000173790,"name":"test project 1","city":"Raleigh","country":"US","state":"NC","gross_area":4000.0,"occupancy":160,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.2,"total_raw_ghg":0.2,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.2,"occupant_emissions":0.2,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":92.2,"waste":100,"transport":null,"human_experience":null,"total_score":290.9,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T10:58:56.714131Z","updated_at":"2019-10-10T10:58:56.714151Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4228,"building":{"leed_id":1000173181,"name":"test project 1","city":"Raleigh","country":"US","state":"NC","gross_area":4000.0,"occupancy":160,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.2,"total_raw_ghg":0.2,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.2,"occupant_emissions":0.2,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":92.2,"waste":100,"transport":null,"human_experience":null,"total_score":290.9,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T08:47:24.141598Z","updated_at":"2019-10-04T08:47:24.141621Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4254,"building":{"leed_id":1000173476,"name":"test project 1","city":"Raleigh","country":"US","state":"NC","gross_area":4000.0,"occupancy":160,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.2,"total_raw_ghg":0.2,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.2,"occupant_emissions":0.2,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":92.2,"waste":100,"transport":null,"human_experience":null,"total_score":290.9,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T07:29:15.600990Z","updated_at":"2019-10-10T07:29:15.601006Z","portfolio":1919,"partner_asset":null,"created_by":709}]}</td>
 				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:16 AM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:16 AM</td>
-					<td class='step-details'><span class='label white-text green'>WebIOSAppVersionGetAPITest : PASSED</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:06 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [16] but found [14]Test : FAILED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -381,20 +370,20 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>UserDetailAPITest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:16 AM</span>
+						<span class='test-name'>GresbAssetsVerifyBuildingTrialStatusAPITest</span>
+						<span class='test-time'>Oct 14, 2019 11:30:07 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:16 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:18 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+645ms</span>
+	<span class='label start-time'>Oct 14, 2019 11:30:07 AM</span>
+	<span class='label end-time'>Oct 14, 2019 11:30:09 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+295ms</span>
 </div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
+	<div class='test-desc'>PortfoliosComplete </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>CheckUserDetail</span>
+				<span class='category label white-text'>CheckGresb</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -409,488 +398,128 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:16 AM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/auth/detail/</td>
+					<td class='timestamp'>11:30:07 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/portfolios/ID:70001877/assets/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:18 AM</td>
-					<td class='step-details'>API responded in 1627 Milliseconds</td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>API responded in 1838 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:18 AM</td>
-					<td class='step-details'>Response from API<br>{"Firstname":"API","Lastname":"Test","Fullname":"API Test","COName":"","City":"","PostlCode":"","Street":"","StrSuppl1":"","StrSuppl3":"","TimeZone":"CST","Taxjurcode":"0000000","Languiso":"","Validfromdate":"2019-07-24","Validtodate":"9999-12-31","Country":"US","Region":"","IUserGuid":"6a4DPdvrB/G6mgr93h9ncw=="}</td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Response from API<br>{"count":14,"next":"https://api.usgbc.org/stg/leed/portfolios/ID:70001877/assets/?page=2","previous":null,"results":[{"id":4223,"building":{"leed_id":1000173174,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T07:18:13.884706Z","updated_at":"2019-10-04T07:18:13.884729Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4261,"building":{"leed_id":1000173789,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T10:58:02.684724Z","updated_at":"2019-10-10T10:58:02.684740Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4253,"building":{"leed_id":1000173475,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T07:28:18.596428Z","updated_at":"2019-10-10T07:28:18.596443Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4249,"building":{"leed_id":1000173447,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T07:08:17.165145Z","updated_at":"2019-10-10T07:08:17.165166Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4233,"building":{"leed_id":1000173212,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-09T05:02:40.453194Z","updated_at":"2019-10-09T05:02:40.453213Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4227,"building":{"leed_id":1000173180,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T08:46:09.057081Z","updated_at":"2019-10-04T08:46:09.057100Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4225,"building":{"leed_id":1000173176,"name":"test proiject 2","city":"Raleigh","country":"US","state":"NC","gross_area":5000.0,"occupancy":200,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.1,"total_raw_ghg":0.1,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.1,"occupant_emissions":0.1,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":94.5,"waste":100,"transport":null,"human_experience":null,"total_score":293.3,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T07:34:50.001878Z","updated_at":"2019-10-04T07:34:50.001898Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4262,"building":{"leed_id":1000173790,"name":"test project 1","city":"Raleigh","country":"US","state":"NC","gross_area":4000.0,"occupancy":160,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.2,"total_raw_ghg":0.2,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.2,"occupant_emissions":0.2,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":92.2,"waste":100,"transport":null,"human_experience":null,"total_score":290.9,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T10:58:56.714131Z","updated_at":"2019-10-10T10:58:56.714151Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4228,"building":{"leed_id":1000173181,"name":"test project 1","city":"Raleigh","country":"US","state":"NC","gross_area":4000.0,"occupancy":160,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.2,"total_raw_ghg":0.2,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.2,"occupant_emissions":0.2,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":92.2,"waste":100,"transport":null,"human_experience":null,"total_score":290.9,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-04T08:47:24.141598Z","updated_at":"2019-10-04T08:47:24.141621Z","portfolio":1919,"partner_asset":null,"created_by":709},{"id":4254,"building":{"leed_id":1000173476,"name":"test project 1","city":"Raleigh","country":"US","state":"NC","gross_area":4000.0,"occupancy":160,"operating_hours":60,"certification":"","building_status":"activated_addendum_agreement_pending","rating_system":"none","base_score":null,"energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"analysis":{"scope1_raw_ghg":0,"scope2_raw_ghg":0.2,"total_raw_ghg":0.2,"past_12_month_raw_ghg":null,"last_year_change_raw_ghg":null,"last_month_change_raw_ghg":null,"raw_transit":0,"past_12_month_transit":null,"last_year_change_transit":null,"last_month_change_transit":null,"total_emissions":0.2,"occupant_emissions":0.2,"emissions_per_occupant":0},"scores":{"base":0,"energy":98.8,"water":92.2,"waste":100,"transport":null,"human_experience":null,"total_score":290.9,"actual_total_score":55},"certifications":{"certification_level":null,"date_certified":null,"certification_points":null},"unitType":"SI","project_type":"building","organization":"A & B Labs, Inc.","manageEntityCountry":"US","confidential":true,"activation_source":"GRESB","trial_expire_date":null,"estimated_data_color":"red","trial_start_date":null,"is_trial_selected":true,"street":"","spaceType":"Public Assembly: Recreation","ownerType":"Business Improvement District","owner_email":"s@gmail.com"},"source_asset_id":null,"created_at":"2019-10-10T07:29:15.600990Z","updated_at":"2019-10-10T07:29:15.601006Z","portfolio":1919,"partner_asset":null,"created_by":709}]}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:18 AM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:18 AM</td>
-					<td class='step-details'><span class='label white-text green'>UserDetailAPITest : PASSED</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>UserAccessLevelSAPGetTest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:18 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:18 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:20 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+516ms</span>
-</div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>UserAccess</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:18 AM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/auth/access/</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:20 AM</td>
-					<td class='step-details'>API responded in 1499 Milliseconds</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:20 AM</td>
-					<td class='step-details'>Response from API<br>{"ItRoles":[{"AgrName":"Z_LEEDV3_SITEUSER","FromDat":"0000-00-00"}],"EPartner":"0010545556"}</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:20 AM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:20 AM</td>
-					<td class='step-details'><span class='label white-text green'>UserAccessLevelSAPGetTest : PASSED</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>CreateAssetPOSTAPITest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:20 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:20 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:27 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+1ms</span>
-</div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>AddProject</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:23 AM</td>
-					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:27 AM</td>
-					<td class='step-details'>API responded in 1499 Milliseconds</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:27 AM</td>
-					<td class='step-details'>Payload is : <br>{"name":"US-API-Building-Other-40062","rating_system":"other","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"US","state":"AZ","project_type":"building","unitType":"SI","spaceType":"Core Learning Space: Preschool/Daycare","owner_email":"usgbcarcapi1@gmail.com","ownerType":"Investor: ROEC","confidential":false,"sign_agreement":false,"organization":"T","manageEntityCountry":"US","zip_code":"20037","operating_hours":"100"}</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:27 AM</td>
-					<td class='step-details'>Response from API<br>{"name":"US-API-Building-Other-40062","street":"Sapphire club","city":"Washington","country":"US","state":"AZ","publish":true,"project_type":"building","zip_code":"20037","gross_area":1000.0,"occupancy":3,"operating_hours":100,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000173945,"key":"W1NusSEIgZGCeW4tdfhK973S","default_human_experience":50.0,"certifications":[],"confidential":false,"updated_at":"2019-10-11T04:08:25.838609Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-11T04:08:25.838127Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"agreement_pending","survey_with_dashboard":false,"is_trial_selected":false,"override_valid":true,"rating_system":"other","unitType":"SI","spaceType":"Core Learning Space: Preschool/Daycare","geoLat":null,"geoLang":null,"organization":"T","ownerType":"Investor: ROEC","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"3.0","latest":true,"launch_date":"2019-02-22","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"other"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null,"certification_expire":null,"total_score":0}</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:27 AM</td>
-					<td class='step-details'>API Responded With Status Code : 201</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:27 AM</td>
-					<td class='step-details'><span class='label white-text green'>CreateAssetPOSTAPITest : PASSED</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>AssetSearchAPITest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:27 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:27 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:29 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+581ms</span>
-</div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Search</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:27 AM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/search/?q=1000173945</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:29 AM</td>
-					<td class='step-details'>API responded in 1560 Milliseconds</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:29 AM</td>
-					<td class='step-details'>Response from API<br>{"building":[{"leed_id":1000173945,"name":"US-API-Building-Other-40062","project_type":"building","building_status":"agreement_pending","rating_system":"other","manageEntityCountry":"US","organization":"T","is_trial_selected":false,"trial_start_date":null,"trial_expire_date":null}],"portfolio":[],"next":"https://api.usgbc.org/stg/leed/assets/search/?q=1000173945"}</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:29 AM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:29 AM</td>
-					<td class='step-details'><span class='label white-text green'>AssetSearchAPITest : PASSED</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>SignAgreementRegistrationAPITest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:29 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:29 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:33 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+981ms</span>
-</div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SignAgreement</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:29 AM</td>
-					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000173945/agreements/</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:33 AM</td>
-					<td class='step-details'>API responded in 3858 Milliseconds</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:33 AM</td>
-					<td class='step-details'>Response from API<br>{"result":"Agreement Signed Successfully"}</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:33 AM</td>
+					<td class='timestamp'>11:30:09 AM</td>
 					<td class='step-details'>API Responded With Status Code : 200</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:33 AM</td>
-					<td class='step-details'>API Responded With Status Message : HTTP/1.1 200 OK</td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:33 AM</td>
-					<td class='step-details'>{"result":"Agreement Signed Successfully"}</td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : activated_addendum_agreement_pending Expected Data is :activated_addendum_agreement_pending</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'>Verifies Data Actual Data is : true Expected Data is :true</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:33 AM</td>
-					<td class='step-details'><span class='label white-text green'>SignAgreementRegistrationAPITest : PASSED</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>RegistrationPaymentPricingGetAPITest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:33 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:33 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:36 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+208ms</span>
-</div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>CheckPayment</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:33 AM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000173945/payments/price/?soreference=registration</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:36 AM</td>
-					<td class='step-details'>API responded in 2396 Milliseconds</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:36 AM</td>
-					<td class='step-details'>Response from API<br>{"leed_id":"1000173945","soreference":"REGISTRATION","price":[{"leed_id":"1000173945","material":"000000000000004619","description":"LEED O+M : EB Performance Registration","company_code":"BP02","price":"1875.0","quantity":"1.0","price_per_unit":"375.0","annual_price":"1500.0","billing_date":"0000-00-00","mat_price_grp":"","discount_price":"-375.0","discount_perc":"20.0","term":5}],"name":"US-API-Building-Other-40062","currency":"USD","usgbc_member":"N"}</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:36 AM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:36 AM</td>
-					<td class='step-details'>API Responded With Status Message : HTTP/1.1 200 OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:36 AM</td>
-					<td class='step-details'><span class='label white-text green'>RegistrationPaymentPricingGetAPITest : PASSED</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>PaymentOrderSubmitPOSTAPITest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:37 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:37 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:52 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+140ms</span>
-</div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>CheckPayment</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:37 AM</td>
-					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000173945/payments/order/</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:48 AM</td>
-					<td class='step-details'>API responded in 2396 Milliseconds</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:48 AM</td>
-					<td class='step-details'>Payload is : <br>{"country":"TG","quantity":"1.0","SoReference":"REGISTRATION","city":"Test city","actual_price":"0.0","unit_price":"0.0","zip_code":"22673","annual_price":"0.0","paymetric_r":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UGF5bWV0cmljUmVzcG9uc2U-PFN0YXR1cz5Ub2tlbml6ZWQ8L1N0YXR1cz48WGlQYXlOZXRUcmFuc0lEPjA8L1hpUGF5TmV0VHJhbnNJRD48TWVyY2hhbnRSZWZlcmVuY2VDb2RlIC8-PEF1dGhDb2RlPjA8L0F1dGhDb2RlPjxDYXJkSW5mbz48Q0NUb2tlbj4tRTgwMy0wMDAwLVdZODdUR0cwQlJCQzRZPC9DQ1Rva2VuPjxDQ0V4cGlyYXRpb25EYXRlPjxNb250aD4wMTwvTW9udGg-PFllYXI-MTk8L1llYXI-PC9DQ0V4cGlyYXRpb25EYXRlPjxDVlY-OTk5PC9DVlY-PENDVHlwZT40MDAwPC9DQ1R5cGU-PEJpblJhbmdlVHlwZT40MDAwPC9CaW5SYW5nZVR5cGU-PC9DYXJkSW5mbz48QW1vdW50PjA8L0Ftb3VudD48L1BheW1ldHJpY1Jlc3BvbnNlPg\u003d\u003d","paymetric_s":"9pVBS5jQtnNbRGzfciD03OoBN7fP1aSFigXogT7LOaw\u003d","street":"Test Add","name":"Adolph Blaine Charles David","company_code":"BP02","state":"NA","email":"usgbcarcapi1@gmail.com","material_code":"000000000000004619","material_description":"LEED O+M : EB Performance Registration"}</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:48 AM</td>
-					<td class='step-details'>Response from API<br>{"ESalesdocument":"0011047960","ItSoHeader":[{"SalesOrg":"BP02","DistChannel":"","Division":"","PoNumber":"1000173945","SoReference":"REGISTRATION"}],"ItSoItem":[{"ProjectId":"1000173945","Material":"000000000000004619","MaterialDesc":"LEED O+M : EB Performance Registration","Quantity":"1.0","UnitPrice":"375.0","CompanyCode":"BP02"}]}</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:48 AM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:48 AM</td>
-					<td class='step-details'>API Responded With Status Message : HTTP/1.1 200 OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:52 AM</td>
-					<td class='step-details'><span class='label white-text green'>PaymentOrderSubmitPOSTAPITest : PASSED</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
-					<div class='test-heading'>
-						<span class='test-name'>AddAssestTimelineTest</span>
-						<span class='test-time'>Oct 11, 2019 09:38:52 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 11, 2019 09:38:52 AM</span>
-	<span class='label end-time'>Oct 11, 2019 09:38:59 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+467ms</span>
-</div>
-	<div class='test-desc'>BuildingV3CompletePositiveSuite </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>CheckAsset</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:52 AM</td>
-					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000173945/timeline/</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:59 AM</td>
-					<td class='step-details'>API responded in 2396 Milliseconds</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:59 AM</td>
-					<td class='step-details'>Content Type is : application/json</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:59 AM</td>
-					<td class='step-details'>Response from API<br>{"success":"Timeline added successfully"}</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:59 AM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:38:59 AM</td>
-					<td class='step-details'>API Responded With Status Message : HTTP/1.1 200 OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:38:59 AM</td>
-					<td class='step-details'><span class='label white-text green'>AddAssestTimelineTest : PASSED</span></td>
+					<td class='timestamp'>11:30:09 AM</td>
+					<td class='step-details'><span class='label white-text green'>GresbAssetsVerifyBuildingTrialStatusAPITest : PASSED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -972,7 +601,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 11, 2019 09:38:01 AM</td>
+										<td>Oct 14, 2019 11:29:43 AM</td>
 										<td class='linked' test-id='1'>LoginAPITest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -983,15 +612,16 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>CheckPayment</span>
+						<span class='category-name'>CheckGresb</span>
 						<span class='category-status right'>
-							<span class='label pass'>3</span>
+							<span class='label pass'>2</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -1006,256 +636,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 11, 2019 09:38:13 AM</td>
-										<td class='linked' test-id='2'>ReviewPaymentIntimationGetAPITest</td>
+										<td>Oct 14, 2019 11:30:01 AM</td>
+										<td class='linked' test-id='2'>GresbAssetsDetailsGetAPITest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 11, 2019 09:38:33 AM</td>
-										<td class='linked' test-id='9'>RegistrationPaymentPricingGetAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Oct 14, 2019 11:30:04 AM</td>
+										<td class='linked' test-id='3'>GresbAssetsDetailsGetAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Oct 11, 2019 09:38:37 AM</td>
-										<td class='linked' test-id='10'>PaymentOrderSubmitPOSTAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>WebIOSAppVersion</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 11, 2019 09:38:15 AM</td>
-										<td class='linked' test-id='3'>WebIOSAppVersionGetAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>CheckUserDetail</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 11, 2019 09:38:16 AM</td>
-										<td class='linked' test-id='4'>UserDetailAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>UserAccess</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 11, 2019 09:38:18 AM</td>
-										<td class='linked' test-id='5'>UserAccessLevelSAPGetTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>AddProject</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 11, 2019 09:38:20 AM</td>
-										<td class='linked' test-id='6'>CreateAssetPOSTAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>Search</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 11, 2019 09:38:27 AM</td>
-										<td class='linked' test-id='7'>AssetSearchAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>SignAgreement</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 11, 2019 09:38:29 AM</td>
-										<td class='linked' test-id='8'>SignAgreementRegistrationAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>CheckAsset</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 11, 2019 09:38:52 AM</td>
-										<td class='linked' test-id='11'>AddAssestTimelineTest</td>
+										<td>Oct 14, 2019 11:30:07 AM</td>
+										<td class='linked' test-id='4'>GresbAssetsVerifyBuildingTrialStatusAPITest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1284,31 +676,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>67</div>
+					<div class='panel-lead'>43</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 11, 2019 09:38:01 AM</div>
+					<div class='panel-lead'>Oct 14, 2019 11:29:43 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 11, 2019 09:38:59 AM</div>
+			 		<div class='panel-lead'>Oct 14, 2019 11:30:09 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 57s+313ms</div>
+					<div class='panel-lead'>0h 0m 26s+108ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1361,75 +753,12 @@
 							</td>
 						</tr>
 						<tr>
-							<td>CheckPayment</td>
-							<td>3</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>WebIOSAppVersion</td>
+							<td>CheckGresb</td>
+							<td>2</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>CheckUserDetail</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>UserAccess</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>AddProject</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>Search</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>SignAgreement</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>CheckAsset</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
+									66.667%
 							</td>
 						</tr>
 					</table>
@@ -1445,22 +774,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 11,
-				failParent: 0,
+				passParent: 3,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 27,
-				failChild: 0,
+				passChild: 10,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 40,
-				exceptionsChild: 0,
+				infoChild: 32,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

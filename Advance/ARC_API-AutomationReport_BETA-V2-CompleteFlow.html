@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 10, 2019 04:15:20 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 17, 2019 09:19:26 AM</span>
 				</a>
 			</li>
 			<li>
@@ -78,6 +78,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -92,12 +93,21 @@
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>Login</a></li>
 					<li><a href='#'>CheckAnalysis</a></li>
-					<li><a href='#'>AddProject</a></li>
-					<li><a href='#'>Search</a></li>
-					<li><a href='#'>SignAgreement</a></li>
-					<li><a href='#'>CheckPayment</a></li>
+					<li><a href='#'>CheckLogin</a></li>
+					<li><a href='#'>LEEDv4O+M:ExistingBuildings</a></li>
+					<li><a href='#'>CheckSync</a></li>
+					<li><a href='#'>SignAgreementRegistration</a></li>
+					<li><a href='#'>CheckUpdate</a></li>
 					<li><a href='#'>CheckAsset</a></li>
-					<li><a href='#'>CheckUserDetail</a></li>
+					<li><a href='#'>CheckDownloadDocuments</a></li>
+					<li><a href='#'>CheckAgreement</a></li>
+					<li><a href='#'>CheckMeter</a></li>
+					<li><a href='#'>CheckData</a></li>
+					<li><a href='#'>CheckExcelupload</a></li>
+					<li><a href='#'>CheckUpload</a></li>
+					<li><a href='#'>CheckS3DocumenList</a></li>
+					<li><a href='#'>CheckRemoveS3Document</a></li>
+					<li><a href='#'>CheckComment</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -145,10 +155,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='30.769%'><span class='strong'>8</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='69.231%'>18</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -160,10 +170,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='43.86%'><span class='strong'>25</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='34.328%'><span class='strong'>46</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='56.14%'>32</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='13.433%'>18</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='52.239%'>70</span> others
 				</div>
 			</div>
 		</div>
@@ -181,14 +191,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>LoginAPITest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:20 PM</span>
+						<span class='test-time'>Oct 17, 2019 09:19:27 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:20 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:29 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+278ms</span>
+	<span class='label start-time'>Oct 17, 2019 09:19:27 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:35 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+274ms</span>
 </div>
 	<div class='test-desc'>BETA-V2-CompleteFlow </div>
 	<div class='test-attributes'>
@@ -208,47 +218,47 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:20 PM</td>
+					<td class='timestamp'>9:19:27 AM</td>
 					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:27 PM</td>
+					<td class='timestamp'>9:19:32 AM</td>
 					<td class='step-details'>API Responded With Status Code : 200</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:27 PM</td>
+					<td class='timestamp'>9:19:32 AM</td>
 					<td class='step-details'>Payload is : username devarcbeta1@gmail.com password initpass</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:29 PM</td>
-					<td class='step-details'>Header is : Bearer dumodT9kpwkdlRDsze3ZapvyGFbaJe</td>
+					<td class='timestamp'>9:19:35 AM</td>
+					<td class='step-details'>Header is : Bearer 5SWzcTJX2CU33pq5xl0okswoe0tkxe</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:29 PM</td>
+					<td class='timestamp'>9:19:35 AM</td>
 					<td class='step-details'>Ocp-Apim-Subscription-Key :06c50a1570bd4d40a7859ec28514b185</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:29 PM</td>
+					<td class='timestamp'>9:19:35 AM</td>
 					<td class='step-details'>API responded in 0 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:29 PM</td>
-					<td class='step-details'>Response from API<br>{"user":{"id":717,"first_name":"Saurav","last_name":"K","username":"devarcbeta1@gmail.com","email":""},"expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"PnrTvGSNVUzeE19IuImMYq80aMqfmo","authorization_token":"dumodT9kpwkdlRDsze3ZapvyGFbaJe","redirect_url":"http://stg-v2.app.arconline.io/login_middleware/?authorization_token=dumodT9kpwkdlRDsze3ZapvyGFbaJe","guid":"6epha40q7vGzBAr93h9ncw==","ui_version":"v2"}</td>
+					<td class='timestamp'>9:19:35 AM</td>
+					<td class='step-details'>Response from API<br>{"user":{"id":717,"first_name":"Saurav","last_name":"K","username":"devarcbeta1@gmail.com","email":""},"expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"wgh2XOHFKDE31Xb3vT4zi3Gh4PWlWP","authorization_token":"5SWzcTJX2CU33pq5xl0okswoe0tkxe","redirect_url":"http://stg-v2.app.arconline.io/login_middleware/?authorization_token=5SWzcTJX2CU33pq5xl0okswoe0tkxe","guid":"6epha40q7vGzBAr93h9ncw==","ui_version":"v2"}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:29 PM</td>
+					<td class='timestamp'>9:19:35 AM</td>
 					<td class='step-details'>API Responded With Status Message : HTTP/1.1 200 OK</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:29 PM</td>
+					<td class='timestamp'>9:19:35 AM</td>
 					<td class='step-details'><span class='label white-text green'>LoginAPITest : PASSED</span></td>
 				</tr>
 			</tbody>
@@ -261,14 +271,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>BasicAnalysisDataGetAPITest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:29 PM</span>
+						<span class='test-time'>Oct 17, 2019 09:19:35 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:29 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+259ms</span>
+	<span class='label start-time'>Oct 17, 2019 09:19:35 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:40 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+140ms</span>
 </div>
 	<div class='test-desc'>BETA-V2-CompleteFlow </div>
 	<div class='test-attributes'>
@@ -288,27 +298,27 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:29 PM</td>
+					<td class='timestamp'>9:19:35 AM</td>
 					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/basic/analytics/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:31 PM</td>
-					<td class='step-details'>API responded in 1920 Milliseconds</td>
+					<td class='timestamp'>9:19:37 AM</td>
+					<td class='step-details'>API responded in 1415 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:31 PM</td>
-					<td class='step-details'>Response from API<br>{"total_projects":12,"bst_projects":11,"certified_projects":1,"building_project":11,"transit_projects":0,"parksmart_project":0,"city_projects":1,"community_projects":0,"school_projects":0,"bst_floor_area":225000.0,"bst_emissions":12.2864149716459,"bst_occupants":50,"bst_certified_area":1000.0}</td>
+					<td class='timestamp'>9:19:37 AM</td>
+					<td class='step-details'>Response from API<br>{"total_projects":64,"bst_projects":55,"certified_projects":6,"building_project":35,"transit_projects":20,"parksmart_project":3,"city_projects":5,"community_projects":1,"school_projects":0,"bst_floor_area":438000.0,"bst_emissions":84.2275631377448,"bst_occupants":1417,"bst_certified_area":5000.0}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:31 PM</td>
+					<td class='timestamp'>9:19:37 AM</td>
 					<td class='step-details'>API Responded With Status Code : 200</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:35 PM</td>
+					<td class='timestamp'>9:19:40 AM</td>
 					<td class='step-details'><span class='label white-text green'>BasicAnalysisDataGetAPITest : PASSED</span></td>
 				</tr>
 			</tbody>
@@ -318,22 +328,22 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>CreateAssetPOSTAPITest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:37 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>LOAuthenticateAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:19:40 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:37 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+59ms</span>
+	<span class='label start-time'>Oct 17, 2019 09:19:40 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:42 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+730ms</span>
 </div>
-	<div class='test-desc'>BuildingV3Beta </div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>AddProject</span>
+				<span class='category label white-text'>CheckLogin</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -348,33 +358,13 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:39 PM</td>
-					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
+					<td class='timestamp'>9:19:42 AM</td>
+					<td class='step-details'>API Responded With Status Code : 401</td>
 				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:42 PM</td>
-					<td class='step-details'>API responded in 1920 Milliseconds</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:42 PM</td>
-					<td class='step-details'>Payload is : <br>{"name":"US-API-Building-Other-22557","rating_system":"other","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"US","state":"MP","project_type":"building","unitType":"SI","spaceType":"Lodging: Hotel/Motel/Resort, Select Service","owner_email":"usgbcarcapi1@gmail.com","ownerType":"Investor: Investment Manager","confidential":false,"sign_agreement":true,"organization":"T","manageEntityCountry":"US","zip_code":"20037","operating_hours":"100"}</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:42 PM</td>
-					<td class='step-details'>Response from API<br>{"name":"US-API-Building-Other-22557","street":"Sapphire club","city":"Washington","country":"US","state":"MP","publish":true,"project_type":"building","zip_code":"20037","gross_area":1000.0,"occupancy":3,"operating_hours":100,"owner_email":"usgbcarcapi1@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":8000000020,"key":"nwyivI3ZAi4q3EJfRq1IqHb7","default_human_experience":50.0,"certifications":[],"confidential":false,"updated_at":"2019-10-10T10:45:41.545309Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-10T10:45:41.544904Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_done","survey_with_dashboard":false,"is_trial_selected":false,"override_valid":true,"rating_system":"other","unitType":"SI","spaceType":"Lodging: Hotel/Motel/Resort, Select Service","geoLat":null,"geoLang":null,"organization":"T","ownerType":"Investor: Investment Manager","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"managEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"3.0","latest":true,"launch_date":"2019-02-22","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"other"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null,"certification_expire":null,"total_score":0}</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:42 PM</td>
-					<td class='step-details'>API Responded With Status Code : 201</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:42 PM</td>
-					<td class='step-details'><span class='label white-text green'>CreateAssetPOSTAPITest : PASSED</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:19:42 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [401]Test : FAILED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -383,22 +373,22 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>AssetSearchAPITest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:42 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>LEEDv4OMExistingBuildingsAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:19:42 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:42 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:44 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+975ms</span>
+	<span class='label start-time'>Oct 17, 2019 09:19:42 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:45 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+33ms</span>
 </div>
-	<div class='test-desc'>BuildingV3Beta </div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>Search</span>
+				<span class='category label white-text'>LEEDv4O+M:ExistingBuildings</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -413,28 +403,33 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:42 PM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/search/?q=8000000020</td>
+					<td class='timestamp'>9:19:44 AM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leedProject/register/INP</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:44 PM</td>
-					<td class='step-details'>API responded in 1953 Milliseconds</td>
+					<td class='timestamp'>9:19:45 AM</td>
+					<td class='step-details'>API responded in 1415 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:44 PM</td>
-					<td class='step-details'>Response from API<br>{"building":[{"leed_id":8000000020,"name":"US-API-Building-Other-22557","project_type":"building","building_status":"activated_payment_done","rating_system":"other","manageEntityCountry":"US","organization":"T","is_trial_selected":false,"trial_start_date":null,"trial_expire_date":null}],"portfolio":[],"next":"https://api.usgbc.org/stg/leed/assets/search/?q=8000000020"}</td>
+					<td class='timestamp'>9:19:45 AM</td>
+					<td class='step-details'>Payload is : <br>{"anticipatedType":"Service: Vehicle Storage/Maintenance","address.postalCode":"20037","address.city":"Test City","owner.name":"Test Owner","address.state":"CT","date.start":"2018-06-01","owner.organization":"EymX5ZKWALZae","description":"Register from LO API","ratingSystem":"v4_1.oEb","address.geoPoints.latitude":"120.12345678","address.geoPoints.longitude":"10.46467895","address.country":"US","unitType":"SI","owner.type":"Non-Profit (that do not fit into other categories)","date.end":"2028-07-01","owner.email":"newserver2@gmail.com","grossFootage":"1000","owner.country":"US","name":"API LEED v4 O+M: Existing BuildingsUS00","address.address1":"Test Address","cmd":"register"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:45 AM</td>
+					<td class='step-details'>Response from API<br>{"errorCode":"API_INVALID_TOKEN","errorType":"API_ERROR","errorMessage":"Valid API Token required."}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:44 PM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
+					<td class='timestamp'>9:19:45 AM</td>
+					<td class='step-details'>API Responded With Status Code : 403</td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:44 PM</td>
-					<td class='step-details'><span class='label white-text green'>AssetSearchAPITest : PASSED</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:19:45 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [403]Test : FAILED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -445,20 +440,20 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>SignAgreementRegistrationAPITest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:44 PM</span>
+						<span class='test-name'>LoginAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:19:45 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:44 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+642ms</span>
+	<span class='label start-time'>Oct 17, 2019 09:19:45 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:48 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+861ms</span>
 </div>
-	<div class='test-desc'>BuildingV3Beta </div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>SignAgreement</span>
+				<span class='category label white-text'>Login</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -473,28 +468,48 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:44 PM</td>
-					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000020/agreements/</td>
+					<td class='timestamp'>9:19:45 AM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:47 PM</td>
-					<td class='step-details'>API responded in 2607 Milliseconds</td>
+					<td class='timestamp'>9:19:48 AM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:47 PM</td>
-					<td class='step-details'>Response from API<br>{"detail":"Sorry, You have already signed the agreement."}</td>
+					<td class='timestamp'>9:19:48 AM</td>
+					<td class='step-details'>Payload is : username devarcbeta1@gmail.com password initpass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:48 AM</td>
+					<td class='step-details'>Header is : Bearer x0IrxDr1Eq1FQaqgViILQdDfXK1M4L</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:48 AM</td>
+					<td class='step-details'>Ocp-Apim-Subscription-Key :06c50a1570bd4d40a7859ec28514b185</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:47 PM</td>
-					<td class='step-details'>API Responded With Status Code : 409</td>
+					<td class='timestamp'>9:19:48 AM</td>
+					<td class='step-details'>API responded in 1415 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:47 PM</td>
-					<td class='step-details'><span class='label white-text green'>SignAgreementRegistrationAPITest : PASSED</span></td>
+					<td class='timestamp'>9:19:48 AM</td>
+					<td class='step-details'>Response from API<br>{"user":{"id":717,"first_name":"Saurav","last_name":"K","username":"devarcbeta1@gmail.com","email":""},"expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"qPn0dVUM33n0gt7uBEb7fIAGBx0A11","authorization_token":"x0IrxDr1Eq1FQaqgViILQdDfXK1M4L","redirect_url":"http://stg-v2.app.arconline.io/login_middleware/?authorization_token=x0IrxDr1Eq1FQaqgViILQdDfXK1M4L","guid":"6epha40q7vGzBAr93h9ncw==","ui_version":"v2"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:19:48 AM</td>
+					<td class='step-details'>API Responded With Status Message : HTTP/1.1 200 OK</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:48 AM</td>
+					<td class='step-details'><span class='label white-text green'>LoginAPITest : PASSED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -505,20 +520,80 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>RegistrationPaymentPricingGetAPITest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:47 PM</span>
+						<span class='test-name'>LOProjectSyncAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:19:48 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:47 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:49 PM</span>
+	<span class='label start-time'>Oct 17, 2019 09:19:48 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:50 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+820ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckSync</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:19:48 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/syncproject/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:19:50 AM</td>
+					<td class='step-details'>API responded in 1810 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:50 AM</td>
+					<td class='step-details'>Response from API<br>{"message":"Project by-passed from syncing against rating system."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:19:50 AM</td>
+					<td class='step-details'>API Responded With Status Code : 200</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:50 AM</td>
+					<td class='step-details'><span class='label white-text green'>LOProjectSyncAPITest : PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>SignAgreementRegistrationAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:19:50 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:19:50 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:53 AM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+75ms</span>
 </div>
-	<div class='test-desc'>BuildingV3Beta </div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>CheckPayment</span>
+				<span class='category label white-text'>SignAgreementRegistration</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -533,28 +608,28 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:47 PM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000020/payments/price/?soreference=registration</td>
+					<td class='timestamp'>9:19:50 AM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/agreements/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:49 PM</td>
-					<td class='step-details'>API responded in 2060 Milliseconds</td>
+					<td class='timestamp'>9:19:53 AM</td>
+					<td class='step-details'>API responded in 2051 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:49 PM</td>
-					<td class='step-details'>Response from API<br>{"detail":"Sorry, You don't have permission to perform this action."}</td>
+					<td class='timestamp'>9:19:53 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:49 PM</td>
-					<td class='step-details'>API Responded With Status Code : 403</td>
+					<td class='timestamp'>9:19:53 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:49 PM</td>
-					<td class='step-details'><span class='label white-text green'>RegistrationPaymentPricingGetAPITest : PASSED</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:19:53 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -563,22 +638,22 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
 					<div class='test-heading'>
-						<span class='test-name'>PaymentOrderSubmitPOSTAPITest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:49 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>AssetUpdateforNewAssetPUTAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:19:53 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:49 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:51 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+101ms</span>
+	<span class='label start-time'>Oct 17, 2019 09:19:53 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:54 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+482ms</span>
 </div>
-	<div class='test-desc'>BuildingV3Beta </div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>CheckPayment</span>
+				<span class='category label white-text'>CheckUpdate</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -593,33 +668,33 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:49 PM</td>
-					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000020/payments/order/</td>
+					<td class='timestamp'>9:19:53 AM</td>
+					<td class='step-details'>PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:51 PM</td>
-					<td class='step-details'>API responded in 2060 Milliseconds</td>
+					<td class='timestamp'>9:19:54 AM</td>
+					<td class='step-details'>API responded in 1379 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:51 PM</td>
-					<td class='step-details'>Payload is : <br>{"country":"TG","quantity":"1.0","SoReference":"REGISTRATION","city":"Test city","actual_price":"0.0","unit_price":"0.0","zip_code":"22673","annual_price":"0.0","paymetric_r":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UGF5bWV0cmljUmVzcG9uc2U-PFN0YXR1cz5Ub2tlbml6ZWQ8L1N0YXR1cz48WGlQYXlOZXRUcmFuc0lEPjA8L1hpUGF5TmV0VHJhbnNJRD48TWVyY2hhbnRSZWZlcmVuY2VDb2RlIC8-PEF1dGhDb2RlPjA8L0F1dGhDb2RlPjxDYXJkSW5mbz48Q0NUb2tlbj4tRTgwMy0wMDAwLVdZODdUR0cwQlJCQzRZPC9DQ1Rva2VuPjxDQ0V4cGlyYXRpb25EYXRlPjxNb250aD4wMTwvTW9udGg-PFllYXI-MTk8L1llYXI-PC9DQ0V4cGlyYXRpb25EYXRlPjxDVlY-OTk5PC9DVlY-PENDVHlwZT40MDAwPC9DQ1R5cGU-PEJpblJhbmdlVHlwZT40MDAwPC9CaW5SYW5nZVR5cGU-PC9DYXJkSW5mbz48QW1vdW50PjA8L0Ftb3VudD48L1BheW1ldHJpY1Jlc3BvbnNlPg\u003d\u003d","paymetric_s":"9pVBS5jQtnNbRGzfciD03OoBN7fP1aSFigXogT7LOaw\u003d","street":"Test Add","name":"Adolph Blaine Charles David","company_code":"BP02","state":"NA","email":"usgbcarcapi1@gmail.com","material_code":"000000000000003114","material_description":"LEED for Cities Registration"}</td>
+					<td class='timestamp'>9:19:54 AM</td>
+					<td class='step-details'>Payload is : <br>{"year_constructed":"2018","occupancy":"50","operating_hours":"30"}</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:51 PM</td>
-					<td class='step-details'>Response from API<br>{"detail":"Sorry, You don't have permission to perform this action."}</td>
+					<td class='timestamp'>9:19:54 AM</td>
+					<td class='step-details'>Verifies response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:51 PM</td>
-					<td class='step-details'>API Responded With Status Code : 403</td>
+					<td class='timestamp'>9:19:54 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:51 PM</td>
-					<td class='step-details'><span class='label white-text green'>PaymentOrderSubmitPOSTAPITest : PASSED</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:19:54 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -628,19 +703,19 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='9'>
 					<div class='test-heading'>
-						<span class='test-name'>AddAssestTimelineTest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:52 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>VerifyProjectRegisteredAssetListTest</span>
+						<span class='test-time'>Oct 17, 2019 09:19:54 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:52 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+13ms</span>
+	<span class='label start-time'>Oct 17, 2019 09:19:54 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+805ms</span>
 </div>
-	<div class='test-desc'>BuildingV3Beta </div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>CheckAsset</span>
@@ -658,93 +733,23 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:52 PM</td>
-					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000020/timeline/</td>
+					<td class='timestamp'>9:19:54 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:54 PM</td>
-					<td class='step-details'>API responded in 2060 Milliseconds</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:54 PM</td>
-					<td class='step-details'>Content Type is : application/json</td>
+					<td class='timestamp'>9:19:56 AM</td>
+					<td class='step-details'>API responded in 1475 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:54 PM</td>
-					<td class='step-details'>Response from API<br>{"detail":"Sorry, You don't have permission to perform this action."}</td>
+					<td class='timestamp'>9:19:56 AM</td>
+					<td class='step-details'>Response from API<br>{"count":64,"next":"https://api.usgbc.org/stg/leed/assets/?page=2","previous":null,"results":[{"name":"test project 1","street":"","city":"Raleigh","country":"US","state":"NC","publish":true,"project_type":"building","zip_code":"27615","gross_area":4000.0,"occupancy":160,"operating_hours":60,"owner_email":"s@gmail.com","certification":"","points":null,"year_constructed":"2016","leed_id":8000000301,"key":"wWhm3w3S7O9vYWZySKVGBZic","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-10-16T05:00:25.039546Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-16T04:59:54.699251Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"agreement_pending","survey_with_dashboard":false,"is_trial_selected":true,"override_valid":true,"rating_system":"none","unitType":"SI","spaceType":"Public Assembly: Recreation","geoLat":35.9,"geoLang":-78.66,"organization":"A & B Engineering","ownerType":"Business Improvement District","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":"Saurav K","energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"scores":{"energy":33,"water":14,"waste":8,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"3.0","latest":true,"launch_date":"2019-02-22","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"none"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"GRESB","estimated_data_color":"red","certification_expire":null,"total_score":55.0},{"name":"test proiject 2","street":"","city":"Raleigh","country":"US","state":"NC","publish":true,"project_type":"building","zip_code":"27615","gross_area":5000.0,"occupancy":200,"operating_hours":60,"owner_email":"s@gmail.com","certification":"","points":null,"year_constructed":"2014","leed_id":8000000300,"key":"QfbrloMhh4aSFnSmVzKEfDtx","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-10-16T04:59:51.025387Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-16T04:59:17.333634Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"agreement_pending","survey_with_dashboard":false,"is_trial_selected":true,"override_valid":true,"rating_system":"none","unitType":"SI","spaceType":"Public Assembly: Recreation","geoLat":35.9,"geoLang":-78.66,"organization":"A & B Engineering","ownerType":"Business Improvement District","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":"Saurav K","energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"scores":{"energy":33,"water":14,"waste":8,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"3.0","latest":true,"launch_date":"2019-02-22","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"none"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"GRESB","estimated_data_color":"red","certification_expire":null,"total_score":55.0},{"name":"test project 1","street":"","city":"Raleigh","country":"US","state":"NC","publish":true,"project_type":"building","zip_code":"27615","gross_area":4000.0,"occupancy":160,"operating_hours":60,"owner_email":"s@gmail.com","certification":"","points":null,"year_constructed":"2016","leed_id":8000000298,"key":"1fJ9htAL2C03NNncH87x0dCL","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-10-16T04:39:45.467249Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-16T04:38:54.563374Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"agreement_pending","survey_with_dashboard":false,"is_trial_selected":true,"override_valid":true,"rating_system":"none","unitType":"SI","spaceType":"Public Assembly: Recreation","geoLat":35.9,"geoLang":-78.66,"organization":"A & B Engineering","ownerType":"Business Improvement District","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":"Saurav K","energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"scores":{"energy":33,"water":14,"waste":8,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"3.0","latest":true,"launch_date":"2019-02-22","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"none"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"GRESB","estimated_data_color":"red","certification_expire":null,"total_score":55.0},{"name":"test proiject 2","street":"","city":"Raleigh","country":"US","state":"NC","publish":true,"project_type":"building","zip_code":"27615","gross_area":5000.0,"occupancy":200,"operating_hours":60,"owner_email":"s@gmail.com","certification":"","points":null,"year_constructed":"2014","leed_id":8000000297,"key":"5FgjmFMjNrL9TGpajXNEVXAV","default_human_experience":50.0,"certifications":[],"confidential":true,"updated_at":"2019-10-16T04:39:03.717028Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-16T04:38:34.411527Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"agreement_pending","survey_with_dashboard":false,"is_trial_selected":true,"override_valid":true,"rating_system":"none","unitType":"SI","spaceType":"Public Assembly: Recreation","geoLat":35.9,"geoLang":-78.66,"organization":"A & B Engineering","ownerType":"Business Improvement District","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":"Saurav K","energy":33.0,"water":14.0,"waste":8.0,"transport":null,"human_experience":null,"scores":{"energy":33,"water":14,"waste":8,"transport":null,"human_experience":null},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":null,"annual_ridership":null,"full_time_staff":null,"time_spent_by_riders":null,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"3.0","latest":true,"launch_date":"2019-02-22","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"none"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"GRESB","estimated_data_color":"red","certification_expire":null,"total_score":55.0},{"name":"USBuildingLEED for transit 13:02:21","street":"2101 L St NW #500","city":"Washington","country":"US","state":"AL","publish":true,"project_type":"transit","zip_code":"66617","gross_area":7000.0,"occupancy":26,"operating_hours":56,"owner_email":"usgbcarc@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000174051,"key":"s9g53Q5f97IyKzWPVGvfFSsC","default_human_experience":50.0,"certifications":[],"confidential":false,"updated_at":"2019-10-15T07:33:14.879212Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-15T07:32:33.054933Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_done","survey_with_dashboard":false,"is_trial_selected":false,"override_valid":true,"rating_system":"LEED V4 O+M: TR","unitType":"IP","spaceType":"Core Learning Space: Preschool/Daycare","geoLat":38.9,"geoLang":-77.05,"organization":"Habitat for Humanity","ownerType":"Educational: University, Private","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6.0,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":"aboveground","annual_ridership":200,"full_time_staff":26,"time_spent_by_riders":45,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"2.0","latest":true,"launch_date":"2018-05-04","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"LEED V4 O+M: TR"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null,"certification_expire":null,"total_score":6.0},{"name":"USBuildingLEED for transit 12:06:58","street":"2101 L St NW #500","city":"Washington","country":"US","state":"AL","publish":true,"project_type":"transit","zip_code":"66617","gross_area":7000.0,"occupancy":26,"operating_hours":56,"owner_email":"usgbcarc@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000174048,"key":"kLlpO4lExZsJaUo6siYAZ05v","default_human_experience":50.0,"certifications":[],"confidential":false,"updated_at":"2019-10-15T06:37:53.195802Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-15T06:37:10.344551Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_done","survey_with_dashboard":false,"is_trial_selected":false,"override_valid":true,"rating_system":"LEED V4 O+M: TR","unitType":"IP","spaceType":"Industrial Manufacturing","geoLat":38.9,"geoLang":-77.05,"organization":"Habitat for Humanity","ownerType":"Educational: University, Public","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6.0,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":"aboveground","annual_ridership":200,"full_time_staff":26,"time_spent_by_riders":45,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"2.0","latest":true,"launch_date":"2018-05-04","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"LEED V4 O+M: TR"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null,"certification_expire":null,"total_score":6.0},{"name":"USBuildingLEED for transit 11:50:58","street":"2101 L St NW #500","city":"Washington","country":"US","state":"AL","publish":true,"project_type":"transit","zip_code":"66617","gross_area":7000.0,"occupancy":26,"operating_hours":56,"owner_email":"usgbcarc@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000174047,"key":"hJAdPZiq4obBgu7uYEQIilsD","default_human_experience":50.0,"certifications":[],"confidential":false,"updated_at":"2019-10-15T06:21:49.285266Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-15T06:21:08.835551Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_done","survey_with_dashboard":false,"is_trial_selected":false,"override_valid":true,"rating_system":"LEED V4 O+M: TR","unitType":"IP","spaceType":"Industrial Manufacturing","geoLat":38.9,"geoLang":-77.05,"organization":"Habitat for Humanity","ownerType":"Investor: ROEC","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6.0,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":"aboveground","annual_ridership":200,"full_time_staff":26,"time_spent_by_riders":45,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"2.0","latest":true,"launch_date":"2018-05-04","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"LEED V4 O+M: TR"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null,"certification_expire":null,"total_score":6.0},{"name":"USBuildingLEED for transit 11:28:42","street":"2101 L St NW #500","city":"Washington","country":"US","state":"AL","publish":true,"project_type":"transit","zip_code":"66617","gross_area":7000.0,"occupancy":26,"operating_hours":56,"owner_email":"usgbcarc@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000174046,"key":"KmBg6mILZ4uKOwLtL0UMb6P5","default_human_experience":50.0,"certifications":[],"confidential":false,"updated_at":"2019-10-15T05:59:35.259927Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-15T05:58:52.946078Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_done","survey_with_dashboard":false,"is_trial_selected":false,"override_valid":true,"rating_system":"LEED V4 O+M: TR","unitType":"IP","spaceType":"Transit: Depot","geoLat":38.9,"geoLang":-77.05,"organization":"Habitat for Humanity","ownerType":"Educational: College, Public","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6.0,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":"aboveground","annual_ridership":200,"full_time_staff":26,"time_spent_by_riders":45,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"2.0","latest":true,"launch_date":"2018-05-04","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"LEED V4 O+M: TR"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null,"certification_expire":null,"total_score":6.0},{"name":"USBuildingLEED for transit 11:24:39","street":"2101 L St NW #500","city":"Washington","country":"US","state":"AL","publish":true,"project_type":"transit","zip_code":"66617","gross_area":7000.0,"occupancy":26,"operating_hours":56,"owner_email":"usgbcarc@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000174044,"key":"148fRa3GRk05IpMCfnj3zToi","default_human_experience":50.0,"certifications":[],"confidential":false,"updated_at":"2019-10-15T05:55:30.188011Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-15T05:54:49.759171Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_done","survey_with_dashboard":false,"is_trial_selected":false,"override_valid":true,"rating_system":"LEED V4 O+M: TR","unitType":"IP","spaceType":"Lodging: Hotel/Motel/Resort, Full Service","geoLat":38.9,"geoLang":-77.05,"organization":"Habitat for Humanity","ownerType":"Government Use: Federal","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6.0,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":6},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":"aboveground","annual_ridership":200,"full_time_staff":26,"time_spent_by_riders":45,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"2.0","latest":true,"launch_date":"2018-05-04","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"LEED V4 O+M: TR"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null,"certification_expire":null,"total_score":6.0},{"name":"USBuildingLEED for transit 11:21:04","street":"2101 L St NW #500","city":"Washington","country":"US","state":"AL","publish":true,"project_type":"transit","zip_code":"66617","gross_area":7000.0,"occupancy":26,"operating_hours":56,"owner_email":"usgbcarc@gmail.com","certification":"","points":null,"year_constructed":null,"leed_id":1000174043,"key":"l55qQ8iDtxtlawHcAkaY3sOM","default_human_experience":50.0,"certifications":[],"confidential":false,"updated_at":"2019-10-15T07:28:38.496314Z","partners":[],"lobby_survey_status":false,"survey_expire_date":"2019-10-15T05:51:16.053329Z","base_score":null,"trial_version_status":false,"trial_expire_date":null,"building_status":"activated_payment_done","survey_with_dashboard":false,"is_trial_selected":false,"override_valid":true,"rating_system":"LEED V4 O+M: TR","unitType":"IP","spaceType":"Service: Other Service","geoLat":38.9,"geoLang":-77.05,"organization":"Habitat for Humanity","ownerType":"Educational: K-12 School, Private","IsLovRecert":false,"PrevCertProdId":null,"OtherCertProg":null,"IsResidential":false,"noOfResUnits":null,"AffiliatedHigherEduIns":false,"nameOfSchool":null,"affiliatedWithLeedLab":false,"noOfFloors":null,"intentToPrecertify":false,"targetCertDate":null,"populationDayTime":null,"populationNightTime":null,"manageEntityName":null,"manageEntityAdd1":null,"manageEntityAdd2":null,"manageEntityCity":null,"manageEntityState":null,"manageEntityCountry":"US","leed_score_public":true,"owner_name":null,"energy":null,"water":null,"waste":null,"transport":null,"human_experience":7.0,"scores":{"energy":null,"water":null,"waste":null,"transport":null,"human_experience":7},"first_app_visited":"allactions","noOfParkingSpace":null,"noOfParkingLevels":null,"projectWebsite":null,"projectInfo":null,"station_type":"aboveground","annual_ridership":200,"full_time_staff":26,"time_spent_by_riders":45,"test_project":false,"cagbc_membership_id":null,"score_code_version":{"name":"2.0","latest":true,"launch_date":"2018-05-04","final_date_to_update":null,"sunset_date_notification":false,"rule_set_rating_system":"LEED V4 O+M: TR"},"score_version_extension_available":1,"score_version_update_pending":false,"operational_days":313,"activation_source":"Arc","estimated_data_color":null,"certification_expire":null,"total_score":7.0}]}</td>
 				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:54 PM</td>
-					<td class='step-details'>API Responded With Status Code : 403</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:54 PM</td>
-					<td class='step-details'><span class='label white-text green'>AddAssestTimelineTest : PASSED</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>UserPreferenceGetAPITest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:54 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:54 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:56 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+33ms</span>
-</div>
-	<div class='test-desc'>BuildingV3Beta </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>CheckUserDetail</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:54 PM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/auth/user/preference/</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:56 PM</td>
-					<td class='step-details'>API responded in 2015 Milliseconds</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:56 PM</td>
-					<td class='step-details'>Response from API<br>[{"id":17,"user":{"id":717,"first_name":"Saurav","last_name":"K","username":"devarcbeta1@gmail.com","email":""},"ptype":"score_version_notifictaion","is_selected":false,"created_at":"2019-10-10T07:43:57.875046Z","updated_at":"2019-10-10T07:44:00.146207Z"}]</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:56 PM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:56 PM</td>
-					<td class='step-details'><span class='label white-text green'>UserPreferenceGetAPITest : PASSED</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:19:56 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: list does not have leed id expected [true] but found [false]Test : FAILED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -755,20 +760,20 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
 					<div class='test-heading'>
-						<span class='test-name'>ResampledEnergBasicAnalysisDataGetAPITest</span>
-						<span class='test-time'>Oct 10, 2019 04:15:56 PM</span>
+						<span class='test-name'>AssetDocumentAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:19:56 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 10, 2019 04:15:56 PM</span>
-	<span class='label end-time'>Oct 10, 2019 04:15:58 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+997ms</span>
+	<span class='label start-time'>Oct 17, 2019 09:19:56 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:58 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+434ms</span>
 </div>
-	<div class='test-desc'>BuildingV3Beta </div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>CheckAnalysis</span>
+				<span class='category label white-text'>CheckAsset</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -783,28 +788,980 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:56 PM</td>
-					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000020/resampled/source_energy/</td>
+					<td class='timestamp'>9:19:56 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/documents/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:58 PM</td>
-					<td class='step-details'>API responded in 1988 Milliseconds</td>
+					<td class='timestamp'>9:19:58 AM</td>
+					<td class='step-details'>API responded in 1375 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:58 PM</td>
-					<td class='step-details'>Response from API<br>[{"start_date":"2018-11-01","end_date":"2018-11-30","reading":0,"unit":"kBtu"},{"start_date":"2018-12-01","end_date":"2018-12-31","reading":0,"unit":"kBtu"},{"start_date":"2019-01-01","end_date":"2019-01-31","reading":0,"unit":"kBtu"},{"start_date":"2019-02-01","end_date":"2019-02-28","reading":0,"unit":"kBtu"},{"start_date":"2019-03-01","end_date":"2019-03-31","reading":0,"unit":"kBtu"},{"start_date":"2019-04-01","end_date":"2019-04-30","reading":0,"unit":"kBtu"},{"start_date":"2019-05-01","end_date":"2019-05-31","reading":0,"unit":"kBtu"},{"start_date":"2019-06-01","end_date":"2019-06-30","reading":0,"unit":"kBtu"},{"start_date":"2019-07-01","end_date":"2019-07-31","reading":0,"unit":"kBtu"},{"start_date":"2019-08-01","end_date":"2019-08-31","reading":0,"unit":"kBtu"},{"start_date":"2019-09-01","end_date":"2019-09-30","reading":0,"unit":"kBtu"},{"start_date":"2019-10-01","end_date":"2019-10-31","reading":0,"unit":"kBtu"}]</td>
+					<td class='timestamp'>9:19:58 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:58 AM</td>
+					<td class='step-details'><span class='label white-text green'>AssetDocumentAPITest : PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>DownloadDocumentsAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:19:58 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:19:58 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:19:59 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+413ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckDownloadDocuments</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:19:58 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/documents/download/?Docfile=Agreement.pdf&IDocNumber=0000000010000000000847427&IDocPart=000&IDocType=Z02&IDocVersion=00&IFileApplicationId=E9EC062C3CA277F1B3040AFDDE1F6773&IFileId=E9EC062C3CA279F1B3040AFDDE1F6773&subscription-key=06c50a1570bd4d40a7859ec28514b185&access-token=x0IrxDr1Eq1FQaqgViILQdDfXK1M4L</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:15:58 PM</td>
-					<td class='step-details'>API Responded With Status Code : 200</td>
+					<td class='timestamp'>9:19:59 AM</td>
+					<td class='step-details'>API responded in 1393 Milliseconds</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:58 PM</td>
-					<td class='step-details'><span class='label white-text green'>ResampledEnergBasicAnalysisDataGetAPITest : PASSED</span></td>
+					<td class='timestamp'>9:19:59 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:19:59 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:19:59 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>FetchingAgreementDetailsAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:00 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:00 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:01 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+563ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckAgreement</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:00 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/documents/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:01 AM</td>
+					<td class='step-details'>API responded in 1509 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:01 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:01 AM</td>
+					<td class='step-details'><span class='label white-text green'>FetchingAgreementDetailsAPITest : PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>VerifyAgreementDeleteAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:01 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:01 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:03 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+452ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckAgreement</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:01 AM</td>
+					<td class='step-details'>DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/actions/ID:DOCHOLDERL-1000173973/uploads/?Description=-200&Documenttype=Z02&Documentnumber=0000000010000000000847427&Documentpart=000&Documentversion=00&ApplicationId=E9EC062C3CA277F1B3040AFDDE1F6773&FileId=E9EC062C3CA279F1B3040AFDDE1F6773</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:03 AM</td>
+					<td class='step-details'>API responded in 1436 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:03 AM</td>
+					<td class='step-details'>Verifies response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:03 AM</td>
+					<td class='step-details'>Content Type is : application/json</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:03 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:03 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [403] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>MetersAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:03 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:03 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:05 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+432ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckMeter</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:03 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/meters/?page_size=20</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:04 AM</td>
+					<td class='step-details'>API responded in 1392 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:04 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:05 AM</td>
+					<td class='step-details'><span class='label white-text green'>MetersAPITest : PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>HumanExperienceConsumptionCreateAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:05 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:05 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:06 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+464ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckMeter</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:05 AM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/meters/ID:1028319/consumption/?recompute_score=false</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:06 AM</td>
+					<td class='step-details'>API responded in 1392 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:06 AM</td>
+					<td class='step-details'>Payload is : <br>{"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:06 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:06 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: 1 expectation failed.
+expected status code <201> doesn't match actual status code <404>.
+Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>HumanExperienceConsumptionUpdateAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:06 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:06 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:08 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+410ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckMeter</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:06 AM</td>
+					<td class='step-details'>PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/meters/ID:1028319/consumption/ID:7154016/?recompute_score=false</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:08 AM</td>
+					<td class='step-details'>API responded in 1392 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:08 AM</td>
+					<td class='step-details'>Payload is : <br>{"end_date":"2017-02-01","reading":"60","start_date":"2017-01-01"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:08 AM</td>
+					<td class='step-details'>Verifies response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:08 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:08 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>VerifyManualConsumptionAfterUpdateAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:08 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:08 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:09 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+337ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckUpdate</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:08 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/meters/ID:1028319/consumption/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:09 AM</td>
+					<td class='step-details'>API responded in 1323 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:09 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:09 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:09 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>HumanExperienceConsumptionDeleteAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:09 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:09 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:11 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+374ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckMeter</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:09 AM</td>
+					<td class='step-details'>DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/meters/ID:1028319/consumption/ID:7154016/?recompute_score=false</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:11 AM</td>
+					<td class='step-details'>API responded in 1362 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:11 AM</td>
+					<td class='step-details'>Verifies response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:11 AM</td>
+					<td class='step-details'>Content Type is : application/json</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:11 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:11 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>VerifyManualConsumptionAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:11 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:11 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:13 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+491ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckData</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:11 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/meters/ID:1028319/consumption/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:13 AM</td>
+					<td class='step-details'>API responded in 1479 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:13 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:13 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:13 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>HumanExperienceMeterUpdateAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:13 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:13 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:14 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+507ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckMeter</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:13 AM</td>
+					<td class='step-details'>PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/meters/ID:1028319/?recompute_score=false</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:14 AM</td>
+					<td class='step-details'>API responded in 1490 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:14 AM</td>
+					<td class='step-details'>Payload is : <br>{"name":"Formaldehyde","native_unit":"ug/m3","type":"263"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:14 AM</td>
+					<td class='step-details'>Verifies response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:14 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:14 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [400] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>V4ExcelUploadTemplatePOSTAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:14 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:14 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:18 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+937ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckExcelupload</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:14 AM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/excelupload/uploadS3/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:18 AM</td>
+					<td class='step-details'>API responded in 3927 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:18 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:18 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:18 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>S3DocumentUploadPOSTAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:19 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:19 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:21 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+317ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckUpload</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:21 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:21 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>S3DocumentListAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:21 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:21 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:22 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+394ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckS3DocumenList</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:21 AM</td>
+					<td class='step-details'>GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/s3documents/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:22 AM</td>
+					<td class='step-details'>API responded in 1345 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:22 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:22 AM</td>
+					<td class='step-details'><span class='label white-text green'>S3DocumentListAPITest : PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>S3DocumentRemoveAPITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:23 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:23 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:24 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+481ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckRemoveS3Document</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:23 AM</td>
+					<td class='step-details'>PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/s3documents/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:24 AM</td>
+					<td class='step-details'>API responded in 1454 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:24 AM</td>
+					<td class='step-details'>Payload is : <br>{"is_granted":false,"doc_id":"46452"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:24 AM</td>
+					<td class='step-details'>Verifies response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:24 AM</td>
+					<td class='step-details'>API Responded With Status Code : 404</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:24 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.assertionerror: expected [200] but found [404]Test : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>MeterCommentPostGroup1APITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:24 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:24 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:26 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+414ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckMeter</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:24 AM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/meters/ID:1028319/comment/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:26 AM</td>
+					<td class='step-details'>API responded in 1454 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:26 AM</td>
+					<td class='step-details'>Payload is : <br>{"data":"This is Test Comment","confidential":"false"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:26 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:26 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.illegalargumentexception: cannot invoke method getat() on null objectTest : FAILED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>MeterCommentPostGroup2APITest</span>
+						<span class='test-time'>Oct 17, 2019 09:20:26 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 17, 2019 09:20:26 AM</span>
+	<span class='label end-time'>Oct 17, 2019 09:20:27 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+424ms</span>
+</div>
+	<div class='test-desc'>LEEDv4.1 O+M Buildings </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CheckComment</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:26 AM</td>
+					<td class='step-details'>POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000172024/waste/comment/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:20:27 AM</td>
+					<td class='step-details'>API responded in 1454 Milliseconds</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:27 AM</td>
+					<td class='step-details'>Payload is : <br>{"data":"This is Test Comment","confidential":"false"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:27 AM</td>
+					<td class='step-details'>Response from API<br>{"detail":"Sorry, This project doesn't exist in the application."}</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:27 AM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.illegalargumentexception: cannot invoke method getat() on null objectTest : FAILED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -865,12 +1822,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>Login</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -886,8 +1843,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 10, 2019 04:15:20 PM</td>
+										<td>Oct 17, 2019 09:19:27 AM</td>
 										<td class='linked' test-id='1'>LoginAPITest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 17, 2019 09:19:45 AM</td>
+										<td class='linked' test-id='5'>LoginAPITest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -899,12 +1861,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>CheckAnalysis</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -920,14 +1882,43 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 10, 2019 04:15:29 PM</td>
+										<td>Oct 17, 2019 09:19:35 AM</td>
 										<td class='linked' test-id='2'>BasicAnalysisDataGetAPITest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckLogin</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
 									<tr>
-										<td>Oct 10, 2019 04:15:56 PM</td>
-										<td class='linked' test-id='10'>ResampledEnergBasicAnalysisDataGetAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:19:40 AM</td>
+										<td class='linked' test-id='3'>LOAuthenticateAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -936,7 +1927,41 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>AddProject</span>
+						<span class='category-name'>LEEDv4O+M:ExistingBuildings</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:19:42 AM</td>
+										<td class='linked' test-id='4'>LEEDv4OMExistingBuildingsAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckSync</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -959,8 +1984,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 10, 2019 04:15:37 PM</td>
-										<td class='linked' test-id='3'>CreateAssetPOSTAPITest</td>
+										<td>Oct 17, 2019 09:19:48 AM</td>
+										<td class='linked' test-id='6'>LOProjectSyncAPITest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -970,15 +1995,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>Search</span>
+						<span class='category-name'>SignAgreementRegistration</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -993,9 +2018,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 10, 2019 04:15:42 PM</td>
-										<td class='linked' test-id='4'>AssetSearchAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Oct 17, 2019 09:19:50 AM</td>
+										<td class='linked' test-id='7'>SignAgreementRegistrationAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1004,15 +2029,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>SignAgreement</span>
+						<span class='category-name'>CheckUpdate</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -1027,48 +2052,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 10, 2019 04:15:44 PM</td>
-										<td class='linked' test-id='5'>SignAgreementRegistrationAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>CheckPayment</span>
-						<span class='category-status right'>
-							<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 10, 2019 04:15:47 PM</td>
-										<td class='linked' test-id='6'>RegistrationPaymentPricingGetAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Oct 17, 2019 09:19:53 AM</td>
+										<td class='linked' test-id='8'>AssetUpdateforNewAssetPUTAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Oct 10, 2019 04:15:49 PM</td>
-										<td class='linked' test-id='7'>PaymentOrderSubmitPOSTAPITest</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Oct 17, 2019 09:20:08 AM</td>
+										<td class='linked' test-id='17'>VerifyManualConsumptionAfterUpdateAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1080,12 +2071,13 @@
 						<span class='category-name'>CheckAsset</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -1100,8 +2092,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 10, 2019 04:15:52 PM</td>
-										<td class='linked' test-id='8'>AddAssestTimelineTest</td>
+										<td>Oct 17, 2019 09:19:54 AM</td>
+										<td class='linked' test-id='9'>VerifyProjectRegisteredAssetListTest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 17, 2019 09:19:56 AM</td>
+										<td class='linked' test-id='10'>AssetDocumentAPITest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1111,7 +2108,243 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>CheckUserDetail</span>
+						<span class='category-name'>CheckDownloadDocuments</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:19:58 AM</td>
+										<td class='linked' test-id='11'>DownloadDocumentsAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckAgreement</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:20:00 AM</td>
+										<td class='linked' test-id='12'>FetchingAgreementDetailsAPITest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 17, 2019 09:20:01 AM</td>
+										<td class='linked' test-id='13'>VerifyAgreementDeleteAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckMeter</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 5</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:20:03 AM</td>
+										<td class='linked' test-id='14'>MetersAPITest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 17, 2019 09:20:05 AM</td>
+										<td class='linked' test-id='15'>HumanExperienceConsumptionCreateAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 17, 2019 09:20:06 AM</td>
+										<td class='linked' test-id='16'>HumanExperienceConsumptionUpdateAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 17, 2019 09:20:09 AM</td>
+										<td class='linked' test-id='18'>HumanExperienceConsumptionDeleteAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 17, 2019 09:20:13 AM</td>
+										<td class='linked' test-id='20'>HumanExperienceMeterUpdateAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 17, 2019 09:20:24 AM</td>
+										<td class='linked' test-id='25'>MeterCommentPostGroup1APITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckData</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:20:11 AM</td>
+										<td class='linked' test-id='19'>VerifyManualConsumptionAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckExcelupload</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:20:14 AM</td>
+										<td class='linked' test-id='21'>V4ExcelUploadTemplatePOSTAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckUpload</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:20:19 AM</td>
+										<td class='linked' test-id='22'>S3DocumentUploadPOSTAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckS3DocumenList</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -1134,9 +2367,77 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 10, 2019 04:15:54 PM</td>
-										<td class='linked' test-id='9'>UserPreferenceGetAPITest</td>
+										<td>Oct 17, 2019 09:20:21 AM</td>
+										<td class='linked' test-id='23'>S3DocumentListAPITest</td>
 										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckRemoveS3Document</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:20:23 AM</td>
+										<td class='linked' test-id='24'>S3DocumentRemoveAPITest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CheckComment</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 17, 2019 09:20:26 AM</td>
+										<td class='linked' test-id='26'>MeterCommentPostGroup2APITest</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1164,31 +2465,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>26</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>57</div>
+					<div class='panel-lead'>134</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 10, 2019 04:15:20 PM</div>
+					<div class='panel-lead'>Oct 17, 2019 09:19:26 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 10, 2019 04:15:58 PM</div>
+			 		<div class='panel-lead'>Oct 17, 2019 09:20:27 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 37s+877ms</div>
+					<div class='panel-lead'>0h 1m 1s+62ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1233,7 +2534,7 @@
 						</tr>
 						<tr>
 							<td>Login</td>
-							<td>1</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -1242,52 +2543,124 @@
 						</tr>
 						<tr>
 							<td>CheckAnalysis</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckLogin</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>LEEDv4O+M:ExistingBuildings</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckSync</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>SignAgreementRegistration</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckUpdate</td>
+							<td>0</td>
 							<td>2</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>AddProject</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>Search</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>SignAgreement</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>CheckPayment</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
 							<td>CheckAsset</td>
 							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									50%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckDownloadDocuments</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckAgreement</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									50%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckMeter</td>
+							<td>1</td>
+							<td>5</td>
+							<td>0</td>
+							<td>
+									16.667%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckData</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckExcelupload</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckUpload</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckS3DocumenList</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -1295,12 +2668,21 @@
 							</td>
 						</tr>
 						<tr>
-							<td>CheckUserDetail</td>
+							<td>CheckRemoveS3Document</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>CheckComment</td>
+							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -1316,22 +2698,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 10,
-				failParent: 0,
+				passParent: 8,
+				failParent: 18,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 18,
 				
-				passChild: 25,
-				failChild: 0,
+				passChild: 46,
+				failChild: 18,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 32,
-				exceptionsChild: 0,
+				infoChild: 70,
+				exceptionsChild: 18,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

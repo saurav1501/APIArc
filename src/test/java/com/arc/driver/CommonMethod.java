@@ -230,6 +230,11 @@ public static String randomNumberMeterReading() throws IOException, InterruptedE
 		case "Info":
 			test.log(Status.INFO, message);
 			break;
+		
+		case "Fail":
+			test.log(Status.FAIL, message);
+			break;
+			
 			
 		 default:
 	     	

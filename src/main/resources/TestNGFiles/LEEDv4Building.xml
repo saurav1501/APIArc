@@ -74,7 +74,7 @@
 <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.VerifyActivityHEMeterDataInputAPITest"></class>
- 
+
 </classes>
 </test> 
 

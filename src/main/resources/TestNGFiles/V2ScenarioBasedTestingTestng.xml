@@ -23,6 +23,8 @@
 <class name="com.arcapi.Common.ScoreVersionExtensionRequestUpdatePostAPITest"></class>
 <class name="com.arcapi.Common.ScoreVersionExtensionRequestUpdateQuerysetGetAPITest"></class>
 <class name="com.arcapi.Common.Neg.ReturnReviewGetAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.AssetNonUsgbcTeamMemberAddPOSTAPITest"></class>
+
 <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.TeamManagerAddPOSTAPITest"></class>
 </classes>

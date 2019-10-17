@@ -6,7 +6,8 @@
 <parameter name="PaymentType" value="CreditCardPayment"/>
 
 	<suite-files>
-    <!-- <suite-file path="Existing-ARC-V1-API-CompleteFlow.xml"></suite-file> 
+	
+   <!--  <suite-file path="Existing-ARC-V1-API-CompleteFlow.xml"></suite-file> 
   	  <suite-file path="Buildingtestng.xml"></suite-file>           
      <suite-file path="Portfoliostestng.xml"></suite-file>  
 	<suite-file path="InterRelatedFieldValidationTestng.xml"></suite-file> 
@@ -25,12 +26,12 @@
 		<suite-file path="TrailFlowCompleteTestNG.xml"></suite-file>  
 		<suite-file path="CustomExecutionManualTestNG.xml"></suite-file> 
 	     <suite-file path="ScoreScenariosTestNG.xml"></suite-file>   
-	 	<suite-file path="DataInputScenariosTestNG.xml"></suite-file>  
- --> 	
+	 	<suite-file path="DataInputScenariosTestNG.xml"></suite-file> 
+ -->
  	 
 	 
-  <suite-file path="Beta-ARC-V2-API-CompleteFlow.xml"></suite-file>  
-  <suite-file path="V2ScenarioBasedTestingTestng.xml"></suite-file>
+   <suite-file path="Beta-ARC-V2-API-CompleteFlow.xml"></suite-file>
+<!--  <suite-file path="LEEDv4Building.xml"></suite-file> -->
    <suite-file path="V2Buildingtestng.xml"></suite-file>   
  <suite-file path="V2Portfoliostestng.xml"></suite-file>   
 	  <suite-file path="Parksmarttestng.xml"></suite-file>  
@@ -39,11 +40,10 @@
 	 	 <suite-file path="ScoreScenariosTestNG.xml"></suite-file>    
  		<suite-file path="V2DataInputScenariosTestNG.xml"></suite-file>  
  		<suite-file path="V2CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
-		<suite-file path="V2EmissionFactor.xml"></suite-file>  
- 	<suite-file path="V2DataInputScenariosTestNG.xml"></suite-file>
- 	<suite-file path="TransitBelow.xml"></suite-file> 
- 	 <suite-file path="V2ScenarioBasedTestingTestng.xml"></suite-file>
- 	
- 		 	 	
+		<suite-file path="V2EmissionFactor.xml"></suite-file>   
+		<suite-file path="CommunityTestNG.xml"></suite-file>    	
+ 	 <suite-file path="V2DataInputScenariosTestNG.xml"></suite-file>
+  	<suite-file path="TransitBelow.xml"></suite-file> 
+ 	 <suite-file path="V2ScenarioBasedTestingTestng.xml"></suite-file>    	 	 	
 	</suite-files>
 </suite> 

@@ -20,7 +20,7 @@ public class SocreVersionUpdatePostAPITest extends BaseClass{
 			map = new HashMap<>();
 			map.put("new_version", "10");
 			
-			url="/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber)+ "scores/version/update/";
+			url="/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber)+ "/scores/version/update/";
 			CommonMethod.res = MethodCall.POSTRequest(url, map);
 			Assertion.verifyStatusCode(CommonMethod.res, 400);
 		} catch (Exception e) {

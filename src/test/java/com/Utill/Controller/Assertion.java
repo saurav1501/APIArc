@@ -1,7 +1,6 @@
 package com.Utill.Controller;
 
 import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
@@ -26,6 +25,12 @@ public class Assertion extends BaseClass {
 		Assert.assertEquals(TestUtils.getStatusMessage(response), status);
 	}
 	public static void verifyData(String actual,String expected ){
+		Assert.assertEquals(actual, expected);
+		CommonMethod.testlog("Info", "Verifies Data " + "Actual Data is : " +actual+ " Expected Data is :" +expected);
+		
+	}
+	
+	public static void verifyData(int actual,int expected ){
 		Assert.assertEquals(actual, expected);
 		CommonMethod.testlog("Info", "Verifies Data " + "Actual Data is : " +actual+ " Expected Data is :" +expected);
 		
