@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [ScoreScenariosCity]">
-  <parameter name="environment" value="dev2"/>
+  <parameter name="environment" value="stg"/>
   <parameter name="CreditColumn" value="CityOtherNoneCredit"/>
   <parameter name="SoReference" value="performance score"/>
   <parameter name="CreditColumnNum" value="1"/>
@@ -10,10 +10,10 @@
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
-  <parameter name="SheetName" value="DEV2"/>
+  <parameter name="SheetName" value="STG"/>
   <parameter name="SoReferenceSR" value="performance score"/>
   <parameter name="ProjectTypeColumn" value="ProjectIDCityOther"/>
-  <test name="CompleteFlowTest-City-None">
+  <test name="ScoreScenariosCity-None">
     <parameter name="CreditColumn" value="CityOtherNoneCredit"/>
     <parameter name="SoReference" value="performance score"/>
     <parameter name="CreditColumnNum" value="1"/>
@@ -50,5 +50,5 @@
       <class name="com.arcapi.Scoretestcases.version3.SourceEnergyGetTest"/>
       <class name="com.arcapi.Scoretestcases.version3.TransitGetTest"/>
     </classes>
-  </test> <!-- CompleteFlowTest-City-None -->
+  </test> <!-- ScoreScenariosCity-None -->
 </suite> <!-- Failed suite [ScoreScenariosCity] -->

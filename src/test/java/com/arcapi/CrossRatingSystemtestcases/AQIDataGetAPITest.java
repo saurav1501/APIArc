@@ -17,6 +17,7 @@ public class AQIDataGetAPITest extends BaseClass {
 	public void AQIDataGetAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 
 		try {
+			
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/aqi/?resample=2015-01-05/P1D,2015-01-06/P1D,2015-01-07/P1D,2015-01-08/P1D";
 
 			CommonMethod.res = MethodCall.GETRequest(url);

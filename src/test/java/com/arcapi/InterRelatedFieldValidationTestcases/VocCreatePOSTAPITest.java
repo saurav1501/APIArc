@@ -30,7 +30,7 @@ public class VocCreatePOSTAPITest extends BaseClass {
 
 			CommonMethod.res = MethodCall.POSTRequest(url, jsonAsMap);
 
-			if(str=="ppm") {
+			if(str=="ug/m3") {
 			
 			Assertion.verifyStatusCode(CommonMethod.res, 201);
 			

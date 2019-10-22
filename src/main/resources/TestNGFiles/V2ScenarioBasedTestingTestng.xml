@@ -33,24 +33,25 @@
 <class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest"></class>
-
-<class name="com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest"></class>
-
-<!--  
+<class name="com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest"></class>  
 <class name="com.arcapi.release1_18testcases.AssetUpdateExcludeSpacesTest"></class> 
 
-<class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesEnergyOccupantPUTAPITest"></class> 
+
+
+<!-- <class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesEnergyOccupantPUTAPITest"></class> 
 <class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesWaterOccupantPUTAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class> 
 <class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesWasteOccupantPUTAPITest"></class>
-<class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class> 
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class>  -->
 
 <class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesTransportOccupantPOSTAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesHumanExpOccupantPOSTAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverage2108DataGetAPITest"></class>
+
 
 
 <class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class> 
@@ -61,7 +62,6 @@
 <class name="com.arcapi.Common.ScoreVersionExtensionRequestUpdatePostAPITest"></class>
 <class name="com.arcapi.Common.ScoreVersionExtensionRequestUpdateQuerysetGetAPITest"></class>
 <class name="com.arcapi.Common.Neg.ReturnReviewGetAPITest"></class> 
-
 <class name="com.arcapi.ScenarioBasedTestcases.AssetNonUsgbcTeamMemberAddPOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.TeamManagerAddPOSTAPITest"></class> 
@@ -130,7 +130,7 @@
 <parameter name ="ratings" value="PARKSMART"/> 
 <classes>
 <class name="com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest"></class>
-</classes> -->
+</classes> 
 <!-- </test>   
 
  <test name="CompleteFlowTest-Building-None">
@@ -142,8 +142,8 @@
 
 <classes>
 <class name="com.arcapi.ScenarioBasedTestcases.CheckSpaceTypeBuildingOtherAPITest"></class>
-<class name="com.arcapi.ScenarioBasedTestcases.CheckOwnerTypeBuildingOtherAPITest"></class>  -->
-</classes> 
+<class name="com.arcapi.ScenarioBasedTestcases.CheckOwnerTypeBuildingOtherAPITest"></class>  
+</classes>  -->
 </test> 
 </suite>
   
