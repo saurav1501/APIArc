@@ -1,21 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="BuildingV3Beta">
 
-<test name="CompleteFlowTest-Portfolios-Gresb">
-<parameter name="ProjectType" value="building" />
-<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
-<parameter name="SoReference" value="performance score" />
-<parameter name="SoReferenceSR" value="performance score" />
-<parameter name="ratings" value="none"/>
-<parameter name="rownumber" value="2" />
-
-<classes>
-<class name="com.arcapi.Portfoliostestcases.GresbAssetsDetailsGetAPITest"></class>
-<class name="com.arcapi.Portfoliostestcases.GresbAssetsExsitingIDPostAPITest"></class>
-</classes>
-</test>
-
-
 <test name="CompleteFlowTest-Building-Other">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
@@ -87,7 +72,7 @@
 <class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
 <class name="com.arcapi.Common.VerifyAgreementPresentAPITest"></class>
 <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
-<class name="com.arcapi.Common.VerifyAgreementDeleteAPITest"></class> 
+<class name="com.arcapi.Common.V2.VerifyAgreementDeleteAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.MetersAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest"></class>

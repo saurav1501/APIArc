@@ -93,7 +93,6 @@
 <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosPostAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosDetailPUTAPITest"></class>
-<class name="com.arcapi.Portfoliostestcases.PortfoliosAssetPostAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetPostAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosAssetDetailPUTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.PortfoliosGoalsUpdateAPITest"></class>

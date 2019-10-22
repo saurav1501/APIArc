@@ -64,6 +64,14 @@ public class MeterPayload extends BaseClass{
 		return meterData;
 	}
 	
+	public static MeterData meterData5() {
+		MeterData meterData = new MeterData();
+		meterData.setEnd_date("2019-10-28");
+		meterData.setStart_date("2019-05-01");
+		meterData.setReading("100");
+		return meterData;
+	}
+	
 	public static ArrayList<JSONObject> wasteMeter() {
 	JSONObject jsonAsMap = new JSONObject();
 	jsonAsMap.put("start_date", "2017-01-06");
@@ -89,6 +97,17 @@ public class MeterPayload extends BaseClass{
 	meterData.setWaste_diverted("99");
 	return meterData;
 }
+	
+	
+	public static WasteMeterData wasteMeter4() {
+		WasteMeterData meterData= new WasteMeterData();
+		meterData.setUnit("lbs");
+		meterData.setStart_date("2019-01-01");
+		meterData.setEnd_date("2019-05-01");
+		meterData.setWaste_generated("100");
+		meterData.setWaste_diverted("99");
+		return meterData;
+	}
 	
 	public static WasteMeterData wasteMeter2() {
 		WasteMeterData meterData= new WasteMeterData();

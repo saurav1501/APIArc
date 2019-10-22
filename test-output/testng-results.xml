@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" total="24" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="BETA-V2-CompleteFlow" duration-ms="14613" started-at="2019-10-16T11:41:06Z" finished-at="2019-10-16T11:41:20Z">
+  <suite name="BETA-V2-CompleteFlow" duration-ms="17304" started-at="2019-10-22T08:11:02Z" finished-at="2019-10-22T08:11:19Z">
     <groups>
       <group name="CheckAnalysis">
         <method signature="BasicAnalysisDataGetAPITest.BasicAnalysisDataGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="BasicAnalysisDataGetAPI" class="com.arcapi.Common.V2.BasicAnalysisDataGetAPITest"/>
@@ -11,20 +11,20 @@
         <method signature="LoginAPITest.LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="LoginAPI" class="com.arcapi.Common.LoginAPITest"/>
       </group> <!-- Login -->
     </groups>
-    <test name="CompleteFlowTest-Building-Other" duration-ms="14613" started-at="2019-10-16T11:41:06Z" finished-at="2019-10-16T11:41:20Z">
+    <test name="CompleteFlowTest-Building-Other" duration-ms="17304" started-at="2019-10-22T08:11:02Z" finished-at="2019-10-22T08:11:19Z">
       <class name="com.arcapi.Common.LoginAPITest">
-        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="getSuiteName" is-config="true" duration-ms="9" started-at="2019-10-16T17:11:06Z" finished-at="2019-10-16T17:11:06Z">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="getSuiteName" is-config="true" duration-ms="17" started-at="2019-10-22T13:41:02Z" finished-at="2019-10-22T13:41:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@ebda593]]>
+                <![CDATA[org.testng.TestRunner@64c8fcfb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSuiteName -->
-        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="setBaseUri" is-config="true" duration-ms="1899" started-at="2019-10-16T17:11:06Z" finished-at="2019-10-16T17:11:08Z">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="setBaseUri" is-config="true" duration-ms="2093" started-at="2019-10-22T13:41:02Z" finished-at="2019-10-22T13:41:04Z">
           <params>
             <param index="0">
               <value>
@@ -35,11 +35,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseUri -->
-        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="ExtentReportConfig" is-config="true" duration-ms="283" started-at="2019-10-16T17:11:08Z" finished-at="2019-10-16T17:11:08Z">
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="ExtentReportConfig" is-config="true" duration-ms="325" started-at="2019-10-22T13:41:04Z" finished-at="2019-10-22T13:41:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="start" is-config="true" duration-ms="6" started-at="2019-10-16T17:11:08Z" finished-at="2019-10-16T17:11:08Z">
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="start" is-config="true" duration-ms="11" started-at="2019-10-22T13:41:05Z" finished-at="2019-10-22T13:41:05Z">
           <params>
             <param index="0">
               <value>
@@ -50,11 +50,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="LoginAPI" duration-ms="6690" started-at="2019-10-16T17:11:08Z" finished-at="2019-10-16T17:11:15Z">
+        <test-method status="PASS" signature="LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="LoginAPI" duration-ms="7695" started-at="2019-10-22T13:41:05Z" finished-at="2019-10-22T13:41:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAPI -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="teardown" is-config="true" duration-ms="12" started-at="2019-10-16T17:11:15Z" finished-at="2019-10-16T17:11:15Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="teardown" is-config="true" duration-ms="18" started-at="2019-10-22T13:41:12Z" finished-at="2019-10-22T13:41:12Z">
           <params>
             <param index="0">
               <value>
@@ -65,13 +65,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="end" is-config="true" duration-ms="410" started-at="2019-10-16T17:11:15Z" finished-at="2019-10-16T17:11:15Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.LoginAPITest@34b7bfc0]" name="end" is-config="true" duration-ms="454" started-at="2019-10-22T13:41:12Z" finished-at="2019-10-22T13:41:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
       </class> <!-- com.arcapi.Common.LoginAPITest -->
       <class name="com.arcapi.Common.V2.BasicAnalysisDataGetAPITest">
-        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="setBaseUri" is-config="true" duration-ms="267" started-at="2019-10-16T17:11:15Z" finished-at="2019-10-16T17:11:15Z">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="setBaseUri" is-config="true" duration-ms="286" started-at="2019-10-22T13:41:13Z" finished-at="2019-10-22T13:41:13Z">
           <params>
             <param index="0">
               <value>
@@ -82,22 +82,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseUri -->
-        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-16T17:11:15Z" finished-at="2019-10-16T17:11:15Z">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:13Z" finished-at="2019-10-22T13:41:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@ebda593]]>
+                <![CDATA[org.testng.TestRunner@64c8fcfb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSuiteName -->
-        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="ExtentReportConfig" is-config="true" duration-ms="1" started-at="2019-10-16T17:11:15Z" finished-at="2019-10-16T17:11:15Z">
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:13Z" finished-at="2019-10-22T13:41:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="start" is-config="true" duration-ms="0" started-at="2019-10-16T17:11:15Z" finished-at="2019-10-16T17:11:15Z">
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:13Z" finished-at="2019-10-22T13:41:13Z">
           <params>
             <param index="0">
               <value>
@@ -108,7 +108,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="BasicAnalysisDataGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="BasicAnalysisDataGetAPI" duration-ms="4912" started-at="2019-10-16T17:11:15Z" finished-at="2019-10-16T17:11:20Z">
+        <test-method status="PASS" signature="BasicAnalysisDataGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="BasicAnalysisDataGetAPI" duration-ms="6250" started-at="2019-10-22T13:41:13Z" finished-at="2019-10-22T13:41:19Z">
           <params>
             <param index="0">
               <value>
@@ -129,11 +129,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasicAnalysisDataGetAPI -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="end" is-config="true" duration-ms="88" started-at="2019-10-16T17:11:20Z" finished-at="2019-10-16T17:11:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-16T17:11:20Z" finished-at="2019-10-16T17:11:20Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:19Z" finished-at="2019-10-22T13:41:19Z">
           <params>
             <param index="0">
               <value>
@@ -144,23 +140,66 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.V2.BasicAnalysisDataGetAPITest@366e2eef]" name="end" is-config="true" duration-ms="111" started-at="2019-10-22T13:41:19Z" finished-at="2019-10-22T13:41:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
       </class> <!-- com.arcapi.Common.V2.BasicAnalysisDataGetAPITest -->
     </test> <!-- CompleteFlowTest-Building-Other -->
   </suite> <!-- BETA-V2-CompleteFlow -->
-  <suite name="MasterAPITestCasesSuite" duration-ms="0" started-at="2019-10-16T11:41:51Z" finished-at="2019-10-16T11:41:51Z">
+  <suite name="MasterAPITestCasesSuite" duration-ms="0" started-at="2019-10-22T08:12:10Z" finished-at="2019-10-22T08:12:10Z">
     <groups>
     </groups>
   </suite> <!-- MasterAPITestCasesSuite -->
-  <suite name="BuildingV3Beta" duration-ms="30639" started-at="2019-10-16T11:41:20Z" finished-at="2019-10-16T11:41:51Z">
+  <suite name="ScenarioBasedTesting" duration-ms="49192" started-at="2019-10-22T08:11:19Z" finished-at="2019-10-22T08:12:09Z">
     <groups>
-      <group name="CheckAnalysis">
-        <method signature="RecomputeVerifyTotalScoreGraphGetAPITest.RecomputeVerifyTotalScoreGraphGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest@61a485d2]" name="RecomputeVerifyTotalScoreGraphGetAPI" class="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest"/>
-        <method signature="ResampledTotalScoreGetAPITest.ResampledTotalScoreGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.V2.ResampledTotalScoreGetAPITest@59e84876]" name="ResampledTotalScoreGetAPI" class="com.arcapi.Common.V2.ResampledTotalScoreGetAPITest"/>
-      </group> <!-- CheckAnalysis -->
+      <group name="VerifyDatacoverage">
+        <method signature="NegUpdateTransportOccupantPOSTAPITest.ExcludeSpacesTransportOccupantPOSTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest@643b1d11]" name="ExcludeSpacesTransportOccupantPOSTAPI" class="com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest"/>
+        <method signature="SetGeneralAllOccupantPUTAPITest.SetGeneralAllOccupantPUTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest@5dfcfece]" name="SetGeneralAllOccupantPUTAPI" class="com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest"/>
+        <method signature="SetGeneralRegularOccupantPUTAPITest.VerifyGeneralRegularOccupantDatacoverageAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest@56f4468b]" name="VerifyGeneralRegularOccupantDatacoverageAPI" class="com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest"/>
+        <method signature="SetGeneralVisitorOccupantPUTAPITest.SetGeneralVisitorOccupantPUTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest@3a82f6ef]" name="SetGeneralVisitorOccupantPUTAPI" class="com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest"/>
+        <method signature="VerifyGeneralRegularOccupantDatacoverageAPITest.VerifyGeneralRegularOccupantDatacoverageAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest@6cc4c815]" name="VerifyGeneralRegularOccupantDatacoverageAPI" class="com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest"/>
+        <method signature="VerifyGeneralVisitorOccupantDatacoverageAPITest.VerifyGeneralVisitorOccupantDatacoverageAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest@100fc185]" name="VerifyGeneralVisitorOccupantDatacoverageAPI" class="com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest"/>
+      </group> <!-- VerifyDatacoverage -->
+      <group name="Add Project">
+        <method signature="CreateAssetBuildingV3APITest.CreateAssetPOSTAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest@402f32ff]" name="CreateAssetPOSTAPI" class="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
+      </group> <!-- Add Project -->
+      <group name="CheckWaste">
+        <method signature="WasteCreatePOSTAPITest.WasteCreatePOSTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@6d78f375]" name="WasteCreatePOSTAPI" class="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"/>
+      </group> <!-- CheckWaste -->
+      <group name="CreateMeter">
+        <method signature="EnergyCreate180DaysDataPostAPITest.EnergyCreate180DaysDataPostAPI()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest@6d8a00e3]" name="EnergyCreate180DaysDataPostAPI" class="com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest"/>
+      </group> <!-- CreateMeter -->
+      <group name="CreateWaterMeter">
+        <method signature="WaterCreate180DaysDataPostAPITest.WaterCreate180DaysDataPostAPI()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest@7ac7a4e4]" name="WaterCreate180DaysDataPostAPI" class="com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest"/>
+      </group> <!-- CreateWaterMeter -->
+      <group name="CheckDatacoverageData">
+        <method signature="VerifyDatacoverageGetAPITest.VerifyDatacoverageGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest@23ceabc1]" name="VerifyDatacoverageGetAPI" class="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"/>
+      </group> <!-- CheckDatacoverageData -->
+      <group name="CheckMeter">
+        <method signature="CO2ConsumptionCreateAPITest.CO2ConsumptionCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest@32d992b2]" name="CO2ConsumptionCreateAPI" class="com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest"/>
+        <method signature="CO2MeterCreateAPITest.CO2MeterCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@1810399e]" name="CO2MeterCreateAPI" class="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"/>
+        <method signature="ElectricityPurchasedFromGridCreatePOSTAPITest.ElectricityPurchasedFromGridCreatePOST(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest@5ae9a829]" name="ElectricityPurchasedFromGridCreatePOST" class="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"/>
+        <method signature="MunicipalitySuppliedPortableWaterCreatePOSTAPITest.municipalitySuppliedPortableWaterCreatePOSTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest@548b7f67]" name="municipalitySuppliedPortableWaterCreatePOSTAPI" class="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"/>
+        <method signature="VOCConsumptionCreateAPITest.VOCConsumptionCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest@4439f31e]" name="VOCConsumptionCreateAPI" class="com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest"/>
+      </group> <!-- CheckMeter -->
+      <group name="CheckSurvey">
+        <method signature="SurveyAllRoutesFeedbackRegularAPIPOSTAPITest.SurveyAllRoutesFeedbackRegularAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest@50c87b21]" name="SurveyAllRoutesFeedbackRegularAPI" class="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"/>
+        <method signature="SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest.SurveyAllRoutesFeedbackVisitorAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest@5f375618]" name="SurveyAllRoutesFeedbackVisitorAPI" class="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"/>
+      </group> <!-- CheckSurvey -->
+      <group name="Login">
+        <method signature="LoginAPITest.LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@48eff760]" name="LoginAPI" class="com.arcapi.Common.LoginAPITest"/>
+      </group> <!-- Login -->
+      <group name="UpdateGeneralOccupancy">
+        <method signature="OccupatGeneralRegularVisitorUpdateAPITest.OccupatGeneralRegularVisitorUpdateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest@5d5eef3d]" name="OccupatGeneralRegularVisitorUpdateAPI" class="com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest"/>
+      </group> <!-- UpdateGeneralOccupancy -->
+      <group name="CheckAsset">
+        <method signature="AssetDetailAPITest.AssetDetailAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.AssetDetailAPITest@573f2bb1]" name="AssetDetailAPI" class="com.arcapi.Common.AssetDetailAPITest"/>
+      </group> <!-- CheckAsset -->
     </groups>
-    <test name="CompleteFlowTest-Building-Other" duration-ms="30639" started-at="2019-10-16T11:41:20Z" finished-at="2019-10-16T11:41:51Z">
-      <class name="com.arcapi.Common.V2.ResampledTotalScoreGetAPITest">
-        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.V2.ResampledTotalScoreGetAPITest@59e84876]" name="setBaseUri" is-config="true" duration-ms="498" started-at="2019-10-16T17:11:20Z" finished-at="2019-10-16T17:11:21Z">
+    <test name="Review-Scenario" duration-ms="49192" started-at="2019-10-22T08:11:19Z" finished-at="2019-10-22T08:12:09Z">
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest@50c87b21]" name="setBaseUri" is-config="true" duration-ms="123" started-at="2019-10-22T13:41:41Z" finished-at="2019-10-22T13:41:41Z">
           <params>
             <param index="0">
               <value>
@@ -171,33 +210,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseUri -->
-        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.V2.ResampledTotalScoreGetAPITest@59e84876]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-16T17:11:20Z" finished-at="2019-10-16T17:11:20Z">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest@50c87b21]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:41Z" finished-at="2019-10-22T13:41:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5792c08c]]>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSuiteName -->
-        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.V2.ResampledTotalScoreGetAPITest@59e84876]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-16T17:11:21Z" finished-at="2019-10-16T17:11:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.V2.ResampledTotalScoreGetAPITest@59e84876]" name="start" is-config="true" duration-ms="2" started-at="2019-10-16T17:11:21Z" finished-at="2019-10-16T17:11:21Z">
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest@50c87b21]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:41Z" finished-at="2019-10-22T13:41:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.arcapi.Common.V2.ResampledTotalScoreGetAPITest.ResampledTotalScoreGetAPI(java.lang.String,java.lang.String,int)]]>
+                <![CDATA[public void com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest.SurveyAllRoutesFeedbackRegularAPI(java.lang.String,java.lang.String,int)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="ResampledTotalScoreGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.V2.ResampledTotalScoreGetAPITest@59e84876]" name="ResampledTotalScoreGetAPI" duration-ms="4807" started-at="2019-10-16T17:11:21Z" finished-at="2019-10-16T17:11:26Z">
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest@50c87b21]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:41Z" finished-at="2019-10-22T13:41:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="SurveyAllRoutesFeedbackRegularAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest@50c87b21]" name="SurveyAllRoutesFeedbackRegularAPI" duration-ms="1617" started-at="2019-10-22T13:41:41Z" finished-at="2019-10-22T13:41:43Z">
           <params>
             <param index="0">
               <value>
@@ -206,7 +245,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[ProjectIDBuildingOther]]>
+                <![CDATA[ProjectIDBuildingNone]]>
               </value>
             </param>
             <param index="2">
@@ -217,36 +256,36 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ResampledTotalScoreGetAPI -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.V2.ResampledTotalScoreGetAPITest@59e84876]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-16T17:11:26Z" finished-at="2019-10-16T17:11:26Z">
+        </test-method> <!-- SurveyAllRoutesFeedbackRegularAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest@50c87b21]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:43Z" finished-at="2019-10-22T13:41:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ResampledTotalScoreGetAPI status=SUCCESS method=ResampledTotalScoreGetAPITest.ResampledTotalScoreGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.V2.ResampledTotalScoreGetAPITest@59e84876] output={null}]]]>
+                <![CDATA[[TestResult name=SurveyAllRoutesFeedbackRegularAPI status=SUCCESS method=SurveyAllRoutesFeedbackRegularAPIPOSTAPITest.SurveyAllRoutesFeedbackRegularAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest@50c87b21] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.V2.ResampledTotalScoreGetAPITest@59e84876]" name="end" is-config="true" duration-ms="73" started-at="2019-10-16T17:11:26Z" finished-at="2019-10-16T17:11:26Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest@50c87b21]" name="end" is-config="true" duration-ms="77" started-at="2019-10-22T13:41:43Z" finished-at="2019-10-22T13:41:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arcapi.Common.V2.ResampledTotalScoreGetAPITest -->
-      <class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest">
-        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest@61a485d2]" name="getSuiteName" is-config="true" duration-ms="1" started-at="2019-10-16T17:11:26Z" finished-at="2019-10-16T17:11:26Z">
+      </class> <!-- com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest@6cc4c815]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:42:01Z" finished-at="2019-10-22T13:42:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5792c08c]]>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSuiteName -->
-        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest@61a485d2]" name="setBaseUri" is-config="true" duration-ms="90" started-at="2019-10-16T17:11:26Z" finished-at="2019-10-16T17:11:26Z">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest@6cc4c815]" name="setBaseUri" is-config="true" duration-ms="93" started-at="2019-10-22T13:42:01Z" finished-at="2019-10-22T13:42:01Z">
           <params>
             <param index="0">
               <value>
@@ -257,7 +296,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseUri -->
-        <test-method status="PASS" signature="RecomputeVerifyTotalScoreGraphGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest@61a485d2]" name="RecomputeVerifyTotalScoreGraphGetAPI" duration-ms="25009" started-at="2019-10-16T17:11:26Z" finished-at="2019-10-16T17:11:51Z">
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest@6cc4c815]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:42:01Z" finished-at="2019-10-22T13:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest.VerifyGeneralRegularOccupantDatacoverageAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest@6cc4c815]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:42:01Z" finished-at="2019-10-22T13:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="VerifyGeneralRegularOccupantDatacoverageAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest@6cc4c815]" name="VerifyGeneralRegularOccupantDatacoverageAPI" duration-ms="1642" started-at="2019-10-22T13:42:01Z" finished-at="2019-10-22T13:42:03Z">
           <params>
             <param index="0">
               <value>
@@ -266,7 +320,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[ProjectIDBuildingOther]]>
+                <![CDATA[ProjectIDBuildingNone]]>
               </value>
             </param>
             <param index="2">
@@ -277,38 +331,1524 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RecomputeVerifyTotalScoreGraphGetAPI -->
-        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest@61a485d2]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-16T17:11:26Z" finished-at="2019-10-16T17:11:26Z">
+        </test-method> <!-- VerifyGeneralRegularOccupantDatacoverageAPI -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest@6cc4c815]" name="end" is-config="true" duration-ms="64" started-at="2019-10-22T13:42:03Z" finished-at="2019-10-22T13:42:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest@61a485d2]" name="start" is-config="true" duration-ms="0" started-at="2019-10-16T17:11:26Z" finished-at="2019-10-16T17:11:26Z">
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest@6cc4c815]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-22T13:42:03Z" finished-at="2019-10-22T13:42:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest.RecomputeVerifyTotalScoreGraphGetAPI(java.lang.String,java.lang.String,int)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest@61a485d2]" name="teardown" is-config="true" duration-ms="2" started-at="2019-10-16T17:11:51Z" finished-at="2019-10-16T17:11:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RecomputeVerifyTotalScoreGraphGetAPI status=SUCCESS method=RecomputeVerifyTotalScoreGraphGetAPITest.RecomputeVerifyTotalScoreGraphGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest@61a485d2] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyGeneralRegularOccupantDatacoverageAPI status=SUCCESS method=VerifyGeneralRegularOccupantDatacoverageAPITest.VerifyGeneralRegularOccupantDatacoverageAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest@6cc4c815] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest@61a485d2]" name="end" is-config="true" duration-ms="147" started-at="2019-10-16T17:11:51Z" finished-at="2019-10-16T17:11:51Z">
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest@402f32ff]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:24Z" finished-at="2019-10-22T13:41:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest@402f32ff]" name="setBaseUri" is-config="true" duration-ms="126" started-at="2019-10-22T13:41:24Z" finished-at="2019-10-22T13:41:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest@402f32ff]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:24Z" finished-at="2019-10-22T13:41:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest.CreateAssetPOSTAPI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest@402f32ff]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:24Z" finished-at="2019-10-22T13:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="CreateAssetPOSTAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest@402f32ff]" name="CreateAssetPOSTAPI" duration-ms="5054" started-at="2019-10-22T13:41:24Z" finished-at="2019-10-22T13:41:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[building]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[none]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAssetPOSTAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest@402f32ff]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:29Z" finished-at="2019-10-22T13:41:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateAssetPOSTAPI status=SUCCESS method=CreateAssetBuildingV3APITest.CreateAssetPOSTAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest@402f32ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest@402f32ff]" name="end" is-config="true" duration-ms="80" started-at="2019-10-22T13:41:29Z" finished-at="2019-10-22T13:41:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest -->
-    </test> <!-- CompleteFlowTest-Building-Other -->
-  </suite> <!-- BuildingV3Beta -->
+      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest@3a82f6ef]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:42:03Z" finished-at="2019-10-22T13:42:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest@3a82f6ef]" name="setBaseUri" is-config="true" duration-ms="110" started-at="2019-10-22T13:42:03Z" finished-at="2019-10-22T13:42:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest@3a82f6ef]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:42:03Z" finished-at="2019-10-22T13:42:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest@3a82f6ef]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:42:03Z" finished-at="2019-10-22T13:42:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest.SetGeneralVisitorOccupantPUTAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="SetGeneralVisitorOccupantPUTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest@3a82f6ef]" name="SetGeneralVisitorOccupantPUTAPI" duration-ms="1839" started-at="2019-10-22T13:42:03Z" finished-at="2019-10-22T13:42:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetGeneralVisitorOccupantPUTAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest@3a82f6ef]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:42:05Z" finished-at="2019-10-22T13:42:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SetGeneralVisitorOccupantPUTAPI status=SUCCESS method=SetGeneralVisitorOccupantPUTAPITest.SetGeneralVisitorOccupantPUTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest@3a82f6ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest@3a82f6ef]" name="end" is-config="true" duration-ms="78" started-at="2019-10-22T13:42:05Z" finished-at="2019-10-22T13:42:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest@548b7f67]" name="setBaseUri" is-config="true" duration-ms="196" started-at="2019-10-22T13:41:35Z" finished-at="2019-10-22T13:41:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest@548b7f67]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:35Z" finished-at="2019-10-22T13:41:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest@548b7f67]" name="ExtentReportConfig" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:35Z" finished-at="2019-10-22T13:41:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest@548b7f67]" name="start" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:35Z" finished-at="2019-10-22T13:41:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest.municipalitySuppliedPortableWaterCreatePOSTAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="municipalitySuppliedPortableWaterCreatePOSTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest@548b7f67]" name="municipalitySuppliedPortableWaterCreatePOSTAPI" duration-ms="1740" started-at="2019-10-22T13:41:35Z" finished-at="2019-10-22T13:41:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- municipalitySuppliedPortableWaterCreatePOSTAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest@548b7f67]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:37Z" finished-at="2019-10-22T13:41:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=municipalitySuppliedPortableWaterCreatePOSTAPI status=SUCCESS method=MunicipalitySuppliedPortableWaterCreatePOSTAPITest.municipalitySuppliedPortableWaterCreatePOSTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest@548b7f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest@548b7f67]" name="end" is-config="true" duration-ms="135" started-at="2019-10-22T13:41:37Z" finished-at="2019-10-22T13:41:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest@5f375618]" name="setBaseUri" is-config="true" duration-ms="99" started-at="2019-10-22T13:41:43Z" finished-at="2019-10-22T13:41:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest@5f375618]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:43Z" finished-at="2019-10-22T13:41:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest@5f375618]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:43Z" finished-at="2019-10-22T13:41:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest.SurveyAllRoutesFeedbackVisitorAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest@5f375618]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:43Z" finished-at="2019-10-22T13:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="SurveyAllRoutesFeedbackVisitorAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest@5f375618]" name="SurveyAllRoutesFeedbackVisitorAPI" duration-ms="1482" started-at="2019-10-22T13:41:43Z" finished-at="2019-10-22T13:41:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SurveyAllRoutesFeedbackVisitorAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest@5f375618]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:44Z" finished-at="2019-10-22T13:41:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SurveyAllRoutesFeedbackVisitorAPI status=SUCCESS method=SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest.SurveyAllRoutesFeedbackVisitorAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest@5f375618] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest@5f375618]" name="end" is-config="true" duration-ms="91" started-at="2019-10-22T13:41:44Z" finished-at="2019-10-22T13:41:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest@643b1d11]" name="setBaseUri" is-config="true" duration-ms="198" started-at="2019-10-22T13:42:07Z" finished-at="2019-10-22T13:42:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest@643b1d11]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:42:07Z" finished-at="2019-10-22T13:42:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest@643b1d11]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:42:07Z" finished-at="2019-10-22T13:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest@643b1d11]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:42:07Z" finished-at="2019-10-22T13:42:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest.ExcludeSpacesTransportOccupantPOSTAPI(java.lang.String,java.lang.String,int) throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="FAIL" signature="ExcludeSpacesTransportOccupantPOSTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest@643b1d11]" name="ExcludeSpacesTransportOccupantPOSTAPI" duration-ms="1400" started-at="2019-10-22T13:42:07Z" finished-at="2019-10-22T13:42:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [403] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [403] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.Utill.Controller.Assertion.verifyStatusCode(Assertion.java:21)
+	at com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest.ExcludeSpacesTransportOccupantPOSTAPI(NegUpdateTransportOccupantPOSTAPITest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcludeSpacesTransportOccupantPOSTAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest@643b1d11]" name="teardown" is-config="true" duration-ms="2" started-at="2019-10-22T13:42:09Z" finished-at="2019-10-22T13:42:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ExcludeSpacesTransportOccupantPOSTAPI status=FAILURE method=NegUpdateTransportOccupantPOSTAPITest.ExcludeSpacesTransportOccupantPOSTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest@643b1d11] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest@643b1d11]" name="end" is-config="true" duration-ms="71" started-at="2019-10-22T13:42:09Z" finished-at="2019-10-22T13:42:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest@5ae9a829]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:31Z" finished-at="2019-10-22T13:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest@5ae9a829]" name="setBaseUri" is-config="true" duration-ms="104" started-at="2019-10-22T13:41:31Z" finished-at="2019-10-22T13:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest@5ae9a829]" name="ExtentReportConfig" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:31Z" finished-at="2019-10-22T13:41:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="ElectricityPurchasedFromGridCreatePOST(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest@5ae9a829]" name="ElectricityPurchasedFromGridCreatePOST" duration-ms="1768" started-at="2019-10-22T13:41:31Z" finished-at="2019-10-22T13:41:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ElectricityPurchasedFromGridCreatePOST -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest@5ae9a829]" name="start" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:31Z" finished-at="2019-10-22T13:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest.ElectricityPurchasedFromGridCreatePOST(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest@5ae9a829]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:33Z" finished-at="2019-10-22T13:41:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ElectricityPurchasedFromGridCreatePOST status=SUCCESS method=ElectricityPurchasedFromGridCreatePOSTAPITest.ElectricityPurchasedFromGridCreatePOST(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest@5ae9a829] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest@5ae9a829]" name="end" is-config="true" duration-ms="85" started-at="2019-10-22T13:41:33Z" finished-at="2019-10-22T13:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest@6d8a00e3]" name="setBaseUri" is-config="true" duration-ms="181" started-at="2019-10-22T13:41:33Z" finished-at="2019-10-22T13:41:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest@6d8a00e3]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:33Z" finished-at="2019-10-22T13:41:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest@6d8a00e3]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:34Z" finished-at="2019-10-22T13:41:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest@6d8a00e3]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:34Z" finished-at="2019-10-22T13:41:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest.EnergyCreate180DaysDataPostAPI() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="EnergyCreate180DaysDataPostAPI()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest@6d8a00e3]" name="EnergyCreate180DaysDataPostAPI" duration-ms="1468" started-at="2019-10-22T13:41:34Z" finished-at="2019-10-22T13:41:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyCreate180DaysDataPostAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest@6d8a00e3]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:35Z" finished-at="2019-10-22T13:41:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EnergyCreate180DaysDataPostAPI status=SUCCESS method=EnergyCreate180DaysDataPostAPITest.EnergyCreate180DaysDataPostAPI()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest@6d8a00e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest@6d8a00e3]" name="end" is-config="true" duration-ms="86" started-at="2019-10-22T13:41:35Z" finished-at="2019-10-22T13:41:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest -->
+      <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@6d78f375]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:39Z" finished-at="2019-10-22T13:41:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@6d78f375]" name="setBaseUri" is-config="true" duration-ms="108" started-at="2019-10-22T13:41:39Z" finished-at="2019-10-22T13:41:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@6d78f375]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:39Z" finished-at="2019-10-22T13:41:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest.WasteCreatePOSTAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@6d78f375]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:39Z" finished-at="2019-10-22T13:41:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="WasteCreatePOSTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@6d78f375]" name="WasteCreatePOSTAPI" duration-ms="1722" started-at="2019-10-22T13:41:39Z" finished-at="2019-10-22T13:41:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WasteCreatePOSTAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@6d78f375]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:41Z" finished-at="2019-10-22T13:41:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=WasteCreatePOSTAPI status=SUCCESS method=WasteCreatePOSTAPITest.WasteCreatePOSTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@6d78f375] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest@6d78f375]" name="end" is-config="true" duration-ms="86" started-at="2019-10-22T13:41:41Z" finished-at="2019-10-22T13:41:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.LoginAPITest@48eff760]" name="getSuiteName" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:19Z" finished-at="2019-10-22T13:41:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.LoginAPITest@48eff760]" name="setBaseUri" is-config="true" duration-ms="201" started-at="2019-10-22T13:41:19Z" finished-at="2019-10-22T13:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.LoginAPITest@48eff760]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:20Z" finished-at="2019-10-22T13:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.Common.LoginAPITest.LoginAPI()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.LoginAPITest@48eff760]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:20Z" finished-at="2019-10-22T13:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@48eff760]" name="LoginAPI" duration-ms="4156" started-at="2019-10-22T13:41:20Z" finished-at="2019-10-22T13:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.LoginAPITest@48eff760]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:24Z" finished-at="2019-10-22T13:41:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginAPI status=SUCCESS method=LoginAPITest.LoginAPI()[pri:0, instance:com.arcapi.Common.LoginAPITest@48eff760] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.LoginAPITest@48eff760]" name="end" is-config="true" duration-ms="87" started-at="2019-10-22T13:41:24Z" finished-at="2019-10-22T13:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@1810399e]" name="setBaseUri" is-config="true" duration-ms="123" started-at="2019-10-22T13:41:44Z" finished-at="2019-10-22T13:41:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@1810399e]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:44Z" finished-at="2019-10-22T13:41:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@1810399e]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:45Z" finished-at="2019-10-22T13:41:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.Buildingtestcases.CO2MeterCreateAPITest.CO2MeterCreateAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@1810399e]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:45Z" finished-at="2019-10-22T13:41:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="CO2MeterCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@1810399e]" name="CO2MeterCreateAPI" duration-ms="2005" started-at="2019-10-22T13:41:45Z" finished-at="2019-10-22T13:41:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CO2MeterCreateAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@1810399e]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:47Z" finished-at="2019-10-22T13:41:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CO2MeterCreateAPI status=SUCCESS method=CO2MeterCreateAPITest.CO2MeterCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@1810399e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.CO2MeterCreateAPITest@1810399e]" name="end" is-config="true" duration-ms="71" started-at="2019-10-22T13:41:47Z" finished-at="2019-10-22T13:41:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.Buildingtestcases.CO2MeterCreateAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest@100fc185]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:42:05Z" finished-at="2019-10-22T13:42:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest@100fc185]" name="setBaseUri" is-config="true" duration-ms="121" started-at="2019-10-22T13:42:05Z" finished-at="2019-10-22T13:42:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest@100fc185]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:42:05Z" finished-at="2019-10-22T13:42:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest@100fc185]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:42:05Z" finished-at="2019-10-22T13:42:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest.VerifyGeneralVisitorOccupantDatacoverageAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="VerifyGeneralVisitorOccupantDatacoverageAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest@100fc185]" name="VerifyGeneralVisitorOccupantDatacoverageAPI" duration-ms="1868" started-at="2019-10-22T13:42:05Z" finished-at="2019-10-22T13:42:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGeneralVisitorOccupantDatacoverageAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest@100fc185]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:42:07Z" finished-at="2019-10-22T13:42:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyGeneralVisitorOccupantDatacoverageAPI status=SUCCESS method=VerifyGeneralVisitorOccupantDatacoverageAPITest.VerifyGeneralVisitorOccupantDatacoverageAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest@100fc185] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest@100fc185]" name="end" is-config="true" duration-ms="137" started-at="2019-10-22T13:42:07Z" finished-at="2019-10-22T13:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest@56f4468b]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:58Z" finished-at="2019-10-22T13:41:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest@56f4468b]" name="setBaseUri" is-config="true" duration-ms="88" started-at="2019-10-22T13:41:58Z" finished-at="2019-10-22T13:41:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest@56f4468b]" name="ExtentReportConfig" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:58Z" finished-at="2019-10-22T13:41:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest@56f4468b]" name="start" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:58Z" finished-at="2019-10-22T13:41:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest.VerifyGeneralRegularOccupantDatacoverageAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="VerifyGeneralRegularOccupantDatacoverageAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest@56f4468b]" name="VerifyGeneralRegularOccupantDatacoverageAPI" duration-ms="2547" started-at="2019-10-22T13:41:58Z" finished-at="2019-10-22T13:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGeneralRegularOccupantDatacoverageAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest@56f4468b]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:42:01Z" finished-at="2019-10-22T13:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyGeneralRegularOccupantDatacoverageAPI status=SUCCESS method=SetGeneralRegularOccupantPUTAPITest.VerifyGeneralRegularOccupantDatacoverageAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest@56f4468b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest@56f4468b]" name="end" is-config="true" duration-ms="66" started-at="2019-10-22T13:42:01Z" finished-at="2019-10-22T13:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest@32d992b2]" name="setBaseUri" is-config="true" duration-ms="92" started-at="2019-10-22T13:41:47Z" finished-at="2019-10-22T13:41:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest@32d992b2]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:47Z" finished-at="2019-10-22T13:41:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest@32d992b2]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:47Z" finished-at="2019-10-22T13:41:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest.CO2ConsumptionCreateAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest@32d992b2]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:47Z" finished-at="2019-10-22T13:41:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="CO2ConsumptionCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest@32d992b2]" name="CO2ConsumptionCreateAPI" duration-ms="1792" started-at="2019-10-22T13:41:47Z" finished-at="2019-10-22T13:41:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CO2ConsumptionCreateAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest@32d992b2]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:49Z" finished-at="2019-10-22T13:41:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CO2ConsumptionCreateAPI status=SUCCESS method=CO2ConsumptionCreateAPITest.CO2ConsumptionCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest@32d992b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest@32d992b2]" name="end" is-config="true" duration-ms="71" started-at="2019-10-22T13:41:49Z" finished-at="2019-10-22T13:41:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest@7ac7a4e4]" name="setBaseUri" is-config="true" duration-ms="122" started-at="2019-10-22T13:41:37Z" finished-at="2019-10-22T13:41:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest@7ac7a4e4]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:37Z" finished-at="2019-10-22T13:41:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="WaterCreate180DaysDataPostAPI()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest@7ac7a4e4]" name="WaterCreate180DaysDataPostAPI" duration-ms="1719" started-at="2019-10-22T13:41:37Z" finished-at="2019-10-22T13:41:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WaterCreate180DaysDataPostAPI -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest@7ac7a4e4]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:37Z" finished-at="2019-10-22T13:41:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest@7ac7a4e4]" name="start" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:37Z" finished-at="2019-10-22T13:41:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest.WaterCreate180DaysDataPostAPI() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest@7ac7a4e4]" name="teardown" is-config="true" duration-ms="2" started-at="2019-10-22T13:41:39Z" finished-at="2019-10-22T13:41:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=WaterCreate180DaysDataPostAPI status=SUCCESS method=WaterCreate180DaysDataPostAPITest.WaterCreate180DaysDataPostAPI()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest@7ac7a4e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest@7ac7a4e4]" name="end" is-config="true" duration-ms="76" started-at="2019-10-22T13:41:39Z" finished-at="2019-10-22T13:41:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Buildingtestcases.VOCMeterCreateAPITest@215be6bb]" name="setBaseUri" is-config="true" duration-ms="95" started-at="2019-10-22T13:41:49Z" finished-at="2019-10-22T13:41:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Buildingtestcases.VOCMeterCreateAPITest@215be6bb]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:49Z" finished-at="2019-10-22T13:41:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Buildingtestcases.VOCMeterCreateAPITest@215be6bb]" name="ExtentReportConfig" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:49Z" finished-at="2019-10-22T13:41:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Buildingtestcases.VOCMeterCreateAPITest@215be6bb]" name="start" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:49Z" finished-at="2019-10-22T13:41:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.Buildingtestcases.VOCMeterCreateAPITest.VOCMeterCreateAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="VOCMeterCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.VOCMeterCreateAPITest@215be6bb]" name="VOCMeterCreateAPI" duration-ms="1643" started-at="2019-10-22T13:41:49Z" finished-at="2019-10-22T13:41:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VOCMeterCreateAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Buildingtestcases.VOCMeterCreateAPITest@215be6bb]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:50Z" finished-at="2019-10-22T13:41:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VOCMeterCreateAPI status=SUCCESS method=VOCMeterCreateAPITest.VOCMeterCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Buildingtestcases.VOCMeterCreateAPITest@215be6bb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Buildingtestcases.VOCMeterCreateAPITest@215be6bb]" name="end" is-config="true" duration-ms="86" started-at="2019-10-22T13:41:50Z" finished-at="2019-10-22T13:41:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.Buildingtestcases.VOCMeterCreateAPITest -->
+      <class name="com.arcapi.Common.AssetDetailAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.Common.AssetDetailAPITest@573f2bb1]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:29Z" finished-at="2019-10-22T13:41:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.Common.AssetDetailAPITest@573f2bb1]" name="setBaseUri" is-config="true" duration-ms="90" started-at="2019-10-22T13:41:29Z" finished-at="2019-10-22T13:41:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.Common.AssetDetailAPITest@573f2bb1]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:29Z" finished-at="2019-10-22T13:41:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.Common.AssetDetailAPITest@573f2bb1]" name="start" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:29Z" finished-at="2019-10-22T13:41:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.Common.AssetDetailAPITest.AssetDetailAPI(java.lang.String,java.lang.String,int) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="AssetDetailAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.AssetDetailAPITest@573f2bb1]" name="AssetDetailAPI" duration-ms="2012" started-at="2019-10-22T13:41:29Z" finished-at="2019-10-22T13:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssetDetailAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.Common.AssetDetailAPITest@573f2bb1]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:31Z" finished-at="2019-10-22T13:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AssetDetailAPI status=SUCCESS method=AssetDetailAPITest.AssetDetailAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.Common.AssetDetailAPITest@573f2bb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.Common.AssetDetailAPITest@573f2bb1]" name="end" is-config="true" duration-ms="80" started-at="2019-10-22T13:41:31Z" finished-at="2019-10-22T13:41:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.Common.AssetDetailAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest@5d5eef3d]" name="getSuiteName" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:57Z" finished-at="2019-10-22T13:41:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest@5d5eef3d]" name="setBaseUri" is-config="true" duration-ms="89" started-at="2019-10-22T13:41:57Z" finished-at="2019-10-22T13:41:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest@5d5eef3d]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:57Z" finished-at="2019-10-22T13:41:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest@5d5eef3d]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:57Z" finished-at="2019-10-22T13:41:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest.OccupatGeneralRegularVisitorUpdateAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="OccupatGeneralRegularVisitorUpdateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest@5d5eef3d]" name="OccupatGeneralRegularVisitorUpdateAPI" duration-ms="1517" started-at="2019-10-22T13:41:57Z" finished-at="2019-10-22T13:41:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OccupatGeneralRegularVisitorUpdateAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest@5d5eef3d]" name="teardown" is-config="true" duration-ms="2" started-at="2019-10-22T13:41:58Z" finished-at="2019-10-22T13:41:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OccupatGeneralRegularVisitorUpdateAPI status=SUCCESS method=OccupatGeneralRegularVisitorUpdateAPITest.OccupatGeneralRegularVisitorUpdateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest@5d5eef3d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest@5d5eef3d]" name="end" is-config="true" duration-ms="95" started-at="2019-10-22T13:41:58Z" finished-at="2019-10-22T13:41:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest@5dfcfece]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:52Z" finished-at="2019-10-22T13:41:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest@5dfcfece]" name="setBaseUri" is-config="true" duration-ms="111" started-at="2019-10-22T13:41:52Z" finished-at="2019-10-22T13:41:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="SetGeneralAllOccupantPUTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest@5dfcfece]" name="SetGeneralAllOccupantPUTAPI" duration-ms="2040" started-at="2019-10-22T13:41:53Z" finished-at="2019-10-22T13:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetGeneralAllOccupantPUTAPI -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest@5dfcfece]" name="start" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:53Z" finished-at="2019-10-22T13:41:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest.SetGeneralAllOccupantPUTAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest@5dfcfece]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:53Z" finished-at="2019-10-22T13:41:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest@5dfcfece]" name="teardown" is-config="true" duration-ms="2" started-at="2019-10-22T13:41:55Z" finished-at="2019-10-22T13:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SetGeneralAllOccupantPUTAPI status=SUCCESS method=SetGeneralAllOccupantPUTAPITest.SetGeneralAllOccupantPUTAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest@5dfcfece] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest@5dfcfece]" name="end" is-config="true" duration-ms="87" started-at="2019-10-22T13:41:55Z" finished-at="2019-10-22T13:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest@4439f31e]" name="getSuiteName" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:50Z" finished-at="2019-10-22T13:41:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest@4439f31e]" name="setBaseUri" is-config="true" duration-ms="147" started-at="2019-10-22T13:41:50Z" finished-at="2019-10-22T13:41:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest@4439f31e]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:51Z" finished-at="2019-10-22T13:41:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest.VOCConsumptionCreateAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest@4439f31e]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:51Z" finished-at="2019-10-22T13:41:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="VOCConsumptionCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest@4439f31e]" name="VOCConsumptionCreateAPI" duration-ms="1730" started-at="2019-10-22T13:41:51Z" finished-at="2019-10-22T13:41:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VOCConsumptionCreateAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest@4439f31e]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:52Z" finished-at="2019-10-22T13:41:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VOCConsumptionCreateAPI status=SUCCESS method=VOCConsumptionCreateAPITest.VOCConsumptionCreateAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest@4439f31e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest@4439f31e]" name="end" is-config="true" duration-ms="71" started-at="2019-10-22T13:41:52Z" finished-at="2019-10-22T13:41:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest">
+        <test-method status="PASS" signature="setBaseUri(java.lang.String)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest@23ceabc1]" name="setBaseUri" is-config="true" duration-ms="102" started-at="2019-10-22T13:41:55Z" finished-at="2019-10-22T13:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stg2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseUri -->
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest@23ceabc1]" name="getSuiteName" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:55Z" finished-at="2019-10-22T13:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21be14c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="start(java.lang.reflect.Method)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest@23ceabc1]" name="start" is-config="true" duration-ms="1" started-at="2019-10-22T13:41:55Z" finished-at="2019-10-22T13:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest.VerifyDatacoverageGetAPI(java.lang.String,java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ExtentReportConfig()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest@23ceabc1]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:55Z" finished-at="2019-10-22T13:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="VerifyDatacoverageGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest@23ceabc1]" name="VerifyDatacoverageGetAPI" duration-ms="1788" started-at="2019-10-22T13:41:55Z" finished-at="2019-10-22T13:41:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProjectIDBuildingNone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDatacoverageGetAPI -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest@23ceabc1]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-22T13:41:57Z" finished-at="2019-10-22T13:41:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyDatacoverageGetAPI status=SUCCESS method=VerifyDatacoverageGetAPITest.VerifyDatacoverageGetAPI(java.lang.String, java.lang.String, int)[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest@23ceabc1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest@23ceabc1]" name="end" is-config="true" duration-ms="60" started-at="2019-10-22T13:41:57Z" finished-at="2019-10-22T13:41:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest -->
+    </test> <!-- Review-Scenario -->
+  </suite> <!-- ScenarioBasedTesting -->
 </testng-results>

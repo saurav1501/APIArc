@@ -2,7 +2,7 @@
 
 <suite name="ScenarioBasedTesting">
 
- <test name="TeamScenario-TeamManager-TeamMemberPayment">
+<test name="Review-Scenario">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
 <parameter name="SoReference" value="performance score" />
@@ -15,6 +15,44 @@
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest"></class>   
+<class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest"></class> 
+<class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
+<class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"></class> 
+<class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest"></class> 
+<class name="com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest"></class>
+
+<class name="com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest"></class>
+
+<!--  
+<class name="com.arcapi.release1_18testcases.AssetUpdateExcludeSpacesTest"></class> 
+
+<class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesEnergyOccupantPUTAPITest"></class> 
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesWaterOccupantPUTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class> 
+<class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesWasteOccupantPUTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class> 
+
+<class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesTransportOccupantPOSTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.ExcludeSpacesHumanExpOccupantPOSTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class>
+
+
 <class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class> 
 <class name="com.arcapi.Common.ScoreVersionNotificationPOSTAPITest"></class> 
 <class name="com.arcapi.Common.SocreVersionUpdatePostAPITest"></class>
@@ -22,11 +60,11 @@
 <class name="com.arcapi.Common.ScoreVersionExtensionRequestQuerySetGetAPITest"></class>
 <class name="com.arcapi.Common.ScoreVersionExtensionRequestUpdatePostAPITest"></class>
 <class name="com.arcapi.Common.ScoreVersionExtensionRequestUpdateQuerysetGetAPITest"></class>
-<class name="com.arcapi.Common.Neg.ReturnReviewGetAPITest"></class>
-<class name="com.arcapi.ScenarioBasedTestcases.AssetNonUsgbcTeamMemberAddPOSTAPITest"></class>
+<class name="com.arcapi.Common.Neg.ReturnReviewGetAPITest"></class> 
 
+<class name="com.arcapi.ScenarioBasedTestcases.AssetNonUsgbcTeamMemberAddPOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberUpdateAPITest"></class>
-<class name="com.arcapi.ScenarioBasedTestcases.TeamManagerAddPOSTAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.TeamManagerAddPOSTAPITest"></class> 
 </classes>
 </test> 
 
@@ -92,8 +130,8 @@
 <parameter name ="ratings" value="PARKSMART"/> 
 <classes>
 <class name="com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest"></class>
-</classes>
-</test> 
+</classes> -->
+<!-- </test>   
 
  <test name="CompleteFlowTest-Building-None">
 <parameter name="ProjectType" value="building" />
@@ -104,7 +142,7 @@
 
 <classes>
 <class name="com.arcapi.ScenarioBasedTestcases.CheckSpaceTypeBuildingOtherAPITest"></class>
-<class name="com.arcapi.ScenarioBasedTestcases.CheckOwnerTypeBuildingOtherAPITest"></class>
+<class name="com.arcapi.ScenarioBasedTestcases.CheckOwnerTypeBuildingOtherAPITest"></class>  -->
 </classes> 
 </test> 
 </suite>

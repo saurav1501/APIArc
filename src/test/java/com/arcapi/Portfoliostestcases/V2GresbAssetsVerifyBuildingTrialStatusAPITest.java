@@ -32,7 +32,6 @@ public class V2GresbAssetsVerifyBuildingTrialStatusAPITest extends BaseClass {
 				
 	
 			}
-		
 			
 		} catch (Exception e) {
 				e.printStackTrace();

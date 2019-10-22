@@ -1,2 +1,132 @@
-2019-10-17 09:29:00 INFO  LoginAPITest:248 - Executing test: LoginAPI
-2019-10-17 09:29:00 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
+2019-10-22 13:41:05 INFO  LoginAPITest:248 - Executing test: LoginAPI
+2019-10-22 13:41:05 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
+2019-10-22 13:41:11 INFO  LoginAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:41:11 INFO  LoginAPITest:123 - Payload is  devarcbeta1@gmail.cominitpass
+2019-10-22 13:41:11 INFO  LoginAPITest:127 - SAMEORIGIN
+2019-10-22 13:41:11 INFO  LoginAPITest:130 - csrftoken=btfg1Q3yhBBiGdAMBnqAJj4Cs3OoDrrYff1beiTETCrBk9hORpjYfFVeKaUG3fSW;Path=/;Max-Age=31449600;Expires=10/20/20 8:11 AM
+sessionid=3jty6truhxybsn5wfkg012hvupthbkq8;Path=/;HttpOnly
+2019-10-22 13:41:11 INFO  LoginAPITest:131 - jlysQvg1hp83k7SOsLLiFbTB1FL8u0
+2019-10-22 13:41:12 INFO  LoginAPITest:137 - Bearer
+2019-10-22 13:41:12 INFO  LoginAPITest:138 - Post Response Time In milliseconds0
+2019-10-22 13:41:12 INFO  LoginAPITest:141 - Header is Bearer jlysQvg1hp83k7SOsLLiFbTB1FL8u0
+2019-10-22 13:41:12 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key06c50a1570bd4d40a7859ec28514b185
+2019-10-22 13:41:12 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-10-22 13:41:13 INFO  BasicAnalysisDataGetAPITest:248 - Executing test: BasicAnalysisDataGetAPI
+2019-10-22 13:41:13 INFO  BasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/basic/analytics/
+2019-10-22 13:41:15 INFO  BasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1479
+2019-10-22 13:41:15 INFO  BasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:41:20 INFO  LoginAPITest:248 - Executing test: LoginAPI
+2019-10-22 13:41:20 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
+2019-10-22 13:41:23 INFO  LoginAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:41:23 INFO  LoginAPITest:123 - Payload is  devarcbeta1@gmail.cominitpass
+2019-10-22 13:41:23 INFO  LoginAPITest:127 - SAMEORIGIN
+2019-10-22 13:41:24 INFO  LoginAPITest:130 - csrftoken=YTawRhjCVOQ5pt86gKLf2dwxzroDRwBPCLQabfLHsVCXbrCkzKJGTGVRwXc8S6c1;Path=/;Max-Age=31449600;Expires=10/20/20 8:11 AM
+sessionid=42fdi3cxqdscmbeno20i3ga4z38i2bh0;Path=/;HttpOnly
+2019-10-22 13:41:24 INFO  LoginAPITest:131 - XVCU3BZ53RLOGEONYjea3xVh9CZrlA
+2019-10-22 13:41:24 INFO  LoginAPITest:137 - Bearer
+2019-10-22 13:41:24 INFO  LoginAPITest:138 - Post Response Time In milliseconds1479
+2019-10-22 13:41:24 INFO  LoginAPITest:141 - Header is Bearer XVCU3BZ53RLOGEONYjea3xVh9CZrlA
+2019-10-22 13:41:24 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key06c50a1570bd4d40a7859ec28514b185
+2019-10-22 13:41:24 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-10-22 13:41:24 INFO  CreateAssetBuildingV3APITest:248 - Executing test: CreateAssetPOSTAPI
+2019-10-22 13:41:27 INFO  CreateAssetBuildingV3APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-10-22 13:41:29 INFO  CreateAssetBuildingV3APITest:83 - Post Response Time In milliseconds1479
+2019-10-22 13:41:29 INFO  CreateAssetBuildingV3APITest:90 - Payload is  {"name":"US-API-Building-None-24618","rating_system":"none","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"US","state":"NJ","project_type":"building","unitType":"SI","spaceType":"Multi-Family Residential: Lowrise","owner_email":"usgbcarcapi1@gmail.com","ownerType":"Educational: University, Private","confidential":false,"sign_agreement":true,"organization":"T","manageEntityCountry":"US","zip_code":"20037","operating_hours":"100"}
+2019-10-22 13:41:29 INFO  CreateAssetBuildingV3APITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:29 INFO  CreateAssetBuildingV3APITest:26 - 8000000511
+2019-10-22 13:41:29 INFO  AssetDetailAPITest:248 - Executing test: AssetDetailAPI
+2019-10-22 13:41:29 INFO  AssetDetailAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/
+2019-10-22 13:41:31 INFO  AssetDetailAPITest:28 - Get Response Time In milliseconds1729
+2019-10-22 13:41:31 INFO  AssetDetailAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:41:31 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:248 - Executing test: ElectricityPurchasedFromGridCreatePOST
+2019-10-22 13:41:31 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/meters/
+2019-10-22 13:41:33 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:33 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:90 - Payload is  {"name":"ElectricityPurchasedFromGridMeter","native_unit":"kBtu","type":"37","included":false}
+2019-10-22 13:41:33 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:34 INFO  EnergyCreate180DaysDataPostAPITest:248 - Executing test: EnergyCreate180DaysDataPostAPI
+2019-10-22 13:41:34 INFO  EnergyCreate180DaysDataPostAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/meters/ID:1044764/consumption/?recompute_score=false
+2019-10-22 13:41:35 INFO  EnergyCreate180DaysDataPostAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:35 INFO  EnergyCreate180DaysDataPostAPITest:90 - Payload is  {"end_date":"2019-10-28","reading":"100","start_date":"2019-05-01"}
+2019-10-22 13:41:35 INFO  EnergyCreate180DaysDataPostAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:35 INFO  MunicipalitySuppliedPortableWaterCreatePOSTAPITest:248 - Executing test: municipalitySuppliedPortableWaterCreatePOSTAPI
+2019-10-22 13:41:35 INFO  MunicipalitySuppliedPortableWaterCreatePOSTAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/meters/
+2019-10-22 13:41:37 INFO  MunicipalitySuppliedPortableWaterCreatePOSTAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:37 INFO  MunicipalitySuppliedPortableWaterCreatePOSTAPITest:90 - Payload is  {"name":"MunicipalitySuppliedPortableWater","native_unit":"gal","type":"47","included":false}
+2019-10-22 13:41:37 INFO  MunicipalitySuppliedPortableWaterCreatePOSTAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:37 INFO  WaterCreate180DaysDataPostAPITest:248 - Executing test: WaterCreate180DaysDataPostAPI
+2019-10-22 13:41:37 INFO  WaterCreate180DaysDataPostAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/meters/ID:1044765/consumption/?recompute_score=false
+2019-10-22 13:41:39 INFO  WaterCreate180DaysDataPostAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:39 INFO  WaterCreate180DaysDataPostAPITest:90 - Payload is  {"end_date":"2019-10-28","reading":"100","start_date":"2019-05-01"}
+2019-10-22 13:41:39 INFO  WaterCreate180DaysDataPostAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:39 INFO  WasteCreatePOSTAPITest:248 - Executing test: WasteCreatePOSTAPI
+2019-10-22 13:41:39 INFO  WasteCreatePOSTAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/waste/
+2019-10-22 13:41:41 INFO  WasteCreatePOSTAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:41 INFO  WasteCreatePOSTAPITest:90 - Payload is  {"unit":"lbs","start_date":"2019-01-01","end_date":"2019-05-01","waste_generated":"100","waste_diverted":"99"}
+2019-10-22 13:41:41 INFO  WasteCreatePOSTAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:41 INFO  SurveyAllRoutesFeedbackRegularAPIPOSTAPITest:248 - Executing test: SurveyAllRoutesFeedbackRegularAPI
+2019-10-22 13:41:41 INFO  SurveyAllRoutesFeedbackRegularAPIPOSTAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/survey/?key=mtXtg5JicT9eUqXwk6SQ98rb
+2019-10-22 13:41:43 INFO  SurveyAllRoutesFeedbackRegularAPIPOSTAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:43 INFO  SurveyAllRoutesFeedbackRegularAPIPOSTAPITest:90 - Payload is  {"routes":[{"bus":"1","car":"1","car23":"1","cars4":"1","motorcycle":"1","walk":"1","bike":"1","telecommute":"1","heavy_rail":"1","light_rail":"1"}],"tenant_name":"Saurav Sinha","response_method":"web","other_complaint":"Test Completent","feedbacks":"[\u0027views to outdoors\u0027,\u0027sound\u0027,\u0027privacy\u0027,\u0027air quality\u0027,\u0027cleanliness\u0027,\u0027light\u0027,\u0027privacy\u0027,\u0027daylight\u0027]","location":"Delhi","language":"English","satisfaction":3,"occupant_category":"regular_occupant"}
+2019-10-22 13:41:43 INFO  SurveyAllRoutesFeedbackRegularAPIPOSTAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:43 INFO  SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest:248 - Executing test: SurveyAllRoutesFeedbackVisitorAPI
+2019-10-22 13:41:43 INFO  SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/survey/?key=mtXtg5JicT9eUqXwk6SQ98rb
+2019-10-22 13:41:44 INFO  SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:44 INFO  SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest:90 - Payload is  {"routes":[{"bus":"1","car":"1","car23":"1","cars4":"1","motorcycle":"1","walk":"1","bike":"1","telecommute":"1","heavy_rail":"1","light_rail":"1"}],"tenant_name":"Saurav Sinha","response_method":"web","other_complaint":"Test Completent","feedbacks":"[\u0027dirty\u0027,\u0027cold\u0027,\u0027drafty\u0027,\u0027smelly\u0027,\u0027dark\u0027,\u0027bright\u0027,\u0027stuffy\u0027,\u0027glare\u0027,\u0027views to outdoors\u0027,\u0027loud\u0027,\u0027privacy\u0027,\u0027sound\u0027,\u0027hot\u0027,\u0027humid\u0027]","location":"Delhi","language":"English","satisfaction":-1,"occupant_category":"visitor_occupant"}
+2019-10-22 13:41:44 INFO  SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:45 INFO  CO2MeterCreateAPITest:248 - Executing test: CO2MeterCreateAPI
+2019-10-22 13:41:45 INFO  CO2MeterCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/meters/
+2019-10-22 13:41:46 INFO  CO2MeterCreateAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:46 INFO  CO2MeterCreateAPITest:90 - Payload is  {"name":"Default CO2 Meter","native_unit":"ppm","type":"206","included":true}
+2019-10-22 13:41:47 INFO  CO2MeterCreateAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:47 INFO  CO2ConsumptionCreateAPITest:248 - Executing test: CO2ConsumptionCreateAPI
+2019-10-22 13:41:47 INFO  CO2ConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/meters/ID:1044766/consumption/
+2019-10-22 13:41:48 INFO  CO2ConsumptionCreateAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:48 INFO  CO2ConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-10-28","reading":"100","start_date":"2019-05-01"}
+2019-10-22 13:41:49 INFO  CO2ConsumptionCreateAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:49 INFO  VOCMeterCreateAPITest:248 - Executing test: VOCMeterCreateAPI
+2019-10-22 13:41:49 INFO  VOCMeterCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/meters/
+2019-10-22 13:41:50 INFO  VOCMeterCreateAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:50 INFO  VOCMeterCreateAPITest:90 - Payload is  {"name":"Total Volatile Organic Compounds","native_unit":"ug/m3","type":"205","included":true}
+2019-10-22 13:41:50 INFO  VOCMeterCreateAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:51 INFO  VOCConsumptionCreateAPITest:248 - Executing test: VOCConsumptionCreateAPI
+2019-10-22 13:41:51 INFO  VOCConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/meters/ID:1044767/consumption/
+2019-10-22 13:41:52 INFO  VOCConsumptionCreateAPITest:83 - Post Response Time In milliseconds1729
+2019-10-22 13:41:52 INFO  VOCConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-10-28","reading":"100","start_date":"2019-05-01"}
+2019-10-22 13:41:52 INFO  VOCConsumptionCreateAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:53 INFO  SetGeneralAllOccupantPUTAPITest:248 - Executing test: SetGeneralAllOccupantPUTAPI
+2019-10-22 13:41:53 INFO  SetGeneralAllOccupantPUTAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/
+2019-10-22 13:41:55 INFO  SetGeneralAllOccupantPUTAPITest:231 - Put Response Time In milliseconds2024
+2019-10-22 13:41:55 INFO  SetGeneralAllOccupantPUTAPITest:235 - Payload is  {"survey_score_occupant":"total_occupant"}
+2019-10-22 13:41:55 INFO  SetGeneralAllOccupantPUTAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:41:55 INFO  VerifyDatacoverageGetAPITest:248 - Executing test: VerifyDatacoverageGetAPI
+2019-10-22 13:41:55 INFO  VerifyDatacoverageGetAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/datacoverage/
+2019-10-22 13:41:56 INFO  VerifyDatacoverageGetAPITest:28 - Get Response Time In milliseconds1702
+2019-10-22 13:41:56 INFO  VerifyDatacoverageGetAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:41:57 INFO  OccupatGeneralRegularVisitorUpdateAPITest:248 - Executing test: OccupatGeneralRegularVisitorUpdateAPI
+2019-10-22 13:41:57 INFO  OccupatGeneralRegularVisitorUpdateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/occupant/general/
+2019-10-22 13:41:58 INFO  OccupatGeneralRegularVisitorUpdateAPITest:83 - Post Response Time In milliseconds1702
+2019-10-22 13:41:58 INFO  OccupatGeneralRegularVisitorUpdateAPITest:90 - Payload is  {"visitor_occupant":"4","regular_occupant":"4","start_date":"2011-01-01","total_occupant":"3"}
+2019-10-22 13:41:58 INFO  OccupatGeneralRegularVisitorUpdateAPITest:43 - API Responded With Status Code : 201
+2019-10-22 13:41:58 INFO  SetGeneralRegularOccupantPUTAPITest:248 - Executing test: VerifyGeneralRegularOccupantDatacoverageAPI
+2019-10-22 13:41:58 INFO  SetGeneralRegularOccupantPUTAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/
+2019-10-22 13:42:01 INFO  SetGeneralRegularOccupantPUTAPITest:231 - Put Response Time In milliseconds2533
+2019-10-22 13:42:01 INFO  SetGeneralRegularOccupantPUTAPITest:235 - Payload is  {"survey_score_occupant":"regular_occupant"}
+2019-10-22 13:42:01 INFO  SetGeneralRegularOccupantPUTAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:42:01 INFO  VerifyGeneralRegularOccupantDatacoverageAPITest:248 - Executing test: VerifyGeneralRegularOccupantDatacoverageAPI
+2019-10-22 13:42:01 INFO  VerifyGeneralRegularOccupantDatacoverageAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/datacoverage/
+2019-10-22 13:42:03 INFO  VerifyGeneralRegularOccupantDatacoverageAPITest:28 - Get Response Time In milliseconds1570
+2019-10-22 13:42:03 INFO  VerifyGeneralRegularOccupantDatacoverageAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:42:03 INFO  SetGeneralVisitorOccupantPUTAPITest:248 - Executing test: SetGeneralVisitorOccupantPUTAPI
+2019-10-22 13:42:03 INFO  SetGeneralVisitorOccupantPUTAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/
+2019-10-22 13:42:05 INFO  SetGeneralVisitorOccupantPUTAPITest:231 - Put Response Time In milliseconds1832
+2019-10-22 13:42:05 INFO  SetGeneralVisitorOccupantPUTAPITest:235 - Payload is  {"survey_score_occupant":"visitor_occupant"}
+2019-10-22 13:42:05 INFO  SetGeneralVisitorOccupantPUTAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:42:05 INFO  VerifyGeneralVisitorOccupantDatacoverageAPITest:248 - Executing test: VerifyGeneralVisitorOccupantDatacoverageAPI
+2019-10-22 13:42:05 INFO  VerifyGeneralVisitorOccupantDatacoverageAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/datacoverage/
+2019-10-22 13:42:07 INFO  VerifyGeneralVisitorOccupantDatacoverageAPITest:28 - Get Response Time In milliseconds1801
+2019-10-22 13:42:07 INFO  VerifyGeneralVisitorOccupantDatacoverageAPITest:43 - API Responded With Status Code : 200
+2019-10-22 13:42:07 INFO  NegUpdateTransportOccupantPOSTAPITest:248 - Executing test: ExcludeSpacesTransportOccupantPOSTAPI
+2019-10-22 13:42:07 INFO  NegUpdateTransportOccupantPOSTAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:8000000511/occupant/transport/
+2019-10-22 13:42:09 INFO  NegUpdateTransportOccupantPOSTAPITest:83 - Post Response Time In milliseconds1801
+2019-10-22 13:42:09 INFO  NegUpdateTransportOccupantPOSTAPITest:90 - Payload is  {"visitor_occupant":"4","regular_occupant":"4","start_date":"2011-01-01","total_occupant":"3"}
+2019-10-22 13:42:09 INFO  NegUpdateTransportOccupantPOSTAPITest:43 - API Responded With Status Code : 404

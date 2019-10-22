@@ -17,7 +17,7 @@ public class WasteCreatePOSTAPITest extends BaseClass {
 		
 		try {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/waste/";
-			payload = MeterPayload.wasteMeter1();
+			payload = MeterPayload.wasteMeter4();
 			CommonMethod.res = MethodCall.POSTRequest(url, payload);
 			CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
 			data.setCellData(SheetName, "WasteID", rownumber, CommonMethod.fetchedID);

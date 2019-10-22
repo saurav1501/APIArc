@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [BuildingV3Beta]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ScenarioBasedTesting]">
   <parameter name="environment" value="stg2"/>
   <parameter name="SoReference" value="performance score"/>
-  <parameter name="ratings" value="other"/>
+  <parameter name="ratings" value="none"/>
   <parameter name="ProjectType" value="building"/>
   <parameter name="Aggrement" value="true"/>
   <parameter name="Country" value="US"/>
@@ -11,18 +11,270 @@
   <parameter name="rownumber" value="2"/>
   <parameter name="SheetName" value="STG2"/>
   <parameter name="SoReferenceSR" value="performance score"/>
-  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
-  <test name="CompleteFlowTest-Building-Other">
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+  <test name="Review-Scenario">
     <parameter name="SoReference" value="performance score"/>
-    <parameter name="ratings" value="other"/>
+    <parameter name="ratings" value="none"/>
     <parameter name="ProjectType" value="building"/>
     <parameter name="Aggrement" value="true"/>
     <parameter name="rownumber" value="2"/>
     <parameter name="SoReferenceSR" value="performance score"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
-      <class name="com.arcapi.Common.V2.ResampledTotalScoreGetAPITest"/>
-      <class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest"/>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
+      <class name="com.arcapi.Common.AssetDetailAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest"/>
+      <class name="com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest"/>
     </classes>
-  </test> <!-- CompleteFlowTest-Building-Other -->
-</suite> <!-- Failed suite [BuildingV3Beta] -->
+  </test> <!-- Review-Scenario -->
+  <test name="Review-Scenario(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="none"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="Aggrement" value="true"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.OccupatGeneralRegularVisitorUpdateAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.WaterCreate180DaysDataPostAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExcludeSpacesTransportOccupantPOSTAPI" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.NegUpdateTransportOccupantPOSTAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.VerifyGeneralRegularOccupantDatacoverageAPITest -->
+      <class name="com.arcapi.Common.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetDetailAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.VerifyGeneralVisitorOccupantDatacoverageAPITest -->
+      <class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.VOCMeterCreateAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.SetGeneralRegularOccupantPUTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CO2MeterCreateAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.SetGeneralVisitorOccupantPUTAPITest -->
+      <class name="com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest -->
+      <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest -->
+    </classes>
+  </test> <!-- Review-Scenario(failed) -->
+</suite> <!-- Failed suite [ScenarioBasedTesting] -->

@@ -1,6 +1,4 @@
 package com.arcapi.Buildingtestcases;
-import java.io.IOException;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -30,7 +28,7 @@ public class MunicipalitySuppliedPortableWaterCreatePOSTAPITest extends BaseClas
 
 				Assertion.verifyStatusCode(CommonMethod.res, 201);
 			} catch (JsonProcessingException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 		}

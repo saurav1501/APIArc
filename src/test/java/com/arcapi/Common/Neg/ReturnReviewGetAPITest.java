@@ -15,7 +15,7 @@ public class ReturnReviewGetAPITest extends BaseClass {
 		try {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/review/return/";
 			CommonMethod.res= MethodCall.GETRequest(url);
-			Assertion.verifyStatusCode(	CommonMethod.res, 400);
+			Assertion.verifyStatusCode(	CommonMethod.res, 403);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

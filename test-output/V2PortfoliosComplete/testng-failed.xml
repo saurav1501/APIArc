@@ -39,6 +39,7 @@
       <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPUTAPITest"/>
       <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest"/>
       <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest"/>
+      <class name="com.arcapi.Common.LoginAPITest"/>
       <class name="com.arcapi.Portfoliostestcases.VerifyGresbAssetsDetailsGetAPITest"/>
       <class name="com.arcapi.Portfoliostestcases.V2GresbAssetsVerifyBuildingTrialStatusAPITest"/>
     </classes>
@@ -51,6 +52,16 @@
     <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailGetAPITest">
         <methods>
           <include name="teardown"/>
@@ -61,16 +72,6 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailGetAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosDetailPUTAPITest">
         <methods>
           <include name="teardown"/>
@@ -81,6 +82,16 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosDetailPUTAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest -->
       <class name="com.arcapi.Portfoliostestcases.VerifyGresbAssetsDetailsGetAPITest">
         <methods>
           <include name="teardown"/>
@@ -88,7 +99,6 @@
           <include name="start"/>
           <include name="getSuiteName"/>
           <include name="setBaseUri"/>
-          <include name="GresbAssetsDetailsGetAPI" invocation-numbers="0"/>
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.VerifyGresbAssetsDetailsGetAPITest -->
@@ -112,16 +122,6 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.GresbAssetsExsitingIDPostAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosGoalsUpdateAPITest">
         <methods>
           <include name="teardown"/>
@@ -132,6 +132,16 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosGoalsUpdateAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsGetAPITest">
         <methods>
           <include name="teardown"/>
@@ -202,16 +212,6 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetGetAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosGoalsDetailAPITest">
         <methods>
           <include name="teardown"/>
@@ -222,6 +222,16 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosGoalsDetailAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosGetAPITest">
         <methods>
           <include name="teardown"/>
