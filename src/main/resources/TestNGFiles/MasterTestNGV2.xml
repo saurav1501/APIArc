@@ -1,13 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="MasterAPITestCasesSuite">
-<!-- <parameter name="environment" value="stg2"/> -->
+
+<!-- <parameter name="environment" value="stg2"/> 
+ <parameter name="SheetName" value="QAS2"/> -->
 
 <parameter name="environment" value="${env}" />
 <parameter name="SheetName" value="${sheet}" />
 
 
 
-<!-- <parameter name="SheetName" value="QAS2"/> -->
+ <parameter name="SheetName" value="QAS2"/>
 <parameter name="Country" value="US"/>
 <parameter name="PaymentType" value="CreditCardPayment"/>
 
