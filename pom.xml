@@ -38,9 +38,16 @@
                 <systemPropertyVariables>
                     <environment>${env}</environment>
                 </systemPropertyVariables>
+                  
+                  <systemPropertyVariables>
+                    <environment>${sheet}</environment>
+                </systemPropertyVariables>
+                
+                
 					<suiteXmlFiles>
-						<suiteXmlFile>src/main/resources/TestNGFiles/MasterTestNGV2.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/resources/TestNGFiles/${user}</suiteXmlFile>
    			</suiteXmlFiles>
+   			
 				</configuration>
 			</plugin>
  <plugin>
