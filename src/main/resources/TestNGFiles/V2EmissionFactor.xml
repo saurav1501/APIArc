@@ -80,7 +80,7 @@
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="none"></parameter>
 <parameter name="CustomSheetName" value="Emission"/>
-<parameter name="Aggrement" value="false"></parameter>
+<parameter name="Aggrement" value="true"></parameter>
 
 <classes>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class> 
@@ -88,7 +88,7 @@
 <class name="com.arcapi.release1_18testcases.MetersAPIAreaTest"></class> 
 <class name="com.arcapi.release1_18testcases.OccupantPostAPITest"></class> 
 <class name="com.arcapi.release1_18testcases.OccupantGetAPITest"></class> 
-<!-- <class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest"></class>   -->
+<class name="com.arcapi.release1_18testcases.OccupantDeleteAPITest"></class>  
 <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamTrackerDateAPITest"></class>
 <class name="com.arcapi.release1_18testcases.AssetDetailQueryParamCategoryAPITest"></class>
 

@@ -23,11 +23,11 @@ public class VerifyGeneralVisitorOccupantDatacoverageAPITest extends BaseClass {
 		
 		Assertion.verifyStatusCode(CommonMethod.res, 200);
 		
-		String energy = CommonMethod.res.path("energy").toString();
-		String water = CommonMethod.res.path("water").toString();
-		String waste = CommonMethod.res.path("waste").toString();
-		String transport = CommonMethod.res.path("transport").toString();
-		String satisfaction = CommonMethod.res.path("satisfaction").toString();
+		String energy = CommonMethod.res.path("energy.percentage").toString();
+		String water = CommonMethod.res.path("water.percentage").toString();
+		String waste = CommonMethod.res.path("waste.percentage").toString();
+		String transport = CommonMethod.res.path("transport.percentage").toString();
+		String satisfaction = CommonMethod.res.path("satisfaction.percentage").toString();
 		String co2 = CommonMethod.res.path("co2").toString();
 		String voc = CommonMethod.res.path("voc").toString();
 		

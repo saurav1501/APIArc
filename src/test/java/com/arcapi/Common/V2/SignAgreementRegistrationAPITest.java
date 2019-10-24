@@ -27,7 +27,7 @@ public class SignAgreementRegistrationAPITest extends BaseClass {
 				File Value = CommonMethod.file;
 				map.put("SoReference","REGISTRATION");
 				CommonMethod.res = MethodCall.POSTRequest(url, map,Key,Value);					
-				Assertion.verifyStatusCode(CommonMethod.res, 409);
+				Assertion.verifyStatusCode(CommonMethod.res, 403);
 						
 			} catch (Exception e) {
 				e.printStackTrace();

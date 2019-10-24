@@ -123,7 +123,9 @@ public class BaseClass {
 		
 		FileInputStream file5 = new FileInputStream(
 				System.getProperty("user.dir") + "/src/main/resources/stg2.properties");
-
+		
+		FileInputStream file6 = new FileInputStream(
+				System.getProperty("user.dir") + "/src/main/resources/qas2.properties");
 		
 		if(environment.equalsIgnoreCase("stg")) {
 
@@ -183,7 +185,20 @@ public class BaseClass {
 			reqSpecLEED = new RequestSpecBuilder().setBaseUri(baseURLLEED).build();
 
 		}
-		
+		else if(environment.equalsIgnoreCase("qas2")) {
+			prop.load(file6);
+			baseURL = prop.getProperty("env");
+			sheetName= prop.getProperty("sheetName");
+			username=data.getCellData(sheetName, "NormalUserName", rowNumTwo);
+			password=data.getCellData(sheetName, "NormalPassword", rowNumTwo);
+			rowNumTwo= Integer.parseInt(prop.getProperty("rowNumTwo"));
+			rowNumThree= Integer.parseInt(prop.getProperty("rowNumThree"));
+			reqSpec = new RequestSpecBuilder().setBaseUri(baseURL).build();
+			SubscriptionKey = "5a41833022f046dc951383ead38d16d3";
+			baseURLLEED = prop.getProperty("envleed");
+			reqSpecLEED = new RequestSpecBuilder().setBaseUri(baseURLLEED).build();
+
+		}
 		else {
 			prop.load(file2);
 			baseURL = prop.getProperty("env");

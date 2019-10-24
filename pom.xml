@@ -39,7 +39,7 @@
                     <environment>${env}</environment>
                 </systemPropertyVariables>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/main/resources/TestNGFiles/MasterTestNG.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/resources/TestNGFiles/MasterTestNGV2.xml</suiteXmlFile>
    			</suiteXmlFiles>
 				</configuration>
 			</plugin>
