@@ -115,6 +115,7 @@ public class BaseClass {
 				System.getProperty("user.dir") + "/src/main/resources/stg.properties");
 		FileInputStream file2 = new FileInputStream(
 				System.getProperty("user.dir") + "/src/main/resources/qas.properties");
+		
 		FileInputStream file3 = new FileInputStream(
 		System.getProperty("user.dir") + "/src/main/resources/dev.properties");
 

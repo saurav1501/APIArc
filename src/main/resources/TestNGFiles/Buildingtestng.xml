@@ -2,7 +2,7 @@
 <suite name="BuildingV3CompletePositiveSuite">
 
 
-<test name="CompleteFlowTest-Building-Other">
+<!-- <test name="CompleteFlowTest-Building-Other">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
 <parameter name="SoReference" value="performance score" />
@@ -143,7 +143,7 @@
 
 </classes> 
 </test> 
-
+ -->
 <test name="CompleteFlowTest-Building-None">
 <parameter name="ProjectType" value="building" />
 <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
