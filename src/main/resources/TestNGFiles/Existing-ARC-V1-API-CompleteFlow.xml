@@ -12,7 +12,7 @@
 <parameter name="ratings" value="other"></parameter>
 
 <classes> 
-<class name="com.arcapi.Common.LoginAPITest"></class> 
+<!-- <class name="com.arcapi.Common.LoginAPITest"></class>  -->
 </classes>
 </test>
 </suite> 

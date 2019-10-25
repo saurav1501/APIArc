@@ -55,7 +55,7 @@
 </test>
 
 
-<test name="CrossRatingSystem-Transit">
+<!-- <test name="CrossRatingSystem-Transit">
 <parameter name="ProjectType" value="transit" />
 <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove" />
 <parameter name="SoReference" value="review" />
@@ -76,7 +76,7 @@
 <class name="com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest"></class>
 
 </classes>
-</test>
+</test> -->
 
 
 <test name="CrossRatingSystem-Parksmart">

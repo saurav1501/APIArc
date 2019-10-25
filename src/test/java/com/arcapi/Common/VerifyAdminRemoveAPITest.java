@@ -12,10 +12,10 @@ import com.arc.driver.CommonMethod;
 public class VerifyAdminRemoveAPITest extends BaseClass {
 
 	@Test(groups="CheckTeam")
-	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
-	public void VerifyAdminRemoveAPI(String SheetName,String ProjectTypeColumn, int rownumber){
+	@Parameters({"SheetName","ProjectTypeColumn","rownumber" })
+	public void VerifyAdminRemoveAPI(String SheetName, String ProjectTypeColumn, int rownumber){
 		try {
-		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/teams/update/";
+		url = "/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/teams/update/";
 		payload = OtherDetails.detalisInvalid();
 		CommonMethod.res = MethodCall.DELETERequest(url, payload);			
 		Assertion.verifyStatusCode(CommonMethod.res, 403);

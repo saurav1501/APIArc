@@ -16,7 +16,7 @@ public class AssetTeamMemberAddPOSTAPITest extends BaseClass {
 	public void AssetTeamMemberAddPOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber){
         
 		try {
-			url= "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/teams/";
+			url= "/assets/LEED:"+data.getCellData(SheetName, ProjectTypeColumn, rownumber)+"/teams/";
 			payload = OtherDetails.detalis();
 			CommonMethod.res = MethodCall.POSTRequest(url, payload);
 			Assertion.verifyStatusCode(	CommonMethod.res, 200);

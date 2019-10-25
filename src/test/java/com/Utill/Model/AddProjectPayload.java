@@ -357,6 +357,7 @@ public class AddProjectPayload extends BaseClass {
         RandomData.ownerType();
         RandomData.setOwnerCountryAddressOwnerOrg(Country);
         ProjectName= RandomData.projectName(Country,Rating,ProjectType);
+        data.setCellData(sheetName,"ProjectName" ,2, ProjectName);
         
         addProject.setName(ProjectName);
         addProject.setRating_system(Rating);

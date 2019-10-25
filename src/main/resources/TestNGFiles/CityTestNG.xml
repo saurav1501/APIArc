@@ -5,7 +5,7 @@
 <test name="CompleteFlowTest-City-None">
 
 <parameter name="ProjectType" value="city" />
-<parameter name="ProjectTypeColumn" value="ProjectIDCityOther" />
+<parameter name="ProjectTypeColumn" value="ProjectIDCityOther"/>
 <parameter name="SoReference" value="performance score" />
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
@@ -131,9 +131,6 @@
 
 </classes>
 </test>
-
-
-
 </suite> 
   
 

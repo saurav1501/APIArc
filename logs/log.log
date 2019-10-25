@@ -1,85 +1,308 @@
-2019-10-24 11:48:26 INFO  LOAuthenticateAPITest:263 - Executing test: LOAuthenticateAPI
-2019-10-24 11:48:30 INFO  LOAuthenticateAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:48:31 INFO  LEEDv4OMExistingBuildingsAPITest:263 - Executing test: LEEDv4OMExistingBuildingsAPI
-2019-10-24 11:48:35 INFO  LEEDv4OMExistingBuildingsAPITest:307 - POST Request Call URL https://leedonline-api-stg.usgbc.org/v1/json/Project/register/INP
-2019-10-24 11:48:41 INFO  LEEDv4OMExistingBuildingsAPITest:320 - Post Response Time In milliseconds3122
-2019-10-24 11:48:41 INFO  LEEDv4OMExistingBuildingsAPITest:326 - Payload is  {"anticipatedType":"Warehouse: Nonrefrigerated Distribution/Shipping","address.postalCode":"20037","address.city":"Test City","owner.name":"Test Owner","address.state":"IN","date.start":"2018-06-01","owner.organization":"EymX5ZKWALZae","description":"Register from LO API","ratingSystem":"v4_1.oEb","address.geoPoints.latitude":"120.12345678","address.geoPoints.longitude":"10.46467895","address.country":"US","unitType":"SI","owner.type":"Non-Profit (that do not fit into other categories)","date.end":"2028-07-01","owner.email":"newserver2@gmail.com","grossFootage":"1000","owner.country":"US","name":"API LEED v4 O+M: Existing BuildingsUS88","address.address1":"Test Address","cmd":"register"}
-2019-10-24 11:48:41 INFO  LEEDv4OMExistingBuildingsAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:48:41 INFO  LoginAPITest:263 - Executing test: LoginAPI
-2019-10-24 11:48:41 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
-2019-10-24 11:48:46 INFO  LoginAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:48:46 INFO  LoginAPITest:123 - Payload is  devarcbeta1@gmail.cominitpass
-2019-10-24 11:48:46 INFO  LoginAPITest:127 - SAMEORIGIN
-2019-10-24 11:48:46 INFO  LoginAPITest:130 - csrftoken=0Ncl2Ce4c6x4ZV8xVjVdPBxKX0vu5MeVhxmhQ380diBY3SLndfxeY3Msb61Uz6Fe;Path=/;Max-Age=31449600;Expires=10/22/20 6:18 AM
-sessionid=xaczhtf6o40v39zcx4n0k983v7zo7jdf;Path=/;HttpOnly
-2019-10-24 11:48:46 INFO  LoginAPITest:131 - syByuk02kCIoXqIazvcxVehRpFTwsl
-2019-10-24 11:48:47 INFO  LoginAPITest:137 - Bearer
-2019-10-24 11:48:47 INFO  LoginAPITest:138 - Post Response Time In milliseconds3122
-2019-10-24 11:48:47 INFO  LoginAPITest:141 - Header is Bearer syByuk02kCIoXqIazvcxVehRpFTwsl
-2019-10-24 11:48:47 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key06c50a1570bd4d40a7859ec28514b185
-2019-10-24 11:48:47 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
-2019-10-24 11:48:47 INFO  LOProjectSyncAPITest:263 - Executing test: LOProjectSyncAPI
-2019-10-24 11:48:47 INFO  LOProjectSyncAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/syncproject/
-2019-10-24 11:48:51 INFO  LOProjectSyncAPITest:28 - Get Response Time In milliseconds3351
-2019-10-24 11:48:51 INFO  LOProjectSyncAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:48:51 INFO  SignAgreementRegistrationAPITest:263 - Executing test: SignAgreementRegistrationAPI
-2019-10-24 11:48:51 INFO  SignAgreementRegistrationAPITest:193 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/agreements/
-2019-10-24 11:48:55 INFO  SignAgreementRegistrationAPITest:200 - Post Response Time In milliseconds4533
-2019-10-24 11:48:55 INFO  SignAgreementRegistrationAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:48:55 INFO  SignAgreementRegistrationAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
-2019-10-24 11:48:55 INFO  SignAgreementRegistrationAPITest:14 - Complete Response
-2019-10-24 11:48:55 INFO  SignAgreementRegistrationAPITest:18 - {"result":"Agreement Signed Successfully"}
-2019-10-24 11:48:56 INFO  AssetUpdateBuildingAPITest:263 - Executing test: AssetUpdateforNewAssetPUTAPI
-2019-10-24 11:48:56 INFO  AssetUpdateBuildingAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/
-2019-10-24 11:48:58 INFO  AssetUpdateBuildingAPITest:231 - Put Response Time In milliseconds2725
-2019-10-24 11:48:58 INFO  AssetUpdateBuildingAPITest:235 - Payload is  {"year_constructed":"2018","occupancy":"50","operating_hours":"30"}
-2019-10-24 11:48:58 INFO  AssetUpdateBuildingAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:48:59 INFO  VerifyProjectRegisteredAssetListTest:263 - Executing test: VerifyProjectRegisteredAssetList
-2019-10-24 11:48:59 INFO  VerifyProjectRegisteredAssetListTest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/
-2019-10-24 11:49:01 INFO  VerifyProjectRegisteredAssetListTest:28 - Get Response Time In milliseconds2729
-2019-10-24 11:49:02 INFO  VerifyProjectRegisteredAssetListTest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:02 INFO  AssetDocumentAPITest:263 - Executing test: AssetDocumentAPI
-2019-10-24 11:49:02 INFO  AssetDocumentAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/documents/
-2019-10-24 11:49:05 INFO  AssetDocumentAPITest:28 - Get Response Time In milliseconds2665
-2019-10-24 11:49:05 INFO  AssetDocumentAPITest:23 - 0000000010000000000847873
-2019-10-24 11:49:05 INFO  AssetDocumentAPITest:26 - E9F6261827D7A7F1B3040AFDDE1F6773
-2019-10-24 11:49:06 INFO  AssetDocumentAPITest:29 - E9F6261827D7A9F1B3040AFDDE1F6773
-2019-10-24 11:49:06 INFO  AssetDocumentAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:06 INFO  DownloadDocumentsAPITest:263 - Executing test: DownloadDocumentsAPI
-2019-10-24 11:49:06 INFO  DownloadDocumentsAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/documents/download/?Docfile=Agreement.pdf&IDocNumber=0000000010000000000847873&IDocPart=000&IDocType=Z02&IDocVersion=00&IFileApplicationId=E9F6261827D7A7F1B3040AFDDE1F6773&IFileId=E9F6261827D7A9F1B3040AFDDE1F6773&subscription-key=06c50a1570bd4d40a7859ec28514b185&access-token=syByuk02kCIoXqIazvcxVehRpFTwsl
-2019-10-24 11:49:08 INFO  DownloadDocumentsAPITest:28 - Get Response Time In milliseconds2050
-2019-10-24 11:49:09 INFO  DownloadDocumentsAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:10 INFO  FetchingAgreementDetailsAPITest:263 - Executing test: FetchingAgreementDetailsAPI
-2019-10-24 11:49:10 INFO  FetchingAgreementDetailsAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/documents/
-2019-10-24 11:49:12 INFO  FetchingAgreementDetailsAPITest:28 - Get Response Time In milliseconds2055
-2019-10-24 11:49:14 INFO  FetchingAgreementDetailsAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:14 INFO  VerifyAgreementDeleteAPITest:263 - Executing test: VerifyAgreementDeleteAPI
-2019-10-24 11:49:14 INFO  VerifyAgreementDeleteAPITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/actions/ID:DOCHOLDERL-1000174449/uploads/?Description=-200&Documenttype=Z02&Documentnumber=0000000010000000000847873&Documentpart=000&Documentversion=00&ApplicationId=E9F6261827D7A7F1B3040AFDDE1F6773&FileId=E9F6261827D7A9F1B3040AFDDE1F6773
-2019-10-24 11:49:16 INFO  VerifyAgreementDeleteAPITest:296 - Delete Response Time In milliseconds1956
-2019-10-24 11:49:16 INFO  VerifyAgreementDeleteAPITest:43 - API Responded With Status Code : 403
-2019-10-24 11:49:16 INFO  MetersAPITest:263 - Executing test: MetersAPI
-2019-10-24 11:49:16 INFO  MetersAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/meters/?page_size=20
-2019-10-24 11:49:18 INFO  MetersAPITest:28 - Get Response Time In milliseconds1662
-2019-10-24 11:49:18 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:19 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:19 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:20 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:20 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:21 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:21 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:22 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:22 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:23 INFO  MetersAPITest:43 - API Responded With Status Code : 200
-2019-10-24 11:49:23 INFO  HumanExperienceConsumptionCreateAPITest:263 - Executing test: HumanExperienceConsumptionCreateAPI
-2019-10-24 11:49:23 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/meters/ID:1050259/consumption/?recompute_score=false
-2019-10-24 11:49:25 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds1662
-2019-10-24 11:49:25 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
-2019-10-24 11:49:25 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/meters/ID:1050258/consumption/?recompute_score=false
-2019-10-24 11:49:27 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds1662
-2019-10-24 11:49:27 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
-2019-10-24 11:49:27 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/meters/ID:1050257/consumption/?recompute_score=false
-2019-10-24 11:49:29 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds1662
-2019-10-24 11:49:29 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
-2019-10-24 11:49:29 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174449/meters/ID:1050256/consumption/?recompute_score=false
-2019-10-24 11:49:31 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds1662
-2019-10-24 11:49:31 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:47:43 INFO  LOAuthenticateAPITest:264 - Executing test: LOAuthenticateAPI
+2019-10-25 09:47:47 INFO  LOAuthenticateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:47:48 INFO  LEEDv4OMExistingBuildingsAPITest:264 - Executing test: LEEDv4OMExistingBuildingsAPI
+2019-10-25 09:47:52 INFO  LEEDv4OMExistingBuildingsAPITest:307 - POST Request Call URL https://leedonline-api-stg.usgbc.org/v1/json/Project/register/INP
+2019-10-25 09:47:59 INFO  LEEDv4OMExistingBuildingsAPITest:320 - Post Response Time In milliseconds3135
+2019-10-25 09:47:59 INFO  LEEDv4OMExistingBuildingsAPITest:326 - Payload is  {"anticipatedType":"Public Order and Safety: Fire/Police Station","address.postalCode":"20037","address.city":"Test City","owner.name":"Test Owner","address.state":"MP","date.start":"2018-06-01","owner.organization":"EymX5ZKWALZae","description":"Register from LO API","ratingSystem":"v4_1.oEb","address.geoPoints.latitude":"120.12345678","address.geoPoints.longitude":"10.46467895","address.country":"US","unitType":"SI","owner.type":"Non-Profit (that do not fit into other categories)","date.end":"2028-07-01","owner.email":"newserver2@gmail.com","grossFootage":"1000","owner.country":"US","name":"API LEED v4 O+M: Existing BuildingsUS80","address.address1":"Test Address","cmd":"register"}
+2019-10-25 09:47:59 INFO  LEEDv4OMExistingBuildingsAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:48:00 INFO  LoginAPITest:264 - Executing test: LoginAPI
+2019-10-25 09:48:00 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/stg/leed/auth/login/
+2019-10-25 09:48:08 INFO  LoginAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:48:08 INFO  LoginAPITest:123 - Payload is  usgbcarcapi@gmail.cominitpass
+2019-10-25 09:48:08 INFO  LoginAPITest:127 - SAMEORIGIN
+2019-10-25 09:48:08 INFO  LoginAPITest:130 - csrftoken=JrO5TAjDm55jmCeu9EdFpKbTgBe95ohztihebnzdAjzrnDpQxcym8BndZU58QtoN;Path=/;Max-Age=31449600;Expires=10/23/20 4:18 AM
+sessionid=6gwp1cjdlklwgzrwfgoq16zkklfea6lx;Path=/;HttpOnly
+2019-10-25 09:48:08 INFO  LoginAPITest:131 - eeFgxikc9FVlxiLGTJt4Fsam6BQrpE
+2019-10-25 09:48:08 INFO  LoginAPITest:137 - Bearer
+2019-10-25 09:48:08 INFO  LoginAPITest:138 - Post Response Time In milliseconds3135
+2019-10-25 09:48:08 INFO  LoginAPITest:141 - Header is Bearer eeFgxikc9FVlxiLGTJt4Fsam6BQrpE
+2019-10-25 09:48:08 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key06c50a1570bd4d40a7859ec28514b185
+2019-10-25 09:48:08 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-10-25 09:48:09 INFO  LOProjectSyncAPITest:264 - Executing test: LOProjectSyncAPI
+2019-10-25 09:48:09 INFO  LOProjectSyncAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/syncproject/
+2019-10-25 09:48:13 INFO  LOProjectSyncAPITest:28 - Get Response Time In milliseconds4050
+2019-10-25 09:48:13 INFO  LOProjectSyncAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:48:13 INFO  SignAgreementRegistrationAPITest:264 - Executing test: SignAgreementRegistrationAPI
+2019-10-25 09:48:13 INFO  SignAgreementRegistrationAPITest:193 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/agreements/
+2019-10-25 09:48:44 INFO  AssetUpdateBuildingAPITest:264 - Executing test: AssetUpdateforNewAssetPUTAPI
+2019-10-25 09:48:45 INFO  AssetUpdateBuildingAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/
+2019-10-25 09:48:48 INFO  AssetUpdateBuildingAPITest:231 - Put Response Time In milliseconds3701
+2019-10-25 09:48:48 INFO  AssetUpdateBuildingAPITest:235 - Payload is  {"year_constructed":"2018","occupancy":"50","operating_hours":"30"}
+2019-10-25 09:48:48 INFO  AssetUpdateBuildingAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:48:49 INFO  VerifyProjectRegisteredAssetListTest:264 - Executing test: VerifyProjectRegisteredAssetList
+2019-10-25 09:48:49 INFO  VerifyProjectRegisteredAssetListTest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/
+2019-10-25 09:48:51 INFO  VerifyProjectRegisteredAssetListTest:28 - Get Response Time In milliseconds2156
+2019-10-25 09:48:52 INFO  VerifyProjectRegisteredAssetListTest:43 - API Responded With Status Code : 200
+2019-10-25 09:48:52 INFO  AssetDocumentAPITest:264 - Executing test: AssetDocumentAPI
+2019-10-25 09:48:52 INFO  AssetDocumentAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/documents/
+2019-10-25 09:48:55 INFO  AssetDocumentAPITest:28 - Get Response Time In milliseconds2768
+2019-10-25 09:48:55 INFO  AssetDocumentAPITest:23 - 0000000010000000000847958
+2019-10-25 09:48:56 INFO  AssetDocumentAPITest:26 - E9F6DE6B043711F1B3040AFDDE1F6773
+2019-10-25 09:48:56 INFO  AssetDocumentAPITest:29 - E9F6DE6B043713F1B3040AFDDE1F6773
+2019-10-25 09:48:57 INFO  AssetDocumentAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:48:57 INFO  DownloadDocumentsAPITest:264 - Executing test: DownloadDocumentsAPI
+2019-10-25 09:48:57 INFO  DownloadDocumentsAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/documents/download/?Docfile=Agreement.pdf&IDocNumber=0000000010000000000847958&IDocPart=000&IDocType=Z02&IDocVersion=00&IFileApplicationId=E9F6DE6B043711F1B3040AFDDE1F6773&IFileId=E9F6DE6B043713F1B3040AFDDE1F6773&subscription-key=06c50a1570bd4d40a7859ec28514b185&access-token=eeFgxikc9FVlxiLGTJt4Fsam6BQrpE
+2019-10-25 09:49:00 INFO  DownloadDocumentsAPITest:28 - Get Response Time In milliseconds2434
+2019-10-25 09:49:06 INFO  DownloadDocumentsAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:07 INFO  FetchingAgreementDetailsAPITest:264 - Executing test: FetchingAgreementDetailsAPI
+2019-10-25 09:49:07 INFO  FetchingAgreementDetailsAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/documents/
+2019-10-25 09:49:09 INFO  FetchingAgreementDetailsAPITest:28 - Get Response Time In milliseconds2278
+2019-10-25 09:49:12 INFO  FetchingAgreementDetailsAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:12 INFO  VerifyAgreementDeleteAPITest:264 - Executing test: VerifyAgreementDeleteAPI
+2019-10-25 09:49:12 INFO  VerifyAgreementDeleteAPITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/actions/ID:DOCHOLDERL-1000174899/uploads/?Description=-200&Documenttype=Z02&Documentnumber=0000000010000000000847958&Documentpart=000&Documentversion=00&ApplicationId=E9F6DE6B043711F1B3040AFDDE1F6773&FileId=E9F6DE6B043713F1B3040AFDDE1F6773
+2019-10-25 09:49:14 INFO  VerifyAgreementDeleteAPITest:296 - Delete Response Time In milliseconds1826
+2019-10-25 09:49:14 INFO  VerifyAgreementDeleteAPITest:43 - API Responded With Status Code : 403
+2019-10-25 09:49:15 INFO  MetersAPITest:264 - Executing test: MetersAPI
+2019-10-25 09:49:15 INFO  MetersAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/?page_size=20
+2019-10-25 09:49:17 INFO  MetersAPITest:28 - Get Response Time In milliseconds2848
+2019-10-25 09:49:18 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:19 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:20 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:21 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:21 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:22 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:22 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:23 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:23 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:24 INFO  MetersAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:24 INFO  HumanExperienceConsumptionCreateAPITest:264 - Executing test: HumanExperienceConsumptionCreateAPI
+2019-10-25 09:49:24 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058357/consumption/?recompute_score=false
+2019-10-25 09:49:27 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds2848
+2019-10-25 09:49:27 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:49:27 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058356/consumption/?recompute_score=false
+2019-10-25 09:49:29 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds2848
+2019-10-25 09:49:29 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:49:30 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058355/consumption/?recompute_score=false
+2019-10-25 09:49:35 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds2848
+2019-10-25 09:49:35 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:49:35 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058354/consumption/?recompute_score=false
+2019-10-25 09:49:37 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds2848
+2019-10-25 09:49:37 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:49:37 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058353/consumption/?recompute_score=false
+2019-10-25 09:49:39 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds2848
+2019-10-25 09:49:39 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:49:40 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058352/consumption/?recompute_score=false
+2019-10-25 09:49:42 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds2848
+2019-10-25 09:49:42 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:49:42 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058351/consumption/?recompute_score=false
+2019-10-25 09:49:45 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds2848
+2019-10-25 09:49:45 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:49:45 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058350/consumption/?recompute_score=false
+2019-10-25 09:49:47 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds2848
+2019-10-25 09:49:47 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:49:47 INFO  HumanExperienceConsumptionCreateAPITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058349/consumption/?recompute_score=false
+2019-10-25 09:49:50 INFO  HumanExperienceConsumptionCreateAPITest:83 - Post Response Time In milliseconds2848
+2019-10-25 09:49:50 INFO  HumanExperienceConsumptionCreateAPITest:90 - Payload is  {"end_date":"2019-02-01","reading":"120","start_date":"2019-01-01"}
+2019-10-25 09:49:50 INFO  HumanExperienceConsumptionUpdateAPITest:264 - Executing test: HumanExperienceConsumptionUpdateAPI
+2019-10-25 09:49:50 INFO  HumanExperienceConsumptionUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058357/consumption/ID:7169974/?recompute_score=false
+2019-10-25 09:49:53 INFO  HumanExperienceConsumptionUpdateAPITest:231 - Put Response Time In milliseconds2676
+2019-10-25 09:49:53 INFO  HumanExperienceConsumptionUpdateAPITest:235 - Payload is  {"end_date":"2017-02-01","reading":"60","start_date":"2017-01-01"}
+2019-10-25 09:49:53 INFO  HumanExperienceConsumptionUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:53 INFO  HumanExperienceConsumptionUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058356/consumption/ID:7169975/?recompute_score=false
+2019-10-25 09:49:55 INFO  HumanExperienceConsumptionUpdateAPITest:231 - Put Response Time In milliseconds2096
+2019-10-25 09:49:55 INFO  HumanExperienceConsumptionUpdateAPITest:235 - Payload is  {"end_date":"2017-02-01","reading":"60","start_date":"2017-01-01"}
+2019-10-25 09:49:55 INFO  HumanExperienceConsumptionUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:55 INFO  HumanExperienceConsumptionUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058355/consumption/ID:7169976/?recompute_score=false
+2019-10-25 09:49:57 INFO  HumanExperienceConsumptionUpdateAPITest:231 - Put Response Time In milliseconds1960
+2019-10-25 09:49:57 INFO  HumanExperienceConsumptionUpdateAPITest:235 - Payload is  {"end_date":"2017-02-01","reading":"60","start_date":"2017-01-01"}
+2019-10-25 09:49:57 INFO  HumanExperienceConsumptionUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:49:57 INFO  HumanExperienceConsumptionUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058354/consumption/ID:7169977/?recompute_score=false
+2019-10-25 09:50:01 INFO  HumanExperienceConsumptionUpdateAPITest:231 - Put Response Time In milliseconds4363
+2019-10-25 09:50:01 INFO  HumanExperienceConsumptionUpdateAPITest:235 - Payload is  {"end_date":"2017-02-01","reading":"60","start_date":"2017-01-01"}
+2019-10-25 09:50:01 INFO  HumanExperienceConsumptionUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:01 INFO  HumanExperienceConsumptionUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058353/consumption/ID:7169978/?recompute_score=false
+2019-10-25 09:50:03 INFO  HumanExperienceConsumptionUpdateAPITest:231 - Put Response Time In milliseconds1904
+2019-10-25 09:50:03 INFO  HumanExperienceConsumptionUpdateAPITest:235 - Payload is  {"end_date":"2017-02-01","reading":"60","start_date":"2017-01-01"}
+2019-10-25 09:50:03 INFO  HumanExperienceConsumptionUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:03 INFO  HumanExperienceConsumptionUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058352/consumption/ID:7169979/?recompute_score=false
+2019-10-25 09:50:06 INFO  HumanExperienceConsumptionUpdateAPITest:231 - Put Response Time In milliseconds2230
+2019-10-25 09:50:06 INFO  HumanExperienceConsumptionUpdateAPITest:235 - Payload is  {"end_date":"2017-02-01","reading":"60","start_date":"2017-01-01"}
+2019-10-25 09:50:06 INFO  HumanExperienceConsumptionUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:06 INFO  HumanExperienceConsumptionUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058351/consumption/ID:7169980/?recompute_score=false
+2019-10-25 09:50:11 INFO  HumanExperienceConsumptionUpdateAPITest:231 - Put Response Time In milliseconds5496
+2019-10-25 09:50:11 INFO  HumanExperienceConsumptionUpdateAPITest:235 - Payload is  {"end_date":"2017-02-01","reading":"60","start_date":"2017-01-01"}
+2019-10-25 09:50:11 INFO  HumanExperienceConsumptionUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:11 INFO  VerifyManualConsumptionAfterUpdateAPITest:264 - Executing test: VerifyManualConsumptionAfterUpdateAPI
+2019-10-25 09:50:11 INFO  VerifyManualConsumptionAfterUpdateAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058357/consumption/
+2019-10-25 09:50:13 INFO  VerifyManualConsumptionAfterUpdateAPITest:28 - Get Response Time In milliseconds1973
+2019-10-25 09:50:13 INFO  VerifyManualConsumptionAfterUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:13 INFO  VerifyManualConsumptionAfterUpdateAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058356/consumption/
+2019-10-25 09:50:15 INFO  VerifyManualConsumptionAfterUpdateAPITest:28 - Get Response Time In milliseconds1938
+2019-10-25 09:50:15 INFO  VerifyManualConsumptionAfterUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:15 INFO  VerifyManualConsumptionAfterUpdateAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058355/consumption/
+2019-10-25 09:50:17 INFO  VerifyManualConsumptionAfterUpdateAPITest:28 - Get Response Time In milliseconds1607
+2019-10-25 09:50:17 INFO  VerifyManualConsumptionAfterUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:17 INFO  VerifyManualConsumptionAfterUpdateAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058354/consumption/
+2019-10-25 09:50:19 INFO  VerifyManualConsumptionAfterUpdateAPITest:28 - Get Response Time In milliseconds2174
+2019-10-25 09:50:19 INFO  VerifyManualConsumptionAfterUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:19 INFO  VerifyManualConsumptionAfterUpdateAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058353/consumption/
+2019-10-25 09:50:24 INFO  VerifyManualConsumptionAfterUpdateAPITest:28 - Get Response Time In milliseconds4929
+2019-10-25 09:50:24 INFO  VerifyManualConsumptionAfterUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:24 INFO  VerifyManualConsumptionAfterUpdateAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058352/consumption/
+2019-10-25 09:50:26 INFO  VerifyManualConsumptionAfterUpdateAPITest:28 - Get Response Time In milliseconds2003
+2019-10-25 09:50:26 INFO  VerifyManualConsumptionAfterUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:26 INFO  VerifyManualConsumptionAfterUpdateAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058351/consumption/
+2019-10-25 09:50:29 INFO  VerifyManualConsumptionAfterUpdateAPITest:28 - Get Response Time In milliseconds2208
+2019-10-25 09:50:29 INFO  VerifyManualConsumptionAfterUpdateAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:29 INFO  HumanExperienceConsumptionDeleteAPITest:264 - Executing test: HumanExperienceConsumptionDeleteAPI
+2019-10-25 09:50:29 INFO  HumanExperienceConsumptionDeleteAPITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058357/consumption/ID:7169974/?recompute_score=false
+2019-10-25 09:50:31 INFO  HumanExperienceConsumptionDeleteAPITest:296 - Delete Response Time In milliseconds2012
+2019-10-25 09:50:31 INFO  HumanExperienceConsumptionDeleteAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:31 INFO  HumanExperienceConsumptionDeleteAPITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058356/consumption/ID:7169975/?recompute_score=false
+2019-10-25 09:50:33 INFO  HumanExperienceConsumptionDeleteAPITest:296 - Delete Response Time In milliseconds2032
+2019-10-25 09:50:33 INFO  HumanExperienceConsumptionDeleteAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:33 INFO  HumanExperienceConsumptionDeleteAPITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058355/consumption/ID:7169976/?recompute_score=false
+2019-10-25 09:50:35 INFO  HumanExperienceConsumptionDeleteAPITest:296 - Delete Response Time In milliseconds2033
+2019-10-25 09:50:35 INFO  HumanExperienceConsumptionDeleteAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:35 INFO  HumanExperienceConsumptionDeleteAPITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058354/consumption/ID:7169977/?recompute_score=false
+2019-10-25 09:50:37 INFO  HumanExperienceConsumptionDeleteAPITest:296 - Delete Response Time In milliseconds1684
+2019-10-25 09:50:37 INFO  HumanExperienceConsumptionDeleteAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:37 INFO  HumanExperienceConsumptionDeleteAPITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058353/consumption/ID:7169978/?recompute_score=false
+2019-10-25 09:50:39 INFO  HumanExperienceConsumptionDeleteAPITest:296 - Delete Response Time In milliseconds1710
+2019-10-25 09:50:39 INFO  HumanExperienceConsumptionDeleteAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:39 INFO  HumanExperienceConsumptionDeleteAPITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058352/consumption/ID:7169979/?recompute_score=false
+2019-10-25 09:50:41 INFO  HumanExperienceConsumptionDeleteAPITest:296 - Delete Response Time In milliseconds2098
+2019-10-25 09:50:41 INFO  HumanExperienceConsumptionDeleteAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:41 INFO  HumanExperienceConsumptionDeleteAPITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058351/consumption/ID:7169980/?recompute_score=false
+2019-10-25 09:50:42 INFO  HumanExperienceConsumptionDeleteAPITest:296 - Delete Response Time In milliseconds1613
+2019-10-25 09:50:42 INFO  HumanExperienceConsumptionDeleteAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:43 INFO  VerifyManualConsumptionAPITest:264 - Executing test: VerifyManualConsumptionAPI
+2019-10-25 09:50:43 INFO  VerifyManualConsumptionAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058357/consumption/
+2019-10-25 09:50:45 INFO  VerifyManualConsumptionAPITest:28 - Get Response Time In milliseconds1952
+2019-10-25 09:50:45 INFO  VerifyManualConsumptionAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:45 INFO  HumanExperienceMeterUpdateAPITest:264 - Executing test: HumanExperienceMeterUpdateAPI
+2019-10-25 09:50:45 INFO  HumanExperienceMeterUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058357/?recompute_score=false
+2019-10-25 09:50:47 INFO  HumanExperienceMeterUpdateAPITest:231 - Put Response Time In milliseconds1990
+2019-10-25 09:50:47 INFO  HumanExperienceMeterUpdateAPITest:235 - Payload is  {"name":"Formaldehyde","native_unit":"ug/m3","type":"263"}
+2019-10-25 09:50:47 INFO  HumanExperienceMeterUpdateAPITest:43 - API Responded With Status Code : 400
+2019-10-25 09:50:47 INFO  HumanExperienceMeterUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058357/?recompute_score=false
+2019-10-25 09:50:49 INFO  HumanExperienceMeterUpdateAPITest:231 - Put Response Time In milliseconds1761
+2019-10-25 09:50:49 INFO  HumanExperienceMeterUpdateAPITest:235 - Payload is  {"name":"Formaldehyde","native_unit":"ug/m3","type":"260"}
+2019-10-25 09:50:49 INFO  HumanExperienceMeterUpdateAPITest:43 - API Responded With Status Code : 400
+2019-10-25 09:50:49 INFO  V4ExcelUploadTemplatePOSTAPITest:264 - Executing test: V4ExcelUploadTemplatePOSTAPI
+2019-10-25 09:50:49 INFO  V4ExcelUploadTemplatePOSTAPITest:209 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/excelupload/uploadS3/
+2019-10-25 09:50:53 INFO  V4ExcelUploadTemplatePOSTAPITest:214 - Post Response Time In milliseconds3481
+2019-10-25 09:50:53 INFO  V4ExcelUploadTemplatePOSTAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:53 INFO  S3DocumentUploadPOSTAPITest:264 - Executing test: S3DocumentUploadPOSTAPI
+2019-10-25 09:50:56 INFO  S3DocumentUploadPOSTAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:50:59 INFO  S3DocumentUploadPOSTAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:02 INFO  S3DocumentUploadPOSTAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:06 INFO  S3DocumentUploadPOSTAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:09 INFO  S3DocumentUploadPOSTAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:13 INFO  S3DocumentUploadPOSTAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:13 INFO  S3DocumentListAPITest:264 - Executing test: S3DocumentListAPI
+2019-10-25 09:51:13 INFO  S3DocumentListAPITest:21 - GET Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/s3documents/
+2019-10-25 09:51:16 INFO  S3DocumentListAPITest:28 - Get Response Time In milliseconds2330
+2019-10-25 09:51:16 INFO  S3DocumentRemoveAPITest:264 - Executing test: S3DocumentRemoveAPI
+2019-10-25 09:51:16 INFO  S3DocumentRemoveAPITest:224 - PUT Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/s3documents/
+2019-10-25 09:51:18 INFO  S3DocumentRemoveAPITest:231 - Put Response Time In milliseconds2010
+2019-10-25 09:51:18 INFO  S3DocumentRemoveAPITest:235 - Payload is  {"is_granted":false,"doc_id":"47909"}
+2019-10-25 09:51:18 INFO  S3DocumentRemoveAPITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:19 INFO  MeterCommentPostGroup1APITest:264 - Executing test: MeterCommentPostGroup1API
+2019-10-25 09:51:19 INFO  MeterCommentPostGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058357/comment/
+2019-10-25 09:51:21 INFO  MeterCommentPostGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:21 INFO  MeterCommentPostGroup1APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:21 INFO  MeterCommentPostGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:21 INFO  MeterCommentPostGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058356/comment/
+2019-10-25 09:51:23 INFO  MeterCommentPostGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:23 INFO  MeterCommentPostGroup1APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:24 INFO  MeterCommentPostGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:24 INFO  MeterCommentPostGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058355/comment/
+2019-10-25 09:51:26 INFO  MeterCommentPostGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:26 INFO  MeterCommentPostGroup1APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:26 INFO  MeterCommentPostGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:26 INFO  MeterCommentPostGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058354/comment/
+2019-10-25 09:51:28 INFO  MeterCommentPostGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:28 INFO  MeterCommentPostGroup1APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:28 INFO  MeterCommentPostGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:28 INFO  MeterCommentPostGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058353/comment/
+2019-10-25 09:51:30 INFO  MeterCommentPostGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:30 INFO  MeterCommentPostGroup1APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:31 INFO  MeterCommentPostGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:31 INFO  MeterCommentPostGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058352/comment/
+2019-10-25 09:51:33 INFO  MeterCommentPostGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:33 INFO  MeterCommentPostGroup1APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:33 INFO  MeterCommentPostGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:33 INFO  MeterCommentPostGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058351/comment/
+2019-10-25 09:51:35 INFO  MeterCommentPostGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:35 INFO  MeterCommentPostGroup1APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:36 INFO  MeterCommentPostGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:36 INFO  MeterCommentPostGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058350/comment/
+2019-10-25 09:51:38 INFO  MeterCommentPostGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:38 INFO  MeterCommentPostGroup1APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:38 INFO  MeterCommentPostGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:38 INFO  MeterCommentPostGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058349/comment/
+2019-10-25 09:51:40 INFO  MeterCommentPostGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:40 INFO  MeterCommentPostGroup1APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:41 INFO  MeterCommentPostGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:41 INFO  MeterCommentPostGroup2APITest:264 - Executing test: MeterCommentPostGroup2API
+2019-10-25 09:51:41 INFO  MeterCommentPostGroup2APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/waste/comment/
+2019-10-25 09:51:43 INFO  MeterCommentPostGroup2APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:43 INFO  MeterCommentPostGroup2APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:43 INFO  MeterCommentPostGroup2APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:43 INFO  MeterCommentPostGroup2APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/transport/comment/
+2019-10-25 09:51:45 INFO  MeterCommentPostGroup2APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:45 INFO  MeterCommentPostGroup2APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:46 INFO  MeterCommentPostGroup2APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:46 INFO  MeterCommentPostGroup2APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/human/comment/
+2019-10-25 09:51:48 INFO  MeterCommentPostGroup2APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:48 INFO  MeterCommentPostGroup2APITest:90 - Payload is  {"data":"This is Test Comment","confidential":"false"}
+2019-10-25 09:51:48 INFO  MeterCommentPostGroup2APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:49 INFO  MeterCommentReplyGroup1APITest:264 - Executing test: MeterCommentReplyGroup1API
+2019-10-25 09:51:49 INFO  MeterCommentReplyGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058357/comment/
+2019-10-25 09:51:50 INFO  MeterCommentReplyGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:50 INFO  MeterCommentReplyGroup1APITest:90 - Payload is  {"parent":"2208","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:51:50 INFO  MeterCommentReplyGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:50 INFO  MeterCommentReplyGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058356/comment/
+2019-10-25 09:51:52 INFO  MeterCommentReplyGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:52 INFO  MeterCommentReplyGroup1APITest:90 - Payload is  {"parent":"2209","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:51:52 INFO  MeterCommentReplyGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:52 INFO  MeterCommentReplyGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058355/comment/
+2019-10-25 09:51:54 INFO  MeterCommentReplyGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:54 INFO  MeterCommentReplyGroup1APITest:90 - Payload is  {"parent":"2210","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:51:54 INFO  MeterCommentReplyGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:54 INFO  MeterCommentReplyGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058354/comment/
+2019-10-25 09:51:56 INFO  MeterCommentReplyGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:56 INFO  MeterCommentReplyGroup1APITest:90 - Payload is  {"parent":"2211","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:51:56 INFO  MeterCommentReplyGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:56 INFO  MeterCommentReplyGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058353/comment/
+2019-10-25 09:51:58 INFO  MeterCommentReplyGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:51:58 INFO  MeterCommentReplyGroup1APITest:90 - Payload is  {"parent":"2212","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:51:58 INFO  MeterCommentReplyGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:51:58 INFO  MeterCommentReplyGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058352/comment/
+2019-10-25 09:52:00 INFO  MeterCommentReplyGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:52:00 INFO  MeterCommentReplyGroup1APITest:90 - Payload is  {"parent":"2213","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:52:00 INFO  MeterCommentReplyGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:52:00 INFO  MeterCommentReplyGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058351/comment/
+2019-10-25 09:52:02 INFO  MeterCommentReplyGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:52:02 INFO  MeterCommentReplyGroup1APITest:90 - Payload is  {"parent":"2214","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:52:02 INFO  MeterCommentReplyGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:52:02 INFO  MeterCommentReplyGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058350/comment/
+2019-10-25 09:52:04 INFO  MeterCommentReplyGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:52:04 INFO  MeterCommentReplyGroup1APITest:90 - Payload is  {"parent":"2215","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:52:04 INFO  MeterCommentReplyGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:52:04 INFO  MeterCommentReplyGroup1APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/meters/ID:1058349/comment/
+2019-10-25 09:52:06 INFO  MeterCommentReplyGroup1APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:52:06 INFO  MeterCommentReplyGroup1APITest:90 - Payload is  {"parent":"2216","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:52:06 INFO  MeterCommentReplyGroup1APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:52:07 INFO  MeterCommentReplyGroup2APITest:264 - Executing test: MeterCommentReplyGroup2API
+2019-10-25 09:52:07 INFO  MeterCommentReplyGroup2APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/waste/comment/
+2019-10-25 09:52:08 INFO  MeterCommentReplyGroup2APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:52:08 INFO  MeterCommentReplyGroup2APITest:90 - Payload is  {"parent":"2217","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:52:08 INFO  MeterCommentReplyGroup2APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:52:08 INFO  MeterCommentReplyGroup2APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/transport/comment/
+2019-10-25 09:52:10 INFO  MeterCommentReplyGroup2APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:52:10 INFO  MeterCommentReplyGroup2APITest:90 - Payload is  {"parent":"2218","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:52:10 INFO  MeterCommentReplyGroup2APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:52:10 INFO  MeterCommentReplyGroup2APITest:78 - POST Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/human/comment/
+2019-10-25 09:52:12 INFO  MeterCommentReplyGroup2APITest:83 - Post Response Time In milliseconds2010
+2019-10-25 09:52:12 INFO  MeterCommentReplyGroup2APITest:90 - Payload is  {"parent":"2219","data":"This is Reply Test Comment","confidential":"false"}
+2019-10-25 09:52:12 INFO  MeterCommentReplyGroup2APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:52:13 INFO  MeterCommentDeleteGroup2APITest:264 - Executing test: MeterCommentDeleteGroup2API
+2019-10-25 09:52:13 INFO  MeterCommentDeleteGroup2APITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/waste/comment/2217/
+2019-10-25 09:52:14 INFO  MeterCommentDeleteGroup2APITest:296 - Delete Response Time In milliseconds1783
+2019-10-25 09:52:14 INFO  MeterCommentDeleteGroup2APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:52:14 INFO  MeterCommentDeleteGroup2APITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/transport/comment/2218/
+2019-10-25 09:52:16 INFO  MeterCommentDeleteGroup2APITest:296 - Delete Response Time In milliseconds2039
+2019-10-25 09:52:16 INFO  MeterCommentDeleteGroup2APITest:43 - API Responded With Status Code : 200
+2019-10-25 09:52:16 INFO  MeterCommentDeleteGroup2APITest:289 - DELETE Request Call URL https://api.usgbc.org/stg/leed/assets/LEED:1000174899/human/comment/2219/

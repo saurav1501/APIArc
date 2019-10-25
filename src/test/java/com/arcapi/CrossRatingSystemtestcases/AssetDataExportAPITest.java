@@ -20,7 +20,7 @@ public class AssetDataExportAPITest extends BaseClass {
 			url = "/assets/LEED:" +  data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/export/";
 
 			CommonMethod.res = MethodCall.GETRequest(url);
-			Assertion.verifyStatusCode(CommonMethod.res, 404);
+			Assertion.verifyStatusCode(CommonMethod.res, 403);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -23,7 +23,7 @@ public class AssetDataSnapshotAPITest extends BaseClass {
 		
 		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + 
 				"/snapshot/?access-token="+CommonMethod.Token+"&start_date=2017-01-01&end_date=2017-12-30&email="+data.getCellData(SheetName, "NormalUserName", rownumber);
-		Assertion.verifyStatusCode(CommonMethod.res, 404);
+		Assertion.verifyStatusCode(CommonMethod.res, 403);
 		
 	
 	

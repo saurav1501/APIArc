@@ -18,7 +18,7 @@ public class EnvironmentSurveyGetAPITest extends BaseClass {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/survey/environment/";
 
 			CommonMethod.res = MethodCall.GETRequest(url);
-			Assertion.verifyStatusCode(CommonMethod.res, 404);
+			Assertion.verifyStatusCode(CommonMethod.res, 403);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

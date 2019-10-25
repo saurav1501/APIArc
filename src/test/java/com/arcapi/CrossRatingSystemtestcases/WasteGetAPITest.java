@@ -19,7 +19,7 @@ public class WasteGetAPITest extends BaseClass {
 
 			CommonMethod.res = MethodCall.GETRequest(url);
 			
-			Assertion.verifyStatusCode(CommonMethod.res, 404);
+			Assertion.verifyStatusCode(CommonMethod.res, 403);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

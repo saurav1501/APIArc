@@ -19,7 +19,7 @@ public class RidershipDataGetAPITest extends BaseClass {
 	   try {
 		url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/ridership/?resample=2015-01-05/P1D,2015-01-06/P1D,2015-01-07/P1D,2015-01-08/P1D";
 		   CommonMethod.res =MethodCall.GETRequest(url);
-		   Assertion.verifyStatusCode(	CommonMethod.res, 404);
+		   Assertion.verifyStatusCode(	CommonMethod.res, 403);
 	} catch (Exception e) {
 		e.printStackTrace();
 	}
