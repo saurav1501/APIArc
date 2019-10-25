@@ -96,7 +96,7 @@ public class LEEDV4Payload extends BaseClass{
 	 map.put("address.address2", "Test Address");
 	 map.put("cmd", "register");
 	 map.put("owner.name", "Test Owner");
-	 map.put("owner.email", "newserver2@gmail.com");
+	 map.put("owner.email", "usgbcarc@gmial.com");
 	 map.put("owner.country", Country);
 	 map.put("owner.phone", "9080251825");
 	 map.put("owner.city","Test City");
@@ -204,8 +204,8 @@ public class LEEDV4Payload extends BaseClass{
 		map.put("address.geoPoints.latitude", "120.12345678");
 		map.put("address.geoPoints.longitude", "10.46467895");
 		map.put("owner.name", "Test Owner");
-		map.put("owner.email", "newserver2@gmail.com");
-		map.put("owner.organization", "EymX5ZKWALZae");
+		map.put("owner.email", "usgbcarc@gmail.com");
+		map.put("owner.organization", OwnerOrg);
 		map.put("owner.country", Country);
 		map.put("owner.type", "Non-Profit (that do not fit into other categories)");
 	   	return map;

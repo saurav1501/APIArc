@@ -19,7 +19,7 @@ public class LeedExistingCommunityCreateAssetAPITest extends BaseClass {
 	public void LeedExistingCommunityCreateAssetAPI(String SheetName, int rownumber, String Country) {
     
 		try {
-			String OwnerOrg  = "EymX5ZKWALZae";
+			String OwnerOrg  = "4kXGQBPNeEEb";
 			String ProjectName = "API LEED v4.1 Communities: Existing";
 			String OwnerType= "Public Sector: Airports";
 			String ratings = "v4_1.cmEx";

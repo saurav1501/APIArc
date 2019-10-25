@@ -302,7 +302,7 @@ public class MethodCall extends BaseClass{
 	}
 	
 	public static Response POSTRequestLEED(String uRI, Object strJSON) throws JsonProcessingException {
-		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
+		CommonMethod.testlog("Info", "POST Request Call URL "+baseURLLEED+uRI);
 		
 		log.info("POST Request Call URL "+baseURLLEED+uRI);
 		
@@ -334,8 +334,7 @@ public class MethodCall extends BaseClass{
 	public static Response POSTUploadFile(String uRI) {
 		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
 		log.info("POST Request Call URL "+baseURLLEED+uRI);
-		
-		
+	
 		CommonMethod.res= given().log().all().multiPart("file", CommonMethod.gresb)
 				.headers(headerMap)
 				.header("Authorization",header).spec(reqSpec).post(url).then().extract().response();
