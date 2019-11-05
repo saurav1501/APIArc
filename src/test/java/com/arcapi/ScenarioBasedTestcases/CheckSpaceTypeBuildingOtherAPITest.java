@@ -17,7 +17,7 @@ public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 
 	@Test(groups ="Check SpaceType")
 	@Parameters({ "SheetName", "ProjectType", "ProjectTypeColumn", "rownumber", "Country" })
-	public void CreateAssetPOSTAPI(String SheetName, String ProjectType, String ProjectTypeColumn, int rownumber,
+	public void CheckSpaceTypeBuildingOtherAPI(String SheetName, String ProjectType, String ProjectTypeColumn, int rownumber,
 			String Country) throws IOException {
 
 		
@@ -33,8 +33,6 @@ public class CheckSpaceTypeBuildingOtherAPITest extends BaseClass {
 					"30", "31", "32", "33", "34", "35", "TG" };
 
 			State = (StateOptions[new Random().nextInt(StateOptions.length)]);
-
-		
 			ZipCode = "122018";
 		}
 

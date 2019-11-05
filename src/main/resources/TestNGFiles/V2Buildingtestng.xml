@@ -18,8 +18,6 @@
 <class name="com.arcapi.Common.V2.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.V2.AddAssestTimelinePOSTAPITest"></class>
 <class name="com.arcapi.Common.UserPreferenceGetAPITest"></class>
-
-
 <class name="com.arcapi.Common.V2.ResampledEnergBasicAnalysisDataGetAPITest"></class>
 <class name="com.arcapi.Common.V2.ResampledDiverted_wasteAnalysisDataGetAPITest"></class>
 <class name="com.arcapi.Common.V2.ResampledElectricityAnalysisDataGetAPITest"></class>
@@ -154,7 +152,8 @@
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.V2.AssetSnapshotKeysAPITest"></class>
 <class name="com.arcapi.Common.ScoreImprovementGetAssetAPITest"></class> 
-<class name="com.arcapi.Common.V2.VerifyBasicAnalysisDataGetAPITest"></class> 
+<class name="com.arcapi.Common.V2.VerifyBasicAnalysisDataGetAPITest"></class>  
+<class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
 <class name="com.arcapi.Common.V2.ResampledTotalScoreGetAPITest"></class>  
 <class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest"></class>  
 

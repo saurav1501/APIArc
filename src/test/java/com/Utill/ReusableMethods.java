@@ -39,7 +39,6 @@ public class ReusableMethods extends BaseClass{
 		}
 		
 		Integer total_score = energy + water + waste + transport + human_experience + base;
-		
 		System.out.println(total_score);
 		return total_score;
 		

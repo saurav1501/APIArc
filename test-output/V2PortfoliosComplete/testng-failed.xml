@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [V2PortfoliosComplete]">
-  <parameter name="environment" value="stg2"/>
+  <parameter name="environment" value="qas2"/>
   <parameter name="SoReference" value="performance score"/>
   <parameter name="ratings" value="none"/>
   <parameter name="ProjectType" value="building"/>
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
-  <parameter name="SheetName" value="STG2"/>
+  <parameter name="SheetName" value="QAS2"/>
   <parameter name="SoReferenceSR" value="performance score"/>
   <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
   <test name="CompleteFlowTest-Portfolios-Gresb">
@@ -52,46 +52,6 @@
     <parameter name="SoReferenceSR" value="performance score"/>
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
     <classes>
-      <class name="com.arcapi.Common.LoginAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Common.LoginAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailGetAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailGetAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosDetailPUTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosDetailPUTAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest -->
       <class name="com.arcapi.Portfoliostestcases.VerifyGresbAssetsDetailsGetAPITest">
         <methods>
           <include name="teardown"/>
@@ -99,29 +59,10 @@
           <include name="start"/>
           <include name="getSuiteName"/>
           <include name="setBaseUri"/>
+          <include name="GresbAssetsDetailsGetAPI" invocation-numbers="0"/>
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.VerifyGresbAssetsDetailsGetAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPUTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsPUTAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.GresbAssetsExsitingIDPostAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.GresbAssetsExsitingIDPostAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosGoalsUpdateAPITest">
         <methods>
           <include name="teardown"/>
@@ -132,26 +73,6 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosGoalsUpdateAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsGetAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsGetAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosDetailsGetAPITest">
         <methods>
           <include name="teardown"/>
@@ -162,6 +83,16 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosDetailsGetAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
       <class name="com.arcapi.Portfoliostestcases.GresbAssetsDetailsGetAPITest">
         <methods>
           <include name="teardown"/>
@@ -182,7 +113,7 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAnalyticsCategoryDetailAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosAnalyticsSummaryDetailAPITest">
+      <class name="com.arcapi.Portfoliostestcases.V2GresbAssetsVerifyBuildingTrialStatusAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
@@ -191,67 +122,7 @@
           <include name="setBaseUri"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAnalyticsSummaryDetailAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.V2PortfoliosAssetPostAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.V2PortfoliosAssetPostAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetGetAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetGetAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosGoalsDetailAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosGoalsDetailAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosGetAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosGetAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="getSuiteName"/>
-          <include name="setBaseUri"/>
-          <include name="ExtentReportConfig"/>
-        </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest -->
+      </class> <!-- com.arcapi.Portfoliostestcases.V2GresbAssetsVerifyBuildingTrialStatusAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosAnalyticsDetailAPITest">
         <methods>
           <include name="teardown"/>
@@ -262,17 +133,16 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAnalyticsDetailAPITest -->
-      <class name="com.arcapi.Portfoliostestcases.V2GresbAssetsVerifyBuildingTrialStatusAPITest">
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsGetAPITest">
         <methods>
           <include name="teardown"/>
           <include name="end"/>
           <include name="start"/>
           <include name="getSuiteName"/>
           <include name="setBaseUri"/>
-          <include name="V2GresbAssetsVerifyBuildingTrialStatusAPI" invocation-numbers="0"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.arcapi.Portfoliostestcases.V2GresbAssetsVerifyBuildingTrialStatusAPITest -->
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsGetAPITest -->
       <class name="com.arcapi.Portfoliostestcases.PortfoliosPostAPITest">
         <methods>
           <include name="teardown"/>
@@ -283,6 +153,136 @@
           <include name="ExtentReportConfig"/>
         </methods>
       </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosPostAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailDELETEAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosAnalyticsSummaryDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAnalyticsSummaryDetailAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosGetAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsPostAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosGoalsDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosGoalsDetailAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosDetailPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosDetailPUTAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsDELETEAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosTeamsPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosTeamsPUTAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailGetAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetDetailPUTAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.PortfoliosAssetGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.PortfoliosAssetGetAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.V2PortfoliosAssetPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.V2PortfoliosAssetPostAPITest -->
+      <class name="com.arcapi.Portfoliostestcases.GresbAssetsExsitingIDPostAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Portfoliostestcases.GresbAssetsExsitingIDPostAPITest -->
     </classes>
   </test> <!-- CompleteFlowTest-Portfolios-Gresb(failed) -->
 </suite> <!-- Failed suite [V2PortfoliosComplete] -->

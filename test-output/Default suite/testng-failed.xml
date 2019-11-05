@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="rownumber" value="2"/>
-  <parameter name="SheetName" value="not-found"/>
-  <parameter name="ProjectTypeColumn" value="ProjectIDTransitAbove"/>
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.arcapi.Common.CityCom.AllMeterConsumptionGetAPITest"/>
+      <class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.arcapi.Common.CityCom.AllMeterConsumptionGetAPITest">
+      <class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest">
         <methods>
           <include name="getSuiteName"/>
-          <include name="AllMeterConsumptionGetAPI"/>
+          <include name="RecomputeVerifyTotalScoreGraphGetAPI"/>
         </methods>
-      </class> <!-- com.arcapi.Common.CityCom.AllMeterConsumptionGetAPITest -->
+      </class> <!-- com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

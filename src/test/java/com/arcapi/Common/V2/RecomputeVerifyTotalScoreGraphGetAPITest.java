@@ -3,7 +3,11 @@ package com.arcapi.Common.V2;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -26,11 +30,20 @@ public class RecomputeVerifyTotalScoreGraphGetAPITest extends BaseClass {
 		try {
 			
 			int month = Calendar.getInstance().get(Calendar.MONTH);
-			month = month+2;
+			month = month+1;
 			
 			System.out.println(month);
 			int year = Calendar.getInstance().get(Calendar.YEAR);
-			System.out.println(year);
+		/*	int date = Calendar.getInstance().get(Calendar.DATE);
+			date = date +1 ;
+		*/	
+			
+			
+			String pattern = "dd";
+			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+			String date = simpleDateFormat.format(new Date());
+			
+			System.out.println(date);
 			int months= month;
 			int myonths= 12;
 			int col = 13;
@@ -38,7 +51,8 @@ public class RecomputeVerifyTotalScoreGraphGetAPITest extends BaseClass {
 						
 						if(months>=1) {
 					
-						url = "/assets/LEED:"+data.getCellData(SheetName, ProjectTypeColumn, rownumber)+ "/scores/recompute/?at="+year+"-"+months+"-01";
+						url = "/assets/LEED:"+data.getCellData(SheetName, ProjectTypeColumn, rownumber)+ "/scores/recompute/?at="+year+"-"+months+"-"+date;
+						
 						CommonMethod.res = MethodCall.GETRequest(url);
 						Assertion.verifyStatusCode(CommonMethod.res, 200);
 						
@@ -49,7 +63,7 @@ public class RecomputeVerifyTotalScoreGraphGetAPITest extends BaseClass {
 						
 						System.out.println(total);
 						
-						String caltotal = data.getCellData("DataInput", "TotalScore", col);
+						String caltotal = data.getCellData("DataInput","TotalScore", col);
 						double calTotal = Double.parseDouble(caltotal);
 						BigDecimal CalTotal = new BigDecimal(calTotal);
 						CalTotal = CalTotal.setScale(0, RoundingMode.HALF_UP);
@@ -65,7 +79,7 @@ public class RecomputeVerifyTotalScoreGraphGetAPITest extends BaseClass {
 						else {
 
 							 year = 2018;
-							 url = "/assets/LEED:"+data.getCellData(SheetName, ProjectTypeColumn, rownumber)+ "/scores/recompute/?at="+year+"-"+myonths+"-01";
+							 url = "/assets/LEED:"+data.getCellData(SheetName, ProjectTypeColumn, rownumber)+ "/scores/recompute/?at="+year+"-"+myonths+"-"+date;
 							 CommonMethod.res = MethodCall.GETRequest(url);
 							 
 								int totalScore = ReusableMethods.totalScore();
@@ -79,7 +93,6 @@ public class RecomputeVerifyTotalScoreGraphGetAPITest extends BaseClass {
 								CalTotal = CalTotal.setScale(0, RoundingMode.HALF_UP);
 								String CalcTotal = CalTotal.toString();
 								
-						
 								Assertion.verifyData(total, CalcTotal);
 							
 								col--;

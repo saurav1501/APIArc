@@ -17,7 +17,7 @@ public class CheckOwnerTypeBuildingOtherAPITest extends BaseClass {
 
 	@Test(groups="CheckOwnerType")
 	@Parameters({ "SheetName", "ProjectType", "ProjectTypeColumn", "rownumber", "Country" })
-	public void CreateAssetPOSTAPI(String SheetName, String ProjectType, String ProjectTypeColumn, int rownumber,
+	public void CheckOwnerTypeBuildingOtherAPI(String SheetName, String ProjectType, String ProjectTypeColumn, int rownumber,
 			String Country) throws IOException {
 
 		String State = null;
