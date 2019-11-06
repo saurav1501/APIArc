@@ -93,7 +93,7 @@
 <class name="com.arcapi.Common.ThirdPartyListAppsAPITest"></class>
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class>
-
+ 
 </classes>
 </test>
 
@@ -117,9 +117,6 @@
 
 </classes>
 </test>
-
-
-
 </suite> 
   
 

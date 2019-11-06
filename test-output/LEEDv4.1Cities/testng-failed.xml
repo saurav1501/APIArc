@@ -5,7 +5,6 @@
   <parameter name="CreditColumn" value="CityOtherNoneCredit"/>
   <parameter name="SoReference" value="performance score"/>
   <parameter name="CreditColumnNum" value="1"/>
-  <parameter name="ratings" value="none"/>
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
@@ -23,7 +22,22 @@
     <classes>
       <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"/>
       <class name="com.arcapi.Citytestcases.LeedExistingCityCreateAssetAPITest"/>
-      <class name="com.arcapi.Citytestcases.LEEDV4CitiesPlanandDesign"/>
     </classes>
   </test> <!-- LEED v4.1 Cities: Existing -->
+  <test name="LEED v4.1 Cities: Plan and Design">
+    <parameter name="CreditColumn" value="CityOtherNoneCredit"/>
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="CreditColumnNum" value="1"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="Country" value="US"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
+    <classes>
+      <class name="com.arcapi.Leedv4Testcases.LOAuthenticateAPITest"/>
+      <class name="com.arcapi.Citytestcases.LEEDV4CitiesPlanandDesign"/>
+      <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.NotSyncLOProjectAPITest"/>
+      <class name="com.arcapi.Leedv4Testcases.NotSignAgreementRegistrationAPITest"/>
+    </classes>
+  </test> <!-- LEED v4.1 Cities: Plan and Design -->
 </suite> <!-- Failed suite [LEEDv4.1Cities] -->

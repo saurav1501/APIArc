@@ -115,12 +115,9 @@
 <class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"></class>
 <class name="com.arcapi.Common.AssetDataSnapshotAPITest"></class>
-
 <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
-
 <class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class>
 <class name="com.arcapi.Common.Neg.SubmitReviewGetAPITest"></class>
-
 <class name="com.arcapi.Common.NotificationCreatePOSTAPITest"></class>
 <class name="com.arcapi.Common.NotificationGetAPITest"></class>
 <class name="com.arcapi.Common.NotificationDeleteAPITest"></class>
