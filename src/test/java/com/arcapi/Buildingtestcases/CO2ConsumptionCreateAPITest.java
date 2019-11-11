@@ -20,7 +20,7 @@ public class CO2ConsumptionCreateAPITest extends BaseClass {
 		try {
 			payload = MeterPayload.meterData3();
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-					+ data.getCellData("DataInput", "CO2MeterID", rownumber) + "/consumption/";
+					+ data.getCellData("DataInput", "ExcelTemplateMeterID", 4) + "/consumption/";
 
 			
 			CommonMethod.res = MethodCall.POSTRequest(url, payload);

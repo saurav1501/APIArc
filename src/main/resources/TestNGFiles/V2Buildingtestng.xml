@@ -17,6 +17,7 @@
 <class name="com.arcapi.Common.V2.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.Common.V2.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.V2.AddAssestTimelinePOSTAPITest"></class>
+
 <class name="com.arcapi.Common.UserPreferenceGetAPITest"></class>
 <class name="com.arcapi.Common.V2.ResampledEnergBasicAnalysisDataGetAPITest"></class>
 <class name="com.arcapi.Common.V2.ResampledDiverted_wasteAnalysisDataGetAPITest"></class>
@@ -36,10 +37,8 @@
 <class name="com.arcapi.Common.V2.ResampledWaste_ScoreDataGetAPITest"></class>
 <class name="com.arcapi.Common.V2.ResampledWater_ScoreDataGetAPITest"></class>
 <class name="com.arcapi.Common.V2.ResampledWaterAnalysisDataGetAPITest"></class>
-
 <class name="com.arcapi.Common.V2.IntensityWaterGetAPITest"></class>
 <class name="com.arcapi.Common.V2.IntensityAllOtherGetAPITest"></class> 
-
 <class name="com.arcapi.Common.UserPreferenceTruePostAPITest"></class>
 <class name="com.arcapi.Common.DefaultUserPreferencePostAPITest"></class>
 <class name="com.arcapi.Common.ScoreCodeVersionQuerysetGetAPITest"></class>
@@ -57,7 +56,6 @@
 <class name="com.arcapi.Common.WasteGeneratedResampleGETAPITest"></class>
 <class name="com.arcapi.Common.WasteDivertedResampleGETAPITest"></class>
 <class name="com.arcapi.Common.DataSnapshotBeforeReviewGETAPITest"></class>
-  
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
 <class name="com.arcapi.Common.AssetValidationInfoPOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetSearchOwnerAPITest"></class>
@@ -71,25 +69,8 @@
 <class name="com.arcapi.Common.VerifyAgreementPresentAPITest"></class>
 <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
 <class name="com.arcapi.Common.V2.VerifyAgreementDeleteAPITest"></class> 
-<class name="com.arcapi.Buildingtestcases.MetersAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.ConsumptionListAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.ConsumptionDetailAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.MeterDeleteAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest"></class>
-<class name="com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest"></class>
-<class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.WasteGetAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.WasteDetailAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest"></class> 
+
+<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ExcelUploadTemplatePOSTAPITest"></class> 
 <class name="com.arcapi.Common.AssetTeamMemberRoleAPITest"></class>
 <class name="com.arcapi.Common.AssetTeamMemberListAPITest"></class>
@@ -111,9 +92,32 @@
 <class name="com.arcapi.Common.NotificationSubscriptionDetailGetTest"></class>
 <class name="com.arcapi.Common.NotificationSubscriptionDetailPutTest"></class>
 <class name="com.arcapi.Common.NotificationSubscriptionDetailDeleteTest"></class>
-<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
+
+
+
 <class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"></class>
+
+<class name="com.arcapi.Buildingtestcases.MetersAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.MeterCreatePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetMeterDetailAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.MeterUpdatePUTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.MeterBulkConsumptionPOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionListAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionCreatePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionDetailAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionUpdatePUTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ConsumptionDeleteAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.MeterDeleteAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.WasteGeneratedBulkDataPostTest"></class>
+<class name="com.arcapi.Buildingtestcases.WasteDivertedBulkDataPostTest"></class>
+<class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.WasteGetAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.WasteDetailAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.WasteUpdatePUTAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.WasteDetailDeleteAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.SurveyCreatePOSTAPITest"></class> 
+
 <class name="com.arcapi.Common.AssetDataSnapshotAPITest"></class>
 <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
 <class name="com.arcapi.Common.Neg.SubmitReviewPOSTAPITest"></class>
@@ -153,7 +157,6 @@
 <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
 <class name="com.arcapi.Common.V2.ResampledTotalScoreGetAPITest"></class>  
 <class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest"></class>  
-
 
 </classes> 
 </test>  

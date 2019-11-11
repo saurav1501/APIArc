@@ -18,8 +18,7 @@ public class VOCConsumptionUpdateAPITest extends BaseClass {
 			payload = MeterPayload.meterData2();
 			
 			url = "/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-					+ data.getCellData("DataInput", "VOCMeterID", rownumber) + "/consumption/ID:"
-					+ data.getCellData("DataInput", "VOCPK", rownumber) + "/";
+					+ data.getCellData("DataInput", "ExcelTemplateMeterID", 4) + "/consumption/";
 
 			CommonMethod.res = MethodCall.PUTRequest(url, payload);
 		} catch (Exception e) {

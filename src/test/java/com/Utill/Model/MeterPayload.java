@@ -158,7 +158,7 @@ public class MeterPayload extends BaseClass{
 		map.put("other_complaint", "Test Completent");
 		map.put("language","English");
 		map.put("routes",Arrays.asList(payload));
-		map.put("feedbacks","['views to outdoors','sound','privacy','air quality','cleanliness','light','privacy','daylight']");
+		map.put("feedbacks","['views to outdoors','sound','thermal comfort','air quality','cleanliness','light','privacy','daylight']");
 		return map;
 		
 		

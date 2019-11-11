@@ -1,33 +1,37 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="V2MasterAPITestCasesSuite">
 
-<!-- <parameter name="environment" value="stg2"/> 
- <parameter name="SheetName" value="STG2"/> -->  
+<!-- <parameter name="environment" value="dev2"/> 
+<parameter name="SheetName" value="DEV2"/>  --> 
 
 <parameter name="environment" value="${env}" />
-<parameter name="SheetName" value="${sheet}" />  
+<parameter name="SheetName" value="${sheet}" />   
 
 <parameter name="Country" value="US"/>
 <parameter name="PaymentType" value="CreditCardPayment"/>
 
-	<suite-files>
-     <suite-file path="Beta-ARC-V2-API-CompleteFlow.xml"></suite-file>  
+	   <suite-files>
+       
+       <suite-file path="Beta-ARC-V2-API-CompleteFlow.xml"></suite-file>  
 	   <suite-file path="V2Buildingtestng.xml"></suite-file>    
-       <suite-file path="V2Portfoliostestng.xml"></suite-file>   
+       <suite-file path="V2Portfoliostestng.xml"></suite-file> 
+       <suite-file path="InterRelatedFieldValidationTestng.xml"></suite-file>  
 	   <suite-file path="Parksmarttestng.xml"></suite-file>  
 	   <suite-file path="AboveGroundTest.xml"></suite-file>   
 	   <suite-file path="CityTestNG.xml"></suite-file>  
 	   <suite-file path="ScoreScenariosTestNG.xml"></suite-file>    
+	   <suite-file path="CrossRatingSystemTestng.xml"></suite-file>
  	   <suite-file path="V2DataInputScenariosTestNG.xml"></suite-file>  
- 		<suite-file path="V2CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
-		<suite-file path="V2EmissionFactor.xml"></suite-file>   
-		<suite-file path="CommunityTestNG.xml"></suite-file>    	
- 	  	<suite-file path="TransitBelow.xml"></suite-file>  
- 	  	<suite-file path="LEEDv4Building.xml"></suite-file>  
- 	  	<suite-file path="LEEDv4Communities.xml"></suite-file> 
- 	  	<suite-file path="LEEDv4Cities.xml"></suite-file>
+ 	   <suite-file path="V2CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
+	   <suite-file path="V2EmissionFactor.xml"></suite-file>   
+	   <suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
+	   <suite-file path="CommunityTestNG.xml"></suite-file>    	
+ 	   <suite-file path="TransitBelow.xml"></suite-file>  
+ 	   <suite-file path="LEEDv4Building.xml"></suite-file>  
+ 	   <suite-file path="LEEDv4Communities.xml"></suite-file> 
+ 	   <suite-file path="LEEDv4Cities.xml"></suite-file> 
 	   <suite-file path="V2ScenarioBasedTestingTestng.xml"></suite-file>  
-   	    
+	    
 	</suite-files>
 	
 </suite> 

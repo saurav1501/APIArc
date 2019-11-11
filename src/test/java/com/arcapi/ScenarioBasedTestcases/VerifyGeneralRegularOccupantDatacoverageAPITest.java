@@ -5,6 +5,7 @@ import java.math.RoundingMode;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.Utill.Controller.Assertion;
 import com.Utill.Controller.MethodCall;
@@ -23,15 +24,13 @@ public class VerifyGeneralRegularOccupantDatacoverageAPITest extends BaseClass {
 		
 		Assertion.verifyStatusCode(CommonMethod.res, 200);
 		
-		String energy = CommonMethod.res.path("energy").toString();
-		String water = CommonMethod.res.path("water").toString();
-		String waste = CommonMethod.res.path("waste").toString();
-		String transport = CommonMethod.res.path("transport").toString();
-		String satisfaction = CommonMethod.res.path("satisfaction").toString();
-		String co2 = CommonMethod.res.path("co2").toString();
-		String voc = CommonMethod.res.path("voc").toString();
-		
-		System.out.println(energy);
+		SoftAssert softAssert = new SoftAssert();
+		String energy = CommonMethod.res.path("energy.percentage").toString();
+		String water = CommonMethod.res.path("water.percentage").toString();
+		String waste = CommonMethod.res.path("waste.percentage").toString();
+		String transport = CommonMethod.res.path("transport.percentage").toString();
+		String humanexperience = CommonMethod.res.path("humanexperience.percentage").toString();
+
 		
 		double expectedEnergy1 = (180.0*100)/(1*365);
 		BigDecimal expectedEnergy2 = new BigDecimal(expectedEnergy1);
@@ -49,14 +48,19 @@ public class VerifyGeneralRegularOccupantDatacoverageAPITest extends BaseClass {
 		BigDecimal expectedTransport2 = new BigDecimal(expectedTransport1);
 		expectedTransport2 = expectedTransport2.setScale(1, RoundingMode.HALF_UP);
 		String expectedTransport = expectedTransport2.toString();
+		
+		double transport1 = Double.parseDouble(transport);
+		double Humanexperience = (200.0 + transport1 )/3;
+		BigDecimal expectedHumanexperience = new BigDecimal(Humanexperience);
+		expectedHumanexperience = expectedHumanexperience.setScale(1, RoundingMode.HALF_UP);
+		String expectedHumanexperience1 = expectedHumanexperience.toString();
 
+	
 		Assertion.verifyDataContinueOnFaliluare(energy, expectedEnergy);
 		Assertion.verifyDataContinueOnFaliluare(water, expectedWater);
 		Assertion.verifyDataContinueOnFaliluare(waste, "100");
-		Assertion.verifyDataContinueOnFaliluare(co2, "100");
-		Assertion.verifyDataContinueOnFaliluare(voc, "100");
 		Assertion.verifyDataContinueOnFaliluare(transport, expectedTransport);
-		Assertion.verifyDataContinueOnFaliluare(satisfaction, expectedTransport);
+		Assertion.verifyDataContinueOnFaliluare(humanexperience, expectedHumanexperience1);
 		
 		softAssert.assertAll();
 			

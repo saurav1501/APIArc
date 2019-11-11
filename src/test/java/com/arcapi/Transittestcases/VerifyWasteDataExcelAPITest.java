@@ -36,6 +36,6 @@ public class VerifyWasteDataExcelAPITest extends BaseClass {
 		e.printStackTrace();
 		}
 				
-			}
+	}
 			
 }

@@ -19,7 +19,7 @@ public class VOCConsumptionCreateAPITest extends BaseClass {
 		try {
 			payload = MeterPayload.meterData3();
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-					+ data.getCellData("DataInput", "VOCMeterID", rownumber) + "/consumption/";
+					+ data.getCellData("DataInput", "ExcelTemplateMeterID", 4) + "/consumption/";
 
 			CommonMethod.res = MethodCall.POSTRequest(url, payload);	
 			Assertion.verifyStatusCode(	CommonMethod.res, 201);

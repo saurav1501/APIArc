@@ -3,7 +3,7 @@
 
 <test name="CompleteFlowTest-Portfolios-Gresb">
 <parameter name="ProjectType" value="building" />
-<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
 <parameter name="SoReference" value="performance score" />
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="ratings" value="none"/>

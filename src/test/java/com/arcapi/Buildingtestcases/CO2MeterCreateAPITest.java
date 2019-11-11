@@ -22,10 +22,7 @@ public class CO2MeterCreateAPITest extends BaseClass {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/";
 			CommonMethod.res = MethodCall.POSTRequest(url, payload);		
 			
-			CommonMethod.fetchedID = CommonMethod.res.path("id").toString();
-			data.setCellData("DataInput","CO2PK", rownumber, CommonMethod.fetchedID);
-			data.setCellData("DataInput", "CO2MeterID", rownumber,CommonMethod.fetchedID);
-			Assertion.verifyStatusCode(CommonMethod.res, 201);
+			Assertion.verifyStatusCode(CommonMethod.res,400);
 			
 
 		} catch (JsonProcessingException e) {

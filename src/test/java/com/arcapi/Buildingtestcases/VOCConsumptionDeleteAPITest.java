@@ -16,7 +16,7 @@ public class VOCConsumptionDeleteAPITest extends BaseClass {
 
 		try {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-					+ data.getCellData("DataInput", "VOCMeterID", rownumber) + "/consumption/ID:"
+					+ data.getCellData("DataInput", "ExcelTemplateMeterID", 4) + "/consumption/ID:"
 					+ data.getCellData("DataInput", "VOCPK", rownumber) + "/";
 
 			CommonMethod.res = MethodCall.DELETERequest(url);

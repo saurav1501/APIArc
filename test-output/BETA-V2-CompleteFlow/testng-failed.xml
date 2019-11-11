@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [BETA-V2-CompleteFlow]">
-  <parameter name="environment" value="qas2"/>
+  <parameter name="environment" value="dev2"/>
   <parameter name="SoReference" value="performance score"/>
   <parameter name="ratings" value="other"/>
   <parameter name="ProjectType" value="building"/>
@@ -9,7 +9,7 @@
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
-  <parameter name="SheetName" value="QAS2"/>
+  <parameter name="SheetName" value="DEV2"/>
   <parameter name="SoReferenceSR" value="performance score"/>
   <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
   <test name="CompleteFlowTest-Building-Other">
@@ -22,6 +22,8 @@
     <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
     <classes>
       <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Common.V2.SetUserprofileV2APITest"/>
+      <class name="com.arcapi.Common.V2.SetUserprofileV1APITest"/>
       <class name="com.arcapi.Common.V2.BasicAnalysisDataGetAPITest"/>
       <class name="com.arcapi.Common.V2.EnergBasicAnalysisDataGetAPITest"/>
       <class name="com.arcapi.Common.V2.Energy_ScoreBasicAnalysisDataGetAPITest"/>
@@ -34,4 +36,146 @@
       <class name="com.arcapi.Common.V2.WaterScoreGetAPITest"/>
     </classes>
   </test> <!-- CompleteFlowTest-Building-Other -->
+  <test name="CompleteFlowTest-Building-Other(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="other"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="Aggrement" value="true"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther"/>
+    <classes>
+      <class name="com.arcapi.Common.V2.WaterScoreGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.WaterScoreGetAPITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+      <class name="com.arcapi.Common.V2.EnergBasicAnalysisDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.EnergBasicAnalysisDataGetAPITest -->
+      <class name="com.arcapi.Common.V2.Humanexperience_ScoreBasicAnalysisDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.Humanexperience_ScoreBasicAnalysisDataGetAPITest -->
+      <class name="com.arcapi.Common.V2.BasicAnalysisDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.BasicAnalysisDataGetAPITest -->
+      <class name="com.arcapi.Common.V2.Energy_ScoreBasicAnalysisDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.Energy_ScoreBasicAnalysisDataGetAPITest -->
+      <class name="com.arcapi.Common.V2.SetUserprofileV1APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.SetUserprofileV1APITest -->
+      <class name="com.arcapi.Common.V2.SetUserprofileV2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="SetUserprofileV2API" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.SetUserprofileV2APITest -->
+      <class name="com.arcapi.Common.V2.Improvement_ScoreBasicAnalysisDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.Improvement_ScoreBasicAnalysisDataGetAPITest -->
+      <class name="com.arcapi.Common.V2.WaterBasicAnalysisDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.WaterBasicAnalysisDataGetAPITest -->
+      <class name="com.arcapi.Common.V2.Transport_ScoreBasicAnalysisDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.Transport_ScoreBasicAnalysisDataGetAPITest -->
+      <class name="com.arcapi.Common.V2.Waste_ScoreDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.Waste_ScoreDataGetAPITest -->
+      <class name="com.arcapi.Common.V2.Waste_AnalysisDataGetAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.Waste_AnalysisDataGetAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-Other(failed) -->
 </suite> <!-- Failed suite [BETA-V2-CompleteFlow] -->

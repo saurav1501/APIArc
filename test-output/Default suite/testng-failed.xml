@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest"/>
+      <class name="com.arcapi.Common.V2.SetUserprofileV1APITest"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest">
+      <class name="com.arcapi.Common.V2.SetUserprofileV1APITest">
         <methods>
+          <include name="SetUserprofileV2API"/>
           <include name="getSuiteName"/>
-          <include name="RecomputeVerifyTotalScoreGraphGetAPI"/>
         </methods>
-      </class> <!-- com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest -->
+      </class> <!-- com.arcapi.Common.V2.SetUserprofileV1APITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@ package com.arcapi.ScenarioBasedTestcases;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.Utill.Controller.Assertion;
 import com.Utill.Controller.MethodCall;
@@ -16,26 +17,22 @@ public class VerifyDatacoverage2108DataGetAPITest extends BaseClass{
 
 	url = "/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber)+"/datacoverage/?at=2018-08-02";
 	CommonMethod.res =MethodCall.GETRequest(url);
-	
+   
+	SoftAssert softAssert = new SoftAssert();
 	Assertion.verifyStatusCode(CommonMethod.res, 200);
 	
-	String energy = CommonMethod.res.path("energy").toString();
-	String water = CommonMethod.res.path("water").toString();
-	String waste = CommonMethod.res.path("waste").toString();
-	String transport = CommonMethod.res.path("transport").toString();
-	String satisfaction = CommonMethod.res.path("satisfaction").toString();
-	String co2 = CommonMethod.res.path("co2").toString();
-	String voc = CommonMethod.res.path("voc").toString();
-	
+	String energy = CommonMethod.res.path("energy.percentage").toString();
+	String water = CommonMethod.res.path("water.percentage").toString();
+	String waste = CommonMethod.res.path("waste.percentage").toString();
+	String transport = CommonMethod.res.path("transport.percentage").toString();
+	String humanexperience = CommonMethod.res.path("humanexperience.percentage").toString();
 	
 	Assertion.verifyDataContinueOnFaliluare(energy, "0");
 	Assertion.verifyDataContinueOnFaliluare(water, "0");
 	Assertion.verifyDataContinueOnFaliluare(waste, "0");
-	Assertion.verifyDataContinueOnFaliluare(co2, "0");
-	Assertion.verifyDataContinueOnFaliluare(voc,"0");
 	Assertion.verifyDataContinueOnFaliluare(transport, "0.0");
-	Assertion.verifyDataContinueOnFaliluare(satisfaction, "0.0");
-	
+	Assertion.verifyDataContinueOnFaliluare(humanexperience,"0.0");
+
 	softAssert.assertAll();
 		
 }

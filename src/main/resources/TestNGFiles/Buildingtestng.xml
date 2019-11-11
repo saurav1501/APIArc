@@ -9,7 +9,7 @@
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="other"></parameter>
-<parameter name="Aggrement" value="false"></parameter>
+<parameter name="Aggrement" value="true"></parameter>
 
 <classes>
 <class name="com.arcapi.Common.ReviewPaymentIntimationGetAPITest"></class>
@@ -19,10 +19,9 @@
 <class name="com.arcapi.Common.LoginAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.Common.AssetSearchAPITest"></class>
-<class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
+<class name="com.arcapi.Common.V2.AddAssestTimelinePOSTAPITest"></class>
 <class name="com.arcapi.Common.UserPreferenceGetAPITest"></class>
 <class name="com.arcapi.Common.UserPreferenceTruePostAPITest"></class>
 <class name="com.arcapi.Common.DefaultUserPreferencePostAPITest"></class>
@@ -151,13 +150,10 @@
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="none"></parameter>
-<parameter name="Aggrement" value="false"></parameter>
+<parameter name="Aggrement" value="true"></parameter>
 <classes>
 
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
-<class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
-<class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.EnergyCreate60MonthMeterDataPostTest"></class>   
@@ -165,10 +161,9 @@
 <class name="com.arcapi.Buildingtestcases.WaterCreate60MonthMeterDataPostTest"></class> 
 <class name="com.arcapi.Buildingtestcases.WasteCreate60MonthMeterDataBulkPostTest"></class>
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
-<class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"></class>   
-<class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"></class> 
+<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CarbonDioxideCreate5YearDataPostTest"></class> 
-<class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest"></class> 
 
 </classes> 

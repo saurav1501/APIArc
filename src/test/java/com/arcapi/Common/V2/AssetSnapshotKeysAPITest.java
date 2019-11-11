@@ -16,7 +16,7 @@ public class AssetSnapshotKeysAPITest extends BaseClass {
 		try {
 			url = "/assets/LEED:" +  data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/review/snapshot/keys/";
 			CommonMethod.res = MethodCall.GETRequest(url);
-			Assertion.verifyStatusCode(CommonMethod.res, 403);
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

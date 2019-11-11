@@ -16,21 +16,50 @@ public class ExcelTemplateMetersAPITest extends BaseClass {
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 	public void ExcelTemplateMetersAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws IOException {
 		
-		int row = 2;
 		url =  "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/?page_size=20";
 		CommonMethod.res = MethodCall.GETRequest(url);
 		
-		for (int i=0;i<4;i++) {
+		Integer meter = CommonMethod.res.path("count");
+			 
+	
+		for(int i=0;i<meter -1 ;i++){
 		
-		CommonMethod.fetchedID = CommonMethod.res.path("results.id["+i+"]").toString();
+	    Integer type = CommonMethod.res.path("results["+i+"].fuel_type.id");
+	    System.out.println(type);
+	    
+	    if(type==47) {
+	    	/* Energy*/
+	    	 String meterID = CommonMethod.res.path("results["+i+"].id").toString();
+	    	 data.setCellData("DataInput", "ExcelTemplateMeterID",2, meterID);	
+	    	 
+	    
+	    }
 		
-		data.setCellData("DataInput", "ExcelTemplateMeterID", row, CommonMethod.fetchedID);
+	    if(type==29) {
+	    	/* Water */
+	    	 String meterID = CommonMethod.res.path("results["+i+"].id").toString();
+	    	 data.setCellData("DataInput", "ExcelTemplateMeterID",3, meterID);
+	    	 	 
+	    }
+	    if(type==205) {
+	    	/* TVOC */
+	    	 String meterID = CommonMethod.res.path("results["+i+"].id").toString();
+	    	 data.setCellData("DataInput", "ExcelTemplateMeterID",5, meterID);	
+	    	 
+	    	 
+	    }
+	    if(type==206) {
+	    	/* CO2 */
+	    	 String meterID = CommonMethod.res.path("results["+i+"].id").toString();
+	    	 data.setCellData("DataInput", "ExcelTemplateMeterID",4, meterID);
+	    
+	    }
+	    	Assertion.verifyStatusCode(CommonMethod.res, 200);
 		
-        CommonMethod.fetchedID = CommonMethod.res.path("results.name["+i+"]").toString();
-		data.setCellData("DataInput", "ExcelTemplateMeterName", row, CommonMethod.fetchedID);		
-	    Assertion.verifyStatusCode(CommonMethod.res, 200);
-		row++;
 		}
 	}
 
+	
+
+    
 }

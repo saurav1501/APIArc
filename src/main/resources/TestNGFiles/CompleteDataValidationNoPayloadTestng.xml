@@ -10,7 +10,7 @@
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="none"></parameter>
 <parameter name="CustomSheetName" value="Emission"/>
-<parameter name="Aggrement" value="false"></parameter>
+<parameter name="Aggrement" value="true"></parameter>
 
  <classes>
 <class name="com.arcapi.Common.LoginAPITest"></class>

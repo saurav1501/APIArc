@@ -9,13 +9,10 @@
 <parameter name="SoReferenceSR" value="performance score" />
 <parameter name="rownumber" value="2" />
 <parameter name="ratings" value="none"></parameter>
-<parameter name="Aggrement" value="false"></parameter>
+<parameter name="Aggrement" value="true"></parameter>
 <classes>
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
-<class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
-<class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
 <class name="com.arcapi.CrossRatingSystemtestcases.AQIDataGetAPITest"></class>
 <class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest"></class>
 <class name="com.arcapi.CrossRatingSystemtestcases.MeasuresListAPITest"></class>

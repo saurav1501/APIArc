@@ -15,6 +15,7 @@
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.EnergyCreate180DaysDataPostAPITest"></class>   
 <class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"></class>
@@ -22,9 +23,8 @@
 <class name="com.arcapi.Buildingtestcases.WasteCreatePOSTAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"></class> 
-<class name="com.arcapi.Buildingtestcases.CO2MeterCreateAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.CO2ConsumptionCreateAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.VOCMeterCreateAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.VOCConsumptionCreateAPITest"></class> 
 <class name="com.arcapi.ScenarioBasedTestcases.SetGeneralAllOccupantPUTAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.VerifyDatacoverageGetAPITest"></class>
@@ -130,6 +130,8 @@
 <parameter name ="ratings" value="PARKSMART"/> 
 <classes>
 <class name="com.arcapi.ScenarioBasedTestcases.AddProjectNullValueAPITest"></class>
+
+
 </classes> 
 <!-- </test>   
 
@@ -144,7 +146,17 @@
 <class name="com.arcapi.ScenarioBasedTestcases.CheckSpaceTypeBuildingOtherAPITest"></class>
 <class name="com.arcapi.ScenarioBasedTestcases.CheckOwnerTypeBuildingOtherAPITest"></class>  
 </classes>  -->
-</test> 
+</test>
+
+<test name="SetUserV1">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
+<parameter name="rownumber" value="2" />
+<classes> 
+<class name="com.arcapi.Common.V2.SetUserprofileV1APITest"></class> 
+</classes>
+</test>
+ 
 </suite>
   
 

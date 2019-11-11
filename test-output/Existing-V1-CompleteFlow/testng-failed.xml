@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Existing-V1-CompleteFlow]">
-  <parameter name="environment" value="stg"/>
-  <parameter name="CreditColumn" value="CommunityOtherNoneCredit"/>
+  <parameter name="environment" value="dev"/>
   <parameter name="SoReference" value="performance score"/>
-  <parameter name="CreditColumnNum" value="6"/>
-  <parameter name="ratings" value="other"/>
   <parameter name="ProjectType" value="community"/>
   <parameter name="Country" value="US"/>
   <parameter name="PaymentType" value="CreditCardPayment"/>
   <parameter name="rownumber" value="2"/>
-  <parameter name="SheetName" value="STG"/>
+  <parameter name="SheetName" value="DEV"/>
   <parameter name="SoReferenceSR" value="performance score"/>
-  <parameter name="ProjectTypeColumn" value="ProjectIDCommunityNone"/>
+  <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
   <test name="CompleteFlowTest-Community-Other">
-    <parameter name="CreditColumn" value="CommunityOtherNoneCredit"/>
     <parameter name="SoReference" value="performance score"/>
-    <parameter name="CreditColumnNum" value="6"/>
-    <parameter name="ratings" value="other"/>
     <parameter name="ProjectType" value="community"/>
     <parameter name="rownumber" value="2"/>
     <parameter name="SoReferenceSR" value="performance score"/>
-    <parameter name="ProjectTypeColumn" value="ProjectIDCommunityNone"/>
+    <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
     <classes>
       <class name="com.arcapi.Common.LoginAPITest"/>
+      <class name="com.arcapi.Common.V2.SetUserprofileV2APITest"/>
+      <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"/>
     </classes>
   </test> <!-- CompleteFlowTest-Community-Other -->
+  <test name="CompleteFlowTest-Community-Other(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ProjectType" value="community"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest -->
+      <class name="com.arcapi.Common.V2.SetUserprofileV2APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="SetUserprofileV2API" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.V2.SetUserprofileV2APITest -->
+      <class name="com.arcapi.Common.LoginAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.LoginAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Community-Other(failed) -->
 </suite> <!-- Failed suite [Existing-V1-CompleteFlow] -->

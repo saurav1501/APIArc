@@ -15,7 +15,7 @@ public class CO2ConsumptionDeleteAPITest extends BaseClass {
 	public void CO2ConsumptionDeleteAPI(String SheetName, String ProjectTypeColumn, int rownumber){
 
 		try {
-			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:" + data.getCellData("DataInput", "CO2MeterID", rownumber) + "/consumption/ID:"+ data.getCellData("DataInput", "CO2PK", rownumber) + "/";
+			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:" + data.getCellData("DataInput", "ExcelTemplateMeterID", 4) + "/consumption/ID:"+ data.getCellData("DataInput", "CO2PK", rownumber) + "/";
 			
 			CommonMethod.res = MethodCall.DELETERequest(url);
 

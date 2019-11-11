@@ -32,7 +32,7 @@ public class VocCreatePOSTAPITest extends BaseClass {
 
 			if(str=="ug/m3") {
 			
-			Assertion.verifyStatusCode(CommonMethod.res, 201);
+			Assertion.verifyStatusCode(CommonMethod.res, 400);
 			
 			}
 			

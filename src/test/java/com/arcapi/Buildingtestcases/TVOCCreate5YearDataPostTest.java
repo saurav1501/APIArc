@@ -18,7 +18,7 @@ public class TVOCCreate5YearDataPostTest extends BaseClass {
 		public void TVOCCreate5YearDataPost(String start_date,String end_date, String reading) throws IOException {
 
 			String projectType = data.getCellData(sheetName, "ProjectIDBuildingNone",rowNumTwo);
-			String meterID =  data.getCellData("DataInput", "VOCMeterID", rowNumTwo);
+			String meterID =  data.getCellData("DataInput", "ExcelTemplateMeterID", 4);
 			  	
 			MeterData meterData = new MeterData();
 			meterData.setStart_date(start_date);

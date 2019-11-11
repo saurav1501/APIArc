@@ -33,7 +33,7 @@ public class Co2CreatePOSTAPITest extends BaseClass {
 		
 	    if(str=="ppm") {
 		
-		Assertion.verifyStatusCode(CommonMethod.res, 201);
+		Assertion.verifyStatusCode(CommonMethod.res, 400);
 		
 		}
 		

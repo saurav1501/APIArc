@@ -16,7 +16,7 @@ public class NegUpdateTransportOccupantPOSTAPITest extends BaseClass {
 	@Test(groups="VerifyDatacoverage")
 	@Parameters({ "SheetName","ProjectTypeColumn","rownumber" })
 
-	public void ExcludeSpacesTransportOccupantPOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws JsonProcessingException {
+	public void NegUpdateTransportOccupantPOSTAPI(String SheetName,String ProjectTypeColumn, int rownumber) throws JsonProcessingException {
 
 		url = "/assets/LEED:" +data.getCellData(SheetName, ProjectTypeColumn, rownumber)+"/occupant/transport/";
 		
@@ -28,7 +28,7 @@ public class NegUpdateTransportOccupantPOSTAPITest extends BaseClass {
 			
 		CommonMethod.res = MethodCall.POSTRequest(url, map);
 		
-		Assertion.verifyStatusCode(CommonMethod.res, 403);
+		Assertion.verifyStatusCode(CommonMethod.res, 404);
 
 }
 

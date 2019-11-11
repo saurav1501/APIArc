@@ -18,7 +18,7 @@ public class CO2MeterDeleteAPITest extends BaseClass {
 
 		try {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
-					+ data.getCellData("DataInput", "CO2MeterID", rownumber) + "/";
+					+ data.getCellData("DataInput", "ExcelTemplateMeterID", 4) + "/";
 
 			CommonMethod.res = MethodCall.DELETERequest(url);
 			

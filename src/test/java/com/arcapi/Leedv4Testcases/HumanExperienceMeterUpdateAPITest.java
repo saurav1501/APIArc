@@ -33,15 +33,15 @@ public class HumanExperienceMeterUpdateAPITest extends BaseClass {
 				+ data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/?recompute_score=false";
 
 		CommonMethod.res = MethodCall.PUTRequest(url, jsonAsMap);
-			
-		if(j==0 && k==1){
-			
-			Assertion.verifyStatusCode(CommonMethod.res, 200);
-		}
-	
-		else if(j==0 && k==3){
+		
+		if(j==0 && k==2){
 			
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			}
+		
+		if(j==0 && k==3){
+			
+		Assertion.verifyStatusCode(CommonMethod.res, 200);
 		}
 		else if(j==0 && k==4){
 		
@@ -82,8 +82,6 @@ public class HumanExperienceMeterUpdateAPITest extends BaseClass {
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		}
 		
-	
-		
 		else if(j==2 && k==0){
 			
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
@@ -103,19 +101,14 @@ public class HumanExperienceMeterUpdateAPITest extends BaseClass {
 				Assertion.verifyStatusCode(CommonMethod.res, 200);
 				}
 			
-		
 		 else {
-	        	
 	        	Assertion.verifyStatusCode(CommonMethod.res, 400);
 	        	  }
-		
-		
-			}		
-	
-	
-	
-			}
-		}}	
+
+		}		
+	}
+}
+}	
 
 }
 

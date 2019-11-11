@@ -26,7 +26,6 @@ public class SetGeneralAllOccupantPUTAPITest extends BaseClass {
 	
 	Assertion.verifyStatusCode(CommonMethod.res, 200);
 	
-
 }
 
 }
