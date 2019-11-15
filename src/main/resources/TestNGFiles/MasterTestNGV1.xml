@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="V1MasterAPITestCasesSuite">
 
-<!-- <parameter name="environment" value="dev"/>
-<parameter name="SheetName" value="DEV"/>   -->
+<!-- <parameter name="environment" value="qas"/>
+<parameter name="SheetName" value="QAS"/>   -->
 
 <parameter name="environment" value="${env}" />
 <parameter name="SheetName" value="${sheet}" />   

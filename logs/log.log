@@ -1,44 +1,19 @@
-2019-11-11 12:09:58 INFO  LoginAPITest:264 - Executing test: LoginAPI
-2019-11-11 12:09:58 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/dev/leed/auth/login/
-2019-11-11 12:10:05 INFO  LoginAPITest:43 - API Responded With Status Code : 200
-2019-11-11 12:10:05 INFO  LoginAPITest:123 - Payload is  devarcbeta1@gmail.cominitpass
-2019-11-11 12:10:05 INFO  LoginAPITest:127 - SAMEORIGIN
-2019-11-11 12:10:06 INFO  LoginAPITest:130 - csrftoken=g0oNEvju7bhexonnup91ZFggsMCOTeq3RJiV30Pw9pgbRjWH4TTopMvOn8maRDw2;Path=/;Max-Age=31449600;Expires=11/9/20 6:40 AM
-sessionid=7dkftykistekn63tmvi9u12duh21njg9;Path=/;HttpOnly
-2019-11-11 12:10:06 INFO  LoginAPITest:131 - FftTM2O27S8DShQj7jGFYlJLS1z82x
-2019-11-11 12:10:07 INFO  LoginAPITest:137 - Bearer
-2019-11-11 12:10:07 INFO  LoginAPITest:138 - Post Response Time In milliseconds0
-2019-11-11 12:10:07 INFO  LoginAPITest:141 - Header is Bearer FftTM2O27S8DShQj7jGFYlJLS1z82x
-2019-11-11 12:10:07 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key450fc0393ae747638659258f5ed26485
-2019-11-11 12:10:07 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
-2019-11-11 12:10:07 INFO  SetUserprofileV2APITest:264 - Executing test: SetUserprofileV2API
-2019-11-11 12:10:07 INFO  SetUserprofileV2APITest:224 - PUT Request Call URL https://api.usgbc.org/dev/leed/auth/userprofile/
-2019-11-11 12:10:11 INFO  SetUserprofileV2APITest:231 - Put Response Time In milliseconds3165
-2019-11-11 12:10:11 INFO  SetUserprofileV2APITest:235 - Payload is  {"ui_version":"v2"}
-2019-11-11 12:10:11 INFO  SetUserprofileV2APITest:43 - API Responded With Status Code : 200
-2019-11-11 12:10:11 INFO  BasicAnalysisDataGetAPITest:264 - Executing test: BasicAnalysisDataGetAPI
-2019-11-11 12:10:11 INFO  BasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/dev/leed/assets/basic/analytics/
-2019-11-11 12:10:13 INFO  BasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1575
-2019-11-11 12:10:13 INFO  BasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-11 12:10:16 INFO  EnergBasicAnalysisDataGetAPITest:264 - Executing test: EnergBasicAnalysisDataGetAPI
-2019-11-11 12:10:16 INFO  EnergBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/dev/leed/assets/energy/analytics/
-2019-11-11 12:10:17 INFO  EnergBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1664
-2019-11-11 12:10:17 INFO  EnergBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-11 12:10:17 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Energy_ScoreBasicAnalysisDataGetAPI
-2019-11-11 12:10:17 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/dev/leed/assets/energy/analytics/
-2019-11-11 12:10:19 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1436
-2019-11-11 12:10:19 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-11 12:10:19 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Humanexperience_ScoreBasicAnalysisDataGetAPI
-2019-11-11 12:10:19 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/dev/leed/assets/humanexperience_score/analytics/
-2019-11-11 12:10:21 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1534
-2019-11-11 12:10:21 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-11 12:10:21 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Improvement_ScoreBasicAnalysisDataGetAPI
-2019-11-11 12:10:21 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/dev/leed/assets/improvement_score/analytics/
-2019-11-11 12:10:22 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1405
-2019-11-11 12:10:22 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-11 12:10:23 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Waste_ScoreBasicAnalysisDataGetAPI
-2019-11-11 12:10:23 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/dev/leed/assets/transport_score/analytics/
-2019-11-11 12:10:24 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1452
-2019-11-11 12:10:24 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-11 12:10:24 INFO  Waste_AnalysisDataGetAPITest:264 - Executing test: Waste_AnalysisDataGetAPI
-2019-11-11 12:10:24 INFO  Waste_AnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/dev/leed/assets/waste_score/analytics/
+2019-11-15 12:43:53 INFO  LoginAPITest:264 - Executing test: LoginAPI
+2019-11-15 12:43:53 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/qas/leed/auth/login/
+2019-11-15 12:43:58 INFO  LoginAPITest:43 - API Responded With Status Code : 400
+2019-11-15 12:43:59 INFO  SetUserprofileV2APITest:264 - Executing test: SetUserprofileV2API
+2019-11-15 12:43:59 INFO  SetUserprofileV2APITest:224 - PUT Request Call URL https://api.usgbc.org/qas/leed/auth/userprofile/
+2019-11-15 12:43:59 INFO  BasicAnalysisDataGetAPITest:264 - Executing test: BasicAnalysisDataGetAPI
+2019-11-15 12:43:59 INFO  BasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/basic/analytics/
+2019-11-15 12:44:00 INFO  EnergBasicAnalysisDataGetAPITest:264 - Executing test: EnergBasicAnalysisDataGetAPI
+2019-11-15 12:44:00 INFO  EnergBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/energy/analytics/
+2019-11-15 12:44:00 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Energy_ScoreBasicAnalysisDataGetAPI
+2019-11-15 12:44:00 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/energy/analytics/
+2019-11-15 12:44:00 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Humanexperience_ScoreBasicAnalysisDataGetAPI
+2019-11-15 12:44:00 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/humanexperience_score/analytics/
+2019-11-15 12:44:00 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Improvement_ScoreBasicAnalysisDataGetAPI
+2019-11-15 12:44:00 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/improvement_score/analytics/
+2019-11-15 12:44:01 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Waste_ScoreBasicAnalysisDataGetAPI
+2019-11-15 12:44:01 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/transport_score/analytics/
+2019-11-15 12:44:01 INFO  Waste_AnalysisDataGetAPITest:264 - Executing test: Waste_AnalysisDataGetAPI
+2019-11-15 12:44:01 INFO  Waste_AnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/waste_score/analytics/
