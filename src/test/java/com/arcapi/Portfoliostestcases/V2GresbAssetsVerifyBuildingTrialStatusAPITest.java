@@ -25,7 +25,7 @@ public class V2GresbAssetsVerifyBuildingTrialStatusAPITest extends BaseClass {
 			for (int i=0;i<count;i++) {
 				
 				CommonMethod.fetchedID  = CommonMethod.res.path("results["+i+"].building.building_status").toString();
-				Assertion.verifyData(CommonMethod.fetchedID , "activated_addendum_agreement_pending");
+				Assertion.verifyData(CommonMethod.fetchedID , "activated_payment_done");
 				
 				CommonMethod.fetchedID  = CommonMethod.res.path("results["+i+"].building.is_trial_selected").toString();
 				Assertion.verifyData(CommonMethod.fetchedID , "false");

@@ -40,15 +40,6 @@
 <class name="com.arcapi.Scoretestcases.version3.TransitGetTest"></class>
 
 </classes>
-</test> 
-
-<test name="SetUserV2">
-<parameter name="ProjectType" value="building" />
-<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
-<parameter name="rownumber" value="2" />
-<classes> 
-<class name="com.arcapi.Common.V2.SetUserprofileV2APITest"></class> 
-</classes>
 </test>
 
 </suite> 

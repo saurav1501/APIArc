@@ -44,8 +44,8 @@ public class HumanExperienceMeterUpdateAPITest extends BaseClass {
 		Assertion.verifyStatusCode(CommonMethod.res, 200);
 		}
 		else if(j==0 && k==4){
-		
 		Assertion.verifyStatusCode(CommonMethod.res, 200);
+		
 		}
 		else if(j==0 && k==5){
 		

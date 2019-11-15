@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="ScenarioBasedTesting">
+<suite name="V2ScenarioBasedTesting">
 
 <test name="Review-Scenario">
 <parameter name="ProjectType" value="building" />
