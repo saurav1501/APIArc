@@ -1,19 +1,199 @@
-2019-11-15 12:43:53 INFO  LoginAPITest:264 - Executing test: LoginAPI
-2019-11-15 12:43:53 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/qas/leed/auth/login/
-2019-11-15 12:43:58 INFO  LoginAPITest:43 - API Responded With Status Code : 400
-2019-11-15 12:43:59 INFO  SetUserprofileV2APITest:264 - Executing test: SetUserprofileV2API
-2019-11-15 12:43:59 INFO  SetUserprofileV2APITest:224 - PUT Request Call URL https://api.usgbc.org/qas/leed/auth/userprofile/
-2019-11-15 12:43:59 INFO  BasicAnalysisDataGetAPITest:264 - Executing test: BasicAnalysisDataGetAPI
-2019-11-15 12:43:59 INFO  BasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/basic/analytics/
-2019-11-15 12:44:00 INFO  EnergBasicAnalysisDataGetAPITest:264 - Executing test: EnergBasicAnalysisDataGetAPI
-2019-11-15 12:44:00 INFO  EnergBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/energy/analytics/
-2019-11-15 12:44:00 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Energy_ScoreBasicAnalysisDataGetAPI
-2019-11-15 12:44:00 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/energy/analytics/
-2019-11-15 12:44:00 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Humanexperience_ScoreBasicAnalysisDataGetAPI
-2019-11-15 12:44:00 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/humanexperience_score/analytics/
-2019-11-15 12:44:00 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Improvement_ScoreBasicAnalysisDataGetAPI
-2019-11-15 12:44:00 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/improvement_score/analytics/
-2019-11-15 12:44:01 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Waste_ScoreBasicAnalysisDataGetAPI
-2019-11-15 12:44:01 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/transport_score/analytics/
-2019-11-15 12:44:01 INFO  Waste_AnalysisDataGetAPITest:264 - Executing test: Waste_AnalysisDataGetAPI
-2019-11-15 12:44:01 INFO  Waste_AnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/waste_score/analytics/
+2019-11-15 15:22:47 INFO  LoginAPITest:264 - Executing test: LoginAPI
+2019-11-15 15:22:47 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/qas/leed/auth/login/
+2019-11-15 15:22:58 INFO  LoginAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:22:58 INFO  LoginAPITest:123 - Payload is  usgbcarcapi@gmail.cominitpass
+2019-11-15 15:22:58 INFO  LoginAPITest:127 - SAMEORIGIN
+2019-11-15 15:22:59 INFO  LoginAPITest:130 - csrftoken=RbdnskFi9ySlIe16qUfge2PpM8guTexkwAqpzoAqAmrqtcJ3OWiMyMyav0bC8uqN;Path=/;Max-Age=31449600;Expires=11/13/20 9:52 AM
+sessionid=fu91f5ttwrzthrg1ohchmduzqsswpnwg;Path=/;HttpOnly
+2019-11-15 15:22:59 INFO  LoginAPITest:131 - ZyxdzjDsmjh74jJpIXbvbHdTIJdZDk
+2019-11-15 15:23:01 INFO  LoginAPITest:137 - Bearer
+2019-11-15 15:23:01 INFO  LoginAPITest:138 - Post Response Time In milliseconds0
+2019-11-15 15:23:01 INFO  LoginAPITest:141 - Header is Bearer ZyxdzjDsmjh74jJpIXbvbHdTIJdZDk
+2019-11-15 15:23:01 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key37fee8fbf7c84994a40df7346bf2f684
+2019-11-15 15:23:01 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-11-15 15:23:03 INFO  SetUserprofileV1APITest:264 - Executing test: SetUserprofileV1API
+2019-11-15 15:23:03 INFO  SetUserprofileV1APITest:224 - PUT Request Call URL https://api.usgbc.org/qas/leed/auth/userprofile/
+2019-11-15 15:23:05 INFO  SetUserprofileV1APITest:231 - Put Response Time In milliseconds2764
+2019-11-15 15:23:06 INFO  SetUserprofileV1APITest:235 - Payload is  {"ui_version":"v1"}
+2019-11-15 15:23:06 INFO  SetUserprofileV1APITest:43 - API Responded With Status Code : 400
+2019-11-15 15:23:06 INFO  CreateAssetBuildingV3APITest:264 - Executing test: CreateAssetPOSTAPI
+2019-11-15 15:23:12 INFO  CreateAssetBuildingV3APITest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/
+2019-11-15 15:23:15 INFO  CreateAssetBuildingV3APITest:83 - Post Response Time In milliseconds2764
+2019-11-15 15:23:15 INFO  CreateAssetBuildingV3APITest:90 - Payload is  {"name":"US-API-Building-None-94854","rating_system":"none","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"US","state":"NC","project_type":"building","unitType":"SI","spaceType":"Warehouse: General","owner_email":"usgbcarcapi1@gmail.com","ownerType":"Community Development Corporation or Non-profit Developer","confidential":false,"sign_agreement":true,"organization":"T","manageEntityCountry":"US","zip_code":"20037","operating_hours":"100"}
+2019-11-15 15:23:15 INFO  CreateAssetBuildingV3APITest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:16 INFO  CreateAssetBuildingV3APITest:26 - 8000000283
+2019-11-15 15:23:16 INFO  AssetDetailAPITest:264 - Executing test: AssetDetailAPI
+2019-11-15 15:23:16 INFO  AssetDetailAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/
+2019-11-15 15:23:20 INFO  AssetDetailAPITest:28 - Get Response Time In milliseconds3312
+2019-11-15 15:23:20 INFO  AssetDetailAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:21 INFO  ExcelTemplateMetersAPITest:264 - Executing test: ExcelTemplateMetersAPI
+2019-11-15 15:23:21 INFO  ExcelTemplateMetersAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/?page_size=20
+2019-11-15 15:23:23 INFO  ExcelTemplateMetersAPITest:28 - Get Response Time In milliseconds2534
+2019-11-15 15:23:23 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:23 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:23 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:23 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:23 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:24 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:24 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:24 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:24 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:24 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  ExcelTemplateMetersAPITest:43 - API Responded With Status Code : 200
+2019-11-15 15:23:25 INFO  CarbonDioxideCreate5YearDataPostTest:264 - Executing test: CarbonDioxideCreate5YearDataPost
+2019-11-15 15:23:25 INFO  CarbonDioxideCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767855/consumption/?recompute_score=false
+2019-11-15 15:23:27 INFO  CarbonDioxideCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:27 INFO  CarbonDioxideCreate5YearDataPostTest:90 - Payload is  {"end_date":"2016-01-01","reading":"200","start_date":"2015-01-01"}
+2019-11-15 15:23:27 INFO  CarbonDioxideCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:27 INFO  CarbonDioxideCreate5YearDataPostTest:264 - Executing test: CarbonDioxideCreate5YearDataPost
+2019-11-15 15:23:27 INFO  CarbonDioxideCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767855/consumption/?recompute_score=false
+2019-11-15 15:23:30 INFO  CarbonDioxideCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:30 INFO  CarbonDioxideCreate5YearDataPostTest:90 - Payload is  {"end_date":"2017-01-01","reading":"200","start_date":"2016-01-01"}
+2019-11-15 15:23:30 INFO  CarbonDioxideCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:30 INFO  CarbonDioxideCreate5YearDataPostTest:264 - Executing test: CarbonDioxideCreate5YearDataPost
+2019-11-15 15:23:30 INFO  CarbonDioxideCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767855/consumption/?recompute_score=false
+2019-11-15 15:23:32 INFO  CarbonDioxideCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:32 INFO  CarbonDioxideCreate5YearDataPostTest:90 - Payload is  {"end_date":"2018-01-01","reading":"200","start_date":"2017-01-01"}
+2019-11-15 15:23:32 INFO  CarbonDioxideCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:32 INFO  CarbonDioxideCreate5YearDataPostTest:264 - Executing test: CarbonDioxideCreate5YearDataPost
+2019-11-15 15:23:32 INFO  CarbonDioxideCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767855/consumption/?recompute_score=false
+2019-11-15 15:23:34 INFO  CarbonDioxideCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:34 INFO  CarbonDioxideCreate5YearDataPostTest:90 - Payload is  {"end_date":"2019-01-01","reading":"200","start_date":"2018-01-01"}
+2019-11-15 15:23:34 INFO  CarbonDioxideCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:34 INFO  CarbonDioxideCreate5YearDataPostTest:264 - Executing test: CarbonDioxideCreate5YearDataPost
+2019-11-15 15:23:34 INFO  CarbonDioxideCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767855/consumption/?recompute_score=false
+2019-11-15 15:23:37 INFO  CarbonDioxideCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:37 INFO  CarbonDioxideCreate5YearDataPostTest:90 - Payload is  {"end_date":"2020-01-01","reading":"200","start_date":"2019-01-01"}
+2019-11-15 15:23:37 INFO  CarbonDioxideCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:37 INFO  TVOCCreate5YearDataPostTest:264 - Executing test: TVOCCreate5YearDataPost
+2019-11-15 15:23:37 INFO  TVOCCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767858/consumption/?recompute_score=false
+2019-11-15 15:23:40 INFO  TVOCCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:40 INFO  TVOCCreate5YearDataPostTest:90 - Payload is  {"end_date":"2016-01-01","reading":"150","start_date":"2015-01-01"}
+2019-11-15 15:23:40 INFO  TVOCCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:40 INFO  TVOCCreate5YearDataPostTest:264 - Executing test: TVOCCreate5YearDataPost
+2019-11-15 15:23:40 INFO  TVOCCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767858/consumption/?recompute_score=false
+2019-11-15 15:23:42 INFO  TVOCCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:42 INFO  TVOCCreate5YearDataPostTest:90 - Payload is  {"end_date":"2017-01-01","reading":"150","start_date":"2016-01-01"}
+2019-11-15 15:23:42 INFO  TVOCCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:42 INFO  TVOCCreate5YearDataPostTest:264 - Executing test: TVOCCreate5YearDataPost
+2019-11-15 15:23:42 INFO  TVOCCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767858/consumption/?recompute_score=false
+2019-11-15 15:23:45 INFO  TVOCCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:45 INFO  TVOCCreate5YearDataPostTest:90 - Payload is  {"end_date":"2018-01-01","reading":"150","start_date":"2017-01-01"}
+2019-11-15 15:23:45 INFO  TVOCCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:45 INFO  TVOCCreate5YearDataPostTest:264 - Executing test: TVOCCreate5YearDataPost
+2019-11-15 15:23:45 INFO  TVOCCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767858/consumption/?recompute_score=false
+2019-11-15 15:23:48 INFO  TVOCCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:48 INFO  TVOCCreate5YearDataPostTest:90 - Payload is  {"end_date":"2019-01-01","reading":"150","start_date":"2018-01-01"}
+2019-11-15 15:23:48 INFO  TVOCCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:48 INFO  TVOCCreate5YearDataPostTest:264 - Executing test: TVOCCreate5YearDataPost
+2019-11-15 15:23:48 INFO  TVOCCreate5YearDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767858/consumption/?recompute_score=false
+2019-11-15 15:23:51 INFO  TVOCCreate5YearDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:51 INFO  TVOCCreate5YearDataPostTest:90 - Payload is  {"end_date":"2020-01-01","reading":"150","start_date":"2019-01-01"}
+2019-11-15 15:23:51 INFO  TVOCCreate5YearDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:51 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:264 - Executing test: ElectricityPurchasedFromGridCreatePOST
+2019-11-15 15:23:51 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/
+2019-11-15 15:23:54 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:54 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:90 - Payload is  {"name":"ElectricityPurchasedFromGridMeter","native_unit":"kBtu","type":"37","included":false}
+2019-11-15 15:23:55 INFO  ElectricityPurchasedFromGridCreatePOSTAPITest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:55 INFO  EnergyCreate60MonthMeterDataPostTest:264 - Executing test: EnergyCreate60MonthMeterDataPost
+2019-11-15 15:23:55 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:23:58 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:23:58 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2014-11-01","reading":"100","start_date":"2014-10-01"}
+2019-11-15 15:23:58 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:23:58 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:00 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:00 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2014-12-01","reading":"100","start_date":"2014-11-01"}
+2019-11-15 15:24:00 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:00 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:04 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:04 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-01-01","reading":"100","start_date":"2014-12-01"}
+2019-11-15 15:24:04 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:04 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:07 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:07 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-02-01","reading":"100","start_date":"2015-01-01"}
+2019-11-15 15:24:07 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:07 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:10 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:10 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-03-01","reading":"100","start_date":"2015-02-01"}
+2019-11-15 15:24:10 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:10 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:13 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:13 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-04-01","reading":"100","start_date":"2015-03-01"}
+2019-11-15 15:24:13 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:13 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:16 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:16 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-05-01","reading":"100","start_date":"2015-04-01"}
+2019-11-15 15:24:16 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:16 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:19 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:19 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-06-01","reading":"100","start_date":"2015-05-01"}
+2019-11-15 15:24:19 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:19 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:22 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:22 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-07-01","reading":"100","start_date":"2015-06-01"}
+2019-11-15 15:24:22 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:22 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:25 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:25 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-08-01","reading":"100","start_date":"2015-07-01"}
+2019-11-15 15:24:25 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:25 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:27 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:27 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-09-01","reading":"100","start_date":"2015-08-01"}
+2019-11-15 15:24:27 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:27 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:29 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:29 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-10-01","reading":"100","start_date":"2015-09-01"}
+2019-11-15 15:24:29 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:29 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:32 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:32 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-11-01","reading":"100","start_date":"2015-10-01"}
+2019-11-15 15:24:32 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:32 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:36 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:36 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2015-12-01","reading":"100","start_date":"2015-11-01"}
+2019-11-15 15:24:36 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:36 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:38 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:38 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2016-01-01","reading":"100","start_date":"2015-12-01"}
+2019-11-15 15:24:38 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:38 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:41 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:41 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2016-02-01","reading":"100","start_date":"2016-01-01"}
+2019-11-15 15:24:41 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:41 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:44 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:44 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2016-03-01","reading":"100","start_date":"2016-02-01"}
+2019-11-15 15:24:44 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:44 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:46 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:46 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2016-04-01","reading":"100","start_date":"2016-03-01"}
+2019-11-15 15:24:46 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:46 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:49 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:49 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2016-05-01","reading":"100","start_date":"2016-04-01"}
+2019-11-15 15:24:49 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:49 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:52 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:52 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2016-06-01","reading":"100","start_date":"2016-05-01"}
+2019-11-15 15:24:52 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:52 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:56 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:56 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2016-07-01","reading":"100","start_date":"2016-06-01"}
+2019-11-15 15:24:56 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:56 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:24:58 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:24:58 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2016-08-01","reading":"100","start_date":"2016-07-01"}
+2019-11-15 15:24:58 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:24:58 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false
+2019-11-15 15:25:01 INFO  EnergyCreate60MonthMeterDataPostTest:83 - Post Response Time In milliseconds2534
+2019-11-15 15:25:01 INFO  EnergyCreate60MonthMeterDataPostTest:90 - Payload is  {"end_date":"2016-09-01","reading":"100","start_date":"2016-08-01"}
+2019-11-15 15:25:01 INFO  EnergyCreate60MonthMeterDataPostTest:43 - API Responded With Status Code : 201
+2019-11-15 15:25:01 INFO  EnergyCreate60MonthMeterDataPostTest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:8000000283/meters/ID:2767864/consumption/?recompute_score=false

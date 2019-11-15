@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="LEEDv4.1Cities">
 
-<test name="LEED v4.1 Cities: Existing">
+ <test name="LEED v4.1 Cities: Existing">
 
 <parameter name="ProjectTypeColumn" value="LeedIDEB"/>
 <parameter name="rownumber" value="2" />
@@ -94,7 +94,7 @@
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class>
  </classes>
-</test>
+</test> 
 
 <test name="LEED v4.1 Cities: Plan and Design">
 <parameter name="ProjectTypeColumn" value="LeedIDEB"/>

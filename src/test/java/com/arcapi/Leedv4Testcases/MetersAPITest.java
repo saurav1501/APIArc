@@ -19,7 +19,7 @@ public class MetersAPITest extends BaseClass {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/?page_size=20";
 			CommonMethod.res = MethodCall.GETRequest(url);
 
-			for (int i=0;i<10;i++) {
+			for (int i=0;i<20;i++) {
 			
 			CommonMethod.fetchedID = CommonMethod.res.path("results.id["+i+"]").toString();
 			

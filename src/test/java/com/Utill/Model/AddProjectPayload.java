@@ -263,8 +263,10 @@ public class AddProjectPayload extends BaseClass {
     }
     
     public static AddBuildingProject addProjectPayloadTrial(String ProjectType,String ProjectTypeColumn,String Country ,String Rating) throws IOException {
-		addProject = new AddBuildingProject();
-		String ProjectName=null;
+		
+    	addProject = new AddBuildingProject();
+		
+    	String ProjectName=null;
 
         if(Country.equals("IN"))
 		

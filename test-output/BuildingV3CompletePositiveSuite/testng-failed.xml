@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BuildingV3CompletePositiveSuite]">
+  <parameter name="environment" value="qas"/>
+  <parameter name="SoReference" value="performance score"/>
+  <parameter name="ratings" value="none"/>
+  <parameter name="ProjectType" value="building"/>
+  <parameter name="Aggrement" value="true"/>
+  <parameter name="Country" value="US"/>
+  <parameter name="PaymentType" value="CreditCardPayment"/>
+  <parameter name="rownumber" value="2"/>
+  <parameter name="SheetName" value="QAS"/>
+  <parameter name="SoReferenceSR" value="performance score"/>
+  <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+  <test name="CompleteFlowTest-Building-None">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="none"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="Aggrement" value="true"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"/>
+      <class name="com.arcapi.Common.AssetDetailAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.CarbonDioxideCreate5YearDataPostTest"/>
+      <class name="com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest"/>
+      <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.EnergyCreate60MonthMeterDataPostTest"/>
+      <class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.WaterCreate60MonthMeterDataPostTest"/>
+      <class name="com.arcapi.Buildingtestcases.WasteCreate60MonthMeterDataBulkPostTest"/>
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"/>
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"/>
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-None -->
+  <test name="CompleteFlowTest-Building-None(failed)">
+    <parameter name="SoReference" value="performance score"/>
+    <parameter name="ratings" value="none"/>
+    <parameter name="ProjectType" value="building"/>
+    <parameter name="Aggrement" value="true"/>
+    <parameter name="rownumber" value="2"/>
+    <parameter name="SoReferenceSR" value="performance score"/>
+    <parameter name="ProjectTypeColumn" value="ProjectIDBuildingNone"/>
+    <classes>
+      <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest -->
+      <class name="com.arcapi.Buildingtestcases.WaterCreate60MonthMeterDataPostTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.WaterCreate60MonthMeterDataPostTest -->
+      <class name="com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ElectricityPurchasedFromGridCreatePOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.EnergyCreate60MonthMeterDataPostTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.EnergyCreate60MonthMeterDataPostTest -->
+      <class name="com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.MunicipalitySuppliedPortableWaterCreatePOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.WasteCreate60MonthMeterDataBulkPostTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.WasteCreate60MonthMeterDataBulkPostTest -->
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest -->
+      <class name="com.arcapi.Common.AssetDetailAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Common.AssetDetailAPITest -->
+      <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest -->
+      <class name="com.arcapi.Buildingtestcases.CarbonDioxideCreate5YearDataPostTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.CarbonDioxideCreate5YearDataPostTest -->
+      <class name="com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="TVOCCreate5YearDataPost" invocation-numbers="0 1 2 3 4"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest -->
+      <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="getSuiteName"/>
+          <include name="setBaseUri"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest -->
+    </classes>
+  </test> <!-- CompleteFlowTest-Building-None(failed) -->
+</suite> <!-- Failed suite [BuildingV3CompletePositiveSuite] -->

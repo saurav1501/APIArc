@@ -13,22 +13,28 @@
 <class name="com.arcapi.Leedv4Testcases.LOProjectSyncAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.AssetUpdateBuildingAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
+
 <class name="com.arcapi.Common.VerifyProjectRegisteredAssetListTest"></class>
 <class name="com.arcapi.Common.AssetDocumentAPITest"></class>
 <class name="com.arcapi.Common.DownloadDocumentsAPITest"></class>
 <class name="com.arcapi.Common.FetchingAgreementDetailsAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.VerifyAgreementDeleteAPITest"></class> 
-<class name="com.arcapi.Leedv4Testcases.MetersAPITest"></class> 
+
+<!-- <class name="com.arcapi.Leedv4Testcases.MetersAPITest"></class> 
 <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionCreateAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionUpdateAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAfterUpdateAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.HumanExperienceConsumptionDeleteAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.VerifyManualConsumptionAPITest"></class> 
-<class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest"></class>  
+<class name="com.arcapi.Leedv4Testcases.HumanExperienceMeterUpdateAPITest"></class> -->  
 <class name="com.arcapi.Buildingtestcases.V4ExcelUploadTemplatePOSTAPITest"></class>
 <class name="com.arcapi.Common.S3DocumentUploadPOSTAPITest"></class>
 <class name="com.arcapi.Common.S3DocumentListAPITest"></class>
 <class name="com.arcapi.Common.S3DocumentRemoveAPITest"></class>
+
+<class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup1APITest"></class>
 <class name="com.arcapi.Leedv4Testcases.MeterCommentPostGroup2APITest"></class>
 <class name="com.arcapi.Leedv4Testcases.MeterCommentReplyGroup1APITest"></class>
@@ -67,9 +73,7 @@
 <class name="com.arcapi.Buildingtestcases.GhgCalcGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.VOCGetTest"></class>
 <class name="com.arcapi.Buildingtestcases.WaterGetTest"></class>
-<class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.VerifyExcelTemplateConsumptionAPITest"></class>
-<class name="com.arcapi.Buildingtestcases.VerifyWasteDataExcelAPITest"></class>
+
 <class name="com.arcapi.Leedv4Testcases.VerifyActivityEnergyDataInputAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.VerifyActivityWaterDataInputAPITest"></class>
 <class name="com.arcapi.Leedv4Testcases.VerifyActivityWasteDataInputAPITest"></class>

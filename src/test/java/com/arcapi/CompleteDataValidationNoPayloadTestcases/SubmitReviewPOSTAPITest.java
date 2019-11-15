@@ -19,7 +19,7 @@ public class SubmitReviewPOSTAPITest extends BaseClass {
 			try {
 			url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/review/";
 			CommonMethod.res = MethodCall.POSTRequest(url);
-			Assertion.verifyStatusCode(CommonMethod.res, 403);
+			Assertion.verifyStatusCode(CommonMethod.res, 200);
 			CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
 		} catch (Exception e) {
 			

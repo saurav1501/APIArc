@@ -14,8 +14,6 @@
 <classes>
 <class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
-<class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
-<class name="com.arcapi.Common.AddAssestTimelinePOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetDetailAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.ElectricityMeterCreateAPITest"></class>

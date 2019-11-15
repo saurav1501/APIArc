@@ -21,6 +21,7 @@ public class HumanExperienceConsumptionCreateAPITest extends BaseClass {
 				int RowNum = 10;
 				for (int i = 2; i <= RowNum; i++) {
 				payload = MeterPayload.meterData2();
+				
 				url = "/assets/LEED:" + data.getCellData(SheetName, ProjectTypeColumn, rownumber) + "/meters/ID:"
 						+ data.getCellData("DataInput", "HumanExperienceMeterID", i) + "/consumption/?recompute_score=false";
 				

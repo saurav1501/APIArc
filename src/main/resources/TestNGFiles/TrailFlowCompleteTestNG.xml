@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="TrailFlow-Building-CompleteV3">
+<suite name="TrailFlow-Transit-CompleteV3">
 
 <test name="CompleteTrailFlow-Building-None">
 <parameter name="ProjectType" value="building" />
