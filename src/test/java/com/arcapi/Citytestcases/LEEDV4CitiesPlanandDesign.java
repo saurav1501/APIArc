@@ -22,7 +22,8 @@ public class LEEDV4CitiesPlanandDesign extends BaseClass {
     
 		
 		try {
-			if(environment.equalsIgnoreCase("qas")) {	
+			 if(environment.startsWith("qas"))
+			 {	
 			String OwnerOrg = "Ek21mBwVl4NZ";
 			String ProjectName = "API LEED v4.1 Cities: Plan and Design";
 			String ratings = "v4_1.ctPd";

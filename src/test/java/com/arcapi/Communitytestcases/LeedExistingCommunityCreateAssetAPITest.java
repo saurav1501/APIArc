@@ -19,7 +19,8 @@ public class LeedExistingCommunityCreateAssetAPITest extends BaseClass {
 	public void LeedExistingCommunityCreateAssetAPI(String SheetName, int rownumber, String Country,String environment) {
     
 		try {
-			if(environment.equalsIgnoreCase("qas")) {	
+			 if(environment.startsWith("qas"))
+			 {		
 				
 			String OwnerOrg = "Ek21mBwVl4NZ";
 			String ProjectName = "API LEED v4.1 Communities: Existing";

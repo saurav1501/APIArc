@@ -21,9 +21,9 @@ public class LEEDv4OMExistingBuildingsAPITest extends BaseClass {
 		try {
 		
 			
-		   if(environment.equalsIgnoreCase("qas")) {	
+			 if(environment.startsWith("qas"))
+			{
 			String OwnerOrg = "Ek21mBwVl4NZ";
-		
 			String ProjectName = "API LEED v4 O+M: Existing Buildings";
 			String OwnerType= "Educational: College, Private";
 			String ratings = "v4_1.oEb";

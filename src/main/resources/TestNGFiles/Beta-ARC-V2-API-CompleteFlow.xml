@@ -14,16 +14,7 @@
 <class name="com.arcapi.Common.LoginAPITest"></class> 
 <class name="com.arcapi.Common.V2.SetUserprofileV2APITest"></class> 
 
-<class name="com.arcapi.Common.V2.BasicAnalysisDataGetAPITest"></class> 
- <class name="com.arcapi.Common.V2.EnergBasicAnalysisDataGetAPITest"></class> 
-<class name="com.arcapi.Common.V2.Energy_ScoreBasicAnalysisDataGetAPITest"></class> 
-<class name="com.arcapi.Common.V2.Humanexperience_ScoreBasicAnalysisDataGetAPITest"></class> 
-<class name="com.arcapi.Common.V2.Improvement_ScoreBasicAnalysisDataGetAPITest"></class> 
-<class name="com.arcapi.Common.V2.Transport_ScoreBasicAnalysisDataGetAPITest"></class> 
-<class name="com.arcapi.Common.V2.Waste_AnalysisDataGetAPITest"></class> 
-<class name="com.arcapi.Common.V2.Waste_ScoreDataGetAPITest"></class>
-<class name="com.arcapi.Common.V2.WaterBasicAnalysisDataGetAPITest"></class> 
-<class name="com.arcapi.Common.V2.WaterScoreGetAPITest"></class>  
+ 
 
 </classes>
 </test>

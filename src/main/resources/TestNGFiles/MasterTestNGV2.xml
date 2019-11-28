@@ -1,17 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="V2MasterAPITestCasesSuite">
 
-<!--  <parameter name="environment" value="qas2"/> 
-<parameter name="SheetName" value="QAS2"/>   -->
+<parameter name="environment" value="qas2"/> 
+<parameter name="SheetName" value="QAS2"/>  
 
-<parameter name="environment" value="${env}" />
-<parameter name="SheetName" value="${sheet}" />    
+<!-- <parameter name="environment" value="${env}" />
+<parameter name="SheetName" value="${sheet}" />  -->   
 
 <parameter name="Country" value="US"/>
-<parameter name="PaymentType" value="CreditCardPayment"/>
+<parameter name="PaymentType" value="CreditCardPayment"/>  
 
 	   <suite-files>
-       
        <suite-file path="Beta-ARC-V2-API-CompleteFlow.xml"></suite-file>  
 	   <suite-file path="V2Buildingtestng.xml"></suite-file>    
        <suite-file path="V2Portfoliostestng.xml"></suite-file> 
@@ -27,11 +26,10 @@
 	   <suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
 	   <suite-file path="CommunityTestNG.xml"></suite-file>    	
  	   <suite-file path="TransitBelow.xml"></suite-file>  
- 	   <suite-file path="LEEDv4Building.xml"></suite-file>  
+	   <suite-file path="LEEDv4Building.xml"></suite-file>  
  	   <suite-file path="LEEDv4Communities.xml"></suite-file> 
  	   <suite-file path="LEEDv4Cities.xml"></suite-file> 
-	   <suite-file path="V2ScenarioBasedTestingTestng.xml"></suite-file>  
-	    
+      <suite-file path="V2ScenarioBasedTestingTestng.xml"></suite-file>  
 	</suite-files>
 	
 </suite> 

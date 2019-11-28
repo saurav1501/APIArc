@@ -19,7 +19,8 @@ public class LeedExistingCityCreateAssetAPITest extends BaseClass {
 	public void LeedExistingCityCreateAssetAPI(String SheetName, int rownumber, String Country,String environment) {
     
 		try {
-			if(environment.equalsIgnoreCase("qas")) {	
+			 if(environment.startsWith("qas"))
+			 {	
 			String OwnerOrg = "Ek21mBwVl4NZ";
 			String ProjectName = "API LEED v4.1 Cities: Existing";
 			String ratings = "v4_1.ctEx";
