@@ -10,7 +10,7 @@
 <parameter name="rownumber" value="2" />
 <parameter name ="ratings" value="PARKSMART"/>
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
+
 <class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartPOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetSearchAPITest"></class>
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>

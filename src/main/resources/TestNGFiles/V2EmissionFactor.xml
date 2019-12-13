@@ -13,7 +13,6 @@
 <parameter name="Aggrement" value="true"></parameter>
 
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class> 
 <class name="com.arcapi.Buildingtestcases.AssetDetailEmissionFactorTest"></class>
 <class name="com.arcapi.Buildingtestcases.MeterCreatePOSTEmissionTest"></class>

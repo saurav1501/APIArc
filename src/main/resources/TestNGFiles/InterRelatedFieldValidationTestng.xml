@@ -11,7 +11,7 @@
 <parameter name="Aggrement" value="true"></parameter>
 <classes>
 
-<class name="com.arcapi.Common.LoginAPITest"></class>
+
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.InterRelatedFieldValidationTestcases.ElectricityMeterCreatePOSTAPITest"></class>
 <class name="com.arcapi.InterRelatedFieldValidationTestcases.Co2CreatePOSTAPITest"></class>

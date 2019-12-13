@@ -1,76 +1,69 @@
-2019-11-28 10:44:26 INFO  LoginAPITest:264 - Executing test: LoginAPI
-2019-11-28 10:44:26 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/qas/leed/auth/login/
-2019-11-28 10:44:34 INFO  LoginAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:34 INFO  LoginAPITest:123 - Payload is  usgbcarcapi@gmail.cominitpass
-2019-11-28 10:44:34 INFO  LoginAPITest:127 - SAMEORIGIN
-2019-11-28 10:44:35 INFO  LoginAPITest:130 - csrftoken=KqV6Quv87gbgTGSBy4NcURe7ETL0sfGgjkx7EQODvq2jRO9WBoyljPoRULmutC1S;Path=/;Max-Age=31449600;Expires=11/26/20 5:14 AM
-sessionid=o3graf0k490c47b7k52kayteocr1w0yt;Path=/;HttpOnly
-2019-11-28 10:44:35 INFO  LoginAPITest:131 - uUKgN6wb6oY7kfDLzN5MUXnu41uhXj
-2019-11-28 10:44:36 INFO  LoginAPITest:137 - Bearer
-2019-11-28 10:44:36 INFO  LoginAPITest:138 - Post Response Time In milliseconds0
-2019-11-28 10:44:36 INFO  LoginAPITest:141 - Header is Bearer uUKgN6wb6oY7kfDLzN5MUXnu41uhXj
-2019-11-28 10:44:36 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key37fee8fbf7c84994a40df7346bf2f684
-2019-11-28 10:44:36 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
-2019-11-28 10:44:37 INFO  SetUserprofileV2APITest:264 - Executing test: SetUserprofileV2API
-2019-11-28 10:44:37 INFO  SetUserprofileV2APITest:224 - PUT Request Call URL https://api.usgbc.org/qas/leed/auth/userprofile/
-2019-11-28 10:44:38 INFO  SetUserprofileV2APITest:231 - Put Response Time In milliseconds1458
-2019-11-28 10:44:39 INFO  SetUserprofileV2APITest:235 - Payload is  {"ui_version":"v2"}
-2019-11-28 10:44:39 INFO  SetUserprofileV2APITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:39 INFO  BasicAnalysisDataGetAPITest:264 - Executing test: BasicAnalysisDataGetAPI
-2019-11-28 10:44:39 INFO  BasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/basic/analytics/
-2019-11-28 10:44:41 INFO  BasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1615
-2019-11-28 10:44:41 INFO  BasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:44 INFO  EnergBasicAnalysisDataGetAPITest:264 - Executing test: EnergBasicAnalysisDataGetAPI
-2019-11-28 10:44:44 INFO  EnergBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/energy/analytics/
-2019-11-28 10:44:45 INFO  EnergBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1614
-2019-11-28 10:44:45 INFO  EnergBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:46 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Energy_ScoreBasicAnalysisDataGetAPI
-2019-11-28 10:44:46 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/energy/analytics/
-2019-11-28 10:44:49 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds3109
-2019-11-28 10:44:49 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:49 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Humanexperience_ScoreBasicAnalysisDataGetAPI
-2019-11-28 10:44:49 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/humanexperience_score/analytics/
-2019-11-28 10:44:51 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1546
-2019-11-28 10:44:51 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:51 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Improvement_ScoreBasicAnalysisDataGetAPI
-2019-11-28 10:44:51 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/improvement_score/analytics/
-2019-11-28 10:44:52 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1416
-2019-11-28 10:44:52 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:53 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:264 - Executing test: Waste_ScoreBasicAnalysisDataGetAPI
-2019-11-28 10:44:53 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/transport_score/analytics/
-2019-11-28 10:44:54 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1512
-2019-11-28 10:44:54 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:54 INFO  Waste_AnalysisDataGetAPITest:264 - Executing test: Waste_AnalysisDataGetAPI
-2019-11-28 10:44:54 INFO  Waste_AnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/waste_score/analytics/
-2019-11-28 10:44:56 INFO  Waste_AnalysisDataGetAPITest:28 - Get Response Time In milliseconds1540
-2019-11-28 10:44:56 INFO  Waste_AnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:56 INFO  Waste_ScoreDataGetAPITest:264 - Executing test: Waste_ScoreDataGetAPI
-2019-11-28 10:44:56 INFO  Waste_ScoreDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/waste_score/analytics/
-2019-11-28 10:44:58 INFO  Waste_ScoreDataGetAPITest:28 - Get Response Time In milliseconds1536
-2019-11-28 10:44:58 INFO  Waste_ScoreDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:44:58 INFO  WaterBasicAnalysisDataGetAPITest:264 - Executing test: WaterBasicAnalysisDataGetAPI
-2019-11-28 10:44:58 INFO  WaterBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/water/analytics/
-2019-11-28 10:44:59 INFO  WaterBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1679
-2019-11-28 10:44:59 INFO  WaterBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:45:00 INFO  WaterScoreGetAPITest:264 - Executing test: WaterScoreGetAPI
-2019-11-28 10:45:00 INFO  WaterScoreGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/water_score/analytics/
-2019-11-28 10:45:01 INFO  WaterScoreGetAPITest:28 - Get Response Time In milliseconds1676
-2019-11-28 10:45:01 INFO  WaterScoreGetAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:45:02 INFO  CreateAssetBuildingV3APITest:264 - Executing test: CreateAssetPOSTAPI
-2019-11-28 10:45:04 INFO  CreateAssetBuildingV3APITest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/
-2019-11-28 10:45:06 INFO  CreateAssetBuildingV3APITest:83 - Post Response Time In milliseconds1676
-2019-11-28 10:45:06 INFO  CreateAssetBuildingV3APITest:90 - Payload is  {"name":"US-API-Building-Other-17824","rating_system":"other","gross_area":"1000","occupancy":"3","street":"Sapphire club","city":"Washington","country":"US","state":"WY","project_type":"building","unitType":"SI","spaceType":"Public Order and Safety: Other Public Order","owner_email":"usgbcarcapi1@gmail.com","ownerType":"Government Use: Local, City","confidential":false,"sign_agreement":true,"organization":"T","manageEntityCountry":"US","zip_code":"20037","operating_hours":"100"}
-2019-11-28 10:45:06 INFO  CreateAssetBuildingV3APITest:43 - API Responded With Status Code : 201
-2019-11-28 10:45:06 INFO  CreateAssetBuildingV3APITest:26 - 8000000308
-2019-11-28 10:45:07 INFO  AssetSearchAPITest:264 - Executing test: AssetSearchAPI
-2019-11-28 10:45:07 INFO  AssetSearchAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/search/?q=row 2 or column ProjectIDBuildingOther does not exist  in Excel
-2019-11-28 10:45:08 INFO  AssetSearchAPITest:28 - Get Response Time In milliseconds1443
-2019-11-28 10:45:08 INFO  AssetSearchAPITest:43 - API Responded With Status Code : 200
-2019-11-28 10:45:08 INFO  SignAgreementRegistrationAPITest:264 - Executing test: SignAgreementRegistrationAPI
-2019-11-28 10:45:08 INFO  SignAgreementRegistrationAPITest:193 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:row 2 or column ProjectIDBuildingOther does not exist  in Excel/agreements/
-2019-11-28 10:45:10 INFO  SignAgreementRegistrationAPITest:200 - Post Response Time In milliseconds1948
-2019-11-28 10:45:10 INFO  SignAgreementRegistrationAPITest:43 - API Responded With Status Code : 404
-2019-11-28 10:45:11 INFO  RegistrationPaymentPricingGetAPITest:264 - Executing test: RegistrationPaymentPricingGetAPI
-2019-11-28 10:45:11 INFO  RegistrationPaymentPricingGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:row 2 or column ProjectIDBuildingOther does not exist  in Excel/payments/price/?soreference=registration
-2019-11-28 10:45:12 INFO  RegistrationPaymentPricingGetAPITest:28 - Get Response Time In milliseconds1344
-2019-11-28 10:45:12 INFO  RegistrationPaymentPricingGetAPITest:43 - API Responded With Status Code : 404
+2019-11-28 14:45:05 INFO  LOAuthenticateAPITest:264 - Executing test: LOAuthenticateAPI
+2019-11-28 14:45:08 INFO  LOAuthenticateAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:09 INFO  LeedExistingCommunityCreateAssetAPITest:264 - Executing test: LeedExistingCommunityCreateAssetAPI
+2019-11-28 14:45:12 INFO  LeedExistingCommunityCreateAssetAPITest:307 - POST Request Call URL https://leedonline-api-qas.usgbc.org/v1/json/Project/register/INP
+2019-11-28 14:45:19 INFO  LeedExistingCommunityCreateAssetAPITest:320 - Post Response Time In milliseconds2821
+2019-11-28 14:45:19 INFO  LeedExistingCommunityCreateAssetAPITest:326 - Payload is  {"owner.organization":"Ek21mBwVl4NZ","address.geoPoints.latitude":"120.12345678","owner.state":"KY","address.country":"US","unitType":"SI","owner.type":"Public Sector: Airports","date.end":"2028-07-01","grossFootage":"1000","address.address2":"Test Address","address.address1":"Test Address","owner.phone":"9080251825","address.postalCode":"20037","address.city":"Test City","owner.name":"Test Owner","address.state":"KY","owner.address1":"Test Address","date.start":"2018-06-01","owner.address2":"Test Address","ratingSystem":"v4_1.cmEx","address.geoPoints.longitude":"10.46467895","population":"20","owner.email":"usgbcarc@gmial.com","owner.country":"US","name":"API LEED v4.1 Communities: ExistingUS38","cmd":"register","owner.city":"Test City","owner.postalCode":"20037"}
+2019-11-28 14:45:19 INFO  LeedExistingCommunityCreateAssetAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:20 INFO  LoginAPITest:264 - Executing test: LoginAPI
+2019-11-28 14:45:20 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/qas/leed/auth/login/
+2019-11-28 14:45:27 INFO  LoginAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:27 INFO  LoginAPITest:123 - Payload is  usgbcarcapi@gmail.cominitpass
+2019-11-28 14:45:27 INFO  LoginAPITest:127 - SAMEORIGIN
+2019-11-28 14:45:27 INFO  LoginAPITest:130 - csrftoken=bhuRgdNdCNsce9lRECXdWNQ8TnF37nsmhbOfvcISPbqOoiak5ov6U91AbMnWFnjl;Path=/;Max-Age=31449600;Expires=11/26/20 9:15 AM
+sessionid=p03yg3698o11qee7bf6ltg3x0t2312tt;Path=/;HttpOnly
+2019-11-28 14:45:27 INFO  LoginAPITest:131 - 5bIFhbiA1XwsREPxJozENWvH6QfaHu
+2019-11-28 14:45:27 INFO  LoginAPITest:137 - Bearer
+2019-11-28 14:45:27 INFO  LoginAPITest:138 - Post Response Time In milliseconds2821
+2019-11-28 14:45:27 INFO  LoginAPITest:141 - Header is Bearer 5bIFhbiA1XwsREPxJozENWvH6QfaHu
+2019-11-28 14:45:27 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key37fee8fbf7c84994a40df7346bf2f684
+2019-11-28 14:45:27 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-11-28 14:45:27 INFO  LOProjectSyncAPITest:264 - Executing test: LOProjectSyncAPI
+2019-11-28 14:45:27 INFO  LOProjectSyncAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:1000094634/syncproject/
+2019-11-28 14:45:30 INFO  LOProjectSyncAPITest:28 - Get Response Time In milliseconds2636
+2019-11-28 14:45:30 INFO  LOProjectSyncAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:30 INFO  SignAgreementRegistrationAPITest:264 - Executing test: SignAgreementRegistrationAPI
+2019-11-28 14:45:30 INFO  SignAgreementRegistrationAPITest:193 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:1000094634/agreements/
+2019-11-28 14:45:35 INFO  SignAgreementRegistrationAPITest:200 - Post Response Time In milliseconds4777
+2019-11-28 14:45:35 INFO  SignAgreementRegistrationAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:35 INFO  SignAgreementRegistrationAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2019-11-28 14:45:35 INFO  SignAgreementRegistrationAPITest:14 - Complete Response
+2019-11-28 14:45:35 INFO  SignAgreementRegistrationAPITest:18 - {"result":"Agreement Signed Successfully"}
+2019-11-28 14:45:36 INFO  AssetDocumentAPITest:264 - Executing test: AssetDocumentAPI
+2019-11-28 14:45:36 INFO  AssetDocumentAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:1000094634/documents/
+2019-11-28 14:45:38 INFO  AssetDocumentAPITest:28 - Get Response Time In milliseconds2390
+2019-11-28 14:45:38 INFO  AssetDocumentAPITest:23 - 0000000010000000000438508
+2019-11-28 14:45:39 INFO  AssetDocumentAPITest:26 - EA11BF9180BB2DF1823A0AF82116B5DF
+2019-11-28 14:45:39 INFO  AssetDocumentAPITest:29 - EA11BF9180BB2FF1823A0AF82116B5DF
+2019-11-28 14:45:40 INFO  AssetDocumentAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:40 INFO  DownloadDocumentsAPITest:264 - Executing test: DownloadDocumentsAPI
+2019-11-28 14:45:40 INFO  DownloadDocumentsAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:1000094634/documents/download/?Docfile=Agreement.pdf&IDocNumber=0000000010000000000438508&IDocPart=000&IDocType=Z02&IDocVersion=00&IFileApplicationId=EA11BF9180BB2DF1823A0AF82116B5DF&IFileId=EA11BF9180BB2FF1823A0AF82116B5DF&subscription-key=37fee8fbf7c84994a40df7346bf2f684&access-token=5bIFhbiA1XwsREPxJozENWvH6QfaHu
+2019-11-28 14:45:43 INFO  DownloadDocumentsAPITest:28 - Get Response Time In milliseconds2454
+2019-11-28 14:45:44 INFO  DownloadDocumentsAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:44 INFO  FetchingAgreementDetailsAPITest:264 - Executing test: FetchingAgreementDetailsAPI
+2019-11-28 14:45:44 INFO  FetchingAgreementDetailsAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:1000094634/documents/
+2019-11-28 14:45:46 INFO  FetchingAgreementDetailsAPITest:28 - Get Response Time In milliseconds2253
+2019-11-28 14:45:48 INFO  FetchingAgreementDetailsAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:48 INFO  AssetDetailAPITest:264 - Executing test: AssetDetailAPI
+2019-11-28 14:45:48 INFO  AssetDetailAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:1000094634/
+2019-11-28 14:45:50 INFO  AssetDetailAPITest:28 - Get Response Time In milliseconds1925
+2019-11-28 14:45:51 INFO  AssetDetailAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:51 INFO  AssetSearchOwnerAPITest:264 - Executing test: AssetSearchOwnerAPI
+2019-11-28 14:45:51 INFO  AssetSearchOwnerAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/search/?q=1000094634
+2019-11-28 14:45:53 INFO  AssetSearchOwnerAPITest:28 - Get Response Time In milliseconds2016
+2019-11-28 14:45:53 INFO  AssetSearchOwnerAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:54 INFO  AssetSearchAPITest:264 - Executing test: AssetSearchAPI
+2019-11-28 14:45:54 INFO  AssetSearchAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/search/?q=1000094634
+2019-11-28 14:45:55 INFO  AssetSearchAPITest:28 - Get Response Time In milliseconds1860
+2019-11-28 14:45:55 INFO  AssetSearchAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:56 INFO  AssetValidationInfoPOSTAPITest:264 - Executing test: AssetValidationInfoPOSTAPI
+2019-11-28 14:45:56 INFO  AssetValidationInfoPOSTAPITest:78 - POST Request Call URL https://api.usgbc.org/qas/leed/assets/validation/
+2019-11-28 14:45:58 INFO  AssetValidationInfoPOSTAPITest:83 - Post Response Time In milliseconds1860
+2019-11-28 14:45:58 INFO  AssetValidationInfoPOSTAPITest:90 - Payload is  {"country":"TH","state":"05","confidential":false,"sign_agreement":false,"zip_code":"28293"}
+2019-11-28 14:45:58 INFO  AssetValidationInfoPOSTAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:45:59 INFO  AssetListAPITest:264 - Executing test: AssetListAPI
+2019-11-28 14:45:59 INFO  AssetListAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/
+2019-11-28 14:46:01 INFO  AssetListAPITest:28 - Get Response Time In milliseconds2001
+2019-11-28 14:46:01 INFO  AssetListAPITest:43 - API Responded With Status Code : 200
+2019-11-28 14:46:01 INFO  AssetUpdateAPITest:264 - Executing test: AssetUpdateforNewAssetPUTAPI
+2019-11-28 14:46:01 INFO  AssetUpdateAPITest:224 - PUT Request Call URL https://api.usgbc.org/qas/leed/assets/LEED:1000094634/

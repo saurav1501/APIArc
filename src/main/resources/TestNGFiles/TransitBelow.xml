@@ -13,7 +13,6 @@
 <parameter name="ratings" value="underground"></parameter>
 <classes>
 
-<class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Common.UserDetailAPITest"></class>
 <class name="com.arcapi.Common.UserAccessLevelSAPGetTest"></class>
 <class name="com.arcapi.Transittestcases.CreateAssetTransitAPITest"></class>

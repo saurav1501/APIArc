@@ -106,6 +106,16 @@
 <class name="com.arcapi.ScenarioBasedTestcases.CheckOwnerTypeBuildingOtherAPITest"></class>
 </classes> 
 </test> 
+
+
+<test name="SetUserV1">
+<parameter name="ProjectType" value="building" />
+<parameter name="ProjectTypeColumn" value="ProjectIDBuildingOther" />
+<parameter name="rownumber" value="2" />
+<classes> 
+<class name="com.arcapi.Common.V2.SetUserprofileV2APITest"></class> 
+</classes>
+</test>
 </suite>
   
 

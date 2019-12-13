@@ -9,7 +9,6 @@
 
 <parameter name="Country" value="US"/>
 <parameter name="PaymentType" value="CreditCardPayment"/>  
-
 	   <suite-files>
        <suite-file path="Beta-ARC-V2-API-CompleteFlow.xml"></suite-file>  
 	   <suite-file path="V2Buildingtestng.xml"></suite-file>    
@@ -20,8 +19,8 @@
 	   <suite-file path="CityTestNG.xml"></suite-file>  
 	   <suite-file path="ScoreScenariosTestNG.xml"></suite-file>    
 	   <suite-file path="CrossRatingSystemTestng.xml"></suite-file>
- 	   <suite-file path="V2DataInputScenariosTestNG.xml"></suite-file>  
- 	   <suite-file path="V2CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
+ 	   <suite-file path="DataInputScenariosTestNG.xml"></suite-file>  
+ 	   <suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
 	   <suite-file path="V2EmissionFactor.xml"></suite-file>   
 	   <suite-file path="CompleteDataValidationNoPayloadTestng.xml"></suite-file> 
 	   <suite-file path="CommunityTestNG.xml"></suite-file>    	
@@ -29,7 +28,7 @@
 	   <suite-file path="LEEDv4Building.xml"></suite-file>  
  	   <suite-file path="LEEDv4Communities.xml"></suite-file> 
  	   <suite-file path="LEEDv4Cities.xml"></suite-file> 
-      <suite-file path="V2ScenarioBasedTestingTestng.xml"></suite-file>  
+       <suite-file path="V2ScenarioBasedTestingTestng.xml"></suite-file>  
 	</suite-files>
 	
 </suite> 

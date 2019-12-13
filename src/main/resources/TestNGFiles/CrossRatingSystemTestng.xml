@@ -11,7 +11,6 @@
 <parameter name="ratings" value="none"></parameter>
 <parameter name="Aggrement" value="true"></parameter>
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.CrossRatingSystemtestcases.AQIDataGetAPITest"></class>
 <class name="com.arcapi.CrossRatingSystemtestcases.RidershipDataGetAPITest"></class>
@@ -32,7 +31,6 @@
 <parameter name="Aggrement" value="false"></parameter>
 
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Common.CityCom.CreateNewProjectAPITest"></class>
 <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>
@@ -85,7 +83,6 @@
 <parameter name="rownumber" value="2" />
 <parameter name ="ratings" value="PARKSMART"/>
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Parksmarttestcases.CreateAssetParksmartPOSTAPITest"></class>
 <class name="com.arcapi.Common.AssetSearchAPITest"></class>
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>

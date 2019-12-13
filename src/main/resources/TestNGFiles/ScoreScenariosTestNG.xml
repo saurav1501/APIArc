@@ -12,7 +12,6 @@
 <parameter name="ratings" value="none"></parameter>
 
 <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
 <class name="com.arcapi.Common.CityCom.CreateNewProjectAPITest"></class>
 <class name="com.arcapi.Common.SignAgreementRegistrationAPITest"></class> 
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>

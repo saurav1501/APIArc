@@ -12,8 +12,7 @@
 <parameter name="CustomSheetName" value="Emission"/>
 <parameter name="Aggrement" value="true"></parameter>
 
- <classes>
-<class name="com.arcapi.Common.LoginAPITest"></class>
+<classes>
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.AssetValidationInfoPOSTAPITest"></class>
 <class name="com.arcapi.CompleteDataValidationNoPayloadTestcases.AssetOwnerOrgPOSTAPITest"></class>

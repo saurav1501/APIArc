@@ -18,6 +18,9 @@ public class LOAuthenticateAPITest extends BaseClass {
 	public void LOAuthenticateAPI(String SheetName,int rownumber){
 		try {
 			CommonMethod.res = given().log().all().header("Content-Type","application/x-www-form-urlencoded").params("username", data.getCellData(sheetName, "NormalUserName", rowNumTwo),"password", password=data.getCellData(sheetName, "NormalPassword", rowNumTwo),"guid", "").spec(reqSpecLEED).when().post("authenticate").then().extract().response();
+			
+			CommonMethod.testlog("Pass", "URL = " + "https://leedonline-api-qas.usgbc.org/v1/json/authenticate");
+			
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
 			CommonMethod.responsetime = CommonMethod.res.getTimeIn(TimeUnit.MILLISECONDS);	
 			CommonMethod.fetchedID = CommonMethod.res.path("token").toString();
@@ -25,6 +28,8 @@ public class LOAuthenticateAPITest extends BaseClass {
 			CommonMethod.testlog("Pass","userName : " +username+ "Password : "+password);
 			CommonMethod.testlog("Pass","Authorization Token generated" + "<br>" + header);
 			//CommonMethod.res.then().assertThat().contentType(ContentType.JSON);
+				
+			
 			CommonMethod.testlog("Pass", "Verifies response from API" + "<br>" + CommonMethod.res.asString());
 			CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
 		
