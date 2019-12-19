@@ -218,6 +218,44 @@ public class MethodCall extends BaseClass{
 		return CommonMethod.res;
 	}
 
+	public static Response POSTRequestHTMLFileUpload(String uRI) {
+		
+		
+		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
+		log.info("POST Request Call URL "+baseURLLEED+uRI);
+	
+		CommonMethod.res= given().log().all().multiPart("file", CommonMethod.certification)
+				.headers(headerMap)
+				.header("Authorization",header).spec(reqSpec).post(url).then().extract().response();
+
+        log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
+		
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+	
+		return CommonMethod.res;
+		
+	}
+	public static Response POSTRequestHTMLFileUpload(String uRI,Object strJSON) {
+			
+		CommonMethod.testlog("Info", "POST Request Call URL "+baseURL+uRI);
+		log.info("POST Request Call URL "+baseURLLEED+uRI);
+	
+		CommonMethod.res= given().log().all().multiPart("file", CommonMethod.certification)
+				.headers(headerMap)
+				.header("Authorization",header).spec(reqSpec).body(strJSON).post(url).then().extract().response();
+
+		Gson gson = new Gson();
+		String jsonString = gson.toJson(strJSON);
+		log.info("Payload is  "+jsonString.toString());
+		
+        log.info("Post Response Time In milliseconds" +CommonMethod.responsetime);
+        log.info("Payload is  "+jsonString.toString());
+        
+		CommonMethod.testlog("Info", "API responded in " + CommonMethod.responsetime + " Milliseconds");
+	
+		return CommonMethod.res;
+		
+	}
 	public static Response PUTRequest(String uRI, Object strJSON) {
 		
 		CommonMethod.testlog("Info", "PUT Request Call URL "+baseURL+uRI);

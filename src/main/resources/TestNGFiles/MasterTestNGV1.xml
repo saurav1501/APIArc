@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="V1MasterAPITestCasesSuite">
 
-<!-- <parameter name="environment" value="qas"/>
-<parameter name="SheetName" value="QAS"/>   --> 
+<!-- <parameter name="environment" value="stg"/>
+<parameter name="SheetName" value="STG"/>  --> 
 
 <parameter name="environment" value="${env}" />
-<parameter name="SheetName" value="${sheet}" />  
+<parameter name="SheetName" value="${sheet}" />   
 
 <parameter name="Country" value="US"/>
 <parameter name="PaymentType" value="CreditCardPayment"/>
@@ -13,8 +13,8 @@
 	<suite-files>
 	
   	<suite-file path="Existing-ARC-V1-API-CompleteFlow.xml"></suite-file> 
-   <suite-file path="Buildingtestng.xml"></suite-file>           
-	<suite-file path="Portfoliostestng.xml"></suite-file>  
+    <suite-file path="Buildingtestng.xml"></suite-file>           
+    <suite-file path="Portfoliostestng.xml"></suite-file>  
 	<suite-file path="InterRelatedFieldValidationTestng.xml"></suite-file> 
  	<suite-file path="Parksmarttestng.xml"></suite-file>  
 	<suite-file path="CrossRatingSystemTestng.xml"></suite-file>
@@ -32,7 +32,7 @@
     <suite-file path="LEEDv4Building.xml"></suite-file> 
    	<suite-file path="LEEDv4Communities.xml"></suite-file> 
     <suite-file path="LEEDv4Cities.xml"></suite-file> 
-    <suite-file path="ScenarioBasedTestingTestng.xml"></suite-file>	   	     
+    <suite-file path="ScenarioBasedTestingTestng.xml"></suite-file>	      
 	</suite-files>
 	
 </suite> 

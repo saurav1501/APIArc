@@ -84,8 +84,9 @@ public class BaseClass {
 	public static String statusMessage="HTTP/1.1 200 OK";
 	public static String baseURL;
 	public static String baseURLLEED;
-	 public static SoftAssert softAssert = new SoftAssert();
-
+	public static SoftAssert softAssert = new SoftAssert();
+	
+	public static File certification = new File(System.getProperty("user.dir")+"/src/main/resources/Certificate/certificate.html");
 	public static File extentconfigfile = new File(System.getProperty("user.dir") +"/src/main/resources/extent-config1.xml");
 	public static String[] value = { "-200", "ABC123", "200-094", "~!@#$%^&*()-_=+[];:\\\"<,>.?/", "200902", " ",
 			"900-",

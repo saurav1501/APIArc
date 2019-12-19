@@ -1,0 +1,252 @@
+<style>
+    @font-face 
+    {
+        src: url(https://api.usgbc.org/arc/static/fonts/GT-America-Standard-Regular.woff?subscription-key=baa1469b3a464184aaf989276e20e8c2);
+        font-family: America;
+    }
+    @font-face 
+    {
+        src: url(https://api.usgbc.org/arc/static/fonts/GT-America-Standard-Medium.woff?subscription-key=baa1469b3a464184aaf989276e20e8c2);
+        font-family: AmericaBold;
+    }
+    @font-face 
+    {
+        src: url(https://api.usgbc.org/arc/static/fonts/GT-America-Standard-Medium.woff?subscription-key=baa1469b3a464184aaf989276e20e8c2);
+        font-family: AmericaMedium;
+    }
+    #myCanvas
+    {
+        font-family: America;
+        background-color: #F4F5F8 !important;
+    }
+    #myCanvas .cert_appLogo
+    {
+        background: url(https://app-v2.arconline.io/assets/images/arc-logo-white.png) no-repeat;
+        background-size: contain;
+        height: 80px;
+        margin-top: 125px;
+        background-position: 50%;
+    }
+    .certificate
+    {
+        margin: 35px auto;
+        width: 720px;
+        height: 590px;
+        background-color: white;
+    }
+    #myCanvas #cert_banner
+    {
+        width: 25%;
+        background-color: #D0DD3D;
+        float: left;
+        height: 100%;
+    }
+    #myCanvas #cert_content
+    {
+        width: 75%;
+        text-align: center;
+        background-color: white;
+        float: left;
+        height: 100%;
+    }
+    #myCanvas .mb5
+    {
+        margin-bottom: 2px !important;
+    }
+    #myCanvas .heading1
+    {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: rgb(117, 129, 138);
+    }
+    #myCanvas .heading2
+    {
+        margin-bottom: 15px;
+        font-size: 12px;
+        color: rgb(117, 129, 138);
+    }
+    #myCanvas .heading3
+    {
+        margin-bottom: 15px;
+        font-size: 11px;
+    }
+    #myCanvas #project_name
+    {
+        font-family: AmericaBold;
+        font-weight: normal;
+        margin: 0px;
+    }
+    #myCanvas #project_address
+    {
+        font-family: AmericaMedium;
+        font-weight: normal;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #myCanvas .category
+    {
+        font-family: AmericaMedium;
+        font-weight: normal;
+        padding: 0px 0px 20px 0px;
+        margin: 0px 50px;
+        border-bottom: 1px solid rgb(220, 225, 226);
+        margin-bottom: 15px;
+    }
+    #myCanvas .metrics
+    {
+        overflow: auto;
+        margin: 0px 50px;
+        border-bottom: 1px solid rgb(220, 225, 226);
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    #myCanvas .metrics .heading
+    {
+        color: rgb(117, 129, 138);
+        font-size: 13px;
+        font-family: AmericaMedium;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    #myCanvas .cert_block
+    {
+        height: 5px;
+        width: 30px;
+        margin-bottom: 5px;
+        background-color: #D0DD3D;
+    }
+    #myCanvas .value
+    {
+        font-family: AmericaBold;
+        font-weight: normal;
+        margin: 0px;
+        color: rgb(117, 129, 138);
+        text-align: left;
+        font-size: 27px;
+    }
+    #myCanvas .value span, #myCanvas .cert_bold
+    {
+        color: black;
+    }
+    #myCanvas .data
+    {
+        font-size: 12px;
+        overflow: auto;
+        line-height: 20px;
+        color: rgb(117, 129, 138);
+    }
+    #myCanvas .left
+    {
+        float: left;
+    }
+    #myCanvas .right
+    {
+        float: right;
+    }
+    #myCanvas .mb27
+    {
+        margin-bottom: 27px;
+    }
+    #myCanvas .heading4
+    {
+        margin-bottom: 15px;
+        font-size: 9px;
+        font-family: AmericaMedium;
+    }
+    #myCanvas .mb0
+    {
+        margin-bottom: 0px;
+    }
+    #myCanvas .signature
+    {
+        background: url(https://app-v2.arconline.io/assets/images/sig.png) no-repeat;
+        background-size: contain;
+        background-position: 55%;
+        height: 30px;
+        border-bottom: 1px solid rgb(220, 225, 226);
+        margin: 0px 115px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    #myCanvas .cert_grey
+    {
+        color: rgb(117, 129, 138);
+    }
+    #myCanvas .key_metrics
+    {
+        width: 50%;
+        text-align: left;
+        float: left;
+    }
+    .main_score
+    {
+        width: 50%;
+        text-align: left;
+        float: left;
+    }
+    .rt10
+    {
+        position: relative;
+        top: 10px;
+    }
+</style>
+
+<div class="certificate ng-scope" id="myCanvas">    
+    <div id="cert_banner" style="background-color: rgb(208, 221, 61);">
+        <div class="cert_appLogo"></div>
+    </div>
+    <div id="cert_content">
+        <div class="heading1">ARC SKORU RECOGNIZES</div>
+        <h2 id="project_name">Test building dec 17</h2>
+        <div id="project_address">Test building dec 17</div>
+        <div class="heading2">AWARDED FOR DEMONSTRATED PERFORMANCE IN:</div>
+        <div id="title" class="category">Energy &amp; Emissions</div>
+
+        <div class="metrics">
+            <div class="main_score">
+                <div class="heading">Performance Score</div>
+                <div class="cert_block" style="background-color: rgb(208, 221, 61);"></div>
+                <h2 class="value">
+                    <span id="score">92</span>/100
+                </h2>
+            </div>
+            <div class="key_metrics energy">
+                <div class="heading">Key Performance Indicators</div>
+                <div class="cert_block" style="background-color: rgb(208, 221, 61);"></div>
+                <div class="data">
+                    <span class="left">Site Energy Intensity</span>
+                    <span class="right"><span class="cert_bold" id="site_energy_intensity">0</span> kBTU</span>
+                </div>
+                <div class="data">
+                    <span class="left">Source Energy Intensity</span>
+                    <span class="right"><span class="cert_bold" id="source_energy_intensity">0</span> kBTU</span>
+                </div>
+                <div class="rt10">
+                    <div class="data">
+                        <span class="left">GHG Emissions</span>
+                        <span class="right"><span class="cert_bold" id="raw_ghg">0</span> mTCO2e</span>
+                    </div>
+                    <div class="data">
+                        <span class="left">GHG Intensity</span>
+                        <span class="right"><span class="cert_bold" id="raw_ghg_intensity">0</span> mTCO2e</span>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+
+        <div class="footer">
+            <div class="heading2 mb5">THIS CERTIFICATE COVERS A PERFORMANCE PERIOD BETWEEN</div>
+            <div class="heading3 mb5" id="reporting_period">Dec 18, 2018 - Dec 18, 2019</div>
+            <div class="heading2">AND IS VALID UNTIL <span id="expiry_date">Dec 18, 2022</span></div>
+            <div class="signature"></div>
+            <div class="heading4 mb0 cert_grey">MAHESH RAMANUJAM</div>
+            <div class="heading3 mb0 cert_grey">PRESIDENT &amp; CEO, ARC SKORU, INC.</div>
+        </div>
+    </div>
+</div>

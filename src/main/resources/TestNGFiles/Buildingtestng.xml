@@ -137,7 +137,7 @@
 <class name="com.arcapi.Common.ThirdPartyListAppsAPITest"></class>
 <class name="com.arcapi.Common.AvgPerformaceListGetTest"></class>
 <class name="com.arcapi.Common.AssetSnapshotKeysAPITest"></class>
-<class name="com.arcapi.Common.ScoreImprovementGetAssetAPITest"></class>
+<class name="com.arcapi.Common.ScoreImprovementGetAssetAPITest"></class> 
 
 
 </classes> 
@@ -154,7 +154,7 @@
 <classes>
 
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
-<class name="com.arcapi.Common.AssetDetailAPITest"></class>
+ <class name="com.arcapi.Common.AssetDetailAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.ExcelTemplateMetersAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.CarbonDioxideCreate5YearDataPostTest"></class> 
 <class name="com.arcapi.Buildingtestcases.TVOCCreate5YearDataPostTest"></class> 
@@ -166,6 +166,18 @@
 <class name="com.arcapi.Buildingtestcases.WasteCreate60MonthMeterDataBulkPostTest"></class>
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"></class> 
+
+<!-- ARC Release 2.2 -->
+<class name="com.arcapi.Buildingtestcases.AssetsDataValidationGETAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetCertificationPreviewAPITest"></class> 
+<class name="com.arcapi.Buildingtestcases.AssetSubmitCertificatePostAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetGetDoccumentIDAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetCertificateDownloadAPITest"></class>
+<class name="com.arcapi.Buildingtestcases.AssetArcPerformanceCertificationsAPITest"></class>
+
+
+
+
 
 
 </classes> 
