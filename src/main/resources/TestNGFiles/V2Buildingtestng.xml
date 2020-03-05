@@ -21,7 +21,7 @@
 <class name="com.arcapi.Common.V2.Waste_ScoreDataGetAPITest"></class>
 <class name="com.arcapi.Common.V2.WaterBasicAnalysisDataGetAPITest"></class> 
 <class name="com.arcapi.Common.V2.WaterScoreGetAPITest"></class> 
-
+<!--
 <class name="com.arcapi.Buildingtestcases.CreateAssetBuildingV3APITest"></class>
 <class name="com.arcapi.Common.AssetSearchAPITest"></class>
 <class name="com.arcapi.Common.V2.SignAgreementRegistrationAPITest"></class> 
@@ -168,7 +168,7 @@
 <class name="com.arcapi.Common.RecomputePerformanceScoreGetTest"></class>
 <class name="com.arcapi.Common.V2.ResampledTotalScoreGetAPITest"></class>  
 <class name="com.arcapi.Common.V2.RecomputeVerifyTotalScoreGraphGetAPITest"></class>  
-
+ -->
 </classes> 
 </test>  
 </suite>  

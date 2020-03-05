@@ -1,0 +1,58 @@
+2020-03-05 10:24:15 INFO  LoginAPITest:265 - Executing test: LoginAPI
+2020-03-05 10:24:15 INFO  LoginAPITest:116 - POST Request Call URL https://api.usgbc.org/qas/leed/auth/login/
+2020-03-05 10:24:21 INFO  LoginAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:21 INFO  LoginAPITest:123 - Payload is  usgbcarcapi1@gmail.cominitpass
+2020-03-05 10:24:21 INFO  LoginAPITest:127 - SAMEORIGIN
+2020-03-05 10:24:21 INFO  LoginAPITest:130 - csrftoken=QUTcM4gcluePNX4lelVQ97nxzH1db5lh1fKksrZFLmlFPVdDMxBDENc13tEzAJHV;Path=/;Max-Age=31449600;Expires=3/4/21 4:54 AM
+sessionid=9u7ksxwswsoor4k11cvf9ensta7rmutd;Path=/;HttpOnly
+2020-03-05 10:24:21 INFO  LoginAPITest:131 - K4utae6CCB9Q84bf2il2Hy7j9wUDRX
+2020-03-05 10:24:22 INFO  LoginAPITest:137 - Bearer
+2020-03-05 10:24:22 INFO  LoginAPITest:138 - Post Response Time In milliseconds0
+2020-03-05 10:24:22 INFO  LoginAPITest:141 - Header is Bearer K4utae6CCB9Q84bf2il2Hy7j9wUDRX
+2020-03-05 10:24:22 INFO  LoginAPITest:144 - Ocp-Apim-Subscription-Key5a41833022f046dc951383ead38d16d3
+2020-03-05 10:24:22 INFO  LoginAPITest:50 - API Responded With Status Message : HTTP/1.1 200 OK
+2020-03-05 10:24:23 INFO  SetUserprofileV2APITest:265 - Executing test: SetUserprofileV2API
+2020-03-05 10:24:23 INFO  SetUserprofileV2APITest:262 - PUT Request Call URL https://api.usgbc.org/qas/leed/auth/userprofile/
+2020-03-05 10:24:25 INFO  SetUserprofileV2APITest:269 - Put Response Time In milliseconds1381
+2020-03-05 10:24:25 INFO  SetUserprofileV2APITest:273 - Payload is  {"ui_version":"v2"}
+2020-03-05 10:24:25 INFO  SetUserprofileV2APITest:43 - API Responded With Status Code : 400
+2020-03-05 10:24:25 INFO  BasicAnalysisDataGetAPITest:265 - Executing test: BasicAnalysisDataGetAPI
+2020-03-05 10:24:25 INFO  BasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/basic/analytics/
+2020-03-05 10:24:27 INFO  BasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1420
+2020-03-05 10:24:27 INFO  BasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:31 INFO  EnergBasicAnalysisDataGetAPITest:265 - Executing test: EnergBasicAnalysisDataGetAPI
+2020-03-05 10:24:31 INFO  EnergBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/energy/analytics/
+2020-03-05 10:24:33 INFO  EnergBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1385
+2020-03-05 10:24:33 INFO  EnergBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:33 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:265 - Executing test: Energy_ScoreBasicAnalysisDataGetAPI
+2020-03-05 10:24:33 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/energy/analytics/
+2020-03-05 10:24:34 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1420
+2020-03-05 10:24:34 INFO  Energy_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:35 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:265 - Executing test: Humanexperience_ScoreBasicAnalysisDataGetAPI
+2020-03-05 10:24:35 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/humanexperience_score/analytics/
+2020-03-05 10:24:36 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1555
+2020-03-05 10:24:36 INFO  Humanexperience_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:36 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:265 - Executing test: Improvement_ScoreBasicAnalysisDataGetAPI
+2020-03-05 10:24:36 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/improvement_score/analytics/
+2020-03-05 10:24:38 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1419
+2020-03-05 10:24:38 INFO  Improvement_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:38 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:265 - Executing test: Waste_ScoreBasicAnalysisDataGetAPI
+2020-03-05 10:24:38 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/transport_score/analytics/
+2020-03-05 10:24:39 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1449
+2020-03-05 10:24:39 INFO  Transport_ScoreBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:40 INFO  Waste_AnalysisDataGetAPITest:265 - Executing test: Waste_AnalysisDataGetAPI
+2020-03-05 10:24:40 INFO  Waste_AnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/waste_score/analytics/
+2020-03-05 10:24:41 INFO  Waste_AnalysisDataGetAPITest:28 - Get Response Time In milliseconds1454
+2020-03-05 10:24:41 INFO  Waste_AnalysisDataGetAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:41 INFO  Waste_ScoreDataGetAPITest:265 - Executing test: Waste_ScoreDataGetAPI
+2020-03-05 10:24:41 INFO  Waste_ScoreDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/waste_score/analytics/
+2020-03-05 10:24:43 INFO  Waste_ScoreDataGetAPITest:28 - Get Response Time In milliseconds1450
+2020-03-05 10:24:43 INFO  Waste_ScoreDataGetAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:43 INFO  WaterBasicAnalysisDataGetAPITest:265 - Executing test: WaterBasicAnalysisDataGetAPI
+2020-03-05 10:24:43 INFO  WaterBasicAnalysisDataGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/water/analytics/
+2020-03-05 10:24:44 INFO  WaterBasicAnalysisDataGetAPITest:28 - Get Response Time In milliseconds1425
+2020-03-05 10:24:44 INFO  WaterBasicAnalysisDataGetAPITest:43 - API Responded With Status Code : 200
+2020-03-05 10:24:45 INFO  WaterScoreGetAPITest:265 - Executing test: WaterScoreGetAPI
+2020-03-05 10:24:45 INFO  WaterScoreGetAPITest:21 - GET Request Call URL https://api.usgbc.org/qas/leed/assets/water_score/analytics/
+2020-03-05 10:24:46 INFO  WaterScoreGetAPITest:28 - Get Response Time In milliseconds1443
+2020-03-05 10:24:46 INFO  WaterScoreGetAPITest:43 - API Responded With Status Code : 200

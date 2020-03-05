@@ -23,6 +23,7 @@ public class LoginAPITest extends BaseClass {
 					
 		} catch (Exception e) {
 			e.printStackTrace();
+			throw new RuntimeException(e);
 		}
 		
 

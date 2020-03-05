@@ -264,6 +264,8 @@ public class BaseClass {
 		Object testName = result.getName(); 
 		log.info("Executing test: " + testName);      
 	}
+	
+	
 	@AfterMethod
 	public void teardown(ITestResult result) {
 		test.getModel().setStartTime(getTime(result.getStartMillis()));

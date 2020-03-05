@@ -22,7 +22,7 @@
 <class name="com.arcapi.Common.RegistrationPaymentPricingGetAPITest"></class>
 <class name="com.arcapi.Common.PaymentOrderSubmitPOSTAPITest"></class>
 <class name="com.arcapi.Common.V2.AddAssestTimelinePOSTAPITest"></class>
-<class name="com.arcapi.Common.UserPreferenceGetAPITest"></class>
+<!-- <class name="com.arcapi.Common.UserPreferenceGetAPITest"></class>
 <class name="com.arcapi.Common.UserPreferenceTruePostAPITest"></class>
 <class name="com.arcapi.Common.DefaultUserPreferencePostAPITest"></class>
 <class name="com.arcapi.Common.ScoreCodeVersionQuerysetGetAPITest"></class>
@@ -167,7 +167,7 @@
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackRegularAPIPOSTAPITest"></class>   
 <class name="com.arcapi.Buildingtestcases.SurveyAllRoutesFeedbackVisitorAPIPOSTAPITest"></class> 
 
-<!-- ARC Release 2.2 -->
+ARC Release 2.2
 <class name="com.arcapi.Buildingtestcases.AssetsDataValidationGETAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.AssetCertificationPreviewAPITest"></class> 
 <class name="com.arcapi.Buildingtestcases.AssetSubmitCertificatePostAPITest"></class>
@@ -175,11 +175,7 @@
 <class name="com.arcapi.Buildingtestcases.AssetCertificateDownloadAPITest"></class>
 <class name="com.arcapi.Buildingtestcases.AssetArcPerformanceCertificationsAPITest"></class>
 
-
-
-
-
-
+ -->
 </classes> 
 </test>  
 </suite>  

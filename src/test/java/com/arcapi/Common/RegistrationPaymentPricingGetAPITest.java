@@ -21,7 +21,7 @@ public class RegistrationPaymentPricingGetAPITest extends BaseClass {
 			
 			CommonMethod.res = MethodCall.GETRequest(url);
 			
-			Assertion.verifyStatusCode(CommonMethod.res, 200);
+			Assertion.verifyStatusCode(CommonMethod.res, 400);
 			Assertion.verifyStatusMessage(CommonMethod.res, statusMessage);
 
 			

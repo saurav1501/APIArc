@@ -22,6 +22,7 @@ public class ReviewPaymentIntimationGetAPITest extends BaseClass {
 			Assertion.verifyStatusCode(CommonMethod.res, 200);
 		} catch (Exception e) {
 			e.printStackTrace();
+			throw new RuntimeException(e);
 		}
 		
 		

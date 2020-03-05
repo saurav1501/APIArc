@@ -46,11 +46,11 @@
                 
 					<suiteXmlFiles>
 						<suiteXmlFile>src/main/resources/TestNGFiles/${user}</suiteXmlFile>
-   			</suiteXmlFiles>
+   			      </suiteXmlFiles>
    			
 				</configuration>
 			</plugin>
- <plugin>
+           <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-clean-plugin</artifactId>
             <version>2.4.1</version>

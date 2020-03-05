@@ -28,6 +28,7 @@ public class PortfoliosDetailPUTAPITest extends BaseClass {
 			CommonMethod.res = MethodCall.POSTRequest(url, jsonAsMap);
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
+			throw new RuntimeException(e);
 		}
 		
 		

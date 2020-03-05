@@ -18,6 +18,7 @@ public class UserAccessLevelSAPGetTest extends BaseClass {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
+			throw new RuntimeException(e);
 		}
 		
 		
